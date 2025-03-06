@@ -2,11 +2,17 @@ from abc import ABC, abstractmethod
 import groq
 import requests
 from bs4 import BeautifulSoup
-from app.config import settings
+from groq import Groq
+
+# Define GROQ API key directly
+GROQ_API_KEY = "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"
+
+# Initialize the Groq client
+client = Groq(api_key=GROQ_API_KEY)
 
 class BaseAgent(ABC):
     def __init__(self):
-        self.groq_client = groq.Client(api_key=settings.GROQ_API_KEY)
+        self.groq_client = groq.Client(api_key=GROQ_API_KEY)
 
     @abstractmethod
     async def evaluate(self, *args, **kwargs):

@@ -2,7 +2,7 @@ import os
 from functools import lru_cache
 from pydantic_settings import BaseSettings
 from typing import Optional
-
+from groq import Groq
 class Settings(BaseSettings):
     GROQ_API_KEY: Optional[str] = None
     
