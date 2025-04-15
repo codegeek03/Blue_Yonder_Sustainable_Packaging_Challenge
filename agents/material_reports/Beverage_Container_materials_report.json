@@ -1,0 +1,319 @@
+{
+  "product_name": "Beverage Container",
+  "materials": [
+    {
+      "material_name": "Polyethylene terephthalate (PET)"
+    },
+    {
+      "material_name": "High-density polyethylene (HDPE)"
+    },
+    {
+      "material_name": "Low-density polyethylene (LDPE)"
+    },
+    {
+      "material_name": "Polypropylene (PP)"
+    },
+    {
+      "material_name": "Polylactic acid (PLA)"
+    },
+    {
+      "material_name": "Ethylene vinyl alcohol (EVOH)"
+    },
+    {
+      "material_name": "Polycarbonate (PC)"
+    },
+    {
+      "material_name": "Polyvinyl chloride (PVC)"
+    },
+    {
+      "material_name": "Expanded polystyrene (EPS)"
+    },
+    {
+      "material_name": "Biaxially-oriented polypropylene (BOPP)"
+    },
+    {
+      "material_name": "Aluminium Alloy 3004"
+    },
+    {
+      "material_name": "Aluminium Alloy 5182"
+    },
+    {
+      "material_name": "Tinplate Steel"
+    },
+    {
+      "material_name": "Glass Type III Soda-Lime"
+    },
+    {
+      "material_name": "Glass Type I Borosilicate"
+    },
+    {
+      "material_name": "Paperboard (SBS)"
+    },
+    {
+      "material_name": "Corrugated Fiberboard"
+    },
+    {
+      "material_name": "Kraft Paper"
+    },
+    {
+      "material_name": "Metallized BOPP (MBOPP)"
+    },
+    {
+      "material_name": "Linear Low-Density Polyethylene (LLDPE)"
+    },
+    {
+      "material_name": "Polyethylene naphthalate (PEN)"
+    },
+    {
+      "material_name": "Recycled PET (rPET)"
+    },
+    {
+      "material_name": "Oriented Polystyrene (OPS)"
+    },
+    {
+      "material_name": "Cast Polypropylene (CPP)"
+    },
+    {
+      "material_name": "Bi-axially oriented polyethylene terephthalate (BoPET)"
+    },
+    {
+      "material_name": "Acrylic Polymer"
+    },
+    {
+      "material_name": "Nylon 6"
+    },
+    {
+      "material_name": "Nylon 6,6"
+    },
+    {
+      "material_name": "Polyurethane (PU)"
+    },
+    {
+      "material_name": "Styrene-acrylonitrile resin (SAN)"
+    },
+    {
+      "material_name": "Acrylonitrile Butadiene Styrene (ABS)"
+    },
+    {
+      "material_name": "Polyoxymethylene (POM)"
+    },
+    {
+      "material_name": "Thermoplastic Polyurethane (TPU)"
+    },
+    {
+      "material_name": "Silicone Rubber"
+    },
+    {
+      "material_name": "Neoprene Rubber"
+    },
+    {
+      "material_name": "Ethylene Propylene Diene Monomer (EPDM) Rubber"
+    },
+    {
+      "material_name": "Butyl Rubber"
+    },
+    {
+      "material_name": "Natural Rubber"
+    },
+    {
+      "material_name": "SBR Rubber"
+    },
+    {
+      "material_name": "Polybutylene Terephthalate (PBT)"
+    },
+    {
+      "material_name": "Cellulose Acetate"
+    },
+    {
+      "material_name": "Cellulose Propionate"
+    },
+    {
+      "material_name": "Polyvinylidene Chloride (PVDC)"
+    },
+    {
+      "material_name": "Epoxy Resin"
+    },
+    {
+      "material_name": "Phenolic Resin"
+    },
+    {
+      "material_name": "Melamine Resin"
+    },
+    {
+      "material_name": "Urea-Formaldehyde Resin"
+    },
+    {
+      "material_name": "Acrylic Multipolymer Emulsion"
+    },
+    {
+      "material_name": "Water-Based Varnish"
+    },
+    {
+      "material_name": "UV Curable Varnish"
+    },
+    {
+      "material_name": "Nitrocellulose Lacquer"
+    },
+    {
+      "material_name": "Polyurethane Coating"
+    },
+    {
+      "material_name": "Wax Coating"
+    },
+    {
+      "material_name": "Hot Melt Adhesive"
+    },
+    {
+      "material_name": "Pressure Sensitive Adhesive (PSA)"
+    },
+    {
+      "material_name": "Acrylic Adhesive"
+    },
+    {
+      "material_name": "Casein Adhesive"
+    },
+    {
+      "material_name": "Dextrin Adhesive"
+    },
+    {
+      "material_name": "Starch Adhesive"
+    },
+    {
+      "material_name": "Gelatin Adhesive"
+    },
+    {
+      "material_name": "Polyvinyl Acetate (PVA) Adhesive"
+    },
+    {
+      "material_name": "Aqueous Dispersion Adhesive"
+    },
+    {
+      "material_name": "Aluminium Foil"
+    },
+    {
+      "material_name": "Polyethylene-coated Kraft Paper"
+    },
+    {
+      "material_name": "Aluminium metallized film"
+    },
+    {
+      "material_name": "Aramid Fiber"
+    },
+    {
+      "material_name": "Carbon Fiber"
+    },
+    {
+      "material_name": "Glass Fiber"
+    },
+    {
+      "material_name": "Polyester Fiber"
+    },
+    {
+      "material_name": "Rayon Fiber"
+    },
+    {
+      "material_name": "Nylon Fiber"
+    },
+    {
+      "material_name": "Cotton Fiber"
+    },
+    {
+      "material_name": "Linen Fiber"
+    },
+    {
+      "material_name": "Sisal Fiber"
+    },
+    {
+      "material_name": "Hemp Fiber"
+    },
+    {
+      "material_name": "Jute Fiber"
+    },
+    {
+      "material_name": "Bamboo Fiber"
+    },
+    {
+      "material_name": "Bagasse Fiber"
+    },
+    {
+      "material_name": "Wheat Straw Fiber"
+    },
+    {
+      "material_name": "Rice Straw Fiber"
+    },
+    {
+      "material_name": "Corn Stalk Fiber"
+    },
+    {
+      "material_name": "Soybean Stalk Fiber"
+    },
+    {
+      "material_name": "Sunflower Stalk Fiber"
+    },
+    {
+      "material_name": "Kenaf Fiber"
+    },
+    {
+      "material_name": "Flax Fiber"
+    },
+    {
+      "material_name": "Abaca Fiber"
+    },
+    {
+      "material_name": "Coir Fiber"
+    },
+    {
+      "material_name": "Ramie Fiber"
+    },
+    {
+      "material_name": "Lyocell Fiber"
+    },
+    {
+      "material_name": "Microfibrillated Cellulose (MFC)"
+    },
+    {
+      "material_name": "Cellulose Nanocrystals (CNC)"
+    },
+    {
+      "material_name": "Chitosan"
+    },
+    {
+      "material_name": "Alginate"
+    },
+    {
+      "material_name": "Carrageenan"
+    },
+    {
+      "material_name": "Agar"
+    },
+    {
+      "material_name": "Pullulan"
+    },
+    {
+      "material_name": "Xanthan Gum"
+    },
+    {
+      "material_name": "Guar Gum"
+    },
+    {
+      "material_name": "Carboxymethyl Cellulose (CMC)"
+    },
+    {
+      "material_name": "Methyl Cellulose (MC)"
+    },
+    {
+      "material_name": "Hydroxypropyl Methylcellulose (HPMC)"
+    },
+    {
+      "material_name": "Ethyl Cellulose (EC)"
+    },
+    {
+      "material_name": "Sodium Alginate"
+    },
+    {
+      "material_name": "Calcium Alginate"
+    }
+  ],
+  "analysis_timestamp": "2025-04-15 12:25:18",
+  "user_login": "shami"
+}

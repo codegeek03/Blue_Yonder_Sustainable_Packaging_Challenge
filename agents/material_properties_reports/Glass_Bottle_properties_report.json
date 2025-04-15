@@ -1,0 +1,966 @@
+{
+  "product_name": "Glass Bottle",
+  "materials_analysis": [
+    {
+      "material_name": "Borosilicate Glass",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 7,
+          "value": "70",
+          "unit": "MPa",
+          "details": "Good strength, but can be brittle under certain stress."
+        },
+        "impact_resistance": {
+          "score": 6,
+          "value": "2",
+          "unit": "J/m",
+          "details": "Moderate resistance to impact, prone to shattering."
+        },
+        "thermal_stability": {
+          "score": 9,
+          "value": "300",
+          "unit": "\u00b0C",
+          "details": "Excellent thermal shock resistance, withstands high temperatures well."
+        },
+        "chemical_resistance": {
+          "score": 9,
+          "value": "2-12",
+          "unit": "pH range",
+          "details": "Excellent resistance to most chemicals, excluding hydrofluoric acid."
+        },
+        "barrier_properties": {
+          "score": 10,
+          "value": "0.001",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Impermeable to gases and liquids, superior barrier performance."
+        },
+        "durability": {
+          "score": 9,
+          "value": "100",
+          "unit": "years",
+          "details": "Very durable material, resistant to degradation over long periods."
+        }
+      },
+      "overall_property_score": 8.33,
+      "optimal_applications": [
+        "Laboratory Bottles",
+        "Pharmaceutical Vials"
+      ]
+    },
+    {
+      "material_name": "Soda-Lime Glass",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 6,
+          "value": "50",
+          "unit": "MPa",
+          "details": "Lower strength compared to borosilicate, more prone to fracture."
+        },
+        "impact_resistance": {
+          "score": 5,
+          "value": "1.5",
+          "unit": "J/m",
+          "details": "Lower impact resistance, shatters more easily than borosilicate glass."
+        },
+        "thermal_stability": {
+          "score": 6,
+          "value": "150",
+          "unit": "\u00b0C",
+          "details": "Moderate thermal resistance, susceptible to thermal shock cracking."
+        },
+        "chemical_resistance": {
+          "score": 8,
+          "value": "3-11",
+          "unit": "pH range",
+          "details": "Good resistance to most chemicals, but less resistant than borosilicate."
+        },
+        "barrier_properties": {
+          "score": 10,
+          "value": "0.001",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Excellent barrier properties, impermeable to gases and liquids."
+        },
+        "durability": {
+          "score": 9,
+          "value": "100",
+          "unit": "years",
+          "details": "Very durable material with long-term resistance to degradation."
+        }
+      },
+      "overall_property_score": 7.33,
+      "optimal_applications": [
+        "Beverage Bottles",
+        "Food Jars"
+      ]
+    },
+    {
+      "material_name": "Polypropylene (PP)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 4,
+          "value": "35",
+          "unit": "MPa",
+          "details": "Moderate strength, suitable for flexible container applications only."
+        },
+        "impact_resistance": {
+          "score": 6,
+          "value": "30",
+          "unit": "J/m",
+          "details": "Good impact resistance, less brittle compared to glass materials."
+        },
+        "thermal_stability": {
+          "score": 5,
+          "value": "100",
+          "unit": "\u00b0C",
+          "details": "Limited thermal stability, softens at higher temperatures with ease."
+        },
+        "chemical_resistance": {
+          "score": 7,
+          "value": "2-13",
+          "unit": "pH range",
+          "details": "Good resistance to acids and bases, not suitable for strong solvents."
+        },
+        "barrier_properties": {
+          "score": 4,
+          "value": "15",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Moderate barrier to gases and liquids, not a high barrier option."
+        },
+        "durability": {
+          "score": 6,
+          "value": "5",
+          "unit": "years",
+          "details": "Moderate durability, susceptible to UV degradation, not long term."
+        }
+      },
+      "overall_property_score": 5.33,
+      "optimal_applications": [
+        "Bottle Caps",
+        "Closures"
+      ]
+    },
+    {
+      "material_name": "High-Density Polyethylene (HDPE)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 5,
+          "value": "40",
+          "unit": "MPa",
+          "details": "Good strength for a plastic, suitable for rigid containers always."
+        },
+        "impact_resistance": {
+          "score": 7,
+          "value": "40",
+          "unit": "J/m",
+          "details": "Good impact resistance, less prone to cracking during drops."
+        },
+        "thermal_stability": {
+          "score": 4,
+          "value": "80",
+          "unit": "\u00b0C",
+          "details": "Limited thermal stability, softens at relatively low temperatures easily."
+        },
+        "chemical_resistance": {
+          "score": 7,
+          "value": "1-14",
+          "unit": "pH range",
+          "details": "Good resistance to many chemicals, except for strong oxidizing agents."
+        },
+        "barrier_properties": {
+          "score": 5,
+          "value": "10",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Moderate barrier to moisture, but offers limited gas barrier performance."
+        },
+        "durability": {
+          "score": 7,
+          "value": "8",
+          "unit": "years",
+          "details": "Good durability, resistant to environmental stresses effectively here."
+        }
+      },
+      "overall_property_score": 5.83,
+      "optimal_applications": [
+        "Milk Jugs",
+        "Detergent Bottles"
+      ]
+    },
+    {
+      "material_name": "Polyethylene Terephthalate (PET)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 6,
+          "value": "55",
+          "unit": "MPa",
+          "details": "Good strength, ideal for pressurized containers, carbonated drinks, etc."
+        },
+        "impact_resistance": {
+          "score": 6,
+          "value": "35",
+          "unit": "J/m",
+          "details": "Good impact resistance, less prone to cracking than simple glass."
+        },
+        "thermal_stability": {
+          "score": 4,
+          "value": "70",
+          "unit": "\u00b0C",
+          "details": "Lower thermal stability, deforms at high temperatures usually always."
+        },
+        "chemical_resistance": {
+          "score": 7,
+          "value": "3-12",
+          "unit": "pH range",
+          "details": "Good resistance to dilute acids and bases, not strong solvents."
+        },
+        "barrier_properties": {
+          "score": 6,
+          "value": "8",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Good barrier to gases and liquids, keeps carbonation well intact."
+        },
+        "durability": {
+          "score": 7,
+          "value": "7",
+          "unit": "years",
+          "details": "Good durability, withstands common storage conditions quite reasonably."
+        }
+      },
+      "overall_property_score": 6,
+      "optimal_applications": [
+        "Soda Bottles",
+        "Water Bottles"
+      ]
+    },
+    {
+      "material_name": "Low-Density Polyethylene (LDPE)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 3,
+          "value": "10",
+          "unit": "MPa",
+          "details": "Low strength, suited for flexible applications such as squeeze bottles."
+        },
+        "impact_resistance": {
+          "score": 5,
+          "value": "20",
+          "unit": "J/m",
+          "details": "Moderate impact resistance, generally tougher than glass products."
+        },
+        "thermal_stability": {
+          "score": 3,
+          "value": "60",
+          "unit": "\u00b0C",
+          "details": "Poor thermal stability, softens very easily at mild heat level."
+        },
+        "chemical_resistance": {
+          "score": 6,
+          "value": "4-10",
+          "unit": "pH range",
+          "details": "Moderate chemical resistance, can react with some strong solvents."
+        },
+        "barrier_properties": {
+          "score": 3,
+          "value": "25",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Poor barrier to gases and liquids, not appropriate for long term."
+        },
+        "durability": {
+          "score": 5,
+          "value": "3",
+          "unit": "years",
+          "details": "Moderate durability, degrades relatively quickly compared to others."
+        }
+      },
+      "overall_property_score": 4.17,
+      "optimal_applications": [
+        "Squeeze Bottles",
+        "Plastic Films"
+      ]
+    },
+    {
+      "material_name": "Aluminum Alloy 5052",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 7,
+          "value": "228",
+          "unit": "MPa",
+          "details": "Strong and ductile, suitable for shaping into bottle forms properly."
+        },
+        "impact_resistance": {
+          "score": 8,
+          "value": "80",
+          "unit": "J/m",
+          "details": "Excellent impact resistance, less prone to shattering than glasses."
+        },
+        "thermal_stability": {
+          "score": 7,
+          "value": "200",
+          "unit": "\u00b0C",
+          "details": "Good thermal stability, can withstand moderate temperatures well here."
+        },
+        "chemical_resistance": {
+          "score": 7,
+          "value": "4-9",
+          "unit": "pH range",
+          "details": "Good resistance to corrosion, but vulnerable to strong acids/bases."
+        },
+        "barrier_properties": {
+          "score": 9,
+          "value": "0.01",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Excellent barrier properties, almost impermeable to gases/liquids really."
+        },
+        "durability": {
+          "score": 8,
+          "value": "15",
+          "unit": "years",
+          "details": "Very durable, resists degradation over extended period of usage."
+        }
+      },
+      "overall_property_score": 7.67,
+      "optimal_applications": [
+        "Aerosol Cans",
+        "Beverage Cans"
+      ]
+    },
+    {
+      "material_name": "Tinplate Steel",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 8,
+          "value": "300",
+          "unit": "MPa",
+          "details": "High strength, suitable for forming robust, rigid bottle shapes."
+        },
+        "impact_resistance": {
+          "score": 7,
+          "value": "70",
+          "unit": "J/m",
+          "details": "Good impact resistance, prevents fracturing easily in the market."
+        },
+        "thermal_stability": {
+          "score": 8,
+          "value": "250",
+          "unit": "\u00b0C",
+          "details": "Excellent thermal stability, withstands high temperatures generally well."
+        },
+        "chemical_resistance": {
+          "score": 6,
+          "value": "6-8",
+          "unit": "pH range",
+          "details": "Moderate resistance, prone to rust in acidic/alkaline environments."
+        },
+        "barrier_properties": {
+          "score": 9,
+          "value": "0.005",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Excellent barrier properties, providing protection from gases/liquids."
+        },
+        "durability": {
+          "score": 7,
+          "value": "10",
+          "unit": "years",
+          "details": "Good durability if coated, otherwise rust is a main concern."
+        }
+      },
+      "overall_property_score": 7.5,
+      "optimal_applications": [
+        "Canned Goods",
+        "Paint Cans"
+      ]
+    },
+    {
+      "material_name": "Pressure Sensitive Adhesive (PSA)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 2,
+          "value": "5",
+          "unit": "MPa",
+          "details": "Low strength, designed for adhesion rather than load-bearing properties."
+        },
+        "impact_resistance": {
+          "score": 1,
+          "value": "1",
+          "unit": "J/m",
+          "details": "Very low impact resistance, easily damaged by any direct impact."
+        },
+        "thermal_stability": {
+          "score": 3,
+          "value": "50",
+          "unit": "\u00b0C",
+          "details": "Limited thermal stability, adhesive properties degrade in hotter temps."
+        },
+        "chemical_resistance": {
+          "score": 4,
+          "value": "5-9",
+          "unit": "pH range",
+          "details": "Poor chemical resistance, solvents can easily degrade adhesion strength."
+        },
+        "barrier_properties": {
+          "score": 2,
+          "value": "30",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Poor barrier properties, allows moisture/gas to pass through easily."
+        },
+        "durability": {
+          "score": 3,
+          "value": "1",
+          "unit": "years",
+          "details": "Low durability, degrades quickly with exposure to UV or heat."
+        }
+      },
+      "overall_property_score": 2.5,
+      "optimal_applications": [
+        "Labels",
+        "Seals"
+      ]
+    },
+    {
+      "material_name": "Biaxially Oriented Polypropylene (BOPP)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 5,
+          "value": "150",
+          "unit": "MPa",
+          "details": "Moderate strength, good tensile strength for thin films on bottles."
+        },
+        "impact_resistance": {
+          "score": 4,
+          "value": "15",
+          "unit": "J/m",
+          "details": "Low impact resistance, can tear when punctured on bottle's surface."
+        },
+        "thermal_stability": {
+          "score": 4,
+          "value": "80",
+          "unit": "\u00b0C",
+          "details": "Poor thermal stability, film shrinks or melts at higher temperatures."
+        },
+        "chemical_resistance": {
+          "score": 6,
+          "value": "4-10",
+          "unit": "pH range",
+          "details": "Moderate chemical resistance, resists weak acids/bases relatively well."
+        },
+        "barrier_properties": {
+          "score": 5,
+          "value": "12",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Moderate barrier, prevents moisture gain or loss in bottle package."
+        },
+        "durability": {
+          "score": 6,
+          "value": "4",
+          "unit": "years",
+          "details": "Moderate durability, degrades under UV exposure in long term."
+        }
+      },
+      "overall_property_score": 5,
+      "optimal_applications": [
+        "Labels",
+        "Wrappers"
+      ]
+    },
+    {
+      "material_name": "Paper (Wood Pulp Based)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 3,
+          "value": "8",
+          "unit": "MPa",
+          "details": "Low strength, easily tears and crumples when any direct force hits."
+        },
+        "impact_resistance": {
+          "score": 2,
+          "value": "5",
+          "unit": "J/m",
+          "details": "Very low impact resistance, easily damaged by impact on the exterior."
+        },
+        "thermal_stability": {
+          "score": 5,
+          "value": "100",
+          "unit": "\u00b0C",
+          "details": "Moderate thermal stability, burns easily but resists low heat still."
+        },
+        "chemical_resistance": {
+          "score": 3,
+          "value": "5-7",
+          "unit": "pH range",
+          "details": "Poor chemical resistance, degrades quickly with any liquids here."
+        },
+        "barrier_properties": {
+          "score": 2,
+          "value": "50",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Very poor barrier, allows gas and moisture to pass directly thru."
+        },
+        "durability": {
+          "score": 3,
+          "value": "2",
+          "unit": "years",
+          "details": "Very low durability, easily degrades with exposure to environmental factors."
+        }
+      },
+      "overall_property_score": 3,
+      "optimal_applications": [
+        "Labels",
+        "Secondary Packaging"
+      ]
+    },
+    {
+      "material_name": "Thermoplastic Elastomer (TPE)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 4,
+          "value": "20",
+          "unit": "MPa",
+          "details": "Low strength, flexible and easily deformable under much stress often."
+        },
+        "impact_resistance": {
+          "score": 7,
+          "value": "50",
+          "unit": "J/m",
+          "details": "Good impact resistance, absorbs energy without fracturing easily again."
+        },
+        "thermal_stability": {
+          "score": 5,
+          "value": "80",
+          "unit": "\u00b0C",
+          "details": "Limited thermal stability, softens when exposed to higher heat levels."
+        },
+        "chemical_resistance": {
+          "score": 6,
+          "value": "5-10",
+          "unit": "pH range",
+          "details": "Moderate chemical resistance, resistant to some acids and bases then."
+        },
+        "barrier_properties": {
+          "score": 4,
+          "value": "20",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Low barrier properties, some gas and moisture permeable quickly then."
+        },
+        "durability": {
+          "score": 6,
+          "value": "5",
+          "unit": "years",
+          "details": "Moderate durability, can degrade under prolonged UV exposure too."
+        }
+      },
+      "overall_property_score": 5.33,
+      "optimal_applications": [
+        "Grips",
+        "Seals"
+      ]
+    },
+    {
+      "material_name": "Ethylene Vinyl Acetate (EVA)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 3,
+          "value": "15",
+          "unit": "MPa",
+          "details": "Low strength, flexible and cushioning properties often present today."
+        },
+        "impact_resistance": {
+          "score": 6,
+          "value": "40",
+          "unit": "J/m",
+          "details": "Good impact resistance, absorbs shock without breaking apart often."
+        },
+        "thermal_stability": {
+          "score": 4,
+          "value": "70",
+          "unit": "\u00b0C",
+          "details": "Poor thermal stability, softens quite easily when temperatures are high."
+        },
+        "chemical_resistance": {
+          "score": 5,
+          "value": "6-8",
+          "unit": "pH range",
+          "details": "Low chemical resistance, damaged by exposure to strong solutions here."
+        },
+        "barrier_properties": {
+          "score": 3,
+          "value": "25",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Low barrier properties, permeable to some gases or moisture quickly."
+        },
+        "durability": {
+          "score": 5,
+          "value": "4",
+          "unit": "years",
+          "details": "Moderate durability, susceptible to UV degradation and wear often."
+        }
+      },
+      "overall_property_score": 4.33,
+      "optimal_applications": [
+        "Cushioning",
+        "Seals"
+      ]
+    },
+    {
+      "material_name": "Polyvinyl Chloride (PVC)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 6,
+          "value": "40",
+          "unit": "MPa",
+          "details": "Good strength, rigid PVC suited for structural bottle applications still."
+        },
+        "impact_resistance": {
+          "score": 5,
+          "value": "25",
+          "unit": "J/m",
+          "details": "Moderate impact resistance, can crack when subjected to large forces."
+        },
+        "thermal_stability": {
+          "score": 4,
+          "value": "75",
+          "unit": "\u00b0C",
+          "details": "Poor thermal stability, deforms when heated too vigorously quickly then."
+        },
+        "chemical_resistance": {
+          "score": 7,
+          "value": "2-12",
+          "unit": "pH range",
+          "details": "Good chemical resistance, resists acids, bases and solvents largely well."
+        },
+        "barrier_properties": {
+          "score": 6,
+          "value": "10",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Good barrier properties, prevents moisture and gas entry efficiently."
+        },
+        "durability": {
+          "score": 7,
+          "value": "8",
+          "unit": "years",
+          "details": "Good durability, resists weather and chemicals for long periods then."
+        }
+      },
+      "overall_property_score": 5.83,
+      "optimal_applications": [
+        "Bottles",
+        "Pipes"
+      ]
+    },
+    {
+      "material_name": "Expanded Polyethylene (EPE)",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 2,
+          "value": "2",
+          "unit": "MPa",
+          "details": "Very low strength, flexible and cushioning mainly inside packages also."
+        },
+        "impact_resistance": {
+          "score": 8,
+          "value": "60",
+          "unit": "J/m",
+          "details": "Excellent impact resistance, absorbs shock very well for fragile goods."
+        },
+        "thermal_stability": {
+          "score": 3,
+          "value": "70",
+          "unit": "\u00b0C",
+          "details": "Poor thermal stability, melts easily when exposed to high heat always."
+        },
+        "chemical_resistance": {
+          "score": 5,
+          "value": "5-9",
+          "unit": "pH range",
+          "details": "Low chemical resistance, degrades quickly in the face of solvents soon."
+        },
+        "barrier_properties": {
+          "score": 2,
+          "value": "40",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Very poor barrier, allows gas and moisture to pass through quickly."
+        },
+        "durability": {
+          "score": 4,
+          "value": "3",
+          "unit": "years",
+          "details": "Limited durability, prone to degradation from UV light always now."
+        }
+      },
+      "overall_property_score": 4,
+      "optimal_applications": [
+        "Cushioning",
+        "Protective Packaging"
+      ]
+    },
+    {
+      "material_name": "Corrugated Fiberboard",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 5,
+          "value": "15",
+          "unit": "MPa",
+          "details": "Moderate strength, good stacking ability for secondary packaging only."
+        },
+        "impact_resistance": {
+          "score": 4,
+          "value": "15",
+          "unit": "J/m",
+          "details": "Low impact resistance, can crush or puncture from direct impact right."
+        },
+        "thermal_stability": {
+          "score": 5,
+          "value": "100",
+          "unit": "\u00b0C",
+          "details": "Moderate thermal stability, burns, but handles low heat easily today."
+        },
+        "chemical_resistance": {
+          "score": 3,
+          "value": "5-7",
+          "unit": "pH range",
+          "details": "Poor chemical resistance, degrades with exposure to moisture always soon."
+        },
+        "barrier_properties": {
+          "score": 3,
+          "value": "40",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Poor barrier, lets gases/moisture pass right through the material still."
+        },
+        "durability": {
+          "score": 4,
+          "value": "3",
+          "unit": "years",
+          "details": "Limited durability, can degrade due to environmental factors soon."
+        }
+      },
+      "overall_property_score": 4,
+      "optimal_applications": [
+        "Shipping Boxes",
+        "Secondary Packaging"
+      ]
+    },
+    {
+      "material_name": "Kraft Paper",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 4,
+          "value": "10",
+          "unit": "MPa",
+          "details": "Low strength, often used as a wrapping/void-fill inside a package."
+        },
+        "impact_resistance": {
+          "score": 3,
+          "value": "10",
+          "unit": "J/m",
+          "details": "Low impact resistance, will tear or puncture when directly hit always."
+        },
+        "thermal_stability": {
+          "score": 5,
+          "value": "100",
+          "unit": "\u00b0C",
+          "details": "Moderate thermal stability, burns quickly but resists low heat still now."
+        },
+        "chemical_resistance": {
+          "score": 3,
+          "value": "5-7",
+          "unit": "pH range",
+          "details": "Poor chemical resistance, degrades quickly when exposed to liquids here."
+        },
+        "barrier_properties": {
+          "score": 2,
+          "value": "50",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Very poor barrier properties, allows gas/moisture to pass directly thru."
+        },
+        "durability": {
+          "score": 3,
+          "value": "2",
+          "unit": "years",
+          "details": "Limited durability, degrades when exposed to outside elements now soon."
+        }
+      },
+      "overall_property_score": 3.33,
+      "optimal_applications": [
+        "Wrapping",
+        "Void Fill"
+      ]
+    },
+    {
+      "material_name": "Water-Based Acrylic Adhesive",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 2,
+          "value": "3",
+          "unit": "MPa",
+          "details": "Low strength, holds labels or closures in place only inside."
+        },
+        "impact_resistance": {
+          "score": 1,
+          "value": "1",
+          "unit": "J/m",
+          "details": "Very low impact resistance, easily damaged from impact always often."
+        },
+        "thermal_stability": {
+          "score": 3,
+          "value": "60",
+          "unit": "\u00b0C",
+          "details": "Limited thermal stability, weakens at temperatures high above always."
+        },
+        "chemical_resistance": {
+          "score": 4,
+          "value": "6-8",
+          "unit": "pH range",
+          "details": "Poor chemical resistance, solvents degrade the bond fairly easily soon."
+        },
+        "barrier_properties": {
+          "score": 1,
+          "value": "60",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Very poor barrier, allows gas or moisture thru the adhesive region now."
+        },
+        "durability": {
+          "score": 2,
+          "value": "1",
+          "unit": "years",
+          "details": "Very limited durability, degrades with prolonged exposure now today."
+        }
+      },
+      "overall_property_score": 2.17,
+      "optimal_applications": [
+        "Labels",
+        "Seals"
+      ]
+    },
+    {
+      "material_name": "Hot Melt Adhesive",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 3,
+          "value": "7",
+          "unit": "MPa",
+          "details": "Low strength, used to hold closures to bottles or boxes mainly."
+        },
+        "impact_resistance": {
+          "score": 2,
+          "value": "2",
+          "unit": "J/m",
+          "details": "Very low impact resistance, shatters or breaks apart when struck hard."
+        },
+        "thermal_stability": {
+          "score": 4,
+          "value": "80",
+          "unit": "\u00b0C",
+          "details": "Poor thermal stability, re-melts when reheated or is too warm also."
+        },
+        "chemical_resistance": {
+          "score": 5,
+          "value": "5-9",
+          "unit": "pH range",
+          "details": "Low chemical resistance, easily degraded by contact from solutions soon."
+        },
+        "barrier_properties": {
+          "score": 2,
+          "value": "40",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Very poor barrier, will allow moisture and gases to pass quickly thru."
+        },
+        "durability": {
+          "score": 3,
+          "value": "2",
+          "unit": "years",
+          "details": "Limited durability, adhesive properties degrade over long use fully."
+        }
+      },
+      "overall_property_score": 3.17,
+      "optimal_applications": [
+        "Seals",
+        "Closures"
+      ]
+    },
+    {
+      "material_name": "Silicone Rubber",
+      "metrics": {
+        "mechanical_strength": {
+          "score": 4,
+          "value": "8",
+          "unit": "MPa",
+          "details": "Low strength, flexible and used for sealing or cushioning only now."
+        },
+        "impact_resistance": {
+          "score": 7,
+          "value": "60",
+          "unit": "J/m",
+          "details": "Good impact resistance, absorbs significant energy without cracking much."
+        },
+        "thermal_stability": {
+          "score": 8,
+          "value": "200",
+          "unit": "\u00b0C",
+          "details": "Excellent thermal stability, high heat resistance for closures always then."
+        },
+        "chemical_resistance": {
+          "score": 7,
+          "value": "3-11",
+          "unit": "pH range",
+          "details": "Good chemical resistance, many solutions are handled well by them."
+        },
+        "barrier_properties": {
+          "score": 5,
+          "value": "15",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "details": "Moderate barrier, not impermeable to all gases or moisture slowly."
+        },
+        "durability": {
+          "score": 8,
+          "value": "12",
+          "unit": "years",
+          "details": "Very durable, resists long-term degradation with exposures readily here."
+        }
+      },
+      "overall_property_score": 6.5,
+      "optimal_applications": [
+        "Seals",
+        "Closures"
+      ]
+    }
+  ],
+  "summary": {
+    "top_performers": [
+      "Borosilicate Glass",
+      "Soda-Lime Glass",
+      "Aluminum Alloy 5052"
+    ],
+    "by_property": {
+      "mechanical_strength": [
+        "Tinplate Steel",
+        "Aluminum Alloy 5052",
+        "Borosilicate Glass"
+      ],
+      "impact_resistance": [
+        "Aluminum Alloy 5052",
+        "Expanded Polyethylene (EPE)",
+        "Silicone Rubber"
+      ],
+      "thermal_stability": [
+        "Borosilicate Glass",
+        "Tinplate Steel",
+        "Silicone Rubber"
+      ],
+      "chemical_resistance": [
+        "Borosilicate Glass",
+        "Soda-Lime Glass",
+        "HDPE"
+      ],
+      "barrier_properties": [
+        "Borosilicate Glass",
+        "Soda-Lime Glass",
+        "Tinplate Steel"
+      ],
+      "durability": [
+        "Borosilicate Glass",
+        "Soda-Lime Glass",
+        "Aluminum Alloy 5052"
+      ]
+    }
+  },
+  "analysis_timestamp": "2025-04-15 12:59:00",
+  "user_login": "codegeek03"
+}

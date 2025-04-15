@@ -1,0 +1,87 @@
+{
+  "product_name": "Glass Bottle",
+  "materials": [
+    {
+      "material_name": "Borosilicate Glass",
+      "justification": "High thermal shock resistance makes it ideal for hot-fill bottling."
+    },
+    {
+      "material_name": "Soda-Lime Glass",
+      "justification": "Cost-effective; the most common glass for beverage bottling globally."
+    },
+    {
+      "material_name": "Polypropylene (PP)",
+      "justification": "Used for bottle caps due to its chemical resistance and flexibility."
+    },
+    {
+      "material_name": "High-Density Polyethylene (HDPE)",
+      "justification": "Used for bottle caps due to its strength and moisture barrier."
+    },
+    {
+      "material_name": "Polyethylene Terephthalate (PET)",
+      "justification": "Used as coating to improve the glass bottles resistance to scratches."
+    },
+    {
+      "material_name": "Low-Density Polyethylene (LDPE)",
+      "justification": "Flexible liner material used in some beverage bottle closures/caps."
+    },
+    {
+      "material_name": "Aluminum Alloy 5052",
+      "justification": "Used for bottle caps; corrosion resistance and malleability are crucial."
+    },
+    {
+      "material_name": "Tinplate Steel",
+      "justification": "Used for bottle caps; provides a strong and easily formable barrier."
+    },
+    {
+      "material_name": "Pressure Sensitive Adhesive (PSA)",
+      "justification": "Label adhesive, strong adhesion to glass under varying conditions required."
+    },
+    {
+      "material_name": "Biaxially Oriented Polypropylene (BOPP)",
+      "justification": "Label film with good clarity, tensile strength, and moisture resistance."
+    },
+    {
+      "material_name": "Paper (Wood Pulp Based)",
+      "justification": "Label stock; cost-effective option for branding and product information."
+    },
+    {
+      "material_name": "Thermoplastic Elastomer (TPE)",
+      "justification": "Gasket material in closures; provides a tight, flexible, leak-proof seal."
+    },
+    {
+      "material_name": "Ethylene Vinyl Acetate (EVA)",
+      "justification": "Used as a sealant in bottle cap liners for specific beverages."
+    },
+    {
+      "material_name": "Polyvinyl Chloride (PVC)",
+      "justification": "Shrink sleeve labels for tamper evidence and product decoration."
+    },
+    {
+      "material_name": "Expanded Polyethylene (EPE)",
+      "justification": "Protective cushioning inside of boxes preventing glass bottles from breaking."
+    },
+    {
+      "material_name": "Corrugated Fiberboard",
+      "justification": "Outer shipping boxes offer strength for stacking and protect from damage."
+    },
+    {
+      "material_name": "Kraft Paper",
+      "justification": "Void fill/cushioning in secondary packaging prevents bottle collisions/breakage."
+    },
+    {
+      "material_name": "Water-Based Acrylic Adhesive",
+      "justification": "Environmentally friendly adhesive for labels that is easy to recycle."
+    },
+    {
+      "material_name": "Hot Melt Adhesive",
+      "justification": "Carton sealing to hold outer package together protecting glass bottles."
+    },
+    {
+      "material_name": "Silicone Rubber",
+      "justification": "Used in some specialized bottle closures providing excellent sealing properties."
+    }
+  ],
+  "analysis_timestamp": "2025-04-15 12:32:08",
+  "user_login": "shami"
+}
