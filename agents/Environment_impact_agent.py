@@ -19,7 +19,8 @@ class EnvironmentalImpactAgent:
         if not api_key:
             raise ValueError("GOOGLE_API_KEY environment variable is not set")
 
-        self.reports_dir = "environmental_reports"
+        self.reports_dir = "temp_KB"
+
         os.makedirs(self.reports_dir, exist_ok=True)
 
         self.user_login = getpass.getuser()
@@ -56,7 +57,13 @@ class EnvironmentalImpactAgent:
     def _save_report_to_file(self, data: Dict[str, Any], product_name: str) -> str:
         timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
         filename = f"{product_name.replace(' ', '_')}_environmental_report.json"
-        filepath = os.path.join(self.reports_dir, filename)
+        
+        # Create Database directory one level up from the current directory if it doesn't exist
+        database_dir = os.path.join(os.path.dirname(os.path.dirname(self.reports_dir)), 'Database')
+        os.makedirs(database_dir, exist_ok=True)
+        
+        # Save the file in the Database directory
+        filepath = os.path.join(database_dir, filename)
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2)
         return filepath

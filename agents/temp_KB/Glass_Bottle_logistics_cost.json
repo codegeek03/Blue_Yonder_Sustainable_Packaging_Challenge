@@ -1,0 +1,861 @@
+{
+  "product_name": "Glass Bottle",
+  "logistics_analysis": [
+    {
+      "material_name": "Borosilicate Glass",
+      "metrics": {
+        "weight_density": {
+          "score": 3,
+          "value": "2200",
+          "unit": "kg/m\u00b3",
+          "details": "High density impacts shipping costs significantly."
+        },
+        "volume_efficiency": {
+          "score": 7,
+          "value": "65",
+          "unit": "%",
+          "details": "Shape limits packing density within cartons."
+        },
+        "stackability": {
+          "score": 4,
+          "value": "4",
+          "unit": "rating",
+          "details": "Requires dividers for safe vertical stacking."
+        },
+        "transport_mode_fit": {
+          "score": 6,
+          "value": "6",
+          "unit": "rating",
+          "details": "Suitable for most, but needs protection."
+        },
+        "fragility_index": {
+          "score": 2,
+          "value": "2",
+          "unit": "rating",
+          "details": "Highly fragile, prone to breakage in transit."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.85",
+          "unit": "USD/kg",
+          "details": "Higher due to weight and breakage risk."
+        }
+      },
+      "overall_logistics_score": 4.3
+    },
+    {
+      "material_name": "Soda-Lime Glass",
+      "metrics": {
+        "weight_density": {
+          "score": 3,
+          "value": "2500",
+          "unit": "kg/m\u00b3",
+          "details": "Even denser, increasing transport costs."
+        },
+        "volume_efficiency": {
+          "score": 7,
+          "value": "65",
+          "unit": "%",
+          "details": "Similar shape restrictions affect volume."
+        },
+        "stackability": {
+          "score": 4,
+          "value": "4",
+          "unit": "rating",
+          "details": "Needs dividers to prevent damage."
+        },
+        "transport_mode_fit": {
+          "score": 6,
+          "value": "6",
+          "unit": "rating",
+          "details": "Requires careful handling in all modes."
+        },
+        "fragility_index": {
+          "score": 2,
+          "value": "2",
+          "unit": "rating",
+          "details": "More prone to shattering upon impact."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.90",
+          "unit": "USD/kg",
+          "details": "High cost due to weight and fragility."
+        }
+      },
+      "overall_logistics_score": 4.3
+    },
+    {
+      "material_name": "Low-Density Polyethylene (LDPE)",
+      "metrics": {
+        "weight_density": {
+          "score": 9,
+          "value": "920",
+          "unit": "kg/m\u00b3",
+          "details": "Lightweight, reduces shipping expenses noticeably."
+        },
+        "volume_efficiency": {
+          "score": 6,
+          "value": "70",
+          "unit": "%",
+          "details": "Flexible shape allows for better packing."
+        },
+        "stackability": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Can withstand moderate stacking pressures."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Excellent fit across various transportation methods."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Highly resistant to damage during shipping."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.35",
+          "unit": "USD/kg",
+          "details": "Lower due to lightweight and durability."
+        }
+      },
+      "overall_logistics_score": 8.3
+    },
+    {
+      "material_name": "High-Density Polyethylene (HDPE)",
+      "metrics": {
+        "weight_density": {
+          "score": 9,
+          "value": "950",
+          "unit": "kg/m\u00b3",
+          "details": "Still lightweight, keeps shipping economical."
+        },
+        "volume_efficiency": {
+          "score": 6,
+          "value": "70",
+          "unit": "%",
+          "details": "Consistent shape optimizes carton space."
+        },
+        "stackability": {
+          "score": 8,
+          "value": "8",
+          "unit": "rating",
+          "details": "Improved rigidity enhances stacking performance."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Very versatile for diverse shipping requirements."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Excellent resistance to impacts and abrasions."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.40",
+          "unit": "USD/kg",
+          "details": "Cost-effective in handling and transportation."
+        }
+      },
+      "overall_logistics_score": 8.5
+    },
+    {
+      "material_name": "Polypropylene (PP)",
+      "metrics": {
+        "weight_density": {
+          "score": 9,
+          "value": "900",
+          "unit": "kg/m\u00b3",
+          "details": "Very light, reduces overall transport weight."
+        },
+        "volume_efficiency": {
+          "score": 7,
+          "value": "75",
+          "unit": "%",
+          "details": "Adaptable shape allows for dense packing."
+        },
+        "stackability": {
+          "score": 8,
+          "value": "8",
+          "unit": "rating",
+          "details": "Good structural integrity for stacking boxes."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Well-suited for varied transport conditions."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Strong and durable, minimizes damage risk."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.38",
+          "unit": "USD/kg",
+          "details": "Economical for shipping due to its properties."
+        }
+      },
+      "overall_logistics_score": 8.6
+    },
+    {
+      "material_name": "Polyethylene Terephthalate (PET)",
+      "metrics": {
+        "weight_density": {
+          "score": 8,
+          "value": "1380",
+          "unit": "kg/m\u00b3",
+          "details": "Moderate density affects shipping costs moderately."
+        },
+        "volume_efficiency": {
+          "score": 7,
+          "value": "72",
+          "unit": "%",
+          "details": "Consistent shape improves packing density."
+        },
+        "stackability": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Good compressive strength for stacking purposes."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Highly adaptable to diverse shipping environments."
+        },
+        "fragility_index": {
+          "score": 8,
+          "value": "8",
+          "unit": "rating",
+          "details": "Good resistance to impacts during transit."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.42",
+          "unit": "USD/kg",
+          "details": "Fairly economical, balancing weight and durability."
+        }
+      },
+      "overall_logistics_score": 7.8
+    },
+    {
+      "material_name": "Biaxially Oriented Polypropylene (BOPP)",
+      "metrics": {
+        "weight_density": {
+          "score": 9,
+          "value": "910",
+          "unit": "kg/m\u00b3",
+          "details": "Very lightweight, reduces transport expenses."
+        },
+        "volume_efficiency": {
+          "score": 8,
+          "value": "80",
+          "unit": "%",
+          "details": "Thin film allows for efficient space utilization."
+        },
+        "stackability": {
+          "score": 6,
+          "value": "6",
+          "unit": "rating",
+          "details": "Needs support for stacking to avoid deformation."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Excellent adaptability to varied transportation modes."
+        },
+        "fragility_index": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Tear resistance needs to be considered carefully."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.30",
+          "unit": "USD/kg",
+          "details": "Highly cost-effective in handling and shipping."
+        }
+      },
+      "overall_logistics_score": 8.2
+    },
+    {
+      "material_name": "Aluminum Alloy 5052",
+      "metrics": {
+        "weight_density": {
+          "score": 5,
+          "value": "2680",
+          "unit": "kg/m\u00b3",
+          "details": "Heavy material, significant impact on transport cost."
+        },
+        "volume_efficiency": {
+          "score": 8,
+          "value": "75",
+          "unit": "%",
+          "details": "Shape can improve packing density within containers."
+        },
+        "stackability": {
+          "score": 8,
+          "value": "8",
+          "unit": "rating",
+          "details": "High structural strength allows safe stacking."
+        },
+        "transport_mode_fit": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Suitable, but weight increases transport costs."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Highly durable, resistant to damage during shipping."
+        },
+        "logistics_cost_estimate": {
+          "value": "1.10",
+          "unit": "USD/kg",
+          "details": "Higher material and transport expenses overall."
+        }
+      },
+      "overall_logistics_score": 7.4
+    },
+    {
+      "material_name": "Tinplate Steel",
+      "metrics": {
+        "weight_density": {
+          "score": 5,
+          "value": "7850",
+          "unit": "kg/m\u00b3",
+          "details": "Very heavy, greatly increases shipping expenses."
+        },
+        "volume_efficiency": {
+          "score": 8,
+          "value": "75",
+          "unit": "%",
+          "details": "Shape efficient for maximizing container space."
+        },
+        "stackability": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Exceptional strength ensures safe vertical stacking."
+        },
+        "transport_mode_fit": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Versatile, but heavy weight needs consideration."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Extremely durable, withstands harsh conditions."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.95",
+          "unit": "USD/kg",
+          "details": "Heavier weight significantly raises shipping costs."
+        }
+      },
+      "overall_logistics_score": 7.6
+    },
+    {
+      "material_name": "Pressure Sensitive Adhesive",
+      "metrics": {
+        "weight_density": {
+          "score": 7,
+          "value": "1000",
+          "unit": "kg/m\u00b3",
+          "details": "Moderate density, minor impact on shipping cost."
+        },
+        "volume_efficiency": {
+          "score": 9,
+          "value": "95",
+          "unit": "%",
+          "details": "Minimal volume, efficient space utilization in transport."
+        },
+        "stackability": {
+          "score": 5,
+          "value": "5",
+          "unit": "rating",
+          "details": "Packaging influences stackability more than the adhesive itself."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Highly adaptable to various transportation methods."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Resistant to damage, protects underlying materials."
+        },
+        "logistics_cost_estimate": {
+          "value": "1.50",
+          "unit": "USD/kg",
+          "details": "Special handling and storage affects costs mostly."
+        }
+      },
+      "overall_logistics_score": 7.8
+    },
+    {
+      "material_name": "Styrene-Butadiene Rubber (SBR)",
+      "metrics": {
+        "weight_density": {
+          "score": 7,
+          "value": "940",
+          "unit": "kg/m\u00b3",
+          "details": "Moderate density, affects shipping costs slightly."
+        },
+        "volume_efficiency": {
+          "score": 8,
+          "value": "85",
+          "unit": "%",
+          "details": "Compressible, which can improve volume efficiency slightly."
+        },
+        "stackability": {
+          "score": 6,
+          "value": "6",
+          "unit": "rating",
+          "details": "Stackability depends on packaging and compression rate."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Versatile and adaptable across various transportation types."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Good impact and tear resistance, durable during shipping."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.75",
+          "unit": "USD/kg",
+          "details": "Cost-effective and safe during transport and storage."
+        }
+      },
+      "overall_logistics_score": 7.8
+    },
+    {
+      "material_name": "Ethylene-Propylene Diene Monomer (EPDM)",
+      "metrics": {
+        "weight_density": {
+          "score": 7,
+          "value": "860",
+          "unit": "kg/m\u00b3",
+          "details": "Low to moderate density reduces shipping costs slightly."
+        },
+        "volume_efficiency": {
+          "score": 8,
+          "value": "85",
+          "unit": "%",
+          "details": "Compressible nature can improve volume efficiency."
+        },
+        "stackability": {
+          "score": 6,
+          "value": "6",
+          "unit": "rating",
+          "details": "Stackability influenced by packaging and compression."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Good adaptability for various shipping methods."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "High resistance to damage, durable during transport."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.80",
+          "unit": "USD/kg",
+          "details": "Stable and cost-effective for transport and handling."
+        }
+      },
+      "overall_logistics_score": 7.8
+    },
+    {
+      "material_name": "Thermoplastic Elastomer (TPE)",
+      "metrics": {
+        "weight_density": {
+          "score": 7,
+          "value": "1000",
+          "unit": "kg/m\u00b3",
+          "details": "Moderate density, affects shipping costs moderately."
+        },
+        "volume_efficiency": {
+          "score": 8,
+          "value": "85",
+          "unit": "%",
+          "details": "Compressible, improving space efficiency in containers."
+        },
+        "stackability": {
+          "score": 6,
+          "value": "6",
+          "unit": "rating",
+          "details": "Stackability relies on packaging method used."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Good for various modes of transportation."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Durable, impact and tear resistance ensures protection."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.90",
+          "unit": "USD/kg",
+          "details": "Transport and storage cost reflects its material characteristics."
+        }
+      },
+      "overall_logistics_score": 7.8
+    },
+    {
+      "material_name": "Kraft Paper",
+      "metrics": {
+        "weight_density": {
+          "score": 8,
+          "value": "700",
+          "unit": "kg/m\u00b3",
+          "details": "Lightweight helps in reducing overall shipping cost."
+        },
+        "volume_efficiency": {
+          "score": 8,
+          "value": "80",
+          "unit": "%",
+          "details": "Roll form allows for efficient use of transport space."
+        },
+        "stackability": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Requires sturdy packaging for vertical stacking purposes."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Highly versatile across different modes of transportation."
+        },
+        "fragility_index": {
+          "score": 6,
+          "value": "6",
+          "unit": "rating",
+          "details": "Tearable, requires protection from sharp objects/moisture."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.25",
+          "unit": "USD/kg",
+          "details": "Very economical for shipping and handling purposes."
+        }
+      },
+      "overall_logistics_score": 7.6
+    },
+    {
+      "material_name": "Corrugated Fiberboard",
+      "metrics": {
+        "weight_density": {
+          "score": 8,
+          "value": "800",
+          "unit": "kg/m\u00b3",
+          "details": "Lightweight helps minimize transport expenses."
+        },
+        "volume_efficiency": {
+          "score": 7,
+          "value": "75",
+          "unit": "%",
+          "details": "Flat pack option improves empty container returns."
+        },
+        "stackability": {
+          "score": 8,
+          "value": "8",
+          "unit": "rating",
+          "details": "Provides good support for stacking containers safely."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Well-suited for any mode of transport, readily available."
+        },
+        "fragility_index": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Vulnerable to moisture; may collapse if wet."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.30",
+          "unit": "USD/kg",
+          "details": "Highly economical for shipping and storage applications."
+        }
+      },
+      "overall_logistics_score": 7.8
+    },
+    {
+      "material_name": "Hot Melt Adhesive",
+      "metrics": {
+        "weight_density": {
+          "score": 7,
+          "value": "950",
+          "unit": "kg/m\u00b3",
+          "details": "Moderate density affects overall shipping cost."
+        },
+        "volume_efficiency": {
+          "score": 9,
+          "value": "90",
+          "unit": "%",
+          "details": "Small quantity use means highly efficient use of transport space."
+        },
+        "stackability": {
+          "score": 5,
+          "value": "5",
+          "unit": "rating",
+          "details": "Adhesive performance influences stackability indirectly."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Adaptable across transport, sensitive to temperature extremes."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Protects the structural integrity of sealed packages."
+        },
+        "logistics_cost_estimate": {
+          "value": "1.20",
+          "unit": "USD/kg",
+          "details": "Special storage and handling needs can impact cost."
+        }
+      },
+      "overall_logistics_score": 7.8
+    },
+    {
+      "material_name": "Polyvinyl Chloride (PVC)",
+      "metrics": {
+        "weight_density": {
+          "score": 6,
+          "value": "1400",
+          "unit": "kg/m\u00b3",
+          "details": "Higher density, increases shipping costs compared to other plastics."
+        },
+        "volume_efficiency": {
+          "score": 7,
+          "value": "70",
+          "unit": "%",
+          "details": "Rigid structure limits efficient packing into available container space."
+        },
+        "stackability": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Good strength allows for stackable box structures/units."
+        },
+        "transport_mode_fit": {
+          "score": 8,
+          "value": "8",
+          "unit": "rating",
+          "details": "Requires controlled temperature conditions during transportation."
+        },
+        "fragility_index": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Prone to cracking or shattering under significant impact."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.50",
+          "unit": "USD/kg",
+          "details": "Balances material costs versus transportation and storage risks."
+        }
+      },
+      "overall_logistics_score": 7.0
+    },
+    {
+      "material_name": "Acrylate Polymer Emulsion",
+      "metrics": {
+        "weight_density": {
+          "score": 7,
+          "value": "1050",
+          "unit": "kg/m\u00b3",
+          "details": "Moderate density, moderate influence on shipping costs."
+        },
+        "volume_efficiency": {
+          "score": 9,
+          "value": "90",
+          "unit": "%",
+          "details": "Minimal volume when applied, highly efficient for transport."
+        },
+        "stackability": {
+          "score": 5,
+          "value": "5",
+          "unit": "rating",
+          "details": "Stackability is indirectly influenced; contributes to packaging strength."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Transportation across all modes; protects from extreme temperature."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Forms a protective seal, preventing damage during transportation."
+        },
+        "logistics_cost_estimate": {
+          "value": "1.30",
+          "unit": "USD/kg",
+          "details": "Special transport and storage conditions can increase costs."
+        }
+      },
+      "overall_logistics_score": 7.8
+    },
+    {
+      "material_name": "Nylon (Polyamide)",
+      "metrics": {
+        "weight_density": {
+          "score": 7,
+          "value": "1150",
+          "unit": "kg/m\u00b3",
+          "details": "Moderate density has a modest impact on transport cost."
+        },
+        "volume_efficiency": {
+          "score": 7,
+          "value": "75",
+          "unit": "%",
+          "details": "Can be shaped efficiently depending on packaging type."
+        },
+        "stackability": {
+          "score": 7,
+          "value": "7",
+          "unit": "rating",
+          "details": "Resistant, enables moderate stacking capabilities in boxes."
+        },
+        "transport_mode_fit": {
+          "score": 8,
+          "value": "8",
+          "unit": "rating",
+          "details": "Adaptable, needing specific climate/handling based on specific packaging."
+        },
+        "fragility_index": {
+          "score": 8,
+          "value": "8",
+          "unit": "rating",
+          "details": "Durable, tolerating impact and abrasions during transport/handling."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.60",
+          "unit": "USD/kg",
+          "details": "Provides protection, influencing overall logistics cost considerations."
+        }
+      },
+      "overall_logistics_score": 7.4
+    },
+    {
+      "material_name": "Polyisobutylene (PIB)",
+      "metrics": {
+        "weight_density": {
+          "score": 8,
+          "value": "920",
+          "unit": "kg/m\u00b3",
+          "details": "Low density aids in keeping shipping expenses low."
+        },
+        "volume_efficiency": {
+          "score": 8,
+          "value": "85",
+          "unit": "%",
+          "details": "Compressible, improving space savings in containers."
+        },
+        "stackability": {
+          "score": 6,
+          "value": "6",
+          "unit": "rating",
+          "details": "Stacking ability dependant on packaging type used."
+        },
+        "transport_mode_fit": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Flexible for varied shipping methods and conditions."
+        },
+        "fragility_index": {
+          "score": 9,
+          "value": "9",
+          "unit": "rating",
+          "details": "Resilient, impact and tear resistance for protecting products."
+        },
+        "logistics_cost_estimate": {
+          "value": "0.85",
+          "unit": "USD/kg",
+          "details": "Balances material benefits with moderate transport costs."
+        }
+      },
+      "overall_logistics_score": 8.0
+    }
+  ],
+  "summary": {
+    "lowest_cost_materials": [
+      "Kraft Paper",
+      "Biaxially Oriented Polypropylene (BOPP)",
+      "Low-Density Polyethylene (LDPE)"
+    ],
+    "by_metric": {
+      "weight_density": [
+        "Polypropylene (PP)",
+        "Low-Density Polyethylene (LDPE)",
+        "Polyisobutylene (PIB)"
+      ],
+      "volume_efficiency": [
+        "Pressure Sensitive Adhesive",
+        "Acrylate Polymer Emulsion",
+        "Hot Melt Adhesive"
+      ],
+      "stackability": [
+        "Tinplate Steel",
+        "Aluminum Alloy 5052",
+        "High-Density Polyethylene (HDPE)"
+      ],
+      "transport_mode_fit": [
+        "Low-Density Polyethylene (LDPE)",
+        "High-Density Polyethylene (HDPE)",
+        "Polypropylene (PP)"
+      ],
+      "fragility_index": [
+        "Low-Density Polyethylene (LDPE)",
+        "High-Density Polyethylene (HDPE)",
+        "Polypropylene (PP)"
+      ]
+    }
+  },
+  "analysis_timestamp": "2025-04-15 14:35:34",
+  "user_login": "codegeek03"
+}

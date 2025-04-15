@@ -1,0 +1,1591 @@
+{
+  "product_name": "Glass Bottle",
+  "analysis_timestamp": "2025-04-15 14:36:52",
+  "analyses": {
+    "materials": {
+      "product_name": "Glass Bottle",
+      "materials": [
+        {
+          "material_name": "Borosilicate Glass",
+          "justification": "High thermal shock resistance; suitable for hot-fill beverage bottling processes."
+        },
+        {
+          "material_name": "Soda-Lime Glass",
+          "justification": "Most common, cost-effective glass for mass-produced beverage bottles."
+        },
+        {
+          "material_name": "Low-Density Polyethylene (LDPE)",
+          "justification": "Used for shrink wrap to bundle bottles for transportation purposes."
+        },
+        {
+          "material_name": "High-Density Polyethylene (HDPE)",
+          "justification": "Used for bottle carriers, providing rigid support during transport."
+        },
+        {
+          "material_name": "Polypropylene (PP)",
+          "justification": "Closures and caps; chemical resistance prevents interaction with contents, seals well."
+        },
+        {
+          "material_name": "Polyethylene Terephthalate (PET)",
+          "justification": "Label substrate offering clarity, strength, and recyclability to bottle labels."
+        },
+        {
+          "material_name": "Biaxially Oriented Polypropylene (BOPP)",
+          "justification": "Label film; water-resistant, provides good printability for product information."
+        },
+        {
+          "material_name": "Aluminum Alloy 5052",
+          "justification": "Used in metal caps and closures; provides a tight, secure seal."
+        },
+        {
+          "material_name": "Tinplate Steel",
+          "justification": "Caps and closures that resist corrosion for long product shelf life."
+        },
+        {
+          "material_name": "Pressure Sensitive Adhesive",
+          "justification": "Adheres labels to bottles, maintaining bond through storage and handling."
+        },
+        {
+          "material_name": "Styrene-Butadiene Rubber (SBR)",
+          "justification": "Gasket material within bottle caps, creating airtight liquid-proof seal."
+        },
+        {
+          "material_name": "Ethylene-Propylene Diene Monomer (EPDM)",
+          "justification": "Cap liner material; provides chemical resistance and sealing capabilities reliably."
+        },
+        {
+          "material_name": "Thermoplastic Elastomer (TPE)",
+          "justification": "Used in some bottle caps; offers flexibility and good sealing properties."
+        },
+        {
+          "material_name": "Kraft Paper",
+          "justification": "Used for dividers within cartons, prevents bottle-to-bottle contact damage."
+        },
+        {
+          "material_name": "Corrugated Fiberboard",
+          "justification": "Outer shipping cartons that protect bottles from damage during transit."
+        },
+        {
+          "material_name": "Hot Melt Adhesive",
+          "justification": "Seals corrugated cartons, ensuring closure during shipping and storage phases."
+        },
+        {
+          "material_name": "Polyvinyl Chloride (PVC)",
+          "justification": "Shrink sleeves providing tamper evidence and full bottle decoration affordably."
+        },
+        {
+          "material_name": "Acrylate Polymer Emulsion",
+          "justification": "Coating for labels, improves print adhesion and protects against abrasion."
+        },
+        {
+          "material_name": "Nylon (Polyamide)",
+          "justification": "Used for some specialized bottle cap liners due to barrier properties."
+        },
+        {
+          "material_name": "Polyisobutylene (PIB)",
+          "justification": "Used in crown closures, provides a gas-tight seal for carbonated beverages."
+        }
+      ],
+      "analysis_timestamp": "2025-04-15 14:12:22",
+      "user_login": "shami"
+    },
+    "environmental": {
+      "error": "Environmental analysis failed: Illegal trailing comma before end of object: line 266 column 81 (char 9368)",
+      "product_name": "Glass Bottle",
+      "timestamp": "2025-04-15 14:34:55",
+      "user_login": "shami"
+    },
+    "logistics": {
+      "product_name": "Glass Bottle",
+      "logistics_analysis": [
+        {
+          "material_name": "Borosilicate Glass",
+          "metrics": {
+            "weight_density": {
+              "score": 3,
+              "value": "2200",
+              "unit": "kg/m\u00b3",
+              "details": "High density impacts shipping costs significantly."
+            },
+            "volume_efficiency": {
+              "score": 7,
+              "value": "65",
+              "unit": "%",
+              "details": "Shape limits packing density within cartons."
+            },
+            "stackability": {
+              "score": 4,
+              "value": "4",
+              "unit": "rating",
+              "details": "Requires dividers for safe vertical stacking."
+            },
+            "transport_mode_fit": {
+              "score": 6,
+              "value": "6",
+              "unit": "rating",
+              "details": "Suitable for most, but needs protection."
+            },
+            "fragility_index": {
+              "score": 2,
+              "value": "2",
+              "unit": "rating",
+              "details": "Highly fragile, prone to breakage in transit."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.85",
+              "unit": "USD/kg",
+              "details": "Higher due to weight and breakage risk."
+            }
+          },
+          "overall_logistics_score": 4.3
+        },
+        {
+          "material_name": "Soda-Lime Glass",
+          "metrics": {
+            "weight_density": {
+              "score": 3,
+              "value": "2500",
+              "unit": "kg/m\u00b3",
+              "details": "Even denser, increasing transport costs."
+            },
+            "volume_efficiency": {
+              "score": 7,
+              "value": "65",
+              "unit": "%",
+              "details": "Similar shape restrictions affect volume."
+            },
+            "stackability": {
+              "score": 4,
+              "value": "4",
+              "unit": "rating",
+              "details": "Needs dividers to prevent damage."
+            },
+            "transport_mode_fit": {
+              "score": 6,
+              "value": "6",
+              "unit": "rating",
+              "details": "Requires careful handling in all modes."
+            },
+            "fragility_index": {
+              "score": 2,
+              "value": "2",
+              "unit": "rating",
+              "details": "More prone to shattering upon impact."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.90",
+              "unit": "USD/kg",
+              "details": "High cost due to weight and fragility."
+            }
+          },
+          "overall_logistics_score": 4.3
+        },
+        {
+          "material_name": "Low-Density Polyethylene (LDPE)",
+          "metrics": {
+            "weight_density": {
+              "score": 9,
+              "value": "920",
+              "unit": "kg/m\u00b3",
+              "details": "Lightweight, reduces shipping expenses noticeably."
+            },
+            "volume_efficiency": {
+              "score": 6,
+              "value": "70",
+              "unit": "%",
+              "details": "Flexible shape allows for better packing."
+            },
+            "stackability": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Can withstand moderate stacking pressures."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Excellent fit across various transportation methods."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Highly resistant to damage during shipping."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.35",
+              "unit": "USD/kg",
+              "details": "Lower due to lightweight and durability."
+            }
+          },
+          "overall_logistics_score": 8.3
+        },
+        {
+          "material_name": "High-Density Polyethylene (HDPE)",
+          "metrics": {
+            "weight_density": {
+              "score": 9,
+              "value": "950",
+              "unit": "kg/m\u00b3",
+              "details": "Still lightweight, keeps shipping economical."
+            },
+            "volume_efficiency": {
+              "score": 6,
+              "value": "70",
+              "unit": "%",
+              "details": "Consistent shape optimizes carton space."
+            },
+            "stackability": {
+              "score": 8,
+              "value": "8",
+              "unit": "rating",
+              "details": "Improved rigidity enhances stacking performance."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Very versatile for diverse shipping requirements."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Excellent resistance to impacts and abrasions."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.40",
+              "unit": "USD/kg",
+              "details": "Cost-effective in handling and transportation."
+            }
+          },
+          "overall_logistics_score": 8.5
+        },
+        {
+          "material_name": "Polypropylene (PP)",
+          "metrics": {
+            "weight_density": {
+              "score": 9,
+              "value": "900",
+              "unit": "kg/m\u00b3",
+              "details": "Very light, reduces overall transport weight."
+            },
+            "volume_efficiency": {
+              "score": 7,
+              "value": "75",
+              "unit": "%",
+              "details": "Adaptable shape allows for dense packing."
+            },
+            "stackability": {
+              "score": 8,
+              "value": "8",
+              "unit": "rating",
+              "details": "Good structural integrity for stacking boxes."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Well-suited for varied transport conditions."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Strong and durable, minimizes damage risk."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.38",
+              "unit": "USD/kg",
+              "details": "Economical for shipping due to its properties."
+            }
+          },
+          "overall_logistics_score": 8.6
+        },
+        {
+          "material_name": "Polyethylene Terephthalate (PET)",
+          "metrics": {
+            "weight_density": {
+              "score": 8,
+              "value": "1380",
+              "unit": "kg/m\u00b3",
+              "details": "Moderate density affects shipping costs moderately."
+            },
+            "volume_efficiency": {
+              "score": 7,
+              "value": "72",
+              "unit": "%",
+              "details": "Consistent shape improves packing density."
+            },
+            "stackability": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Good compressive strength for stacking purposes."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Highly adaptable to diverse shipping environments."
+            },
+            "fragility_index": {
+              "score": 8,
+              "value": "8",
+              "unit": "rating",
+              "details": "Good resistance to impacts during transit."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.42",
+              "unit": "USD/kg",
+              "details": "Fairly economical, balancing weight and durability."
+            }
+          },
+          "overall_logistics_score": 7.8
+        },
+        {
+          "material_name": "Biaxially Oriented Polypropylene (BOPP)",
+          "metrics": {
+            "weight_density": {
+              "score": 9,
+              "value": "910",
+              "unit": "kg/m\u00b3",
+              "details": "Very lightweight, reduces transport expenses."
+            },
+            "volume_efficiency": {
+              "score": 8,
+              "value": "80",
+              "unit": "%",
+              "details": "Thin film allows for efficient space utilization."
+            },
+            "stackability": {
+              "score": 6,
+              "value": "6",
+              "unit": "rating",
+              "details": "Needs support for stacking to avoid deformation."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Excellent adaptability to varied transportation modes."
+            },
+            "fragility_index": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Tear resistance needs to be considered carefully."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.30",
+              "unit": "USD/kg",
+              "details": "Highly cost-effective in handling and shipping."
+            }
+          },
+          "overall_logistics_score": 8.2
+        },
+        {
+          "material_name": "Aluminum Alloy 5052",
+          "metrics": {
+            "weight_density": {
+              "score": 5,
+              "value": "2680",
+              "unit": "kg/m\u00b3",
+              "details": "Heavy material, significant impact on transport cost."
+            },
+            "volume_efficiency": {
+              "score": 8,
+              "value": "75",
+              "unit": "%",
+              "details": "Shape can improve packing density within containers."
+            },
+            "stackability": {
+              "score": 8,
+              "value": "8",
+              "unit": "rating",
+              "details": "High structural strength allows safe stacking."
+            },
+            "transport_mode_fit": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Suitable, but weight increases transport costs."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Highly durable, resistant to damage during shipping."
+            },
+            "logistics_cost_estimate": {
+              "value": "1.10",
+              "unit": "USD/kg",
+              "details": "Higher material and transport expenses overall."
+            }
+          },
+          "overall_logistics_score": 7.4
+        },
+        {
+          "material_name": "Tinplate Steel",
+          "metrics": {
+            "weight_density": {
+              "score": 5,
+              "value": "7850",
+              "unit": "kg/m\u00b3",
+              "details": "Very heavy, greatly increases shipping expenses."
+            },
+            "volume_efficiency": {
+              "score": 8,
+              "value": "75",
+              "unit": "%",
+              "details": "Shape efficient for maximizing container space."
+            },
+            "stackability": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Exceptional strength ensures safe vertical stacking."
+            },
+            "transport_mode_fit": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Versatile, but heavy weight needs consideration."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Extremely durable, withstands harsh conditions."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.95",
+              "unit": "USD/kg",
+              "details": "Heavier weight significantly raises shipping costs."
+            }
+          },
+          "overall_logistics_score": 7.6
+        },
+        {
+          "material_name": "Pressure Sensitive Adhesive",
+          "metrics": {
+            "weight_density": {
+              "score": 7,
+              "value": "1000",
+              "unit": "kg/m\u00b3",
+              "details": "Moderate density, minor impact on shipping cost."
+            },
+            "volume_efficiency": {
+              "score": 9,
+              "value": "95",
+              "unit": "%",
+              "details": "Minimal volume, efficient space utilization in transport."
+            },
+            "stackability": {
+              "score": 5,
+              "value": "5",
+              "unit": "rating",
+              "details": "Packaging influences stackability more than the adhesive itself."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Highly adaptable to various transportation methods."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Resistant to damage, protects underlying materials."
+            },
+            "logistics_cost_estimate": {
+              "value": "1.50",
+              "unit": "USD/kg",
+              "details": "Special handling and storage affects costs mostly."
+            }
+          },
+          "overall_logistics_score": 7.8
+        },
+        {
+          "material_name": "Styrene-Butadiene Rubber (SBR)",
+          "metrics": {
+            "weight_density": {
+              "score": 7,
+              "value": "940",
+              "unit": "kg/m\u00b3",
+              "details": "Moderate density, affects shipping costs slightly."
+            },
+            "volume_efficiency": {
+              "score": 8,
+              "value": "85",
+              "unit": "%",
+              "details": "Compressible, which can improve volume efficiency slightly."
+            },
+            "stackability": {
+              "score": 6,
+              "value": "6",
+              "unit": "rating",
+              "details": "Stackability depends on packaging and compression rate."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Versatile and adaptable across various transportation types."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Good impact and tear resistance, durable during shipping."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.75",
+              "unit": "USD/kg",
+              "details": "Cost-effective and safe during transport and storage."
+            }
+          },
+          "overall_logistics_score": 7.8
+        },
+        {
+          "material_name": "Ethylene-Propylene Diene Monomer (EPDM)",
+          "metrics": {
+            "weight_density": {
+              "score": 7,
+              "value": "860",
+              "unit": "kg/m\u00b3",
+              "details": "Low to moderate density reduces shipping costs slightly."
+            },
+            "volume_efficiency": {
+              "score": 8,
+              "value": "85",
+              "unit": "%",
+              "details": "Compressible nature can improve volume efficiency."
+            },
+            "stackability": {
+              "score": 6,
+              "value": "6",
+              "unit": "rating",
+              "details": "Stackability influenced by packaging and compression."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Good adaptability for various shipping methods."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "High resistance to damage, durable during transport."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.80",
+              "unit": "USD/kg",
+              "details": "Stable and cost-effective for transport and handling."
+            }
+          },
+          "overall_logistics_score": 7.8
+        },
+        {
+          "material_name": "Thermoplastic Elastomer (TPE)",
+          "metrics": {
+            "weight_density": {
+              "score": 7,
+              "value": "1000",
+              "unit": "kg/m\u00b3",
+              "details": "Moderate density, affects shipping costs moderately."
+            },
+            "volume_efficiency": {
+              "score": 8,
+              "value": "85",
+              "unit": "%",
+              "details": "Compressible, improving space efficiency in containers."
+            },
+            "stackability": {
+              "score": 6,
+              "value": "6",
+              "unit": "rating",
+              "details": "Stackability relies on packaging method used."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Good for various modes of transportation."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Durable, impact and tear resistance ensures protection."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.90",
+              "unit": "USD/kg",
+              "details": "Transport and storage cost reflects its material characteristics."
+            }
+          },
+          "overall_logistics_score": 7.8
+        },
+        {
+          "material_name": "Kraft Paper",
+          "metrics": {
+            "weight_density": {
+              "score": 8,
+              "value": "700",
+              "unit": "kg/m\u00b3",
+              "details": "Lightweight helps in reducing overall shipping cost."
+            },
+            "volume_efficiency": {
+              "score": 8,
+              "value": "80",
+              "unit": "%",
+              "details": "Roll form allows for efficient use of transport space."
+            },
+            "stackability": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Requires sturdy packaging for vertical stacking purposes."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Highly versatile across different modes of transportation."
+            },
+            "fragility_index": {
+              "score": 6,
+              "value": "6",
+              "unit": "rating",
+              "details": "Tearable, requires protection from sharp objects/moisture."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.25",
+              "unit": "USD/kg",
+              "details": "Very economical for shipping and handling purposes."
+            }
+          },
+          "overall_logistics_score": 7.6
+        },
+        {
+          "material_name": "Corrugated Fiberboard",
+          "metrics": {
+            "weight_density": {
+              "score": 8,
+              "value": "800",
+              "unit": "kg/m\u00b3",
+              "details": "Lightweight helps minimize transport expenses."
+            },
+            "volume_efficiency": {
+              "score": 7,
+              "value": "75",
+              "unit": "%",
+              "details": "Flat pack option improves empty container returns."
+            },
+            "stackability": {
+              "score": 8,
+              "value": "8",
+              "unit": "rating",
+              "details": "Provides good support for stacking containers safely."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Well-suited for any mode of transport, readily available."
+            },
+            "fragility_index": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Vulnerable to moisture; may collapse if wet."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.30",
+              "unit": "USD/kg",
+              "details": "Highly economical for shipping and storage applications."
+            }
+          },
+          "overall_logistics_score": 7.8
+        },
+        {
+          "material_name": "Hot Melt Adhesive",
+          "metrics": {
+            "weight_density": {
+              "score": 7,
+              "value": "950",
+              "unit": "kg/m\u00b3",
+              "details": "Moderate density affects overall shipping cost."
+            },
+            "volume_efficiency": {
+              "score": 9,
+              "value": "90",
+              "unit": "%",
+              "details": "Small quantity use means highly efficient use of transport space."
+            },
+            "stackability": {
+              "score": 5,
+              "value": "5",
+              "unit": "rating",
+              "details": "Adhesive performance influences stackability indirectly."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Adaptable across transport, sensitive to temperature extremes."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Protects the structural integrity of sealed packages."
+            },
+            "logistics_cost_estimate": {
+              "value": "1.20",
+              "unit": "USD/kg",
+              "details": "Special storage and handling needs can impact cost."
+            }
+          },
+          "overall_logistics_score": 7.8
+        },
+        {
+          "material_name": "Polyvinyl Chloride (PVC)",
+          "metrics": {
+            "weight_density": {
+              "score": 6,
+              "value": "1400",
+              "unit": "kg/m\u00b3",
+              "details": "Higher density, increases shipping costs compared to other plastics."
+            },
+            "volume_efficiency": {
+              "score": 7,
+              "value": "70",
+              "unit": "%",
+              "details": "Rigid structure limits efficient packing into available container space."
+            },
+            "stackability": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Good strength allows for stackable box structures/units."
+            },
+            "transport_mode_fit": {
+              "score": 8,
+              "value": "8",
+              "unit": "rating",
+              "details": "Requires controlled temperature conditions during transportation."
+            },
+            "fragility_index": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Prone to cracking or shattering under significant impact."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.50",
+              "unit": "USD/kg",
+              "details": "Balances material costs versus transportation and storage risks."
+            }
+          },
+          "overall_logistics_score": 7.0
+        },
+        {
+          "material_name": "Acrylate Polymer Emulsion",
+          "metrics": {
+            "weight_density": {
+              "score": 7,
+              "value": "1050",
+              "unit": "kg/m\u00b3",
+              "details": "Moderate density, moderate influence on shipping costs."
+            },
+            "volume_efficiency": {
+              "score": 9,
+              "value": "90",
+              "unit": "%",
+              "details": "Minimal volume when applied, highly efficient for transport."
+            },
+            "stackability": {
+              "score": 5,
+              "value": "5",
+              "unit": "rating",
+              "details": "Stackability is indirectly influenced; contributes to packaging strength."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Transportation across all modes; protects from extreme temperature."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Forms a protective seal, preventing damage during transportation."
+            },
+            "logistics_cost_estimate": {
+              "value": "1.30",
+              "unit": "USD/kg",
+              "details": "Special transport and storage conditions can increase costs."
+            }
+          },
+          "overall_logistics_score": 7.8
+        },
+        {
+          "material_name": "Nylon (Polyamide)",
+          "metrics": {
+            "weight_density": {
+              "score": 7,
+              "value": "1150",
+              "unit": "kg/m\u00b3",
+              "details": "Moderate density has a modest impact on transport cost."
+            },
+            "volume_efficiency": {
+              "score": 7,
+              "value": "75",
+              "unit": "%",
+              "details": "Can be shaped efficiently depending on packaging type."
+            },
+            "stackability": {
+              "score": 7,
+              "value": "7",
+              "unit": "rating",
+              "details": "Resistant, enables moderate stacking capabilities in boxes."
+            },
+            "transport_mode_fit": {
+              "score": 8,
+              "value": "8",
+              "unit": "rating",
+              "details": "Adaptable, needing specific climate/handling based on specific packaging."
+            },
+            "fragility_index": {
+              "score": 8,
+              "value": "8",
+              "unit": "rating",
+              "details": "Durable, tolerating impact and abrasions during transport/handling."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.60",
+              "unit": "USD/kg",
+              "details": "Provides protection, influencing overall logistics cost considerations."
+            }
+          },
+          "overall_logistics_score": 7.4
+        },
+        {
+          "material_name": "Polyisobutylene (PIB)",
+          "metrics": {
+            "weight_density": {
+              "score": 8,
+              "value": "920",
+              "unit": "kg/m\u00b3",
+              "details": "Low density aids in keeping shipping expenses low."
+            },
+            "volume_efficiency": {
+              "score": 8,
+              "value": "85",
+              "unit": "%",
+              "details": "Compressible, improving space savings in containers."
+            },
+            "stackability": {
+              "score": 6,
+              "value": "6",
+              "unit": "rating",
+              "details": "Stacking ability dependant on packaging type used."
+            },
+            "transport_mode_fit": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Flexible for varied shipping methods and conditions."
+            },
+            "fragility_index": {
+              "score": 9,
+              "value": "9",
+              "unit": "rating",
+              "details": "Resilient, impact and tear resistance for protecting products."
+            },
+            "logistics_cost_estimate": {
+              "value": "0.85",
+              "unit": "USD/kg",
+              "details": "Balances material benefits with moderate transport costs."
+            }
+          },
+          "overall_logistics_score": 8.0
+        }
+      ],
+      "summary": {
+        "lowest_cost_materials": [
+          "Kraft Paper",
+          "Biaxially Oriented Polypropylene (BOPP)",
+          "Low-Density Polyethylene (LDPE)"
+        ],
+        "by_metric": {
+          "weight_density": [
+            "Polypropylene (PP)",
+            "Low-Density Polyethylene (LDPE)",
+            "Polyisobutylene (PIB)"
+          ],
+          "volume_efficiency": [
+            "Pressure Sensitive Adhesive",
+            "Acrylate Polymer Emulsion",
+            "Hot Melt Adhesive"
+          ],
+          "stackability": [
+            "Tinplate Steel",
+            "Aluminum Alloy 5052",
+            "High-Density Polyethylene (HDPE)"
+          ],
+          "transport_mode_fit": [
+            "Low-Density Polyethylene (LDPE)",
+            "High-Density Polyethylene (HDPE)",
+            "Polypropylene (PP)"
+          ],
+          "fragility_index": [
+            "Low-Density Polyethylene (LDPE)",
+            "High-Density Polyethylene (HDPE)",
+            "Polypropylene (PP)"
+          ]
+        }
+      },
+      "analysis_timestamp": "2025-04-15 14:35:34",
+      "user_login": "codegeek03",
+      "report_path": "temp_KB\\Glass_Bottle_logistics_cost.json"
+    },
+    "cost": {
+      "product_name": "Glass Bottle",
+      "materials_cost_analysis": [
+        {
+          "material_name": "Borosilicate Glass",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 1.5,
+              "unit": "USD/kg",
+              "score": 5,
+              "details": "Higher purity and heat resistance drive up borosilicate glass material costs."
+            },
+            "processing_cost": {
+              "value": 0.75,
+              "unit": "USD/unit",
+              "score": 4,
+              "details": "Requires higher temperatures and specialized equipment for forming glass bottles."
+            },
+            "availability": {
+              "value": 90.0,
+              "unit": "%",
+              "score": 7,
+              "details": "Sufficient supply chains exist, but specialized production limits volume somewhat."
+            }
+          },
+          "total_cost_score": 5.33,
+          "economic_suitability": [
+            "Pharmaceutical",
+            "Laboratory"
+          ]
+        },
+        {
+          "material_name": "Soda-Lime Glass",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 0.5,
+              "unit": "USD/kg",
+              "score": 9,
+              "details": "Abundant raw materials make soda-lime glass a low-cost option."
+            },
+            "processing_cost": {
+              "value": 0.3,
+              "unit": "USD/unit",
+              "score": 8,
+              "details": "Lower melting point reduces energy costs in forming soda-lime bottles."
+            },
+            "availability": {
+              "value": 99.0,
+              "unit": "%",
+              "score": 10,
+              "details": "Extremely widespread availability due to established manufacturing infrastructure globally."
+            }
+          },
+          "total_cost_score": 9.0,
+          "economic_suitability": [
+            "Food",
+            "Beverage"
+          ]
+        },
+        {
+          "material_name": "Low-Density Polyethylene (LDPE)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 1.0,
+              "unit": "USD/kg",
+              "score": 7,
+              "details": "LDPE is a standard, relatively inexpensive packaging polymer material option."
+            },
+            "processing_cost": {
+              "value": 0.15,
+              "unit": "USD/unit",
+              "score": 9,
+              "details": "Easy to mold and seal using standard polyethylene processing equipment."
+            },
+            "availability": {
+              "value": 95.0,
+              "unit": "%",
+              "score": 8,
+              "details": "High production volume ensures consistent LDPE supply for packaging applications."
+            }
+          },
+          "total_cost_score": 8.0,
+          "economic_suitability": [
+            "Consumer Goods",
+            "Industrial"
+          ]
+        },
+        {
+          "material_name": "High-Density Polyethylene (HDPE)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 1.2,
+              "unit": "USD/kg",
+              "score": 6,
+              "details": "HDPE provides improved strength, slightly increasing raw material expense."
+            },
+            "processing_cost": {
+              "value": 0.2,
+              "unit": "USD/unit",
+              "score": 8,
+              "details": "HDPE requires more energy for molding than LDPE, yet processing is efficient."
+            },
+            "availability": {
+              "value": 96.0,
+              "unit": "%",
+              "score": 8,
+              "details": "HDPE availability is widespread due to high production capacity globally now."
+            }
+          },
+          "total_cost_score": 7.33,
+          "economic_suitability": [
+            "Chemical",
+            "Dairy"
+          ]
+        },
+        {
+          "material_name": "Polypropylene (PP)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 1.1,
+              "unit": "USD/kg",
+              "score": 7,
+              "details": "PP offers a good balance of properties and moderate raw material price."
+            },
+            "processing_cost": {
+              "value": 0.18,
+              "unit": "USD/unit",
+              "score": 9,
+              "details": "PP is easily molded and thermoformed into various container shapes efficiently."
+            },
+            "availability": {
+              "value": 97.0,
+              "unit": "%",
+              "score": 8,
+              "details": "Global production ensures consistent supply of polypropylene resin for packaging formats."
+            }
+          },
+          "total_cost_score": 8.0,
+          "economic_suitability": [
+            "Food",
+            "Medical"
+          ]
+        },
+        {
+          "material_name": "Polyethylene Terephthalate (PET)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 1.3,
+              "unit": "USD/kg",
+              "score": 6,
+              "details": "PET is valued for clarity and strength, increasing material costs modestly."
+            },
+            "processing_cost": {
+              "value": 0.22,
+              "unit": "USD/unit",
+              "score": 8,
+              "details": "PET requires controlled temperature and pressure for injection or blow molding use."
+            },
+            "availability": {
+              "value": 94.0,
+              "unit": "%",
+              "score": 7,
+              "details": "PET is widely available but recycling infrastructure impacts ultimate supply security."
+            }
+          },
+          "total_cost_score": 7.0,
+          "economic_suitability": [
+            "Beverage",
+            "Cosmetics"
+          ]
+        },
+        {
+          "material_name": "Biaxially Oriented Polypropylene (BOPP)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 1.6,
+              "unit": "USD/kg",
+              "score": 5,
+              "details": "BOPP film's enhanced properties raise the raw material cost somewhat now."
+            },
+            "processing_cost": {
+              "value": 0.1,
+              "unit": "USD/unit",
+              "score": 10,
+              "details": "Primarily a label film, BOPP has low processing costs for application."
+            },
+            "availability": {
+              "value": 92.0,
+              "unit": "%",
+              "score": 7,
+              "details": "BOPP is readily available globally from multiple film manufacturers today."
+            }
+          },
+          "total_cost_score": 7.33,
+          "economic_suitability": [
+            "Labeling",
+            "Flexible Packaging"
+          ]
+        },
+        {
+          "material_name": "Aluminum Alloy 5052",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 3.5,
+              "unit": "USD/kg",
+              "score": 3,
+              "details": "Aluminum alloys have higher raw material costs due to metal extraction."
+            },
+            "processing_cost": {
+              "value": 1.0,
+              "unit": "USD/unit",
+              "score": 3,
+              "details": "Aluminum processing is energy-intensive, raising the bottle production costs much more."
+            },
+            "availability": {
+              "value": 85.0,
+              "unit": "%",
+              "score": 6,
+              "details": "Aluminum supply chains are established, but subject to global market fluctuation."
+            }
+          },
+          "total_cost_score": 4.0,
+          "economic_suitability": [
+            "Luxury",
+            "Specialty"
+          ]
+        },
+        {
+          "material_name": "Tinplate Steel",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 2.8,
+              "unit": "USD/kg",
+              "score": 4,
+              "details": "Steel requires mining and refinement, raising tinplate's raw material expense level."
+            },
+            "processing_cost": {
+              "value": 0.8,
+              "unit": "USD/unit",
+              "score": 4,
+              "details": "Forming and coating tinplate steel adds to bottle processing overhead costs."
+            },
+            "availability": {
+              "value": 90.0,
+              "unit": "%",
+              "score": 7,
+              "details": "Tinplate steel is a globally traded commodity readily available now."
+            }
+          },
+          "total_cost_score": 5.0,
+          "economic_suitability": [
+            "Industrial",
+            "Coatings"
+          ]
+        },
+        {
+          "material_name": "Pressure Sensitive Adhesive",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 2.5,
+              "unit": "USD/kg",
+              "score": 4,
+              "details": "Adhesive formulations include specialty polymers, increasing raw material input costs."
+            },
+            "processing_cost": {
+              "value": 0.05,
+              "unit": "USD/unit",
+              "score": 10,
+              "details": "Easy to apply, increasing efficiency and decreasing processing expenses greatly."
+            },
+            "availability": {
+              "value": 98.0,
+              "unit": "%",
+              "score": 9,
+              "details": "Pressure sensitive adhesives are available from multiple global sources currently."
+            }
+          },
+          "total_cost_score": 7.67,
+          "economic_suitability": [
+            "Labeling",
+            "Sealing"
+          ]
+        },
+        {
+          "material_name": "Styrene-Butadiene Rubber (SBR)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 2.0,
+              "unit": "USD/kg",
+              "score": 5,
+              "details": "Synthetic rubber production impacts SBR costs due to chemical synthesis processes."
+            },
+            "processing_cost": {
+              "value": 0.3,
+              "unit": "USD/unit",
+              "score": 7,
+              "details": "SBR can be molded or extruded into custom shapes for sealing purposes."
+            },
+            "availability": {
+              "value": 93.0,
+              "unit": "%",
+              "score": 7,
+              "details": "SBR is produced globally, ensuring adequate supply for various sealing uses."
+            }
+          },
+          "total_cost_score": 6.33,
+          "economic_suitability": [
+            "Sealing",
+            "Gaskets"
+          ]
+        },
+        {
+          "material_name": "Ethylene-Propylene Diene Monomer (EPDM)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 2.7,
+              "unit": "USD/kg",
+              "score": 4,
+              "details": "Specialized formulation for EPDM impacts monomer and manufacturing input costs."
+            },
+            "processing_cost": {
+              "value": 0.35,
+              "unit": "USD/unit",
+              "score": 7,
+              "details": "EPDM can be molded or extruded with suitable temperature and pressure control."
+            },
+            "availability": {
+              "value": 91.0,
+              "unit": "%",
+              "score": 7,
+              "details": "EPDM is available from multiple global producers for diverse sealing needs."
+            }
+          },
+          "total_cost_score": 6.0,
+          "economic_suitability": [
+            "Sealing",
+            "Gaskets"
+          ]
+        },
+        {
+          "material_name": "Thermoplastic Elastomer (TPE)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 3.0,
+              "unit": "USD/kg",
+              "score": 4,
+              "details": "TPEs are specialized polymer blends which can increase raw material costs."
+            },
+            "processing_cost": {
+              "value": 0.25,
+              "unit": "USD/unit",
+              "score": 8,
+              "details": "TPEs offer versatility in processing, lending to lower manufacturing overhead costs."
+            },
+            "availability": {
+              "value": 92.0,
+              "unit": "%",
+              "score": 7,
+              "details": "TPEs are widely available from global suppliers for specific design applications."
+            }
+          },
+          "total_cost_score": 6.33,
+          "economic_suitability": [
+            "Sealing",
+            "Gaskets"
+          ]
+        },
+        {
+          "material_name": "Kraft Paper",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 0.7,
+              "unit": "USD/kg",
+              "score": 8,
+              "details": "Kraft paper production is efficient, keeping raw material costs reasonable now."
+            },
+            "processing_cost": {
+              "value": 0.1,
+              "unit": "USD/unit",
+              "score": 10,
+              "details": "Converting Kraft paper into labels and wraps is a low-cost process."
+            },
+            "availability": {
+              "value": 99.0,
+              "unit": "%",
+              "score": 10,
+              "details": "Kraft paper is a globally traded commodity widely produced for all applications."
+            }
+          },
+          "total_cost_score": 9.33,
+          "economic_suitability": [
+            "Labeling",
+            "Wrapping"
+          ]
+        },
+        {
+          "material_name": "Corrugated Fiberboard",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 0.6,
+              "unit": "USD/kg",
+              "score": 9,
+              "details": "Made from recycled materials, decreasing corrugated fiberboard's raw material expenses now."
+            },
+            "processing_cost": {
+              "value": 0.2,
+              "unit": "USD/unit",
+              "score": 8,
+              "details": "High speed automated production enables efficient and economical box forming speeds."
+            },
+            "availability": {
+              "value": 99.0,
+              "unit": "%",
+              "score": 10,
+              "details": "Corrugated fiberboard is available readily and abundantly globally today."
+            }
+          },
+          "total_cost_score": 9.0,
+          "economic_suitability": [
+            "Shipping",
+            "Secondary Packaging"
+          ]
+        },
+        {
+          "material_name": "Hot Melt Adhesive",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 2.2,
+              "unit": "USD/kg",
+              "score": 5,
+              "details": "Formulated with specialty polymers and resins which increase raw material costs."
+            },
+            "processing_cost": {
+              "value": 0.08,
+              "unit": "USD/unit",
+              "score": 10,
+              "details": "Hot melt adhesives are applied quickly, making for efficient sealing processes."
+            },
+            "availability": {
+              "value": 97.0,
+              "unit": "%",
+              "score": 8,
+              "details": "Hot melt adhesives are available globally for various sealing and bonding needs."
+            }
+          },
+          "total_cost_score": 7.67,
+          "economic_suitability": [
+            "Sealing",
+            "Bonding"
+          ]
+        },
+        {
+          "material_name": "Polyvinyl Chloride (PVC)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 0.9,
+              "unit": "USD/kg",
+              "score": 8,
+              "details": "PVC is a widely produced polymer, reducing the raw material costs."
+            },
+            "processing_cost": {
+              "value": 0.25,
+              "unit": "USD/unit",
+              "score": 8,
+              "details": "PVC is easily processed via extrusion and molding for bottle type applications."
+            },
+            "availability": {
+              "value": 95.0,
+              "unit": "%",
+              "score": 8,
+              "details": "PVC supply chains are well established with many global manufacturers now."
+            }
+          },
+          "total_cost_score": 8.0,
+          "economic_suitability": [
+            "Industrial",
+            "Chemical"
+          ]
+        },
+        {
+          "material_name": "Acrylate Polymer Emulsion",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 2.1,
+              "unit": "USD/kg",
+              "score": 5,
+              "details": "Specialized polymer emulsions increase acrylate raw material expenses significantly today."
+            },
+            "processing_cost": {
+              "value": 0.07,
+              "unit": "USD/unit",
+              "score": 10,
+              "details": "Acrylate emulsions are easy to apply which results in low processing fees."
+            },
+            "availability": {
+              "value": 96.0,
+              "unit": "%",
+              "score": 8,
+              "details": "Acrylate polymer emulsions available from global suppliers for adhesive use too."
+            }
+          },
+          "total_cost_score": 7.67,
+          "economic_suitability": [
+            "Adhesives",
+            "Coatings"
+          ]
+        },
+        {
+          "material_name": "Nylon (Polyamide)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 4.0,
+              "unit": "USD/kg",
+              "score": 2,
+              "details": "Nylon polymerization processes are complex, significantly raising the raw material costs."
+            },
+            "processing_cost": {
+              "value": 0.4,
+              "unit": "USD/unit",
+              "score": 7,
+              "details": "Nylon requires high temperatures and pressures in molding and extrusion processing."
+            },
+            "availability": {
+              "value": 88.0,
+              "unit": "%",
+              "score": 6,
+              "details": "Nylon availability is somewhat restricted compared to commodity plastics overall."
+            }
+          },
+          "total_cost_score": 5.0,
+          "economic_suitability": [
+            "Specialty",
+            "Industrial"
+          ]
+        },
+        {
+          "material_name": "Polyisobutylene (PIB)",
+          "cost_metrics": {
+            "raw_material_cost": {
+              "value": 2.6,
+              "unit": "USD/kg",
+              "score": 4,
+              "details": "PIB production has a higher degree of chemical processing now."
+            },
+            "processing_cost": {
+              "value": 0.12,
+              "unit": "USD/unit",
+              "score": 10,
+              "details": "PIB is easy to apply, keeping manufacturing costs incredibly low right now."
+            },
+            "availability": {
+              "value": 94.0,
+              "unit": "%",
+              "score": 7,
+              "details": "PIB is globally available for sealing and adhesive applications here."
+            }
+          },
+          "total_cost_score": 7.0,
+          "economic_suitability": [
+            "Adhesives",
+            "Sealants"
+          ]
+        }
+      ],
+      "summary": {
+        "most_economical_materials": [
+          "Kraft Paper",
+          "Corrugated Fiberboard",
+          "Soda-Lime Glass"
+        ],
+        "by_cost_metric": {
+          "raw_material_cost": [
+            "Corrugated Fiberboard",
+            "Kraft Paper",
+            "Polyvinyl Chloride (PVC)"
+          ],
+          "processing_cost": [
+            "Pressure Sensitive Adhesive",
+            "Hot Melt Adhesive",
+            "BOPP"
+          ],
+          "availability": [
+            "Kraft Paper",
+            "Corrugated Fiberboard",
+            "Soda-Lime Glass"
+          ]
+        }
+      },
+      "analysis_timestamp": "2025-04-15 14:36:02",
+      "user_login": "codegeek03",
+      "report_path": "temp_KB\\Glass_Bottle_cost_report.json"
+    },
+    "properties": {
+      "error": "Material properties analysis failed: Unterminated string starting at: line 874 column 44 (char 30268)",
+      "product_name": "Glass Bottle",
+      "timestamp": "2025-04-15 14:36:46",
+      "user_login": "codegeek03"
+    },
+    "compatibility": {
+      "barrier_properties": {
+        "score": 9,
+        "explanation": "Glass offers excellent barrier properties against gases (oxygen, carbon dioxide), moisture, and aromas. This helps to maintain product freshness and prevent spoilage or changes in flavor/aroma. The inert nature of glass prevents interaction with the contents, further enhancing its barrier effectiveness.",
+        "concerns": "The barrier is compromised if the glass is cracked or broken. Certain closures may not provide as effective a barrier as the glass itself."
+      },
+      "strength_durability": {
+        "score": 7,
+        "explanation": "Glass bottles are relatively strong and durable, capable of withstanding normal handling and transportation. They are resistant to crushing and deformation under moderate pressure. The thickness of the glass affects its overall strength.",
+        "concerns": "Glass is brittle and susceptible to shattering upon impact or sudden temperature changes. Dropping a glass bottle can easily lead to breakage. Thin-walled bottles are more fragile."
+      },
+      "temperature_resistance": {
+        "score": 6,
+        "explanation": "Glass can withstand a wide range of temperatures, making it suitable for both hot-filled and cold-filled products. It is also microwave-safe and can be used for pasteurization or sterilization processes.",
+        "concerns": "Sudden temperature changes (thermal shock) can cause glass to crack or shatter. Extreme temperature fluctuations should be avoided. Freezing liquids in glass bottles can also lead to breakage as the liquid expands."
+      },
+      "shelf_life_impact": {
+        "score": 9,
+        "explanation": "Due to its excellent barrier properties and inert nature, glass packaging can significantly extend the shelf life of many products, especially those sensitive to oxygen or moisture. It prevents degradation, spoilage, and loss of flavor or aroma, contributing to longer product viability.",
+        "concerns": "While glass itself doesn't degrade, the product inside may still degrade over time due to other factors, even with the protection of the glass. Closure integrity is crucial for maximizing shelf life."
+      },
+      "chemical_compatibility": {
+        "score": 10,
+        "explanation": "Glass is highly chemically inert and compatible with a wide range of substances, including acidic, alkaline, and organic solvents. It does not react with or leach chemicals into the contents, ensuring product purity and safety. This makes it suitable for food, beverages, pharmaceuticals, and cosmetics.",
+        "concerns": "Certain highly corrosive chemicals (e.g., hydrofluoric acid) can etch or dissolve glass, but these are rarely used in typical consumer products. The closure material must also be chemically compatible with the contents."
+      },
+      "product_name": "Glass Bottle",
+      "analysis_timestamp": "2025-04-15 14:36:52",
+      "user_login": "shami",
+      "overall_score": 8.2,
+      "saved_path": "temp_KB\\Glass_Bottle_compatibility_report.json"
+    }
+  }
+}

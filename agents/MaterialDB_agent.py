@@ -26,7 +26,7 @@ class PackagingMaterialsAgent:
         if not api_key:
             raise ValueError("GOOGLE_API_KEY environment variable is not set")
 
-        self.reports_dir = "material_reports"
+        self.reports_dir = "temp_KB"
         os.makedirs(self.reports_dir, exist_ok=True)
 
         self.user_login = getpass.getuser()

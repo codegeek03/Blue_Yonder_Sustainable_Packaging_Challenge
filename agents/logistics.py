@@ -13,7 +13,7 @@ class LogisticsCostAnalyzerAgent:
             raise ValueError("GOOGLE_API_KEY environment variable is not set")
 
         self.agent = Agent(model=Gemini(id=model_id, api_key=api_key), markdown=enable_markdown)
-        self.reports_dir = "logistics_cost_reports"
+        self.reports_dir = "temp_KB"
         os.makedirs(self.reports_dir, exist_ok=True)
         self.user_login = "codegeek03"
 

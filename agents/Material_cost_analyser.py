@@ -14,7 +14,7 @@ class MaterialCostAgent:
             raise ValueError("GOOGLE_API_KEY environment variable is not set")
 
         self.agent = Agent(model=Gemini(id=model_id, api_key=api_key), markdown=enable_markdown)
-        self.reports_dir = "material_cost_reports"
+        self.reports_dir = "temp_KB"
         os.makedirs(self.reports_dir, exist_ok=True)
         self.user_login = "codegeek03"
 
@@ -37,7 +37,7 @@ class MaterialCostAgent:
     def _get_timestamp(self) -> str:
         return datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
 
-    async def analyze_material_costs(self, product_name: str) -> Dict[str, Any]:
+    async def analyze_cost_costs(self, product_name: str) -> Dict[str, Any]:
         materials_data = self._load_materials_report(product_name)
 
         prompt = f"""
@@ -165,7 +165,7 @@ async def main():
         agent = MaterialCostAgent()
         product_name = "Glass Bottle"
         print("Analyzing material costs...")
-        analysis = await agent.analyze_material_costs(product_name)
+        analysis = await agent.analyze_cost_costs(product_name)
         report = await agent.generate_summary_report(analysis)
         print(report)
         print(f"\nReport saved to: {analysis.get('report_path', 'Error: Report not saved')}")

@@ -99,7 +99,7 @@ class ProductCompatibilityAgent:
 
         return filepath
 
-    async def analyze_product(self, product_name: str) -> Dict[str, Any]:
+    async def analyze_compatibility_product(self, product_name: str) -> Dict[str, Any]:
         """
         Analyzes a product's compatibility across different attributes.
 
@@ -240,7 +240,7 @@ async def main():
         product_name = "Glass Bottle"
 
         # Get detailed analysis
-        analysis = await agent.analyze_product(product_name)
+        analysis = await agent.analyze_compatibility_product(product_name)
         print("\nDetailed Analysis:")
         print(json.dumps(analysis, indent=2))
 
