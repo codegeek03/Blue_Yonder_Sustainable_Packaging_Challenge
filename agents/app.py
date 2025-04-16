@@ -14,7 +14,7 @@ from pathlib import Path
 # Import the orchestrator
 sys.path.append(".")
 try:
-    from paste import PackagingAnalysisOrchestrator
+    from orchestrator import PackagingAnalysisOrchestrator
 except ImportError:
     # If the import fails, we'll create a mock version for demo purposes
     class PackagingAnalysisOrchestrator:
