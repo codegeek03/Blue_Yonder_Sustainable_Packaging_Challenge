@@ -1,5 +1,0 @@
-{
-  "error": "Analysis workflow failed: 'ProductCompatibilityAgent' object has no attribute 'analyze_compatibility_product'",
-  "product_name": "Glass Bottle",
-  "timestamp": "2025-04-15 14:33:28"
-}
