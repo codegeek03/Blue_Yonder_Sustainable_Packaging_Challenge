@@ -3,23 +3,12 @@ from agno.models.google import Gemini
 from dotenv import load_dotenv
 import json
 import os
-from typing import Dict, Any
-from datetime import datetime
+from typing import Dict, Any, List
+from datetime import datetime, UTC
 import getpass
 
 class PackagingMaterialsAgent:
-    """
-    An agent that generates a list of 100 uniquely named, scientifically specific packaging materials for a given product.
-    """
-
     def __init__(self, model_id: str = "gemini-2.0-flash-exp", enable_markdown: bool = True):
-        """
-        Initialize the PackagingMaterialsAgent with the specified model.
-
-        Args:
-            model_id: The ID of the Gemini model to use
-            enable_markdown: Whether to enable markdown output
-        """
         load_dotenv()
 
         api_key = os.getenv('GOOGLE_API_KEY')
@@ -29,8 +18,10 @@ class PackagingMaterialsAgent:
         self.reports_dir = "temp_KB"
         os.makedirs(self.reports_dir, exist_ok=True)
 
-        self.user_login = getpass.getuser()
-
+        # Store user and time information at initialization
+        self.user_login = "codegeek03"  # Hardcoded as provided
+        self.current_time = "2025-04-19 03:21:35"  # Hardcoded as provided
+        
         self.agent = Agent(
             model=Gemini(
                 id=model_id,
@@ -40,11 +31,14 @@ class PackagingMaterialsAgent:
         )
 
     def get_formatted_timestamp(self) -> str:
-        return datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+        """Returns the hardcoded timestamp for consistency"""
+        return self.current_time
 
-    def _save_report_to_file(self, data: Dict[str, Any], product_name: str) -> str:
-        timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-        filename = f"{product_name.replace(' ', '_')}_materials_report.json"
+    def _save_report_to_file(self, data: Dict[str, Any], report_type: str) -> str:
+        """
+        Saves the analysis report to a file with consistent timestamp
+        """
+        filename = f"{report_type}.json"
         filepath = os.path.join(self.reports_dir, filename)
 
         with open(filepath, 'w', encoding='utf-8') as f:
@@ -52,58 +46,72 @@ class PackagingMaterialsAgent:
 
         return filepath
 
-    async def analyze_packaging_materials(self, product_name: str) -> Dict[str, Any]:
+    async def find_materials_by_criteria(self, product_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Finds 10 materials for each of the 5 main criteria categories.
+        """
         prompt = f"""
-You are a strict industrial-grade packaging materials evaluator for real-world manufacturing.
+You are a packaging materials specialist. For the product '{product_data["product_name"]}', provide 10 scientifically accurate materials for each of these 5 criteria:
 
-Your task is to generate a list of exactly **20 uniquely named, real-world verified, and scientifically accurate packaging materials** used for the product: "{product_name}".
+1. Physical Form (Solid, prone to cracking):
+   Requirements: {product_data["criteria"]["physical_form"]["explanation"]}
+   Concerns: {product_data["criteria"]["physical_form"]["concerns"]}
 
-⚠️ STRICT NON-NEGOTIABLE RULES:
+2. Fragility (Medium):
+   Requirements: {product_data["criteria"]["fragility"]["explanation"]}
+   Concerns: {product_data["criteria"]["fragility"]["concerns"]}
 
-1. ✅ Each material must be **genuinely and widely used** in real-world beverage packaging (not hypothetical, rare, experimental, or for other product types).
-2. ❌ DO NOT include:
-   - Vague names (e.g., "plastic", "glass", "metal")
-   - Overly broad categories (e.g., "fiberboard", "rubber")
-   - Non-packaging materials (e.g., construction foam, electronics-grade silicone)
-   - Any material **not commonly used in beverage containers, closures, liners, or labeling**.
-3. ✅ Only include **technical, scientific, or industry-standard names** of materials.
-4. ✅ For each material, include a brief 10-word **justification** for its use in beverage packaging.
+3. Chemical Properties (Inert):
+   Requirements: {product_data["criteria"]["chemical_properties"]["explanation"]}
+   Concerns: {product_data["criteria"]["chemical_properties"]["concerns"]}
 
-🔬 REQUIRED JSON FORMAT:
+4. Hygiene Sensitivity (High):
+   Requirements: {product_data["criteria"]["hygiene_sensitivity"]["explanation"]}
+   Concerns: {product_data["criteria"]["hygiene_sensitivity"]["concerns"]}
 
+5. Temperature Sensitivity (Moderate):
+   Requirements: {product_data["criteria"]["temperature_sensitivity"]["explanation"]}
+   Concerns: {product_data["criteria"]["temperature_sensitivity"]["concerns"]}
+
+Return a JSON object in this exact format:
 {{
-  "product_name": "{product_name}",
-  "materials": [
-    {{
-      "material_name": "<scientific name>",
-      "justification": "<exactly 10-word reason why used in beverage packaging>"
-    }},
-    ...
-    {{
-      "material_name": "<scientific name 20>",
-      "justification": "<10-word explanation>"
-    }}
-  ]
+  "materials_by_criteria": {{
+    "physical_form": [
+      {{
+        "material_name": "<scientific name>",
+        "properties": "<specific properties addressing the requirements>",
+        "application": "<how it addresses the specific concerns>"
+      }},
+      // ... (10 materials total)
+    ],
+    "fragility": [
+      // ... (10 materials)
+    ],
+    "chemical_properties": [
+      // ... (10 materials)
+    ],
+    "hygiene_sensitivity": [
+      // ... (10 materials)
+    ],
+    "temperature_sensitivity": [
+      // ... (10 materials)
+    ]
+  }},
+  "analysis_timestamp": "{self.current_time}",
+  "user_login": "{self.user_login}",
+  "product_name": "{product_data['product_name']}"
 }}
 
-5. ✅ The JSON **must contain exactly 20 materials**, no more, no less.
-6. ❌ DO NOT return markdown, explanations, formatting, or code blocks.
-7. ✅ Return ONLY the valid JSON string.
-
-🚫 Reject any inappropriate material like:
-- "Glass" or variants unless strictly applicable to modern beverage bottling
-- Any rubber or foam unless **clearly used in beverage closures**
-- Composite names without real-world industrial validation
-
-💡 If unable to produce valid 20 materials, return:
-{{ "error": "Insufficient verified materials for beverage packaging generation." }}
+Each material must be:
+1. Scientifically accurate and specific (no generic terms)
+2. Currently used in modern packaging
+3. Relevant to the specific criterion
+4. Include detailed properties and application
 """
-
-
 
         try:
             response = await self.agent.arun(prompt)
-
+            
             response_text = response.content.strip()
             if response_text.startswith("```json"):
                 response_text = response_text[7:]
@@ -113,57 +121,92 @@ Your task is to generate a list of exactly **20 uniquely named, real-world verif
                 response_text = response_text[:-3]
 
             analysis = json.loads(response_text)
-
-            analysis["analysis_timestamp"] = self.get_formatted_timestamp()
-            analysis["user_login"] = self.user_login
-
-            saved_path = self._save_report_to_file(analysis, product_name)
+            
+            # Save report
+            saved_path = self._save_report_to_file(analysis, "materials_by_criteria")
             analysis["report_path"] = saved_path
-
+            
             return analysis
 
         except Exception as e:
             error_data = {
                 "error": f"Analysis failed: {str(e)}",
-                "product_name": product_name,
-                "timestamp": self.get_formatted_timestamp(),
-                "user_login": self.user_login
+                "timestamp": self.current_time,
+                "user_login": self.user_login,
+                "product_name": product_data["product_name"]
             }
-            self._save_report_to_file(error_data, f"error_{product_name}")
+            self._save_report_to_file(error_data, "error_materials_analysis")
             return error_data
 
-    async def generate_summary_report(self, analysis: Dict[str, Any]) -> str:
+    async def generate_materials_report(self, analysis: Dict[str, Any]) -> str:
+        """
+        Generates a formatted report of the materials analysis.
+        """
         if "error" in analysis:
             return f"Error generating report: {analysis['error']}"
 
         report = f"""
-Packaging Materials Report
-=========================
+Packaging Materials Analysis Report
+================================
 Product: {analysis['product_name']}
 Analysis Date: {analysis['analysis_timestamp']}
 Generated by: {analysis['user_login']}
 
-Materials List (Total: {len(analysis['materials'])}):
---------------------------------------------------
+Materials by Criteria:
+--------------------
 """
-        for i, material in enumerate(analysis['materials'], 1):
-            report += f"{i}. {material['material_name']}\n"
+        
+        for criterion, materials in analysis['materials_by_criteria'].items():
+            report += f"\n{criterion.replace('_', ' ').title()}:\n"
+            report += "-" * (len(criterion) + 1) + "\n"
+            
+            for idx, material in enumerate(materials, 1):
+                report += f"{idx}. {material['material_name']}\n"
+                report += f"   Properties: {material['properties']}\n"
+                report += f"   Application: {material['application']}\n\n"
 
         return report
 
 async def main():
     try:
+        # Example input data
+        input_data = {
+            "criteria": {
+                "physical_form": {
+                    "explanation": "Solid",
+                    "concerns": "Cracking"
+                },
+                "fragility": {
+                    "explanation": "Medium",
+                    "concerns": "Breakage"
+                },
+                "chemical_properties": {
+                    "explanation": "Inert",
+                    "concerns": "Leaching"
+                },
+                "hygiene_sensitivity": {
+                    "explanation": "High",
+                    "concerns": "Bacteria"
+                },
+                "temperature_sensitivity": {
+                    "explanation": "Moderate",
+                    "concerns": "Deformation"
+                }
+            },
+            "product_name": "Eco-Friendly Bottle",
+            "analysis_timestamp": "2025-04-19 03:21:35",
+            "user_login": "codegeek03"
+        }
+
         agent = PackagingMaterialsAgent()
-
-        product_name = "Glass Bottle"
-
-        print("Analyzing packaging materials... This may take a few moments.")
-        analysis = await agent.analyze_packaging_materials(product_name)
-
-        report = await agent.generate_summary_report(analysis)
+        
+        print("Analyzing materials by criteria... This may take a few moments.")
+        analysis = await agent.find_materials_by_criteria(input_data)
+        
+        report = await agent.generate_materials_report(analysis)
         print("\nMaterials Analysis Report:")
         print(report)
-
+        
         print(f"\nFull report saved to: {analysis.get('report_path', 'Error: Report not saved')}")
 
     except Exception as e:

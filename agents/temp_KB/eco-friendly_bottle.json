@@ -1,0 +1,11 @@
+{
+    "product_name": "Eco-Friendly Bottle",
+    "units_per_shipment": 15,
+    "dimensions": {
+        "length": 20.0,
+        "width": 5.0,
+        "height": 15.0
+    },
+    "packaging_location": "kolkata",
+    "budget_constraint": 5.0
+}

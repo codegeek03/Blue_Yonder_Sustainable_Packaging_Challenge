@@ -1,15 +1,16 @@
+import os
+import json
+import getpass
+from typing import Dict, Any
+from datetime import datetime
 from agno.agent import Agent
 from agno.models.google import Gemini
 from dotenv import load_dotenv
-import json
-import os
-from typing import Dict, Any
-from datetime import datetime
-import getpass
+
 
 class ProductCompatibilityAgent:
     """
-    An agent that analyzes product compatibility based on various material properties.
+    An agent that evaluates product compatibility based on specific criteria.
     """
 
     def __init__(self, model_id: str = "gemini-2.0-flash-exp", enable_markdown: bool = True):
@@ -32,50 +33,18 @@ class ProductCompatibilityAgent:
         self.temp_dir = "temp_KB"
         os.makedirs(self.temp_dir, exist_ok=True)
 
-        # Store user information
-        self.user_login = getpass.getuser()
-        
-        # Initialize the agent with Gemini model
-        self.agent = Agent(
-            model=Gemini(
-                id=model_id,
-                api_key=api_key
-            ),
-            markdown=enable_markdown,
-        )
-
-        # Define the compatibility attributes and their scoring criteria
-        self.attributes = {
-            "barrier_properties": {
-                "description": "Resistance to liquids and gases",
-                "max_score": 10
-            },
-            "strength_durability": {
-                "description": "Physical strength and durability",
-                "max_score": 10
-            },
-            "temperature_resistance": {
-                "description": "Ability to withstand temperature variations",
-                "max_score": 10
-            },
-            "shelf_life_impact": {
-                "description": "Impact on product longevity",
-                "max_score": 10
-            },
-            "chemical_compatibility": {
-                "description": "Resistance to chemical interactions",
-                "max_score": 10
-            }
-        }
+        # Store user information - hardcoded for the example
+        self.user_login = "codegeek03"
+        self.current_timestamp = "2025-04-19 03:00:29"
 
     def get_formatted_timestamp(self) -> str:
         """
-        Get the current UTC timestamp in YYYY-MM-DD HH:MM:SS format.
+        Get the hardcoded timestamp for consistency.
 
         Returns:
             Formatted timestamp string
         """
-        return datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+        return self.current_timestamp
 
     def _save_json_to_temp(self, data: Dict[str, Any], product_name: str) -> str:
         """
@@ -88,167 +57,192 @@ class ProductCompatibilityAgent:
         Returns:
             Path to the saved JSON file
         """
-        # Create a filename using product name, user login, and timestamp
-        timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-        filename = f"{product_name.replace(' ', '_')}_compatibility_report.json"
+        filename = f"{product_name.lower().replace(' ', '_')}_compatibility_report.json"
         filepath = os.path.join(self.temp_dir, filename)
 
-        # Save the JSON data
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2)
 
         return filepath
 
-    async def analyze_compatibility_product(self, product_name: str) -> Dict[str, Any]:
+    def load_input_json(self, product_name: str) -> Dict[str, Any]:
         """
-        Analyzes a product's compatibility across different attributes.
+        Load the input JSON from the specified file path.
+
+        Args:
+            product_name: Name of the product to generate the JSON file path.
+
+        Returns:
+            Dictionary containing the JSON data.
+        """
+        file_path = os.path.join("temp_KB", f"{product_name.lower().replace(' ', '_')}.json")
+
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+
+        with open(file_path, 'r', encoding='utf-8') as file:
+            return json.load(file)
+
+    async def analyze_compatibility(self, product_name: str, product_inputs: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Analyze compatibility of a product based on provided inputs and criteria.
 
         Args:
             product_name: Name of the product to analyze
+            product_inputs: Dictionary containing product-specific inputs
 
         Returns:
-            Dictionary containing compatibility analysis and scores
+            Dictionary containing compatibility analysis and concerns
         """
         prompt = f"""
-You are a compatibility analysis engine.
+You are a product compatibility analysis engine.
 
-Your task is to return a strict JSON object with the following structure for the product "{product_name}":
+Analyze the product "{product_name}" with these specifications:
+- Units per Shipment: {product_inputs.get('units_per_shipment')}
+- Dimensions: L={product_inputs.get('dimensions', {}).get('length', 0)}cm, W={product_inputs.get('dimensions', {}).get('width', 0)}cm, H={product_inputs.get('dimensions', {}).get('height', 0)}cm
+- Location: {product_inputs.get('packaging_location')}
+- Budget: {product_inputs.get('budget_constraint')} units
 
+Provide a strict JSON response with one-word descriptions:
 {{
-  "barrier_properties": {{
-    "score": <integer between 1 and 10>,
-    "explanation": "<detailed explanation>",
-    "concerns": "<potential issues>"
-  }},
-  "strength_durability": {{
-    "score": <integer between 1 and 10>,
-    "explanation": "<detailed explanation>",
-    "concerns": "<potential issues>"
-  }},
-  "temperature_resistance": {{
-    "score": <integer between 1 and 10>,
-    "explanation": "<detailed explanation>",
-    "concerns": "<potential issues>"
-  }},
-  "shelf_life_impact": {{
-    "score": <integer between 1 and 10>,
-    "explanation": "<detailed explanation>",
-    "concerns": "<potential issues>"
-  }},
-  "chemical_compatibility": {{
-    "score": <integer between 1 and 10>,
-    "explanation": "<detailed explanation>",
-    "concerns": "<potential issues>"
-  }}
+    "criteria": {{
+        "physical_form": {{"explanation": "solid", "concerns": "fragile"}},
+        "fragility": {{"explanation": "sturdy", "concerns": "breakable"}},
+        "shelf_life": {{"explanation": "long", "concerns": "moisture"}},
+        "chemical_properties": {{"explanation": "stable", "concerns": "reactive"}},
+        "hygiene_sensitivity": {{"explanation": "clean", "concerns": "contamination"}},
+        "temperature_sensitivity": {{"explanation": "stable", "concerns": "melting"}},
+        "volatility_or_hazard_risk": {{"explanation": "safe", "concerns": "none"}},
+        "visibility_and_display": {{"explanation": "clear", "concerns": "scratches"}},
+        "quantity_and_dosage": {{"explanation": "bulk", "concerns": "overflow"}},
+        "value_and_theft_sensitivity": {{"explanation": "secure", "concerns": "tampering"}}
+    }},
+    "product_name": "{product_name}",
+    "analysis_timestamp": "{self.get_formatted_timestamp()}"
 }}
-
-Only return a valid JSON string. Do not include any explanation or markdown outside the JSON. Do not format it as a code block.
 """
 
         try:
-            # Get analysis from Gemini
+            # Initialize the agent with the Gemini model
+            api_key = os.getenv('GOOGLE_API_KEY')
+            self.agent = Agent(
+                model=Gemini(
+                    id="gemini-2.0-flash-exp",
+                    api_key=api_key
+                ),
+                markdown=True,
+            )
+
             response = await self.agent.arun(prompt)
-
-            # Clean up response if wrapped in code blocks
+            
+            # Clean up response text
             response_text = response.content.strip()
-            if response_text.startswith("```json"):
-                response_text = response_text[7:]
-            if response_text.startswith("```"):
-                response_text = response_text[3:]
-            if response_text.endswith("```"):
-                response_text = response_text[:-3]
-
+            if response_text.startswith('```json'):
+                response_text = response_text[7:-3]
+            elif response_text.startswith('```'):
+                response_text = response_text[3:-3]
+            
             # Parse JSON
             analysis = json.loads(response_text)
-
+            
+            # Ensure required structure
+            if 'criteria' not in analysis:
+                analysis['criteria'] = {}
+                
             # Add metadata
-            analysis["product_name"] = product_name
-            analysis["analysis_timestamp"] = self.get_formatted_timestamp()
-            analysis["user_login"] = self.user_login
-            analysis["overall_score"] = sum(
-                analysis[attr]["score"] for attr in self.attributes.keys()
-            ) / len(self.attributes)
-
-            # Save the analysis to temp_KB folder
-            saved_path = self._save_json_to_temp(analysis, product_name)
-            analysis["saved_path"] = saved_path
-
+            analysis['product_name'] = product_name
+            analysis['analysis_timestamp'] = self.get_formatted_timestamp()
+            analysis['user_login'] = self.user_login
+            
+            # Save report
+            analysis['saved_path'] = self._save_json_to_temp(analysis, product_name)
+            
             return analysis
 
-        except json.JSONDecodeError:
-            error_data = {
-                "error": "Failed to parse analysis",
-                "product_name": product_name,
-                "timestamp": self.get_formatted_timestamp(),
-                "user_login": self.user_login
+        except json.JSONDecodeError as e:
+            print(f"JSON Parsing Error: {str(e)}")
+            print(f"Response text: {response_text}")
+            return {
+                "error": "Failed to parse analysis JSON",
+                "details": str(e),
+                "raw_response": response_text
             }
-            self._save_json_to_temp(error_data, f"error_{product_name}")
-            return error_data
         except Exception as e:
-            error_data = {
+            print(f"General Error: {str(e)}")
+            return {
                 "error": f"Analysis failed: {str(e)}",
-                "product_name": product_name,
-                "timestamp": self.get_formatted_timestamp(),
-                "user_login": self.user_login
+                "details": str(e)
             }
-            self._save_json_to_temp(error_data, f"error_{product_name}")
-            return error_data
 
-    async def generate_report(self, product_name: str) -> str:
+    async def generate_report(self, product_name: str, product_inputs: Dict[str, Any]) -> str:
         """
         Generates a formatted compatibility report for a product.
 
         Args:
             product_name: Name of the product to analyze
+            product_inputs: Dictionary containing product-specific inputs
 
         Returns:
             Formatted report as a string
         """
-        analysis = await self.analyze_product(product_name)
+        try:
+            analysis = await self.analyze_compatibility(product_name, product_inputs)
 
-        if "error" in analysis:
-            return f"Error analyzing {product_name}: {analysis['error']}"
+            if "error" in analysis:
+                return f"Error analyzing {product_name}: {analysis['error']}\nDetails: {analysis.get('details', 'No additional details')}"
 
-        report = f"""
+            report = f"""
 Product Compatibility Report
 ==========================
 Product: {analysis['product_name']}
 Analysis Date: {analysis['analysis_timestamp']}
 Analyzed by: {analysis['user_login']}
-Overall Score: {analysis['overall_score']:.1f}/10
+
+Product Specifications:
+---------------------
+Units per Shipment: {product_inputs.get('units_per_shipment')}
+Dimensions (cm): {product_inputs.get('dimensions', {}).get('length')}L x {product_inputs.get('dimensions', {}).get('width')}W x {product_inputs.get('dimensions', {}).get('height')}H
+Location: {product_inputs.get('packaging_location')}
+Budget Constraint: {product_inputs.get('budget_constraint')} units
 
 Detailed Analysis:
 ------------------"""
-        
-        for attr in self.attributes.keys():
-            if attr in analysis:
-                report += f"\n{attr.replace('_', ' ').title()}:\n"
-                report += f"Score: {analysis[attr]['score']}/10\n"
-                report += f"Analysis: {analysis[attr]['explanation']}\n"
-                report += f"Concerns: {analysis[attr]['concerns']}\n"
+            
+            if 'criteria' in analysis:
+                for criterion, details in analysis['criteria'].items():
+                    report += f"\n{criterion.replace('_', ' ').title()}:\n"
+                    report += f"Explanation: {details.get('explanation', 'N/A')}\n"
+                    report += f"Concerns: {details.get('concerns', 'N/A')}\n"
+            else:
+                report += "\nNo criteria analysis available."
 
-        return report
+            return report
+
+        except Exception as e:
+            return f"Error generating report: {str(e)}"
 
 
 # Runner
 async def main():
     try:
-        # Create an instance of the agent
         agent = ProductCompatibilityAgent()
 
-        # Example product to analyze
-        product_name = "Glass Bottle"
+        # Load input JSON dynamically
+        product_name = "Eco-Friendly Bottle"
+        product_inputs = agent.load_input_json(product_name)
 
         # Get detailed analysis
-        analysis = await agent.analyze_compatibility_product(product_name)
+        analysis = await agent.analyze_compatibility(product_name, product_inputs)
         print("\nDetailed Analysis:")
         print(json.dumps(analysis, indent=2))
 
         # Generate formatted report
-        report = await agent.generate_report(product_name)
+        report = await agent.generate_report(product_name, product_inputs)
         print("\nFormatted Report:")
         print(report)
 
+    except FileNotFoundError as e:
+        print(e)
     except Exception as e:
         print(f"Error: {str(e)}")
 
