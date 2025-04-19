@@ -1,143 +1,185 @@
 from agno.agent import Agent
 from agno.models.google import Gemini
 from dotenv import load_dotenv
-import os, json
-from typing import Dict, Any
-from datetime import datetime
+import json
+import os
+from typing import Dict, Any, List
+from datetime import datetime, UTC
+import getpass
 
-class LogisticsCostAnalyzerAgent:
-    def __init__(self, model_id="gemini-2.0-flash-exp", enable_markdown=False):
+class LogisticCompatibilityAgent:
+    def __init__(self, model_id: str = "gemini-2.0-flash-exp", enable_markdown: bool = True):
         load_dotenv()
-        api_key = os.getenv("GOOGLE_API_KEY")
+
+        api_key = os.getenv('GOOGLE_API_KEY')
         if not api_key:
             raise ValueError("GOOGLE_API_KEY environment variable is not set")
 
-        self.agent = Agent(model=Gemini(id=model_id, api_key=api_key), markdown=enable_markdown)
         self.reports_dir = "temp_KB"
         os.makedirs(self.reports_dir, exist_ok=True)
+
+        # Store user and time information
         self.user_login = "codegeek03"
+        self.current_time = "2025-04-19 03:27:36"
 
-    def _load_material_input(self, product_name: str) -> Dict[str, Any]:
-        filename = f"{product_name.replace(' ', '_')}_materials_report.json"
-        filepath = os.path.join("material_reports", filename)
-        with open(filepath, "r", encoding="utf-8") as f:
-            return json.load(f)
+        self.agent = Agent(
+            model=Gemini(
+                id=model_id,
+                api_key=api_key
+            ),
+            markdown=enable_markdown,
+        )
 
-    def _save_report(self, data: Dict[str, Any], product_name: str) -> str:
-        filename = f"{product_name.replace(' ', '_')}_logistics_cost.json"
+        # Define logistics criteria and their weights
+        self.logistics_criteria = {
+            "transportation_durability": 0.25,  # Resistance to shipping stress
+            "storage_stability": 0.20,          # Stability in warehousing
+            "stacking_capability": 0.15,        # Ability to be stacked
+            "weight_efficiency": 0.15,          # Weight to strength ratio
+            "cost_effectiveness": 0.25          # Overall cost consideration
+        }
+
+    def _save_report_to_file(self, data: Dict[str, Any], report_type: str) -> str:
+        timestamp = self.current_time.replace(" ", "_").replace(":", "-")
+        filename = f"{report_type}_{timestamp}.json"
         filepath = os.path.join(self.reports_dir, filename)
-        with open(filepath, "w", encoding="utf-8") as f:
+
+        with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2)
+
         return filepath
 
-    def _timestamp(self) -> str:
-        return datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
-
-    async def analyze_logistics_costs(self, product_name: str) -> Dict[str, Any]:
-        materials = self._load_material_input(product_name)
-
+    async def analyze_logistics_compatibility(self, materials_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Analyzes the logistics compatibility of materials based on transportation and storage requirements.
+        """
         prompt = f"""
-You are a logistics cost analysis engine.
+You are a logistics and supply chain specialist. Analyze the following materials for their logistics compatibility.
+Consider these key factors:
+1. Transportation Durability (25%): Resistance to vibration, shock, and handling stress
+2. Storage Stability (20%): Performance in various warehouse conditions
+3. Stacking Capability (15%): Ability to be safely stacked and packed
+4. Weight Efficiency (15%): Material weight vs strength ratio
+5. Cost Effectiveness (25%): Overall economic feasibility
 
-Task: For the product "{product_name}", assess each material across fixed logistics-related metrics.
+For the materials provided for {materials_data['product_name']}, provide a logistics compatibility analysis.
 
-Materials:
-{json.dumps([m['material_name'] for m in materials['materials']])}
-
-Respond STRICTLY in the following JSON format:
-
+Return a JSON object in this format:
 {{
-  "product_name": "{product_name}",
-  "logistics_analysis": [
+  "logistics_analysis": {{
+    "transportation_durability": [
+      {{
+        "material_name": "<name>",
+        "score": <0-10>,
+        "logistics_properties": "<key logistics properties>",
+        "handling_requirements": "<specific requirements for transportation>"
+      }}
+    ],
+    "storage_stability": [...],
+    "stacking_capability": [...],
+    "weight_efficiency": [...],
+    "cost_effectiveness": [...]
+  }},
+  "top_recommendations": [
     {{
-      "material_name": "<material>",
-      "metrics": {{
-        "weight_density": {{
-          "score": <1-10>,
-          "value": "<numeric>",
-          "unit": "kg/m³",
-          "details": "<10-word comment>"
-        }},
-        "volume_efficiency": {{
-          "score": <1-10>,
-          "value": "<numeric>",
-          "unit": "%",
-          "details": "<10-word comment>"
-        }},
-        "stackability": {{
-          "score": <1-10>,
-          "value": "<numeric>",
-          "unit": "rating",
-          "details": "<10-word comment>"
-        }},
-        "transport_mode_fit": {{
-          "score": <1-10>,
-          "value": "<numeric>",
-          "unit": "rating",
-          "details": "<10-word comment>"
-        }},
-        "fragility_index": {{
-          "score": <1-10>,
-          "value": "<numeric>",
-          "unit": "rating",
-          "details": "<10-word comment>"
-        }},
-        "logistics_cost_estimate": {{
-          "value": "<numeric>",
-          "unit": "USD/kg",
-          "details": "<10-word cost implication comment>"
-        }}
-      }},
-      "overall_logistics_score": <float>
+      "material_name": "<name>",
+      "overall_score": <0-10>,
+      "key_advantages": ["<advantage1>", "<advantage2>"],
+      "logistics_considerations": "<specific considerations>"
     }}
   ],
-  "summary": {{
-    "lowest_cost_materials": ["<mat1>", "<mat2>", "<mat3>"],
-    "by_metric": {{
-      "weight_density": ["<mat1>", "<mat2>", "<mat3>"],
-      "volume_efficiency": ["<mat1>", "<mat2>", "<mat3>"],
-      "stackability": ["<mat1>", "<mat2>", "<mat3>"],
-      "transport_mode_fit": ["<mat1>", "<mat2>", "<mat3>"],
-      "fragility_index": ["<mat1>", "<mat2>", "<mat3>"]
-    }}
-  }}
+  "analysis_timestamp": "{self.current_time}",
+  "user_login": "{self.user_login}"
 }}
 
-Constraints:
-- Do not suggest or recommend.
-- Do not include markdown, explanation, or prose.
-- All numeric values must be realistic and plausible for packaging.
-- Units must strictly match the template.
+Analyze ONLY the most promising materials from each category in the input data.
+Focus on practical logistics considerations.
 """
 
         try:
             response = await self.agent.arun(prompt)
-            content = response.content.strip()
-            for tag in ["```json", "```"]:
-                if content.startswith(tag): content = content[len(tag):]
-                if content.endswith(tag): content = content[:-len(tag)]
+            
+            response_text = response.content.strip()
+            if response_text.startswith("```json"):
+                response_text = response_text[7:]
+            if response_text.startswith("```"):
+                response_text = response_text[3:]
+            if response_text.endswith("```"):
+                response_text = response_text[:-3]
 
-            data = json.loads(content)
-            data["analysis_timestamp"] = self._timestamp()
-            data["user_login"] = self.user_login
-            data["report_path"] = self._save_report(data, product_name)
-            return data
+            analysis = json.loads(response_text)
+            
+            saved_path = self._save_report_to_file(analysis, "logistics_compatibility")
+            analysis["report_path"] = saved_path
+            
+            return analysis
 
         except Exception as e:
-            error = {
-                "error": str(e),
-                "timestamp": self._timestamp(),
-                "user_login": self.user_login,
-                "product_name": product_name
+            error_data = {
+                "error": f"Logistics analysis failed: {str(e)}",
+                "timestamp": self.current_time,
+                "user_login": self.user_login
             }
-            self._save_report(error, f"error_{product_name}")
-            return error
+            self._save_report_to_file(error_data, "error_logistics_analysis")
+            return error_data
 
-# --- Example Usage ---
+    async def generate_logistics_report(self, analysis: Dict[str, Any]) -> str:
+        """
+        Generates a formatted report of the logistics compatibility analysis.
+        """
+        if "error" in analysis:
+            return f"Error generating report: {analysis['error']}"
+
+        report = f"""
+Logistics Compatibility Report
+============================
+Analysis Date: {analysis['analysis_timestamp']}
+Generated by: {analysis['user_login']}
+
+Logistics Analysis by Criterion:
+------------------------------
+"""
+        
+        for criterion, materials in analysis['logistics_analysis'].items():
+            report += f"\n{criterion.replace('_', ' ').title()}:\n"
+            report += "-" * (len(criterion) + 1) + "\n"
+            
+            for material in materials:
+                report += f"• {material['material_name']}\n"
+                report += f"  Score: {material['score']}/10\n"
+                report += f"  Properties: {material['logistics_properties']}\n"
+                report += f"  Handling: {material['handling_requirements']}\n\n"
+
+        report += "\nTop Recommendations:\n"
+        report += "-------------------\n"
+        for rec in analysis['top_recommendations']:
+            report += f"\n{rec['material_name']} (Score: {rec['overall_score']}/10)\n"
+            report += "Key Advantages:\n"
+            for adv in rec['key_advantages']:
+                report += f"- {adv}\n"
+            report += f"Logistics Considerations: {rec['logistics_considerations']}\n"
+
+        return report
+
 async def main():
-    agent = LogisticsCostAnalyzerAgent()
-    result = await agent.analyze_logistics_costs("Glass Bottle")
-    print(json.dumps(result, indent=2))
+    try:
+        # Load the materials data (your provided JSON)
+        with open('temp_KB\materials_by_criteria.json', 'r') as f:
+            materials_data = json.load(f)
+
+        agent = LogisticCompatibilityAgent()
+        
+        print("Analyzing logistics compatibility... This may take a few moments.")
+        analysis = await agent.analyze_logistics_compatibility(materials_data)
+        
+        report = await agent.generate_logistics_report(analysis)
+        print("\nLogistics Compatibility Report:")
+        print(report)
+        
+        print(f"\nFull report saved to: {analysis.get('report_path', 'Error: Report not saved')}")
+
+    except Exception as e:
+        print(f"Error: {str(e)}")
 
 if __name__ == "__main__":
     import asyncio
