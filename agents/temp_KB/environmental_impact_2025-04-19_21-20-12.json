@@ -1,0 +1,36 @@
+{
+  "top_materials": [
+    {
+      "material_name": "Glass",
+      "environmental_score": 8.2,
+      "key_benefit": "Highly recyclable",
+      "primary_concern": "High energy production"
+    },
+    {
+      "material_name": "Aluminum",
+      "environmental_score": 7.8,
+      "key_benefit": "Excellent recyclability",
+      "primary_concern": "Bauxite mining impact"
+    },
+    {
+      "material_name": "PLA",
+      "environmental_score": 7.5,
+      "key_benefit": "Biodegradable potential",
+      "primary_concern": "Industrial composting needed"
+    },
+    {
+      "material_name": "Bamboo",
+      "environmental_score": 7.0,
+      "key_benefit": "Renewable resource",
+      "primary_concern": "Processing impact"
+    },
+    {
+      "material_name": "rPET",
+      "environmental_score": 6.8,
+      "key_benefit": "Reduces plastic waste",
+      "primary_concern": "Microplastic shedding"
+    }
+  ],
+  "timestamp": "2025-04-19 21:20:12",
+  "user": "codegeek03"
+}

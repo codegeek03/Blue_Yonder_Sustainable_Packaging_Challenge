@@ -7,10 +7,10 @@ from dotenv import load_dotenv
 import shutil
 
 # Import the agents
-from Environment_impact_agent import EnvironmentalImpactAgent
-from logistics import LogisticsCostAnalyzerAgent
-from Material_cost_analyser import MaterialCostAgent
-from Material_property_analyser import MaterialPropertiesAgent
+from agents.Sustainability_Analyst import EnvironmentalImpactAgent
+from agents.Logistics_Analyst import LogisticsCostAnalyzerAgent
+from agents.Sourcing_Cost_Analyser import MaterialCostAgent
+from agents.Material_Analyst import MaterialPropertiesAgent
 from MaterialDB_agent import PackagingMaterialsAgent
 from product_compatibilty import ProductCompatibilityAgent
 

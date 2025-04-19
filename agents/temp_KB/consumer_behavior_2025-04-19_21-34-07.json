@@ -1,0 +1,215 @@
+{
+  "top_materials": [
+    {
+      "material_name": "Recycled PET (rPET)",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Good clarity, improving aesthetics."
+        },
+        "usability": {
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Familiar feel, lightweight."
+        },
+        "perceived_value": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Seen as acceptable for value."
+        },
+        "eco_consciousness": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Strongly linked to recycling."
+        },
+        "brand_alignment": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Supports eco-friendly messaging."
+        }
+      },
+      "overall_consumer_score": 7.8,
+      "target_demographics": [
+        "Millennials",
+        "Gen Z",
+        "Eco-conscious Boomers"
+      ],
+      "market_positioning": "Sustainable, cost-effective alternative to virgin PET."
+    },
+    {
+      "material_name": "Glass",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Premium, visually appealing."
+        },
+        "usability": {
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Heavy, prone to breakage."
+        },
+        "perceived_value": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "High-quality, premium feel."
+        },
+        "eco_consciousness": {
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Recyclable, but heavy to transport."
+        },
+        "brand_alignment": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Aligns with premium, natural brands."
+        }
+      },
+      "overall_consumer_score": 8.2,
+      "target_demographics": [
+        "Affluent Consumers",
+        "Health-conscious Individuals"
+      ],
+      "market_positioning": "Premium, sustainable option for high-end products."
+    },
+    {
+      "material_name": "Aluminum",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Modern, sleek look."
+        },
+        "usability": {
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Lightweight, durable."
+        },
+        "perceived_value": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Good balance of cost and quality."
+        },
+        "eco_consciousness": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Highly recyclable material."
+        },
+        "brand_alignment": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Suits modern, active lifestyles."
+        }
+      },
+      "overall_consumer_score": 7.6,
+      "target_demographics": [
+        "Millennials",
+        "Gen X",
+        "Outdoor Enthusiasts"
+      ],
+      "market_positioning": "Durable, sustainable alternative to plastic."
+    },
+    {
+      "material_name": "Bioplastics (PLA)",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Visually similar to plastic."
+        },
+        "usability": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Functional, but heat sensitivity."
+        },
+        "perceived_value": {
+          "score": 6,
+          "trend_strength": "weak",
+          "key_insight": "Value perception is still developing."
+        },
+        "eco_consciousness": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Biodegradable, plant-based material."
+        },
+        "brand_alignment": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Supports strong sustainability claims."
+        }
+      },
+      "overall_consumer_score": 7.2,
+      "target_demographics": [
+        "Eco-conscious Consumers",
+        "Organic Food Buyers"
+      ],
+      "market_positioning": "Sustainable, biodegradable packaging option."
+    },
+    {
+      "material_name": "Paperboard with Eco-coating",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Natural look, customizable."
+        },
+        "usability": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Lightweight, but less durable."
+        },
+        "perceived_value": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Good balance of cost and eco-friendliness."
+        },
+        "eco_consciousness": {
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Renewable resource, compostable option."
+        },
+        "brand_alignment": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Fits with natural, ethical brands."
+        }
+      },
+      "overall_consumer_score": 7.6,
+      "target_demographics": [
+        "Environmentally Concerned Shoppers",
+        "Minimalist Lifestyle Followers"
+      ],
+      "market_positioning": "Sustainable, compostable alternative to plastic packaging."
+    }
+  ],
+  "consumer_trends": [
+    {
+      "trend_name": "Reduced Plastic Consumption",
+      "impact_level": "high",
+      "relevance": "Consumers actively seeking alternatives to plastic bottles."
+    },
+    {
+      "trend_name": "Transparency in Sourcing",
+      "impact_level": "medium",
+      "relevance": "Consumers want to know where materials originate from."
+    },
+    {
+      "trend_name": "Minimalist Packaging",
+      "impact_level": "medium",
+      "relevance": "Focus on essential packaging to reduce waste."
+    },
+    {
+      "trend_name": "Home Composting",
+      "impact_level": "low",
+      "relevance": "Interest in compostable packaging for home disposal."
+    },
+    {
+      "trend_name": "Refill Programs",
+      "impact_level": "medium",
+      "relevance": "Increasing adoption of refill programs to reduce packaging."
+    }
+  ],
+  "timestamp": "2025-04-19 21:34:07",
+  "user": "codegeek03"
+}

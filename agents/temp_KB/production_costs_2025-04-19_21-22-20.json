@@ -1,0 +1,71 @@
+{
+  "top_materials": [
+    {
+      "material_name": "Recycled PET (rPET)",
+      "cost_score": 9,
+      "base_price": "1.20 USD/kg",
+      "key_costs": {
+        "raw_material": "Lower than virgin PET",
+        "processing": "Similar to virgin PET",
+        "tariffs": "Low, often incentives",
+        "transport": "Dependent on location",
+        "compliance": "Standard regulations"
+      },
+      "total_estimated_cost": "0.18 USD"
+    },
+    {
+      "material_name": "Bio-Based PE (Sugarcane)",
+      "cost_score": 7,
+      "base_price": "2.50 USD/kg",
+      "key_costs": {
+        "raw_material": "Higher base material",
+        "processing": "Standard PE processing",
+        "tariffs": "Varies by region",
+        "transport": "Standard transport costs",
+        "compliance": "Bio-based certifications"
+      },
+      "total_estimated_cost": "0.38 USD"
+    },
+    {
+      "material_name": "HDPE (Recycled)",
+      "cost_score": 8,
+      "base_price": "1.00 USD/kg",
+      "key_costs": {
+        "raw_material": "Competitive recycled price",
+        "processing": "Easy molding process",
+        "tariffs": "Generally very low",
+        "transport": "Standard costs apply",
+        "compliance": "Recycling standards"
+      },
+      "total_estimated_cost": "0.15 USD"
+    },
+    {
+      "material_name": "Glass (Recycled)",
+      "cost_score": 6,
+      "base_price": "0.80 USD/kg",
+      "key_costs": {
+        "raw_material": "Abundant and cheaper",
+        "processing": "Energy-intensive melting",
+        "tariffs": "Minimal import costs",
+        "transport": "Heavy material, high cost",
+        "compliance": "Standard recycling laws"
+      },
+      "total_estimated_cost": "0.12 USD"
+    },
+    {
+      "material_name": "PLA (Polylactic Acid)",
+      "cost_score": 5,
+      "base_price": "3.00 USD/kg",
+      "key_costs": {
+        "raw_material": "Derived from corn starch",
+        "processing": "Specific equipment needed",
+        "tariffs": "Variable based on origin",
+        "transport": "Standard shipping applies",
+        "compliance": "Compostability standards"
+      },
+      "total_estimated_cost": "0.45 USD"
+    }
+  ],
+  "timestamp": "2025-04-19 21:22:20",
+  "user": "codegeek03"
+}

@@ -1,0 +1,36 @@
+{
+  "top_materials": [
+    {
+      "material_name": "rPET",
+      "logistics_score": 8,
+      "primary_advantage": "High durability, lightweight",
+      "cost_consideration": "Recycled, reduces cost"
+    },
+    {
+      "material_name": "HDPE",
+      "logistics_score": 7,
+      "primary_advantage": "Good impact resistance",
+      "cost_consideration": "Lower raw material cost"
+    },
+    {
+      "material_name": "Aluminum",
+      "logistics_score": 9,
+      "primary_advantage": "Excellent durability",
+      "cost_consideration": "Higher initial cost"
+    },
+    {
+      "material_name": "Glass (thick)",
+      "logistics_score": 6,
+      "primary_advantage": "Stackable, rigid",
+      "cost_consideration": "Higher transport costs"
+    },
+    {
+      "material_name": "Bagasse",
+      "logistics_score": 5,
+      "primary_advantage": "Compact storage",
+      "cost_consideration": "Lower raw material cost"
+    }
+  ],
+  "timestamp": "2025-04-19 21:17:20",
+  "user": "codegeek03"
+}

@@ -1,0 +1,171 @@
+{
+  "top_materials": [
+    {
+      "material_name": "PLA",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "50",
+          "unit": "MPa",
+          "score": 6
+        },
+        "chemical_resistance": {
+          "value": "5-7",
+          "unit": "pH range",
+          "score": 5
+        },
+        "thermal_stability": {
+          "value": "55",
+          "unit": "\u00b0C",
+          "score": 4
+        },
+        "barrier_properties": {
+          "value": "25",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 5
+        },
+        "durability": {
+          "value": "1-2",
+          "unit": "years",
+          "score": 3
+        }
+      },
+      "overall_score": 4.6,
+      "key_strength": "Biodegradable",
+      "main_limitation": "Low heat resistance"
+    },
+    {
+      "material_name": "PET",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "70",
+          "unit": "MPa",
+          "score": 7
+        },
+        "chemical_resistance": {
+          "value": "3-9",
+          "unit": "pH range",
+          "score": 7
+        },
+        "thermal_stability": {
+          "value": "70",
+          "unit": "\u00b0C",
+          "score": 6
+        },
+        "barrier_properties": {
+          "value": "15",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 7
+        },
+        "durability": {
+          "value": "5",
+          "unit": "years",
+          "score": 7
+        }
+      },
+      "overall_score": 6.8,
+      "key_strength": "High strength",
+      "main_limitation": "Petroleum based"
+    },
+    {
+      "material_name": "rPET",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "65",
+          "unit": "MPa",
+          "score": 6
+        },
+        "chemical_resistance": {
+          "value": "3-9",
+          "unit": "pH range",
+          "score": 7
+        },
+        "thermal_stability": {
+          "value": "65",
+          "unit": "\u00b0C",
+          "score": 5
+        },
+        "barrier_properties": {
+          "value": "18",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 6
+        },
+        "durability": {
+          "value": "4",
+          "unit": "years",
+          "score": 6
+        }
+      },
+      "overall_score": 6,
+      "key_strength": "Recycled content",
+      "main_limitation": "Lower strength"
+    },
+    {
+      "material_name": "Glass",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "35",
+          "unit": "MPa",
+          "score": 5
+        },
+        "chemical_resistance": {
+          "value": "1-14",
+          "unit": "pH range",
+          "score": 10
+        },
+        "thermal_stability": {
+          "value": "200",
+          "unit": "\u00b0C",
+          "score": 10
+        },
+        "barrier_properties": {
+          "value": "0",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 10
+        },
+        "durability": {
+          "value": "10+",
+          "unit": "years",
+          "score": 10
+        }
+      },
+      "overall_score": 9,
+      "key_strength": "Inert, recyclable",
+      "main_limitation": "Fragile"
+    },
+    {
+      "material_name": "Aluminum",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "90",
+          "unit": "MPa",
+          "score": 9
+        },
+        "chemical_resistance": {
+          "value": "6-8",
+          "unit": "pH range",
+          "score": 6
+        },
+        "thermal_stability": {
+          "value": "250",
+          "unit": "\u00b0C",
+          "score": 10
+        },
+        "barrier_properties": {
+          "value": "0",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 10
+        },
+        "durability": {
+          "value": "10+",
+          "unit": "years",
+          "score": 10
+        }
+      },
+      "overall_score": 9,
+      "key_strength": "Recyclable, strong",
+      "main_limitation": "Corrosion prone"
+    }
+  ],
+  "timestamp": "2025-04-19 21:27:30",
+  "user": "codegeek03"
+}
