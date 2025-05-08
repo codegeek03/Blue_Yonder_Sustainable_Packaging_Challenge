@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "rPET",
-      "logistics_score": 8,
-      "primary_advantage": "High durability, lightweight",
-      "cost_consideration": "Recycled, reduces cost"
-    },
-    {
-      "material_name": "HDPE",
-      "logistics_score": 7,
-      "primary_advantage": "Good impact resistance",
-      "cost_consideration": "Lower raw material cost"
-    },
-    {
-      "material_name": "Aluminum",
+      "material_name": "Cardboard",
       "logistics_score": 9,
-      "primary_advantage": "Excellent durability",
-      "cost_consideration": "Higher initial cost"
+      "primary_advantage": "Excellent stacking and protection",
+      "cost_consideration": "Low material and transport cost"
     },
     {
-      "material_name": "Glass (thick)",
+      "material_name": "Molded Pulp",
+      "logistics_score": 8,
+      "primary_advantage": "Superior shock absorption",
+      "cost_consideration": "Moderate mold creation cost"
+    },
+    {
+      "material_name": "Bubble Wrap",
+      "logistics_score": 7,
+      "primary_advantage": "Good cushioning for components",
+      "cost_consideration": "Low per-unit cost"
+    },
+    {
+      "material_name": "Foam Inserts",
+      "logistics_score": 7,
+      "primary_advantage": "Secure product placement",
+      "cost_consideration": "Higher fabrication cost"
+    },
+    {
+      "material_name": "Plastic Trays",
       "logistics_score": 6,
-      "primary_advantage": "Stackable, rigid",
-      "cost_consideration": "Higher transport costs"
-    },
-    {
-      "material_name": "Bagasse",
-      "logistics_score": 5,
-      "primary_advantage": "Compact storage",
-      "cost_consideration": "Lower raw material cost"
+      "primary_advantage": "Easy handling and organization",
+      "cost_consideration": "Potential plastic tax impact"
     }
   ],
   "timestamp": "2025-04-19 21:17:20",

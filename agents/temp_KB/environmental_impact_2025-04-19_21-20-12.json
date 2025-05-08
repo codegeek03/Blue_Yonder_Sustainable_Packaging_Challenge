@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "Glass",
-      "environmental_score": 8.2,
-      "key_benefit": "Highly recyclable",
-      "primary_concern": "High energy production"
+      "material_name": "Recycled Aluminum",
+      "environmental_score": 8.5,
+      "key_benefit": "Reduced mining impact",
+      "primary_concern": "Energy intensive recycling"
     },
     {
-      "material_name": "Aluminum",
+      "material_name": "Recycled Tin",
       "environmental_score": 7.8,
-      "key_benefit": "Excellent recyclability",
-      "primary_concern": "Bauxite mining impact"
+      "key_benefit": "Lower resource extraction",
+      "primary_concern": "Limited availability"
     },
     {
-      "material_name": "PLA",
-      "environmental_score": 7.5,
-      "key_benefit": "Biodegradable potential",
-      "primary_concern": "Industrial composting needed"
+      "material_name": "Recycled Plastics",
+      "environmental_score": 7.2,
+      "key_benefit": "Decreased plastic waste",
+      "primary_concern": "Degraded material quality"
     },
     {
-      "material_name": "Bamboo",
-      "environmental_score": 7.0,
-      "key_benefit": "Renewable resource",
-      "primary_concern": "Processing impact"
+      "material_name": "Paper Packaging",
+      "environmental_score": 6.9,
+      "key_benefit": "Biodegradable and renewable",
+      "primary_concern": "Deforestation risks exist"
     },
     {
-      "material_name": "rPET",
-      "environmental_score": 6.8,
-      "key_benefit": "Reduces plastic waste",
-      "primary_concern": "Microplastic shedding"
+      "material_name": "Glass",
+      "environmental_score": 6.5,
+      "key_benefit": "Recyclable material",
+      "primary_concern": "High energy production"
     }
   ],
   "timestamp": "2025-04-19 21:20:12",

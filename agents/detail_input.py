@@ -1,0 +1,201 @@
+from datetime import datetime
+import json
+import os
+import asyncio
+import logging
+from typing import Dict, Union, Optional
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, 
+                   format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+JsonData = Dict[str, Union[str, int, float, Dict[str, float], Dict[str, str]]]
+
+class ProductInput:
+    def __init__(self, current_time: str, user_login: str):
+        """
+        Initialize ProductInput with user-provided time and login.
+        
+        Args:
+            current_time: Current UTC time in YYYY-MM-DD HH:MM:SS format
+            user_login: User's login name
+        """
+        self.product_name = ""
+        self.units_per_shipment = 0
+        self.dimensions = {"length": 0, "width": 0, "height": 0}
+        self.packaging_location = ""
+        self.budget_constraint = 0.0
+        self.timestamp = current_time
+        self.user = user_login
+        
+    async def validate_product_details(self) -> Optional[str]:
+        """Validate product details and return error message if invalid"""
+        if not self.product_name:
+            return "Product name cannot be empty"
+        if self.units_per_shipment <= 0:
+            return "Units per shipment must be positive"
+        if any(dim <= 0 for dim in self.dimensions.values()):
+            return "All dimensions must be positive"
+        if not self.packaging_location:
+            return "Packaging location cannot be empty"
+        if self.budget_constraint <= 0:
+            return "Budget constraint must be positive"
+        return None
+
+    async def get_product_details(self) -> JsonData:
+        """Get product details asynchronously with user input"""
+        logger.info("Starting product details collection")
+        try:
+            # Get user input
+            print("\nEnter Product Details:")
+            print("=" * 50)
+            
+            self.product_name = input("Product Name: ").strip()
+            
+            while True:
+                try:
+                    self.units_per_shipment = int(input("Units per Shipment: "))
+                    if self.units_per_shipment > 0:
+                        break
+                    print("Please enter a positive number.")
+                except ValueError:
+                    print("Please enter a valid number.")
+            
+            print("\nEnter Dimensions (in cm):")
+            while True:
+                try:
+                    self.dimensions["length"] = float(input("Length: "))
+                    self.dimensions["width"] = float(input("Width: "))
+                    self.dimensions["height"] = float(input("Height: "))
+                    if all(dim > 0 for dim in self.dimensions.values()):
+                        break
+                    print("All dimensions must be positive numbers.")
+                except ValueError:
+                    print("Please enter valid numbers.")
+            
+            self.packaging_location = input("\nPackaging Location: ").strip()
+            
+            while True:
+                try:
+                    self.budget_constraint = float(input("Budget Constraint ($): "))
+                    if self.budget_constraint > 0:
+                        break
+                    print("Please enter a positive number.")
+                except ValueError:
+                    print("Please enter a valid number.")
+
+            # Validate the details
+            validation_error = await self.validate_product_details()
+            if validation_error:
+                raise ValueError(validation_error)
+
+            # Save to JSON
+            await self.save_to_json()
+
+            # Prepare response with metadata
+            response = {
+                "product_name": self.product_name,
+                "units_per_shipment": self.units_per_shipment,
+                "dimensions": self.dimensions,
+                "packaging_location": self.packaging_location,
+                "budget_constraint": self.budget_constraint,
+                "metadata": {
+                    "timestamp": self.timestamp,
+                    "user": self.user,
+                    "volume": self.calculate_volume(),
+                    "status": "success"
+                }
+            }
+
+            logger.info(f"Successfully collected details for product: {self.product_name}")
+            return response
+
+        except ValueError as ve:
+            error_msg = f"Validation error: {str(ve)}"
+            logger.error(error_msg)
+            raise ValueError(error_msg)
+        except Exception as e:
+            error_msg = f"Failed to get product details: {str(e)}"
+            logger.error(error_msg, exc_info=True)
+            raise Exception(error_msg)
+
+    def calculate_volume(self) -> float:
+        """Calculate the volume of the product"""
+        return (self.dimensions["length"] * 
+                self.dimensions["width"] * 
+                self.dimensions["height"])
+
+    def display_details(self) -> None:
+        """Display the entered product details with enhanced formatting"""
+        try:
+            logger.info("Displaying product details")
+            print("\nProduct Details:")
+            print("=" * 50)
+            print(f"Product Name: {self.product_name}")
+            print(f"Units per shipment: {self.units_per_shipment}")
+            print(f"Dimensions (L×W×H): {self.dimensions['length']}×"
+                  f"{self.dimensions['width']}×{self.dimensions['height']} cm")
+            print(f"Volume: {self.calculate_volume()} cubic cm")
+            print(f"Packaging Location: {self.packaging_location}")
+            print(f"Budget Constraint: ${self.budget_constraint:.2f}")
+            print(f"Timestamp: {self.timestamp}")
+            print(f"User: {self.user}")
+            print("=" * 50)
+        except Exception as e:
+            logger.error(f"Error displaying details: {str(e)}")
+
+    async def save_to_json(self) -> None:
+        """Save product details to JSON file asynchronously"""
+        logger.info(f"Saving product details to JSON for {self.product_name}")
+        try:
+            data = {
+                "product_name": self.product_name,
+                "units_per_shipment": self.units_per_shipment,
+                "dimensions": self.dimensions,
+                "packaging_location": self.packaging_location,
+                "budget_constraint": self.budget_constraint,
+                "metadata": {
+                    "timestamp": self.timestamp,
+                    "user": self.user,
+                    "volume": self.calculate_volume()
+                }
+            }
+            
+            # Ensure the temp_KB directory exists
+            os.makedirs("temp_KB", exist_ok=True)
+            
+            filename = os.path.join("temp_KB", 
+                                  f"{self.product_name.lower().replace(' ', '_')}.json")
+            
+            # Run blocking file operations in a thread pool
+            await asyncio.get_event_loop().run_in_executor(
+                None,
+                lambda: json.dump(data, open(filename, 'w'), indent=4)
+            )
+            
+            logger.info(f"Successfully saved product details to {filename}")
+            
+        except Exception as e:
+            error_msg = f"Failed to save product details: {str(e)}"
+            logger.error(error_msg, exc_info=True)
+            raise Exception(error_msg)
+
+async def main():
+    """Main function for testing"""
+    try:
+        # Use provided current time and user login
+        current_time = "2025-05-08 20:16:15"
+        user_login = "codegeek03"
+        
+        product = ProductInput(current_time, user_login)
+        result = await product.get_product_details()
+        product.display_details()
+        print("\nJSON Response:")
+        print(json.dumps(result, indent=2))
+    except Exception as e:
+        logger.error(f"Error in main: {str(e)}", exc_info=True)
+        print(f"Error: {str(e)}")
+
+if __name__ == "__main__":
+    asyncio.run(main())

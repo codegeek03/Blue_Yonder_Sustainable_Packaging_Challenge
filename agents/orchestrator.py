@@ -1,257 +1,384 @@
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Literal, TypedDict, Annotated, Optional
+from langgraph.graph import StateGraph
+from langgraph.checkpoint.memory import MemorySaver
 import asyncio
-import os
-import json
-from datetime import datetime
-from dotenv import load_dotenv
-import shutil
+from datetime import datetime, timezone
+import logging
 
-# Import the agents
-from agents.Sustainability_Analyst import EnvironmentalImpactAgent
-from agents.Logistics_Analyst import LogisticsCostAnalyzerAgent
-from agents.Sourcing_Cost_Analyser import MaterialCostAgent
-from agents.Material_Analyst import MaterialPropertiesAgent
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# Import all your agents
+from detail_input import ProductInput
+from Product_Analyst import ProductCompatibilityAgent
 from MaterialDB_agent import PackagingMaterialsAgent
-from product_compatibilty import ProductCompatibilityAgent
+from Material_Analyst import MaterialPropertiesAgent
+from Logistics_Analyst import LogisticCompatibilityAgent
+from Sourcing_Cost_Analyser import ProductionCostAgent
+from Sustainability_Analyst import EnvironmentalImpactAgent
+from Consumer_Behaviour_Analyst import ConsumerBehaviorAgent
 
-class PackagingAnalysisOrchestrator:
-    def __init__(self, model_id: str = "gemini-2.0-flash-exp", enable_markdown: bool = True):
-        # Create output directories
-        self.output_dir = "analysis_reports"
-        self.material_reports_dir = "material_reports"
-        self.temp_kb_dir = "temp_KB"  # Add temp_KB directory reference
-        
-        # Create directories if they don't exist
-        for directory in [self.output_dir, self.material_reports_dir]:
-            os.makedirs(directory, exist_ok=True)
+# Constants
+CURRENT_USER = "codegeek03"
+ANALYSIS_WEIGHTS = {
+    "properties": 1.0,
+    "logistics": 0.8,
+    "cost": 1.2,
+    "sustainability": 1.0,
+    "consumer": 1.5
+}
 
-        # Initialize MaterialDB agent first
-        self.material_db_agent = PackagingMaterialsAgent(model_id, enable_markdown)
+class AnalysisState(TypedDict):
+    input_data: Dict[str, Any]  # Remove Annotated as it's causing concurrent update issues
+    compatibility_analysis: Dict[str, Any]
+    material_database: Dict[str, Any]
+    properties_analysis: Dict[str, Any]
+    logistics_analysis: Dict[str, Any]
+    cost_analysis: Dict[str, Any]
+    sustainability_analysis: Dict[str, Any]
+    consumer_analysis: Dict[str, Any]
+    final_results: Dict[str, Any]
+    #error: NotRequired[Optional[str]]
+    processing_status: Dict[str, str]
+    user_login: str
+    current_time: str
+
+# Node definitions
+async def process_input(state: AnalysisState) -> AnalysisState:
+    logger.info("Starting input processing")
+    try:
+        # Create a new state dict to avoid concurrent modifications
+        new_state = state.copy()
         
-        # Initialize other agents
-        self.agents = {
-            "environmental": EnvironmentalImpactAgent(model_id, enable_markdown),
-            "logistics": LogisticsCostAnalyzerAgent(model_id, enable_markdown),
-            "cost": MaterialCostAgent(model_id, enable_markdown),
-            "properties": MaterialPropertiesAgent(model_id, enable_markdown),
-            "compatibility": ProductCompatibilityAgent(model_id, enable_markdown)
+        if not new_state.get("input_data"):
+            now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            user = CURRENT_USER
+            agent = ProductInput(current_time=now, user_login=user)
+            details = await agent.get_product_details()
+            
+            # Update all related fields at once
+            new_state.update({
+                "input_data": details,
+                "processing_status": {"input": "completed", "timestamp": now, "user": user},
+                "user_login": user,
+                "current_time": now
+            })
+            
+        return new_state
+    except Exception as e:
+        msg = f"Input processing failed: {e}"
+        logger.error(msg, exc_info=True)
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        # Return a new state with error information
+        return {
+            **state,
+            "error": msg,
+            "processing_status": {
+                "input": "failed",
+                "timestamp": now,
+                "user": CURRENT_USER,
+                "error_details": str(e)
+            }
         }
 
-    def _get_timestamp(self) -> str:
-        """Get current timestamp in YYYY-MM-DD HH:MM:SS format."""
-        return datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
-
-    def _move_material_report(self, product_name: str) -> bool:
-        """
-        Move material report from temp_KB to material_reports directory.
-
-        Args:
-            product_name: Name of the product
-
-        Returns:
-            bool: True if move was successful, False otherwise
-        """
-        temp_filename = f"{product_name.replace(' ', '_')}_materials_report.json"
-        temp_filepath = os.path.join(self.temp_kb_dir, temp_filename)
-        target_filepath = os.path.join(self.material_reports_dir, temp_filename)
-
-        if os.path.exists(temp_filepath):
-            shutil.copy2(temp_filepath, target_filepath)
-            return True
-        return False
-
-    def _check_material_report(self, product_name: str) -> Dict[str, Any]:
-        """
-        Check and load material report from either temp_KB or material_reports.
-
-        Args:
-            product_name: Name of the product
-
-        Returns:
-            Dict containing the material report data
-        """
-        filename = f"{product_name.replace(' ', '_')}_materials_report.json"
-        temp_filepath = os.path.join(self.temp_kb_dir, filename)
-        target_filepath = os.path.join(self.material_reports_dir, filename)
-
-        # First check temp_KB
-        if os.path.exists(temp_filepath):
-            with open(temp_filepath, 'r') as f:
-                report = json.load(f)
-            # Move to material_reports directory
-            self._move_material_report(product_name)
-            return report
-        
-        # Then check material_reports
-        if os.path.exists(target_filepath):
-            with open(target_filepath, 'r') as f:
-                return json.load(f)
-                
-        return {"error": "Material report not found"}
-
-    def _save_consolidated_report(self, data: Dict[str, Any], product_name: str) -> str:
-        filename = f"{product_name.replace(' ', '_')}_consolidated_report.json"
-        filepath = os.path.join(self.output_dir, filename)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2)
-        return filepath
-
-    async def run_analysis_workflow(self, product_name: str) -> Dict[str, Any]:
-        try:
-            print(f"\nStarting comprehensive analysis for: {product_name}")
-            print("=" * 50)
-
-            # Step 1: Check for existing material report
-            print("\n1. Checking for material analysis...")
-            materials_analysis = self._check_material_report(product_name)
-
-            if "error" in materials_analysis:
-                print("Material report not found. Generating new material analysis...")
-                materials_analysis = await self.material_db_agent.analyze_packaging_materials(product_name)
-                if "error" in materials_analysis:
-                    raise ValueError(f"Materials analysis failed: {materials_analysis['error']}")
-            else:
-                print("Using existing material analysis...")
-
-            print(f"Material analysis complete. Found {len(materials_analysis['materials'])} materials.")
-
-            # Initialize analyses dictionary
-            analyses = {"materials": materials_analysis}
-
-            # Run subsequent analyses
-            for step, (name, agent) in enumerate([
-                ("environmental", self.agents["environmental"]),
-                ("logistics", self.agents["logistics"]),
-                ("cost", self.agents["cost"]),
-                ("properties", self.agents["properties"]),
-                ("compatibility", self.agents["compatibility"])
-            ], 2):
-                print(f"\n{step}. Analyzing {name}...")
-                analyses[name] = await getattr(agent, f"analyze_{name}_{'impact' if name == 'environmental' else 'costs' if name in ['logistics', 'cost'] else 'properties' if name == 'properties' else 'product'}")(product_name)
-
-            # Consolidate report
-            consolidated_report = {
-                "product_name": product_name,
-                "analysis_timestamp": self._get_timestamp(),
-                "analyses": analyses
-            }
-
-            # Save consolidated report
-            report_path = self._save_consolidated_report(consolidated_report, product_name)
-            print(f"\nAnalysis complete. Consolidated report saved to: {report_path}")
-
-            return consolidated_report
-
-        except Exception as e:
-            error_report = {
-                "error": f"Analysis workflow failed: {str(e)}",
-                "product_name": product_name,
-                "timestamp": self._get_timestamp()
-            }
-            self._save_consolidated_report(error_report, f"error_{product_name}")
-            return error_report
-
-    async def generate_summary_report(self, consolidated_report: Dict[str, Any]) -> str:
-        """
-        Generate a human-readable summary of all analyses.
-
-        Args:
-            consolidated_report: The consolidated analysis results
-
-        Returns:
-            Formatted summary report as a string
-        """
-        if "error" in consolidated_report:
-            return f"Error in analysis: {consolidated_report['error']}"
-
-        summary = f"""
-Comprehensive Packaging Analysis Report
-=====================================
-Product: {consolidated_report['product_name']}
-Analysis Date: {consolidated_report['analysis_timestamp']}
-
-1. Material Options
-------------------
-Total materials analyzed: {len(consolidated_report['analyses']['materials']['materials'])}
-Top materials identified:
-"""
-        # Add top 5 materials
-        for i, material in enumerate(consolidated_report['analyses']['materials']['materials'][:5], 1):
-            summary += f"  {i}. {material['material_name']}\n     Justification: {material['justification']}\n"
-
-        # Add environmental impact summary
-        env_analysis = consolidated_report['analyses']['environmental']
-        if 'materials_analysis' in env_analysis:
-            env_summary = env_analysis['materials_analysis'][0]
-            summary += f"""
-2. Environmental Impact
----------------------
-Top environmental performers:
-"""
-            for mat in env_analysis.get('summary', {}).get('best_performers', [])[:3]:
-                summary += f"- {mat}\n"
-
-        # Add logistics summary
-        logistics = consolidated_report['analyses']['logistics']
-        if 'logistics_analysis' in logistics:
-            summary += f"""
-3. Logistics Analysis
--------------------
-Key logistics metrics:
-"""
-            for metric, data in logistics['logistics_analysis'][0]['metrics'].items():
-                summary += f"- {metric.replace('_', ' ').title()}: {data['details']}\n"
-
-        # Add cost analysis summary
-        cost = consolidated_report['analyses']['cost']
-        summary += f"""
-4. Cost Analysis
---------------
-Most economical materials:
-"""
-        for mat in cost.get('summary', {}).get('most_economical_materials', [])[:3]:
-            summary += f"- {mat}\n"
-
-        # Add properties summary
-        props = consolidated_report['analyses']['properties']
-        if 'summary' in props and 'by_property' in props['summary']:
-            summary += f"""
-5. Material Properties
--------------------
-Top performing materials by property:
-"""
-            for prop, materials in props['summary']['by_property'].items():
-                summary += f"- {prop.replace('_', ' ').title()}: {', '.join(materials[:2])}\n"
-
-        # Add compatibility summary
-        compat = consolidated_report['analyses']['compatibility']
-        summary += f"""
-6. Product Compatibility
----------------------
-Overall compatibility score: {compat.get('overall_score', 'N/A')}/10
-"""
-
-        return summary
-
-async def main():
+async def analyze_product_compatibility(state: AnalysisState) -> AnalysisState:
+    logger.info("Starting product compatibility analysis")
     try:
-        # Create orchestrator instance
-        orchestrator = PackagingAnalysisOrchestrator()
+        if state.get("error"): return state
+        agent = ProductCompatibilityAgent()
+        result = await agent.analyze_product_compatibility(state["input_data"]["product_name"], state["input_data"])
+        state["compatibility_analysis"] = result
+        state["processing_status"]["compatibility"] = "completed"
+        return state
+    except Exception as e:
+        msg = f"Product compatibility analysis failed: {e}"
+        logger.error(msg, exc_info=True)
+        state["error"] = msg
+        state["processing_status"]["compatibility"] = "failed"
+        return state
 
-        # Example product to analyze
-        product_name = "Glass Bottle"
+async def query_material_database(state: AnalysisState) -> AnalysisState:
+    logger.info("Starting material database query")
+    try:
+        if state.get("error"): return state
+        now = state.get("current_time", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        user = state.get("user_login", CURRENT_USER)
+        agent = PackagingMaterialsAgent(user_login=user, current_time=now)
+        result = await agent.find_materials_by_criteria(state["compatibility_analysis"])
+        if not result.get("materials"): raise ValueError("No compatible materials found")
+        state["material_database"] = result
+        state["processing_status"]["material_db"] = "completed"
+        return state
+    except Exception as e:
+        msg = f"Material DB query failed: {e}"
+        logger.error(msg, exc_info=True)
+        state["error"] = msg
+        state["processing_status"]["material_db"] = "failed"
+        return state
 
-        # Run complete analysis
-        print("Starting comprehensive packaging analysis...")
-        consolidated_results = await orchestrator.run_analysis_workflow(product_name)
+# Routing
+from langgraph.graph import START, END
 
-        # Generate and print summary report
-        summary_report = await orchestrator.generate_summary_report(consolidated_results)
-        print("\nSummary Report:")
-        print(summary_report)
+def route_after_material_db(state: AnalysisState) -> Literal["run_analyses", "handle_error"]:
+    if state.get("error") or not state.get("material_database", {}).get("materials"):
+        return "handle_error"
+    return "run_analyses"
+
+# Further analysis nodes (properties, logistics, cost, sustainability, consumer)
+async def analyze_material_properties(state: AnalysisState) -> AnalysisState:
+    logger.info("Starting material properties analysis")
+    if state.get("error"): return state
+    try:
+        agent = MaterialPropertiesAgent()
+        state["properties_analysis"] = await agent.analyze_material_properties(state["material_database"])
+        state["processing_status"]["properties"] = "completed"
+        return state
+    except Exception as e:
+        msg = f"Material properties analysis failed: {e}"
+        logger.error(msg, exc_info=True)
+        state["error"] = msg
+        state["processing_status"]["properties"] = "failed"
+        return state
+
+async def analyze_logistics(state: AnalysisState) -> AnalysisState:
+    logger.info("Starting logistics analysis")
+    if state.get("error"): return state
+    try:
+        agent = LogisticCompatibilityAgent()
+        state["logistics_analysis"] = await agent.analyze_top_logistics_materials(state["material_database"])
+        state["processing_status"]["logistics"] = "completed"
+        return state
+    except Exception as e:
+        msg = f"Logistics analysis failed: {e}"
+        logger.error(msg, exc_info=True)
+        state["error"] = msg
+        state["processing_status"]["logistics"] = "failed"
+        return state
+
+async def analyze_costs(state: AnalysisState) -> AnalysisState:
+    logger.info("Starting cost analysis")
+    if state.get("error"): return state
+    try:
+        agent = ProductionCostAgent()
+        state["cost_analysis"] = await agent.analyze_production_costs(state["material_database"])
+        state["processing_status"]["costs"] = "completed"
+        return state
+    except Exception as e:
+        msg = f"Cost analysis failed: {e}"
+        logger.error(msg, exc_info=True)
+        state["error"] = msg
+        state["processing_status"]["costs"] = "failed"
+        return state
+
+async def analyze_sustainability(state: AnalysisState) -> AnalysisState:
+    logger.info("Starting sustainability analysis")
+    if state.get("error"): return state
+    try:
+        agent = EnvironmentalImpactAgent()
+        state["sustainability_analysis"] = await agent.analyze_environmental_impact(state["material_database"])
+        state["processing_status"]["sustainability"] = "completed"
+        return state
+    except Exception as e:
+        msg = f"Sustainability analysis failed: {e}"
+        logger.error(msg, exc_info=True)
+        state["error"] = msg
+        state["processing_status"]["sustainability"] = "failed"
+        return state
+
+async def analyze_consumer_behavior(state: AnalysisState) -> AnalysisState:
+    logger.info("Starting consumer behavior analysis")
+    if state.get("error"): return state
+    try:
+        agent = ConsumerBehaviorAgent()
+        state["consumer_analysis"] = await agent.analyze_consumer_behavior(state["material_database"])
+        state["processing_status"]["consumer"] = "completed"
+        return state
+    except Exception as e:
+        msg = f"Consumer behavior analysis failed: {e}"
+        logger.error(msg, exc_info=True)
+        state["error"] = msg
+        state["processing_status"]["consumer"] = "failed"
+        return state
+
+# Join and orchestrate
+
+def check_analyses_completion(state: AnalysisState) -> Literal["orchestrate", "handle_error"]:
+    if state.get("error"): return "handle_error"
+    keys = ["properties_analysis","logistics_analysis","cost_analysis","sustainability_analysis","consumer_analysis"]
+    if any(not state.get(k) for k in keys):
+        state["error"] = "Incomplete analyses before orchestration"
+        return "handle_error"
+    return "orchestrate"
+
+async def orchestrate_results(state: AnalysisState) -> AnalysisState:
+    logger.info("Starting results orchestration")
+    # If any earlier step errored, short‐circuit
+    if state.get("error"):
+        return state
+
+    try:
+        # 1) Gather materials
+        materials = state["material_database"].get("materials", {})
+        # Flatten materials_by_criteria dict into a single list of material dicts
+        all_materials = []
+        for crit_list in materials.values():
+            all_materials.extend(crit_list)
+
+        if not all_materials:
+            raise ValueError("No materials available for scoring")
+
+        # 2) Build per‐material raw scores from each analysis
+        #    Each analysis state has a .get("scores", {id: score}) mapping
+        analyses = {
+            "properties": state["properties_analysis"].get("scores", {}),
+            "logistics": state["logistics_analysis"].get("scores", {}),
+            "cost": state["cost_analysis"].get("scores", {}),
+            "sustainability": state["sustainability_analysis"].get("scores", {}),
+            "consumer": state["consumer_analysis"].get("scores", {})
+        }
+
+        # 3) Normalize each category to [0,100]
+        def normalize(d: Dict[str, float]):
+            if not d:
+                return {}
+            vals = list(d.values())
+            lo, hi = min(vals), max(vals)
+            if lo == hi:
+                # all equal → mid‐point
+                return {k: 50.0 for k in d}
+            return {k: (v - lo) / (hi - lo) * 100 for k, v in d.items()}
+
+        norm = {cat: normalize(scores) for cat, scores in analyses.items()}
+
+        # 4) Score each material by weighted sum
+        total_weight = sum(ANALYSIS_WEIGHTS.values())
+        scored = []
+        for mat in all_materials:
+            # assume each material dict has a unique 'material_name' or 'id'
+            key = mat.get("material_name") or mat.get("id")
+            if not key:
+                continue
+
+            # get each normalized value (default 0)
+            wprops = norm["properties"].get(key, 0) * ANALYSIS_WEIGHTS["properties"]
+            wlog  = norm["logistics"].get(key, 0)   * ANALYSIS_WEIGHTS["logistics"]
+            wcost = norm["cost"].get(key, 0)        * ANALYSIS_WEIGHTS["cost"]
+            wsust = norm["sustainability"].get(key, 0) * ANALYSIS_WEIGHTS["sustainability"]
+            wcons = norm["consumer"].get(key, 0)    * ANALYSIS_WEIGHTS["consumer"]
+
+            total = (wprops + wlog + wcost + wsust + wcons) / total_weight
+
+            scored.append({
+                **mat,
+                "total_score": round(total, 2),
+                "normalized": {
+                    "properties": round(norm["properties"].get(key, 0), 2),
+                    "logistics":  round(norm["logistics"].get(key, 0), 2),
+                    "cost":       round(norm["cost"].get(key, 0), 2),
+                    "sustainability": round(norm["sustainability"].get(key, 0), 2),
+                    "consumer":   round(norm["consumer"].get(key, 0), 2),
+                },
+                "weighted": {
+                    "properties": round(wprops, 2),
+                    "logistics":  round(wlog, 2),
+                    "cost":       round(wcost, 2),
+                    "sustainability": round(wsust, 2),
+                    "consumer":   round(wcons, 2),
+                }
+            })
+
+        # 5) Sort and pick top‐K
+        scored.sort(key=lambda x: x["total_score"], reverse=True)
+        top_k = scored[:5]  # or whatever K you want
+
+        # 6) Assemble final_results
+        state["final_results"] = {
+            "product_name": state["input_data"]["product_name"],
+            "timestamp": state["current_time"],
+            "user": state["user_login"],
+            "weights_used": ANALYSIS_WEIGHTS,
+            "top_materials": top_k,
+            "all_materials": scored,
+        }
+        state["processing_status"]["orchestration"] = "completed"
+        return state
 
     except Exception as e:
-        print(f"Error in main execution: {str(e)}")
+        msg = f"Results orchestration failed: {e}"
+        logger.error(msg, exc_info=True)
+        state["error"] = msg
+        state["processing_status"]["orchestration"] = "failed"
+        return state
+
+
+async def handle_error(state: AnalysisState) -> AnalysisState:
+    msg = state.get("error", "Unknown error")
+    logger.error(f"Error handler: {msg}")
+    state["final_results"] = {"error": msg, "user": CURRENT_USER, "status": state.get("processing_status", {})}
+    return state
+
+# Graph builder
+def create_analysis_graph():
+    workflow = StateGraph(AnalysisState)
+
+    # add nodes
+    workflow.add_node("input", process_input)
+    workflow.add_node("compatibility", analyze_product_compatibility)
+    workflow.add_node("material_db", query_material_database)
+    workflow.add_node("properties", analyze_material_properties)
+    workflow.add_node("logistics", analyze_logistics)
+    workflow.add_node("costs", analyze_costs)
+    workflow.add_node("sustainability", analyze_sustainability)
+    workflow.add_node("consumer", analyze_consumer_behavior)
+    workflow.add_node("orchestrator", orchestrate_results)
+    workflow.add_node("error_handler", handle_error)
+
+    # linear flow: input → compatibility → material_db
+    workflow.add_edge("input", "compatibility")
+    workflow.add_edge("compatibility", "material_db")
+
+    # branch after material_db
+    workflow.add_conditional_edges("material_db", route_after_material_db, {"run_analyses": "run_analyses", "handle_error": "error_handler"})
+
+    # parallel analyses
+    workflow.add_node("run_analyses", lambda s: s)
+    for node in ["properties","logistics","costs","sustainability","consumer"]:
+        workflow.add_edge("run_analyses", node)
+    workflow.add_node("join_analyses", lambda s: s)
+    for node in ["properties","logistics","costs","sustainability","consumer"]:
+        workflow.add_edge(node, "join_analyses")
+    workflow.add_conditional_edges("join_analyses", check_analyses_completion, {"orchestrate": "orchestrator", "handle_error": "error_handler"})
+
+    workflow.set_entry_point("input")
+    return workflow.compile(checkpointer=MemorySaver())
+
+# Main execution\
+async def main():
+    now = datetime.now(timezone.utc)
+    thread_id = f"{CURRENT_USER}-{int(now.timestamp())}"
+    logger.info(f"Thread: {thread_id}")
+
+    graph = create_analysis_graph()
+    config = {"configurable": {"thread_id": thread_id}}
+
+    try:
+        result = await graph.ainvoke({}, config=config)
+        if result.get("error") or (res := result.get("final_results", {})).get("error"):
+            err = result.get("error") or res.get("error")
+            print(f"Error: {err}")
+        else:
+            out = result["final_results"]
+            print(f"Analysis complete for: {out['product_name']}")
+            for i, m in enumerate(out.get("top_materials", []), 1):
+                print(f"{i}. {m['name']} – {m['total_score']:.2f}")
+    except Exception as e:
+        logger.critical(f"Fatal: {e}", exc_info=True)
+        print(f"Fatal error: {e}")
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(main()) 

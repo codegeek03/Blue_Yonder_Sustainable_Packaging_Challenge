@@ -1,0 +1,58 @@
+{
+  "criteria": {
+    "physical_form": {
+      "explanation": "solid",
+      "concerns": "damage"
+    },
+    "fragility": {
+      "explanation": "moderate",
+      "concerns": "shattering"
+    },
+    "shelf_life": {
+      "explanation": "long",
+      "concerns": "obsolescence"
+    },
+    "chemical_properties": {
+      "explanation": "stable",
+      "concerns": "corrosion"
+    },
+    "hygiene_sensitivity": {
+      "explanation": "clean",
+      "concerns": "smudging"
+    },
+    "temperature_sensitivity": {
+      "explanation": "moderate",
+      "concerns": "overheating"
+    },
+    "volatility_or_hazard_risk": {
+      "explanation": "low",
+      "concerns": "battery"
+    },
+    "visibility_and_display": {
+      "explanation": "high",
+      "concerns": "theft"
+    },
+    "quantity_and_dosage": {
+      "explanation": "fixed",
+      "concerns": "handling"
+    },
+    "value_and_theft_sensitivity": {
+      "explanation": "high",
+      "concerns": "pilferage"
+    }
+  },
+  "product_name": "iphone",
+  "analysis_timestamp": "2024-10-27 15:23:47",
+  "scores": {
+    "physical_form": 80.0,
+    "fragility": 72.0,
+    "shelf_life": 64.0,
+    "chemical_properties": 80.0,
+    "hygiene_sensitivity": 72.0,
+    "temperature_sensitivity": 64.0,
+    "volatility_or_hazard_risk": 80.0,
+    "visibility_and_display": 56.0,
+    "quantity_and_dosage": 64.0,
+    "value_and_theft_sensitivity": 72.0
+  }
+}

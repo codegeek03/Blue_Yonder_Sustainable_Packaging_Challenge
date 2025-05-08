@@ -1,69 +1,69 @@
 {
   "top_materials": [
     {
-      "material_name": "Recycled PET (rPET)",
-      "cost_score": 9,
-      "base_price": "1.20 USD/kg",
-      "key_costs": {
-        "raw_material": "Lower than virgin PET",
-        "processing": "Similar to virgin PET",
-        "tariffs": "Low, often incentives",
-        "transport": "Dependent on location",
-        "compliance": "Standard regulations"
-      },
-      "total_estimated_cost": "0.18 USD"
-    },
-    {
-      "material_name": "Bio-Based PE (Sugarcane)",
-      "cost_score": 7,
+      "material_name": "Aluminum Alloy (6063)",
+      "cost_score": 8,
       "base_price": "2.50 USD/kg",
       "key_costs": {
-        "raw_material": "Higher base material",
-        "processing": "Standard PE processing",
-        "tariffs": "Varies by region",
-        "transport": "Standard transport costs",
-        "compliance": "Bio-based certifications"
+        "raw_material": "Aluminum and alloying elements",
+        "processing": "Extrusion and CNC machining",
+        "tariffs": "Low import duties",
+        "transport": "Moderate shipping costs",
+        "compliance": "RoHS compliance"
       },
-      "total_estimated_cost": "0.38 USD"
+      "total_estimated_cost": "1.06 USD"
     },
     {
-      "material_name": "HDPE (Recycled)",
-      "cost_score": 8,
-      "base_price": "1.00 USD/kg",
+      "material_name": "Lithium Cobalt Oxide",
+      "cost_score": 7,
+      "base_price": "30.00 USD/kg",
       "key_costs": {
-        "raw_material": "Competitive recycled price",
-        "processing": "Easy molding process",
-        "tariffs": "Generally very low",
-        "transport": "Standard costs apply",
-        "compliance": "Recycling standards"
+        "raw_material": "Lithium, Cobalt",
+        "processing": "Electrode manufacturing",
+        "tariffs": "Vary by country",
+        "transport": "Requires special handling",
+        "compliance": "UN 38.3 testing"
       },
-      "total_estimated_cost": "0.15 USD"
+      "total_estimated_cost": "12.75 USD"
     },
     {
-      "material_name": "Glass (Recycled)",
+      "material_name": "Reinforced Glass (Gorilla Glass)",
+      "cost_score": 9,
+      "base_price": "4.00 USD/kg",
+      "key_costs": {
+        "raw_material": "Silica, Alumina",
+        "processing": "Chemical strengthening",
+        "tariffs": "Low import tariffs",
+        "transport": "Fragile goods",
+        "compliance": "Scratch resistance testing"
+      },
+      "total_estimated_cost": "1.70 USD"
+    },
+    {
+      "material_name": "Copper",
       "cost_score": 6,
-      "base_price": "0.80 USD/kg",
+      "base_price": "9.00 USD/kg",
       "key_costs": {
-        "raw_material": "Abundant and cheaper",
-        "processing": "Energy-intensive melting",
-        "tariffs": "Minimal import costs",
-        "transport": "Heavy material, high cost",
-        "compliance": "Standard recycling laws"
+        "raw_material": "Copper cathode",
+        "processing": "Wire drawing, etching",
+        "tariffs": "Low import duties",
+        "transport": "Heavy, but stable",
+        "compliance": "REACH compliance"
       },
-      "total_estimated_cost": "0.12 USD"
+      "total_estimated_cost": "3.83 USD"
     },
     {
-      "material_name": "PLA (Polylactic Acid)",
-      "cost_score": 5,
+      "material_name": "Thermoplastics (PC/ABS Blend)",
+      "cost_score": 7,
       "base_price": "3.00 USD/kg",
       "key_costs": {
-        "raw_material": "Derived from corn starch",
-        "processing": "Specific equipment needed",
-        "tariffs": "Variable based on origin",
-        "transport": "Standard shipping applies",
-        "compliance": "Compostability standards"
+        "raw_material": "Polycarbonate, ABS",
+        "processing": "Injection molding",
+        "tariffs": "Moderate import duties",
+        "transport": "Lightweight",
+        "compliance": "UL 94 flammability"
       },
-      "total_estimated_cost": "0.45 USD"
+      "total_estimated_cost": "1.28 USD"
     }
   ],
   "timestamp": "2025-04-19 21:22:20",
