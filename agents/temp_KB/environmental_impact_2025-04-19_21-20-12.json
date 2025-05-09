@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "Recycled Aluminum",
+      "material_name": "Molded Pulp",
       "environmental_score": 8.5,
-      "key_benefit": "Reduced mining impact",
-      "primary_concern": "Energy intensive recycling"
+      "key_benefit": "High biodegradability",
+      "primary_concern": "Deforestation risk"
     },
     {
-      "material_name": "Recycled Tin",
+      "material_name": "Recycled Cardboard",
       "environmental_score": 7.8,
-      "key_benefit": "Lower resource extraction",
-      "primary_concern": "Limited availability"
+      "key_benefit": "Good recyclability",
+      "primary_concern": "Fiber degradation"
     },
     {
-      "material_name": "Recycled Plastics",
-      "environmental_score": 7.2,
-      "key_benefit": "Decreased plastic waste",
-      "primary_concern": "Degraded material quality"
-    },
-    {
-      "material_name": "Paper Packaging",
+      "material_name": "Compostable Plastic",
       "environmental_score": 6.9,
-      "key_benefit": "Biodegradable and renewable",
-      "primary_concern": "Deforestation risks exist"
+      "key_benefit": "Low resource depletion",
+      "primary_concern": "Limited compost access"
     },
     {
-      "material_name": "Glass",
+      "material_name": "Bamboo",
       "environmental_score": 6.5,
-      "key_benefit": "Recyclable material",
-      "primary_concern": "High energy production"
+      "key_benefit": "Rapid renewability",
+      "primary_concern": "Processing impacts"
+    },
+    {
+      "material_name": "Paper Mache",
+      "environmental_score": 5.8,
+      "key_benefit": "Uses waste paper",
+      "primary_concern": "Low durability"
     }
   ],
   "timestamp": "2025-04-19 21:20:12",

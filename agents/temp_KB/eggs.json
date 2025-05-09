@@ -1,0 +1,16 @@
+{
+    "product_name": "eggs",
+    "units_per_shipment": 800,
+    "dimensions": {
+        "length": 5.0,
+        "width": 5.0,
+        "height": 5.0
+    },
+    "packaging_location": "siliguri",
+    "budget_constraint": 1000.0,
+    "metadata": {
+        "timestamp": "2025-05-09 23:51:59",
+        "user": "codegeek03",
+        "volume": 125.0
+    }
+}

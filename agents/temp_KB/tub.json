@@ -1,0 +1,16 @@
+{
+    "product_name": "tub",
+    "units_per_shipment": 50,
+    "dimensions": {
+        "length": 20.0,
+        "width": 20.0,
+        "height": 20.0
+    },
+    "packaging_location": "kolkata",
+    "budget_constraint": 900000.0,
+    "metadata": {
+        "timestamp": "2025-05-09 22:30:04",
+        "user": "codegeek03",
+        "volume": 8000.0
+    }
+}

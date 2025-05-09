@@ -1,0 +1,58 @@
+{
+  "criteria": {
+    "physical_form": {
+      "explanation": "Solid",
+      "concerns": "Dents"
+    },
+    "fragility": {
+      "explanation": "Sturdy",
+      "concerns": "Rust"
+    },
+    "shelf_life": {
+      "explanation": "Long",
+      "concerns": "Oxidation"
+    },
+    "chemical_properties": {
+      "explanation": "Stable",
+      "concerns": "Acidity"
+    },
+    "hygiene_sensitivity": {
+      "explanation": "Clean",
+      "concerns": "Germs"
+    },
+    "temperature_sensitivity": {
+      "explanation": "Stable",
+      "concerns": "Freezing"
+    },
+    "volatility_or_hazard_risk": {
+      "explanation": "Safe",
+      "concerns": "Pressure"
+    },
+    "visibility_and_display": {
+      "explanation": "Clear",
+      "concerns": "Fading"
+    },
+    "quantity_and_dosage": {
+      "explanation": "Bulk",
+      "concerns": "Stacking"
+    },
+    "value_and_theft_sensitivity": {
+      "explanation": "Secure",
+      "concerns": "Pilferage"
+    }
+  },
+  "product_name": "Beer Cans",
+  "analysis_timestamp": "2024-10-27 15:30:00",
+  "scores": {
+    "physical_form": 80.0,
+    "fragility": 72.0,
+    "shelf_life": 64.0,
+    "chemical_properties": 80.0,
+    "hygiene_sensitivity": 72.0,
+    "temperature_sensitivity": 64.0,
+    "volatility_or_hazard_risk": 80.0,
+    "visibility_and_display": 56.0,
+    "quantity_and_dosage": 64.0,
+    "value_and_theft_sensitivity": 72.0
+  }
+}

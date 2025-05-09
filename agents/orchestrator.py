@@ -1,9 +1,10 @@
-from typing import Dict, Any, List, Literal, TypedDict, Annotated, Optional
+from typing import Dict, Any, List, Literal, TypedDict, Annotated, Optional, NotRequired, Union
 from langgraph.graph import StateGraph
 from langgraph.checkpoint.memory import MemorySaver
 import asyncio
 from datetime import datetime, timezone
 import logging
+from langgraph.prebuilt import ToolNode
 
 # Set up logging
 logging.basicConfig(
@@ -32,94 +33,98 @@ ANALYSIS_WEIGHTS = {
     "consumer": 1.5
 }
 
+# Properly define AnalysisState with Annotated fields for concurrent updates
 class AnalysisState(TypedDict):
-    input_data: Dict[str, Any]  # Remove Annotated as it's causing concurrent update issues
-    compatibility_analysis: Dict[str, Any]
-    material_database: Dict[str, Any]
-    properties_analysis: Dict[str, Any]
-    logistics_analysis: Dict[str, Any]
-    cost_analysis: Dict[str, Any]
-    sustainability_analysis: Dict[str, Any]
-    consumer_analysis: Dict[str, Any]
-    final_results: Dict[str, Any]
-    #error: NotRequired[Optional[str]]
-    processing_status: Dict[str, str]
-    user_login: str
-    current_time: str
+    input_data: Annotated[Dict[str, Any], "input_data"]
+    compatibility_analysis: Annotated[Dict[str, Any], "compatibility_analysis"]
+    material_database: Annotated[Dict[str, Any], "material_database"]
+    properties_analysis: Annotated[Dict[str, Any], "properties_analysis"]
+    logistics_analysis: Annotated[Dict[str, Any], "logistics_analysis"]
+    cost_analysis: Annotated[Dict[str, Any], "cost_analysis"]
+    sustainability_analysis: Annotated[Dict[str, Any], "sustainability_analysis"]
+    consumer_analysis: Annotated[Dict[str, Any], "consumer_analysis"]
+    final_results: Annotated[Dict[str, Any], "final_results"]
+    # Make each status field independently updatable
+    input_status: Annotated[str, "input_status"]
+    compatibility_status: Annotated[str, "compatibility_status"]
+    material_db_status: Annotated[str, "material_db_status"]
+    properties_status: Annotated[str, "properties_status"]
+    logistics_status: Annotated[str, "logistics_status"]
+    costs_status: Annotated[str, "costs_status"]
+    sustainability_status: Annotated[str, "sustainability_status"]
+    consumer_status: Annotated[str, "consumer_status"]
+    orchestration_status: Annotated[str, "orchestration_status"]
+    error: Annotated[Optional[str], "error"]
+    user_login: Annotated[str, "user_login"]
+    current_time: Annotated[str, "current_time"]
 
 # Node definitions
-async def process_input(state: AnalysisState) -> AnalysisState:
+async def process_input(state: AnalysisState) -> Dict:
     logger.info("Starting input processing")
     try:
-        # Create a new state dict to avoid concurrent modifications
-        new_state = state.copy()
-        
-        if not new_state.get("input_data"):
+        # No need to copy state with Annotated fields
+        if not state.get("input_data"):
             now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             user = CURRENT_USER
             agent = ProductInput(current_time=now, user_login=user)
             details = await agent.get_product_details()
             
-            # Update all related fields at once
-            new_state.update({
+            # Update only relevant fields
+            return {
                 "input_data": details,
-                "processing_status": {"input": "completed", "timestamp": now, "user": user},
+                "input_status": "completed",
                 "user_login": user,
                 "current_time": now
-            })
-            
-        return new_state
+            }
+        return {}
     except Exception as e:
         msg = f"Input processing failed: {e}"
         logger.error(msg, exc_info=True)
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
-        # Return a new state with error information
         return {
-            **state,
             "error": msg,
-            "processing_status": {
-                "input": "failed",
-                "timestamp": now,
-                "user": CURRENT_USER,
-                "error_details": str(e)
-            }
+            "input_status": "failed"
         }
 
-async def analyze_product_compatibility(state: AnalysisState) -> AnalysisState:
+async def analyze_product_compatibility(state: AnalysisState) -> Dict:
     logger.info("Starting product compatibility analysis")
     try:
-        if state.get("error"): return state
+        if state.get("error"): return {}
         agent = ProductCompatibilityAgent()
         result = await agent.analyze_product_compatibility(state["input_data"]["product_name"], state["input_data"])
-        state["compatibility_analysis"] = result
-        state["processing_status"]["compatibility"] = "completed"
-        return state
+        return {
+            "compatibility_analysis": result,
+            "compatibility_status": "completed"
+        }
     except Exception as e:
         msg = f"Product compatibility analysis failed: {e}"
         logger.error(msg, exc_info=True)
-        state["error"] = msg
-        state["processing_status"]["compatibility"] = "failed"
-        return state
+        return {
+            "error": msg, 
+            "compatibility_status": "failed"
+        }
 
-async def query_material_database(state: AnalysisState) -> AnalysisState:
+async def query_material_database(state: AnalysisState) -> Dict:
     logger.info("Starting material database query")
     try:
-        if state.get("error"): return state
+        if state.get("error"): return {}
         now = state.get("current_time", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         user = state.get("user_login", CURRENT_USER)
         agent = PackagingMaterialsAgent(user_login=user, current_time=now)
         result = await agent.find_materials_by_criteria(state["compatibility_analysis"])
         if not result.get("materials"): raise ValueError("No compatible materials found")
-        state["material_database"] = result
-        state["processing_status"]["material_db"] = "completed"
-        return state
+        return {
+            "material_database": result,
+            "material_db_status": "completed"
+        }
     except Exception as e:
         msg = f"Material DB query failed: {e}"
         logger.error(msg, exc_info=True)
-        state["error"] = msg
-        state["processing_status"]["material_db"] = "failed"
-        return state
+        return {
+            "error": msg,
+            "material_db_status": "failed"
+        }
 
 # Routing
 from langgraph.graph import START, END
@@ -130,101 +135,123 @@ def route_after_material_db(state: AnalysisState) -> Literal["run_analyses", "ha
     return "run_analyses"
 
 # Further analysis nodes (properties, logistics, cost, sustainability, consumer)
-async def analyze_material_properties(state: AnalysisState) -> AnalysisState:
+async def analyze_material_properties(state: AnalysisState) -> Dict:
     logger.info("Starting material properties analysis")
-    if state.get("error"): return state
+    if state.get("error"): return {}
     try:
         agent = MaterialPropertiesAgent()
-        state["properties_analysis"] = await agent.analyze_material_properties(state["material_database"])
-        state["processing_status"]["properties"] = "completed"
-        return state
+        result = await agent.analyze_material_properties(state["material_database"])
+        return {
+            "properties_analysis": result,
+            "properties_status": "completed"
+        }
     except Exception as e:
         msg = f"Material properties analysis failed: {e}"
         logger.error(msg, exc_info=True)
-        state["error"] = msg
-        state["processing_status"]["properties"] = "failed"
-        return state
+        return {
+            "error": msg,
+            "properties_status": "failed"
+        }
 
-async def analyze_logistics(state: AnalysisState) -> AnalysisState:
+async def analyze_logistics(state: AnalysisState) -> Dict:
     logger.info("Starting logistics analysis")
-    if state.get("error"): return state
+    if state.get("error"): return {}
     try:
         agent = LogisticCompatibilityAgent()
-        state["logistics_analysis"] = await agent.analyze_top_logistics_materials(state["material_database"])
-        state["processing_status"]["logistics"] = "completed"
-        return state
+        result = await agent.analyze_top_logistics_materials(state["material_database"])
+        return {
+            "logistics_analysis": result,
+            "logistics_status": "completed"
+        }
     except Exception as e:
         msg = f"Logistics analysis failed: {e}"
         logger.error(msg, exc_info=True)
-        state["error"] = msg
-        state["processing_status"]["logistics"] = "failed"
-        return state
+        return {
+            "error": msg,
+            "logistics_status": "failed"
+        }
 
-async def analyze_costs(state: AnalysisState) -> AnalysisState:
+async def analyze_costs(state: AnalysisState) -> Dict:
     logger.info("Starting cost analysis")
-    if state.get("error"): return state
+    if state.get("error"): return {}
     try:
         agent = ProductionCostAgent()
-        state["cost_analysis"] = await agent.analyze_production_costs(state["material_database"])
-        state["processing_status"]["costs"] = "completed"
-        return state
+        result = await agent.analyze_production_costs(state["material_database"])
+        return {
+            "cost_analysis": result,
+            "costs_status": "completed"
+        }
     except Exception as e:
         msg = f"Cost analysis failed: {e}"
         logger.error(msg, exc_info=True)
-        state["error"] = msg
-        state["processing_status"]["costs"] = "failed"
-        return state
+        return {
+            "error": msg,
+            "costs_status": "failed"
+        }
 
-async def analyze_sustainability(state: AnalysisState) -> AnalysisState:
+async def analyze_sustainability(state: AnalysisState) -> Dict:
     logger.info("Starting sustainability analysis")
-    if state.get("error"): return state
+    if state.get("error"): return {}
     try:
         agent = EnvironmentalImpactAgent()
-        state["sustainability_analysis"] = await agent.analyze_environmental_impact(state["material_database"])
-        state["processing_status"]["sustainability"] = "completed"
-        return state
+        result = await agent.analyze_environmental_impact(state["material_database"])
+        return {
+            "sustainability_analysis": result,
+            "sustainability_status": "completed"
+        }
     except Exception as e:
         msg = f"Sustainability analysis failed: {e}"
         logger.error(msg, exc_info=True)
-        state["error"] = msg
-        state["processing_status"]["sustainability"] = "failed"
-        return state
+        return {
+            "error": msg,
+            "sustainability_status": "failed"
+        }
 
-async def analyze_consumer_behavior(state: AnalysisState) -> AnalysisState:
+async def analyze_consumer_behavior(state: AnalysisState) -> Dict:
     logger.info("Starting consumer behavior analysis")
-    if state.get("error"): return state
+    if state.get("error"): return {}
     try:
         agent = ConsumerBehaviorAgent()
-        state["consumer_analysis"] = await agent.analyze_consumer_behavior(state["material_database"])
-        state["processing_status"]["consumer"] = "completed"
-        return state
+        result = await agent.analyze_consumer_behavior(state["material_database"])
+        return {
+            "consumer_analysis": result,
+            "consumer_status": "completed"
+        }
     except Exception as e:
         msg = f"Consumer behavior analysis failed: {e}"
         logger.error(msg, exc_info=True)
-        state["error"] = msg
-        state["processing_status"]["consumer"] = "failed"
-        return state
+        return {
+            "error": msg,
+            "consumer_status": "failed"
+        }
 
 # Join and orchestrate
-
 def check_analyses_completion(state: AnalysisState) -> Literal["orchestrate", "handle_error"]:
     if state.get("error"): return "handle_error"
-    keys = ["properties_analysis","logistics_analysis","cost_analysis","sustainability_analysis","consumer_analysis"]
-    if any(not state.get(k) for k in keys):
-        state["error"] = "Incomplete analyses before orchestration"
-        return "handle_error"
+    
+    # Check each analysis status individually
+    required_statuses = {
+        "properties_status": "completed",
+        "logistics_status": "completed",
+        "costs_status": "completed", 
+        "sustainability_status": "completed",
+        "consumer_status": "completed"
+    }
+    
+    for status_key, expected_value in required_statuses.items():
+        if state.get(status_key) != expected_value:
+            return "handle_error"
+            
     return "orchestrate"
 
-async def orchestrate_results(state: AnalysisState) -> AnalysisState:
+async def orchestrate_results(state: AnalysisState) -> Dict:
     logger.info("Starting results orchestration")
-    # If any earlier step errored, short‐circuit
     if state.get("error"):
-        return state
+        return {}
 
     try:
         # 1) Gather materials
         materials = state["material_database"].get("materials", {})
-        # Flatten materials_by_criteria dict into a single list of material dicts
         all_materials = []
         for crit_list in materials.values():
             all_materials.extend(crit_list)
@@ -232,8 +259,7 @@ async def orchestrate_results(state: AnalysisState) -> AnalysisState:
         if not all_materials:
             raise ValueError("No materials available for scoring")
 
-        # 2) Build per‐material raw scores from each analysis
-        #    Each analysis state has a .get("scores", {id: score}) mapping
+        # 2) Build per-material raw scores from each analysis
         analyses = {
             "properties": state["properties_analysis"].get("scores", {}),
             "logistics": state["logistics_analysis"].get("scores", {}),
@@ -249,78 +275,181 @@ async def orchestrate_results(state: AnalysisState) -> AnalysisState:
             vals = list(d.values())
             lo, hi = min(vals), max(vals)
             if lo == hi:
-                # all equal → mid‐point
                 return {k: 50.0 for k in d}
             return {k: (v - lo) / (hi - lo) * 100 for k, v in d.items()}
 
         norm = {cat: normalize(scores) for cat, scores in analyses.items()}
 
-        # 4) Score each material by weighted sum
+        # 4) Score each material with detailed reasoning
         total_weight = sum(ANALYSIS_WEIGHTS.values())
         scored = []
         for mat in all_materials:
-            # assume each material dict has a unique 'material_name' or 'id'
-            key = mat.get("material_name") or mat.get("id")
+            key = mat.get("material_name") or mat.get("id") or mat.get("name")
             if not key:
                 continue
 
-            # get each normalized value (default 0)
-            wprops = norm["properties"].get(key, 0) * ANALYSIS_WEIGHTS["properties"]
-            wlog  = norm["logistics"].get(key, 0)   * ANALYSIS_WEIGHTS["logistics"]
-            wcost = norm["cost"].get(key, 0)        * ANALYSIS_WEIGHTS["cost"]
-            wsust = norm["sustainability"].get(key, 0) * ANALYSIS_WEIGHTS["sustainability"]
-            wcons = norm["consumer"].get(key, 0)    * ANALYSIS_WEIGHTS["consumer"]
+            # Get each normalized value and weighted score
+            scores = {
+                "properties": {
+                    "normalized": round(norm["properties"].get(key, 0), 2),
+                    "weighted": round(norm["properties"].get(key, 0) * ANALYSIS_WEIGHTS["properties"], 2),
+                    "weight": ANALYSIS_WEIGHTS["properties"]
+                },
+                "logistics": {
+                    "normalized": round(norm["logistics"].get(key, 0), 2),
+                    "weighted": round(norm["logistics"].get(key, 0) * ANALYSIS_WEIGHTS["logistics"], 2),
+                    "weight": ANALYSIS_WEIGHTS["logistics"]
+                },
+                "cost": {
+                    "normalized": round(norm["cost"].get(key, 0), 2),
+                    "weighted": round(norm["cost"].get(key, 0) * ANALYSIS_WEIGHTS["cost"], 2),
+                    "weight": ANALYSIS_WEIGHTS["cost"]
+                },
+                "sustainability": {
+                    "normalized": round(norm["sustainability"].get(key, 0), 2),
+                    "weighted": round(norm["sustainability"].get(key, 0) * ANALYSIS_WEIGHTS["sustainability"], 2),
+                    "weight": ANALYSIS_WEIGHTS["sustainability"]
+                },
+                "consumer": {
+                    "normalized": round(norm["consumer"].get(key, 0), 2),
+                    "weighted": round(norm["consumer"].get(key, 0) * ANALYSIS_WEIGHTS["consumer"], 2),
+                    "weight": ANALYSIS_WEIGHTS["consumer"]
+                }
+            }
 
-            total = (wprops + wlog + wcost + wsust + wcons) / total_weight
+            # Calculate total score
+            total = sum(dim["weighted"] for dim in scores.values()) / total_weight
+
+            # Generate reasoning report
+            strengths = []
+            weaknesses = []
+            for dimension, score in scores.items():
+                if score["normalized"] >= 70:
+                    strengths.append({
+                        "dimension": dimension,
+                        "score": score["normalized"],
+                        "impact": round((score["weight"] / total_weight) * 100, 1)
+                    })
+                elif score["normalized"] <= 30:
+                    weaknesses.append({
+                        "dimension": dimension,
+                        "score": score["normalized"],
+                        "impact": round((score["weight"] / total_weight) * 100, 1)
+                    })
+
+            # Calculate contribution analysis safely
+            contribution_analysis = {}
+            if total > 0:  # Only calculate contributions if total is non-zero
+                contribution_analysis = {
+                    dim: round((scores[dim]["weighted"] / total) * 100, 1)
+                    for dim in scores
+                }
+            else:  # If total is zero, set equal contributions based on weights
+                total_weight = sum(scores[dim]["weight"] for dim in scores)
+                contribution_analysis = {
+                    dim: round((scores[dim]["weight"] / total_weight) * 100, 1)
+                    if total_weight > 0 else 0
+                    for dim in scores
+                }
+
+            reasoning = {
+                "summary": f"Material achieved an overall score of {round(total, 2)} out of 100",
+                "strengths": strengths,
+                "weaknesses": weaknesses,
+                "score_breakdown": scores,
+                "contribution_analysis": contribution_analysis
+            }
 
             scored.append({
                 **mat,
                 "total_score": round(total, 2),
-                "normalized": {
-                    "properties": round(norm["properties"].get(key, 0), 2),
-                    "logistics":  round(norm["logistics"].get(key, 0), 2),
-                    "cost":       round(norm["cost"].get(key, 0), 2),
-                    "sustainability": round(norm["sustainability"].get(key, 0), 2),
-                    "consumer":   round(norm["consumer"].get(key, 0), 2),
-                },
-                "weighted": {
-                    "properties": round(wprops, 2),
-                    "logistics":  round(wlog, 2),
-                    "cost":       round(wcost, 2),
-                    "sustainability": round(wsust, 2),
-                    "consumer":   round(wcons, 2),
-                }
+                "reasoning": reasoning
             })
 
-        # 5) Sort and pick top‐K
+        # 5) Sort and pick top-K with comparative analysis
         scored.sort(key=lambda x: x["total_score"], reverse=True)
-        top_k = scored[:5]  # or whatever K you want
+        top_k = scored[:5]
 
-        # 6) Assemble final_results
-        state["final_results"] = {
-            "product_name": state["input_data"]["product_name"],
-            "timestamp": state["current_time"],
-            "user": state["user_login"],
-            "weights_used": ANALYSIS_WEIGHTS,
-            "top_materials": top_k,
-            "all_materials": scored,
+        # 6) Add comparative analysis for top materials
+        # Handle the case where we have no valid scores
+        if scored:
+            avg_scores = {
+                dim: sum(mat["reasoning"]["score_breakdown"][dim]["normalized"] 
+                        for mat in scored) / len(scored)
+                for dim in ["properties", "logistics", "cost", "sustainability", "consumer"]
+            }
+        else:
+            avg_scores = {
+                dim: 0 for dim in ["properties", "logistics", "cost", "sustainability", "consumer"]
+            }
+
+        for mat in top_k:
+            comparative = {
+                dim: {
+                    "vs_avg": round(mat["reasoning"]["score_breakdown"][dim]["normalized"] - avg_scores[dim], 1),
+                    "percentile": round(sum(1 for s in scored 
+                        if s["reasoning"]["score_breakdown"][dim]["normalized"] <= 
+                        mat["reasoning"]["score_breakdown"][dim]["normalized"]) / max(len(scored), 1) * 100, 1)
+                }
+                for dim in ["properties", "logistics", "cost", "sustainability", "consumer"]
+            }
+            mat["reasoning"]["comparative_analysis"] = comparative
+
+        # 7) Assemble final_results with enhanced reasoning
+        return {
+            "final_results": {
+                "product_name": state["input_data"]["product_name"],
+                "timestamp": state["current_time"],
+                "user": state["user_login"],
+                "weights_used": ANALYSIS_WEIGHTS,
+                "top_materials": top_k,
+                "all_materials": scored,
+                "analysis_summary": {
+                    "total_materials_analyzed": len(scored),
+                    "average_scores": avg_scores,
+                    "score_distribution": {
+                        "excellent": len([m for m in scored if m["total_score"] >= 80]),
+                        "good": len([m for m in scored if 60 <= m["total_score"] < 80]),
+                        "fair": len([m for m in scored if 40 <= m["total_score"] < 60]),
+                        "poor": len([m for m in scored if m["total_score"] < 40])
+                    }
+                }
+            },
+            "orchestration_status": "completed"
         }
-        state["processing_status"]["orchestration"] = "completed"
-        return state
 
     except Exception as e:
         msg = f"Results orchestration failed: {e}"
         logger.error(msg, exc_info=True)
-        state["error"] = msg
-        state["processing_status"]["orchestration"] = "failed"
-        return state
-
-
-async def handle_error(state: AnalysisState) -> AnalysisState:
+        return {
+            "error": msg,
+            "orchestration_status": "failed"
+        }
+    
+async def handle_error(state: AnalysisState) -> Dict:
     msg = state.get("error", "Unknown error")
     logger.error(f"Error handler: {msg}")
-    state["final_results"] = {"error": msg, "user": CURRENT_USER, "status": state.get("processing_status", {})}
-    return state
+    
+    # Collect all status information
+    status_info = {
+        "input": state.get("input_status", "unknown"),
+        "compatibility": state.get("compatibility_status", "unknown"),
+        "material_db": state.get("material_db_status", "unknown"),
+        "properties": state.get("properties_status", "unknown"),
+        "logistics": state.get("logistics_status", "unknown"),
+        "costs": state.get("costs_status", "unknown"),
+        "sustainability": state.get("sustainability_status", "unknown"),
+        "consumer": state.get("consumer_status", "unknown"),
+        "orchestration": state.get("orchestration_status", "unknown")
+    }
+    
+    return {
+        "final_results": {
+            "error": msg, 
+            "user": state.get("user_login", CURRENT_USER), 
+            "status": status_info
+        }
+    }
 
 # Graph builder
 def create_analysis_graph():
@@ -343,21 +472,30 @@ def create_analysis_graph():
     workflow.add_edge("compatibility", "material_db")
 
     # branch after material_db
-    workflow.add_conditional_edges("material_db", route_after_material_db, {"run_analyses": "run_analyses", "handle_error": "error_handler"})
+    workflow.add_conditional_edges("material_db", route_after_material_db, {
+        "run_analyses": "run_analyses", 
+        "handle_error": "error_handler"
+    })
 
     # parallel analyses
-    workflow.add_node("run_analyses", lambda s: s)
-    for node in ["properties","logistics","costs","sustainability","consumer"]:
+    workflow.add_node("run_analyses", lambda s: {})  # Return empty dict to avoid state modifications
+    for node in ["properties", "logistics", "costs", "sustainability", "consumer"]:
         workflow.add_edge("run_analyses", node)
-    workflow.add_node("join_analyses", lambda s: s)
-    for node in ["properties","logistics","costs","sustainability","consumer"]:
+    workflow.add_node("join_analyses", lambda s: {})  # Return empty dict to avoid state modifications
+    for node in ["properties", "logistics", "costs", "sustainability", "consumer"]:
         workflow.add_edge(node, "join_analyses")
-    workflow.add_conditional_edges("join_analyses", check_analyses_completion, {"orchestrate": "orchestrator", "handle_error": "error_handler"})
+    workflow.add_conditional_edges("join_analyses", check_analyses_completion, {
+        "orchestrate": "orchestrator", 
+        "handle_error": "error_handler"
+    })
+    
+    workflow.add_edge("orchestrator", END)
+    workflow.add_edge("error_handler", END)
 
     workflow.set_entry_point("input")
     return workflow.compile(checkpointer=MemorySaver())
 
-# Main execution\
+# Main execution
 async def main():
     now = datetime.now(timezone.utc)
     thread_id = f"{CURRENT_USER}-{int(now.timestamp())}"
@@ -375,10 +513,10 @@ async def main():
             out = result["final_results"]
             print(f"Analysis complete for: {out['product_name']}")
             for i, m in enumerate(out.get("top_materials", []), 1):
-                print(f"{i}. {m['name']} – {m['total_score']:.2f}")
+                print(f"{i}. {m.get('name', m.get('material_name', m.get('id', 'Unknown')))} ")
     except Exception as e:
         logger.critical(f"Fatal: {e}", exc_info=True)
         print(f"Fatal error: {e}")
 
 if __name__ == "__main__":
-    asyncio.run(main()) 
+    asyncio.run(main())

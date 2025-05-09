@@ -1,69 +1,69 @@
 {
   "top_materials": [
     {
-      "material_name": "Aluminum Alloy (6063)",
+      "material_name": "Calcium Carbonate (Shell)",
+      "cost_score": 9,
+      "base_price": "0.15 USD/kg",
+      "key_costs": {
+        "raw_material": "Low base price",
+        "processing": "Minimal processing",
+        "tariffs": "Low import duties",
+        "transport": "Cheap transport",
+        "compliance": "Easy compliance"
+      },
+      "total_estimated_cost": "0.20 USD/unit"
+    },
+    {
+      "material_name": "Soybean Meal (Feed)",
       "cost_score": 8,
+      "base_price": "0.40 USD/kg",
+      "key_costs": {
+        "raw_material": "Affordable base",
+        "processing": "Simple process",
+        "tariffs": "Moderate tariffs",
+        "transport": "Low cost shipping",
+        "compliance": "Standard compliance"
+      },
+      "total_estimated_cost": "0.53 USD/unit"
+    },
+    {
+      "material_name": "Corn (Feed)",
+      "cost_score": 7,
+      "base_price": "0.35 USD/kg",
+      "key_costs": {
+        "raw_material": "Low raw material cost",
+        "processing": "Simple processing",
+        "tariffs": "Low import tariffs",
+        "transport": "Cheap transportation",
+        "compliance": "Standard compliance"
+      },
+      "total_estimated_cost": "0.46 USD/unit"
+    },
+    {
+      "material_name": "Vitamin Supplements (Feed)",
+      "cost_score": 6,
       "base_price": "2.50 USD/kg",
       "key_costs": {
-        "raw_material": "Aluminum and alloying elements",
-        "processing": "Extrusion and CNC machining",
+        "raw_material": "Variable base price",
+        "processing": "Some processing",
+        "tariffs": "Moderate tariffs",
+        "transport": "Standard transport",
+        "compliance": "High compliance"
+      },
+      "total_estimated_cost": "3.31 USD/unit"
+    },
+    {
+      "material_name": "Packaging Materials (Cartons)",
+      "cost_score": 5,
+      "base_price": "0.20 USD/kg",
+      "key_costs": {
+        "raw_material": "Paper is cheap",
+        "processing": "Simple printing",
         "tariffs": "Low import duties",
-        "transport": "Moderate shipping costs",
-        "compliance": "RoHS compliance"
+        "transport": "Bulk shipping costs",
+        "compliance": "Standard measures"
       },
-      "total_estimated_cost": "1.06 USD"
-    },
-    {
-      "material_name": "Lithium Cobalt Oxide",
-      "cost_score": 7,
-      "base_price": "30.00 USD/kg",
-      "key_costs": {
-        "raw_material": "Lithium, Cobalt",
-        "processing": "Electrode manufacturing",
-        "tariffs": "Vary by country",
-        "transport": "Requires special handling",
-        "compliance": "UN 38.3 testing"
-      },
-      "total_estimated_cost": "12.75 USD"
-    },
-    {
-      "material_name": "Reinforced Glass (Gorilla Glass)",
-      "cost_score": 9,
-      "base_price": "4.00 USD/kg",
-      "key_costs": {
-        "raw_material": "Silica, Alumina",
-        "processing": "Chemical strengthening",
-        "tariffs": "Low import tariffs",
-        "transport": "Fragile goods",
-        "compliance": "Scratch resistance testing"
-      },
-      "total_estimated_cost": "1.70 USD"
-    },
-    {
-      "material_name": "Copper",
-      "cost_score": 6,
-      "base_price": "9.00 USD/kg",
-      "key_costs": {
-        "raw_material": "Copper cathode",
-        "processing": "Wire drawing, etching",
-        "tariffs": "Low import duties",
-        "transport": "Heavy, but stable",
-        "compliance": "REACH compliance"
-      },
-      "total_estimated_cost": "3.83 USD"
-    },
-    {
-      "material_name": "Thermoplastics (PC/ABS Blend)",
-      "cost_score": 7,
-      "base_price": "3.00 USD/kg",
-      "key_costs": {
-        "raw_material": "Polycarbonate, ABS",
-        "processing": "Injection molding",
-        "tariffs": "Moderate import duties",
-        "transport": "Lightweight",
-        "compliance": "UL 94 flammability"
-      },
-      "total_estimated_cost": "1.28 USD"
+      "total_estimated_cost": "0.26 USD/unit"
     }
   ],
   "timestamp": "2025-04-19 21:22:20",

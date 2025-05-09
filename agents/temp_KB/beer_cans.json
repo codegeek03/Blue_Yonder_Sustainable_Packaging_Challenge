@@ -1,0 +1,16 @@
+{
+    "product_name": "Beer Cans",
+    "units_per_shipment": 90,
+    "dimensions": {
+        "length": 10.0,
+        "width": 10.0,
+        "height": 10.0
+    },
+    "packaging_location": "kolkata,westbengal",
+    "budget_constraint": 8000.0,
+    "metadata": {
+        "timestamp": "2025-05-09 22:40:21",
+        "user": "codegeek03",
+        "volume": 1000.0
+    }
+}

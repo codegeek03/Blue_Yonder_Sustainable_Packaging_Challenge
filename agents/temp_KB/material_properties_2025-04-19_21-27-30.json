@@ -1,169 +1,169 @@
 {
   "top_materials": [
     {
-      "material_name": "Aluminum Alloy (7000 series)",
+      "material_name": "Calcium Carbonate",
       "property_scores": {
         "mechanical_strength": {
-          "value": "572",
+          "value": "50",
           "unit": "MPa",
-          "score": 9
+          "score": 6
         },
         "chemical_resistance": {
           "value": "4-9",
           "unit": "pH range",
-          "score": 7
+          "score": 5
         },
         "thermal_stability": {
-          "value": "Up to 150",
+          "value": "80",
           "unit": "\u00b0C",
           "score": 7
         },
         "barrier_properties": {
-          "value": "0.05",
+          "value": "10",
           "unit": "g/(m\u00b2\u00b7day)",
           "score": 8
         },
         "durability": {
-          "value": "5-7",
+          "value": "1",
           "unit": "years",
-          "score": 8
-        }
-      },
-      "overall_score": 8,
-      "key_strength": "High strength-to-weight ratio",
-      "main_limitation": "Susceptible to corrosion"
-    },
-    {
-      "material_name": "Ceramic Shield Glass",
-      "property_scores": {
-        "mechanical_strength": {
-          "value": "500",
-          "unit": "MPa",
-          "score": 8
-        },
-        "chemical_resistance": {
-          "value": "1-14",
-          "unit": "pH range",
-          "score": 10
-        },
-        "thermal_stability": {
-          "value": "Up to 500",
-          "unit": "\u00b0C",
-          "score": 9
-        },
-        "barrier_properties": {
-          "value": "0.01",
-          "unit": "g/(m\u00b2\u00b7day)",
-          "score": 10
-        },
-        "durability": {
-          "value": "8-10",
-          "unit": "years",
-          "score": 9
-        }
-      },
-      "overall_score": 9,
-      "key_strength": "Scratch & shatter resistance",
-      "main_limitation": "Brittle, impact damage risk"
-    },
-    {
-      "material_name": "Stainless Steel (316L)",
-      "property_scores": {
-        "mechanical_strength": {
-          "value": "580",
-          "unit": "MPa",
-          "score": 9
-        },
-        "chemical_resistance": {
-          "value": "1-14",
-          "unit": "pH range",
-          "score": 9
-        },
-        "thermal_stability": {
-          "value": "Up to 870",
-          "unit": "\u00b0C",
-          "score": 10
-        },
-        "barrier_properties": {
-          "value": "0.001",
-          "unit": "g/(m\u00b2\u00b7day)",
-          "score": 10
-        },
-        "durability": {
-          "value": "10+",
-          "unit": "years",
-          "score": 10
-        }
-      },
-      "overall_score": 9,
-      "key_strength": "Corrosion resistance, strength",
-      "main_limitation": "Higher density than Aluminum"
-    },
-    {
-      "material_name": "Sapphire Crystal",
-      "property_scores": {
-        "mechanical_strength": {
-          "value": "400",
-          "unit": "MPa",
-          "score": 7
-        },
-        "chemical_resistance": {
-          "value": "1-14",
-          "unit": "pH range",
-          "score": 10
-        },
-        "thermal_stability": {
-          "value": "Up to 2000",
-          "unit": "\u00b0C",
-          "score": 10
-        },
-        "barrier_properties": {
-          "value": "0.001",
-          "unit": "g/(m\u00b2\u00b7day)",
-          "score": 10
-        },
-        "durability": {
-          "value": "10+",
-          "unit": "years",
-          "score": 10
-        }
-      },
-      "overall_score": 9,
-      "key_strength": "Extremely scratch resistant",
-      "main_limitation": "Brittle, expensive to produce"
-    },
-    {
-      "material_name": "Polycarbonate",
-      "property_scores": {
-        "mechanical_strength": {
-          "value": "65",
-          "unit": "MPa",
-          "score": 6
-        },
-        "chemical_resistance": {
-          "value": "6-8",
-          "unit": "pH range",
-          "score": 6
-        },
-        "thermal_stability": {
-          "value": "Up to 135",
-          "unit": "\u00b0C",
-          "score": 6
-        },
-        "barrier_properties": {
-          "value": "0.3",
-          "unit": "g/(m\u00b2\u00b7day)",
-          "score": 6
-        },
-        "durability": {
-          "value": "3-5",
-          "unit": "years",
-          "score": 7
+          "score": 4
         }
       },
       "overall_score": 6,
-      "key_strength": "Impact resistance",
-      "main_limitation": "Low scratch resistance"
+      "key_strength": "Good barrier properties",
+      "main_limitation": "Low durability"
+    },
+    {
+      "material_name": "Polystyrene",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "40",
+          "unit": "MPa",
+          "score": 5
+        },
+        "chemical_resistance": {
+          "value": "5-7",
+          "unit": "pH range",
+          "score": 6
+        },
+        "thermal_stability": {
+          "value": "70",
+          "unit": "\u00b0C",
+          "score": 6
+        },
+        "barrier_properties": {
+          "value": "5",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 9
+        },
+        "durability": {
+          "value": "2",
+          "unit": "years",
+          "score": 6
+        }
+      },
+      "overall_score": 6,
+      "key_strength": "Excellent barrier properties",
+      "main_limitation": "Limited thermal stability"
+    },
+    {
+      "material_name": "Polypropylene",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "35",
+          "unit": "MPa",
+          "score": 4
+        },
+        "chemical_resistance": {
+          "value": "2-12",
+          "unit": "pH range",
+          "score": 8
+        },
+        "thermal_stability": {
+          "value": "100",
+          "unit": "\u00b0C",
+          "score": 8
+        },
+        "barrier_properties": {
+          "value": "8",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 7
+        },
+        "durability": {
+          "value": "3",
+          "unit": "years",
+          "score": 7
+        }
+      },
+      "overall_score": 7,
+      "key_strength": "High thermal stability",
+      "main_limitation": "Lower mech. strength"
+    },
+    {
+      "material_name": "PET",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "55",
+          "unit": "MPa",
+          "score": 7
+        },
+        "chemical_resistance": {
+          "value": "3-8",
+          "unit": "pH range",
+          "score": 6
+        },
+        "thermal_stability": {
+          "value": "75",
+          "unit": "\u00b0C",
+          "score": 7
+        },
+        "barrier_properties": {
+          "value": "3",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 9
+        },
+        "durability": {
+          "value": "4",
+          "unit": "years",
+          "score": 8
+        }
+      },
+      "overall_score": 7,
+      "key_strength": "Excellent barrier properties",
+      "main_limitation": "Moderate thermal stability"
+    },
+    {
+      "material_name": "High Density PE",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "30",
+          "unit": "MPa",
+          "score": 4
+        },
+        "chemical_resistance": {
+          "value": "1-14",
+          "unit": "pH range",
+          "score": 10
+        },
+        "thermal_stability": {
+          "value": "85",
+          "unit": "\u00b0C",
+          "score": 7
+        },
+        "barrier_properties": {
+          "value": "7",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 8
+        },
+        "durability": {
+          "value": "5",
+          "unit": "years",
+          "score": 9
+        }
+      },
+      "overall_score": 8,
+      "key_strength": "Exceptional chemical resistance",
+      "main_limitation": "Low tensile strength"
     }
   ],
   "timestamp": "2025-04-19 21:27:30",
