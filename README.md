@@ -122,7 +122,7 @@ This system is a **LangGraph-driven**, multi-agent orchestration for evaluating 
 - **JSON-First Reporting**  
   Each material summary is generated as a precise JSON schema—ideal for slides, dashboards, or APIs.
 - **Dynamic Weighting & Scoring**  
-  Configurable weights guide composite score calculation; normalized sub-scores and breakdowns drive explainability.
+  The composite score calculation is guided by configurable weights, allowing users to prioritize specific goals—such as sustainability or cost-effectiveness. Normalized sub-scores and detailed breakdowns     enhance transparency and explainability.
 - **Regulatory Context Fetch**  
   Live web-search integration to pull jurisdiction-specific regulation snippets for each material.
 - **Robust Error Handling**  
