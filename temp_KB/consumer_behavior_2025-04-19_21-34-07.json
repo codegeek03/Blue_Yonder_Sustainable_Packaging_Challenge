@@ -1,0 +1,217 @@
+{
+  "top_materials": [
+    {
+      "material_name": "Glass Bottles (Traditional)",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Classic and evokes tradition."
+        },
+        "usability": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Easy to pour, resealable."
+        },
+        "perceived_value": {
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Seen as premium."
+        },
+        "eco_consciousness": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Recyclable, good perception."
+        },
+        "brand_alignment": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Aligns with heritage brands."
+        }
+      },
+      "overall_consumer_score": 7.8,
+      "target_demographics": [
+        "Older Adults",
+        "Tourists",
+        "Affluent Consumers"
+      ],
+      "market_positioning": "Premium, heritage-focused feni."
+    },
+    {
+      "material_name": "Ceramic Bottles (Handcrafted)",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Artisan appeal, unique."
+        },
+        "usability": {
+          "score": 6,
+          "trend_strength": "weak",
+          "key_insight": "Can be bulky, heavy."
+        },
+        "perceived_value": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Perceived as very high quality."
+        },
+        "eco_consciousness": {
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Re-usable, but heavy to transport."
+        },
+        "brand_alignment": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Fits boutique brands well."
+        }
+      },
+      "overall_consumer_score": 7.4,
+      "target_demographics": [
+        "Collectors",
+        "Gift Buyers",
+        "Art Connoisseurs"
+      ],
+      "market_positioning": "Ultra-premium, artisanal feni."
+    },
+    {
+      "material_name": "PET Bottles (Modern Design)",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Sleek, modern look."
+        },
+        "usability": {
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Lightweight, easy to handle."
+        },
+        "perceived_value": {
+          "score": 5,
+          "trend_strength": "weak",
+          "key_insight": "Seen as less premium."
+        },
+        "eco_consciousness": {
+          "score": 4,
+          "trend_strength": "weak",
+          "key_insight": "Environmental concerns."
+        },
+        "brand_alignment": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Fits modern, accessible brands."
+        }
+      },
+      "overall_consumer_score": 6,
+      "target_demographics": [
+        "Young Adults",
+        "Budget Conscious Consumers"
+      ],
+      "market_positioning": "Affordable, accessible feni."
+    },
+    {
+      "material_name": "Aluminum Bottles (Slim Can)",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Modern, portable appeal."
+        },
+        "usability": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Easy to carry and chill."
+        },
+        "perceived_value": {
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Suggests convenience."
+        },
+        "eco_consciousness": {
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Recyclable, lightweight."
+        },
+        "brand_alignment": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Suits ready-to-drink feni."
+        }
+      },
+      "overall_consumer_score": 7,
+      "target_demographics": [
+        "Millennials",
+        "Gen Z",
+        "Outdoor Enthusiasts"
+      ],
+      "market_positioning": "Convenient, on-the-go feni."
+    },
+    {
+      "material_name": "Earthenware Pots (Rustic)",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Authentic, rustic feel."
+        },
+        "usability": {
+          "score": 5,
+          "trend_strength": "weak",
+          "key_insight": "Difficult to reseal and handle."
+        },
+        "perceived_value": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Implies tradition."
+        },
+        "eco_consciousness": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Natural, biodegradable material."
+        },
+        "brand_alignment": {
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Fits heritage, sustainable brands."
+        }
+      },
+      "overall_consumer_score": 7,
+      "target_demographics": [
+        "Eco-conscious",
+        "Traditionalists",
+        "Experiential Consumers"
+      ],
+      "market_positioning": "Sustainable, authentic feni."
+    }
+  ],
+  "consumer_trends": [
+    {
+      "trend_name": "Sustainability Focus",
+      "impact_level": "high",
+      "relevance": "Growing demand for eco-friendly packaging."
+    },
+    {
+      "trend_name": "Premiumization",
+      "impact_level": "medium",
+      "relevance": "Consumers willing to pay more for quality."
+    },
+    {
+      "trend_name": "Convenience",
+      "impact_level": "medium",
+      "relevance": "Demand for easy-to-use packaging formats."
+    },
+    {
+      "trend_name": "Authenticity Seeking",
+      "impact_level": "medium",
+      "relevance": "Packaging that reflects heritage is valued."
+    },
+    {
+      "trend_name": "Minimalism",
+      "impact_level": "low",
+      "relevance": "Simple, clean designs are gaining traction."
+    }
+  ],
+  "timestamp": "2025-04-19 21:34:07",
+  "user": "codegeek03"
+}

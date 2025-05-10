@@ -59,7 +59,9 @@ class AnalysisState(TypedDict):
     current_time: Annotated[str, "current_time"]
 
 from agno.tools.tavily import TavilyTools
-
+from agno.tools.calculator import CalculatorTools
+from agno.tools.newspaper4k import Newspaper4kTools
+from agno.tools.duckduckgo import DuckDuckGoTools
 
 class OrchestrationAgent:
     def __init__(self, current_time: str = CURRENT_TIME, current_user: str = CURRENT_USER):
@@ -76,13 +78,37 @@ class OrchestrationAgent:
             self.reports_dir = "temp_KB/reports"
             os.makedirs(self.reports_dir, exist_ok=True)
 
-            self.agent = Agent(
-                model=Gemini(id="gemini-2.0-flash-exp", api_key=self.api_key),
-                tools=[TavilyTools()],
-                markdown=True,
-                show_tool_calls=True,
-            )
 
+
+            self.agent = Agent(
+    model=Gemini(
+        id="gemini-2.0-flash-exp",
+        search=True,  
+        grounding=False  # Disable grounding to allow tools and reasoning to work
+    ),
+    tools=[
+        TavilyTools(
+            search_depth='advanced',
+            max_tokens=6000,
+            include_answer=True
+        ),
+        DuckDuckGoTools(),
+        Newspaper4kTools()
+    ],
+    description="You are an expert research analyst with exceptional analytical and investigative abilities.",
+    instructions=[
+        "Always begin by thoroughly searching for the most relevant and up-to-date information",
+        "Cross-reference information between Tavily and DuckDuckGo searches for accuracy",
+        "Provide well-structured, comprehensive responses with clear sections",
+        "Include specific facts and details to support your answers",
+        "When appropriate, organize information using bullet points or numbered lists",
+        "If information seems outdated or unclear, explicitly mention this",
+        "Focus on delivering accurate, concise, and actionable insights"
+    ],
+    reasoning=True,  # Enable reasoning 
+    markdown=True,
+    show_tool_calls=True
+)
             self.analysis_weights = ANALYSIS_WEIGHTS.copy()
             logger.info("OrchestrationAgent initialized successfully")
 
@@ -112,7 +138,7 @@ Your task is to produce a professional, slide-ready JSON report using only the e
 
 {{
   "material_name": "{mat_name}",
-  "executive_snapshot": "<one-sentence summary of fit for {product_name} in {location}>",
+  "executive_snapshot": "<one-sentence summary of fit for {product_name} in {location} and provide a wikipedia link to the {mat_name} for extende read>",
   "composite_score": {{
     "metrics": {{
       "carbon_footprint": {{ "value": "<e.g. 3.7 kg CO₂/kg>", "score": <0–100> }},
@@ -146,9 +172,10 @@ Your task is to produce a professional, slide-ready JSON report using only the e
     "sustainability_uplift_percent": <projected % uplift for {product_name} sustainability>,
     "cost_delta_percent": <projected % cost change for {product_name}>
   }},
-  "regulatory_context": "<excerpt from the most relevant regulation in {location} for {mat_name}>"
+  "regulatory_context": "<Legal excerpt from the most relevant regulation in {location} for {mat_name} and provide relevant links from the web-search>"
 }}
-"""
+
+DON'T HallUCINATE."""
 
             response = await self.agent.arun(prompt)
             return self._process_response(response.content)

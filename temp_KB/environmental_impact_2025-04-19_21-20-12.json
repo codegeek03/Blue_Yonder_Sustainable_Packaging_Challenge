@@ -1,0 +1,36 @@
+{
+  "top_materials": [
+    {
+      "material_name": "Glass Bottles",
+      "environmental_score": 7.5,
+      "key_benefit": "High recyclability",
+      "primary_concern": "Energy intensive production"
+    },
+    {
+      "material_name": "PET Bottles (Recycled)",
+      "environmental_score": 6.8,
+      "key_benefit": "Lower carbon footprint",
+      "primary_concern": "Microplastic pollution"
+    },
+    {
+      "material_name": "Aluminum Cans",
+      "environmental_score": 6.5,
+      "key_benefit": "Highly recyclable metal",
+      "primary_concern": "Bauxite mining impacts"
+    },
+    {
+      "material_name": "Bagasse Packaging",
+      "environmental_score": 6.2,
+      "key_benefit": "Biodegradable waste product",
+      "primary_concern": "Limited structural strength"
+    },
+    {
+      "material_name": "Paper Labels (FSC)",
+      "environmental_score": 5.8,
+      "key_benefit": "Renewable source",
+      "primary_concern": "Deforestation concerns"
+    }
+  ],
+  "timestamp": "2025-04-19 21:20:12",
+  "user": "codegeek03"
+}

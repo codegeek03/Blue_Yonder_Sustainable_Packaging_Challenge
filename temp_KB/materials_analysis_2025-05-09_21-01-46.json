@@ -1,0 +1,528 @@
+{
+  "materials": {
+    "physical_form": [
+      {
+        "material_name": "Glass (Bottle)",
+        "properties": "Inert, transparent, recyclable, impermeable to gases.",
+        "application": "Primary container for feni, preserving its aroma and preventing oxidation."
+      },
+      {
+        "material_name": "PET (Polyethylene Terephthalate) Bottle",
+        "properties": "Lightweight, shatter-resistant, recyclable, lower cost than glass.",
+        "application": "Alternative primary container, suitable for larger volumes or markets where breakage is a concern."
+      },
+      {
+        "material_name": "HDPE (High-Density Polyethylene) Bottle",
+        "properties": "Durable, chemical resistant, recyclable, opaque.",
+        "application": "Suitable for bulk packaging or industrial applications where transparency is not required."
+      },
+      {
+        "material_name": "Aluminum Can",
+        "properties": "Lightweight, recyclable, impermeable, rapid cooling.",
+        "application": "Single-serving sizes, offering portability and chill quickly."
+      },
+      {
+        "material_name": "Cardboard (Corrugated)",
+        "properties": "Rigid, cushioning, recyclable, printable.",
+        "application": "Secondary packaging for case lots, providing protection during shipping and storage."
+      },
+      {
+        "material_name": "Shrink Wrap (Polyolefin)",
+        "properties": "Flexible, transparent, conformable, tamper-evident.",
+        "application": "Securing bottles in multi-packs or providing tamper evidence on individual bottles."
+      },
+      {
+        "material_name": "Label (Paper or BOPP)",
+        "properties": "Printable, adhesive, informative.",
+        "application": "Providing product information, branding, and legal compliance details."
+      },
+      {
+        "material_name": "Closure (Screw Cap - Aluminum/Plastic)",
+        "properties": "Provides a hermetic seal, prevents leakage, resealable.",
+        "application": "Sealing the bottle to prevent spillage and maintain product freshness. Aluminum offers a premium look."
+      },
+      {
+        "material_name": "Cork (Natural or Synthetic)",
+        "properties": "Traditional, provides a tight seal, allows for micro-oxygenation.",
+        "application": "Alternative closure, offering a premium and traditional feel, primarily for aged or premium feni."
+      },
+      {
+        "material_name": "Protective Dividers (Cardboard or Plastic)",
+        "properties": "Cushioning, separates bottles, prevents breakage.",
+        "application": "Used inside cardboard boxes to provide extra protection during shipping."
+      }
+    ],
+    "fragility": [
+      {
+        "material_name": "Expanded Polystyrene (EPS) Foam",
+        "properties": "Excellent cushioning, lightweight, inexpensive.",
+        "application": "Molded inserts for protecting glass bottles during transport, especially in export markets."
+      },
+      {
+        "material_name": "Bubble Wrap (Polyethylene)",
+        "properties": "Flexible cushioning, lightweight, reusable.",
+        "application": "Wrapping individual bottles for added protection during shipping."
+      },
+      {
+        "material_name": "Inflatable Air Pillows",
+        "properties": "Lightweight, adjustable cushioning, space-saving.",
+        "application": "Filling void spaces in boxes to prevent movement and impact during transit."
+      },
+      {
+        "material_name": "Molded Pulp",
+        "properties": "Sustainable, biodegradable, custom molded.",
+        "application": "Protective inserts made from recycled paper pulp, offering a green alternative to EPS."
+      },
+      {
+        "material_name": "Corrugated Cardboard Inserts",
+        "properties": "Adds structural support, cushioning, and prevents bottle-to-bottle contact",
+        "application": "Used inside outer cardboard boxes to create separate compartments for each bottle."
+      },
+      {
+        "material_name": "Edge Protectors (Cardboard or Plastic)",
+        "properties": "Reinforce carton edges, prevent crushing.",
+        "application": "Applied to the corners of cardboard boxes to improve stacking strength and protect against damage."
+      },
+      {
+        "material_name": "Suspension Packaging",
+        "properties": "Suspends product in the center of the box using film, providing excellent shock absorption",
+        "application": "High-value or particularly fragile bottles where premium protection is required."
+      },
+      {
+        "material_name": "Honeycomb Cardboard",
+        "properties": "High strength-to-weight ratio, excellent cushioning.",
+        "application": "Internal dividers or void fill, providing superior protection compared to standard cardboard."
+      },
+      {
+        "material_name": "Crumple Paper",
+        "properties": "Flexible void filler, good cushioning, and recyclable.",
+        "application": "Used to fill empty spaces inside the box, providing cushioning and preventing movement of the product during transit."
+      },
+      {
+        "material_name": "Thermoformed Plastic Trays",
+        "properties": "Rigid, custom-shaped, reusable.",
+        "application": "Used for organizing and protecting multiple bottles in a retail display or shipping container."
+      }
+    ],
+    "shelf_life": [
+      {
+        "material_name": "Amber Glass",
+        "properties": "Blocks UV light, inert, prevents oxidation.",
+        "application": "Primary container to protect feni from light degradation and maintain its flavor profile over extended storage."
+      },
+      {
+        "material_name": "Metallized PET Film",
+        "properties": "High barrier to oxygen and light, flexible, printable.",
+        "application": "Laminating labels to provide an extra layer of protection against light and moisture."
+      },
+      {
+        "material_name": "Vacuum Sealing (with appropriate bottle closure)",
+        "properties": "Removes oxygen, extending shelf life.",
+        "application": "Used with suitable bottle to remove air to increase the shelf life."
+      },
+      {
+        "material_name": "High-Barrier PET",
+        "properties": "Improved oxygen barrier compared to standard PET.",
+        "application": "Used for bottles where a longer shelf life is required, but glass is not preferred."
+      },
+      {
+        "material_name": "Nitrogen Flushing",
+        "properties": "Displaces oxygen in the headspace of the bottle",
+        "application": "Minimizes oxidation within the bottle during storage."
+      },
+      {
+        "material_name": "Epoxy Phenolic Lacquer (Lining for Metal Caps)",
+        "properties": "Prevents corrosion and interaction between the cap and the liquid",
+        "application": "Applied as a liner to metal screw caps to protect the feni from metallic contamination and prevent changes in taste."
+      },
+      {
+        "material_name": "UV-Protective Coating (on Labels/Cartons)",
+        "properties": "Filters UV radiation, preventing degradation of product or printed materials.",
+        "application": "Applied to labels or outer cartons to reduce the impact of sunlight during storage and transportation."
+      },
+      {
+        "material_name": "Desiccants (Silica Gel)",
+        "properties": "Absorbs moisture, prevents condensation.",
+        "application": "Placed inside the packaging to control humidity and prevent mold growth or degradation."
+      },
+      {
+        "material_name": "Modified Atmosphere Packaging (MAP)",
+        "properties": "Control atmospheric composition.",
+        "application": "For bulk storage to improve shelf life."
+      },
+      {
+        "material_name": "Ethylene Vinyl Alcohol (EVOH) Layer",
+        "properties": "Excellent oxygen barrier.",
+        "application": "Incorporated into multi-layer plastic bottles to reduce oxygen permeation."
+      }
+    ],
+    "chemical_properties": [
+      {
+        "material_name": "Glass (Type I Borosilicate)",
+        "properties": "Inert, non-reactive, impermeable.",
+        "application": "Ideal primary container to prevent any chemical interaction between the feni and the packaging."
+      },
+      {
+        "material_name": "Stainless Steel (304/316)",
+        "properties": "Corrosion-resistant, non-reactive, durable.",
+        "application": "Used for storage tanks and dispensing equipment in production facilities."
+      },
+      {
+        "material_name": "PTFE (Teflon) Liners",
+        "properties": "Chemically inert, resistant to high temperatures.",
+        "application": "Used as liners in caps and closures to prevent chemical reactions between the feni and the cap material."
+      },
+      {
+        "material_name": "HDPE (High-Density Polyethylene) - Food Grade",
+        "properties": "Chemically resistant, durable, recyclable.",
+        "application": "Suitable for secondary packaging or bulk containers, ensuring no leaching of chemicals into the feni."
+      },
+      {
+        "material_name": "Polypropylene (PP) - Food Grade",
+        "properties": "Chemically resistant, can withstand autoclaving.",
+        "application": "Used for closures and other components that come into direct contact with the feni."
+      },
+      {
+        "material_name": "Silicone Gaskets",
+        "properties": "Inert, flexible, temperature resistant.",
+        "application": "Used in closures and dispensing systems to provide a tight seal without reacting with the feni."
+      },
+      {
+        "material_name": "Epoxy Resin (Food Grade)",
+        "properties": "Durable, chemical resistant.",
+        "application": "Used as a coating for metal containers or tanks to prevent corrosion and interaction with the product."
+      },
+      {
+        "material_name": "Polycarbonate (PC)",
+        "properties": "Strong, transparent, chemical resistant.",
+        "application": "Suitable for certain dispensing components where visibility and chemical resistance are required."
+      },
+      {
+        "material_name": "Fluorinated HDPE",
+        "properties": "HDPE treated with fluorine to improve its barrier properties and chemical resistance.",
+        "application": "Containers for industrial/bulk transport."
+      },
+      {
+        "material_name": "Bio-based PE",
+        "properties": "Derived from renewable sources (e.g., sugarcane), chemically similar to standard PE",
+        "application": "Environmentally friendly."
+      }
+    ],
+    "hygiene_sensitivity": [
+      {
+        "material_name": "Sterile Glass",
+        "properties": "Inert, easily sterilized, impermeable.",
+        "application": "Ideal primary packaging, ensuring no contamination of the feni."
+      },
+      {
+        "material_name": "Aseptic Packaging",
+        "properties": "Sterilized packaging and product, filled in a sterile environment.",
+        "application": "Ensuring maximum product purity and extending shelf life without refrigeration."
+      },
+      {
+        "material_name": "Gamma Irradiation Sterilization",
+        "properties": "Effective sterilization method for packaging materials.",
+        "application": "Used to sterilize closures or components before assembly."
+      },
+      {
+        "material_name": "Food-Grade Sanitizers (e.g., Hydrogen Peroxide)",
+        "properties": "Effective sanitization of packaging surfaces.",
+        "application": "Used to sanitize the interior of bottles or containers before filling."
+      },
+      {
+        "material_name": "Ultra Clean Processing",
+        "properties": "Stringent cleaning and sanitizing procedures.",
+        "application": "Ensuring equipment used in the packaging process is free from contaminants."
+      },
+      {
+        "material_name": "Tamper-Evident Seals",
+        "properties": "Shows evidence of opening or tampering.",
+        "application": "Ensuring product integrity and consumer safety."
+      },
+      {
+        "material_name": "Antimicrobial Coatings",
+        "properties": "Inhibits the growth of microorganisms on the packaging surface.",
+        "application": "Applied to labels or outer packaging to reduce the risk of contamination."
+      },
+      {
+        "material_name": "Positive Air Pressure Systems",
+        "properties": "Maintains a clean environment by preventing airborne contaminants from entering the packaging area.",
+        "application": "Used in filling and sealing areas to minimize contamination risk."
+      },
+      {
+        "material_name": "HEPA Filters",
+        "properties": "Removes airborne particles and microorganisms.",
+        "application": "Used in ventilation systems to maintain a clean environment in the packaging facility."
+      },
+      {
+        "material_name": "Clean-In-Place (CIP) Systems",
+        "properties": "Automated cleaning and sanitizing of equipment without disassembly.",
+        "application": "Used to clean and sanitize tanks, pipes, and filling equipment regularly."
+      }
+    ],
+    "temperature_sensitivity": [
+      {
+        "material_name": "Insulated Packaging (EPS or Polyurethane Foam)",
+        "properties": "Maintains temperature, protects from temperature fluctuations.",
+        "application": "Used for shipping feni in regions with extreme temperatures."
+      },
+      {
+        "material_name": "Temperature Indicators",
+        "properties": "Visual indication of temperature exposure.",
+        "application": "Monitoring temperature during shipping to ensure product quality."
+      },
+      {
+        "material_name": "Phase Change Materials (PCMs)",
+        "properties": "Absorb and release heat, maintaining a stable temperature.",
+        "application": "Used in insulated packaging to provide temperature control during transit."
+      },
+      {
+        "material_name": "Temperature-Controlled Shipping Containers",
+        "properties": "Refrigerated or heated containers.",
+        "application": "Used for long-distance shipping of feni, ensuring it remains within the specified temperature range."
+      },
+      {
+        "material_name": "Cold Chain Packaging",
+        "properties": "A system of packaging and procedures to maintain a consistent temperature range.",
+        "application": "Especially important for temperature-sensitive products during storage and transportation."
+      },
+      {
+        "material_name": "Vacuum Insulated Panels (VIPs)",
+        "properties": "High thermal resistance, thin profile.",
+        "application": "Used in insulated containers to provide maximum temperature control in a compact space."
+      },
+      {
+        "material_name": "Reflective Films (Aluminum Foil)",
+        "properties": "Reflects radiant heat, reducing temperature gain.",
+        "application": "Used as a layer in insulated packaging to reflect heat away from the product."
+      },
+      {
+        "material_name": "Gel Packs (Reusable)",
+        "properties": "Provide cooling effect, reusable.",
+        "application": "Used in insulated packaging to maintain a low temperature during transit."
+      },
+      {
+        "material_name": "Dry Ice",
+        "properties": "Provides extremely low temperatures.",
+        "application": "Used for shipping temperature-sensitive products requiring very low temperatures."
+      },
+      {
+        "material_name": "Modified Atmosphere Packaging (MAP)",
+        "properties": "Adjusting the gas composition inside the package to slow down spoilage and maintain product quality.",
+        "application": "Can help extend shelf life and reduce the impact of temperature fluctuations."
+      }
+    ],
+    "volatility_or_hazard_risk": [
+      {
+        "material_name": "UN-Rated Packaging",
+        "properties": "Certified to withstand specific hazards.",
+        "application": "Ensuring compliance with regulations for shipping alcoholic beverages."
+      },
+      {
+        "material_name": "Tamper-Evident Closures",
+        "properties": "Prevent unauthorized access, indicate tampering.",
+        "application": "Ensuring product integrity and consumer safety."
+      },
+      {
+        "material_name": "Pressure-Relief Valves",
+        "properties": "Release excess pressure, prevent explosions.",
+        "application": "Used in containers that may experience pressure buildup during storage or transport."
+      },
+      {
+        "material_name": "Absorbent Materials (e.g., Vermiculite)",
+        "properties": "Contain spills, prevent leakage.",
+        "application": "Used in packaging to absorb any leakage of the feni during transport."
+      },
+      {
+        "material_name": "Warning Labels",
+        "properties": "Clearly indicate hazards, provide safety information.",
+        "application": "Ensuring proper handling and storage of the product."
+      },
+      {
+        "material_name": "Flame-Retardant Materials",
+        "properties": "Reduce fire risk.",
+        "application": "Used in packaging to minimize the spread of fire in case of an accident."
+      },
+      {
+        "material_name": "Anti-Static Packaging",
+        "properties": "Prevents static electricity buildup.",
+        "application": "Important when packaging flammable liquids to reduce the risk of ignition."
+      },
+      {
+        "material_name": "Secondary Containment",
+        "properties": "An additional layer of protection in case of primary container failure.",
+        "application": "Used for shipping hazardous materials to prevent spills from reaching the environment."
+      },
+      {
+        "material_name": "Security Seals",
+        "properties": "Provide evidence of tampering and deter theft.",
+        "application": "Used to secure containers and prevent unauthorized access during transport."
+      },
+      {
+        "material_name": "Emergency Response Information",
+        "properties": "Provides guidance on how to handle spills or accidents.",
+        "application": "Included with shipments to provide essential information to first responders."
+      }
+    ],
+    "visibility_and_display": [
+      {
+        "material_name": "Clear Glass Bottles",
+        "properties": "Transparent, allows product visibility, premium appearance.",
+        "application": "Showcasing the color and clarity of the feni, enhancing consumer appeal."
+      },
+      {
+        "material_name": "Clear PET Bottles",
+        "properties": "Transparent, lightweight, shatter-resistant, cost-effective.",
+        "application": "Providing product visibility with increased durability and reduced shipping costs."
+      },
+      {
+        "material_name": "Shrink Sleeves",
+        "properties": "Full-body graphics, 360-degree branding, tamper evidence.",
+        "application": "Enhancing shelf appeal and providing ample space for product information."
+      },
+      {
+        "material_name": "Embossed Labels",
+        "properties": "Tactile appeal, premium feel, enhanced brand recognition.",
+        "application": "Adding a touch of luxury and sophistication to the packaging."
+      },
+      {
+        "material_name": "Metallic Inks and Foils",
+        "properties": "Eye-catching, premium look, conveys quality.",
+        "application": "Drawing attention to the product on the shelf and creating a sense of luxury."
+      },
+      {
+        "material_name": "Windowed Cartons",
+        "properties": "Allows product visibility while providing protection.",
+        "application": "Showcasing the bottle inside the carton, allowing consumers to see the product before purchase."
+      },
+      {
+        "material_name": "Shelf-Ready Packaging (SRP)",
+        "properties": "Easy to open and display, reduces restocking time.",
+        "application": "Facilitating easy placement on shelves and enhancing product visibility."
+      },
+      {
+        "material_name": "Point-of-Sale (POS) Displays",
+        "properties": "Eye-catching, attracts attention, promotes impulse purchases.",
+        "application": "Enhancing product visibility and driving sales at the checkout counter."
+      },
+      {
+        "material_name": "Interactive Labels (QR Codes)",
+        "properties": "Connects consumers to online content, provides additional information.",
+        "application": "Engaging consumers and providing access to product information, recipes, or promotions."
+      },
+      {
+        "material_name": "Holographic Labels",
+        "properties": "Visually striking, enhances security and brand recognition.",
+        "application": "Increasing the perceived value of the product and deterring counterfeiting."
+      }
+    ],
+    "quantity_and_dosage": [
+      {
+        "material_name": "Single-Serve Pouches (Flexible Packaging)",
+        "properties": "Convenient, portion-controlled, lightweight.",
+        "application": "Offering single servings of feni for sampling or on-the-go consumption."
+      },
+      {
+        "material_name": "Miniature Bottles (Glass or PET)",
+        "properties": "Sample sizes, gifting options, portion control.",
+        "application": "Providing small quantities of feni for tasting or as a gift item."
+      },
+      {
+        "material_name": "Volumetric Dispenser Caps",
+        "properties": "Accurate dispensing, portion control.",
+        "application": "Ensuring consistent serving sizes for cocktails or mixed drinks."
+      },
+      {
+        "material_name": "Multi-Dose Bottles (with Measuring Cap)",
+        "properties": "Convenient, allows for multiple servings, accurate measurement.",
+        "application": "Providing a larger quantity of feni with a measuring cap for easy and accurate dosing."
+      },
+      {
+        "material_name": "Bag-in-Box (BIB) Packaging",
+        "properties": "Large volume, convenient dispensing, extended shelf life.",
+        "application": "Suitable for bars or restaurants, providing a large quantity of feni with a convenient dispensing system."
+      },
+      {
+        "material_name": "Sachets",
+        "properties": "Single-use, lightweight, cost-effective",
+        "application": "Small volume for promotions."
+      },
+      {
+        "material_name": "Easy Pour Spout",
+        "properties": "Provides a controlled and drip-free pour.",
+        "application": "Improves the user experience when pouring the product from larger bottles."
+      },
+      {
+        "material_name": "Graduated Markings (on Bottles)",
+        "properties": "Allows for easy measurement of liquid levels.",
+        "application": "Enables consumers to accurately measure the amount of feni being used."
+      },
+      {
+        "material_name": "Pump Dispensers",
+        "properties": "Delivers a consistent and accurate dose with each pump.",
+        "application": "Suitable for high-volume applications where precise dosing is required."
+      },
+      {
+        "material_name": "Unit Dose Packaging",
+        "properties": "Individual servings are pre-packaged and sealed for maximum hygiene and convenience.",
+        "application": "Good for samples."
+      }
+    ],
+    "value_and_theft_sensitivity": [
+      {
+        "material_name": "Security Labels (Holographic or Tamper-Evident)",
+        "properties": "Deters counterfeiting, indicates tampering.",
+        "application": "Protecting against product imitation and ensuring product authenticity."
+      },
+      {
+        "material_name": "RFID Tags",
+        "properties": "Track and trace products, prevent theft.",
+        "application": "Monitoring product movement and preventing theft throughout the supply chain."
+      },
+      {
+        "material_name": "Serialized Packaging",
+        "properties": "Unique identification for each unit, aids in tracking and authentication.",
+        "application": "Tracking individual bottles and verifying their authenticity."
+      },
+      {
+        "material_name": "Tamper-Evident Bands",
+        "properties": "Indicate if the closure has been opened.",
+        "application": "Providing visual evidence of tampering and ensuring product integrity."
+      },
+      {
+        "material_name": "Shrink Wrap with Security Printing",
+        "properties": "Provides tamper evidence and deters counterfeiting.",
+        "application": "Securing the closure and providing an additional layer of protection against tampering."
+      },
+      {
+        "material_name": "Destructible Labels",
+        "properties": "Breaks apart when removed, indicating tampering.",
+        "application": "Preventing label swapping or reuse, ensuring product authenticity."
+      },
+      {
+        "material_name": "Invisible Inks (UV or Infrared)",
+        "properties": "Visible only under specific light, used for authentication.",
+        "application": "Adding a hidden layer of security to labels or packaging."
+      },
+      {
+        "material_name": "Track and Trace Systems",
+        "properties": "Monitors product movement from production to point of sale.",
+        "application": "Reducing the risk of diversion and ensuring product authenticity."
+      },
+      {
+        "material_name": "High-Security Closures",
+        "properties": "Difficult to open without proper tools, prevents refilling.",
+        "application": "Protecting against counterfeiting and ensuring product integrity."
+      },
+      {
+        "material_name": "Coded Tamper-Evident Seals",
+        "properties": "Unique codes that can be verified to ensure authenticity.",
+        "application": "Verify product authenticity."
+      }
+    ]
+  },
+  "analysis_timestamp": "2025-05-09 21:01:46",
+  "user_login": "codegeek03",
+  "product_name": "cashew feni",
+  "status": "completed"
+}

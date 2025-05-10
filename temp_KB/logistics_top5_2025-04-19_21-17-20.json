@@ -1,0 +1,36 @@
+{
+  "top_materials": [
+    {
+      "material_name": "Glass Bottles (Crated)",
+      "logistics_score": 7,
+      "primary_advantage": "Good protection in crates",
+      "cost_consideration": "Higher bottle cost"
+    },
+    {
+      "material_name": "PET Bottles",
+      "logistics_score": 8,
+      "primary_advantage": "Lightweight, durable",
+      "cost_consideration": "Lower material cost"
+    },
+    {
+      "material_name": "HDPE Jerrycans",
+      "logistics_score": 6,
+      "primary_advantage": "Stackable, robust",
+      "cost_consideration": "Cheaper, less premium"
+    },
+    {
+      "material_name": "Bag-in-Box",
+      "logistics_score": 9,
+      "primary_advantage": "Efficient storage, reduced damage",
+      "cost_consideration": "Moderate material cost"
+    },
+    {
+      "material_name": "Cans (Aluminum)",
+      "logistics_score": 7,
+      "primary_advantage": "Excellent protection",
+      "cost_consideration": "Higher transport costs"
+    }
+  ],
+  "timestamp": "2025-04-19 21:17:20",
+  "user": "codegeek03"
+}
