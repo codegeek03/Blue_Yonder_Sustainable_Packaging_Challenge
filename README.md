@@ -258,6 +258,8 @@ Find JSON report in temp_KB/reports/
 Google Cloud for Gemini APIs
 
 All open-source tool developers and community contributors
+
+## Algorithmic Flowchart
  ![image](https://github.com/user-attachments/assets/994df226-6654-48b7-a403-627a7bee6f4d)
 
 
