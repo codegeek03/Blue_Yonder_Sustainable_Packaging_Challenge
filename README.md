@@ -172,10 +172,9 @@ Each module returns a standardized top-materials list with raw scores.
    ```bash
    mkdir -p temp_KB/reports logs
 ## 🚀 Usage
-bash
-Copy
-Edit
+```bash
 python main.py
+```
 Follow prompts for product name & location
 
 Watch parallel tool-calls and state transitions in logs
@@ -183,9 +182,7 @@ Watch parallel tool-calls and state transitions in logs
 Find JSON report in temp_KB/reports/
 
 ## 📊 Output Structure
-jsonc
-Copy
-Edit
+```jsonc
 {
   "product_name": "SuperSnack Bar",
   "timestamp": "2025-05-09 21:04:45",
@@ -203,27 +200,28 @@ Edit
   ],
   "report_path": "temp_KB/reports/analysis_report_2025-05-09_21-04-45.json"
 }
+```
 ## 🛡️ Error Handling & Resilience
-Any node failure routes to handle_error
+-Any node failure routes to handle_error
 
-LLM-driven root-cause analysis explains failures
+-LLM-driven root-cause analysis explains failures
 
-JSON error report saved alongside standard reports
+-JSON error report saved alongside standard reports
 
-Logs include stack traces and tool-call histories
+-Logs include stack traces and tool-call histories
 
 ## 🤝 Contributing
-Fork & branch
+-Fork & branch
 
-Add tests for new agents or states
+-Add tests for new agents or states
 
-Submit PR with clear changelog
+-Submit PR with clear changelog
 
 ## 📄 License
-MIT © Blue Yonder Packaging Challenge
+-MIT © Blue Yonder Packaging Challenge
 
 ## 🙏 Acknowledgments
-LangGraph team for orchestration framework
+-LangGraph team for orchestration framework
 
 Google Cloud for Gemini APIs
 
