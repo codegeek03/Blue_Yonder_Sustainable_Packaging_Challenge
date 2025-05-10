@@ -1,5 +1,5 @@
 {
-  "product_name": "Beer cans",
+  "product_name": "Wine",
   "timestamp": "2025-05-09 21:01:46",
   "user": "codegeek03",
   "weights_used": {
@@ -11,9 +11,39 @@
   },
   "top_materials": [
     {
-      "material_name": "Aluminum Alloy (e.g., 3004, 5182)",
+      "material_name": "Stainless Steel",
+      "properties": 94.0,
+      "application": "Wine processing equipment, storage tanks",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 17.09
+    },
+    {
+      "material_name": "Glass",
+      "properties": 86.0,
+      "application": "Traditional wine bottles",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 15.64
+    },
+    {
+      "material_name": "Aluminum Cans",
       "properties": 0,
-      "application": "Primary can body and ends. Allows for shaping and provides structural integrity.",
+      "application": "Wine cans",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 72.0,
+      "total_score": 13.09
+    },
+    {
+      "material_name": "PET (Polyethylene Terephthalate)",
+      "properties": 0,
+      "application": "Alternative wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -21,39 +51,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Steel (Tin-Free Steel/TFS or Electrolytic Chromium Coated Steel/ECCS)",
+      "material_name": "Aluminum",
       "properties": 0,
-      "application": "Alternative can body material, often used for larger can sizes or when magnetic handling is preferred.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Polymer Coating (Epoxy, Acrylic)",
-      "properties": 0,
-      "application": "Internal lining of the can to prevent corrosion and maintain beer flavor.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Ink (UV-cured, Water-based)",
-      "properties": 0,
-      "application": "External printing of labels, branding, and product information.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Varnish (Overvarnish)",
-      "properties": 0,
-      "application": "Applied over the printed ink layer for protection and visual enhancement.",
+      "application": "Wine cans",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -63,119 +63,69 @@
   ],
   "all_materials": [
     {
-      "material_name": "Aluminum Alloy (e.g., 3004, 5182)",
-      "properties": 0,
-      "application": "Primary can body and ends. Allows for shaping and provides structural integrity.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Steel (Tin-Free Steel/TFS or Electrolytic Chromium Coated Steel/ECCS)",
-      "properties": 0,
-      "application": "Alternative can body material, often used for larger can sizes or when magnetic handling is preferred.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Polymer Coating (Epoxy, Acrylic)",
-      "properties": 0,
-      "application": "Internal lining of the can to prevent corrosion and maintain beer flavor.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Ink (UV-cured, Water-based)",
-      "properties": 0,
-      "application": "External printing of labels, branding, and product information.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Varnish (Overvarnish)",
-      "properties": 0,
-      "application": "Applied over the printed ink layer for protection and visual enhancement.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Easy-Open End Compound (Synthetic Rubber)",
-      "properties": 0,
-      "application": "Sealant between the easy-open end and the can body to ensure airtight closure.",
+      "material_name": "Stainless Steel",
+      "properties": 94.0,
+      "application": "Wine processing equipment, storage tanks",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
       "sustainability": 0,
-      "total_score": 0.0
+      "total_score": 17.09
     },
     {
-      "material_name": "Aluminum Rivet (for Easy-Open Ends)",
-      "properties": 0,
-      "application": "Secures the pull tab to the easy-open end.",
+      "material_name": "Glass",
+      "properties": 86.0,
+      "application": "Traditional wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
       "sustainability": 0,
-      "total_score": 0.0
+      "total_score": 15.64
     },
     {
-      "material_name": "Easy-Open Tab (Aluminum)",
-      "properties": 0,
-      "application": "Enables convenient opening of the can without tools.",
+      "material_name": "Glass",
+      "properties": 86.0,
+      "application": "Wine bottles (requires protective packaging)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
       "sustainability": 0,
-      "total_score": 0.0
+      "total_score": 15.64
     },
     {
-      "material_name": "Nitrogen (Inert Gas)",
-      "properties": 0,
-      "application": "Injected into the headspace to reduce oxidation and maintain product quality.",
+      "material_name": "Glass",
+      "properties": 86.0,
+      "application": "Wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
       "sustainability": 0,
-      "total_score": 0.0
+      "total_score": 15.64
     },
     {
-      "material_name": "Adhesive (Food-Grade)",
-      "properties": 0,
-      "application": "Used in the seaming process to create a hermetic seal between the can body and ends.",
+      "material_name": "Glass",
+      "properties": 86.0,
+      "application": "Wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
       "sustainability": 0,
-      "total_score": 0.0
+      "total_score": 15.64
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Aluminum Cans",
       "properties": 0,
-      "application": "Primary can structure; requires careful handling during transportation and storage to prevent damage.",
+      "application": "Wine cans",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
+      "sustainability": 72.0,
+      "total_score": 13.09
     },
     {
-      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
+      "material_name": "PET (Polyethylene Terephthalate)",
       "properties": 0,
-      "application": "Can body material; provides higher resistance to deformation than aluminum.",
+      "application": "Alternative wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -183,9 +133,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Polymer Coating (Internal)",
+      "material_name": "Aluminum",
       "properties": 0,
-      "application": "Protective layer; maintain integrity of the coating to prevent beer from contacting the metal.",
+      "application": "Wine cans",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -193,9 +143,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End",
+      "material_name": "Bag-in-Box (BIB) - Multi-layer film",
       "properties": 0,
-      "application": "End closure; requires careful design to prevent premature opening.",
+      "application": "Inner bag for boxed wine",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -203,9 +153,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seam (Can Body)",
+      "material_name": "Cardboard",
       "properties": 0,
-      "application": "Joins the can body. Critical to ensure a hermetic seal.",
+      "application": "Outer box for BIB wine",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -213,9 +163,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Double Seam (Can End)",
+      "material_name": "Cork (natural)",
       "properties": 0,
-      "application": "Joins the can end to the body; critical to ensure a hermetic seal.",
+      "application": "Traditional bottle closure",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -223,9 +173,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink and Varnish Layer",
+      "material_name": "Synthetic Cork",
       "properties": 0,
-      "application": "External decoration; protect from excessive friction during transit.",
+      "application": "Alternative bottle closure",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -233,9 +183,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open Tab (Aluminum)",
+      "material_name": "Screw Cap (Aluminum)",
       "properties": 0,
-      "application": "Opening mechanism; avoid excessive bending or force during transportation and stocking.",
+      "application": "Alternative bottle closure",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -243,9 +193,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive (Seam)",
+      "material_name": "Polymeric label",
       "properties": 0,
-      "application": "Bonds the can ends to the body; proper adhesive application and curing are essential.",
+      "application": "Bottle labels",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -253,9 +203,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen Headspace",
+      "material_name": "Paper label",
       "properties": 0,
-      "application": "Reduces oxidation. Requires precise filling to ensure effectiveness.",
+      "application": "Bottle labels",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -263,9 +213,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum/Steel",
+      "material_name": "PET (Polyethylene Terephthalate)",
       "properties": 0,
-      "application": "Can body; protects beer from degradation due to light and oxygen exposure.",
+      "application": "Wine bottles (more suitable for shipping)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -273,9 +223,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Polymer Coating (Internal)",
+      "material_name": "Corrugated Cardboard",
       "properties": 0,
-      "application": "Internal lining; prevents metallic taste and maintains beer quality over time.",
+      "application": "Shipping boxes for wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -283,9 +233,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seam Sealant",
+      "material_name": "Molded Pulp",
       "properties": 0,
-      "application": "Sealant at the can seams; critical for maintaining airtight closure and preventing spoilage.",
+      "application": "Internal packaging for wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -293,9 +243,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Expanded Polystyrene (EPS)",
       "properties": 0,
-      "application": "Headspace filler; reduces oxidation and maintains beer flavor and aroma.",
+      "application": "Protective packaging (less environmentally friendly)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -303,9 +253,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink and Varnish",
+      "material_name": "Bubble Wrap (Polyethylene)",
       "properties": 0,
-      "application": "External decoration; ensure the label remains legible and attractive throughout the shelf life.",
+      "application": "Protective wrapping for bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -313,9 +263,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End Compound",
+      "material_name": "Inflatable Air Pillows (Polyethylene)",
       "properties": 0,
-      "application": "Sealing compound for easy-open ends; crucial for maintaining a hermetic seal.",
+      "application": "Void fill in shipping boxes",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -323,9 +273,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive (Seam)",
+      "material_name": "Foam Inserts (Polyurethane)",
       "properties": 0,
-      "application": "Bonds can ends; ensures a hermetic seal throughout the shelf life.",
+      "application": "Protective inserts for fragile bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -333,9 +283,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Rivet",
+      "material_name": "Partition Inserts (Cardboard)",
       "properties": 0,
-      "application": "Secures the pull tab. Its integrity is important for can opening.",
+      "application": "Dividers within shipping boxes",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -343,9 +293,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Passivation Layer (on Aluminum)",
+      "material_name": "Suspension Packaging",
       "properties": 0,
-      "application": "Protects aluminum. Increases shelf life.",
+      "application": "High-value or very fragile wines",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -353,9 +303,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Can Design",
+      "material_name": "Glass (Dark or Colored)",
       "properties": 0,
-      "application": "Structural integrity. A well-designed can is essential for a long shelf life.",
+      "application": "Wine bottles (preserves wine quality)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -363,9 +313,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Cork (Natural)",
       "properties": 0,
-      "application": "Can body; must be protected by an internal coating.",
+      "application": "Wine bottle closure (for wines intended to age)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -373,9 +323,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
+      "material_name": "Screw Cap (Aluminum)",
       "properties": 0,
-      "application": "Can body; the coating provides a barrier against corrosion.",
+      "application": "Wine bottle closure (for wines not intended to age)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -383,9 +333,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Epoxy Coating",
+      "material_name": "PET with UV Inhibitors",
       "properties": 0,
-      "application": "Internal lining; prevents interaction with beer.",
+      "application": "Wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -393,9 +343,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Acrylic Coating",
+      "material_name": "Laminated Films (BIB)",
       "properties": 0,
-      "application": "Internal lining; provides a protective barrier.",
+      "application": "Bag-in-box wine packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -403,9 +353,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink (UV-Cured)",
+      "material_name": "Antioxidant Coatings (Inner Bag)",
       "properties": 0,
-      "application": "External printing; maintains the integrity of the printed graphics.",
+      "application": "Bag-in-box wine packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -413,9 +363,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Varnish",
+      "material_name": "Nitrogen Flushing",
       "properties": 0,
-      "application": "Protective overcoat; protects the ink layer.",
+      "application": "Bottling process, extends shelf life",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -423,9 +373,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seam Sealant",
+      "material_name": "Sulfur Dioxide (SO2)",
       "properties": 0,
-      "application": "Sealant at the can seams; maintains a hermetic seal.",
+      "application": "Wine itself (not packaging, but crucial for shelf life)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -433,9 +383,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Modified Atmosphere Packaging (MAP)",
       "properties": 0,
-      "application": "Headspace filler; prevents oxidation.",
+      "application": "Can be used for high-end boxed wines",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -443,9 +393,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Passivation Layer (on Aluminum)",
+      "material_name": "UV Blocking Additives (Labels)",
       "properties": 0,
-      "application": "Protects aluminum. Enhances chemical resistance.",
+      "application": "Wine bottle labels, particularly for clear glass bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -453,9 +403,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Lubricants (Food-Grade)",
+      "material_name": "Inert Glass (Borosilicate)",
       "properties": 0,
-      "application": "Manufacturing process; ensures smooth can formation and prevents contamination.",
+      "application": "Wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -463,9 +413,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "PET (Food Grade)",
       "properties": 0,
-      "application": "Can body; must be thoroughly cleaned before filling.",
+      "application": "Wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -473,9 +423,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
+      "material_name": "HDPE (High-Density Polyethylene)",
       "properties": 0,
-      "application": "Can body alternative; also needs thorough cleaning.",
+      "application": "Wine storage containers (bulk)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -483,9 +433,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Epoxy Coating",
+      "material_name": "Aluminum (with food-grade liner)",
       "properties": 0,
-      "application": "Internal lining; must be properly applied and cured to prevent contamination.",
+      "application": "Wine cans",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -493,9 +443,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Acrylic Coating",
+      "material_name": "Laminated films (BIB)",
       "properties": 0,
-      "application": "Internal lining; provides a hygienic barrier.",
+      "application": "Bag-in-box packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -503,9 +453,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seam Sealant",
+      "material_name": "Stainless Steel (304 or 316)",
       "properties": 0,
-      "application": "Sealant at the can seams; critical to prevent microbial ingress.",
+      "application": "Wine storage tanks",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -513,9 +463,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Epoxy Resin (Food Grade)",
       "properties": 0,
-      "application": "Headspace filler; maintains a sterile environment.",
+      "application": "Wine storage tanks",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -523,9 +473,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End Compound",
+      "material_name": "PTFE (Teflon)",
       "properties": 0,
-      "application": "Sealant for easy-open ends; prevents microbial ingress.",
+      "application": "Wine processing equipment",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -533,9 +483,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive (Seam)",
+      "material_name": "Silicone (Food Grade)",
       "properties": 0,
-      "application": "Bonds can ends; ensures hygienic seal.",
+      "application": "Wine processing equipment",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -543,9 +493,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cleaning Agents",
+      "material_name": "Tartrate Stabilizers (Potassium Bitartrate)",
       "properties": 0,
-      "application": "Manufacturing process; ensures cleanliness.",
+      "application": "Wine itself (not packaging, but affects chemical stability)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -553,9 +503,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Water (Used for Rinsing)",
+      "material_name": "PET (Food Grade)",
       "properties": 0,
-      "application": "Manufacturing process; final rinsing step.",
+      "application": "Wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -563,9 +513,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Laminated Films (BIB)",
       "properties": 0,
-      "application": "Can body; avoid extreme temperature fluctuations.",
+      "application": "Bag-in-box wine",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -573,9 +523,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
+      "material_name": "Synthetic Cork",
       "properties": 0,
-      "application": "Can body alternative; handle with similar temperature considerations.",
+      "application": "Wine bottle closure",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -583,9 +533,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Epoxy Coating",
+      "material_name": "Screw Cap",
       "properties": 0,
-      "application": "Internal lining; avoid excessive temperature fluctuations.",
+      "application": "Wine bottle closure",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -593,9 +543,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Acrylic Coating",
+      "material_name": "Sanitizing Agents (e.g., Peracetic Acid)",
       "properties": 0,
-      "application": "Internal lining alternative; similar temperature management.",
+      "application": "Wine production",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -603,9 +553,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seam Sealant",
+      "material_name": "Filtration Membranes",
       "properties": 0,
-      "application": "Sealant at the can seams; avoid extreme temperature variations.",
+      "application": "Wine production",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -613,9 +563,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Clean Room Environment",
       "properties": 0,
-      "application": "Headspace filler; manage temperature to control internal pressure.",
+      "application": "Bottling process",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -623,9 +573,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End Compound",
+      "material_name": "Aseptic Packaging",
       "properties": 0,
-      "application": "Sealant for easy-open ends; maintain consistent temperatures.",
+      "application": "Specialized wines requiring high levels of hygiene",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -633,9 +583,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink and Varnish",
+      "material_name": "PET",
       "properties": 0,
-      "application": "External decoration; avoid extreme heat or cold exposure.",
+      "application": "Wine bottles (avoid direct sunlight and high storage temperatures)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -643,9 +593,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive (Seam)",
+      "material_name": "Cork",
       "properties": 0,
-      "application": "Bonds can ends; temperature control is important.",
+      "application": "Wine bottle closure (store at consistent temperatures)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -653,9 +603,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Condensation",
+      "material_name": "Aluminum",
       "properties": 0,
-      "application": "Overall can integrity. Avoid rapid temperature change.",
+      "application": "Wine cans",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -663,9 +613,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Insulated Packaging (EPS, Foam)",
       "properties": 0,
-      "application": "Can body; manage dust during manufacturing.",
+      "application": "Shipping wine in hot or cold climates",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -673,9 +623,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
+      "material_name": "Temperature Controlled Shipping Containers",
       "properties": 0,
-      "application": "Can body alternative; dust control during manufacturing.",
+      "application": "Shipping high-value wines",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -683,9 +633,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Epoxy Coating",
+      "material_name": "Thermochromic Labels",
       "properties": 0,
-      "application": "Internal lining; use low-VOC options and BPA-free formulations.",
+      "application": "Monitoring temperature during shipping",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -693,9 +643,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Acrylic Coating",
+      "material_name": "Cellars (Underground)",
       "properties": 0,
-      "application": "Internal lining alternative; manage VOCs during application.",
+      "application": "Wine storage",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -703,9 +653,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink (UV-Cured)",
+      "material_name": "Refrigerated Storage",
       "properties": 0,
-      "application": "External printing; use low-VOC inks and ensure proper ventilation.",
+      "application": "Retail and consumer storage",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -713,9 +663,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Varnish",
+      "material_name": "Glycol Jacketed Tanks",
       "properties": 0,
-      "application": "Protective overcoat; low VOC options are preferred.",
+      "application": "Wine production",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -723,9 +673,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Glass (under pressure)",
       "properties": 0,
-      "application": "Headspace filler; ensure adequate ventilation in filling areas.",
+      "application": "Sparkling wine bottles (requires thicker glass)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -733,9 +683,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cleaning Solvents",
+      "material_name": "Sulfites (in wine)",
       "properties": 0,
-      "application": "Manufacturing process; follow safety protocols for solvent use.",
+      "application": "Wine (labeling requirement)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -743,9 +693,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Lubricants",
+      "material_name": "Alcohol (flammable)",
       "properties": 0,
-      "application": "Manufacturing process; follow safety guidelines for lubricant use.",
+      "application": "Wine",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -753,9 +703,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive",
+      "material_name": "Cardboard (flammable)",
       "properties": 0,
-      "application": "Bonds can ends; use low-VOC adhesives and ensure ventilation.",
+      "application": "Outer packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -763,9 +713,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink (UV-Cured)",
+      "material_name": "Compressed Gases (during bottling)",
       "properties": 0,
-      "application": "External printing; critical for visual appeal.",
+      "application": "Wine Production",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -773,9 +723,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Varnish",
+      "material_name": "Cleaning Chemicals",
       "properties": 0,
-      "application": "Protective overcoat; enhances visual presentation.",
+      "application": "Wine Production",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -783,9 +733,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum/Steel",
+      "material_name": "Dry Ice (for shipping)",
       "properties": 0,
-      "application": "Can body; serves as the canvas for branding and information.",
+      "application": "Temperature Controlled Shipping",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -793,9 +743,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Shrink Sleeves (Alternative to Direct Printing)",
+      "material_name": "Safety Data Sheets (SDS)",
       "properties": 0,
-      "application": "Alternative labeling; provides maximum visual impact.",
+      "application": "Wine Production and Packaging Facilities",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -803,9 +753,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Embossing/Debossing",
+      "material_name": "Emergency Spill Kits",
       "properties": 0,
-      "application": "Optional surface treatment; enhances tactile and visual appeal.",
+      "application": "Wine Production and Packaging Facilities",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -813,9 +763,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Specialty Inks (e.g., Thermochromic, Glow-in-the-Dark)",
+      "material_name": "Regulatory Compliance",
       "properties": 0,
-      "application": "Novelty applications; enhances consumer engagement.",
+      "application": "All areas of Wine Production and Distribution",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -823,9 +773,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Laser Etching",
+      "material_name": "Clear Glass",
       "properties": 0,
-      "application": "Alternative marking; provides a premium look.",
+      "application": "Wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -833,9 +783,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Can Shape",
+      "material_name": "Colored Glass (Green, Amber)",
       "properties": 0,
-      "application": "Structural Design; unique shapes draw the eye.",
+      "application": "Wine bottles (for wines sensitive to light)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -845,7 +795,7 @@
     {
       "material_name": "Transparent Labels",
       "properties": 0,
-      "application": "Labeling Option; can be aesthetically pleasing.",
+      "application": "Wine bottle labels",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -853,9 +803,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "QR Codes",
+      "material_name": "High-Quality Printing",
       "properties": 0,
-      "application": "Informational and Marketing; links to digital information.",
+      "application": "Wine bottle labels",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -863,9 +813,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum/Steel",
+      "material_name": "Embossing/Debossing",
       "properties": 0,
-      "application": "Can body; dictates the fill volume.",
+      "application": "Wine bottle labels",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -873,9 +823,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Foil Stamping",
       "properties": 0,
-      "application": "Headspace filler; affects product quality and shelf life.",
+      "application": "Wine bottle labels",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -883,9 +833,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "Shelf Talkers",
       "properties": 0,
-      "application": "External printing; affects readability and visual appeal.",
+      "application": "Retail environments",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -893,9 +843,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Varnish",
+      "material_name": "Display Cases (Refrigerated)",
       "properties": 0,
-      "application": "Protective overcoat; affects durability and appearance.",
+      "application": "Retail environments",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -903,9 +853,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Polymer Coating (Internal)",
+      "material_name": "Wine Racks",
       "properties": 0,
-      "application": "Internal lining; proper application is crucial.",
+      "application": "Retail and consumer environments",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -913,9 +863,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seam Sealant",
+      "material_name": "Augmented Reality (AR) Labels",
       "properties": 0,
-      "application": "Sealant at the can seams; critical for preventing leaks.",
+      "application": "Modern Marketing Strategy",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -923,9 +873,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive (Seam)",
+      "material_name": "Glass Bottles (Standard Sizes)",
       "properties": 0,
-      "application": "Bonds can ends; strength of the bond important.",
+      "application": "Wine bottles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -933,9 +883,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Can Dimensions",
+      "material_name": "Bag-in-Box Sizes",
       "properties": 0,
-      "application": "Structural Design; volume of the can.",
+      "application": "Boxed wine",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -943,9 +893,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End Components",
+      "material_name": "Measuring Cups/Syringes",
       "properties": 0,
-      "application": "Opening mechanism; design critical for ease of use.",
+      "application": "Wine Production",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -953,9 +903,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Lubricants (Manufacturing)",
+      "material_name": "Automated Filling Machines",
       "properties": 0,
-      "application": "Can manufacturing process. Precise application is needed.",
+      "application": "Bottling process",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -963,9 +913,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy/Steel",
+      "material_name": "Dosage Pumps",
       "properties": 0,
-      "application": "Can body; consider security measures for scrap metal.",
+      "application": "Wine Production",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -973,9 +923,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "Level Sensors",
       "properties": 0,
-      "application": "External printing; use advanced printing technologies to combat counterfeiting.",
+      "application": "Wine Production",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -983,9 +933,29 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Holographic Labels",
+      "material_name": "Calibration Standards",
       "properties": 0,
-      "application": "Alternative Labeling. Good anti-counterfeiting measure.",
+      "application": "Wine Production",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Unit Dose Packaging",
+      "properties": 0,
+      "application": "Travel or sampling",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Smart Packaging",
+      "properties": 0,
+      "application": "Innovative Marketing",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -995,7 +965,7 @@
     {
       "material_name": "Tamper-Evident Seals",
       "properties": 0,
-      "application": "Security seal; provides visual indication of tampering.",
+      "application": "Wine bottles (preventing counterfeiting or tampering)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1003,9 +973,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Unique Can Identifiers (e.g., Serial Numbers, QR Codes)",
+      "material_name": "Unique Bottle Designs",
       "properties": 0,
-      "application": "Tracking and Authentication; provides unique identification.",
+      "application": "High-value wines",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1013,9 +983,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Specialty Finishes (e.g., Embossing, Debossing)",
+      "material_name": "Holographic Labels",
       "properties": 0,
-      "application": "Surface Treatment; complicates replication by counterfeiters.",
+      "application": "Wine bottle labels",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1025,7 +995,7 @@
     {
       "material_name": "RFID Tags",
       "properties": 0,
-      "application": "Tracking and Inventory; manages stock levels and prevents theft.",
+      "application": "High-value wines, inventory management",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1033,9 +1003,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Secure Distribution Channels",
+      "material_name": "Security Cases/Boxes",
       "properties": 0,
-      "application": "Logistics; protects against theft throughout the supply chain.",
+      "application": "Shipping and storage",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1043,9 +1013,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": " overt and covert markings",
+      "material_name": "Inventory Tracking Systems",
       "properties": 0,
-      "application": "Security seals; authentication for security purposes.",
+      "application": "Retail environments, warehouses",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1053,9 +1023,39 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Can construction method",
+      "material_name": "Security Cameras",
       "properties": 0,
-      "application": "Structural design; protect against theft.",
+      "application": "Retail environments, warehouses",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Alarm Systems",
+      "properties": 0,
+      "application": "Retail environments, warehouses",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Insurance",
+      "properties": 0,
+      "application": "Wine businesses",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Blockchain Technology",
+      "properties": 0,
+      "application": "High-end Collectibles",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1065,212 +1065,120 @@
   ],
   "material_summaries": [
     {
-      "material_name": "Aluminum Alloy (e.g., 3004, 5182)",
+      "material_name": "Stainless Steel",
       "summary": {
-        "material_name": "Aluminum Alloy (e.g., 3004, 5182)",
-        "executive_snapshot": "Aluminum alloy presents a strong option for beer can packaging due to its high sustainability score and consumer appeal, though cost and logistical considerations require careful management.",
-        "composite_score": 75,
+        "material_name": "Stainless Steel",
+        "executive_snapshot": "Stainless steel presents a reasonably sustainable but potentially expensive option for wine packaging in Shyambazar, Kolkata, primarily due to its recyclability and durability.",
+        "composite_score": 78,
         "strengths": [
           {
-            "dimension": "Sustainability",
-            "insight": "Aluminum's recyclability and potential for closed-loop systems significantly reduces its environmental impact, aligning with Blue Yonder's sustainability priorities and promoting a circular economy."
+            "dimension": "Recyclability",
+            "insight": "Stainless steel is highly recyclable with a well-established recycling infrastructure, which significantly reduces its environmental impact and aligns with Blue Yonder's sustainability priorities, ensuring minimal waste and resource depletion."
           },
           {
-            "dimension": "Consumer Preference",
-            "insight": "Consumers generally perceive aluminum as a premium and recyclable material, enhancing brand image and potentially driving sales, which directly supports Blue Yonder's focus on customer value."
-          },
-          {
-            "dimension": "Properties",
-            "insight": "Excellent barrier properties of aluminum protect beer from light and oxygen, maintaining product quality and shelf life, which is crucial for minimizing waste and enhancing consumer satisfaction."
+            "dimension": "Durability & Reusability",
+            "insight": "Stainless steel's robustness minimizes damage during transportation and allows for potential reuse, increasing its lifecycle value and enhancing consumer appeal for eco-conscious buyers, directly impacting Blue Yonder's sustainability and consumer preference objectives."
           }
         ],
         "trade_offs": [
           {
             "dimension": "Cost",
-            "mitigation": "While aluminum can be more expensive than some alternatives, the long-term sustainability benefits (reduced waste disposal fees, positive brand image) and optimized logistics can offset initial cost increases."
-          },
-          {
-            "dimension": "Logistics",
-            "mitigation": "Despite requiring specialized handling, the lightweight nature of aluminum can reduce overall transportation costs and fuel consumption, contributing to sustainability goals."
+            "mitigation": "The higher upfront cost can be offset by stainless steel's durability, reusability, and reduced damage during transport, potentially leading to long-term cost savings and improved sustainability credentials, which resonate more strongly with Blue Yonder's strategic priorities."
           }
         ],
         "supply_chain_implications": {
-          "costs": "Direct costs are influenced by aluminum prices, but indirect cost savings arise from reduced waste disposal fees (due to recyclability) and potentially lower transportation costs due to lighter weight.",
-          "logistics": "Requires careful handling to prevent dents, but its light weight contributes to more efficient transportation and reduced fuel consumption; optimized warehousing is essential.",
-          "regulatory": "Generally well-aligned with existing regulations; aluminum is widely accepted for food and beverage packaging and is easily recyclable, fitting with extended producer responsibility schemes.",
-          "consumer": "Strong consumer acceptance due to its recyclability and perceived quality; clear labeling about recycling programs can further enhance its appeal and drive participation."
+          "costs": "Higher initial material costs but potentially lower long-term costs due to reduced damage and potential for reuse programs.",
+          "logistics": "Stainless steel containers can be heavier than glass or plastic, which may increase transportation costs, but their durability reduces the risk of damage during transit.",
+          "regulatory": "Compliance with Kolkata's waste management regulations, particularly regarding metal recycling, is crucial. Extended Producer Responsibility (EPR) schemes may apply. Stainless steel, being recyclable, can benefit from policies promoting recycling.",
+          "consumer": "Consumer acceptance is generally positive due to stainless steel's perceived quality and sustainability benefits, though some consumers might be put off by the higher price point."
         },
         "recommendation": {
           "adopt": true,
-          "justification": "Aluminum alloy offers a compelling balance of sustainability, consumer appeal, and product protection, making it a viable option for beer can packaging despite some cost and logistical challenges. Its high recyclability and established recycling infrastructure provide a strong foundation for a sustainable packaging solution.",
-          "sustainability_gain_percent": 25,
-          "cost_delta_percent": 5
-        }
-      }
-    },
-    {
-      "material_name": "Steel (Tin-Free Steel/TFS or Electrolytic Chromium Coated Steel/ECCS)",
-      "summary": {
-        "material_name": "Steel (Tin-Free Steel/TFS or Electrolytic Chromium Coated Steel/ECCS)",
-        "executive_snapshot": "Steel is a viable option for beer can packaging, offering a balance of sustainability, protection, and consumer appeal, though cost and logistical considerations need careful management.",
-        "composite_score": 74,
-        "strengths": [
-          {
-            "dimension": "Sustainability",
-            "insight": "Steel's high recyclability and potential for closed-loop recycling significantly reduce its environmental footprint, aligning with Blue Yonder's sustainability priorities and potentially improving brand image."
-          },
-          {
-            "dimension": "Consumer Preference",
-            "insight": "Steel cans are widely accepted by consumers and perceived as providing good protection for beer, contributing to positive brand perception and potentially driving sales."
-          },
-          {
-            "dimension": "Properties",
-            "insight": "Steel offers excellent barrier properties, protecting beer from light and oxygen, maintaining product quality and extending shelf life which reduces waste."
-          }
-        ],
-        "trade_offs": [
-          {
-            "dimension": "Cost",
-            "mitigation": "The higher initial cost of steel cans can be offset by their durability, reduced damage during transport, and the environmental benefits leading to potential cost savings from lower waste disposal fees and enhanced brand reputation."
-          },
-          {
-            "dimension": "Logistics",
-            "mitigation": "While heavier than aluminum, efficient supply chain management and optimization of transportation routes can mitigate increased logistical costs, making it a manageable trade-off for the significant sustainability benefits and consumer appeal."
-          }
-        ],
-        "supply_chain_implications": {
-          "costs": "Direct costs may be higher due to material price, but indirect cost savings can be achieved through reduced damage and spoilage. Closed-loop recycling programs can further reduce long-term costs.",
-          "logistics": "Steel's weight can increase transportation costs compared to aluminum, requiring optimized logistics and potentially higher fuel consumption. However, its durability reduces the risk of damage during handling and transport.",
-          "regulatory": "Steel packaging aligns well with current and anticipated recycling regulations, minimizing compliance risks and potentially qualifying for extended producer responsibility (EPR) credits.",
-          "consumer": "Consumers generally have a positive view of steel cans, associating them with recyclability and product protection. Clear messaging about the sustainability benefits can further enhance consumer acceptance."
-        },
-        "recommendation": {
-          "adopt": true,
-          "justification": "Steel provides a strong combination of recyclability, consumer acceptance, and product protection, making it a viable alternative to other packaging materials despite potential cost and logistical challenges. Implementing closed-loop recycling programs would further enhance its sustainability credentials.",
+          "justification": "While stainless steel incurs higher initial costs, its superior recyclability, reusability, and reduced damage during transport provide a compelling sustainability proposition, aligning with growing consumer demand for eco-friendly packaging in Shyambazar, Kolkata. These factors are expected to benefit the carbon footprint metrics.",
           "sustainability_gain_percent": 20,
-          "cost_delta_percent": 5
+          "cost_delta_percent": 15
         }
       }
     },
     {
-      "material_name": "Polymer Coating (Epoxy, Acrylic)",
+      "material_name": "Glass",
       "summary": {
-        "material_name": "Polymer Coating (Epoxy, Acrylic)",
-        "executive_snapshot": "Polymer coatings are a viable option for beer can packaging due to their strong protective properties and consumer appeal, but trade-offs exist in cost and potentially sustainability depending on the specific polymer.",
-        "composite_score": 72,
+        "error": "Invalid JSON response: Expecting ',' delimiter: line 33 column 3 (char 2369)"
+      }
+    },
+    {
+      "material_name": "Aluminum Cans",
+      "summary": {
+        "error": "<Response [503 Service Unavailable]>"
+      }
+    },
+    {
+      "material_name": "PET (Polyethylene Terephthalate)",
+      "summary": {
+        "material_name": "PET (Polyethylene Terephthalate)",
+        "executive_snapshot": "PET offers a moderately sustainable and cost-effective option for wine packaging in Shyambazar, Kolkata, but its non-biodegradability presents a notable environmental challenge.",
+        "composite_score": 68,
         "strengths": [
           {
-            "dimension": "Sustainability",
-            "insight": "Polymer coatings, particularly acrylic, can offer a reduced environmental footprint compared to alternatives like BPA-based epoxies, aligning with Blue Yonder's sustainability priorities and potentially improving a company's ESG profile."
+            "dimension": "Cost",
+            "insight": "PET's relatively low production cost compared to glass or aluminum leads to potential savings, increasing affordability for the Shyambazar consumer market."
           },
           {
-            "dimension": "Consumer Preference",
-            "insight": "Polymer-coated cans offer a smooth, appealing aesthetic and are generally well-received by consumers, potentially driving increased sales and brand loyalty, directly impacting Blue Yonder's customer's business goals."
+            "dimension": "Logistics",
+            "insight": "PET's lightweight nature significantly reduces transportation costs and fuel consumption, aligning with Blue Yonder's sustainability priorities by lowering the carbon footprint of distribution."
           }
         ],
         "trade_offs": [
           {
-            "dimension": "Cost",
-            "mitigation": "While polymer coatings can be more expensive than some alternatives, the strong consumer preference and improved sustainability profile can offset these costs through increased sales and a better brand image."
-          },
-          {
-            "dimension": "Logistics",
-            "mitigation": "While minor, the protective nature of these coatings reduces the risk of damage during handling and transport, potentially offsetting logistics challenges and reducing overall supply chain costs."
+            "dimension": "Biodegradability",
+            "mitigation": "While PET is not biodegradable, its high recyclability rate and potential for use in a closed-loop system partially mitigate this issue, particularly if robust local recycling infrastructure is implemented."
           }
         ],
         "supply_chain_implications": {
-          "costs": "Direct costs may be slightly higher due to material prices. Indirect costs could be reduced due to lower spoilage rates and damage during transportation. Long-term life cycle costs need careful consideration.",
-          "logistics": "Polymer coatings offer good protection against corrosion and dents, reducing damage during handling and transport. Standard filling and sealing equipment can typically be used without major modifications.",
-          "regulatory": "Compliance with food contact regulations (FDA, EU) is essential. Specific polymer formulations need careful evaluation for potential migration into beer. BPA-free options are preferred and often mandated.",
-          "consumer": "Consumers generally accept polymer-coated cans. Transparency regarding the specific polymer used and its safety is crucial for maintaining consumer trust. Marketing BPA-free options can enhance consumer appeal."
+          "costs": "Direct costs are lower due to the material's affordability. Indirect costs may arise from the need for improved recycling infrastructure to manage end-of-life PET waste.",
+          "logistics": "PET bottles are lightweight and less prone to breakage than glass, reducing transport costs and damage-related losses. The shape and stackability can optimize truck space.",
+          "regulatory": "Regulations in India, particularly those related to plastic waste management, will influence PET's usability and require compliance. Extended Producer Responsibility (EPR) schemes may impose responsibilities on producers for collection and recycling. As of current, specific regulations for PET in Kolkata and Shyambazar could not be verfied; however, the general plastic rules apply.",
+          "consumer": "Consumer acceptance is generally positive due to familiarity and perceived convenience, but growing awareness of plastic pollution may require emphasizing the recyclability and recycled content of the PET bottles."
         },
         "recommendation": {
           "adopt": true,
-          "justification": "Data suggests polymer coatings offer a balanced approach by providing superior product protection and consumer appeal. With increasing consumer sensitivity towards sustainability, polymer coatings can serve as a short-term solution to transition to more sustainable coatings or aluminum cans.",
-          "sustainability_gain_percent": 8,
-          "cost_delta_percent": 3
+          "justification": "PET offers a balance of cost-effectiveness, logistical advantages, and moderate sustainability through recyclability, making it a viable option for wine packaging in Shyambazar, provided recycling infrastructure is strengthened and consumer education promotes responsible disposal.",
+          "sustainability_gain_percent": 15,
+          "cost_delta_percent": -10
         }
       }
     },
     {
-      "material_name": "Ink (UV-cured, Water-based)",
+      "material_name": "Aluminum",
       "summary": {
-        "material_name": "Ink (UV-cured, Water-based)",
-        "executive_snapshot": "Water-based UV-cured ink represents a viable option for beer can packaging due to its strong sustainability profile and consumer appeal, despite potential cost and logistical considerations.",
-        "composite_score": 75,
+        "material_name": "Aluminum",
+        "executive_snapshot": "Aluminum presents a moderately viable option for wine packaging in Shyambazar, Kolkata, balancing recyclability with cost and potential consumer perceptions.",
+        "composite_score": 68,
         "strengths": [
           {
-            "dimension": "Sustainability",
-            "insight": "Offers a significantly reduced environmental footprint compared to traditional solvent-based inks, aligning with increasing consumer demand for eco-friendly packaging and Blue Yonder's sustainability priorities."
+            "dimension": "Recyclability",
+            "insight": "Aluminum boasts high recyclability rates, aligning with sustainability goals and potentially reducing environmental impact in Shyambazar, Kolkata, contributing to a circular economy."
           },
           {
             "dimension": "Consumer Preference",
-            "insight": "Water-based inks are generally perceived more positively by consumers due to their lower VOC emissions and perceived safety, potentially enhancing brand image and loyalty."
+            "insight": "Aluminum packaging can be perceived as modern and premium by consumers, potentially enhancing brand image and appeal in the Kolkata market, especially amongst younger demographics."
           }
         ],
         "trade_offs": [
           {
-            "dimension": "Cost",
-            "mitigation": "While potentially more expensive upfront, the long-term benefits of enhanced sustainability and consumer preference can offset these costs through increased sales and brand value."
-          },
-          {
-            "dimension": "Logistics",
-            "mitigation": "Potential complexities in handling and storage can be mitigated with optimized supply chain management practices and partnerships with experienced ink suppliers."
+            "dimension": "Resource Efficiency",
+            "mitigation": "While resource extraction for primary aluminum is energy-intensive, the high recyclability rate significantly reduces the need for virgin material over time, offsetting the initial environmental impact."
           }
         ],
         "supply_chain_implications": {
-          "costs": "May involve higher initial material costs compared to conventional inks, potentially offset by reduced waste disposal fees and improved operational efficiency due to faster curing times.",
-          "logistics": "Requires careful handling to maintain ink quality and prevent damage during transport and storage, potentially necessitating specialized packaging and climate-controlled environments.",
-          "regulatory": "Generally compliant with environmental regulations due to low VOC content, potentially streamlining permitting processes and reducing compliance risks.",
-          "consumer": "Positive consumer perception due to its eco-friendly characteristics, potentially leading to increased sales and brand loyalty."
+          "costs": "Aluminum packaging may involve higher upfront material costs compared to glass, but potential savings can be realized through reduced transportation weight and lower damage rates during shipping; recycling credits can also offset costs.",
+          "logistics": "Aluminum's lighter weight can translate into lower transportation costs, although specialized handling equipment may be required; the durability of aluminum reduces the risk of breakage compared to glass, minimizing losses.",
+          "regulatory": "Regulations in India regarding packaging waste management, including Extended Producer Responsibility (EPR) schemes, might influence the adoption of aluminum; adherence to Bureau of Indian Standards (BIS) for food-grade packaging is crucial. No regulation specifics for Shyambazar, Kolkata was found.",
+          "consumer": "Consumer acceptance hinges on perceptions of quality and environmental responsibility; clear labeling regarding recyclability and sustainability benefits is essential to positively influence consumer choices in Kolkata."
         },
         "recommendation": {
           "adopt": true,
-          "justification": "The enhanced sustainability profile and positive consumer perception outweigh the potential cost and logistical challenges, leading to an improved overall brand image and a reduced environmental impact for beer can packaging.",
-          "sustainability_gain_percent": 20,
-          "cost_delta_percent": 5
-        }
-      }
-    },
-    {
-      "material_name": "Varnish (Overvarnish)",
-      "summary": {
-        "material_name": "Varnish (Overvarnish)",
-        "executive_snapshot": "Varnish is a conditionally suitable material for beer can packaging, offering strong sustainability benefits and consumer appeal, but requires careful consideration of its cost and logistical implications.",
-        "composite_score": 72,
-        "strengths": [
-          {
-            "dimension": "Sustainability",
-            "insight": "Varnish can significantly reduce the environmental footprint of beer cans by enabling lighter packaging through enhanced durability and corrosion resistance, aligning with Blue Yonder's sustainability priorities."
-          },
-          {
-            "dimension": "Consumer Preference",
-            "insight": "Varnish enhances the aesthetic appeal and tactile feel of beer cans, improving consumer perception and brand loyalty, which is a crucial factor in purchasing decisions."
-          },
-          {
-            "dimension": "Properties",
-            "insight": "Varnish provides excellent protection against corrosion and abrasion, extending the shelf life and maintaining the quality of the beer, a critical functional requirement."
-          }
-        ],
-        "trade_offs": [
-          {
-            "dimension": "Cost",
-            "mitigation": "While varnish can increase upfront costs, the extended shelf life, reduced damage during transport, and increased consumer appeal (leading to higher sales) can offset these initial investments."
-          },
-          {
-            "dimension": "Logistics",
-            "mitigation": "Potential complexities in handling varnish application can be addressed with optimized supply chain processes and quality control measures, while the durability benefits contribute to reduced transportation damages."
-          }
-        ],
-        "supply_chain_implications": {
-          "costs": "Direct costs include material procurement and application processes. Indirectly, varnish can reduce damage during transit, leading to lower waste and potential returns, offsetting some initial expenses.",
-          "logistics": "Careful handling is required during application and storage. The added strength and protection offered by the varnish can result in reduced transit damages and losses during shipping.",
-          "regulatory": "Varnish composition must comply with food contact regulations for both production and disposal. Proper material sourcing and waste management are crucial to adhering to environmental standards.",
-          "consumer": "Consumers generally perceive varnished packaging as higher quality, increasing brand value and potentially influencing purchase decisions positively."
-        },
-        "recommendation": {
-          "adopt": true,
-          "justification": "Varnish is recommended due to its significant sustainability advantages and positive consumer perception, although cost and logistical considerations require careful supply chain management to fully capitalize on these benefits. The protective properties justify the extra cost.",
+          "justification": "Despite resource extraction concerns, aluminum's high recyclability, lighter weight for transport, and potential for positive consumer perception make it a viable alternative to traditional glass bottles, especially when complemented by strong recycling infrastructure and consumer education initiatives.",
           "sustainability_gain_percent": 15,
           "cost_delta_percent": 8
         }

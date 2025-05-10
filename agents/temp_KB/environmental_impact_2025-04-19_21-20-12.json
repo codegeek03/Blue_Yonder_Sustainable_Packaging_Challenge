@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "Aluminum",
-      "environmental_score": 8.5,
+      "material_name": "Lightweight Glass",
+      "environmental_score": 7.8,
+      "key_benefit": "Reduced carbon footprint",
+      "primary_concern": "Recycling infrastructure"
+    },
+    {
+      "material_name": "Bag-in-Box",
+      "environmental_score": 7.5,
+      "key_benefit": "Low carbon footprint",
+      "primary_concern": "Recycling complexities"
+    },
+    {
+      "material_name": "Aluminum Cans",
+      "environmental_score": 7.2,
       "key_benefit": "High recyclability rate",
-      "primary_concern": "Energy intensive production"
+      "primary_concern": "Resource intensive mining"
     },
     {
-      "material_name": "Steel",
-      "environmental_score": 7.0,
-      "key_benefit": "Good recyclability",
-      "primary_concern": "Heavy, transport impact"
+      "material_name": "PET Bottles (Recycled)",
+      "environmental_score": 6.8,
+      "key_benefit": "Uses recycled content",
+      "primary_concern": "Microplastic pollution"
     },
     {
-      "material_name": "Glass",
-      "environmental_score": 6.0,
-      "key_benefit": "Chemically inert",
-      "primary_concern": "High energy to produce"
-    },
-    {
-      "material_name": "Bioplastic",
-      "environmental_score": 5.5,
-      "key_benefit": "Renewable source",
-      "primary_concern": "Limited biodegradability"
-    },
-    {
-      "material_name": "PET Plastic",
-      "environmental_score": 3.0,
-      "key_benefit": "Lightweight",
-      "primary_concern": "Poor biodegradability"
+      "material_name": "Sustainable Cork",
+      "environmental_score": 6.5,
+      "key_benefit": "Biodegradable and renewable",
+      "primary_concern": "Forest management practices"
     }
   ],
   "timestamp": "2025-04-19 21:20:12",

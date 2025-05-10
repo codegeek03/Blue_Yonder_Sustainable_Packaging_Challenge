@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "Aluminum",
+      "material_name": "Glass Bottles",
+      "logistics_score": 7,
+      "primary_advantage": "Traditional, good stacking",
+      "cost_consideration": "High breakage costs"
+    },
+    {
+      "material_name": "Bag-in-Box (BIB)",
       "logistics_score": 9,
-      "primary_advantage": "Lightweight and strong",
-      "cost_consideration": "Recycling reduces costs"
+      "primary_advantage": "Efficient stacking",
+      "cost_consideration": "Lower material cost"
     },
     {
-      "material_name": "Steel",
-      "logistics_score": 7,
-      "primary_advantage": "High stacking strength",
-      "cost_consideration": "Higher weight increases costs"
+      "material_name": "Plastic Bottles (PET)",
+      "logistics_score": 8,
+      "primary_advantage": "Lightweight, durable",
+      "cost_consideration": "Moderate material cost"
     },
     {
-      "material_name": "PET Plastic",
+      "material_name": "Cans (Aluminum)",
+      "logistics_score": 9,
+      "primary_advantage": "Highly durable, stackable",
+      "cost_consideration": "Competitive pricing"
+    },
+    {
+      "material_name": "Flexitanks",
       "logistics_score": 6,
-      "primary_advantage": "Shape versatility",
-      "cost_consideration": "Material cost fluctuates"
-    },
-    {
-      "material_name": "Cardboard (sleeves)",
-      "logistics_score": 7,
-      "primary_advantage": "Protects during transit",
-      "cost_consideration": "Adds to packaging costs"
-    },
-    {
-      "material_name": "HDPE Plastic",
-      "logistics_score": 5,
-      "primary_advantage": "Good impact resistance",
-      "cost_consideration": "Material and mold costs"
+      "primary_advantage": "Bulk transport efficiency",
+      "cost_consideration": "High initial setup"
     }
   ],
   "timestamp": "2025-04-19 21:17:20",

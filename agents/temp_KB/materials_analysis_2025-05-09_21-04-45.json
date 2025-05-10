@@ -2,527 +2,527 @@
   "materials": {
     "physical_form": [
       {
-        "material_name": "Paperboard",
-        "properties": "Lightweight, printable, recyclable",
-        "application": "Outer carton for multipack or bulk packaging"
+        "material_name": "Glass",
+        "properties": "Inert, transparent, rigid, recyclable",
+        "application": "Primary container (bottle)"
       },
       {
-        "material_name": "PET (Polyethylene Terephthalate)",
-        "properties": "Transparent, rigid, recyclable",
-        "application": "Clear clamshell or tray to display laddoos"
+        "material_name": "Cork",
+        "properties": "Natural, compressible, impermeable (when properly sealed), sustainable",
+        "application": "Closure (stopper)"
       },
       {
-        "material_name": "BOPP (Biaxially Oriented Polypropylene)",
-        "properties": "Flexible, printable, moisture barrier",
-        "application": "Flow wrap for individual laddoos or small packs"
+        "material_name": "Screw Cap (Aluminum)",
+        "properties": "Recyclable, airtight seal, easy to open",
+        "application": "Alternative closure"
       },
       {
-        "material_name": "Aluminum Foil",
-        "properties": "Excellent barrier properties, malleable",
-        "application": "Inner liner for extended shelf life"
+        "material_name": "Polyethylene (PE) or Polypropylene (PP)",
+        "properties": "Flexible, moisture-resistant, recyclable (check local regulations)",
+        "application": "Label backing, tamper-evident seals"
       },
       {
-        "material_name": "HDPE (High-Density Polyethylene)",
-        "properties": "Durable, impact-resistant, food-safe",
-        "application": "Rigid containers for large quantities"
+        "material_name": "Paper (Label Stock)",
+        "properties": "Printable, various finishes available, recyclable (depending on adhesives and coatings)",
+        "application": "Label"
       },
       {
-        "material_name": "Glassine Paper",
-        "properties": "Smooth, grease-resistant, translucent",
-        "application": "Individual wrapping to prevent sticking"
+        "material_name": "Pressure-Sensitive Adhesive",
+        "properties": "Bonds label to bottle, varies in strength and removability",
+        "application": "Label adhesion"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Strong, cushioning, recyclable",
-        "application": "Shipping boxes for distribution"
+        "material_name": "Cardboard",
+        "properties": "Rigid, recyclable, printable",
+        "application": "Secondary packaging (cartons, cases)"
       },
       {
-        "material_name": "Cellophane",
-        "properties": "Biodegradable, transparent",
-        "application": "Wrapping individual laddoos for premium presentation"
+        "material_name": "Corrugated Fiberboard",
+        "properties": "Strong, provides cushioning, recyclable",
+        "application": "Shipping boxes"
       },
       {
-        "material_name": "Metallized Film",
-        "properties": "High barrier, aesthetic appeal",
-        "application": "Laminate for pouches and wrappers"
+        "material_name": "Expanded Polystyrene (EPS) or Molded Pulp",
+        "properties": "Protective cushioning, EPS is less sustainable, molded pulp is recyclable and biodegradable",
+        "application": "Internal dividers/protection in shipping boxes"
       },
       {
-        "material_name": "PLA (Polylactic Acid)",
-        "properties": "Biodegradable, compostable, plant-based",
-        "application": "Eco-friendly clamshells or trays"
+        "material_name": "Shrink Wrap (Polyolefin)",
+        "properties": "Provides tamper evidence and unitization, recyclable (check local regulations)",
+        "application": "Multi-pack wrapping"
       }
     ],
     "fragility": [
       {
-        "material_name": "Foam Inserts (Polyethylene)",
-        "properties": "Cushioning, shock absorption",
-        "application": "Protecting individual laddoos within a box"
+        "material_name": "Corrugated Fiberboard",
+        "properties": "High crush resistance, good cushioning",
+        "application": "Outer shipping cartons"
       },
       {
-        "material_name": "Bubble Wrap (Polyethylene)",
-        "properties": "Lightweight, cushioning",
-        "application": "Wrapping boxes for shipping"
+        "material_name": "Molded Pulp Inserts",
+        "properties": "Customizable shape, cradles bottles, recyclable",
+        "application": "Internal dividers for bottle protection"
       },
       {
-        "material_name": "Corrugated Cardboard Dividers",
-        "properties": "Structural support, cushioning",
-        "application": "Separating laddoos in a multipack box"
-      },
-      {
-        "material_name": "Molded Pulp",
-        "properties": "Recycled material, cushioning",
-        "application": "Protective trays for individual laddoos"
+        "material_name": "Expanded Polystyrene (EPS)",
+        "properties": "Excellent shock absorption, lightweight",
+        "application": "Protective inserts (less sustainable option)"
       },
       {
         "material_name": "Inflatable Air Pillows",
-        "properties": "Lightweight, customizable cushioning",
+        "properties": "Lightweight, adjustable cushioning",
         "application": "Void fill in shipping boxes"
       },
       {
-        "material_name": "Kraft Paper",
-        "properties": "Strong, cushioning when layered",
-        "application": "Wrapping individual boxes for added protection"
+        "material_name": "Bubble Wrap (Polyethylene)",
+        "properties": "Good cushioning, reusable",
+        "application": "Wrapping individual bottles (less sustainable option)"
       },
       {
-        "material_name": "Paper Cushioning",
-        "properties": "Eco-friendly void fill",
-        "application": "Filling empty space within boxes"
-      },
-      {
-        "material_name": "Thermoformed Trays (PET)",
-        "properties": "Rigid, form-fitting protection",
-        "application": "Holding laddoos securely in place"
+        "material_name": "Partitioned Cardboard Inserts",
+        "properties": "Creates individual compartments, prevents bottle-to-bottle contact",
+        "application": "Internal dividers for shipping cases"
       },
       {
         "material_name": "Edge Protectors (Cardboard or Plastic)",
-        "properties": "Reinforcement, crush resistance",
-        "application": "Protecting corners of shipping boxes"
+        "properties": "Reinforces edges of cartons, prevents crushing",
+        "application": "Edge protection for palletized shipments"
       },
       {
-        "material_name": "Honeycomb Paperboard",
-        "properties": "High strength-to-weight ratio, cushioning",
-        "application": "Internal support within boxes"
+        "material_name": "Stretch Film (LLDPE)",
+        "properties": "Secures pallet loads, provides stability",
+        "application": "Pallet wrapping"
+      },
+      {
+        "material_name": "Protective Sleeves (Foam or Cardboard)",
+        "properties": "Slips over the bottle for added scratch and impact resistance",
+        "application": "Individual bottle protection, especially during handling"
+      },
+      {
+        "material_name": "Suspension Packaging",
+        "properties": "Suspends the bottle in the air within the box, preventing direct impact",
+        "application": "High-value or extremely fragile wines"
       }
     ],
     "shelf_life": [
       {
-        "material_name": "Modified Atmosphere Packaging (MAP) Films",
-        "properties": "Controls gas composition, extends shelf life",
-        "application": "Sealing trays or pouches"
+        "material_name": "Glass (Dark/Colored)",
+        "properties": "Inert, protects from UV light, extends shelf life",
+        "application": "Primary container (bottle)"
       },
       {
-        "material_name": "Vacuum Packaging Films (Multilayer)",
-        "properties": "Removes oxygen, extends shelf life",
-        "application": "Sealing pouches for long-term storage"
+        "material_name": "Cork (High Quality)",
+        "properties": "Maintains airtight seal, prevents oxidation, crucial for long-term aging",
+        "application": "Closure for age-worthy wines"
       },
       {
-        "material_name": "Aluminum Laminates",
-        "properties": "Excellent barrier to oxygen and moisture",
-        "application": "Pouches and wrappers for extended shelf life"
+        "material_name": "Screw Cap (with appropriate liner)",
+        "properties": "Provides consistent airtight seal, suitable for wines not intended for long aging",
+        "application": "Closure for many wines"
       },
       {
-        "material_name": "High Barrier Films (EVOH)",
-        "properties": "Excellent gas barrier, extends shelf life",
-        "application": "Lamination layer in flexible packaging"
+        "material_name": "Oxygen Scavenging Additives (in closures)",
+        "properties": "Absorb oxygen from the headspace, further extending shelf life",
+        "application": "Integrated into closures"
       },
       {
-        "material_name": "Desiccant Packets (Silica Gel)",
-        "properties": "Absorbs moisture, prevents spoilage",
-        "application": "Inside packaging to maintain dryness"
+        "material_name": "UV-Protective Coatings (on labels)",
+        "properties": "Reduce UV exposure to wine if the glass is clear",
+        "application": "Label coating"
       },
       {
-        "material_name": "Oxygen Absorbers",
-        "properties": "Removes oxygen from the packaging",
-        "application": "Extending shelf life in sealed containers"
+        "material_name": "Modified Atmosphere Packaging (MAP) - rarely used",
+        "properties": "Reduces oxygen levels in the package",
+        "application": "Not typical for individual wine bottles, more for bag-in-box"
       },
       {
-        "material_name": "Antimicrobial Packaging Films",
-        "properties": "Inhibits microbial growth, extends shelf life",
-        "application": "Direct contact layer with laddoos"
+        "material_name": "Vacuum sealing",
+        "properties": "Removes air from the bottle before closure",
+        "application": "Used on some wine preservation systems, not primary packaging"
       },
       {
-        "material_name": "UV-Blocking Films",
-        "properties": "Protects against UV degradation, maintains flavor",
-        "application": "Outer layer for light-sensitive ingredients"
+        "material_name": "High Barrier Films (for bag-in-box)",
+        "properties": "Prevents oxygen permeation, maintains freshness",
+        "application": "Bag-in-box wine packaging"
       },
       {
-        "material_name": "Ethylene Absorbers",
-        "properties": "Removes ethylene gas, slows ripening (if applicable)",
-        "application": "Extending shelf life of ingredients"
+        "material_name": "Inner Coatings (for bag-in-box)",
+        "properties": "Inert to wine and prevents flavor scalping",
+        "application": "Bag-in-box wine packaging"
       },
       {
-        "material_name": "Controlled Atmosphere Packaging (CAP) Containers",
-        "properties": "Maintains specific gas concentrations",
-        "application": "Bulk storage for ingredients"
+        "material_name": "Temperature-Controlled Shipping Containers",
+        "properties": "Maintains consistent temperature during transport, preventing degradation",
+        "application": "Shipping of temperature-sensitive wines"
       }
     ],
     "chemical_properties": [
       {
-        "material_name": "Food-Grade Inks",
-        "properties": "Non-toxic, resistant to fading, compliant with food safety regulations",
-        "application": "Printing labels and branding"
+        "material_name": "Inert Glass (Type I or II)",
+        "properties": "Does not react with wine, prevents leaching of chemicals",
+        "application": "Primary container"
       },
       {
-        "material_name": "Adhesives (Food-Safe)",
-        "properties": "Non-toxic, strong bonding, compliant with food safety regulations",
-        "application": "Sealing cartons and labels"
+        "material_name": "Food-Grade Liners (for screw caps)",
+        "properties": "Prevents reaction between the wine and the metal cap, prevents flavor alteration",
+        "application": "Screw cap closures"
       },
       {
-        "material_name": "Anti-Static Films (PET or BOPP)",
-        "properties": "Reduces static electricity, prevents dust attraction",
-        "application": "Wrapping to keep packaging clean"
+        "material_name": "Neutral Adhesives (for labels)",
+        "properties": "Do not impart odors or flavors to the wine",
+        "application": "Label adhesion"
       },
       {
-        "material_name": "Oxygen Scavenging Polymers",
-        "properties": "Reacts with oxygen to reduce concentration",
-        "application": "Integrated into packaging to enhance shelf life"
+        "material_name": "Oxygen Barrier Coatings (on closures)",
+        "properties": "Reduces oxygen ingress, preventing oxidation",
+        "application": "Cork and screw cap treatments"
       },
       {
-        "material_name": "Moisture Barrier Coatings (Acrylic or Wax)",
-        "properties": "Prevents moisture absorption",
-        "application": "Coating on paperboard"
+        "material_name": "Sulfur Dioxide (SO2)",
+        "properties": "Antimicrobial and antioxidant properties. Added during bottling",
+        "application": "Wine preservation (not a packaging material, but related)"
       },
       {
-        "material_name": "Grease-Resistant Coatings",
-        "properties": "Prevents oil penetration",
-        "application": "Inner lining for paper containers"
+        "material_name": "Tartaric Acid",
+        "properties": "Maintains wine acidity and stability",
+        "application": "Added to prevent tartrate precipitation (not a packaging material, but related)"
       },
       {
-        "material_name": "Antimicrobial Coatings",
-        "properties": "Inhibits microbial growth on packaging surface",
-        "application": "Applied to films and containers"
+        "material_name": "Bentonite Clay",
+        "properties": "Used for wine clarification and stabilization",
+        "application": "Removes proteins to prevent haze (not a packaging material, but related)"
       },
       {
-        "material_name": "pH-Neutral Materials",
-        "properties": "Does not react with food components",
-        "application": "Direct contact layer with laddoos"
+        "material_name": "Food-Grade Epoxy Phenolic Resins (lining of cans)",
+        "properties": "Inert lining protects wine from can",
+        "application": "Wine in cans"
       },
       {
-        "material_name": "BPA-Free Plastics (Polypropylene, PET)",
-        "properties": "Safe for food contact, does not leach harmful chemicals",
-        "application": "Containers and trays"
+        "material_name": "Multi-layer PET bottles",
+        "properties": "Oxygen barrier properties similar to glass",
+        "application": "Wine in plastic bottles"
       },
       {
-        "material_name": "Fluoropolymer Coatings",
-        "properties": "Oil and water repellent, prevents sticking",
-        "application": "Lining for easy release of laddoos"
+        "material_name": "Antimicrobial Packaging",
+        "properties": "Inhibits the growth of microbes on the packaging surface",
+        "application": "Can add extra protection"
       }
     ],
     "hygiene_sensitivity": [
       {
-        "material_name": "Sterilized Packaging Films",
-        "properties": "Free from microorganisms",
-        "application": "Direct contact with laddoos"
+        "material_name": "Sterilized Glass Bottles",
+        "properties": "Free from microorganisms, prevents contamination",
+        "application": "Primary container"
+      },
+      {
+        "material_name": "Sanitized Corks",
+        "properties": "Treated to reduce microbial load, prevents cork taint",
+        "application": "Closure"
+      },
+      {
+        "material_name": "Food-Grade Packaging Materials",
+        "properties": "Manufactured under strict hygiene standards, safe for food contact",
+        "application": "All packaging components"
       },
       {
         "material_name": "Tamper-Evident Seals",
-        "properties": "Indicates if packaging has been opened",
-        "application": "Sealing containers for security"
+        "properties": "Indicate if the bottle has been opened or compromised",
+        "application": "Closure seals"
       },
       {
-        "material_name": "Easy-to-Clean Surfaces (Smooth Plastics)",
-        "properties": "Prevents bacterial buildup",
-        "application": "Reusable containers"
+        "material_name": "Cleanroom Manufacturing (for closures)",
+        "properties": "Reduces particulate contamination",
+        "application": "Closure production"
       },
       {
-        "material_name": "Single-Use Packaging",
-        "properties": "Reduces cross-contamination risk",
-        "application": "Individual servings"
+        "material_name": "Controlled Atmosphere Bottling",
+        "properties": "Minimizes microbial growth during bottling",
+        "application": "Bottling process"
       },
       {
-        "material_name": "Materials with Low Porosity",
-        "properties": "Reduces bacterial absorption",
-        "application": "Direct contact layers"
+        "material_name": "UV Sterilization (of bottles)",
+        "properties": "Kills microorganisms on the bottle surface",
+        "application": "Bottle preparation"
       },
       {
-        "material_name": "Antimicrobial Packaging",
-        "properties": "Inhibits microbial growth",
-        "application": "Extends shelf life and reduces contamination risk"
+        "material_name": "Hygienic Design",
+        "properties": "Smooth surfaces and rounded corners reduce bacteria buildup",
+        "application": "Bottling line equipment"
       },
       {
-        "material_name": "Heat-Sealable Films",
-        "properties": "Creates airtight seals",
-        "application": "Preventing contamination"
+        "material_name": "Antimicrobial Coatings",
+        "properties": "Inhibits growth of mold and bacteria on packaging",
+        "application": "Secondary packaging"
       },
       {
-        "material_name": "Controlled Environment Packaging",
-        "properties": "Manufactured in a sterile environment",
-        "application": "Ensuring hygiene standards"
-      },
-      {
-        "material_name": "Washable Packaging",
-        "properties": "Can be easily cleaned and sanitized",
-        "application": "Reusable containers for commercial use"
-      },
-      {
-        "material_name": "UV-Sterilized Packaging",
-        "properties": "Eliminates microorganisms using UV light",
-        "application": "Enhancing hygiene standards"
+        "material_name": "Barrier Films",
+        "properties": "Prevent ingress of harmful microorganisms and particles",
+        "application": "Wine pouches and bag-in-box"
       }
     ],
     "temperature_sensitivity": [
       {
-        "material_name": "Insulated Packaging (Expanded Polystyrene EPS)",
-        "properties": "Maintains temperature, protects from heat and cold",
-        "application": "Shipping temperature-sensitive laddoos"
+        "material_name": "Insulated Shipping Containers",
+        "properties": "Maintains consistent temperature during transport",
+        "application": "Shipping temperature-sensitive wines"
       },
       {
-        "material_name": "Temperature Indicating Labels",
-        "properties": "Changes color based on temperature exposure",
+        "material_name": "Temperature-Indicating Labels",
+        "properties": "Alert if wine has been exposed to excessive temperatures",
         "application": "Monitoring temperature during shipping"
       },
       {
-        "material_name": "Cold Packs (Gel Packs)",
-        "properties": "Maintains low temperature during transit",
-        "application": "Inside insulated packaging"
+        "material_name": "Thermal Blankets",
+        "properties": "Protect palletized shipments from temperature extremes",
+        "application": "Pallet wrapping"
       },
       {
-        "material_name": "Heat-Resistant Films (CPET)",
-        "properties": "Withstands high temperatures without deforming",
-        "application": "Packaging for heated laddoos"
+        "material_name": "Dark Glass",
+        "properties": "Reduces heat transfer from sunlight",
+        "application": "Bottle Material"
+      },
+      {
+        "material_name": "Expanded Polystyrene (EPS) Coolers",
+        "properties": "Insulating properties maintain the wine at a desired temperature.",
+        "application": "Individual bottle coolers"
       },
       {
         "material_name": "Phase Change Materials (PCM)",
-        "properties": "Absorbs and releases heat to maintain temperature",
-        "application": "Temperature-controlled packaging"
+        "properties": "Absorb and release heat to maintain constant temperature",
+        "application": "Insulated shipping containers"
       },
       {
-        "material_name": "Aluminum Foil Laminates",
-        "properties": "Reflects heat, keeps contents cool",
-        "application": "Packaging for hot weather conditions"
+        "material_name": "Cold Chain Packaging",
+        "properties": "Maintains wine at refrigerated temperatures during transport",
+        "application": "Sparkling wines"
       },
       {
-        "material_name": "Vacuum Insulated Panels (VIP)",
-        "properties": "High thermal resistance, efficient insulation",
-        "application": "High-performance insulated containers"
+        "material_name": "Controlled Temperature Warehouses",
+        "properties": "Stores wine at the optimal temperature.",
+        "application": "Storage solutions for wine"
       },
       {
-        "material_name": "Temperature-Controlled Shipping Containers",
-        "properties": "Maintains consistent temperature during transport",
-        "application": "Shipping large quantities of laddoos"
+        "material_name": "Thermal mass packaging",
+        "properties": "Utilizing materials with high thermal mass (such as gel packs or ice packs) to help maintain a stable temperature",
+        "application": "Especially important for shipping wines during extreme weather conditions"
       },
       {
-        "material_name": "Reflective Films",
-        "properties": "Reflects solar radiation, reduces heat gain",
-        "application": "Outer layer for packaging"
-      },
-      {
-        "material_name": "Expanded Polypropylene (EPP) Foam",
-        "properties": "Durable insulation, impact resistance",
-        "application": "Temperature-controlled containers"
+        "material_name": "Reflective Foils",
+        "properties": "Reflect heat, to maintain desired temperatures",
+        "application": "Shipping and storage"
       }
     ],
     "volatility_or_hazard_risk": [
       {
-        "material_name": "Tamper-Evident Packaging",
-        "properties": "Shows if packaging has been opened or altered",
-        "application": "Ensuring product integrity and safety"
+        "material_name": "Secure Closures",
+        "properties": "Prevent leakage during transport",
+        "application": "Bottle closures (cork, screw cap)"
       },
       {
-        "material_name": "Child-Resistant Closures",
-        "properties": "Difficult for children to open, prevents accidental ingestion",
-        "application": "If laddoos contain potentially harmful ingredients (unlikely, but could apply to some niche recipes)"
-      },
-      {
-        "material_name": "Warning Labels",
-        "properties": "Clearly indicates potential hazards (allergens)",
-        "application": "Communicating allergen information"
-      },
-      {
-        "material_name": "Secure Sealing Mechanisms",
-        "properties": "Prevents leakage or spillage",
-        "application": "Ensuring product remains contained"
-      },
-      {
-        "material_name": "Protective Overpacks",
-        "properties": "Provides additional layer of containment",
-        "application": "Shipping sensitive laddoos"
+        "material_name": "Durable Packaging",
+        "properties": "Withstands handling and prevents breakage",
+        "application": "Outer shipping cartons"
       },
       {
         "material_name": "UN-Certified Packaging",
-        "properties": "Meets international standards for hazardous materials",
-        "application": "If any ingredient is classified as hazardous (unlikely)"
+        "properties": "Meets international standards for safe transport of goods",
+        "application": "Shipping hazardous wines (rare, but possible with high alcohol content)"
       },
       {
-        "material_name": "Desiccant with Indicator",
-        "properties": "Indicates when desiccant is saturated",
-        "application": "Ensuring optimal dryness and preventing mold growth"
+        "material_name": "Tamper-Evident Features",
+        "properties": "Indicate if the bottle has been compromised, preventing adulteration",
+        "application": "Closure seals"
       },
       {
-        "material_name": "Gas-Tight Packaging",
-        "properties": "Prevents gas exchange, reducing spoilage",
-        "application": "Long-term storage"
+        "material_name": "Absorbent Materials",
+        "properties": "Soaks up any leakage in case of breakage during shipping",
+        "application": "Packaging inserts"
       },
       {
-        "material_name": "Shock-Absorbing Materials",
-        "properties": "Protects against physical damage",
-        "application": "Reducing risk of breakage during transit"
+        "material_name": "Warning Labels",
+        "properties": "Alert handlers to fragile contents",
+        "application": "Outer shipping cartons"
       },
       {
-        "material_name": "Security Labels with Serial Numbers",
-        "properties": "Authenticates product and deters counterfeiting",
-        "application": "High-value or specialized laddoos"
+        "material_name": "Pallet Strapping",
+        "properties": "Secures cases to pallets, preventing shifting during transport",
+        "application": "Palletized shipments"
+      },
+      {
+        "material_name": "Anti-Slip Coatings",
+        "properties": "Prevents cases from sliding off pallets",
+        "application": "Carton coatings"
+      },
+      {
+        "material_name": "Impact Indicators",
+        "properties": "Turns red to indicate if a package experienced rough handling",
+        "application": "Used on shipping containers"
+      },
+      {
+        "material_name": "Tilt Indicators",
+        "properties": "Indicates if the package was tilted or tipped over",
+        "application": "Used on shipping containers to avoid damage and leakage"
       }
     ],
     "visibility_and_display": [
       {
-        "material_name": "Clear PET Clamshells",
-        "properties": "Transparent, showcases laddoos",
+        "material_name": "Clear Glass",
+        "properties": "Allows visual inspection of wine color and clarity",
+        "application": "Primary container (for some wines)"
+      },
+      {
+        "material_name": "High-Quality Labels",
+        "properties": "Visually appealing, conveys brand information",
+        "application": "Label"
+      },
+      {
+        "material_name": "Embossed Labels",
+        "properties": "Adds a tactile element and premium look",
+        "application": "Label enhancement"
+      },
+      {
+        "material_name": "Transparent Sleeves",
+        "properties": "Showcases the bottle and provides tamper evidence",
+        "application": "Bottle wrapping"
+      },
+      {
+        "material_name": "Display-Ready Packaging",
+        "properties": "Designed for easy placement on retail shelves",
+        "application": "Secondary packaging"
+      },
+      {
+        "material_name": "Shelf Talkers",
+        "properties": "Provides information about the wine on the shelf",
         "application": "Retail display"
       },
       {
-        "material_name": "Windowed Cartons",
-        "properties": "Partial visibility, aesthetic appeal",
-        "application": "Retail display"
-      },
-      {
-        "material_name": "High-Gloss Printing",
-        "properties": "Enhances colors, attracts attention",
-        "application": "Branding and product information"
-      },
-      {
-        "material_name": "Embossing/Debossing",
-        "properties": "Adds tactile and visual appeal",
-        "application": "Premium packaging"
+        "material_name": "Printed Cartons",
+        "properties": "Showcases brand and wine information",
+        "application": "Shipping and display"
       },
       {
         "material_name": "Shrink Sleeves",
-        "properties": "Full-coverage graphics, tamper evidence",
-        "application": "Branding and security"
+        "properties": "Full body graphics on the bottle",
+        "application": "Branding and visual appeal"
       },
       {
-        "material_name": "Custom-Shaped Packaging",
-        "properties": "Unique and eye-catching",
-        "application": "Special editions or promotions"
+        "material_name": "Holographic labels",
+        "properties": "Eye-catching with a premium look",
+        "application": "Label enhancement for premium product"
       },
       {
-        "material_name": "Interactive Packaging (QR Codes)",
-        "properties": "Engages customers, provides information",
-        "application": "Marketing and traceability"
-      },
-      {
-        "material_name": "Metallic Inks and Foils",
-        "properties": "Adds luxury appeal",
-        "application": "Premium products"
-      },
-      {
-        "material_name": "Holographic Films",
-        "properties": "Eye-catching and secure",
-        "application": "Authentication and visual appeal"
-      },
-      {
-        "material_name": "Sustainable Inks (Soy-Based)",
-        "properties": "Environmentally friendly, vibrant colors",
-        "application": "Eco-conscious branding"
+        "material_name": "Interactive packaging",
+        "properties": "QR codes that link to detailed product information or virtual experiences",
+        "application": "Providing consumers product details and experiences"
       }
     ],
     "quantity_and_dosage": [
       {
-        "material_name": "Individually Wrapped Laddoos (Flow Wrap)",
-        "properties": "Maintains freshness, controls portion size",
-        "application": "Single-serving packs"
+        "material_name": "Standard Bottle Sizes (750ml, 1L, etc.)",
+        "properties": "Provides consistent serving sizes",
+        "application": "Primary container"
       },
       {
-        "material_name": "Multi-Compartment Trays",
-        "properties": "Separates laddoos, prevents sticking",
-        "application": "Retail packs"
+        "material_name": "Accurate Fill Levels",
+        "properties": "Ensures consistent volume in each bottle",
+        "application": "Bottling process"
       },
       {
-        "material_name": "Resealable Pouches",
-        "properties": "Maintains freshness after opening",
-        "application": "Bulk packaging"
+        "material_name": "Multi-Packs",
+        "properties": "Offers multiple bottles for convenience",
+        "application": "Secondary packaging"
       },
       {
-        "material_name": "Unit-Dose Packaging (Blister Packs)",
-        "properties": "Precise portion control, hygiene",
-        "application": "Specialized or medicinal laddoos"
+        "material_name": "Bag-in-Box Packaging",
+        "properties": "Provides larger volumes for extended use",
+        "application": "Alternative packaging format"
       },
       {
-        "material_name": "Pre-Portioned Containers",
-        "properties": "Convenient serving sizes",
-        "application": "Ready-to-eat packages"
+        "material_name": "Single-Serve Wine Pouches",
+        "properties": "Convenient for individual consumption",
+        "application": "Alternative packaging format"
       },
       {
-        "material_name": "Tamper-Evident Bands",
-        "properties": "Ensures integrity of the container",
-        "application": "Bulk quantities"
+        "material_name": "Miniature Bottles",
+        "properties": "Sampling and gifting purposes",
+        "application": "Alternative packaging format"
       },
       {
-        "material_name": "Sachets",
-        "properties": "Individual servings",
-        "application": "Small quantities for sampling or gifting"
+        "material_name": "Dosage Caps",
+        "properties": "Measure servings",
+        "application": "Not applicable"
       },
       {
-        "material_name": "Dosing Spoons or Scoops",
-        "properties": "Accurate measurement",
-        "application": "Larger containers for serving"
+        "material_name": "Flow Control Valves (Bag-in-Box)",
+        "properties": "Ensure consistent dispensing",
+        "application": "Bag-in-box wine"
       },
       {
-        "material_name": "Calibrated Packaging",
-        "properties": "Provides accurate measurement markings",
-        "application": "Large quantities with portioning requirements"
+        "material_name": "Tamper evident packaging",
+        "properties": "Ensure the product has not been altered.",
+        "application": "Primary and secondary packaging"
       },
       {
-        "material_name": "Child-Resistant Packaging (for small parts)",
-        "properties": "Prevents accidental ingestion",
-        "application": "If product contains small, potentially hazardous components"
+        "material_name": "Clear labeling for volume",
+        "properties": "Must be clearly visible on packaging",
+        "application": "Primary and secondary packaging"
       }
     ],
     "value_and_theft_sensitivity": [
       {
-        "material_name": "Tamper-Evident Seals",
-        "properties": "Shows if packaging has been opened",
-        "application": "Discourages theft and ensures product integrity"
+        "material_name": "Tamper-Evident Closures",
+        "properties": "Indicate if the bottle has been opened or compromised",
+        "application": "Closure seals"
       },
       {
-        "material_name": "Security Labels (Holographic)",
-        "properties": "Difficult to counterfeit, authenticates product",
-        "application": "High-value laddoos"
+        "material_name": "Security Labels",
+        "properties": "Difficult to remove or replicate, preventing counterfeiting",
+        "application": "Label"
+      },
+      {
+        "material_name": "Serialized Labels",
+        "properties": "Track and trace individual bottles",
+        "application": "Label"
       },
       {
         "material_name": "RFID Tags",
-        "properties": "Tracks product location, deters theft",
-        "application": "Inventory management and security"
-      },
-      {
-        "material_name": "Serialized Packaging",
-        "properties": "Unique identifier for each package, tracks movement",
-        "application": "Traceability and security"
-      },
-      {
-        "material_name": "Clamshell Packaging (Secure Closure)",
-        "properties": "Difficult to open without damaging, deters theft",
-        "application": "Retail display"
+        "properties": "Enable tracking and inventory management",
+        "application": "Shipping cartons"
       },
       {
         "material_name": "Shrink Wrap",
-        "properties": "Secures multiple items, prevents tampering",
-        "application": "Bulk packaging"
+        "properties": "Secures multi-packs and provides tamper evidence",
+        "application": "Multi-pack wrapping"
       },
       {
         "material_name": "Opaque Packaging",
-        "properties": "Conceals product identity",
-        "application": "Reducing temptation for theft"
+        "properties": "Conceals the contents, reducing theft",
+        "application": "Shipping cartons"
       },
       {
-        "material_name": "Reinforced Packaging",
-        "properties": "Durable, resistant to damage",
-        "application": "Preventing theft during shipping"
+        "material_name": "Reinforced Cartons",
+        "properties": "Difficult to open without detection",
+        "application": "Shipping cartons"
       },
       {
-        "material_name": "Electronic Article Surveillance (EAS) Tags",
-        "properties": "Triggers alarm if stolen from store",
-        "application": "Retail security"
+        "material_name": "High-Bond Adhesives",
+        "properties": "Makes it harder to remove labels",
+        "application": "Labels"
       },
       {
-        "material_name": "Protective Cases (Hard Plastic)",
-        "properties": "Provides robust protection, deters theft",
-        "application": "High-end or specialty laddoos"
+        "material_name": "UV coatings",
+        "properties": "Prevent label counterfeiting.",
+        "application": "Labels"
+      },
+      {
+        "material_name": "GPS tracking",
+        "properties": "To track the package location",
+        "application": "Shipping"
       }
     ]
   },
   "analysis_timestamp": "2025-05-09 21:04:45",
   "user_login": "codegeek03",
-  "product_name": "Motichur Laddoos",
+  "product_name": "wine",
   "status": "completed"
 }

@@ -5,44 +5,44 @@
       "concerns": "damage"
     },
     "fragility": {
-      "explanation": "medium",
-      "concerns": "bending"
+      "explanation": "durable",
+      "concerns": "cracking"
     },
     "shelf_life": {
       "explanation": "long",
-      "concerns": "humidity"
+      "concerns": "aging"
     },
     "chemical_properties": {
-      "explanation": "inert",
-      "concerns": "acidity"
+      "explanation": "stable",
+      "concerns": "corrosion"
     },
     "hygiene_sensitivity": {
-      "explanation": "low",
-      "concerns": "stains"
+      "explanation": "clean",
+      "concerns": "smudging"
     },
     "temperature_sensitivity": {
       "explanation": "stable",
-      "concerns": "warping"
+      "concerns": "overheating"
     },
     "volatility_or_hazard_risk": {
-      "explanation": "none",
-      "concerns": "n/a"
+      "explanation": "safe",
+      "concerns": "leakage"
     },
     "visibility_and_display": {
-      "explanation": "high",
-      "concerns": "fading"
+      "explanation": "clear",
+      "concerns": "scratching"
     },
     "quantity_and_dosage": {
-      "explanation": "fixed",
-      "concerns": "stacking"
+      "explanation": "bulk",
+      "concerns": "damage"
     },
     "value_and_theft_sensitivity": {
-      "explanation": "moderate",
-      "concerns": "pilferage"
+      "explanation": "secure",
+      "concerns": "theft"
     }
   },
-  "product_name": "Books",
-  "analysis_timestamp": "2025-05-08 20:00:32",
+  "product_name": "phones",
+  "analysis_timestamp": "2024-10-26 16:28:53",
   "scores": {
     "physical_form": 80.0,
     "fragility": 72.0,

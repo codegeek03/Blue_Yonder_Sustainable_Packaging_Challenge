@@ -1,69 +1,69 @@
 {
   "top_materials": [
     {
-      "material_name": "Aluminum (Recycled)",
-      "cost_score": 9,
-      "base_price": "1.70 USD/kg",
+      "material_name": "Grapes (Generic Red)",
+      "cost_score": 8,
+      "base_price": "1.50 USD/kg",
       "key_costs": {
-        "raw_material": "Lower than virgin metal",
-        "processing": "Energy efficient",
-        "tariffs": "Minimal import duties",
-        "transport": "Local sourcing reduces costs",
-        "compliance": "Well-established standards"
+        "raw_material": "Low base grape price",
+        "processing": "Crushing/fermentation",
+        "tariffs": "Low domestic tariffs",
+        "transport": "Local vineyard transport",
+        "compliance": "Standard wine regulations"
       },
-      "total_estimated_cost": "0.09 USD per unit"
+      "total_estimated_cost": "2.54 USD per unit"
     },
     {
-      "material_name": "Aluminum (Virgin)",
+      "material_name": "Grapes (Generic White)",
       "cost_score": 7,
-      "base_price": "2.50 USD/kg",
+      "base_price": "1.60 USD/kg",
       "key_costs": {
-        "raw_material": "Market-driven price",
-        "processing": "Energy intensive",
-        "tariffs": "Varies by origin",
-        "transport": "Longer supply chains",
-        "compliance": "Stringent regulations"
+        "raw_material": "Slightly higher base",
+        "processing": "Crushing/fermentation",
+        "tariffs": "Low domestic tariffs",
+        "transport": "Local vineyard transport",
+        "compliance": "Standard regulations"
       },
-      "total_estimated_cost": "0.13 USD per unit"
+      "total_estimated_cost": "2.70 USD per unit"
     },
     {
-      "material_name": "Steel (Tin-Plated)",
+      "material_name": "French Oak Staves",
       "cost_score": 6,
-      "base_price": "1.20 USD/kg",
+      "base_price": "8.00 USD/kg",
       "key_costs": {
-        "raw_material": "Steel and tin prices",
-        "processing": "Forming and plating costs",
-        "tariffs": "Moderate tariffs common",
-        "transport": "Bulk transport needed",
-        "compliance": "Food-grade tin compliance"
+        "raw_material": "Oak wood cost",
+        "processing": "Shaping/toasting",
+        "tariffs": "Moderate import tariffs",
+        "transport": "Overseas shipping",
+        "compliance": "Wood certification"
       },
-      "total_estimated_cost": "0.06 USD per unit"
+      "total_estimated_cost": "13.53 USD per unit"
     },
     {
-      "material_name": "Bioplastic (PLA)",
-      "cost_score": 4,
+      "material_name": "American Oak Chips",
+      "cost_score": 5,
       "base_price": "3.50 USD/kg",
       "key_costs": {
-        "raw_material": "Based on corn prices",
-        "processing": "Specific equipment needed",
-        "tariffs": "Newer trade agreements",
-        "transport": "Special handling required",
-        "compliance": "Biodegradability standards"
+        "raw_material": "Lower oak base",
+        "processing": "Toasting/sizing",
+        "tariffs": "Low domestic tariffs",
+        "transport": "Regional transport",
+        "compliance": "Minimal certification"
       },
-      "total_estimated_cost": "0.18 USD per unit"
+      "total_estimated_cost": "5.92 USD per unit"
     },
     {
-      "material_name": "Steel (Chromium Plated)",
-      "cost_score": 3,
-      "base_price": "2.00 USD/kg",
+      "material_name": "Glass Bottles (Standard)",
+      "cost_score": 4,
+      "base_price": "0.75 USD/kg",
       "key_costs": {
-        "raw_material": "High chromium content",
-        "processing": "Difficult to plate",
-        "tariffs": "Dependent on origin",
-        "transport": "Standard methods apply",
-        "compliance": "Enviromental regulations"
+        "raw_material": "Sand & additives",
+        "processing": "Glass blowing",
+        "tariffs": "Low tariffs",
+        "transport": "Factory transport",
+        "compliance": "Safety standards"
       },
-      "total_estimated_cost": "0.10 USD per unit"
+      "total_estimated_cost": "1.27 USD per unit"
     }
   ],
   "timestamp": "2025-04-19 21:22:20",

@@ -2,527 +2,527 @@
   "materials": {
     "physical_form": [
       {
-        "material_name": "Aluminum Alloy (e.g., 3004, 5182)",
-        "properties": "Lightweight, malleable, high strength-to-weight ratio, recyclable.",
-        "application": "Primary can body and ends. Allows for shaping and provides structural integrity."
+        "material_name": "Glass",
+        "properties": "Inert, transparent, rigid, recyclable",
+        "application": "Traditional wine bottles"
       },
       {
-        "material_name": "Steel (Tin-Free Steel/TFS or Electrolytic Chromium Coated Steel/ECCS)",
-        "properties": "Strong, corrosion-resistant (when coated), magnetic for easy handling in filling lines.",
-        "application": "Alternative can body material, often used for larger can sizes or when magnetic handling is preferred."
+        "material_name": "PET (Polyethylene Terephthalate)",
+        "properties": "Lightweight, shatter-resistant, recyclable",
+        "application": "Alternative wine bottles"
       },
       {
-        "material_name": "Polymer Coating (Epoxy, Acrylic)",
-        "properties": "Food-grade, prevents beer from reacting with the metal, BPA-free options available, flexible.",
-        "application": "Internal lining of the can to prevent corrosion and maintain beer flavor."
+        "material_name": "Aluminum",
+        "properties": "Lightweight, recyclable, airtight",
+        "application": "Wine cans"
       },
       {
-        "material_name": "Ink (UV-cured, Water-based)",
-        "properties": "Durable, resistant to abrasion and chemicals, provides high-quality graphics, low VOC options available.",
-        "application": "External printing of labels, branding, and product information."
+        "material_name": "Bag-in-Box (BIB) - Multi-layer film",
+        "properties": "Flexible, airtight, puncture-resistant",
+        "application": "Inner bag for boxed wine"
       },
       {
-        "material_name": "Varnish (Overvarnish)",
-        "properties": "Protects ink from scratching and wear, provides a glossy or matte finish, improves aesthetic appeal.",
-        "application": "Applied over the printed ink layer for protection and visual enhancement."
+        "material_name": "Cardboard",
+        "properties": "Rigid, printable, recyclable",
+        "application": "Outer box for BIB wine"
       },
       {
-        "material_name": "Easy-Open End Compound (Synthetic Rubber)",
-        "properties": "Provides a hermetic seal, flexible, food-grade.",
-        "application": "Sealant between the easy-open end and the can body to ensure airtight closure."
+        "material_name": "Cork (natural)",
+        "properties": "Natural, compressible, airtight, sustainable",
+        "application": "Traditional bottle closure"
       },
       {
-        "material_name": "Aluminum Rivet (for Easy-Open Ends)",
-        "properties": "Small, strong, corrosion-resistant.",
-        "application": "Secures the pull tab to the easy-open end."
+        "material_name": "Synthetic Cork",
+        "properties": "Consistent, airtight, cost-effective",
+        "application": "Alternative bottle closure"
       },
       {
-        "material_name": "Easy-Open Tab (Aluminum)",
-        "properties": "Lightweight, malleable, easy to grip and pull.",
-        "application": "Enables convenient opening of the can without tools."
+        "material_name": "Screw Cap (Aluminum)",
+        "properties": "Airtight, easy to open, recyclable",
+        "application": "Alternative bottle closure"
       },
       {
-        "material_name": "Nitrogen (Inert Gas)",
-        "properties": "Inert, odorless, tasteless.",
-        "application": "Injected into the headspace to reduce oxidation and maintain product quality."
+        "material_name": "Polymeric label",
+        "properties": "Water-resistant, durable, printable",
+        "application": "Bottle labels"
       },
       {
-        "material_name": "Adhesive (Food-Grade)",
-        "properties": "Strong bonding, food-safe, temperature resistant.",
-        "application": "Used in the seaming process to create a hermetic seal between the can body and ends."
+        "material_name": "Paper label",
+        "properties": "Printable, recyclable",
+        "application": "Bottle labels"
       }
     ],
     "fragility": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Durable but can dent under pressure, especially when empty. Susceptible to bending at seams.",
-        "application": "Primary can structure; requires careful handling during transportation and storage to prevent damage."
+        "material_name": "Glass",
+        "properties": "Brittle, prone to shattering upon impact",
+        "application": "Wine bottles (requires protective packaging)"
       },
       {
-        "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
-        "properties": "More resistant to denting than aluminum, but can still deform under significant impact.",
-        "application": "Can body material; provides higher resistance to deformation than aluminum."
+        "material_name": "PET (Polyethylene Terephthalate)",
+        "properties": "Shatter-resistant, more durable than glass",
+        "application": "Wine bottles (more suitable for shipping)"
       },
       {
-        "material_name": "Polymer Coating (Internal)",
-        "properties": "Flexible but can crack or flake if the can is severely deformed, compromising barrier properties.",
-        "application": "Protective layer; maintain integrity of the coating to prevent beer from contacting the metal."
+        "material_name": "Corrugated Cardboard",
+        "properties": "Provides cushioning and impact resistance",
+        "application": "Shipping boxes for wine bottles"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "The pull tab area is a point of weakness, susceptible to accidental opening or damage during rough handling.",
-        "application": "End closure; requires careful design to prevent premature opening."
+        "material_name": "Molded Pulp",
+        "properties": "Cushions and protects bottles during transit, recyclable",
+        "application": "Internal packaging for wine bottles"
       },
       {
-        "material_name": "Seam (Can Body)",
-        "properties": "The joined area of the can body. Susceptible to leaks if improperly formed or damaged.",
-        "application": "Joins the can body. Critical to ensure a hermetic seal."
+        "material_name": "Expanded Polystyrene (EPS)",
+        "properties": "Excellent cushioning, lightweight, insulative",
+        "application": "Protective packaging (less environmentally friendly)"
       },
       {
-        "material_name": "Double Seam (Can End)",
-        "properties": "The joined area between the can body and the end. Susceptible to leaks if improperly formed or damaged.",
-        "application": "Joins the can end to the body; critical to ensure a hermetic seal."
+        "material_name": "Bubble Wrap (Polyethylene)",
+        "properties": "Provides cushioning and shock absorption",
+        "application": "Protective wrapping for bottles"
       },
       {
-        "material_name": "Ink and Varnish Layer",
-        "properties": "Relatively brittle; susceptible to scratches and abrasions, especially during transport.",
-        "application": "External decoration; protect from excessive friction during transit."
+        "material_name": "Inflatable Air Pillows (Polyethylene)",
+        "properties": "Lightweight cushioning, adjustable protection",
+        "application": "Void fill in shipping boxes"
       },
       {
-        "material_name": "Easy-Open Tab (Aluminum)",
-        "properties": "Malleable and can bend or break if excessive force is applied, especially during handling.",
-        "application": "Opening mechanism; avoid excessive bending or force during transportation and stocking."
+        "material_name": "Foam Inserts (Polyurethane)",
+        "properties": "Customizable cushioning, good shock absorption",
+        "application": "Protective inserts for fragile bottles"
       },
       {
-        "material_name": "Adhesive (Seam)",
-        "properties": "If the adhesive fails, the seam can weaken, leading to leakage and potential product spoilage.",
-        "application": "Bonds the can ends to the body; proper adhesive application and curing are essential."
+        "material_name": "Partition Inserts (Cardboard)",
+        "properties": "Separate bottles, prevent contact during transit",
+        "application": "Dividers within shipping boxes"
       },
       {
-        "material_name": "Nitrogen Headspace",
-        "properties": "Maintaining a stable headspace pressure helps reduce internal pressure and potential can deformation.",
-        "application": "Reduces oxidation. Requires precise filling to ensure effectiveness."
+        "material_name": "Suspension Packaging",
+        "properties": "Suspends the bottle within the box, isolating it from impacts",
+        "application": "High-value or very fragile wines"
       }
     ],
     "shelf_life": [
       {
-        "material_name": "Aluminum/Steel",
-        "properties": "Excellent barrier to light and oxygen, extending shelf life.",
-        "application": "Can body; protects beer from degradation due to light and oxygen exposure."
+        "material_name": "Glass (Dark or Colored)",
+        "properties": "Inert, protects wine from UV light degradation",
+        "application": "Wine bottles (preserves wine quality)"
       },
       {
-        "material_name": "Polymer Coating (Internal)",
-        "properties": "Prevents interaction between the beer and the metal, preserving flavor and preventing corrosion for extended periods.",
-        "application": "Internal lining; prevents metallic taste and maintains beer quality over time."
+        "material_name": "Cork (Natural)",
+        "properties": "Allows micro-oxygenation, influences aging process",
+        "application": "Wine bottle closure (for wines intended to age)"
       },
       {
-        "material_name": "Seam Sealant",
-        "properties": "Ensures a hermetic seal, preventing oxygen ingress and maintaining carbonation.",
-        "application": "Sealant at the can seams; critical for maintaining airtight closure and preventing spoilage."
+        "material_name": "Screw Cap (Aluminum)",
+        "properties": "Provides a complete oxygen barrier, preserves freshness",
+        "application": "Wine bottle closure (for wines not intended to age)"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Inert gas used to displace oxygen in the headspace, minimizing oxidation.",
-        "application": "Headspace filler; reduces oxidation and maintains beer flavor and aroma."
+        "material_name": "PET with UV Inhibitors",
+        "properties": "Protects wine from UV degradation, extends shelf life",
+        "application": "Wine bottles"
       },
       {
-        "material_name": "Ink and Varnish",
-        "properties": "UV-resistant inks prevent fading and degradation of graphics over time, maintaining aesthetic appeal.",
-        "application": "External decoration; ensure the label remains legible and attractive throughout the shelf life."
+        "material_name": "Laminated Films (BIB)",
+        "properties": "Barrier to oxygen and light, prevents oxidation",
+        "application": "Bag-in-box wine packaging"
       },
       {
-        "material_name": "Easy-Open End Compound",
-        "properties": "Maintains sealing properties over time, preventing leakage and oxygen ingress.",
-        "application": "Sealing compound for easy-open ends; crucial for maintaining a hermetic seal."
+        "material_name": "Antioxidant Coatings (Inner Bag)",
+        "properties": "Further reduces oxygen permeation",
+        "application": "Bag-in-box wine packaging"
       },
       {
-        "material_name": "Adhesive (Seam)",
-        "properties": "Maintains bond strength and integrity over the product's shelf life, preventing seam failure and leakage.",
-        "application": "Bonds can ends; ensures a hermetic seal throughout the shelf life."
+        "material_name": "Nitrogen Flushing",
+        "properties": "Reduces oxygen in headspace before sealing",
+        "application": "Bottling process, extends shelf life"
       },
       {
-        "material_name": "Aluminum Rivet",
-        "properties": "Resistant to corrosion and degradation, ensuring the easy-open tab remains functional.",
-        "application": "Secures the pull tab. Its integrity is important for can opening."
+        "material_name": "Sulfur Dioxide (SO2)",
+        "properties": "Preservative added to wine to prevent oxidation and microbial spoilage",
+        "application": "Wine itself (not packaging, but crucial for shelf life)"
       },
       {
-        "material_name": "Passivation Layer (on Aluminum)",
-        "properties": "A naturally forming or applied layer that prevents further oxidation of the aluminum, contributing to long-term stability.",
-        "application": "Protects aluminum. Increases shelf life."
+        "material_name": "Modified Atmosphere Packaging (MAP)",
+        "properties": "Controls the atmosphere inside the packaging to slow down degradation.",
+        "application": "Can be used for high-end boxed wines"
       },
       {
-        "material_name": "Can Design",
-        "properties": "Proper can design to withstand internal pressure and external forces, preventing bulging or deformation over time.",
-        "application": "Structural integrity. A well-designed can is essential for a long shelf life."
+        "material_name": "UV Blocking Additives (Labels)",
+        "properties": "Protect the wine from light exposure through the glass bottle.",
+        "application": "Wine bottle labels, particularly for clear glass bottles"
       }
     ],
     "chemical_properties": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Resistant to corrosion in neutral pH environments but can corrode in highly acidic or alkaline conditions.",
-        "application": "Can body; must be protected by an internal coating."
+        "material_name": "Inert Glass (Borosilicate)",
+        "properties": "Chemically unreactive, does not leach into wine",
+        "application": "Wine bottles"
       },
       {
-        "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
-        "properties": "Requires a protective coating to prevent rust and interaction with the beer.",
-        "application": "Can body; the coating provides a barrier against corrosion."
+        "material_name": "PET (Food Grade)",
+        "properties": "Approved for food contact, minimal leaching",
+        "application": "Wine bottles"
       },
       {
-        "material_name": "Epoxy Coating",
-        "properties": "Provides a chemically inert barrier between the beer and the metal, preventing metallic taste and corrosion. BPA-free options are increasingly common.",
-        "application": "Internal lining; prevents interaction with beer."
+        "material_name": "HDPE (High-Density Polyethylene)",
+        "properties": "Chemically resistant, suitable for wine storage",
+        "application": "Wine storage containers (bulk)"
       },
       {
-        "material_name": "Acrylic Coating",
-        "properties": "Alternative to epoxy, offering good chemical resistance and flexibility. Often BPA-free.",
-        "application": "Internal lining; provides a protective barrier."
+        "material_name": "Aluminum (with food-grade liner)",
+        "properties": "Protects wine from contact with bare aluminum",
+        "application": "Wine cans"
       },
       {
-        "material_name": "Ink (UV-Cured)",
-        "properties": "Resistant to chemicals and solvents, preventing leaching or discoloration.",
-        "application": "External printing; maintains the integrity of the printed graphics."
+        "material_name": "Laminated films (BIB)",
+        "properties": "Inert layers prevent interaction with wine",
+        "application": "Bag-in-box packaging"
       },
       {
-        "material_name": "Varnish",
-        "properties": "Provides a protective layer against chemicals and abrasion, preventing ink damage.",
-        "application": "Protective overcoat; protects the ink layer."
+        "material_name": "Stainless Steel (304 or 316)",
+        "properties": "Inert, corrosion-resistant",
+        "application": "Wine storage tanks"
       },
       {
-        "material_name": "Seam Sealant",
-        "properties": "Must be chemically compatible with beer and resistant to degradation from alcohol and other beer components.",
-        "application": "Sealant at the can seams; maintains a hermetic seal."
+        "material_name": "Epoxy Resin (Food Grade)",
+        "properties": "Lining for storage tanks, prevents corrosion",
+        "application": "Wine storage tanks"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Inert and does not react with beer or other components within the can.",
-        "application": "Headspace filler; prevents oxidation."
+        "material_name": "PTFE (Teflon)",
+        "properties": "Chemically inert, used in seals and gaskets",
+        "application": "Wine processing equipment"
       },
       {
-        "material_name": "Passivation Layer (on Aluminum)",
-        "properties": "Creates a stable, non-reactive surface, preventing further oxidation and interaction with the beer.",
-        "application": "Protects aluminum. Enhances chemical resistance."
+        "material_name": "Silicone (Food Grade)",
+        "properties": "Inert, flexible, used for seals and hoses",
+        "application": "Wine processing equipment"
       },
       {
-        "material_name": "Lubricants (Food-Grade)",
-        "properties": "Used during can manufacturing to reduce friction; must be non-toxic and food-grade.",
-        "application": "Manufacturing process; ensures smooth can formation and prevents contamination."
+        "material_name": "Tartrate Stabilizers (Potassium Bitartrate)",
+        "properties": "Added to wine to prevent tartrate crystal formation in the bottle",
+        "application": "Wine itself (not packaging, but affects chemical stability)"
       }
     ],
     "hygiene_sensitivity": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Non-porous and easy to clean and sterilize during manufacturing. Requires proper cleaning to remove any residue.",
-        "application": "Can body; must be thoroughly cleaned before filling."
+        "material_name": "Glass",
+        "properties": "Easy to clean and sterilize, non-porous",
+        "application": "Wine bottles"
       },
       {
-        "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
-        "properties": "Also non-porous and easy to clean. Requires rigorous cleaning to prevent contamination.",
-        "application": "Can body alternative; also needs thorough cleaning."
+        "material_name": "Stainless Steel",
+        "properties": "Easy to clean and sanitize, corrosion-resistant",
+        "application": "Wine processing equipment, storage tanks"
       },
       {
-        "material_name": "Epoxy Coating",
-        "properties": "Provides a smooth, non-porous surface that is easy to sanitize, preventing bacterial growth.",
-        "application": "Internal lining; must be properly applied and cured to prevent contamination."
+        "material_name": "PET (Food Grade)",
+        "properties": "Must be properly cleaned and sanitized before filling",
+        "application": "Wine bottles"
       },
       {
-        "material_name": "Acrylic Coating",
-        "properties": "Similar to epoxy, providing a sanitary internal surface. Requires proper application.",
-        "application": "Internal lining; provides a hygienic barrier."
+        "material_name": "Laminated Films (BIB)",
+        "properties": "Sealed system, reduces risk of contamination",
+        "application": "Bag-in-box wine"
       },
       {
-        "material_name": "Seam Sealant",
-        "properties": "Must be food-grade and resistant to microbial growth, preventing contamination at the seams.",
-        "application": "Sealant at the can seams; critical to prevent microbial ingress."
+        "material_name": "Synthetic Cork",
+        "properties": "Less prone to microbial contamination (e.g., TCA) compared to natural cork",
+        "application": "Wine bottle closure"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Inert and sterile, preventing the introduction of bacteria or other contaminants.",
-        "application": "Headspace filler; maintains a sterile environment."
+        "material_name": "Screw Cap",
+        "properties": "Provides a tight seal, prevents contamination",
+        "application": "Wine bottle closure"
       },
       {
-        "material_name": "Easy-Open End Compound",
-        "properties": "Food-grade and resistant to microbial growth, maintaining the integrity of the seal.",
-        "application": "Sealant for easy-open ends; prevents microbial ingress."
+        "material_name": "Sanitizing Agents (e.g., Peracetic Acid)",
+        "properties": "Used to sterilize bottles and equipment",
+        "application": "Wine production"
       },
       {
-        "material_name": "Adhesive (Seam)",
-        "properties": "Must be food-grade and prevent microbial growth in the seam area.",
-        "application": "Bonds can ends; ensures hygienic seal."
+        "material_name": "Filtration Membranes",
+        "properties": "Remove microorganisms from wine before bottling",
+        "application": "Wine production"
       },
       {
-        "material_name": "Cleaning Agents",
-        "properties": "Used during manufacturing to remove any residues or contaminants from the can. Must be food-grade and effectively removed before filling.",
-        "application": "Manufacturing process; ensures cleanliness."
+        "material_name": "Clean Room Environment",
+        "properties": "Reduces airborne contaminants during bottling",
+        "application": "Bottling process"
       },
       {
-        "material_name": "Water (Used for Rinsing)",
-        "properties": "Potable and free from microorganisms to ensure no contamination during rinsing.",
-        "application": "Manufacturing process; final rinsing step."
+        "material_name": "Aseptic Packaging",
+        "properties": "Sterilization of both the product and the package separately, followed by combination under sterile conditions",
+        "application": "Specialized wines requiring high levels of hygiene"
       }
     ],
     "temperature_sensitivity": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Good temperature resistance, but extreme temperatures can affect the internal pressure and potentially cause deformation.",
-        "application": "Can body; avoid extreme temperature fluctuations."
+        "material_name": "Glass",
+        "properties": "Can withstand moderate temperature changes, but avoid extreme temperature shocks.",
+        "application": "Wine bottles"
       },
       {
-        "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
-        "properties": "Similar temperature properties to aluminum. Susceptible to pressure changes from temperature variations.",
-        "application": "Can body alternative; handle with similar temperature considerations."
+        "material_name": "PET",
+        "properties": "Can deform or degrade at high temperatures.",
+        "application": "Wine bottles (avoid direct sunlight and high storage temperatures)"
       },
       {
-        "material_name": "Epoxy Coating",
-        "properties": "Generally stable at typical beverage temperatures, but extreme heat or cold can affect its adhesion and flexibility.",
-        "application": "Internal lining; avoid excessive temperature fluctuations."
+        "material_name": "Cork",
+        "properties": "Can expand or contract with temperature changes, affecting the seal.",
+        "application": "Wine bottle closure (store at consistent temperatures)"
       },
       {
-        "material_name": "Acrylic Coating",
-        "properties": "Similar to epoxy in temperature sensitivity. Maintain consistent storage temperatures.",
-        "application": "Internal lining alternative; similar temperature management."
+        "material_name": "Aluminum",
+        "properties": "Good conductor of heat, wine can heat up quickly if exposed to high temperatures.",
+        "application": "Wine cans"
       },
       {
-        "material_name": "Seam Sealant",
-        "properties": "Temperature fluctuations can affect the sealant's flexibility and adhesion, potentially compromising the seal.",
-        "application": "Sealant at the can seams; avoid extreme temperature variations."
+        "material_name": "Insulated Packaging (EPS, Foam)",
+        "properties": "Protects wine from temperature fluctuations during shipping",
+        "application": "Shipping wine in hot or cold climates"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "The pressure of nitrogen gas is temperature-dependent, affecting the internal pressure of the can.",
-        "application": "Headspace filler; manage temperature to control internal pressure."
+        "material_name": "Temperature Controlled Shipping Containers",
+        "properties": "Maintains a consistent temperature during transport",
+        "application": "Shipping high-value wines"
       },
       {
-        "material_name": "Easy-Open End Compound",
-        "properties": "Temperature can affect the compound's sealing properties, potentially leading to leakage.",
-        "application": "Sealant for easy-open ends; maintain consistent temperatures."
+        "material_name": "Thermochromic Labels",
+        "properties": "Change color to indicate if wine has been exposed to excessive temperatures",
+        "application": "Monitoring temperature during shipping"
       },
       {
-        "material_name": "Ink and Varnish",
-        "properties": "Extreme temperatures can cause the ink to fade or crack and the varnish to become brittle.",
-        "application": "External decoration; avoid extreme heat or cold exposure."
+        "material_name": "Cellars (Underground)",
+        "properties": "Provides constant, cool temperatures",
+        "application": "Wine storage"
       },
       {
-        "material_name": "Adhesive (Seam)",
-        "properties": "Extreme temperatures can weaken the adhesive bond, leading to seam failure.",
-        "application": "Bonds can ends; temperature control is important."
+        "material_name": "Refrigerated Storage",
+        "properties": "Keeps wine at optimal serving temperature",
+        "application": "Retail and consumer storage"
       },
       {
-        "material_name": "Condensation",
-        "properties": "Condensation formation due to temperature differences may cause corrosion.",
-        "application": "Overall can integrity. Avoid rapid temperature change."
+        "material_name": "Glycol Jacketed Tanks",
+        "properties": "Used in winemaking to precisely control fermentation and storage temperatures.",
+        "application": "Wine production"
       }
     ],
     "volatility_or_hazard_risk": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Non-volatile and generally safe, but aluminum dust can be a fire or explosion hazard under specific conditions in manufacturing facilities.",
-        "application": "Can body; manage dust during manufacturing."
+        "material_name": "Glass (under pressure)",
+        "properties": "Risk of explosion if wine undergoes secondary fermentation in the bottle",
+        "application": "Sparkling wine bottles (requires thicker glass)"
       },
       {
-        "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
-        "properties": "Similar to aluminum; low volatility. Steel dust poses similar risks in manufacturing.",
-        "application": "Can body alternative; dust control during manufacturing."
+        "material_name": "Sulfites (in wine)",
+        "properties": "Can cause allergic reactions in some individuals",
+        "application": "Wine (labeling requirement)"
       },
       {
-        "material_name": "Epoxy Coating",
-        "properties": "Typically non-volatile once cured, but some epoxy resins may contain volatile organic compounds (VOCs) during application. BPA content is a potential health concern (though BPA-free options are available).",
-        "application": "Internal lining; use low-VOC options and BPA-free formulations."
+        "material_name": "Alcohol (flammable)",
+        "properties": "Flammable liquid, requires precautions during storage and transport",
+        "application": "Wine"
       },
       {
-        "material_name": "Acrylic Coating",
-        "properties": "Similar to epoxy regarding VOCs and volatility. Ensure proper ventilation during application.",
-        "application": "Internal lining alternative; manage VOCs during application."
+        "material_name": "Cardboard (flammable)",
+        "properties": "Shipping cartons need to be kept away from open flames",
+        "application": "Outer packaging"
       },
       {
-        "material_name": "Ink (UV-Cured)",
-        "properties": "Low VOC content compared to solvent-based inks, but proper ventilation is still necessary during printing.",
-        "application": "External printing; use low-VOC inks and ensure proper ventilation."
+        "material_name": "Compressed Gases (during bottling)",
+        "properties": "Nitrogen or carbon dioxide used during bottling can be hazardous if mishandled",
+        "application": "Wine Production"
       },
       {
-        "material_name": "Varnish",
-        "properties": "Similar to inks; low VOC content with UV-cured options. Manage ventilation during application.",
-        "application": "Protective overcoat; low VOC options are preferred."
+        "material_name": "Cleaning Chemicals",
+        "properties": "Caustic substances require careful handling during bottling line cleaning.",
+        "application": "Wine Production"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Non-toxic and inert, but can displace oxygen and create an asphyxiation hazard in confined spaces.",
-        "application": "Headspace filler; ensure adequate ventilation in filling areas."
+        "material_name": "Dry Ice (for shipping)",
+        "properties": "Sublimates to CO2 and can cause asphyxiation in enclosed spaces",
+        "application": "Temperature Controlled Shipping"
       },
       {
-        "material_name": "Cleaning Solvents",
-        "properties": "May be flammable or toxic. Require careful handling, storage, and disposal according to safety regulations.",
-        "application": "Manufacturing process; follow safety protocols for solvent use."
+        "material_name": "Safety Data Sheets (SDS)",
+        "properties": "Provides information on the hazards of materials used in winemaking and packaging.",
+        "application": "Wine Production and Packaging Facilities"
       },
       {
-        "material_name": "Lubricants",
-        "properties": "Some lubricants may be flammable or cause skin irritation. Use appropriate PPE during handling.",
-        "application": "Manufacturing process; follow safety guidelines for lubricant use."
+        "material_name": "Emergency Spill Kits",
+        "properties": "Contain materials to clean up spills of wine, chemicals, or other hazardous materials.",
+        "application": "Wine Production and Packaging Facilities"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Some adhesives can release volatile organic compounds (VOCs) during application and curing. Use low-VOC options and ensure proper ventilation.",
-        "application": "Bonds can ends; use low-VOC adhesives and ensure ventilation."
+        "material_name": "Regulatory Compliance",
+        "properties": "Adherence to all transportation and storage regulations for alcoholic beverages is mandatory.",
+        "application": "All areas of Wine Production and Distribution"
       }
     ],
     "visibility_and_display": [
       {
-        "material_name": "Ink (UV-Cured)",
-        "properties": "Provides high-resolution graphics and vibrant colors for attractive branding and product information.",
-        "application": "External printing; critical for visual appeal."
+        "material_name": "Clear Glass",
+        "properties": "Allows visual inspection of wine color and clarity",
+        "application": "Wine bottles"
       },
       {
-        "material_name": "Varnish",
-        "properties": "Offers a glossy or matte finish, enhancing the visual appeal and protecting the ink layer.",
-        "application": "Protective overcoat; enhances visual presentation."
-      },
-      {
-        "material_name": "Aluminum/Steel",
-        "properties": "Provides a smooth surface for printing, allowing for detailed graphics and text.",
-        "application": "Can body; serves as the canvas for branding and information."
-      },
-      {
-        "material_name": "Shrink Sleeves (Alternative to Direct Printing)",
-        "properties": "Allows for 360-degree graphics and vibrant colors, enhancing shelf appeal.",
-        "application": "Alternative labeling; provides maximum visual impact."
-      },
-      {
-        "material_name": "Embossing/Debossing",
-        "properties": "Adds a tactile element to the can, enhancing the perceived quality and brand image.",
-        "application": "Optional surface treatment; enhances tactile and visual appeal."
-      },
-      {
-        "material_name": "Specialty Inks (e.g., Thermochromic, Glow-in-the-Dark)",
-        "properties": "Adds unique visual effects to attract consumer attention.",
-        "application": "Novelty applications; enhances consumer engagement."
-      },
-      {
-        "material_name": "Laser Etching",
-        "properties": "Creates permanent, high-resolution markings directly on the can surface.",
-        "application": "Alternative marking; provides a premium look."
-      },
-      {
-        "material_name": "Can Shape",
-        "properties": "Unique can shapes can enhance shelf appeal and brand recognition.",
-        "application": "Structural Design; unique shapes draw the eye."
+        "material_name": "Colored Glass (Green, Amber)",
+        "properties": "Reduces UV light exposure, may obscure wine's color",
+        "application": "Wine bottles (for wines sensitive to light)"
       },
       {
         "material_name": "Transparent Labels",
-        "properties": "Allows partial visibility of the can's contents or underlying surface, creating a unique visual effect.",
-        "application": "Labeling Option; can be aesthetically pleasing."
+        "properties": "Allows partial view of wine through the label",
+        "application": "Wine bottle labels"
       },
       {
-        "material_name": "QR Codes",
-        "properties": "Enable integration of digital content and marketing with the physical product.",
-        "application": "Informational and Marketing; links to digital information."
+        "material_name": "High-Quality Printing",
+        "properties": "Sharp, clear graphics and text on labels",
+        "application": "Wine bottle labels"
+      },
+      {
+        "material_name": "Embossing/Debossing",
+        "properties": "Adds tactile and visual interest to labels",
+        "application": "Wine bottle labels"
+      },
+      {
+        "material_name": "Foil Stamping",
+        "properties": "Adds a metallic sheen to labels, enhancing visual appeal",
+        "application": "Wine bottle labels"
+      },
+      {
+        "material_name": "Shelf Talkers",
+        "properties": "Point-of-sale displays that provide information about the wine",
+        "application": "Retail environments"
+      },
+      {
+        "material_name": "Display Cases (Refrigerated)",
+        "properties": "Showcase wine at optimal serving temperature",
+        "application": "Retail environments"
+      },
+      {
+        "material_name": "Wine Racks",
+        "properties": "Organize and display wine bottles attractively",
+        "application": "Retail and consumer environments"
+      },
+      {
+        "material_name": "Augmented Reality (AR) Labels",
+        "properties": "Interactive labels that provide additional information via smartphone",
+        "application": "Modern Marketing Strategy"
       }
     ],
     "quantity_and_dosage": [
       {
-        "material_name": "Aluminum/Steel",
-        "properties": "Determines the can volume, directly influencing the quantity of beer contained.",
-        "application": "Can body; dictates the fill volume."
+        "material_name": "Glass Bottles (Standard Sizes)",
+        "properties": "750ml is the most common size, others include 375ml, 1.5L",
+        "application": "Wine bottles"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Precise amount of nitrogen injected to maintain proper headspace pressure and prevent oxidation.",
-        "application": "Headspace filler; affects product quality and shelf life."
+        "material_name": "Bag-in-Box Sizes",
+        "properties": "Common sizes include 3L and 5L",
+        "application": "Boxed wine"
       },
       {
-        "material_name": "Ink",
-        "properties": "The thickness and coverage of the ink layer affect the legibility of product information and branding.",
-        "application": "External printing; affects readability and visual appeal."
+        "material_name": "Aluminum Cans",
+        "properties": "Typical sizes include 250ml and 375ml",
+        "application": "Wine cans"
       },
       {
-        "material_name": "Varnish",
-        "properties": "The thickness of the varnish layer affects the level of protection and the final visual finish.",
-        "application": "Protective overcoat; affects durability and appearance."
+        "material_name": "Measuring Cups/Syringes",
+        "properties": "Used for precise additions of additives during winemaking",
+        "application": "Wine Production"
       },
       {
-        "material_name": "Polymer Coating (Internal)",
-        "properties": "The thickness and integrity of the internal coating ensure complete protection of the beer.",
-        "application": "Internal lining; proper application is crucial."
+        "material_name": "Automated Filling Machines",
+        "properties": "Ensures consistent fill levels in bottles",
+        "application": "Bottling process"
       },
       {
-        "material_name": "Seam Sealant",
-        "properties": "The amount of sealant used at the seams must be precise to ensure a hermetic seal.",
-        "application": "Sealant at the can seams; critical for preventing leaks."
+        "material_name": "Dosage Pumps",
+        "properties": "Precisely meter out additives like sulfites",
+        "application": "Wine Production"
       },
       {
-        "material_name": "Adhesive (Seam)",
-        "properties": "Precise amount required to ensure a strong, hermetic bond between can body and ends.",
-        "application": "Bonds can ends; strength of the bond important."
+        "material_name": "Level Sensors",
+        "properties": "Monitor wine levels in tanks and bottles",
+        "application": "Wine Production"
       },
       {
-        "material_name": "Can Dimensions",
-        "properties": "Affects the overall fill volume and dimensions of the package.",
-        "application": "Structural Design; volume of the can."
+        "material_name": "Calibration Standards",
+        "properties": "Used to ensure accuracy of measuring equipment",
+        "application": "Wine Production"
       },
       {
-        "material_name": "Easy-Open End Components",
-        "properties": "The dimensions and material properties ensure proper functionality during opening.",
-        "application": "Opening mechanism; design critical for ease of use."
+        "material_name": "Unit Dose Packaging",
+        "properties": "Individual servings of wine in small containers.",
+        "application": "Travel or sampling"
       },
       {
-        "material_name": "Lubricants (Manufacturing)",
-        "properties": "The amount and type of lubricant used during can forming processes must be precisely controlled.",
-        "application": "Can manufacturing process. Precise application is needed."
+        "material_name": "Smart Packaging",
+        "properties": "Displays the remaining volume or number of servings",
+        "application": "Innovative Marketing"
       }
     ],
     "value_and_theft_sensitivity": [
       {
-        "material_name": "Aluminum Alloy/Steel",
-        "properties": "Recyclable materials can be a target for metal theft, especially in large quantities.",
-        "application": "Can body; consider security measures for scrap metal."
+        "material_name": "Tamper-Evident Seals",
+        "properties": "Shrink sleeves, security labels, or specialized closures",
+        "application": "Wine bottles (preventing counterfeiting or tampering)"
       },
       {
-        "material_name": "Ink",
-        "properties": "Sophisticated printing techniques and security inks can deter counterfeiting.",
-        "application": "External printing; use advanced printing technologies to combat counterfeiting."
+        "material_name": "Unique Bottle Designs",
+        "properties": "Difficult to replicate, enhances brand recognition",
+        "application": "High-value wines"
       },
       {
         "material_name": "Holographic Labels",
-        "properties": "Provide a visual deterrent to counterfeiting and enhance brand security.",
-        "application": "Alternative Labeling. Good anti-counterfeiting measure."
-      },
-      {
-        "material_name": "Tamper-Evident Seals",
-        "properties": "Indicate if the can has been opened or tampered with.",
-        "application": "Security seal; provides visual indication of tampering."
-      },
-      {
-        "material_name": "Unique Can Identifiers (e.g., Serial Numbers, QR Codes)",
-        "properties": "Enable tracking and authentication of individual cans.",
-        "application": "Tracking and Authentication; provides unique identification."
-      },
-      {
-        "material_name": "Specialty Finishes (e.g., Embossing, Debossing)",
-        "properties": "Difficult to replicate, adding a layer of security against counterfeiting.",
-        "application": "Surface Treatment; complicates replication by counterfeiters."
+        "properties": "Difficult to counterfeit, adds security",
+        "application": "Wine bottle labels"
       },
       {
         "material_name": "RFID Tags",
-        "properties": "Enable tracking and inventory management, helping to prevent theft and diversion.",
-        "application": "Tracking and Inventory; manages stock levels and prevents theft."
+        "properties": "Track and trace bottles, prevent theft",
+        "application": "High-value wines, inventory management"
       },
       {
-        "material_name": "Secure Distribution Channels",
-        "properties": "Ensuring the integrity of the supply chain is crucial to prevent product diversion and theft.",
-        "application": "Logistics; protects against theft throughout the supply chain."
+        "material_name": "Security Cases/Boxes",
+        "properties": "Protective packaging for high-value wines",
+        "application": "Shipping and storage"
       },
       {
-        "material_name": " overt and covert markings",
-        "properties": "Help authorities identify genuine products.",
-        "application": "Security seals; authentication for security purposes."
+        "material_name": "Inventory Tracking Systems",
+        "properties": "Monitor wine stock, detect theft",
+        "application": "Retail environments, warehouses"
       },
       {
-        "material_name": "Can construction method",
-        "properties": "Make cans stronger and resist tampering.",
-        "application": "Structural design; protect against theft."
+        "material_name": "Security Cameras",
+        "properties": "Deter theft, provide evidence",
+        "application": "Retail environments, warehouses"
+      },
+      {
+        "material_name": "Alarm Systems",
+        "properties": "Alert authorities to potential theft",
+        "application": "Retail environments, warehouses"
+      },
+      {
+        "material_name": "Insurance",
+        "properties": "Covers losses due to theft or damage",
+        "application": "Wine businesses"
+      },
+      {
+        "material_name": "Blockchain Technology",
+        "properties": "Track the provenance and authenticity of wine bottles throughout the supply chain.",
+        "application": "High-end Collectibles"
       }
     ]
   },
   "analysis_timestamp": "2025-05-09 21:01:46",
   "user_login": "codegeek03",
-  "product_name": "Beer cans",
+  "product_name": "Wine",
   "status": "completed"
 }
