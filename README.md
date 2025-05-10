@@ -130,6 +130,8 @@ Each runs in **parallel** under a LangGraph “run_analyses” fork:
   - Models market acceptance, packaging appeal  
 - **`RegulationsAgent`**  
   - Web-searches relevant directives (EU, FDA, BIS) via `show_tool_calls`
+- **`ExplainabilityAgent`**
+  - Generates robust explanations with thinking tools.
 
 Each module returns a standardized top-materials list with raw scores.
 
