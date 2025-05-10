@@ -17,6 +17,8 @@ flowchart TD
   subgraph Inputs["📥 Inputs"]
     Z["🧠 Input Agent"]
     WikiSearch["🔍Tavily Search Tool"]
+    DuckDuckGo["DuckDuckGoTools()"]
+    Newspaper4kTools["Newspaper4kTools()"]
   end
 
   %% Analyst Group
@@ -63,11 +65,15 @@ flowchart TD
   F --> G
   P --> G
   R --> G
+  WikiSearch --> G
+  DuckDuckGo --> G
+  Newspaper4kTools --> G
 
   %% Orchestration to outputs and explainability
   G --> H
   G --> ResultsDB
   G --> EX
+  
 
   %% Details flow
   H --> Scores & Tradeoffs & RegNotes
@@ -107,8 +113,10 @@ This system is a **LangGraph-driven**, multi-agent orchestration for evaluating 
 ## ✨ Key Innovations
 - **LangGraph State Machine**  
   Orchestrates flow using a directed graph of TypedDict states, transitions, and conditional branching.
-- **Parallel Tool-Calling**  
+- **Parallel Agent-Calling**  
   Launches independent analysis agents concurrently (properties, logistics, cost, sustainability, consumer).
+- **Parallel Tool-Calling**  
+  Uses Tavily,DuckDuckGo and Newspaper4k tools for enhanced research.
 - **Gemini-Backed Prompting**  
   Uses Google Gemini (v2.0-flash) for deep reasoning, with `show_tool_calls=True` to trace tool invocations and aid debugging.
 - **JSON-First Reporting**  
@@ -250,6 +258,8 @@ Find JSON report in temp_KB/reports/
 Google Cloud for Gemini APIs
 
 All open-source tool developers and community contributors
+
+## Algorithmic Flowchart
  ![image](https://github.com/user-attachments/assets/994df226-6654-48b7-a403-627a7bee6f4d)
 
 
