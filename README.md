@@ -12,45 +12,57 @@ config:
   layout: dagre
 ---
 flowchart TD
- subgraph Inputs["Inputs"]
-        Z["Input Agent"]
-        RAG["Regulations PDF Rules"]
-        WS["Web Search"]
+
+  %% Input Sources
+  subgraph Inputs["📥 Inputs"]
+    Z["🧠 Input Agent"]
+    WikiSearch["🔍Tavily Search"]
   end
- subgraph Analyst_Group["Analyst_Group"]
-        C(["Sustainability"])
-        D(["Sourcing Cost"])
-        E(["Logistics"])
-        F(["Consumer Behavior"])
-        R(["Regulations"])
-        P(["Production Cost"])
+
+  %% Analyst Group
+  subgraph Analyst_Group["🧑‍🔬 Analyst Modules"]
+    C(["🌱 Sustainability"])
+    D(["💰 Sourcing Cost"])
+    E(["🚚 Logistics"])
+    F(["🛍️ Consumer Behavior"])
+    R(["⚖️ Regulations"])
+    P(["🏭 Production Cost"])
   end
- subgraph Processors["Processors"]
-        A["Product Compatibility"]
-        B["MaterialDB"]
-        G["Orchestrator"]
+
+  %% Processing Units
+  subgraph Processors["⚙️ Processors"]
+    A["🧪 Product Compatibility"]
+    B["📚 MaterialDB"]
+    G["🧩 Orchestrator"]
   end
- subgraph Outputs["Outputs"]
-        H["Top K Materials"]
-        ResultsDB["Results Database"]
-        EX["Explainability"]
-        PCon["Parallel Agent Manager"]
+
+  %% Output Results
+  subgraph Outputs["📤 Outputs"]
+    H["🏆 Top K Materials"]
+    subgraph Details["📄 Details"]
+      Scores["📊 Scores"]
+      Tradeoffs["⚖️ Tradeoffs"]
+      RegNotes["📘 Regulations Summary"]
+      EX["🧠 Explainability"]
+    end
+    ResultsDB["🗂️ Results Database"]
   end
-    Z --> A
-    A --> B
-    RAG --> R
-    WS --> G
-    B -- Analyze --> C & D & E & F & R & P
-    C --> G
-    D --> G
-    E --> G
-    F --> G
-    P --> G
-    R --> G
-    G --> H & ResultsDB & EX & PCon
-    PCon --> C & D & E & F & R & P
-    H --> G
-    EX --> G
+
+  %% Data Flow
+  Z --> A
+  A --> B
+  WikiSearch --> R
+  B -- Analyze --> C & D & E & F & R & P
+  C --> G
+  D --> G
+  E --> G
+  F --> G
+  P --> G
+  R --> G
+  G --> H & ResultsDB & EX
+  H --> G
+  H --> Scores & Tradeoffs & RegNotes & EX
+
 ```
 
 
