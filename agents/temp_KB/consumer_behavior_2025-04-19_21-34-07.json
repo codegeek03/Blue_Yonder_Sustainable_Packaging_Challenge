@@ -1,209 +1,212 @@
 {
   "top_materials": [
     {
-      "material_name": "Molded Pulp (Recycled)",
+      "material_name": "Aluminum",
       "consumer_metrics": {
         "aesthetic_appeal": {
-          "score": 7,
+          "score": 8,
           "trend_strength": "moderate",
-          "key_insight": "Rustic; natural look appeals to some."
+          "key_insight": "Versatile for designs, modern."
         },
         "usability": {
-          "score": 8,
+          "score": 9,
           "trend_strength": "strong",
-          "key_insight": "Provides good egg protection."
+          "key_insight": "Lightweight, easy to open/carry."
         },
         "perceived_value": {
           "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Seen as affordable and responsible."
+          "key_insight": "Standard, reliably protects."
         },
         "eco_consciousness": {
-          "score": 9,
+          "score": 8,
           "trend_strength": "strong",
-          "key_insight": "High recyclability is a plus."
+          "key_insight": "Highly recyclable material."
         },
         "brand_alignment": {
-          "score": 8,
-          "trend_strength": "moderate",
-          "key_insight": "Fits well with eco-friendly brands."
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Suits mainstream & craft."
         }
       },
-      "overall_consumer_score": 7.8,
+      "overall_consumer_score": 8.2,
       "target_demographics": [
-        "Eco-conscious millennials",
-        "Gen Z"
+        "Millennials",
+        "Gen Z",
+        "Gen X"
       ],
-      "market_positioning": "Sustainable and affordable option."
+      "market_positioning": "Mainstream, craft, and premium beers; focus on recyclability."
     },
     {
-      "material_name": "Clear PET Plastic",
+      "material_name": "Aluminum with Matte Finish",
       "consumer_metrics": {
         "aesthetic_appeal": {
-          "score": 8,
-          "trend_strength": "moderate",
-          "key_insight": "Eggs are clearly visible."
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Premium look, tactile feel."
         },
         "usability": {
           "score": 9,
           "trend_strength": "strong",
-          "key_insight": "Easy to open and close."
+          "key_insight": "Easy grip, comfortable hold."
         },
         "perceived_value": {
-          "score": 7,
+          "score": 8,
           "trend_strength": "moderate",
-          "key_insight": "Transparency signals freshness."
+          "key_insight": "Upscale, higher quality feel."
         },
         "eco_consciousness": {
-          "score": 5,
-          "trend_strength": "weak",
-          "key_insight": "Recyclability varies by region."
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Recyclable like standard cans."
         },
         "brand_alignment": {
           "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Enhances premium branding."
+        }
+      },
+      "overall_consumer_score": 8.4,
+      "target_demographics": [
+        "Millennials",
+        "Affluent Consumers"
+      ],
+      "market_positioning": "Premium and craft beers; emphasizes sophistication."
+    },
+    {
+      "material_name": "Aluminum with Thermochromic Ink",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Novelty, interactive design."
+        },
+        "usability": {
+          "score": 9,
           "trend_strength": "strong",
-          "key_insight": "Works for established brands."
+          "key_insight": "Functions as a regular can."
+        },
+        "perceived_value": {
+          "score": 6,
+          "trend_strength": "weak",
+          "key_insight": "Seen as a fun gimmick."
+        },
+        "eco_consciousness": {
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Aluminum remains recyclable."
+        },
+        "brand_alignment": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Fits brands targeting youth."
         }
       },
       "overall_consumer_score": 7.4,
       "target_demographics": [
-        "Convenience seekers",
-        "Families"
+        "Gen Z",
+        "Young Adults"
       ],
-      "market_positioning": "Offers transparency and convenience."
+      "market_positioning": "Novelty beers; targets younger, trend-conscious consumers."
     },
     {
-      "material_name": "Foam (Polystyrene)",
+      "material_name": "Aluminum with Embossed Design",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Texture enhances visual appeal."
+        },
+        "usability": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Easy to hold and grip."
+        },
+        "perceived_value": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Feels more premium to consumers."
+        },
+        "eco_consciousness": {
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Recyclable like a normal can."
+        },
+        "brand_alignment": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Good fit for craft brands."
+        }
+      },
+      "overall_consumer_score": 8.0,
+      "target_demographics": [
+        "Millennials",
+        "Craft Beer Enthusiasts"
+      ],
+      "market_positioning": "Craft and microbrew beers; enhances brand story."
+    },
+    {
+      "material_name": "Aluminum with Resealable Lid",
       "consumer_metrics": {
         "aesthetic_appeal": {
           "score": 6,
           "trend_strength": "weak",
-          "key_insight": "Basic, minimal design appeal."
+          "key_insight": "Focus is on functionality."
         },
         "usability": {
-          "score": 9,
-          "trend_strength": "strong",
-          "key_insight": "Excellent protection; lightweight."
-        },
-        "perceived_value": {
-          "score": 8,
-          "trend_strength": "moderate",
-          "key_insight": "Low cost; seen as economical."
-        },
-        "eco_consciousness": {
-          "score": 2,
-          "trend_strength": "strong",
-          "key_insight": "Poor recyclability; environmentally bad."
-        },
-        "brand_alignment": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Suitable for budget brands."
-        }
-      },
-      "overall_consumer_score": 6.4,
-      "target_demographics": [
-        "Price-sensitive consumers"
-      ],
-      "market_positioning": "Provides cost-effective protection."
-    },
-    {
-      "material_name": "Cardboard (with Custom Printing)",
-      "consumer_metrics": {
-        "aesthetic_appeal": {
-          "score": 9,
-          "trend_strength": "strong",
-          "key_insight": "Customization is a major plus."
-        },
-        "usability": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Requires careful handling to prevent damage."
-        },
-        "perceived_value": {
-          "score": 8,
-          "trend_strength": "moderate",
-          "key_insight": "High-quality print enhances perception."
-        },
-        "eco_consciousness": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Recyclable; good for branding."
-        },
-        "brand_alignment": {
-          "score": 9,
-          "trend_strength": "strong",
-          "key_insight": "Great for premium brands."
-        }
-      },
-      "overall_consumer_score": 8.0,
-      "target_demographics": [
-        "Design-conscious consumers"
-      ],
-      "market_positioning": "Premium packaging with high visual appeal."
-    },
-    {
-      "material_name": "Bagasse (Sugarcane Fiber)",
-      "consumer_metrics": {
-        "aesthetic_appeal": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Natural look; eco-friendly aesthetic."
-        },
-        "usability": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Similar protection to molded pulp."
-        },
-        "perceived_value": {
-          "score": 8,
-          "trend_strength": "moderate",
-          "key_insight": "Signals sustainability; valued by some."
-        },
-        "eco_consciousness": {
           "score": 10,
           "trend_strength": "strong",
-          "key_insight": "Highly sustainable; compostable."
+          "key_insight": "Convenient for on-the-go."
+        },
+        "perceived_value": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Reduces spillage, saves beer."
+        },
+        "eco_consciousness": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Less waste, promotes reuse."
         },
         "brand_alignment": {
-          "score": 8,
-          "trend_strength": "strong",
-          "key_insight": "Good for organic egg brands."
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Fits brands emphasizing ease."
         }
       },
-      "overall_consumer_score": 8.0,
+      "overall_consumer_score": 7.6,
       "target_demographics": [
-        "Eco-conscious consumers",
-        "Health-focused"
+        "Active Lifestyle",
+        "Outdoor Enthusiasts"
       ],
-      "market_positioning": "Highly sustainable and natural packaging."
+      "market_positioning": "Beers for travel and activities; highlights convenience."
     }
   ],
   "consumer_trends": [
     {
-      "trend_name": "Sustainable Packaging Demand",
+      "trend_name": "Sustainability Focus",
       "impact_level": "high",
-      "relevance": "Consumers prefer eco-friendly options."
-    },
-    {
-      "trend_name": "Transparency and Traceability",
-      "impact_level": "medium",
-      "relevance": "Consumers want to know egg origin."
-    },
-    {
-      "trend_name": "Minimalist Design",
-      "impact_level": "medium",
-      "relevance": "Clean and simple aesthetics gaining popularity."
+      "relevance": "Consumers prioritize eco-friendly packaging."
     },
     {
       "trend_name": "Premiumization",
       "impact_level": "medium",
-      "relevance": "Luxury packaging for higher-end eggs"
+      "relevance": "Demand for high-quality materials & design."
     },
     {
-      "trend_name": "Reusable Packaging",
+      "trend_name": "Convenience",
+      "impact_level": "medium",
+      "relevance": "Resealable and easy-to-carry options grow."
+    },
+    {
+      "trend_name": "Customization",
       "impact_level": "low",
-      "relevance": "Limited options currently available."
+      "relevance": "Personalized can designs gaining traction."
+    },
+    {
+      "trend_name": "Minimalism",
+      "impact_level": "low",
+      "relevance": "Simple, clean design appeals to some."
     }
   ],
   "timestamp": "2025-04-19 21:34:07",

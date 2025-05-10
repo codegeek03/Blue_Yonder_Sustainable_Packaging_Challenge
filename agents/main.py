@@ -98,106 +98,81 @@ class OrchestrationAgent:
             logger.error(f"Failed to initialize OrchestrationAgent: {str(e)}", exc_info=True)
             raise
 
-    async def generate_executive_summary(self, material: Dict[str, Any]) -> Dict[str, Any]:
+    async def generate_executive_summary(
+    self,
+    product_name: str,
+    k: int,
+    material: Dict[str, Any]) -> Dict[str, Any]:
         """Generate detailed analysis for a single material."""
         try:
             prompt = f"""
-You are a senior material analyst with deep expertise in evaluating packaging materials based on multi-criteria performance.
+You are a senior sustainability consultant for Blue Yonder’s “Data Analytics Driven Framework for Sustainable Packaging Decisions” challenge. You’ve been given:
 
-You are provided with one of the top-ranked materials from a comparative analysis. The material has been evaluated across five dimensions: Properties, Logistics, Cost, Sustainability, and Consumer Preference.
+• Product: {product_name}  
+• One of the top-{k} packaging materials from a data-driven ranking: **{material['material_name']}**  
+• A holistic view of this material’s performance across five dimensions:  
+  – Properties  
+  – Logistics  
+  – Cost  
+  – Sustainability  
+  – Consumer Preference  
 
-Each dimension contributes to the overall score based on its strategic importance, as defined by the following weights:
-- Properties: 6
-- Logistics: 5
-- Cost: 6
-- Sustainability: 9
-- Consumer Preference: 7
+Blue Yonder requires a professional, slide-ready report for each material, covering:
 
-Material Name: {material.get('material_name')}
+1. **Executive Snapshot**  
+   – A one-sentence verdict on this material’s suitability for packaging **{product_name}**.
 
-**Instructions**:
-1. **Assign a total score** to the material based on the weighted dimensions. Each dimension will be given a score from 0 to 10, which will then be multiplied by its respective weight. The total score is the sum of all these weighted values.
-2. Explain qualitatively why this material ranks among the top choices, using its relative strengths across the weighted dimensions.
-3. Identify which dimensions the material excels in, and describe how these align with the most heavily weighted criteria.
-4. Describe how weaker areas are offset by strong performance in higher-priority dimensions.
-5. Justify the material’s position in the ranking and explain its strategic suitability for packaging.
-6. Avoid using numeric scores or repeating raw data for the analysis. Focus on business-aligned insight and rationale, while ensuring a clear link to the total score.
+2. **Composite Score**  
+   – A single “Sustainability Impact Score” (0–100) computed by weighting each dimension (Properties 6, Logistics 5, Cost 6, Sustainability 9, Consumer 7).  
+   – Only the final composite (no raw sub-scores).
 
-**Respond strictly in the following JSON format**:
+3. **Strengths & Alignment**  
+   – 2–3 key strengths, tied explicitly to Blue Yonder’s priorities (e.g. Sustainability, Consumer Preference).
+
+4. **Trade-off Analysis**  
+   – Any weaker dimensions and how higher-priority strengths compensate.
+
+5. **Supply-Chain Implications**  
+   – Direct/indirect cost impacts (handling, logistics, damage risk), regulatory fit, and consumer acceptance.
+
+6. **Strategic Recommendation**  
+   – Data-grounded “Adopt” (true/false) recommendation for packaging **{product_name}**, including:  
+     • Estimated % improvement in overall sustainability footprint  
+     • Estimated % change in cost  
+     • Any regulatory or consumer considerations  
+
+**Return exactly this JSON** (no extra keys or prose):
+
+```json
 {{
-  "material_performance_review": {{
-    "calculated_score": <total_score>,  # Assign a score based on the weighted sum of each dimension.
-    "ranking_justification": "<Why the material ranks among the top, based on weighted priorities and performance balance>",
-    "domain_strengths": [
-      {{
-        "dimension": "<dimension name>",
-        "reason_for_strength": "<qualitative explanation of strength>",
-        "impact_on_ranking": "<how this strength contributed to overall ranking considering the weight>"
-      }}
-    ],
-    "compensating_factors": [
-      {{
-        "dimension": "<dimension name>",
-        "weakness_reason": "<why this area is relatively weaker>",
-        "compensated_by": "<dimension(s) where it performs strongly>",
-        "justification": "<how strength in high-weight domains offsets this weakness>"
-      }}
-    ],
-    "fit_for_use": {{
-      "summary": "<why this material is a strong candidate for packaging, based on its profile>",
-      "suitable_use_cases": ["<list of target applications>"]
-    }}
-  }}
-}}
-"""
-
-
-
-            response = await self.agent.arun(prompt)
-            return self._process_response(response.content)
-
-        except Exception as e:
-            logger.error(f"Material analysis generation failed: {str(e)}", exc_info=True)
-            return {"error": str(e)}
-
-    async def analyze_error(self, error_message: str, status_info: Dict[str, str]) -> Dict[str, Any]:
-        """Analyze an error and provide insights and recommendations."""
-        try:
-            prompt = f"""
-You are an AI diagnostics expert.
-
-Analyze this error scenario and recommend possible fixes.
-
-Error Message:
-{error_message}
-
-Status Context:
-{json.dumps(status_info, indent=2)}
-
-Instructions:
-- Identify the likely root cause.
-- List contributing factors with their estimated impact.
-- Recommend 1–2 actions for resolution and recovery.
-
-Respond strictly in this JSON format:
-{{
-  "root_cause_analysis": {{
-    "likely_cause": "<primary cause>",
-    "contributing_factors": [
-      {{
-        "factor": "<factor description>",
-        "impact": "<impact level - High/Medium/Low>"
-      }}
-    ]
-  }},
-  "recovery_recommendations": [
+  "material_name": "{material['material_name']}",
+  "executive_snapshot": "<one-sentence verdict>",
+  "composite_score": <0–100>,
+  "strengths": [
     {{
-      "action": "<recommended action>",
-      "priority": "<priority level - High/Medium/Low>"
+      "dimension": "<name>",
+      "insight": "<why this is a strength & business impact>"
     }}
-  ]
-}}
-"""
+  ],
+  "trade_offs": [
+    {{
+      "dimension": "<weaker area>",
+      "mitigation": "<how higher-priority strengths offset it>"
+    }}
+  ],
+  "supply_chain_implications": {{
+    "costs": "<direct/indirect cost narrative>",
+    "logistics": "<handling & transport narrative>",
+    "regulatory": "<regulatory fit overview>",
+    "consumer": "<consumer acceptance outlook>"
+  }},
+  "recommendation": {{
+    "adopt": <true|false>,
+    "justification": "<data-driven rationale>",
+    "sustainability_gain_percent": <estimated %>,
+    "cost_delta_percent": <estimated %>
+  }}
+}}"""
 
             response = await self.agent.arun(prompt)
             return self._process_response(response.content)
@@ -556,30 +531,21 @@ async def orchestrate_results(state: AnalysisState) -> Dict:
             if len(top_materials) == 5:
                 break
 
+        # just before you call generate_executive_summary:
+        product_name = state["input_data"]["product_name"]
+        k = len(top_materials)  # number of top materials you're iterating over
+
         # Generate material-wise executive summaries
         material_summaries = []
         for material in top_materials:
-            summary = await orchestrator.generate_executive_summary({
-                "product_name": state["input_data"]["product_name"],
-                "material": material,
-            })
+            summary = await orchestrator.generate_executive_summary(
+                product_name,
+                k,
+                material)
             material_summaries.append({
                 "material_name": material["material_name"],
-                "summary": summary
-            })
+                "summary": summary})
 
-        # Generate overall executive summary
-        executive_summary = await orchestrator.generate_executive_summary({
-            "product_name": state["input_data"]["product_name"],
-            "top_materials": top_materials,
-            "total_materials": len(scored_materials),
-            "score_distribution": {
-                "excellent": len([m for m in scored_materials if m["total_score"] >= 80]),
-                "good": len([m for m in scored_materials if 60 <= m["total_score"] < 80]),
-                "fair": len([m for m in scored_materials if 40 <= m["total_score"] < 60]),
-                "poor": len([m for m in scored_materials if m["total_score"] < 40])
-            }
-        })
 
         # Prepare final results
         final_results = {
@@ -590,7 +556,6 @@ async def orchestrate_results(state: AnalysisState) -> Dict:
             "top_materials": top_materials,
             "all_materials": scored_materials,
             "material_summaries": material_summaries,
-            "executive_summary": executive_summary
         }
 
         # Save report
@@ -765,36 +730,56 @@ def print_results(result: Dict[str, Any], thread_id: str):
     print(f"Timestamp: {CURRENT_TIME}")
 
     if materials := results.get("material_summaries", []):
-        for i, material in enumerate(materials, 1):
-            name = material.get("material_name", f"Material {i}")
-            mpr = material.get("summary", {}).get("material_performance_review", {})
+        print("\nMaterial Analysis Report")
+        print("========================")
+        for i, entry in enumerate(materials, 1):
+            name = entry.get("material_name", f"Material {i}")
+            review = entry.get("summary", {})
+
+            snapshot = review.get("executive_snapshot", "N/A")
+            score    = review.get("composite_score", "N/A")
+            strengths   = review.get("strengths", [])
+            trade_offs  = review.get("trade_offs", [])
+            sci = review.get("supply_chain_implications", {})
+            rec = review.get("recommendation", {})
+
             print(f"\n{i}. Material: {name}")
             print("------------------------")
-            print(f"Score: {mpr.get('calculated_score', 'N/A')}")
-            print(f"\nRanking Justification:\n> {mpr.get('ranking_justification', 'N/A')}")
+            print(f"Executive Snapshot: {snapshot}")
+            print(f"Composite Score: {score}")
 
-            if strengths := mpr.get("domain_strengths", []):
-                print("\n✅ Domain Strengths:")
+            if strengths:
+                print("\n✅ Strengths & Alignment:")
                 for j, s in enumerate(strengths, 1):
-                    print(f"{j}. Dimension: {s.get('dimension')}")
-                    print(f"   Reason: {s.get('reason_for_strength')}")
-                    print(f"   Impact on Ranking: {s.get('impact_on_ranking')}")
+                    dim = s.get("dimension", "Unknown")
+                    ins = s.get("insight", "")
+                    print(f"{j}. {dim}: {ins}")
 
-            if weaknesses := mpr.get("compensating_factors", []):
-                print("\n⚠️ Compensating Factors:")
-                for j, w in enumerate(weaknesses, 1):
-                    print(f"{j}. Dimension: {w.get('dimension')}")
-                    print(f"   Weakness: {w.get('weakness_reason')}")
-                    print(f"   Compensated By: {w.get('compensated_by')}")
-                    print(f"   Justification: {w.get('justification')}")
+            if trade_offs:
+                print("\n⚖️ Trade-off Analysis:")
+                for j, t in enumerate(trade_offs, 1):
+                    dim = t.get("dimension", "Unknown")
+                    mit = t.get("mitigation", "")
+                    print(f"{j}. {dim}: {mit}")
 
-            if fit := mpr.get("fit_for_use", {}):
-                print("\n🧪 Fit for Use:")
-                print(f"Summary:\n> {fit.get('summary')}")
-                if use_cases := fit.get("suitable_use_cases", []):
-                    print("Suitable Use Cases:")
-                    for case in use_cases:
-                        print(f"- {case}")
+            if sci:
+                print("\n📦 Supply-Chain Implications:")
+                print(f"  • Costs     : {sci.get('costs', '')}")
+                print(f"  • Logistics : {sci.get('logistics', '')}")
+                print(f"  • Regulatory: {sci.get('regulatory', '')}")
+                print(f"  • Consumer  : {sci.get('consumer', '')}")
+
+            if rec:
+                adopt = rec.get("adopt", False)
+                just = rec.get("justification", "")
+                gain = rec.get("sustainability_gain_percent", "N/A")
+                delta = rec.get("cost_delta_percent", "N/A")
+                print("\n📈 Strategic Recommendation:")
+                print(f"  Adopt?            : {'Yes' if adopt else 'No'}")
+                print(f"  Justification     : {just}")
+                print(f"  Sustainability Δ% : {gain}")
+                print(f"  Cost Δ%           : {delta}")
+
 
 
 async def main():

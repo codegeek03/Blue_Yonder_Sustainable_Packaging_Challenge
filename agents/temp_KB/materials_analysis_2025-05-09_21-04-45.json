@@ -2,527 +2,527 @@
   "materials": {
     "physical_form": [
       {
-        "material_name": "Aluminum Alloy (typically 5182 or 3004)",
-        "properties": "Lightweight, high strength-to-weight ratio, excellent corrosion resistance, easily formable.",
-        "application": "Primary can body and lid material."
+        "material_name": "Paperboard",
+        "properties": "Lightweight, printable, recyclable",
+        "application": "Outer carton for multipack or bulk packaging"
       },
       {
-        "material_name": "Internal Coating (Epoxy or Acrylic)",
-        "properties": "Chemically inert, prevents beer from reacting with the aluminum, BPA-free options available.",
-        "application": "Lining the inside of the can to protect the beer's flavor and quality."
+        "material_name": "PET (Polyethylene Terephthalate)",
+        "properties": "Transparent, rigid, recyclable",
+        "application": "Clear clamshell or tray to display laddoos"
       },
       {
-        "material_name": "External Coating (Varnish or UV-cured coating)",
-        "properties": "Provides a printable surface, protects the aluminum from scratches and external corrosion, enhances aesthetics.",
-        "application": "Outer layer of the can, providing a surface for labels and artwork."
+        "material_name": "BOPP (Biaxially Oriented Polypropylene)",
+        "properties": "Flexible, printable, moisture barrier",
+        "application": "Flow wrap for individual laddoos or small packs"
       },
       {
-        "material_name": "Easy-Open End (Aluminum Alloy)",
-        "properties": "Specifically designed alloy for easy opening, typically with a pre-scored rivet and tab.",
-        "application": "The lid of the can, allowing for easy access to the contents."
+        "material_name": "Aluminum Foil",
+        "properties": "Excellent barrier properties, malleable",
+        "application": "Inner liner for extended shelf life"
       },
       {
-        "material_name": "Seaming Compound (Polymeric Sealant)",
-        "properties": "Provides a hermetic seal between the can body and the lid, preventing leakage and contamination.",
-        "application": "Securing the lid to the can body to maintain airtight closure."
+        "material_name": "HDPE (High-Density Polyethylene)",
+        "properties": "Durable, impact-resistant, food-safe",
+        "application": "Rigid containers for large quantities"
       },
       {
-        "material_name": "Ink (Various formulations)",
-        "properties": "UV curable, water-based, or solvent-based inks, depending on printing process and desired finish. Resistant to scratching and fading.",
-        "application": "Printing graphics, branding, and information on the can's exterior."
+        "material_name": "Glassine Paper",
+        "properties": "Smooth, grease-resistant, translucent",
+        "application": "Individual wrapping to prevent sticking"
       },
       {
-        "material_name": "Adhesive (for labels, if applicable)",
-        "properties": "Pressure-sensitive or heat-activated, food-grade, and resistant to moisture and temperature changes.",
-        "application": "Attaching paper or plastic labels to the can (less common now with direct printing)."
+        "material_name": "Corrugated Cardboard",
+        "properties": "Strong, cushioning, recyclable",
+        "application": "Shipping boxes for distribution"
       },
       {
-        "material_name": "Nitrogen (Liquid or Gaseous)",
-        "properties": "Inert gas, used to purge oxygen during filling to improve shelf life.",
-        "application": "Injected into the can during filling to reduce oxidation and maintain beer quality."
+        "material_name": "Cellophane",
+        "properties": "Biodegradable, transparent",
+        "application": "Wrapping individual laddoos for premium presentation"
       },
       {
-        "material_name": "Pallet Wrap (LDPE or LLDPE)",
-        "properties": "Stretchable, provides load stability during transportation.",
-        "application": "Securing stacks of beer cans on pallets for shipping."
+        "material_name": "Metallized Film",
+        "properties": "High barrier, aesthetic appeal",
+        "application": "Laminate for pouches and wrappers"
       },
       {
-        "material_name": "Corrugated Cardboard (for cases and trays)",
-        "properties": "Provides cushioning and protection during transit and storage, recyclable.",
-        "application": "Forming cases or trays that hold multiple beer cans together."
+        "material_name": "PLA (Polylactic Acid)",
+        "properties": "Biodegradable, compostable, plant-based",
+        "application": "Eco-friendly clamshells or trays"
       }
     ],
     "fragility": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Relatively durable, but can dent or deform under significant impact.  Resistant to shattering.",
-        "application": "The primary structural component of the can, providing impact resistance."
+        "material_name": "Foam Inserts (Polyethylene)",
+        "properties": "Cushioning, shock absorption",
+        "application": "Protecting individual laddoos within a box"
       },
       {
-        "material_name": "Internal Coating",
-        "properties": "Flexible but thin; prone to scratching or damage if the can is severely dented.",
-        "application": "Protecting the beer from contact with the aluminum; damage can compromise this barrier."
+        "material_name": "Bubble Wrap (Polyethylene)",
+        "properties": "Lightweight, cushioning",
+        "application": "Wrapping boxes for shipping"
       },
       {
-        "material_name": "External Coating",
-        "properties": "Resistant to minor abrasions, but can be scratched or chipped with sharp impacts.",
-        "application": "Protecting the exterior of the can and providing a printable surface."
+        "material_name": "Corrugated Cardboard Dividers",
+        "properties": "Structural support, cushioning",
+        "application": "Separating laddoos in a multipack box"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "Designed for easy opening, but can be accidentally opened or damaged with excessive force.",
-        "application": "Providing a convenient opening mechanism for the can."
+        "material_name": "Molded Pulp",
+        "properties": "Recycled material, cushioning",
+        "application": "Protective trays for individual laddoos"
       },
       {
-        "material_name": "Seaming Compound",
-        "properties": "Flexible and resilient, but can be compromised if the seam is severely deformed.",
-        "application": "Maintaining a hermetic seal between the can body and the lid."
+        "material_name": "Inflatable Air Pillows",
+        "properties": "Lightweight, customizable cushioning",
+        "application": "Void fill in shipping boxes"
       },
       {
-        "material_name": "Ink",
-        "properties": "Durable when cured properly, but can be scratched or rubbed off with abrasion.",
-        "application": "Providing graphics and information on the can's exterior."
+        "material_name": "Kraft Paper",
+        "properties": "Strong, cushioning when layered",
+        "application": "Wrapping individual boxes for added protection"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Strength varies depending on type. Label can peel if not properly applied or exposed to moisture.",
-        "application": "Attaching labels to the can (if used)."
+        "material_name": "Paper Cushioning",
+        "properties": "Eco-friendly void fill",
+        "application": "Filling empty space within boxes"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Inert gas, no direct effect on fragility, but loss of nitrogen can lead to oxidation and spoilage.",
-        "application": "Protecting the beer from oxidation."
+        "material_name": "Thermoformed Trays (PET)",
+        "properties": "Rigid, form-fitting protection",
+        "application": "Holding laddoos securely in place"
       },
       {
-        "material_name": "Pallet Wrap",
-        "properties": "Provides limited impact protection. Primarily for load stabilization.",
-        "application": "Securing cans on pallets."
+        "material_name": "Edge Protectors (Cardboard or Plastic)",
+        "properties": "Reinforcement, crush resistance",
+        "application": "Protecting corners of shipping boxes"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Provides cushioning, but can be crushed under heavy loads or impacts.",
-        "application": "Protecting multiple cans during shipping and handling."
+        "material_name": "Honeycomb Paperboard",
+        "properties": "High strength-to-weight ratio, cushioning",
+        "application": "Internal support within boxes"
       }
     ],
     "shelf_life": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Highly durable, resists corrosion, contributing to a long shelf life.",
-        "application": "Maintaining structural integrity and preventing corrosion that could affect the beer's quality."
+        "material_name": "Modified Atmosphere Packaging (MAP) Films",
+        "properties": "Controls gas composition, extends shelf life",
+        "application": "Sealing trays or pouches"
       },
       {
-        "material_name": "Internal Coating",
-        "properties": "Essential for preventing the beer from reacting with the aluminum, extending shelf life by preventing metallic taste and corrosion.",
-        "application": "Protecting the beer's flavor and quality over time."
+        "material_name": "Vacuum Packaging Films (Multilayer)",
+        "properties": "Removes oxygen, extends shelf life",
+        "application": "Sealing pouches for long-term storage"
       },
       {
-        "material_name": "External Coating",
-        "properties": "Protects the can from external corrosion, preventing rust and extending the can's lifespan.",
-        "application": "Maintaining the can's appearance and integrity over time."
+        "material_name": "Aluminum Laminates",
+        "properties": "Excellent barrier to oxygen and moisture",
+        "application": "Pouches and wrappers for extended shelf life"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "Maintains a tight seal to prevent oxygen ingress, crucial for extending shelf life.",
-        "application": "Ensuring a hermetic seal to protect the beer from oxidation and contamination."
+        "material_name": "High Barrier Films (EVOH)",
+        "properties": "Excellent gas barrier, extends shelf life",
+        "application": "Lamination layer in flexible packaging"
       },
       {
-        "material_name": "Seaming Compound",
-        "properties": "Provides an airtight seal, preventing oxygen and microbial contamination, which are critical for shelf life.",
-        "application": "Ensuring a secure and airtight closure to prevent spoilage."
+        "material_name": "Desiccant Packets (Silica Gel)",
+        "properties": "Absorbs moisture, prevents spoilage",
+        "application": "Inside packaging to maintain dryness"
       },
       {
-        "material_name": "Ink",
-        "properties": "Resistant to fading and degradation, ensuring the label remains legible throughout the shelf life.",
-        "application": "Maintaining the can's branding and information over time."
+        "material_name": "Oxygen Absorbers",
+        "properties": "Removes oxygen from the packaging",
+        "application": "Extending shelf life in sealed containers"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Must maintain adhesion over the shelf life, even under varying temperatures and humidity.",
-        "application": "Keeping the label securely attached to the can for its entire shelf life."
+        "material_name": "Antimicrobial Packaging Films",
+        "properties": "Inhibits microbial growth, extends shelf life",
+        "application": "Direct contact layer with laddoos"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Inert gas that reduces oxygen content, significantly extending shelf life by preventing oxidation.",
-        "application": "Protecting the beer from oxidation, which can lead to staling and off-flavors."
+        "material_name": "UV-Blocking Films",
+        "properties": "Protects against UV degradation, maintains flavor",
+        "application": "Outer layer for light-sensitive ingredients"
       },
       {
-        "material_name": "Pallet Wrap",
-        "properties": "Protects from dust and moisture, extending shelf life by maintaining cleanliness.",
-        "application": "Protecting the packaged cans from environmental factors during storage."
+        "material_name": "Ethylene Absorbers",
+        "properties": "Removes ethylene gas, slows ripening (if applicable)",
+        "application": "Extending shelf life of ingredients"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Provides physical protection during storage, preventing damage that could compromise shelf life.",
-        "application": "Protecting the cans from physical damage during storage and transportation."
+        "material_name": "Controlled Atmosphere Packaging (CAP) Containers",
+        "properties": "Maintains specific gas concentrations",
+        "application": "Bulk storage for ingredients"
       }
     ],
     "chemical_properties": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Resistant to corrosion, but can react with highly acidic or alkaline substances. Passivated to minimize reactivity.",
-        "application": "Providing the primary container for the beer, with minimal chemical interaction."
+        "material_name": "Food-Grade Inks",
+        "properties": "Non-toxic, resistant to fading, compliant with food safety regulations",
+        "application": "Printing labels and branding"
       },
       {
-        "material_name": "Internal Coating",
-        "properties": "Chemically inert, prevents the beer from reacting with the aluminum. Must be food-grade and resistant to beer's pH.",
-        "application": "Preventing any chemical interaction between the beer and the can's metal."
+        "material_name": "Adhesives (Food-Safe)",
+        "properties": "Non-toxic, strong bonding, compliant with food safety regulations",
+        "application": "Sealing cartons and labels"
       },
       {
-        "material_name": "External Coating",
-        "properties": "Resistant to UV light and moisture, protecting the can and ink from degradation.",
-        "application": "Protecting the can's exterior from environmental chemical reactions."
+        "material_name": "Anti-Static Films (PET or BOPP)",
+        "properties": "Reduces static electricity, prevents dust attraction",
+        "application": "Wrapping to keep packaging clean"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "Made from the same aluminum alloy, passivated to prevent corrosion.",
-        "application": "Providing a chemically stable opening mechanism."
+        "material_name": "Oxygen Scavenging Polymers",
+        "properties": "Reacts with oxygen to reduce concentration",
+        "application": "Integrated into packaging to enhance shelf life"
       },
       {
-        "material_name": "Seaming Compound",
-        "properties": "Must be chemically compatible with beer and the aluminum alloy, preventing any leaching or degradation.",
-        "application": "Maintaining a chemically stable and secure seal."
+        "material_name": "Moisture Barrier Coatings (Acrylic or Wax)",
+        "properties": "Prevents moisture absorption",
+        "application": "Coating on paperboard"
       },
       {
-        "material_name": "Ink",
-        "properties": "Chemically stable and resistant to fading when exposed to UV light, moisture, and temperature changes.  Low migration formulations are essential.",
-        "application": "Providing long-lasting and chemically safe graphics and information."
+        "material_name": "Grease-Resistant Coatings",
+        "properties": "Prevents oil penetration",
+        "application": "Inner lining for paper containers"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Chemically inert and food-grade, preventing any migration of chemicals into the beer.",
-        "application": "Securing labels without affecting the beer's chemical composition."
+        "material_name": "Antimicrobial Coatings",
+        "properties": "Inhibits microbial growth on packaging surface",
+        "application": "Applied to films and containers"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Inert gas; does not react with the beer or the can's materials.",
-        "application": "Preventing oxidation without introducing any chemical reactions."
+        "material_name": "pH-Neutral Materials",
+        "properties": "Does not react with food components",
+        "application": "Direct contact layer with laddoos"
       },
       {
-        "material_name": "Pallet Wrap",
-        "properties": "Chemically stable under normal storage conditions, preventing leaching or degradation.",
-        "application": "Providing a chemically safe outer layer for palletized cans."
+        "material_name": "BPA-Free Plastics (Polypropylene, PET)",
+        "properties": "Safe for food contact, does not leach harmful chemicals",
+        "application": "Containers and trays"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Relatively inert but can absorb moisture; treated to improve water resistance.",
-        "application": "Providing physical protection without chemical contamination, minimizing moisture absorption."
+        "material_name": "Fluoropolymer Coatings",
+        "properties": "Oil and water repellent, prevents sticking",
+        "application": "Lining for easy release of laddoos"
       }
     ],
     "hygiene_sensitivity": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Easily cleaned and sterilized, but requires a protective coating to prevent corrosion from cleaning agents.",
-        "application": "Providing a hygienic container with proper cleaning and coating."
+        "material_name": "Sterilized Packaging Films",
+        "properties": "Free from microorganisms",
+        "application": "Direct contact with laddoos"
       },
       {
-        "material_name": "Internal Coating",
-        "properties": "Must be food-grade and resistant to microbial growth, ensuring the beer remains sterile.",
-        "application": "Preventing microbial contamination of the beer."
+        "material_name": "Tamper-Evident Seals",
+        "properties": "Indicates if packaging has been opened",
+        "application": "Sealing containers for security"
       },
       {
-        "material_name": "External Coating",
-        "properties": "Provides a smooth, non-porous surface that is easy to clean and sanitize.",
-        "application": "Maintaining a hygienic exterior surface."
+        "material_name": "Easy-to-Clean Surfaces (Smooth Plastics)",
+        "properties": "Prevents bacterial buildup",
+        "application": "Reusable containers"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "Designed to be easily cleaned and sanitized during the filling process.",
-        "application": "Ensuring a hygienic opening mechanism."
+        "material_name": "Single-Use Packaging",
+        "properties": "Reduces cross-contamination risk",
+        "application": "Individual servings"
       },
       {
-        "material_name": "Seaming Compound",
-        "properties": "Must be resistant to microbial growth and provide a hermetic seal, preventing contamination.",
-        "application": "Maintaining a sterile seal to prevent microbial ingress."
+        "material_name": "Materials with Low Porosity",
+        "properties": "Reduces bacterial absorption",
+        "application": "Direct contact layers"
       },
       {
-        "material_name": "Ink",
-        "properties": "Low migration inks are used to prevent any transfer of chemicals to the beverage.  Surfaces are cleanable.",
-        "application": "Safe for contact with food and beverages without transfer of harmful substances."
+        "material_name": "Antimicrobial Packaging",
+        "properties": "Inhibits microbial growth",
+        "application": "Extends shelf life and reduces contamination risk"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Food-grade and resistant to microbial growth, ensuring no contamination of the beer.",
-        "application": "Securing labels without compromising hygiene."
+        "material_name": "Heat-Sealable Films",
+        "properties": "Creates airtight seals",
+        "application": "Preventing contamination"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Sterile gas used to purge oxygen, preventing microbial growth.",
-        "application": "Creating an inert atmosphere that inhibits microbial growth."
+        "material_name": "Controlled Environment Packaging",
+        "properties": "Manufactured in a sterile environment",
+        "application": "Ensuring hygiene standards"
       },
       {
-        "material_name": "Pallet Wrap",
-        "properties": "Protects from dust and contaminants, maintaining cleanliness during storage.",
-        "application": "Preventing contamination of the cans during storage and transportation."
+        "material_name": "Washable Packaging",
+        "properties": "Can be easily cleaned and sanitized",
+        "application": "Reusable containers for commercial use"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Can harbor bacteria if wet; often treated with antimicrobial agents. Proper storage is essential.",
-        "application": "Providing physical protection while minimizing the risk of microbial contamination, keeping the cans dry."
+        "material_name": "UV-Sterilized Packaging",
+        "properties": "Eliminates microorganisms using UV light",
+        "application": "Enhancing hygiene standards"
       }
     ],
     "temperature_sensitivity": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Stable over a wide temperature range, but can expand or contract slightly, affecting the internal pressure.",
-        "application": "Maintaining structural integrity under varying temperatures."
+        "material_name": "Insulated Packaging (Expanded Polystyrene EPS)",
+        "properties": "Maintains temperature, protects from heat and cold",
+        "application": "Shipping temperature-sensitive laddoos"
       },
       {
-        "material_name": "Internal Coating",
-        "properties": "Designed to withstand typical beverage temperatures, but extreme temperatures can affect its integrity.",
-        "application": "Maintaining a protective barrier at varying temperatures."
+        "material_name": "Temperature Indicating Labels",
+        "properties": "Changes color based on temperature exposure",
+        "application": "Monitoring temperature during shipping"
       },
       {
-        "material_name": "External Coating",
-        "properties": "Resistant to temperature changes, preventing cracking or peeling.",
-        "application": "Protecting the can's exterior under fluctuating temperatures."
+        "material_name": "Cold Packs (Gel Packs)",
+        "properties": "Maintains low temperature during transit",
+        "application": "Inside insulated packaging"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "Designed to function properly over a range of temperatures, ensuring easy opening.",
-        "application": "Providing a reliable opening mechanism under various temperature conditions."
+        "material_name": "Heat-Resistant Films (CPET)",
+        "properties": "Withstands high temperatures without deforming",
+        "application": "Packaging for heated laddoos"
       },
       {
-        "material_name": "Seaming Compound",
-        "properties": "Maintains its sealing properties over a wide temperature range, preventing leaks.",
-        "application": "Ensuring a secure seal, even with temperature fluctuations."
+        "material_name": "Phase Change Materials (PCM)",
+        "properties": "Absorbs and releases heat to maintain temperature",
+        "application": "Temperature-controlled packaging"
       },
       {
-        "material_name": "Ink",
-        "properties": "Formulated to resist fading or running under varying temperatures.",
-        "application": "Maintaining the can's branding and information, even with temperature changes."
+        "material_name": "Aluminum Foil Laminates",
+        "properties": "Reflects heat, keeps contents cool",
+        "application": "Packaging for hot weather conditions"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Maintains adhesion strength under different temperatures, preventing label peeling.",
-        "application": "Keeping the label securely attached, regardless of temperature fluctuations."
+        "material_name": "Vacuum Insulated Panels (VIP)",
+        "properties": "High thermal resistance, efficient insulation",
+        "application": "High-performance insulated containers"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Gaseous at room temperature, expands and contracts with temperature changes, affecting internal pressure.",
-        "application": "Maintaining a consistent inert atmosphere under varying temperatures."
+        "material_name": "Temperature-Controlled Shipping Containers",
+        "properties": "Maintains consistent temperature during transport",
+        "application": "Shipping large quantities of laddoos"
       },
       {
-        "material_name": "Pallet Wrap",
-        "properties": "Can become brittle at low temperatures and stretch at high temperatures, affecting load stability.",
-        "application": "Maintaining load stability during temperature changes."
+        "material_name": "Reflective Films",
+        "properties": "Reflects solar radiation, reduces heat gain",
+        "application": "Outer layer for packaging"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Can absorb moisture in humid conditions, weakening its structure; performance decreases significantly when wet.",
-        "application": "Providing physical protection, best maintained in temperature-controlled environments."
+        "material_name": "Expanded Polypropylene (EPP) Foam",
+        "properties": "Durable insulation, impact resistance",
+        "application": "Temperature-controlled containers"
       }
     ],
     "volatility_or_hazard_risk": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Non-volatile and generally safe. Aluminum dust can be a fire hazard under specific conditions (very fine particles).",
-        "application": "Providing a stable and safe container."
+        "material_name": "Tamper-Evident Packaging",
+        "properties": "Shows if packaging has been opened or altered",
+        "application": "Ensuring product integrity and safety"
       },
       {
-        "material_name": "Internal Coating",
-        "properties": "Typically non-volatile and safe, but specific formulations should be BPA-free and comply with food safety regulations.",
-        "application": "Ensuring a safe barrier between the beer and the aluminum."
+        "material_name": "Child-Resistant Closures",
+        "properties": "Difficult for children to open, prevents accidental ingestion",
+        "application": "If laddoos contain potentially harmful ingredients (unlikely, but could apply to some niche recipes)"
       },
       {
-        "material_name": "External Coating",
-        "properties": "Low VOC (Volatile Organic Compound) formulations are preferred to minimize air pollution.",
-        "application": "Providing a safe and environmentally friendly exterior coating."
+        "material_name": "Warning Labels",
+        "properties": "Clearly indicates potential hazards (allergens)",
+        "application": "Communicating allergen information"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "Made of aluminum alloy; shares the same safety characteristics as the can body.",
-        "application": "Providing a safe and reliable opening mechanism."
+        "material_name": "Secure Sealing Mechanisms",
+        "properties": "Prevents leakage or spillage",
+        "application": "Ensuring product remains contained"
       },
       {
-        "material_name": "Seaming Compound",
-        "properties": "Non-volatile and safe when cured properly. Must meet food safety standards.",
-        "application": "Ensuring a safe and secure seal."
+        "material_name": "Protective Overpacks",
+        "properties": "Provides additional layer of containment",
+        "application": "Shipping sensitive laddoos"
       },
       {
-        "material_name": "Ink",
-        "properties": "Low VOC inks are used to minimize air pollution. Heavy metals are avoided. Must be food safe.",
-        "application": "Providing safe and environmentally friendly graphics and information."
+        "material_name": "UN-Certified Packaging",
+        "properties": "Meets international standards for hazardous materials",
+        "application": "If any ingredient is classified as hazardous (unlikely)"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Non-volatile and food-grade, ensuring no harmful substances migrate into the beer.",
-        "application": "Securing labels without posing a hazard."
+        "material_name": "Desiccant with Indicator",
+        "properties": "Indicates when desiccant is saturated",
+        "application": "Ensuring optimal dryness and preventing mold growth"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Inert gas; non-toxic and non-flammable. Can cause asphyxiation if it displaces oxygen in a confined space.",
-        "application": "Providing an inert atmosphere without posing a significant hazard."
+        "material_name": "Gas-Tight Packaging",
+        "properties": "Prevents gas exchange, reducing spoilage",
+        "application": "Long-term storage"
       },
       {
-        "material_name": "Pallet Wrap",
-        "properties": "Generally safe, but can be a choking hazard for small children if ingested.",
-        "application": "Securing pallets without posing a significant risk."
+        "material_name": "Shock-Absorbing Materials",
+        "properties": "Protects against physical damage",
+        "application": "Reducing risk of breakage during transit"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Combustible; must be stored away from open flames and heat sources. Dust can be a fire hazard.",
-        "application": "Providing physical protection, requiring proper storage to minimize fire risk."
+        "material_name": "Security Labels with Serial Numbers",
+        "properties": "Authenticates product and deters counterfeiting",
+        "application": "High-value or specialized laddoos"
       }
     ],
     "visibility_and_display": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Provides a bright, reflective surface that enhances visibility. Can be coated with different finishes for aesthetic appeal.",
-        "application": "Providing a visually appealing and eye-catching container."
+        "material_name": "Clear PET Clamshells",
+        "properties": "Transparent, showcases laddoos",
+        "application": "Retail display"
       },
       {
-        "material_name": "Internal Coating",
-        "properties": "Not directly visible, but affects the beer's color and clarity.",
-        "application": "Maintaining the beer's visual appeal."
+        "material_name": "Windowed Cartons",
+        "properties": "Partial visibility, aesthetic appeal",
+        "application": "Retail display"
       },
       {
-        "material_name": "External Coating",
-        "properties": "Provides a smooth, printable surface for high-quality graphics and branding.",
-        "application": "Enhancing the can's visual appeal and providing a platform for branding."
+        "material_name": "High-Gloss Printing",
+        "properties": "Enhances colors, attracts attention",
+        "application": "Branding and product information"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "Designed to be easily identifiable and convenient to use, contributing to the overall user experience.",
-        "application": "Providing a visually clear and user-friendly opening mechanism."
+        "material_name": "Embossing/Debossing",
+        "properties": "Adds tactile and visual appeal",
+        "application": "Premium packaging"
       },
       {
-        "material_name": "Seaming Compound",
-        "properties": "Not directly visible, but ensures a clean and professional appearance.",
-        "application": "Maintaining a visually appealing and secure closure."
+        "material_name": "Shrink Sleeves",
+        "properties": "Full-coverage graphics, tamper evidence",
+        "application": "Branding and security"
       },
       {
-        "material_name": "Ink",
-        "properties": "Provides high-resolution graphics and vibrant colors that attract attention and communicate branding messages.",
-        "application": "Creating visually appealing and informative designs."
+        "material_name": "Custom-Shaped Packaging",
+        "properties": "Unique and eye-catching",
+        "application": "Special editions or promotions"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Not directly visible, but ensures the label remains securely attached, maintaining the can's appearance.",
-        "application": "Keeping the label intact and visually appealing."
+        "material_name": "Interactive Packaging (QR Codes)",
+        "properties": "Engages customers, provides information",
+        "application": "Marketing and traceability"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Not visible, but affects the beer's appearance (head retention).",
-        "application": "Improving the beer's visual presentation."
+        "material_name": "Metallic Inks and Foils",
+        "properties": "Adds luxury appeal",
+        "application": "Premium products"
       },
       {
-        "material_name": "Pallet Wrap",
-        "properties": "Transparent, allowing for easy identification of the product. Can be printed with branding or information.",
-        "application": "Maintaining product visibility during storage and transportation."
+        "material_name": "Holographic Films",
+        "properties": "Eye-catching and secure",
+        "application": "Authentication and visual appeal"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Can be printed with branding or information, enhancing product visibility on shelves.",
-        "application": "Providing additional display and branding opportunities."
+        "material_name": "Sustainable Inks (Soy-Based)",
+        "properties": "Environmentally friendly, vibrant colors",
+        "application": "Eco-conscious branding"
       }
     ],
     "quantity_and_dosage": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Determines the can's volume and size, ensuring a consistent quantity of beer.",
-        "application": "Defining the can's capacity."
+        "material_name": "Individually Wrapped Laddoos (Flow Wrap)",
+        "properties": "Maintains freshness, controls portion size",
+        "application": "Single-serving packs"
       },
       {
-        "material_name": "Internal Coating",
-        "properties": "Applied in a precise thickness to prevent interactions between the beer and aluminum without affecting volume.",
-        "application": "Providing a protective layer without altering the can's capacity."
+        "material_name": "Multi-Compartment Trays",
+        "properties": "Separates laddoos, prevents sticking",
+        "application": "Retail packs"
       },
       {
-        "material_name": "External Coating",
-        "properties": "Applied in a thin layer, ensuring it doesn't affect the can's dimensions or volume significantly.",
-        "application": "Protecting the can's exterior without changing its size."
+        "material_name": "Resealable Pouches",
+        "properties": "Maintains freshness after opening",
+        "application": "Bulk packaging"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "Designed to fit securely onto the can, maintaining the specified volume.",
-        "application": "Sealing the can while preserving its capacity."
+        "material_name": "Unit-Dose Packaging (Blister Packs)",
+        "properties": "Precise portion control, hygiene",
+        "application": "Specialized or medicinal laddoos"
       },
       {
-        "material_name": "Seaming Compound",
-        "properties": "Used in a precise amount to create a hermetic seal without affecting the beer's volume.",
-        "application": "Securing the lid without altering the can's capacity."
+        "material_name": "Pre-Portioned Containers",
+        "properties": "Convenient serving sizes",
+        "application": "Ready-to-eat packages"
       },
       {
-        "material_name": "Ink",
-        "properties": "Applied in a thin layer, ensuring it doesn't add significant weight or affect the can's overall dimensions.",
-        "application": "Providing graphics and information without altering the can's capacity."
+        "material_name": "Tamper-Evident Bands",
+        "properties": "Ensures integrity of the container",
+        "application": "Bulk quantities"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Used sparingly to attach labels, minimizing its impact on the can's weight and dimensions.",
-        "application": "Securing labels without affecting the can's capacity or weight."
+        "material_name": "Sachets",
+        "properties": "Individual servings",
+        "application": "Small quantities for sampling or gifting"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Injected in a controlled amount to maintain pressure and preserve the beer's quality without overfilling the can.",
-        "application": "Maintaining an inert atmosphere within the can."
+        "material_name": "Dosing Spoons or Scoops",
+        "properties": "Accurate measurement",
+        "application": "Larger containers for serving"
       },
       {
-        "material_name": "Pallet Wrap",
-        "properties": "Used to secure pallets of cans, ensuring a stable quantity of product during transport.",
-        "application": "Securing multiple cans together on a pallet."
+        "material_name": "Calibrated Packaging",
+        "properties": "Provides accurate measurement markings",
+        "application": "Large quantities with portioning requirements"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Designed to hold a specific number of cans, ensuring consistent quantities in each package.",
-        "application": "Packaging multiple cans for sale in consistent quantities."
+        "material_name": "Child-Resistant Packaging (for small parts)",
+        "properties": "Prevents accidental ingestion",
+        "application": "If product contains small, potentially hazardous components"
       }
     ],
     "value_and_theft_sensitivity": [
       {
-        "material_name": "Aluminum Alloy",
-        "properties": "Relatively inexpensive but recyclable, which can deter theft for scrap value.",
-        "application": "Providing a container with moderate inherent value."
+        "material_name": "Tamper-Evident Seals",
+        "properties": "Shows if packaging has been opened",
+        "application": "Discourages theft and ensures product integrity"
       },
       {
-        "material_name": "Internal Coating",
-        "properties": "Minimal intrinsic value, but essential for protecting the beer's quality and preventing counterfeiting.",
-        "application": "Protecting the beer and verifying authenticity."
+        "material_name": "Security Labels (Holographic)",
+        "properties": "Difficult to counterfeit, authenticates product",
+        "application": "High-value laddoos"
       },
       {
-        "material_name": "External Coating",
-        "properties": "Low intrinsic value but protects the can's branding, making it harder to counterfeit.",
-        "application": "Protecting the can's branding and preventing counterfeiting."
+        "material_name": "RFID Tags",
+        "properties": "Tracks product location, deters theft",
+        "application": "Inventory management and security"
       },
       {
-        "material_name": "Easy-Open End",
-        "properties": "Minimal intrinsic value, but essential for the can's functionality.",
-        "application": "Providing a functional and tamper-evident opening mechanism."
+        "material_name": "Serialized Packaging",
+        "properties": "Unique identifier for each package, tracks movement",
+        "application": "Traceability and security"
       },
       {
-        "material_name": "Seaming Compound",
-        "properties": "Minimal intrinsic value, but critical for preventing tampering and maintaining product integrity.",
-        "application": "Ensuring a secure and tamper-evident seal."
+        "material_name": "Clamshell Packaging (Secure Closure)",
+        "properties": "Difficult to open without damaging, deters theft",
+        "application": "Retail display"
       },
       {
-        "material_name": "Ink",
-        "properties": "Low intrinsic value, but high-quality printing and unique designs can deter counterfeiting.",
-        "application": "Enhancing the can's appearance and making it harder to replicate."
+        "material_name": "Shrink Wrap",
+        "properties": "Secures multiple items, prevents tampering",
+        "application": "Bulk packaging"
       },
       {
-        "material_name": "Adhesive",
-        "properties": "Low intrinsic value, but secures labels that can contain anti-counterfeiting measures.",
-        "application": "Securing labels with features that deter counterfeiting."
+        "material_name": "Opaque Packaging",
+        "properties": "Conceals product identity",
+        "application": "Reducing temptation for theft"
       },
       {
-        "material_name": "Nitrogen",
-        "properties": "Low intrinsic value, primarily used to preserve the beer's quality.",
-        "application": "Preserving the beer's quality and preventing spoilage."
+        "material_name": "Reinforced Packaging",
+        "properties": "Durable, resistant to damage",
+        "application": "Preventing theft during shipping"
       },
       {
-        "material_name": "Pallet Wrap",
-        "properties": "Low intrinsic value, but secures multiple cans, making them harder to steal individually.",
-        "application": "Securing and protecting large quantities of cans."
+        "material_name": "Electronic Article Surveillance (EAS) Tags",
+        "properties": "Triggers alarm if stolen from store",
+        "application": "Retail security"
       },
       {
-        "material_name": "Corrugated Cardboard",
-        "properties": "Low intrinsic value, but packaging deters individual can theft and facilitates easier handling.",
-        "application": "Grouping cans together for easier handling and reduced theft."
+        "material_name": "Protective Cases (Hard Plastic)",
+        "properties": "Provides robust protection, deters theft",
+        "application": "High-end or specialty laddoos"
       }
     ]
   },
   "analysis_timestamp": "2025-05-09 21:04:45",
   "user_login": "codegeek03",
-  "product_name": "Beer cans",
+  "product_name": "Motichur Laddoos",
   "status": "completed"
 }

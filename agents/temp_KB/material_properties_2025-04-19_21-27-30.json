@@ -1,169 +1,169 @@
 {
   "top_materials": [
     {
-      "material_name": "Calcium Carbonate",
+      "material_name": "Aluminum Alloy 3004",
       "property_scores": {
         "mechanical_strength": {
-          "value": "40",
-          "unit": "MPa",
-          "score": 7
-        },
-        "chemical_resistance": {
-          "value": "7-9",
-          "unit": "pH range",
-          "score": 6
-        },
-        "thermal_stability": {
-          "value": "80",
-          "unit": "\u00b0C",
-          "score": 7
-        },
-        "barrier_properties": {
-          "value": "10",
-          "unit": "g/(m\u00b2\u00b7day)",
-          "score": 8
-        },
-        "durability": {
-          "value": "0.5",
-          "unit": "years",
-          "score": 5
-        }
-      },
-      "overall_score": 6.6,
-      "key_strength": "Good barrier properties",
-      "main_limitation": "Low durability"
-    },
-    {
-      "material_name": "Polylactic Acid (PLA)",
-      "property_scores": {
-        "mechanical_strength": {
-          "value": "60",
+          "value": "170",
           "unit": "MPa",
           "score": 8
         },
         "chemical_resistance": {
-          "value": "5-7",
-          "unit": "pH range",
-          "score": 5
-        },
-        "thermal_stability": {
-          "value": "60",
-          "unit": "\u00b0C",
-          "score": 6
-        },
-        "barrier_properties": {
-          "value": "15",
-          "unit": "g/(m\u00b2\u00b7day)",
-          "score": 7
-        },
-        "durability": {
-          "value": "1",
-          "unit": "years",
-          "score": 6
-        }
-      },
-      "overall_score": 6.4,
-      "key_strength": "High tensile strength",
-      "main_limitation": "Poor thermal stability"
-    },
-    {
-      "material_name": "Polyethylene (PE)",
-      "property_scores": {
-        "mechanical_strength": {
-          "value": "30",
-          "unit": "MPa",
-          "score": 6
-        },
-        "chemical_resistance": {
-          "value": "1-14",
+          "value": "4-9",
           "unit": "pH range",
           "score": 9
         },
         "thermal_stability": {
-          "value": "70",
+          "value": "-80 to 150",
           "unit": "\u00b0C",
-          "score": 6
+          "score": 9
         },
         "barrier_properties": {
-          "value": "20",
+          "value": "0.001",
           "unit": "g/(m\u00b2\u00b7day)",
-          "score": 6
+          "score": 10
         },
         "durability": {
-          "value": "2",
+          "value": "50",
           "unit": "years",
-          "score": 7
+          "score": 9
         }
       },
-      "overall_score": 6.8,
-      "key_strength": "Excellent resistance",
-      "main_limitation": "Gas permeability"
+      "overall_score": 9,
+      "key_strength": "Excellent barrier properties",
+      "main_limitation": "Lower tensile strength"
     },
     {
-      "material_name": "Polypropylene (PP)",
+      "material_name": "Aluminum Alloy 5182",
       "property_scores": {
         "mechanical_strength": {
-          "value": "35",
+          "value": "310",
           "unit": "MPa",
-          "score": 6
+          "score": 9
         },
         "chemical_resistance": {
-          "value": "2-14",
+          "value": "4-9",
           "unit": "pH range",
-          "score": 8
+          "score": 9
         },
         "thermal_stability": {
-          "value": "100",
+          "value": "-80 to 150",
           "unit": "\u00b0C",
-          "score": 8
+          "score": 9
         },
         "barrier_properties": {
-          "value": "18",
+          "value": "0.001",
           "unit": "g/(m\u00b2\u00b7day)",
-          "score": 6
+          "score": 10
         },
         "durability": {
-          "value": "1.5",
+          "value": "50",
           "unit": "years",
-          "score": 6
+          "score": 9
         }
       },
-      "overall_score": 6.8,
-      "key_strength": "High thermal stability",
-      "main_limitation": "Moderate durability"
+      "overall_score": 9,
+      "key_strength": "High tensile strength",
+      "main_limitation": "Cost could be higher"
     },
     {
-      "material_name": "Chitin",
+      "material_name": "Tinplate Steel",
       "property_scores": {
         "mechanical_strength": {
-          "value": "50",
+          "value": "275",
           "unit": "MPa",
-          "score": 7
+          "score": 8
         },
         "chemical_resistance": {
           "value": "6-8",
           "unit": "pH range",
+          "score": 7
+        },
+        "thermal_stability": {
+          "value": "-50 to 200",
+          "unit": "\u00b0C",
+          "score": 8
+        },
+        "barrier_properties": {
+          "value": "0.0005",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 10
+        },
+        "durability": {
+          "value": "40",
+          "unit": "years",
+          "score": 8
+        }
+      },
+      "overall_score": 8,
+      "key_strength": "Excellent barrier properties",
+      "main_limitation": "Corrosion susceptibility"
+    },
+    {
+      "material_name": "PET Laminated Aluminum",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "150",
+          "unit": "MPa",
+          "score": 7
+        },
+        "chemical_resistance": {
+          "value": "3-10",
+          "unit": "pH range",
+          "score": 8
+        },
+        "thermal_stability": {
+          "value": "-40 to 60",
+          "unit": "\u00b0C",
+          "score": 6
+        },
+        "barrier_properties": {
+          "value": "0.002",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 9
+        },
+        "durability": {
+          "value": "30",
+          "unit": "years",
+          "score": 7
+        }
+      },
+      "overall_score": 7,
+      "key_strength": "Good chemical resistance",
+      "main_limitation": "Lower thermal stability"
+    },
+    {
+      "material_name": "Bioplastic PLA",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "60",
+          "unit": "MPa",
+          "score": 5
+        },
+        "chemical_resistance": {
+          "value": "6-7",
+          "unit": "pH range",
           "score": 6
         },
         "thermal_stability": {
-          "value": "90",
+          "value": "0 to 50",
           "unit": "\u00b0C",
-          "score": 7
+          "score": 4
         },
         "barrier_properties": {
-          "value": "12",
+          "value": "1",
           "unit": "g/(m\u00b2\u00b7day)",
-          "score": 7
+          "score": 5
         },
         "durability": {
-          "value": "1",
+          "value": "10",
           "unit": "years",
-          "score": 6
+          "score": 5
         }
       },
-      "overall_score": 6.6,
-      "key_strength": "Good tensile strength",
-      "main_limitation": "Low pH resistance"
+      "overall_score": 5,
+      "key_strength": "Biodegradable",
+      "main_limitation": "Poor thermal stability"
     }
   ],
   "timestamp": "2025-04-19 21:27:30",

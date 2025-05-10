@@ -1,0 +1,16 @@
+{
+    "product_name": "Motichur Laddoos",
+    "units_per_shipment": 80,
+    "dimensions": {
+        "length": 5.0,
+        "width": 5.0,
+        "height": 5.0
+    },
+    "packaging_location": "kolkata",
+    "budget_constraint": 800.0,
+    "metadata": {
+        "timestamp": "2025-05-09 21:04:45",
+        "user": "codegeek03",
+        "volume": 125.0
+    }
+}

@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "Molded Pulp",
+      "material_name": "Aluminum",
       "environmental_score": 8.5,
-      "key_benefit": "High biodegradability",
+      "key_benefit": "High recyclability rate",
       "primary_concern": "Energy intensive production"
     },
     {
-      "material_name": "Recycled Cardboard",
-      "environmental_score": 7.8,
-      "key_benefit": "High recyclability",
-      "primary_concern": "Fiber degradation risk"
+      "material_name": "Steel",
+      "environmental_score": 7.0,
+      "key_benefit": "Good recyclability",
+      "primary_concern": "Heavy, transport impact"
     },
     {
-      "material_name": "Compostable Plastic",
-      "environmental_score": 6.9,
-      "key_benefit": "Lower fossil fuel use",
-      "primary_concern": "Specific conditions for compost"
-    },
-    {
-      "material_name": "Bagasse",
-      "environmental_score": 6.5,
-      "key_benefit": "Renewable resource",
-      "primary_concern": "Land use for sugarcane"
-    },
-    {
-      "material_name": "PLA (corn-based)",
+      "material_name": "Glass",
       "environmental_score": 6.0,
-      "key_benefit": "Biodegradable potential",
-      "primary_concern": "Industrial composting needed"
+      "key_benefit": "Chemically inert",
+      "primary_concern": "High energy to produce"
+    },
+    {
+      "material_name": "Bioplastic",
+      "environmental_score": 5.5,
+      "key_benefit": "Renewable source",
+      "primary_concern": "Limited biodegradability"
+    },
+    {
+      "material_name": "PET Plastic",
+      "environmental_score": 3.0,
+      "key_benefit": "Lightweight",
+      "primary_concern": "Poor biodegradability"
     }
   ],
   "timestamp": "2025-04-19 21:20:12",

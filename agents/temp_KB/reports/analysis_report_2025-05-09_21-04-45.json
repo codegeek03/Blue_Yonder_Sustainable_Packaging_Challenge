@@ -1,5 +1,5 @@
 {
-  "product_name": "Beer cans",
+  "product_name": "Motichur Laddoos",
   "timestamp": "2025-05-09 21:04:45",
   "user": "codegeek03",
   "weights_used": {
@@ -11,9 +11,29 @@
   },
   "top_materials": [
     {
-      "material_name": "Aluminum Alloy (typically 5182 or 3004)",
+      "material_name": "Aluminum Foil",
+      "properties": 80,
+      "application": "Inner liner for extended shelf life",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 14.55
+    },
+    {
+      "material_name": "Glassine Paper",
+      "properties": 60,
+      "application": "Individual wrapping to prevent sticking",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 10.91
+    },
+    {
+      "material_name": "Paperboard",
       "properties": 0,
-      "application": "Primary can body and lid material.",
+      "application": "Outer carton for multipack or bulk packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -21,9 +41,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating (Epoxy or Acrylic)",
+      "material_name": "PET (Polyethylene Terephthalate)",
       "properties": 0,
-      "application": "Lining the inside of the can to protect the beer's flavor and quality.",
+      "application": "Clear clamshell or tray to display laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -31,29 +51,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating (Varnish or UV-cured coating)",
+      "material_name": "BOPP (Biaxially Oriented Polypropylene)",
       "properties": 0,
-      "application": "Outer layer of the can, providing a surface for labels and artwork.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Easy-Open End (Aluminum Alloy)",
-      "properties": 0,
-      "application": "The lid of the can, allowing for easy access to the contents.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Seaming Compound (Polymeric Sealant)",
-      "properties": 0,
-      "application": "Securing the lid to the can body to maintain airtight closure.",
+      "application": "Flow wrap for individual laddoos or small packs",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -63,9 +63,29 @@
   ],
   "all_materials": [
     {
-      "material_name": "Aluminum Alloy (typically 5182 or 3004)",
+      "material_name": "Aluminum Foil",
+      "properties": 80,
+      "application": "Inner liner for extended shelf life",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 14.55
+    },
+    {
+      "material_name": "Glassine Paper",
+      "properties": 60,
+      "application": "Individual wrapping to prevent sticking",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 10.91
+    },
+    {
+      "material_name": "Paperboard",
       "properties": 0,
-      "application": "Primary can body and lid material.",
+      "application": "Outer carton for multipack or bulk packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -73,9 +93,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating (Epoxy or Acrylic)",
+      "material_name": "PET (Polyethylene Terephthalate)",
       "properties": 0,
-      "application": "Lining the inside of the can to protect the beer's flavor and quality.",
+      "application": "Clear clamshell or tray to display laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -83,9 +103,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating (Varnish or UV-cured coating)",
+      "material_name": "BOPP (Biaxially Oriented Polypropylene)",
       "properties": 0,
-      "application": "Outer layer of the can, providing a surface for labels and artwork.",
+      "application": "Flow wrap for individual laddoos or small packs",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -93,159 +113,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End (Aluminum Alloy)",
+      "material_name": "HDPE (High-Density Polyethylene)",
       "properties": 0,
-      "application": "The lid of the can, allowing for easy access to the contents.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Seaming Compound (Polymeric Sealant)",
-      "properties": 0,
-      "application": "Securing the lid to the can body to maintain airtight closure.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Ink (Various formulations)",
-      "properties": 0,
-      "application": "Printing graphics, branding, and information on the can's exterior.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Adhesive (for labels, if applicable)",
-      "properties": 0,
-      "application": "Attaching paper or plastic labels to the can (less common now with direct printing).",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Nitrogen (Liquid or Gaseous)",
-      "properties": 0,
-      "application": "Injected into the can during filling to reduce oxidation and maintain beer quality.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Pallet Wrap (LDPE or LLDPE)",
-      "properties": 0,
-      "application": "Securing stacks of beer cans on pallets for shipping.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Corrugated Cardboard (for cases and trays)",
-      "properties": 0,
-      "application": "Forming cases or trays that hold multiple beer cans together.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Aluminum Alloy",
-      "properties": 0,
-      "application": "The primary structural component of the can, providing impact resistance.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Internal Coating",
-      "properties": 0,
-      "application": "Protecting the beer from contact with the aluminum; damage can compromise this barrier.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "External Coating",
-      "properties": 0,
-      "application": "Protecting the exterior of the can and providing a printable surface.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Easy-Open End",
-      "properties": 0,
-      "application": "Providing a convenient opening mechanism for the can.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Seaming Compound",
-      "properties": 0,
-      "application": "Maintaining a hermetic seal between the can body and the lid.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Ink",
-      "properties": 0,
-      "application": "Providing graphics and information on the can's exterior.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Adhesive",
-      "properties": 0,
-      "application": "Attaching labels to the can (if used).",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Nitrogen",
-      "properties": 0,
-      "application": "Protecting the beer from oxidation.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Pallet Wrap",
-      "properties": 0,
-      "application": "Securing cans on pallets.",
+      "application": "Rigid containers for large quantities",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -255,7 +125,7 @@
     {
       "material_name": "Corrugated Cardboard",
       "properties": 0,
-      "application": "Protecting multiple cans during shipping and handling.",
+      "application": "Shipping boxes for distribution",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -263,9 +133,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Cellophane",
       "properties": 0,
-      "application": "Maintaining structural integrity and preventing corrosion that could affect the beer's quality.",
+      "application": "Wrapping individual laddoos for premium presentation",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -273,9 +143,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating",
+      "material_name": "Metallized Film",
       "properties": 0,
-      "application": "Protecting the beer's flavor and quality over time.",
+      "application": "Laminate for pouches and wrappers",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -283,9 +153,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating",
+      "material_name": "PLA (Polylactic Acid)",
       "properties": 0,
-      "application": "Maintaining the can's appearance and integrity over time.",
+      "application": "Eco-friendly clamshells or trays",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -293,9 +163,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End",
+      "material_name": "Foam Inserts (Polyethylene)",
       "properties": 0,
-      "application": "Ensuring a hermetic seal to protect the beer from oxidation and contamination.",
+      "application": "Protecting individual laddoos within a box",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -303,9 +173,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seaming Compound",
+      "material_name": "Bubble Wrap (Polyethylene)",
       "properties": 0,
-      "application": "Ensuring a secure and airtight closure to prevent spoilage.",
+      "application": "Wrapping boxes for shipping",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -313,9 +183,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "Corrugated Cardboard Dividers",
       "properties": 0,
-      "application": "Maintaining the can's branding and information over time.",
+      "application": "Separating laddoos in a multipack box",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -323,9 +193,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive",
+      "material_name": "Molded Pulp",
       "properties": 0,
-      "application": "Keeping the label securely attached to the can for its entire shelf life.",
+      "application": "Protective trays for individual laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -333,9 +203,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Inflatable Air Pillows",
       "properties": 0,
-      "application": "Protecting the beer from oxidation, which can lead to staling and off-flavors.",
+      "application": "Void fill in shipping boxes",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -343,9 +213,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Wrap",
+      "material_name": "Kraft Paper",
       "properties": 0,
-      "application": "Protecting the packaged cans from environmental factors during storage.",
+      "application": "Wrapping individual boxes for added protection",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -353,9 +223,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Paper Cushioning",
       "properties": 0,
-      "application": "Protecting the cans from physical damage during storage and transportation.",
+      "application": "Filling empty space within boxes",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -363,9 +233,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Thermoformed Trays (PET)",
       "properties": 0,
-      "application": "Providing the primary container for the beer, with minimal chemical interaction.",
+      "application": "Holding laddoos securely in place",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -373,9 +243,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating",
+      "material_name": "Edge Protectors (Cardboard or Plastic)",
       "properties": 0,
-      "application": "Preventing any chemical interaction between the beer and the can's metal.",
+      "application": "Protecting corners of shipping boxes",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -383,9 +253,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating",
+      "material_name": "Honeycomb Paperboard",
       "properties": 0,
-      "application": "Protecting the can's exterior from environmental chemical reactions.",
+      "application": "Internal support within boxes",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -393,9 +263,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End",
+      "material_name": "Modified Atmosphere Packaging (MAP) Films",
       "properties": 0,
-      "application": "Providing a chemically stable opening mechanism.",
+      "application": "Sealing trays or pouches",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -403,9 +273,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seaming Compound",
+      "material_name": "Vacuum Packaging Films (Multilayer)",
       "properties": 0,
-      "application": "Maintaining a chemically stable and secure seal.",
+      "application": "Sealing pouches for long-term storage",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -413,9 +283,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "Aluminum Laminates",
       "properties": 0,
-      "application": "Providing long-lasting and chemically safe graphics and information.",
+      "application": "Pouches and wrappers for extended shelf life",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -423,9 +293,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive",
+      "material_name": "High Barrier Films (EVOH)",
       "properties": 0,
-      "application": "Securing labels without affecting the beer's chemical composition.",
+      "application": "Lamination layer in flexible packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -433,9 +303,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Desiccant Packets (Silica Gel)",
       "properties": 0,
-      "application": "Preventing oxidation without introducing any chemical reactions.",
+      "application": "Inside packaging to maintain dryness",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -443,9 +313,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Wrap",
+      "material_name": "Oxygen Absorbers",
       "properties": 0,
-      "application": "Providing a chemically safe outer layer for palletized cans.",
+      "application": "Extending shelf life in sealed containers",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -453,9 +323,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Antimicrobial Packaging Films",
       "properties": 0,
-      "application": "Providing physical protection without chemical contamination, minimizing moisture absorption.",
+      "application": "Direct contact layer with laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -463,9 +333,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "UV-Blocking Films",
       "properties": 0,
-      "application": "Providing a hygienic container with proper cleaning and coating.",
+      "application": "Outer layer for light-sensitive ingredients",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -473,9 +343,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating",
+      "material_name": "Ethylene Absorbers",
       "properties": 0,
-      "application": "Preventing microbial contamination of the beer.",
+      "application": "Extending shelf life of ingredients",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -483,9 +353,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating",
+      "material_name": "Controlled Atmosphere Packaging (CAP) Containers",
       "properties": 0,
-      "application": "Maintaining a hygienic exterior surface.",
+      "application": "Bulk storage for ingredients",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -493,9 +363,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End",
+      "material_name": "Food-Grade Inks",
       "properties": 0,
-      "application": "Ensuring a hygienic opening mechanism.",
+      "application": "Printing labels and branding",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -503,9 +373,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seaming Compound",
+      "material_name": "Adhesives (Food-Safe)",
       "properties": 0,
-      "application": "Maintaining a sterile seal to prevent microbial ingress.",
+      "application": "Sealing cartons and labels",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -513,9 +383,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "Anti-Static Films (PET or BOPP)",
       "properties": 0,
-      "application": "Safe for contact with food and beverages without transfer of harmful substances.",
+      "application": "Wrapping to keep packaging clean",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -523,9 +393,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive",
+      "material_name": "Oxygen Scavenging Polymers",
       "properties": 0,
-      "application": "Securing labels without compromising hygiene.",
+      "application": "Integrated into packaging to enhance shelf life",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -533,9 +403,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Moisture Barrier Coatings (Acrylic or Wax)",
       "properties": 0,
-      "application": "Creating an inert atmosphere that inhibits microbial growth.",
+      "application": "Coating on paperboard",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -543,9 +413,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Wrap",
+      "material_name": "Grease-Resistant Coatings",
       "properties": 0,
-      "application": "Preventing contamination of the cans during storage and transportation.",
+      "application": "Inner lining for paper containers",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -553,9 +423,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Antimicrobial Coatings",
       "properties": 0,
-      "application": "Providing physical protection while minimizing the risk of microbial contamination, keeping the cans dry.",
+      "application": "Applied to films and containers",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -563,9 +433,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "pH-Neutral Materials",
       "properties": 0,
-      "application": "Maintaining structural integrity under varying temperatures.",
+      "application": "Direct contact layer with laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -573,9 +443,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating",
+      "material_name": "BPA-Free Plastics (Polypropylene, PET)",
       "properties": 0,
-      "application": "Maintaining a protective barrier at varying temperatures.",
+      "application": "Containers and trays",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -583,9 +453,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating",
+      "material_name": "Fluoropolymer Coatings",
       "properties": 0,
-      "application": "Protecting the can's exterior under fluctuating temperatures.",
+      "application": "Lining for easy release of laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -593,9 +463,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End",
+      "material_name": "Sterilized Packaging Films",
       "properties": 0,
-      "application": "Providing a reliable opening mechanism under various temperature conditions.",
+      "application": "Direct contact with laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -603,9 +473,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seaming Compound",
+      "material_name": "Tamper-Evident Seals",
       "properties": 0,
-      "application": "Ensuring a secure seal, even with temperature fluctuations.",
+      "application": "Sealing containers for security",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -613,9 +483,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "Easy-to-Clean Surfaces (Smooth Plastics)",
       "properties": 0,
-      "application": "Maintaining the can's branding and information, even with temperature changes.",
+      "application": "Reusable containers",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -623,9 +493,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive",
+      "material_name": "Single-Use Packaging",
       "properties": 0,
-      "application": "Keeping the label securely attached, regardless of temperature fluctuations.",
+      "application": "Individual servings",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -633,9 +503,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Materials with Low Porosity",
       "properties": 0,
-      "application": "Maintaining a consistent inert atmosphere under varying temperatures.",
+      "application": "Direct contact layers",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -643,9 +513,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Wrap",
+      "material_name": "Antimicrobial Packaging",
       "properties": 0,
-      "application": "Maintaining load stability during temperature changes.",
+      "application": "Extends shelf life and reduces contamination risk",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -653,9 +523,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Heat-Sealable Films",
       "properties": 0,
-      "application": "Providing physical protection, best maintained in temperature-controlled environments.",
+      "application": "Preventing contamination",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -663,9 +533,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Controlled Environment Packaging",
       "properties": 0,
-      "application": "Providing a stable and safe container.",
+      "application": "Ensuring hygiene standards",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -673,9 +543,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating",
+      "material_name": "Washable Packaging",
       "properties": 0,
-      "application": "Ensuring a safe barrier between the beer and the aluminum.",
+      "application": "Reusable containers for commercial use",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -683,9 +553,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating",
+      "material_name": "UV-Sterilized Packaging",
       "properties": 0,
-      "application": "Providing a safe and environmentally friendly exterior coating.",
+      "application": "Enhancing hygiene standards",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -693,9 +563,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End",
+      "material_name": "Insulated Packaging (Expanded Polystyrene EPS)",
       "properties": 0,
-      "application": "Providing a safe and reliable opening mechanism.",
+      "application": "Shipping temperature-sensitive laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -703,9 +573,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seaming Compound",
+      "material_name": "Temperature Indicating Labels",
       "properties": 0,
-      "application": "Ensuring a safe and secure seal.",
+      "application": "Monitoring temperature during shipping",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -713,9 +583,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "Cold Packs (Gel Packs)",
       "properties": 0,
-      "application": "Providing safe and environmentally friendly graphics and information.",
+      "application": "Inside insulated packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -723,9 +593,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive",
+      "material_name": "Heat-Resistant Films (CPET)",
       "properties": 0,
-      "application": "Securing labels without posing a hazard.",
+      "application": "Packaging for heated laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -733,9 +603,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Phase Change Materials (PCM)",
       "properties": 0,
-      "application": "Providing an inert atmosphere without posing a significant hazard.",
+      "application": "Temperature-controlled packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -743,9 +613,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Wrap",
+      "material_name": "Aluminum Foil Laminates",
       "properties": 0,
-      "application": "Securing pallets without posing a significant risk.",
+      "application": "Packaging for hot weather conditions",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -753,9 +623,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Vacuum Insulated Panels (VIP)",
       "properties": 0,
-      "application": "Providing physical protection, requiring proper storage to minimize fire risk.",
+      "application": "High-performance insulated containers",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -763,9 +633,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Temperature-Controlled Shipping Containers",
       "properties": 0,
-      "application": "Providing a visually appealing and eye-catching container.",
+      "application": "Shipping large quantities of laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -773,9 +643,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating",
+      "material_name": "Reflective Films",
       "properties": 0,
-      "application": "Maintaining the beer's visual appeal.",
+      "application": "Outer layer for packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -783,9 +653,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating",
+      "material_name": "Expanded Polypropylene (EPP) Foam",
       "properties": 0,
-      "application": "Enhancing the can's visual appeal and providing a platform for branding.",
+      "application": "Temperature-controlled containers",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -793,9 +663,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End",
+      "material_name": "Tamper-Evident Packaging",
       "properties": 0,
-      "application": "Providing a visually clear and user-friendly opening mechanism.",
+      "application": "Ensuring product integrity and safety",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -803,9 +673,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seaming Compound",
+      "material_name": "Child-Resistant Closures",
       "properties": 0,
-      "application": "Maintaining a visually appealing and secure closure.",
+      "application": "If laddoos contain potentially harmful ingredients (unlikely, but could apply to some niche recipes)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -813,9 +683,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "Warning Labels",
       "properties": 0,
-      "application": "Creating visually appealing and informative designs.",
+      "application": "Communicating allergen information",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -823,9 +693,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive",
+      "material_name": "Secure Sealing Mechanisms",
       "properties": 0,
-      "application": "Keeping the label intact and visually appealing.",
+      "application": "Ensuring product remains contained",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -833,9 +703,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Protective Overpacks",
       "properties": 0,
-      "application": "Improving the beer's visual presentation.",
+      "application": "Shipping sensitive laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -843,9 +713,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Wrap",
+      "material_name": "UN-Certified Packaging",
       "properties": 0,
-      "application": "Maintaining product visibility during storage and transportation.",
+      "application": "If any ingredient is classified as hazardous (unlikely)",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -853,9 +723,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Desiccant with Indicator",
       "properties": 0,
-      "application": "Providing additional display and branding opportunities.",
+      "application": "Ensuring optimal dryness and preventing mold growth",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -863,9 +733,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Gas-Tight Packaging",
       "properties": 0,
-      "application": "Defining the can's capacity.",
+      "application": "Long-term storage",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -873,9 +743,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating",
+      "material_name": "Shock-Absorbing Materials",
       "properties": 0,
-      "application": "Providing a protective layer without altering the can's capacity.",
+      "application": "Reducing risk of breakage during transit",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -883,9 +753,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating",
+      "material_name": "Security Labels with Serial Numbers",
       "properties": 0,
-      "application": "Protecting the can's exterior without changing its size.",
+      "application": "High-value or specialized laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -893,9 +763,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End",
+      "material_name": "Clear PET Clamshells",
       "properties": 0,
-      "application": "Sealing the can while preserving its capacity.",
+      "application": "Retail display",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -903,9 +773,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seaming Compound",
+      "material_name": "Windowed Cartons",
       "properties": 0,
-      "application": "Securing the lid without altering the can's capacity.",
+      "application": "Retail display",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -913,9 +783,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "High-Gloss Printing",
       "properties": 0,
-      "application": "Providing graphics and information without altering the can's capacity.",
+      "application": "Branding and product information",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -923,9 +793,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive",
+      "material_name": "Embossing/Debossing",
       "properties": 0,
-      "application": "Securing labels without affecting the can's capacity or weight.",
+      "application": "Premium packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -933,9 +803,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Shrink Sleeves",
       "properties": 0,
-      "application": "Maintaining an inert atmosphere within the can.",
+      "application": "Branding and security",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -943,9 +813,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Wrap",
+      "material_name": "Custom-Shaped Packaging",
       "properties": 0,
-      "application": "Securing multiple cans together on a pallet.",
+      "application": "Special editions or promotions",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -953,9 +823,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Interactive Packaging (QR Codes)",
       "properties": 0,
-      "application": "Packaging multiple cans for sale in consistent quantities.",
+      "application": "Marketing and traceability",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -963,9 +833,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Aluminum Alloy",
+      "material_name": "Metallic Inks and Foils",
       "properties": 0,
-      "application": "Providing a container with moderate inherent value.",
+      "application": "Premium products",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -973,9 +843,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Coating",
+      "material_name": "Holographic Films",
       "properties": 0,
-      "application": "Protecting the beer and verifying authenticity.",
+      "application": "Authentication and visual appeal",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -983,9 +853,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "External Coating",
+      "material_name": "Sustainable Inks (Soy-Based)",
       "properties": 0,
-      "application": "Protecting the can's branding and preventing counterfeiting.",
+      "application": "Eco-conscious branding",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -993,9 +863,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-Open End",
+      "material_name": "Individually Wrapped Laddoos (Flow Wrap)",
       "properties": 0,
-      "application": "Providing a functional and tamper-evident opening mechanism.",
+      "application": "Single-serving packs",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1003,9 +873,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Seaming Compound",
+      "material_name": "Multi-Compartment Trays",
       "properties": 0,
-      "application": "Ensuring a secure and tamper-evident seal.",
+      "application": "Retail packs",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1013,9 +883,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Ink",
+      "material_name": "Resealable Pouches",
       "properties": 0,
-      "application": "Enhancing the can's appearance and making it harder to replicate.",
+      "application": "Bulk packaging",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1023,9 +893,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Adhesive",
+      "material_name": "Unit-Dose Packaging (Blister Packs)",
       "properties": 0,
-      "application": "Securing labels with features that deter counterfeiting.",
+      "application": "Specialized or medicinal laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1033,9 +903,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Nitrogen",
+      "material_name": "Pre-Portioned Containers",
       "properties": 0,
-      "application": "Preserving the beer's quality and preventing spoilage.",
+      "application": "Ready-to-eat packages",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1043,9 +913,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Wrap",
+      "material_name": "Tamper-Evident Bands",
       "properties": 0,
-      "application": "Securing and protecting large quantities of cans.",
+      "application": "Bulk quantities",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1053,9 +923,139 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Sachets",
       "properties": 0,
-      "application": "Grouping cans together for easier handling and reduced theft.",
+      "application": "Small quantities for sampling or gifting",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Dosing Spoons or Scoops",
+      "properties": 0,
+      "application": "Larger containers for serving",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Calibrated Packaging",
+      "properties": 0,
+      "application": "Large quantities with portioning requirements",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Child-Resistant Packaging (for small parts)",
+      "properties": 0,
+      "application": "If product contains small, potentially hazardous components",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Tamper-Evident Seals",
+      "properties": 0,
+      "application": "Discourages theft and ensures product integrity",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Security Labels (Holographic)",
+      "properties": 0,
+      "application": "High-value laddoos",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "RFID Tags",
+      "properties": 0,
+      "application": "Inventory management and security",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Serialized Packaging",
+      "properties": 0,
+      "application": "Traceability and security",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Clamshell Packaging (Secure Closure)",
+      "properties": 0,
+      "application": "Retail display",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Shrink Wrap",
+      "properties": 0,
+      "application": "Bulk packaging",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Opaque Packaging",
+      "properties": 0,
+      "application": "Reducing temptation for theft",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Reinforced Packaging",
+      "properties": 0,
+      "application": "Preventing theft during shipping",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Electronic Article Surveillance (EAS) Tags",
+      "properties": 0,
+      "application": "Retail security",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Protective Cases (Hard Plastic)",
+      "properties": 0,
+      "application": "High-end or specialty laddoos",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1065,297 +1065,216 @@
   ],
   "material_summaries": [
     {
-      "material_name": "Aluminum Alloy (typically 5182 or 3004)",
+      "material_name": "Aluminum Foil",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 44.0,
-          "ranking_justification": "This material earns its top ranking due to a strategic balance between cost-effectiveness, consumer appeal, and fundamental properties, crucial for effective packaging. While logistics are not exceptional, strengths in cost and consumer preference, combined with solid properties and sustainability, drive its high overall score.",
-          "domain_strengths": [
-            {
-              "dimension": "Properties",
-              "reason_for_strength": "The material exhibits robust physical and chemical characteristics, ensuring product integrity throughout the supply chain. This includes adequate barrier properties, tensile strength, and resistance to environmental factors.",
-              "impact_on_ranking": "With a weight of 1.0, the strong inherent properties provide a reliable foundation for effective packaging performance, directly contributing to a higher score."
-            },
-            {
-              "dimension": "Cost",
-              "reason_for_strength": "The material presents a competitive cost profile relative to its performance, making it an economically viable option for large-scale packaging applications. This includes both raw material costs and processing expenses.",
-              "impact_on_ranking": "Weighted at 1.2, the cost advantage is a significant driver for its high ranking. It allows for budget-conscious packaging solutions without sacrificing core functionality."
-            },
-            {
-              "dimension": "Sustainability",
-              "reason_for_strength": "The material incorporates environmentally responsible attributes, such as recyclability, renewable sourcing, or biodegradability, contributing to a reduced environmental footprint compared to alternative options.",
-              "impact_on_ranking": "The weight of 1.0 on sustainability means that positive sustainability characteristics are a valuable strength, improving the materials overall ranking, and supporting the packaging's role in overall brand environmental image."
-            },
-            {
-              "dimension": "Consumer Preference",
-              "reason_for_strength": "Consumers react positively to the material's aesthetic and tactile qualities. It provides a desirable look and feel, enhancing the perceived value of the packaged product and improving brand perception.",
-              "impact_on_ranking": "Weighted at 1.5, strong consumer preference plays a pivotal role in the material's success. It boosts sales and brand loyalty, substantially impacting the overall score."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Logistics",
-              "weakness_reason": "The material presents some challenges in terms of transport and storage. This could involve bulky dimensions, specific temperature requirements, or fragility, leading to higher handling costs or potential damage during transit.",
-              "compensated_by": "Cost and Consumer Preference",
-              "justification": "While logistical challenges exist, the significant cost advantages and strong consumer preference effectively counterbalance these weaknesses. The cost savings justify potentially higher handling costs, while consumer appeal ensures market acceptance and sales, making the logistical considerations acceptable."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "The material represents a strategically sound packaging choice due to its cost-effectiveness, consumer appeal, and favorable properties. Its balance of functional and aesthetic qualities makes it versatile across a range of applications.",
-            "suitable_use_cases": [
-              "Food packaging (dry goods, snacks)",
-              "Consumer electronics packaging",
-              "Cosmetics and personal care packaging",
-              "E-commerce packaging",
-              "Industrial parts packaging"
-            ]
+        "material_name": "Aluminum Foil",
+        "executive_snapshot": "Aluminum foil presents a viable option for Motichur Laddoos packaging, balancing strong barrier properties and consumer appeal against sustainability and cost concerns.",
+        "composite_score": 72,
+        "strengths": [
+          {
+            "dimension": "Sustainability",
+            "insight": "Aluminum foil's recyclability and potential for closed-loop recycling systems significantly contribute to reducing its environmental footprint, aligning with Blue Yonder's sustainability priorities and improving brand image."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Consumers often associate aluminum foil with freshness and quality, increasing product appeal and perceived value for Motichur Laddoos, a key driver for purchase decisions."
+          },
+          {
+            "dimension": "Properties",
+            "insight": "Excellent barrier properties protect the laddoos from moisture, light, and oxygen, ensuring product quality and extending shelf life, ultimately reducing food waste."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Cost",
+            "mitigation": "While the initial cost may be higher than some alternatives, the superior product protection and extended shelf life provided by aluminum foil can minimize waste, potentially offsetting some cost concerns, and its recyclability can create cost savings through material recovery."
+          },
+          {
+            "dimension": "Logistics",
+            "mitigation": "Aluminum foil can be prone to damage during transport, requiring careful handling. However, optimized packaging design and protective outer packaging can mitigate this risk, while the material's light weight helps to control overall shipping costs."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Direct costs include the material itself and any printing/labeling. Indirect costs may arise from specialized handling equipment and potentially higher insurance premiums due to damage risk during transportation. However, efficient recycling programs can create revenue streams.",
+          "logistics": "Handling requires care to prevent tearing or creasing. Transport involves strategies to prevent crushing or puncture, possibly necessitating specialized containers or padding. The light weight contributes to lower transportation costs overall.",
+          "regulatory": "Aluminum foil is generally compliant with food contact regulations in most regions. Regulations regarding recycling and waste disposal need to be considered and adhered to.",
+          "consumer": "Consumers generally view aluminum foil favorably due to its perceived cleanliness and ability to preserve freshness. Clear messaging about recyclability is crucial to enhance consumer acceptance and address potential environmental concerns."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "Aluminum foil offers a strong balance of product protection, consumer appeal, and sustainability potential. Its recyclability and positive consumer perception outweigh the cost and logistical considerations, especially when a closed-loop recycling program is implemented.",
+          "sustainability_gain_percent": 15,
+          "cost_delta_percent": 8
         }
       }
     },
     {
-      "material_name": "Internal Coating (Epoxy or Acrylic)",
+      "material_name": "Glassine Paper",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 45.0,
-          "ranking_justification": "This material earns its top ranking through a strategic balance of performance, particularly excelling in areas that are deemed most critical. Its strengths in consumer preference and cost-effectiveness, coupled with solid performance in properties and sustainability, outweigh any relative weaknesses in logistics, leading to a high overall score. The material is well-positioned for widespread adoption due to its alignment with both consumer needs and budgetary constraints.",
-          "domain_strengths": [
-            {
-              "dimension": "Consumer Preference",
-              "reason_for_strength": "The material's aesthetic appeal, tactile properties, or association with positive brand values resonates strongly with consumers, leading to increased purchase intent and brand loyalty.",
-              "impact_on_ranking": "As the highest-weighted dimension, superior consumer preference significantly boosts the overall score and market viability of the packaging."
-            },
-            {
-              "dimension": "Cost",
-              "reason_for_strength": "The material is readily available and can be processed efficiently, resulting in lower production costs and a competitive price point. This includes considering raw material costs, processing, and waste minimization.",
-              "impact_on_ranking": "With a high weight, the cost-effectiveness of the material ensures its accessibility and makes it an attractive option for manufacturers seeking to maximize profitability."
-            },
-            {
-              "dimension": "Properties",
-              "reason_for_strength": "The material offers an adequate level of protection for the product, preserving its integrity throughout the supply chain. This includes barrier properties, durability, and resistance to environmental factors.",
-              "impact_on_ranking": "A score in this dimension allows the product to maintain its quality."
-            },
-            {
-              "dimension": "Sustainability",
-              "reason_for_strength": "The material has a relatively low environmental footprint due to factors such as recyclability, use of renewable resources, or biodegradability, aligning with growing consumer demand for eco-friendly packaging.",
-              "impact_on_ranking": "This allows for consumers to feel more confident about purchasing the product. It can also help the company meet its own sustainability goals."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Logistics",
-              "weakness_reason": "The material might have certain drawbacks related to transportation, storage, or handling, such as higher weight, bulkier dimensions, or specific temperature requirements.",
-              "compensated_by": "Consumer Preference, Cost, Properties, and Sustainability",
-              "justification": "While logistical challenges exist, the strong consumer appeal and cost advantages create a strong incentive for manufacturers to overcome these hurdles. Moreover, the adequate performance in properties and sustainability provide additional value that outweighs the logistical disadvantages. Optimized transportation strategies or slight design modifications can further mitigate these weaknesses."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "This material presents a compelling value proposition as a packaging solution. Its superior performance in consumer preference and cost-effectiveness, combined with acceptable performance in other critical areas, makes it a strategically sound choice for manufacturers seeking to enhance brand appeal, control costs, and meet sustainability objectives.",
-            "suitable_use_cases": [
-              "Consumer goods packaging (e.g., food, beverages, cosmetics)",
-              "E-commerce packaging",
-              "Retail packaging",
-              "Promotional packaging",
-              "Durable Goods"
-            ]
+        "material_name": "Glassine Paper",
+        "executive_snapshot": "Glassine paper is a moderately suitable option for Motichur Laddoos packaging, offering good sustainability credentials but requiring careful consideration of cost and protective properties.",
+        "composite_score": 72,
+        "strengths": [
+          {
+            "dimension": "Sustainability",
+            "insight": "Glassine paper's high sustainability score (due to its biodegradability and recyclability) directly addresses Blue Yonder's priority of minimizing environmental impact."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Glassine paper can project an image of naturalness and authenticity, aligning with consumer trends favoring eco-friendly packaging and potentially enhancing brand perception."
+          },
+          {
+            "dimension": "Properties",
+            "insight": "Provides a grease-resistant barrier, protecting the laddoos from moisture and maintaining their quality, which can lead to reduced spoilage and increased customer satisfaction."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Cost",
+            "mitigation": "While cost is a concern, the potential for enhanced brand image (consumer preference) and reduced waste (sustainability) may justify the higher initial investment."
+          },
+          {
+            "dimension": "Logistics",
+            "mitigation": "Compared to rigid packaging, glassine paper offers flexibility, but might require added protective outer packaging. The overall environmental benefit, however, can offset any additional transport needs."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Direct costs include the material price and printing. Indirect costs may arise from potential spoilage due to inadequate protection. Increased storage space due to bulk packaging might be needed, too.",
+          "logistics": "Requires careful handling to prevent tears and damage. Palletization of individually wrapped laddoos with glassine paper can ensure safe transportation.",
+          "regulatory": "Complies with most food packaging regulations regarding direct food contact. Certifications for compostability will further enhance its market acceptance.",
+          "consumer": "Positive perception due to its eco-friendliness. Clear labeling communicating its compostability and recyclability is crucial to capitalize on this benefit."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "Given its strong sustainability profile and acceptable consumer preference, glassine paper is a viable packaging option. Address its weakness of structural integrity with clever wrapping and outer packaging. Cost can be controlled by sourcing competitively and minimizing the amount of extra packaging material.",
+          "sustainability_gain_percent": 20,
+          "cost_delta_percent": 10
         }
       }
     },
     {
-      "material_name": "External Coating (Varnish or UV-cured coating)",
+      "material_name": "Paperboard",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 45.0,
-          "ranking_justification": "This material ranks highly due to its exceptional consumer preference and solid performance across other key dimensions. While there might be some trade-offs in logistics, its strong showing in cost-effectiveness and sustainability, coupled with favorable consumer perception, make it a strategically advantageous choice. The high weight assigned to consumer preference significantly boosts its overall standing, suggesting strong market acceptance and potential for brand affinity. Furthermore, its robust properties make it a reliable option for various packaging needs.",
-          "domain_strengths": [
-            {
-              "dimension": "Consumer Preference",
-              "reason_for_strength": "The material is highly favored by consumers, indicating a positive user experience, strong brand perception, and alignment with consumer values.",
-              "impact_on_ranking": "This dimension has the highest weight (1.5), meaning that excelling in it substantially improves the overall score and ranking of the material. This indicates the material is well-received in the market."
-            },
-            {
-              "dimension": "Cost",
-              "reason_for_strength": "The material offers excellent value for money, providing a cost-effective packaging solution without sacrificing essential performance characteristics. It may present an economic edge compared to alternative materials.",
-              "impact_on_ranking": "With a weight of 1.2, the cost-effectiveness significantly contributes to the material's high ranking, especially when budget constraints are a crucial consideration. This makes it attractive for mass-market applications."
-            },
-            {
-              "dimension": "Properties",
-              "reason_for_strength": "The material has robust physical and chemical properties suitable for protecting the packaged product, ensuring its integrity throughout the supply chain.",
-              "impact_on_ranking": "This dimension has a weight of 1.0. Ensuring the product is safe through its physical properties is core to a solid score and contributes to overall viability."
-            },
-            {
-              "dimension": "Sustainability",
-              "reason_for_strength": "The material demonstrates responsible environmental impact through the packaging lifecycle. Whether through sourcing, recyclability, or overall carbon footprint, the environmental profile is strong.",
-              "impact_on_ranking": "This dimension has a weight of 1.0. Ensuring the product's lifecycle minimizes environmental impact contributes to its overall score and ranking."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Logistics",
-              "weakness_reason": "The material may have some limitations in terms of storage, transportation, or handling efficiency compared to alternatives. This could potentially increase logistical costs or complexity.",
-              "compensated_by": "Consumer Preference, Cost, Properties, Sustainability",
-              "justification": "The strong positive consumer perception, cost advantages, and overall robustness, coupled with a strong sustainability profile outweigh the moderate logistical challenges. The superior consumer preference, in particular, creates significant market demand that can justify adjustments to logistics processes, while the other strengths ensure efficiency and environmental responsibility throughout the packaging lifecycle."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "This material represents a strong and balanced packaging option, characterized by high consumer acceptance, cost-effectiveness, and robust properties, making it a strategically sound choice for diverse applications. Its sustainability profile further enhances its appeal in today's environmentally conscious market. While logistical optimization might be necessary, its strengths more than compensate for potential drawbacks.",
-            "suitable_use_cases": [
-              "Consumer goods packaging",
-              "Food and beverage packaging",
-              "E-commerce packaging",
-              "Personal care product packaging",
-              "Household product packaging"
-            ]
+        "material_name": "Paperboard",
+        "executive_snapshot": "Paperboard presents a moderately suitable packaging option for Motichur Laddoos, balancing sustainability and consumer appeal with some compromises in product protection and logistical efficiency.",
+        "composite_score": 72,
+        "strengths": [
+          {
+            "dimension": "Sustainability",
+            "insight": "Paperboard's high sustainability score, driven by recyclability and renewability, aligns directly with Blue Yonder's prioritization of environmentally responsible packaging solutions, enhancing brand image and reducing environmental impact."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Paperboard's positive consumer perception due to its eco-friendly image and tactile appeal can drive purchase decisions and brand loyalty, fulfilling a key business priority."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Properties",
+            "mitigation": "While paperboard offers less robust protection compared to alternatives, its sustainability advantages and consumer appeal outweigh this limitation, especially with careful design and possible barrier coatings."
+          },
+          {
+            "dimension": "Logistics",
+            "mitigation": "The slightly lower logistical efficiency of paperboard is mitigated by its strong sustainability profile and consumer preference, as the increased transport volume may be offset by lower waste disposal impact."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Paperboard may present moderate direct costs. Indirect costs are reduced due to lower disposal fees and potential for reduced extended producer responsibility (EPR) fees. However, depending on coatings and lamination used, it may increase end-of-life processing costs.",
+          "logistics": "Paperboard's lower density can increase transport volume. Handling requires care to prevent damage, potentially adding to labor costs. Optimized packaging design can mitigate these effects.",
+          "regulatory": "Paperboard generally aligns well with packaging regulations focused on recyclability and reduced environmental impact. Compliance is straightforward in most regions.",
+          "consumer": "High consumer acceptance driven by its environmentally friendly image and tactile appeal. Clear labeling regarding recyclability is crucial to maintain positive perception."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "Paperboard offers a viable option due to its strong sustainability profile and positive consumer perception. While it may necessitate adjustments to the supply chain and potentially impact costs moderately, the overall benefits align with Blue Yonder's strategic priorities.",
+          "sustainability_gain_percent": 15,
+          "cost_delta_percent": 5
         }
       }
     },
     {
-      "material_name": "Easy-Open End (Aluminum Alloy)",
+      "material_name": "PET (Polyethylene Terephthalate)",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 45.0,
-          "ranking_justification": "This material is a top contender primarily because it excels in areas that are strategically vital for packaging success. While likely possessing balanced performance across all dimensions, its high ranking suggests it particularly shines in Consumer Preference and Cost, the two most heavily weighted dimensions. This favorable balance, combined with adequate performance in Properties, Sustainability, and Logistics, makes it a strategically advantageous choice.",
-          "domain_strengths": [
-            {
-              "dimension": "Consumer Preference",
-              "reason_for_strength": "The material likely offers a desirable aesthetic, tactile experience, or perceived value that resonates strongly with consumers, leading to enhanced product appeal and brand perception. This is a critical aspect of packaging.",
-              "impact_on_ranking": "Given the highest weight of 1.5, strong consumer preference significantly elevates the material's overall score, indicating a higher likelihood of product success in the market."
-            },
-            {
-              "dimension": "Cost",
-              "reason_for_strength": "This material probably offers a cost-effective solution for packaging needs, whether in terms of raw material expenses, manufacturing processes, or overall supply chain efficiency. This is critical for profitability.",
-              "impact_on_ranking": "With a weight of 1.2, a strong performance in cost provides a substantial boost to the material's overall score, making it an economically viable option for wide-scale packaging applications."
-            },
-            {
-              "dimension": "Properties",
-              "reason_for_strength": "The material possesses robust physical and chemical properties, ensuring adequate protection of the packaged product throughout the supply chain. This includes factors like strength, barrier properties, and resistance to environmental factors.",
-              "impact_on_ranking": "Properties is a foundational criteria for packaging, and a strong score (weighted at 1.0) helps solidify the base performance. Without this, even high consumer preference and low cost may not be enough for applications requiring high levels of protection."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Logistics",
-              "weakness_reason": "This material may exhibit slight limitations in logistical aspects such as storage efficiency, transportation costs, or ease of handling during distribution. It might be bulkier or more sensitive to certain conditions.",
-              "compensated_by": "Consumer Preference and Cost",
-              "justification": "Even with slight logistical drawbacks, strong consumer appeal and cost-effectiveness are likely to outweigh these challenges. The higher weights assigned to Consumer Preference and Cost mean that superior performance in these areas compensates for minor logistical inefficiencies."
-            },
-            {
-              "dimension": "Sustainability",
-              "weakness_reason": "While the material likely meets minimum sustainability standards, it may not be the absolute 'greenest' option available. There might be limitations in recyclability, renewable sourcing, or carbon footprint compared to other materials.",
-              "compensated_by": "Consumer Preference and Cost",
-              "justification": "While sustainability is important (weight 1.0), exceptional consumer acceptance and cost advantages can offset moderate sustainability concerns, especially in markets where consumer purchasing decisions are less driven by environmental factors."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "This material presents a compelling packaging solution due to its strong consumer appeal and cost-effectiveness, balanced with acceptable performance in properties, logistics, and sustainability. It is strategically suitable for a broad range of packaging applications, especially where consumer preference and cost optimization are paramount.",
-            "suitable_use_cases": [
-              "Consumer electronics packaging",
-              "Food and beverage packaging",
-              "Cosmetics and personal care packaging",
-              "Apparel and accessories packaging",
-              "E-commerce packaging"
-            ]
+        "material_name": "PET (Polyethylene Terephthalate)",
+        "executive_snapshot": "PET offers a reasonable balance of properties, cost, and consumer appeal for Motichur Laddoos packaging, but its sustainability limitations require careful consideration.",
+        "composite_score": 68,
+        "strengths": [
+          {
+            "dimension": "Consumer Preference",
+            "insight": "PET's clarity and recyclability awareness create a positive consumer perception, potentially increasing purchase intent and brand loyalty for Motichur Laddoos."
+          },
+          {
+            "dimension": "Cost",
+            "insight": "PET is generally cost-effective compared to other high-performance plastics, allowing for competitive pricing of Motichur Laddoos while maintaining profitability."
+          },
+          {
+            "dimension": "Properties",
+            "insight": "PET provides adequate barrier properties and structural integrity to protect the laddoos during transport and storage, ensuring product quality and reducing spoilage."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Sustainability",
+            "mitigation": "While PET has recyclability potential, its reliance on fossil fuels and potential for microplastic pollution are significant drawbacks. Prioritizing consumer preference through clear labeling about recycling and emphasizing cost effectiveness can partially offset this impact."
+          },
+          {
+            "dimension": "Logistics",
+            "mitigation": "While PET is relatively lightweight improving transport efficiency, it requires careful handling to prevent damage. Its good properties compensate by ensuring the protection of the product to the customers, while good transport efficiency supports the customer preference."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "PET's lower cost contributes to reduced packaging expenses. Indirect costs might arise from recycling programs and potential extended producer responsibility (EPR) fees. Handling and storage costs are moderate.",
+          "logistics": "PET's lightweight nature reduces transportation costs. However, it's susceptible to damage if not handled properly. Efficient stacking and optimized palletization are crucial.",
+          "regulatory": "PET is widely accepted by regulatory bodies, but increasing scrutiny on plastic waste may lead to stricter regulations on recyclability and recycled content mandates.",
+          "consumer": "Consumers generally view PET favorably due to its clarity and perceived recyclability, which can enhance the appeal of Motichur Laddoos. Clear recycling instructions and responsible sourcing claims can further improve consumer perception."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "PET offers a viable packaging solution due to its balance of properties, cost, and consumer appeal. However, mitigation strategies must be implemented to address sustainability concerns, such as maximizing recycled content and supporting recycling infrastructure.",
+          "sustainability_gain_percent": 5,
+          "cost_delta_percent": -8
         }
       }
     },
     {
-      "material_name": "Seaming Compound (Polymeric Sealant)",
+      "material_name": "BOPP (Biaxially Oriented Polypropylene)",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 45.0,
-          "ranking_justification": "This material ranks highly due to its exceptional consumer appeal, strong sustainability profile, and acceptable logistics, which collectively outweigh moderate costs and physical properties. Its strengths align with the high importance placed on consumer preference and sustainability, making it a compelling choice for environmentally conscious brands targeting discerning customers.",
-          "domain_strengths": [
-            {
-              "dimension": "Consumer Preference",
-              "reason_for_strength": "The material elicits a highly favorable response from consumers, driven by its tactile qualities, visual appeal, and perceived quality. It enhances the overall product experience and strengthens brand perception.",
-              "impact_on_ranking": "Due to the high weighting of consumer preference (1.5), this strong positive reception significantly boosts the material's overall score, indicating its potential to drive sales and brand loyalty."
-            },
-            {
-              "dimension": "Sustainability",
-              "reason_for_strength": "The material is produced from renewable resources, is readily recyclable, and has a low carbon footprint throughout its lifecycle. It aligns with current environmental regulations and consumer demand for sustainable packaging options.",
-              "impact_on_ranking": "Given the substantial weighting of sustainability (1.0), the material's environmentally friendly characteristics contribute substantially to its high ranking, making it attractive to brands committed to environmental responsibility."
-            },
-            {
-              "dimension": "Logistics",
-              "reason_for_strength": "The material exhibits reasonable transport efficiency and minimal storage requirements, easing handling and distribution processes.",
-              "impact_on_ranking": "Logistics is a moderately important factor, and while not a top strength, the material's adequate performance here prevents any significant drawbacks to its overall ranking."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Cost",
-              "weakness_reason": "The material has a higher unit cost compared to conventional alternatives due to processing complexity and raw material expenses.",
-              "compensated_by": "Consumer Preference, Sustainability",
-              "justification": "The increased cost is justified by the material's strong consumer appeal and enhanced sustainability profile. The willingness of consumers to pay a premium for sustainable and high-quality packaging, coupled with potential cost savings from reduced waste and optimized logistics, offsets the initial price disadvantage."
-            },
-            {
-              "dimension": "Properties",
-              "weakness_reason": "The material's physical properties, such as tensile strength or barrier properties, are not as robust as some alternatives, potentially limiting its application in certain demanding environments.",
-              "compensated_by": "Consumer Preference, Sustainability",
-              "justification": "While its physical properties may not be exceptional, the material's advantages in consumer preference and sustainability provide a significant competitive edge. For applications where extreme durability is not paramount, these strengths more than compensate for any shortcomings in physical properties. Suitable design and construction techniques can further mitigate these limitations."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "This material is a strong candidate for packaging due to its exceptional consumer appeal and sustainability profile, which are strategically important for brands seeking to differentiate themselves and appeal to environmentally conscious consumers. It represents a balanced approach, where moderate weaknesses are outweighed by strengths in high-priority domains.",
-            "suitable_use_cases": [
-              "Cosmetics and personal care products",
-              "Premium food and beverage items",
-              "E-commerce packaging for environmentally conscious brands",
-              "Luxury goods and gift packaging",
-              "Sustainable alternatives to single-use plastics"
-            ]
+        "material_name": "BOPP (Biaxially Oriented Polypropylene)",
+        "executive_snapshot": "BOPP is a viable option for Motichur Laddoos packaging, balancing cost-effectiveness and acceptable sustainability performance with strong consumer appeal, though its environmental impact necessitates careful consideration.",
+        "composite_score": 68,
+        "strengths": [
+          {
+            "dimension": "Consumer Preference",
+            "insight": "BOPP's clarity and printability enhance product appeal, driving sales and brand loyalty which aligns with Blue Yonder's focus on consumer-centric packaging solutions."
+          },
+          {
+            "dimension": "Cost",
+            "insight": "BOPP's relatively low cost translates to significant savings in packaging expenses, allowing for reinvestment in other sustainability initiatives or competitive pricing, directly benefiting Blue Yonder's profitability goals."
+          },
+          {
+            "dimension": "Logistics",
+            "insight": "BOPP's lightweight nature reduces transportation costs and fuel consumption, contributing to a smaller carbon footprint and streamlined supply chain, supporting Blue Yonder's sustainability targets."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Sustainability",
+            "mitigation": "While BOPP is not the most sustainable option, its cost-effectiveness allows for investment in offsetting programs or exploring bio-based BOPP alternatives to mitigate environmental concerns while maintaining consumer appeal and profitability."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Direct costs are relatively low due to the material's affordability. Indirect costs may include end-of-life management (recycling infrastructure).",
+          "logistics": "Lightweight nature of BOPP simplifies handling and reduces transportation costs. Minimal risk of damage during transport due to good tensile strength.",
+          "regulatory": "BOPP generally complies with food packaging regulations (FDA, EU). Producers should monitor evolving regulations regarding plastic waste and recycling.",
+          "consumer": "High consumer acceptance due to clarity, printability, and perceived hygiene. Increased awareness of plastic pollution may lead to some pushback, requiring clear communication about recycling efforts."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "BOPP strikes a balance between cost, consumer appeal, and logistical efficiency. Despite sustainability drawbacks, its economic benefits allow for offsetting investments, making it a pragmatic choice. Furthermore, the clarity and printability is especially useful for food products like Motichur Laddoos.",
+          "sustainability_gain_percent": 10,
+          "cost_delta_percent": -15
         }
       }
     }
-  ],
-  "executive_summary": {
-    "material_performance_review": {
-      "calculated_score": 45.0,
-      "ranking_justification": "This material achieves a top ranking due to its exceptional performance in areas that are strategically prioritized, particularly Consumer Preference and Cost. While it may have areas needing improvement, its strong showing in high-weighted dimensions ensures a robust overall score and a compelling value proposition.",
-      "domain_strengths": [
-        {
-          "dimension": "Consumer Preference",
-          "reason_for_strength": "The material's aesthetic appeal, tactile feel, and overall user experience resonate strongly with consumers, leading to higher purchase intent and brand perception.",
-          "impact_on_ranking": "With the highest weight (1.5), excelling in consumer preference significantly boosts the overall score, making it a key differentiator in a competitive landscape."
-        },
-        {
-          "dimension": "Cost",
-          "reason_for_strength": "The material offers a competitive price point relative to its performance characteristics, resulting in favorable unit economics and overall project affordability.",
-          "impact_on_ranking": "A strong cost performance, coupled with a high weight (1.2), contributes significantly to the overall score, making it an economically attractive option."
-        },
-        {
-          "dimension": "Properties",
-          "reason_for_strength": "The material possesses suitable mechanical and barrier properties that meet the baseline requirements for the target application, ensuring product integrity and shelf life.",
-          "impact_on_ranking": "A solid performance in properties, weighted at 1.0, provides a fundamental base for the material's overall value proposition."
-        }
-      ],
-      "compensating_factors": [
-        {
-          "dimension": "Logistics",
-          "weakness_reason": "The material's bulkier dimensions or specific handling requirements may present some logistical challenges compared to alternative options.",
-          "compensated_by": "Consumer Preference, Cost",
-          "justification": "While logistics might be a relative weakness, the strong consumer appeal and cost-effectiveness of the material more than compensate for these challenges, especially considering logistics has a lower weight (0.8)."
-        },
-        {
-          "dimension": "Sustainability",
-          "weakness_reason": "The material may have limitations in terms of recyclability or reliance on non-renewable resources compared to some sustainable alternatives.",
-          "compensated_by": "Consumer Preference, Cost",
-          "justification": "Although the sustainability profile might not be the strongest, the significant positive impact on consumer preference and cost advantages, particularly in driving purchase decisions, offset these limitations. Furthermore, improvements in sustainability can be pursued without drastically affecting these key strengths."
-        }
-      ],
-      "fit_for_use": {
-        "summary": "This material is a strong candidate for packaging due to its compelling combination of consumer appeal, cost-effectiveness, and adequate functional properties. Its ability to resonate with consumers while maintaining economic viability makes it a strategically sound choice for various applications.",
-        "suitable_use_cases": [
-          "Consumer goods packaging",
-          "E-commerce packaging",
-          "Food and beverage packaging",
-          "Promotional packaging"
-        ]
-      }
-    }
-  }
+  ]
 }

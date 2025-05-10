@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "Molded Pulp",
+      "material_name": "Aluminum",
       "logistics_score": 9,
-      "primary_advantage": "Excellent shock absorption",
-      "cost_consideration": "Higher material cost"
+      "primary_advantage": "Lightweight and strong",
+      "cost_consideration": "Recycling reduces costs"
     },
     {
-      "material_name": "Plastic (PET)",
-      "logistics_score": 8,
-      "primary_advantage": "Durable and stackable",
-      "cost_consideration": "Moderate material cost"
-    },
-    {
-      "material_name": "Cardboard",
+      "material_name": "Steel",
       "logistics_score": 7,
-      "primary_advantage": "Good stacking strength",
-      "cost_consideration": "Lower material cost"
+      "primary_advantage": "High stacking strength",
+      "cost_consideration": "Higher weight increases costs"
     },
     {
-      "material_name": "Foam",
+      "material_name": "PET Plastic",
       "logistics_score": 6,
-      "primary_advantage": "Superior cushioning",
-      "cost_consideration": "Moderate cost, volume issues"
+      "primary_advantage": "Shape versatility",
+      "cost_consideration": "Material cost fluctuates"
     },
     {
-      "material_name": "Paper Mache",
+      "material_name": "Cardboard (sleeves)",
+      "logistics_score": 7,
+      "primary_advantage": "Protects during transit",
+      "cost_consideration": "Adds to packaging costs"
+    },
+    {
+      "material_name": "HDPE Plastic",
       "logistics_score": 5,
-      "primary_advantage": "Low material cost",
-      "cost_consideration": "Fragile; high damage risk"
+      "primary_advantage": "Good impact resistance",
+      "cost_consideration": "Material and mold costs"
     }
   ],
   "timestamp": "2025-04-19 21:17:20",

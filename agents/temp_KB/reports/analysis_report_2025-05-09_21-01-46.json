@@ -1,5 +1,5 @@
 {
-  "product_name": "eggs",
+  "product_name": "Beer cans",
   "timestamp": "2025-05-09 21:01:46",
   "user": "codegeek03",
   "weights_used": {
@@ -11,39 +11,9 @@
   },
   "top_materials": [
     {
-      "material_name": "Molded Pulp",
+      "material_name": "Aluminum Alloy (e.g., 3004, 5182)",
       "properties": 0,
-      "application": "Egg cartons, protective inserts.",
-      "consumer": 0,
-      "logistics": 90,
-      "cost": 0,
-      "sustainability": 85.0,
-      "total_score": 28.55
-    },
-    {
-      "material_name": "Recycled Cardboard",
-      "properties": 0,
-      "application": "Standard egg carton production.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 78.0,
-      "total_score": 14.18
-    },
-    {
-      "material_name": "Polypropylene (PP)",
-      "properties": 68.0,
-      "application": "Reusable egg cartons, containers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 12.36
-    },
-    {
-      "material_name": "Expanded Polystyrene (EPS)",
-      "properties": 0,
-      "application": "Egg cartons, especially for long-distance transport.",
+      "application": "Primary can body and ends. Allows for shaping and provides structural integrity.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -51,9 +21,39 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Clear PET (Polyethylene Terephthalate)",
+      "material_name": "Steel (Tin-Free Steel/TFS or Electrolytic Chromium Coated Steel/ECCS)",
       "properties": 0,
-      "application": "Egg cartons allowing visual inspection of eggs.",
+      "application": "Alternative can body material, often used for larger can sizes or when magnetic handling is preferred.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Polymer Coating (Epoxy, Acrylic)",
+      "properties": 0,
+      "application": "Internal lining of the can to prevent corrosion and maintain beer flavor.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Ink (UV-cured, Water-based)",
+      "properties": 0,
+      "application": "External printing of labels, branding, and product information.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Varnish (Overvarnish)",
+      "properties": 0,
+      "application": "Applied over the printed ink layer for protection and visual enhancement.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -63,79 +63,9 @@
   ],
   "all_materials": [
     {
-      "material_name": "Molded Pulp",
+      "material_name": "Aluminum Alloy (e.g., 3004, 5182)",
       "properties": 0,
-      "application": "Egg cartons, protective inserts.",
-      "consumer": 0,
-      "logistics": 90,
-      "cost": 0,
-      "sustainability": 85.0,
-      "total_score": 28.55
-    },
-    {
-      "material_name": "Molded Pulp",
-      "properties": 0,
-      "application": "Standard egg cartons for retail sale.",
-      "consumer": 0,
-      "logistics": 90,
-      "cost": 0,
-      "sustainability": 85.0,
-      "total_score": 28.55
-    },
-    {
-      "material_name": "Recycled Cardboard",
-      "properties": 0,
-      "application": "Standard egg carton production.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 78.0,
-      "total_score": 14.18
-    },
-    {
-      "material_name": "Recycled Cardboard",
-      "properties": 0,
-      "application": "Eco-friendly egg cartons.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 78.0,
-      "total_score": 14.18
-    },
-    {
-      "material_name": "Polypropylene (PP)",
-      "properties": 68.0,
-      "application": "Reusable egg cartons, containers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 12.36
-    },
-    {
-      "material_name": "Polypropylene (PP)",
-      "properties": 68.0,
-      "application": "Reusable egg containers, especially for transport.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 12.36
-    },
-    {
-      "material_name": "Polypropylene (PP)",
-      "properties": 68.0,
-      "application": "Reusable egg cartons, food-grade containers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 12.36
-    },
-    {
-      "material_name": "Expanded Polystyrene (EPS)",
-      "properties": 0,
-      "application": "Egg cartons, especially for long-distance transport.",
+      "application": "Primary can body and ends. Allows for shaping and provides structural integrity.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -143,9 +73,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Clear PET (Polyethylene Terephthalate)",
+      "material_name": "Steel (Tin-Free Steel/TFS or Electrolytic Chromium Coated Steel/ECCS)",
       "properties": 0,
-      "application": "Egg cartons allowing visual inspection of eggs.",
+      "application": "Alternative can body material, often used for larger can sizes or when magnetic handling is preferred.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -153,9 +83,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cardboard (Corrugated or Solid)",
+      "material_name": "Polymer Coating (Epoxy, Acrylic)",
       "properties": 0,
-      "application": "Outer boxes for bulk egg shipments.",
+      "application": "Internal lining of the can to prevent corrosion and maintain beer flavor.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -163,9 +93,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Foam Inserts (Polyurethane or Polyethylene)",
+      "material_name": "Ink (UV-cured, Water-based)",
       "properties": 0,
-      "application": "Specialized packaging for fragile or high-value eggs.",
+      "application": "External printing of labels, branding, and product information.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -173,9 +103,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pulp Fiber with Additives",
+      "material_name": "Varnish (Overvarnish)",
       "properties": 0,
-      "application": "Sustainable egg packaging, potentially with antimicrobial properties.",
+      "application": "Applied over the printed ink layer for protection and visual enhancement.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -183,9 +113,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Bamboo Fiber",
+      "material_name": "Easy-Open End Compound (Synthetic Rubber)",
       "properties": 0,
-      "application": "Premium egg packaging, appealing to eco-conscious consumers.",
+      "application": "Sealant between the easy-open end and the can body to ensure airtight closure.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -193,9 +123,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Compostable Plastics (e.g., PLA)",
+      "material_name": "Aluminum Rivet (for Easy-Open Ends)",
       "properties": 0,
-      "application": "Eco-friendly egg cartons as an alternative to traditional plastics.",
+      "application": "Secures the pull tab to the easy-open end.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -203,9 +133,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Expanded Polystyrene (EPS)",
+      "material_name": "Easy-Open Tab (Aluminum)",
       "properties": 0,
-      "application": "Protective packaging for shipping eggs over long distances.",
+      "application": "Enables convenient opening of the can without tools.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -213,9 +143,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Nitrogen (Inert Gas)",
       "properties": 0,
-      "application": "Outer packaging for bulk egg shipments.",
+      "application": "Injected into the headspace to reduce oxidation and maintain product quality.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -223,9 +153,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Foam Inserts (Polyurethane or Polyethylene)",
+      "material_name": "Adhesive (Food-Grade)",
       "properties": 0,
-      "application": "High-end packaging for delicate or specialty eggs.",
+      "application": "Used in the seaming process to create a hermetic seal between the can body and ends.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -233,9 +163,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Thermoformed Plastic Clamshells",
+      "material_name": "Aluminum Alloy",
       "properties": 0,
-      "application": "Protective packaging for individual or small quantities of eggs.",
+      "application": "Primary can structure; requires careful handling during transportation and storage to prevent damage.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -243,9 +173,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Padded Dividers (Cardboard or Foam)",
+      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
       "properties": 0,
-      "application": "Internal packaging for premium egg cartons.",
+      "application": "Can body material; provides higher resistance to deformation than aluminum.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -253,9 +183,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Suspension Packaging",
+      "material_name": "Polymer Coating (Internal)",
       "properties": 0,
-      "application": "Specialized packaging for extremely fragile eggs.",
+      "application": "Protective layer; maintain integrity of the coating to prevent beer from contacting the metal.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -263,9 +193,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cellulose Fiber",
+      "material_name": "Easy-Open End",
       "properties": 0,
-      "application": "Eco-friendly packaging offering moderate protection.",
+      "application": "End closure; requires careful design to prevent premature opening.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -273,9 +203,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Combination Packaging (e.g., Pulp + Cardboard)",
+      "material_name": "Seam (Can Body)",
       "properties": 0,
-      "application": "Egg cartons with a pulp interior and a cardboard exterior for added strength.",
+      "application": "Joins the can body. Critical to ensure a hermetic seal.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -283,9 +213,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Polyethylene (PE) Film",
+      "material_name": "Double Seam (Can End)",
       "properties": 0,
-      "application": "Overwrap for egg cartons, extending shelf life.",
+      "application": "Joins the can end to the body; critical to ensure a hermetic seal.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -293,9 +223,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Modified Atmosphere Packaging (MAP)",
+      "material_name": "Ink and Varnish Layer",
       "properties": 0,
-      "application": "Bulk egg packaging for extended shelf life, often used in commercial food service.",
+      "application": "External decoration; protect from excessive friction during transit.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -303,9 +233,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Vacuum Packaging",
+      "material_name": "Easy-Open Tab (Aluminum)",
       "properties": 0,
-      "application": "Not typically used for whole eggs, but may be used for processed egg products.",
+      "application": "Opening mechanism; avoid excessive bending or force during transportation and stocking.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -313,9 +243,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Edible Coatings (e.g., Chitosan, Starch-based)",
+      "material_name": "Adhesive (Seam)",
       "properties": 0,
-      "application": "Applied directly to the eggshell to reduce spoilage.",
+      "application": "Bonds the can ends to the body; proper adhesive application and curing are essential.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -323,9 +253,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Antimicrobial Packaging",
+      "material_name": "Nitrogen Headspace",
       "properties": 0,
-      "application": "Egg cartons or films infused with natural antimicrobials (e.g., essential oils).",
+      "application": "Reduces oxidation. Requires precise filling to ensure effectiveness.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -333,9 +263,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "High-Barrier Films (e.g., EVOH)",
+      "material_name": "Aluminum/Steel",
       "properties": 0,
-      "application": "Laminates for specialized egg packaging requiring long shelf life.",
+      "application": "Can body; protects beer from degradation due to light and oxygen exposure.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -343,9 +273,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "UV-Blocking Materials",
+      "material_name": "Polymer Coating (Internal)",
       "properties": 0,
-      "application": "Egg cartons made with UV-blocking additives.",
+      "application": "Internal lining; prevents metallic taste and maintains beer quality over time.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -353,9 +283,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Temperature-Controlled Packaging",
+      "material_name": "Seam Sealant",
       "properties": 0,
-      "application": "Packaging with gel packs or phase change materials (PCMs) to keep eggs cool.",
+      "application": "Sealant at the can seams; critical for maintaining airtight closure and preventing spoilage.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -363,9 +293,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Oxygen Absorbers",
+      "material_name": "Nitrogen",
       "properties": 0,
-      "application": "Small sachets placed inside egg cartons.",
+      "application": "Headspace filler; reduces oxidation and maintains beer flavor and aroma.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -373,9 +303,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Carbon Dioxide Emitters",
+      "material_name": "Ink and Varnish",
       "properties": 0,
-      "application": "Used in conjunction with modified atmosphere packaging.",
+      "application": "External decoration; ensure the label remains legible and attractive throughout the shelf life.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -383,9 +313,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Inert Plastics (Polypropylene, Polyethylene)",
+      "material_name": "Easy-Open End Compound",
       "properties": 0,
-      "application": "Egg cartons and containers that come into direct contact with eggs.",
+      "application": "Sealing compound for easy-open ends; crucial for maintaining a hermetic seal.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -393,9 +323,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Food-Grade Coatings",
+      "material_name": "Adhesive (Seam)",
       "properties": 0,
-      "application": "Applied to cardboard or pulp-based cartons to enhance grease and moisture resistance.",
+      "application": "Bonds can ends; ensures a hermetic seal throughout the shelf life.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -403,9 +333,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "pH-Neutral Materials",
+      "material_name": "Aluminum Rivet",
       "properties": 0,
-      "application": "Important for preserving egg quality and preventing chemical reactions.",
+      "application": "Secures the pull tab. Its integrity is important for can opening.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -413,9 +343,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Oxygen Barrier Films (EVOH, Metallized Films)",
+      "material_name": "Passivation Layer (on Aluminum)",
       "properties": 0,
-      "application": "Laminations used in specialized egg packaging.",
+      "application": "Protects aluminum. Increases shelf life.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -423,9 +353,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Moisture Barrier Coatings",
+      "material_name": "Can Design",
       "properties": 0,
-      "application": "Coatings for cardboard egg cartons in humid environments.",
+      "application": "Structural integrity. A well-designed can is essential for a long shelf life.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -433,9 +363,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Antimicrobial Additives",
+      "material_name": "Aluminum Alloy",
       "properties": 0,
-      "application": "Incorporated into plastic or pulp-based egg cartons.",
+      "application": "Can body; must be protected by an internal coating.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -443,9 +373,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Bisphenol-A (BPA) Free Plastics",
+      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
       "properties": 0,
-      "application": "Mandatory for many food contact applications, including egg packaging.",
+      "application": "Can body; the coating provides a barrier against corrosion.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -453,9 +383,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Phthalate-Free Plastics",
+      "material_name": "Epoxy Coating",
       "properties": 0,
-      "application": "Increasingly required for food packaging applications.",
+      "application": "Internal lining; prevents interaction with beer.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -463,9 +393,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Per- and Polyfluoroalkyl Substances (PFAS)-Free Materials",
+      "material_name": "Acrylic Coating",
       "properties": 0,
-      "application": "Becoming increasingly important due to environmental concerns.",
+      "application": "Internal lining; provides a protective barrier.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -473,9 +403,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Recycled Materials with Food-Grade Certification",
+      "material_name": "Ink (UV-Cured)",
       "properties": 0,
-      "application": "Environmentally friendly egg packaging that is safe for food contact.",
+      "application": "External printing; maintains the integrity of the printed graphics.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -483,9 +413,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "High-Density Polyethylene (HDPE)",
+      "material_name": "Varnish",
       "properties": 0,
-      "application": "Egg containers for commercial kitchens and food processing.",
+      "application": "Protective overcoat; protects the ink layer.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -493,9 +423,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Antimicrobial Plastics",
+      "material_name": "Seam Sealant",
       "properties": 0,
-      "application": "Egg cartons for added hygiene protection.",
+      "application": "Sealant at the can seams; maintains a hermetic seal.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -503,9 +433,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Sanitizable Coatings",
+      "material_name": "Nitrogen",
       "properties": 0,
-      "application": "Applied to egg cartons to improve hygiene.",
+      "application": "Headspace filler; prevents oxidation.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -513,9 +443,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Single-Use Plastics",
+      "material_name": "Passivation Layer (on Aluminum)",
       "properties": 0,
-      "application": "Disposable egg cartons for retail sale.",
+      "application": "Protects aluminum. Enhances chemical resistance.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -523,9 +453,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pulp with Antimicrobial Treatment",
+      "material_name": "Lubricants (Food-Grade)",
       "properties": 0,
-      "application": "Egg cartons with enhanced hygiene properties.",
+      "application": "Manufacturing process; ensures smooth can formation and prevents contamination.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -533,9 +463,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Moisture-Resistant Cardboard",
+      "material_name": "Aluminum Alloy",
       "properties": 0,
-      "application": "Cardboard boxes for transporting eggs in humid conditions.",
+      "application": "Can body; must be thoroughly cleaned before filling.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -543,9 +473,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "UV-Sanitizable Materials",
+      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
       "properties": 0,
-      "application": "Egg packaging for environments with strict hygiene requirements.",
+      "application": "Can body alternative; also needs thorough cleaning.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -553,9 +483,509 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Easy-to-Clean Design",
+      "material_name": "Epoxy Coating",
       "properties": 0,
-      "application": "Reusable egg containers.",
+      "application": "Internal lining; must be properly applied and cured to prevent contamination.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Acrylic Coating",
+      "properties": 0,
+      "application": "Internal lining; provides a hygienic barrier.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Seam Sealant",
+      "properties": 0,
+      "application": "Sealant at the can seams; critical to prevent microbial ingress.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Nitrogen",
+      "properties": 0,
+      "application": "Headspace filler; maintains a sterile environment.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Easy-Open End Compound",
+      "properties": 0,
+      "application": "Sealant for easy-open ends; prevents microbial ingress.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Adhesive (Seam)",
+      "properties": 0,
+      "application": "Bonds can ends; ensures hygienic seal.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Cleaning Agents",
+      "properties": 0,
+      "application": "Manufacturing process; ensures cleanliness.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Water (Used for Rinsing)",
+      "properties": 0,
+      "application": "Manufacturing process; final rinsing step.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Aluminum Alloy",
+      "properties": 0,
+      "application": "Can body; avoid extreme temperature fluctuations.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
+      "properties": 0,
+      "application": "Can body alternative; handle with similar temperature considerations.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Epoxy Coating",
+      "properties": 0,
+      "application": "Internal lining; avoid excessive temperature fluctuations.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Acrylic Coating",
+      "properties": 0,
+      "application": "Internal lining alternative; similar temperature management.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Seam Sealant",
+      "properties": 0,
+      "application": "Sealant at the can seams; avoid extreme temperature variations.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Nitrogen",
+      "properties": 0,
+      "application": "Headspace filler; manage temperature to control internal pressure.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Easy-Open End Compound",
+      "properties": 0,
+      "application": "Sealant for easy-open ends; maintain consistent temperatures.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Ink and Varnish",
+      "properties": 0,
+      "application": "External decoration; avoid extreme heat or cold exposure.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Adhesive (Seam)",
+      "properties": 0,
+      "application": "Bonds can ends; temperature control is important.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Condensation",
+      "properties": 0,
+      "application": "Overall can integrity. Avoid rapid temperature change.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Aluminum Alloy",
+      "properties": 0,
+      "application": "Can body; manage dust during manufacturing.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Steel (Tin-Free or Electrolytic Chromium Coated)",
+      "properties": 0,
+      "application": "Can body alternative; dust control during manufacturing.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Epoxy Coating",
+      "properties": 0,
+      "application": "Internal lining; use low-VOC options and BPA-free formulations.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Acrylic Coating",
+      "properties": 0,
+      "application": "Internal lining alternative; manage VOCs during application.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Ink (UV-Cured)",
+      "properties": 0,
+      "application": "External printing; use low-VOC inks and ensure proper ventilation.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Varnish",
+      "properties": 0,
+      "application": "Protective overcoat; low VOC options are preferred.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Nitrogen",
+      "properties": 0,
+      "application": "Headspace filler; ensure adequate ventilation in filling areas.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Cleaning Solvents",
+      "properties": 0,
+      "application": "Manufacturing process; follow safety protocols for solvent use.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Lubricants",
+      "properties": 0,
+      "application": "Manufacturing process; follow safety guidelines for lubricant use.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Adhesive",
+      "properties": 0,
+      "application": "Bonds can ends; use low-VOC adhesives and ensure ventilation.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Ink (UV-Cured)",
+      "properties": 0,
+      "application": "External printing; critical for visual appeal.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Varnish",
+      "properties": 0,
+      "application": "Protective overcoat; enhances visual presentation.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Aluminum/Steel",
+      "properties": 0,
+      "application": "Can body; serves as the canvas for branding and information.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Shrink Sleeves (Alternative to Direct Printing)",
+      "properties": 0,
+      "application": "Alternative labeling; provides maximum visual impact.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Embossing/Debossing",
+      "properties": 0,
+      "application": "Optional surface treatment; enhances tactile and visual appeal.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Specialty Inks (e.g., Thermochromic, Glow-in-the-Dark)",
+      "properties": 0,
+      "application": "Novelty applications; enhances consumer engagement.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Laser Etching",
+      "properties": 0,
+      "application": "Alternative marking; provides a premium look.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Can Shape",
+      "properties": 0,
+      "application": "Structural Design; unique shapes draw the eye.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Transparent Labels",
+      "properties": 0,
+      "application": "Labeling Option; can be aesthetically pleasing.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "QR Codes",
+      "properties": 0,
+      "application": "Informational and Marketing; links to digital information.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Aluminum/Steel",
+      "properties": 0,
+      "application": "Can body; dictates the fill volume.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Nitrogen",
+      "properties": 0,
+      "application": "Headspace filler; affects product quality and shelf life.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Ink",
+      "properties": 0,
+      "application": "External printing; affects readability and visual appeal.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Varnish",
+      "properties": 0,
+      "application": "Protective overcoat; affects durability and appearance.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Polymer Coating (Internal)",
+      "properties": 0,
+      "application": "Internal lining; proper application is crucial.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Seam Sealant",
+      "properties": 0,
+      "application": "Sealant at the can seams; critical for preventing leaks.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Adhesive (Seam)",
+      "properties": 0,
+      "application": "Bonds can ends; strength of the bond important.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Can Dimensions",
+      "properties": 0,
+      "application": "Structural Design; volume of the can.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Easy-Open End Components",
+      "properties": 0,
+      "application": "Opening mechanism; design critical for ease of use.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Lubricants (Manufacturing)",
+      "properties": 0,
+      "application": "Can manufacturing process. Precise application is needed.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Aluminum Alloy/Steel",
+      "properties": 0,
+      "application": "Can body; consider security measures for scrap metal.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Ink",
+      "properties": 0,
+      "application": "External printing; use advanced printing technologies to combat counterfeiting.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Holographic Labels",
+      "properties": 0,
+      "application": "Alternative Labeling. Good anti-counterfeiting measure.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -565,7 +995,7 @@
     {
       "material_name": "Tamper-Evident Seals",
       "properties": 0,
-      "application": "Sealed egg cartons for retail.",
+      "application": "Security seal; provides visual indication of tampering.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -573,9 +1003,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Expanded Polystyrene (EPS)",
+      "material_name": "Unique Can Identifiers (e.g., Serial Numbers, QR Codes)",
       "properties": 0,
-      "application": "Insulated egg packaging for temperature-sensitive transport.",
+      "application": "Tracking and Authentication; provides unique identification.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -583,9 +1013,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Insulated Packaging (with Gel Packs)",
+      "material_name": "Specialty Finishes (e.g., Embossing, Debossing)",
       "properties": 0,
-      "application": "Shipping eggs requiring refrigeration.",
+      "application": "Surface Treatment; complicates replication by counterfeiters.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -593,9 +1023,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Phase Change Materials (PCM)",
+      "material_name": "RFID Tags",
       "properties": 0,
-      "application": "Temperature-controlled packaging for long-distance transport.",
+      "application": "Tracking and Inventory; manages stock levels and prevents theft.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -603,9 +1033,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Polyurethane Foam",
+      "material_name": "Secure Distribution Channels",
       "properties": 0,
-      "application": "Insulated containers for shipping.",
+      "application": "Logistics; protects against theft throughout the supply chain.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -613,9 +1043,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Reflective Films (Aluminum Foil)",
+      "material_name": " overt and covert markings",
       "properties": 0,
-      "application": "Laminates for egg packaging exposed to sunlight.",
+      "application": "Security seals; authentication for security purposes.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -623,439 +1053,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Temperature Monitoring Labels",
+      "material_name": "Can construction method",
       "properties": 0,
-      "application": "Attached to egg cartons to ensure proper handling.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Ventilated Packaging",
-      "properties": 0,
-      "application": "Egg cartons with ventilation holes for storage in warm environments.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Vacuum Insulated Panels (VIP)",
-      "properties": 0,
-      "application": "High-performance temperature-controlled packaging.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Cooling Gel Packs",
-      "properties": 0,
-      "application": "Used in conjunction with insulated containers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Temperature-Indicating Ink",
-      "properties": 0,
-      "application": "Printed on egg cartons for easy temperature monitoring.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Inert Plastics (Polyethylene, Polypropylene)",
-      "properties": 0,
-      "application": "Egg cartons and containers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Food-Grade Adhesives",
-      "properties": 0,
-      "application": "Used to assemble cardboard egg cartons.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Water-Based Inks",
-      "properties": 0,
-      "application": "Printing labels and graphics on egg cartons.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Protective Coatings",
-      "properties": 0,
-      "application": "Applied to pulp-based egg cartons.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Tamper-Evident Packaging",
-      "properties": 0,
-      "application": "Sealed egg cartons for security.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Child-Resistant Packaging",
-      "properties": 0,
-      "application": "Not typically required for eggs, but relevant for some processed egg products.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Formaldehyde-Free Materials",
-      "properties": 0,
-      "application": "Important for pulp-based and cardboard egg cartons.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Heavy Metal-Free Inks",
-      "properties": 0,
-      "application": "Printing on egg cartons.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Biodegradable Materials",
-      "properties": 0,
-      "application": "Eco-friendly egg packaging.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Clear PET (Polyethylene Terephthalate)",
-      "properties": 0,
-      "application": "Egg cartons for retail display.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Clear PVC (Polyvinyl Chloride)",
-      "properties": 0,
-      "application": "Egg cartons (less common due to environmental concerns).",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Cardboard with Window Cutouts",
-      "properties": 0,
-      "application": "Egg cartons with a window to view the eggs.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "High-Quality Printing",
-      "properties": 0,
-      "application": "Egg cartons with appealing designs.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Glossy Finishes",
-      "properties": 0,
-      "application": "Egg cartons with a glossy finish.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Labeling with Nutritional Information",
-      "properties": 0,
-      "application": "Egg cartons with nutritional labels.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Branding and Logos",
-      "properties": 0,
-      "application": "Egg cartons with brand logos and designs.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Shelf-Ready Packaging",
-      "properties": 0,
-      "application": "Outer boxes for bulk egg shipments that can be easily displayed.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Eye-Catching Colors",
-      "properties": 0,
-      "application": "Egg cartons with vibrant colors.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Sustainable Labeling",
-      "properties": 0,
-      "application": "Egg cartons made from recycled materials with eco-friendly labels.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Molded Pulp (6-Egg Carton)",
-      "properties": 0,
-      "application": "Small-quantity egg sales.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Molded Pulp (12-Egg Carton)",
-      "properties": 0,
-      "application": "Standard retail egg sales.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Molded Pulp (18-Egg Carton)",
-      "properties": 0,
-      "application": "Larger families, frequent bakers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Molded Pulp (30-Egg Carton)",
-      "properties": 0,
-      "application": "Food service industry.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Corrugated Cardboard Boxes (Various Sizes)",
-      "properties": 0,
-      "application": "Wholesale distribution.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Custom-Sized Packaging",
-      "properties": 0,
-      "application": "Specialty egg products, such as quail eggs.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Single-Egg Packaging",
-      "properties": 0,
-      "application": "Uncommon, but possible for certain applications.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Multi-Pack Sleeves",
-      "properties": 0,
-      "application": "Retail promotions.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Egg Trays",
-      "properties": 0,
-      "application": "Egg farms, processing plants.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Stackable Designs",
-      "properties": 0,
-      "application": "All types of egg packaging.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Tamper-Evident Seals",
-      "properties": 0,
-      "application": "Egg cartons for retail sales.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Shrink Wrap",
-      "properties": 0,
-      "application": "Bulk packaging for wholesale distribution.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Security Labels",
-      "properties": 0,
-      "application": "High-value or organic egg cartons.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Clear Packaging (Limited)",
-      "properties": 0,
-      "application": "Egg cartons with strategically placed windows.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Opaque Packaging",
-      "properties": 0,
-      "application": "Standard egg cartons.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Strong Adhesives",
-      "properties": 0,
-      "application": "All types of egg packaging.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Anti-Theft Devices (EAS Tags)",
-      "properties": 0,
-      "application": "High-value egg products in retail settings.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Reinforced Packaging",
-      "properties": 0,
-      "application": "Outer boxes for bulk egg shipments.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Serialized Packaging",
-      "properties": 0,
-      "application": "High-value or traceable egg products.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Integrated Locking Mechanisms",
-      "properties": 0,
-      "application": "Reusable egg containers.",
+      "application": "Structural design; protect against theft.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1065,282 +1065,216 @@
   ],
   "material_summaries": [
     {
-      "material_name": "Molded Pulp",
+      "material_name": "Aluminum Alloy (e.g., 3004, 5182)",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 245,
-          "ranking_justification": "This material ranks among the top choices due to its strong performance in Sustainability and Properties, which are strategically vital given their high weighting. While it may not be the absolute best across all dimensions, its balance of strengths, particularly in areas that align with our strategic priorities, makes it a favorable option. Any weaknesses in Logistics and Consumer Preference are mitigated by its strengths in Sustainability, Properties, and Cost, which hold greater strategic value.",
-          "domain_strengths": [
-            {
-              "dimension": "Properties",
-              "reason_for_strength": "The material exhibits excellent physical and chemical characteristics, ensuring product integrity and protection throughout the supply chain. This includes factors like durability, barrier properties, and resistance to environmental conditions.",
-              "impact_on_ranking": "Its inherent protective qualities significantly enhance its ranking, as Properties are a crucial factor for effective packaging, directly impacting product safety and shelf life. The high weight amplifies the effect of this strength on the total score."
-            },
-            {
-              "dimension": "Sustainability",
-              "reason_for_strength": "This material demonstrates a strong commitment to environmental responsibility, featuring attributes such as recyclability, renewable sourcing, reduced carbon footprint, or biodegradability. It aligns with growing consumer and regulatory demands for eco-friendly packaging solutions.",
-              "impact_on_ranking": "Sustainability is weighted very heavily in the scoring due to its strategic importance, and this material's strong sustainability profile significantly boosts its overall ranking and supports our sustainability goals."
-            },
-            {
-              "dimension": "Cost",
-              "reason_for_strength": "The material provides a cost-effective packaging solution relative to its performance and the alternatives available. It balances functionality with affordability, optimizing value for money.",
-              "impact_on_ranking": "Cost-effectiveness contributes to the material's favorable position, especially considering the significant weight of this dimension. It ensures the packaging solution remains economically viable without compromising essential qualities."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Logistics",
-              "weakness_reason": "The material might present some challenges in handling, storage, or transportation, possibly due to its shape, density, or fragility. This could lead to increased shipping costs or potential damage during transit.",
-              "compensated_by": "Properties, Sustainability, Cost",
-              "justification": "While Logistics may be a relative weakness, the material's strong showing in Sustainability and Properties, combined with reasonable Cost, more than compensates for these drawbacks. The core functions of protecting the product, aligning with sustainability goals, and staying within budget take precedence."
-            },
-            {
-              "dimension": "Consumer Preference",
-              "weakness_reason": "The material's aesthetic appeal or tactile experience may not be as strong as other alternatives. It might not be the most visually appealing or luxurious option for certain consumer segments.",
-              "compensated_by": "Sustainability, Properties, Cost",
-              "justification": "While Consumer Preference is important, the robust Sustainability profile, protective Properties, and cost-effectiveness of this material outweigh any potential shortcomings in consumer appeal. Consumers are increasingly prioritizing sustainability, and robust packaging is essential to their satisfaction."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "This material is a strong candidate for packaging due to its robust performance in key areas such as product protection, environmental responsibility, and cost-effectiveness. It strikes a desirable balance between functional requirements, sustainability objectives, and economic feasibility, making it a strategically sound choice for various packaging applications.",
-            "suitable_use_cases": [
-              "Food packaging",
-              "E-commerce packaging",
-              "Industrial goods packaging",
-              "Consumer goods packaging",
-              "Protective packaging"
-            ]
+        "material_name": "Aluminum Alloy (e.g., 3004, 5182)",
+        "executive_snapshot": "Aluminum alloy presents a strong option for beer can packaging due to its high sustainability score and consumer appeal, though cost and logistical considerations require careful management.",
+        "composite_score": 75,
+        "strengths": [
+          {
+            "dimension": "Sustainability",
+            "insight": "Aluminum's recyclability and potential for closed-loop systems significantly reduces its environmental impact, aligning with Blue Yonder's sustainability priorities and promoting a circular economy."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Consumers generally perceive aluminum as a premium and recyclable material, enhancing brand image and potentially driving sales, which directly supports Blue Yonder's focus on customer value."
+          },
+          {
+            "dimension": "Properties",
+            "insight": "Excellent barrier properties of aluminum protect beer from light and oxygen, maintaining product quality and shelf life, which is crucial for minimizing waste and enhancing consumer satisfaction."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Cost",
+            "mitigation": "While aluminum can be more expensive than some alternatives, the long-term sustainability benefits (reduced waste disposal fees, positive brand image) and optimized logistics can offset initial cost increases."
+          },
+          {
+            "dimension": "Logistics",
+            "mitigation": "Despite requiring specialized handling, the lightweight nature of aluminum can reduce overall transportation costs and fuel consumption, contributing to sustainability goals."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Direct costs are influenced by aluminum prices, but indirect cost savings arise from reduced waste disposal fees (due to recyclability) and potentially lower transportation costs due to lighter weight.",
+          "logistics": "Requires careful handling to prevent dents, but its light weight contributes to more efficient transportation and reduced fuel consumption; optimized warehousing is essential.",
+          "regulatory": "Generally well-aligned with existing regulations; aluminum is widely accepted for food and beverage packaging and is easily recyclable, fitting with extended producer responsibility schemes.",
+          "consumer": "Strong consumer acceptance due to its recyclability and perceived quality; clear labeling about recycling programs can further enhance its appeal and drive participation."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "Aluminum alloy offers a compelling balance of sustainability, consumer appeal, and product protection, making it a viable option for beer can packaging despite some cost and logistical challenges. Its high recyclability and established recycling infrastructure provide a strong foundation for a sustainable packaging solution.",
+          "sustainability_gain_percent": 25,
+          "cost_delta_percent": 5
         }
       }
     },
     {
-      "material_name": "Recycled Cardboard",
+      "material_name": "Steel (Tin-Free Steel/TFS or Electrolytic Chromium Coated Steel/ECCS)",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 230,
-          "ranking_justification": "This material ranks among the top choices due to its strong performance in Sustainability and Properties, which are strategically important dimensions. While it may have some shortcomings in Logistics or Consumer Preference, its overall profile provides a well-balanced solution that aligns with both environmental responsibility and functional requirements. The high weighting of Sustainability ensures that even moderate performance in other areas doesn't significantly detract from its overall appeal, as the market increasingly values eco-friendly options.",
-          "domain_strengths": [
-            {
-              "dimension": "Sustainability",
-              "reason_for_strength": "This material demonstrates a superior environmental footprint compared to alternatives. This could involve factors like high recyclability, use of renewable resources, reduced carbon emissions during production, or biodegradability, making it a more responsible choice for environmentally conscious companies.",
-              "impact_on_ranking": "Due to the high weighting of Sustainability (9), this strength significantly boosts the overall score and positions the material favorably compared to those with lower environmental performance. It directly addresses growing consumer and regulatory demands for greener packaging solutions."
-            },
-            {
-              "dimension": "Properties",
-              "reason_for_strength": "The material offers excellent protective capabilities, preserving product integrity throughout the supply chain. This may include high tensile strength, barrier properties against moisture and oxygen, or resistance to temperature variations, which are crucial for maintaining product quality.",
-              "impact_on_ranking": "The significant weighting of Properties (6) ensures that the material's protective capabilities contribute substantially to its overall ranking. It underscores its effectiveness in fulfilling the primary function of packaging: safeguarding the product."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Logistics",
-              "weakness_reason": "The material may present logistical challenges, such as higher weight, larger volume, or difficulties in stacking or handling, potentially increasing transportation costs and storage space requirements.",
-              "compensated_by": "Sustainability, Properties",
-              "justification": "The strong sustainability profile and reliable protective properties can justify potentially higher logistical costs, particularly in markets where environmental regulations are stringent and product damage is unacceptable. Consumers and businesses are often willing to absorb slightly higher logistical costs for a more eco-friendly and reliable packaging option."
-            },
-            {
-              "dimension": "Consumer Preference",
-              "weakness_reason": "The material might not be as visually appealing or tactilely pleasing as other options. It could lack the premium feel that some consumers associate with higher-quality products or may not be easily adaptable to eye-catching designs.",
-              "compensated_by": "Sustainability, Cost",
-              "justification": "A strong sustainability narrative, combined with potentially lower costs (if applicable), can offset lower consumer preference scores. Consumers are increasingly willing to compromise on aesthetics if the packaging is environmentally responsible and the product offers good value. Clear communication about the material's sustainable attributes can enhance its perceived value."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "This material is a strong candidate for packaging due to its excellent sustainability profile and reliable properties, making it a suitable choice for companies seeking environmentally responsible packaging solutions without compromising product protection. Its balanced performance across key dimensions makes it a strategically sound option for a range of applications.",
-            "suitable_use_cases": [
-              "Food packaging where product protection and shelf life are critical, and sustainability is a priority",
-              "E-commerce packaging for environmentally conscious brands",
-              "Industrial packaging for goods requiring robust protection during transportation",
-              "Cosmetics and personal care packaging emphasizing natural or eco-friendly ingredients"
-            ]
+        "material_name": "Steel (Tin-Free Steel/TFS or Electrolytic Chromium Coated Steel/ECCS)",
+        "executive_snapshot": "Steel is a viable option for beer can packaging, offering a balance of sustainability, protection, and consumer appeal, though cost and logistical considerations need careful management.",
+        "composite_score": 74,
+        "strengths": [
+          {
+            "dimension": "Sustainability",
+            "insight": "Steel's high recyclability and potential for closed-loop recycling significantly reduce its environmental footprint, aligning with Blue Yonder's sustainability priorities and potentially improving brand image."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Steel cans are widely accepted by consumers and perceived as providing good protection for beer, contributing to positive brand perception and potentially driving sales."
+          },
+          {
+            "dimension": "Properties",
+            "insight": "Steel offers excellent barrier properties, protecting beer from light and oxygen, maintaining product quality and extending shelf life which reduces waste."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Cost",
+            "mitigation": "The higher initial cost of steel cans can be offset by their durability, reduced damage during transport, and the environmental benefits leading to potential cost savings from lower waste disposal fees and enhanced brand reputation."
+          },
+          {
+            "dimension": "Logistics",
+            "mitigation": "While heavier than aluminum, efficient supply chain management and optimization of transportation routes can mitigate increased logistical costs, making it a manageable trade-off for the significant sustainability benefits and consumer appeal."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Direct costs may be higher due to material price, but indirect cost savings can be achieved through reduced damage and spoilage. Closed-loop recycling programs can further reduce long-term costs.",
+          "logistics": "Steel's weight can increase transportation costs compared to aluminum, requiring optimized logistics and potentially higher fuel consumption. However, its durability reduces the risk of damage during handling and transport.",
+          "regulatory": "Steel packaging aligns well with current and anticipated recycling regulations, minimizing compliance risks and potentially qualifying for extended producer responsibility (EPR) credits.",
+          "consumer": "Consumers generally have a positive view of steel cans, associating them with recyclability and product protection. Clear messaging about the sustainability benefits can further enhance consumer acceptance."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "Steel provides a strong combination of recyclability, consumer acceptance, and product protection, making it a viable alternative to other packaging materials despite potential cost and logistical challenges. Implementing closed-loop recycling programs would further enhance its sustainability credentials.",
+          "sustainability_gain_percent": 20,
+          "cost_delta_percent": 5
         }
       }
     },
     {
-      "material_name": "Polypropylene (PP)",
+      "material_name": "Polymer Coating (Epoxy, Acrylic)",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 230,
-          "ranking_justification": "This material ranks highly due to its exceptional sustainability profile, a crucial factor given its high weighting. While likely not the outright best in every category, its blend of strong performance in properties, cost, and consumer preference, coupled with decent logistics, creates a well-rounded profile. The strong emphasis on sustainability significantly boosts its overall score, making it a preferred choice when environmentally conscious packaging is a priority. The reasonable cost profile also ensures that sustainability is not achieved at an unreasonable premium, which is essential for widespread adoption.",
-          "domain_strengths": [
-            {
-              "dimension": "Sustainability",
-              "reason_for_strength": "The material demonstrates excellent environmental characteristics, likely including recyclability, biodegradability, use of renewable resources, and a reduced carbon footprint compared to alternatives.",
-              "impact_on_ranking": "Given sustainability's highest weighting (9), excelling in this area provides a substantial boost to the total score. This aligns with growing consumer demand and regulatory pressure for eco-friendly packaging."
-            },
-            {
-              "dimension": "Properties",
-              "reason_for_strength": "The material offers the necessary protective qualities for the intended product, ensuring product integrity throughout the supply chain. This includes factors like barrier properties, strength, and resistance to environmental conditions.",
-              "impact_on_ranking": "With a weight of 6, strong properties ensure the basic functional requirements of packaging are met, contributing significantly to the material's viability."
-            },
-            {
-              "dimension": "Cost",
-              "reason_for_strength": "The material offers a cost-effective solution compared to alternatives, balancing performance with affordability. This ensures that packaging costs do not significantly impact the overall product pricing.",
-              "impact_on_ranking": "A reasonable cost profile, weighted at 6, helps to prevent the material from being excluded due to economic constraints. Combined with sustainability, this provides a strong value proposition."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Logistics",
-              "weakness_reason": "The material may present some logistical challenges, potentially related to storage, transportation, or handling. This might involve lower space efficiency or specific transportation requirements.",
-              "compensated_by": "Sustainability, Properties, Cost",
-              "justification": "While logistical efficiency is important (weight of 5), the strength of the material's sustainability profile (weight of 9) along with its good properties and acceptable cost profile outweighs any logistical drawbacks. These strengths, especially the emphasis on sustainability, make the material a worthwhile choice despite moderate logistical challenges."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "This material presents a compelling option for packaging due to its strong sustainability profile, adequate properties, and reasonable cost. It is strategically suited for applications where environmental impact is a primary concern and where a balance between cost and performance is essential.",
-            "suitable_use_cases": [
-              "Food packaging (dry goods, produce)",
-              "E-commerce packaging",
-              "Consumer goods packaging",
-              "Cosmetics packaging",
-              "Pharmaceutical packaging"
-            ]
+        "material_name": "Polymer Coating (Epoxy, Acrylic)",
+        "executive_snapshot": "Polymer coatings are a viable option for beer can packaging due to their strong protective properties and consumer appeal, but trade-offs exist in cost and potentially sustainability depending on the specific polymer.",
+        "composite_score": 72,
+        "strengths": [
+          {
+            "dimension": "Sustainability",
+            "insight": "Polymer coatings, particularly acrylic, can offer a reduced environmental footprint compared to alternatives like BPA-based epoxies, aligning with Blue Yonder's sustainability priorities and potentially improving a company's ESG profile."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Polymer-coated cans offer a smooth, appealing aesthetic and are generally well-received by consumers, potentially driving increased sales and brand loyalty, directly impacting Blue Yonder's customer's business goals."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Cost",
+            "mitigation": "While polymer coatings can be more expensive than some alternatives, the strong consumer preference and improved sustainability profile can offset these costs through increased sales and a better brand image."
+          },
+          {
+            "dimension": "Logistics",
+            "mitigation": "While minor, the protective nature of these coatings reduces the risk of damage during handling and transport, potentially offsetting logistics challenges and reducing overall supply chain costs."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Direct costs may be slightly higher due to material prices. Indirect costs could be reduced due to lower spoilage rates and damage during transportation. Long-term life cycle costs need careful consideration.",
+          "logistics": "Polymer coatings offer good protection against corrosion and dents, reducing damage during handling and transport. Standard filling and sealing equipment can typically be used without major modifications.",
+          "regulatory": "Compliance with food contact regulations (FDA, EU) is essential. Specific polymer formulations need careful evaluation for potential migration into beer. BPA-free options are preferred and often mandated.",
+          "consumer": "Consumers generally accept polymer-coated cans. Transparency regarding the specific polymer used and its safety is crucial for maintaining consumer trust. Marketing BPA-free options can enhance consumer appeal."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "Data suggests polymer coatings offer a balanced approach by providing superior product protection and consumer appeal. With increasing consumer sensitivity towards sustainability, polymer coatings can serve as a short-term solution to transition to more sustainable coatings or aluminum cans.",
+          "sustainability_gain_percent": 8,
+          "cost_delta_percent": 3
         }
       }
     },
     {
-      "material_name": "Expanded Polystyrene (EPS)",
+      "material_name": "Ink (UV-cured, Water-based)",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 235,
-          "ranking_justification": "This material achieves a top ranking due to its strong performance in Sustainability and Properties, which are two of the most strategically important dimensions. A balanced performance across Logistics, Cost, and Consumer Preference ensures that it doesn't underperform in any critical area, solidifying its position as a leading candidate. This balance, combined with excellence in key areas, results in a high overall score.",
-          "domain_strengths": [
-            {
-              "dimension": "Properties",
-              "reason_for_strength": "The material exhibits robust performance characteristics suitable for protecting the packaged goods, including strength, barrier properties, and resistance to environmental factors. This ensures product integrity throughout the supply chain and during consumer use.",
-              "impact_on_ranking": "With a weight of 6, the material's excellent protective capabilities significantly boosted its overall score. Properties are critical for ensuring product safety and minimizing damage, making this a crucial strength."
-            },
-            {
-              "dimension": "Sustainability",
-              "reason_for_strength": "The material demonstrates a reduced environmental footprint, achieved through responsible sourcing, recyclability, compostability, or reduced energy consumption during production. This aligns with growing consumer and regulatory demands for eco-friendly packaging.",
-              "impact_on_ranking": "As the highest-weighted dimension (9), strong sustainability performance provides a substantial competitive advantage. It addresses critical environmental concerns and enhances the company's corporate social responsibility profile, leading to a significant increase in the overall score."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Logistics",
-              "weakness_reason": "The material might present minor challenges in terms of storage, transportation, or handling efficiency compared to alternatives. This could be due to its shape, weight, or susceptibility to damage during transit.",
-              "compensated_by": "Sustainability, Properties",
-              "justification": "While logistics might be slightly less optimal, the material's superior sustainability and protective properties outweigh these concerns. The high weight assigned to sustainability and the importance of properties in maintaining product quality justify accepting slightly less efficient logistics."
-            },
-            {
-              "dimension": "Consumer Preference",
-              "weakness_reason": "While generally positive, consumer preference might not be the material's strongest suit compared to other alternatives, potentially due to aesthetic factors, perceived quality, or familiarity with existing packaging solutions.",
-              "compensated_by": "Properties, Sustainability, Cost",
-              "justification": "Any potential shortfall in consumer preference is mitigated by the material's strong protective properties ensuring product integrity, its sustainability credentials aligning with eco-conscious consumers, and its cost-effectiveness potentially leading to better value for the consumer. This combination addresses key consumer needs beyond purely aesthetic considerations."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "This material is a strong candidate for packaging due to its excellent balance of sustainability, cost, and protective properties. It presents a compelling alternative for businesses prioritizing environmental responsibility without compromising product integrity or affordability.",
-            "suitable_use_cases": [
-              "Food packaging requiring barrier properties and extended shelf life",
-              "E-commerce packaging where product protection during transit is paramount",
-              "Consumer goods packaging where sustainability claims resonate with consumers",
-              "Industrial packaging where durability and recyclability are essential"
-            ]
+        "material_name": "Ink (UV-cured, Water-based)",
+        "executive_snapshot": "Water-based UV-cured ink represents a viable option for beer can packaging due to its strong sustainability profile and consumer appeal, despite potential cost and logistical considerations.",
+        "composite_score": 75,
+        "strengths": [
+          {
+            "dimension": "Sustainability",
+            "insight": "Offers a significantly reduced environmental footprint compared to traditional solvent-based inks, aligning with increasing consumer demand for eco-friendly packaging and Blue Yonder's sustainability priorities."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Water-based inks are generally perceived more positively by consumers due to their lower VOC emissions and perceived safety, potentially enhancing brand image and loyalty."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Cost",
+            "mitigation": "While potentially more expensive upfront, the long-term benefits of enhanced sustainability and consumer preference can offset these costs through increased sales and brand value."
+          },
+          {
+            "dimension": "Logistics",
+            "mitigation": "Potential complexities in handling and storage can be mitigated with optimized supply chain management practices and partnerships with experienced ink suppliers."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "May involve higher initial material costs compared to conventional inks, potentially offset by reduced waste disposal fees and improved operational efficiency due to faster curing times.",
+          "logistics": "Requires careful handling to maintain ink quality and prevent damage during transport and storage, potentially necessitating specialized packaging and climate-controlled environments.",
+          "regulatory": "Generally compliant with environmental regulations due to low VOC content, potentially streamlining permitting processes and reducing compliance risks.",
+          "consumer": "Positive consumer perception due to its eco-friendly characteristics, potentially leading to increased sales and brand loyalty."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "The enhanced sustainability profile and positive consumer perception outweigh the potential cost and logistical challenges, leading to an improved overall brand image and a reduced environmental impact for beer can packaging.",
+          "sustainability_gain_percent": 20,
+          "cost_delta_percent": 5
         }
       }
     },
     {
-      "material_name": "Clear PET (Polyethylene Terephthalate)",
+      "material_name": "Varnish (Overvarnish)",
       "summary": {
-        "material_performance_review": {
-          "calculated_score": 240,
-          "ranking_justification": "This material ranks among the top choices due to its exceptional sustainability performance and strong showing in properties and cost, which are critical for strategic packaging decisions. While logistics and consumer preference may not be its strongest areas, its dominance in sustainability and solid performance in properties and cost outweigh these weaknesses, leading to a high overall score.",
-          "domain_strengths": [
-            {
-              "dimension": "Sustainability",
-              "reason_for_strength": "The material demonstrates outstanding environmental credentials, encompassing recyclability, reduced carbon footprint, and responsible sourcing. Its eco-friendly profile minimizes environmental impact throughout its lifecycle.",
-              "impact_on_ranking": "Given the substantial weight assigned to Sustainability (9), this strength significantly boosts the material's overall score, solidifying its position as a top contender. This is crucial as it aligns with increasing consumer and regulatory focus on environmentally responsible packaging."
-            },
-            {
-              "dimension": "Properties",
-              "reason_for_strength": "The material exhibits robust physical and chemical characteristics, providing adequate protection for the packaged goods. This includes barrier properties, strength, and durability, ensuring product integrity throughout the supply chain.",
-              "impact_on_ranking": "With a weight of 6, the material's strong performance in Properties contributes substantially to its high ranking. Reliable protection minimizes product damage and waste, a key consideration in packaging selection."
-            },
-            {
-              "dimension": "Cost",
-              "reason_for_strength": "The material offers a competitive cost structure, providing economic viability without sacrificing key performance attributes. This includes considerations for raw material costs, processing efficiency, and waste reduction.",
-              "impact_on_ranking": "Cost, with a weight of 6, plays a significant role. The cost-effectiveness of this material ensures it's a practical choice for various packaging applications, making it a strong contender overall."
-            }
-          ],
-          "compensating_factors": [
-            {
-              "dimension": "Logistics",
-              "weakness_reason": "The material might present some challenges in transportation or storage due to its dimensions or fragility. This may lead to higher transportation costs or increased risk of damage during handling.",
-              "compensated_by": "Sustainability, Properties, Cost",
-              "justification": "While logistical considerations are important, the material's exceptional performance in Sustainability, combined with its solid Properties and Cost profile, more than compensates for these logistical challenges. The environmental benefits and overall cost-effectiveness outweigh the minor logistical drawbacks."
-            },
-            {
-              "dimension": "Consumer Preference",
-              "weakness_reason": "Consumer perception of this material might be neutral or slightly negative compared to other options. This could be due to aesthetic factors, perceived lack of premium quality, or limited brand recognition.",
-              "compensated_by": "Sustainability, Properties, Cost",
-              "justification": "Consumer preference, while valuable, is secondary to environmental impact and functional performance in many strategic packaging decisions. The material's compelling Sustainability profile, along with reliable Properties and attractive Cost, can be effectively communicated to consumers, mitigating any potential negative perceptions. Consumers are increasingly prioritizing eco-friendly options, making sustainability a key driver."
-            }
-          ],
-          "fit_for_use": {
-            "summary": "This material is a strong candidate for packaging due to its outstanding sustainability profile, robust properties, and cost-effectiveness. Its strengths align with the most strategically important criteria, making it a suitable choice for businesses prioritizing environmental responsibility and functional performance.",
-            "suitable_use_cases": [
-              "Eco-friendly food packaging",
-              "Sustainable e-commerce packaging",
-              "Protective packaging for electronics",
-              "Cost-effective industrial packaging",
-              "Environmentally conscious consumer goods packaging"
-            ]
+        "material_name": "Varnish (Overvarnish)",
+        "executive_snapshot": "Varnish is a conditionally suitable material for beer can packaging, offering strong sustainability benefits and consumer appeal, but requires careful consideration of its cost and logistical implications.",
+        "composite_score": 72,
+        "strengths": [
+          {
+            "dimension": "Sustainability",
+            "insight": "Varnish can significantly reduce the environmental footprint of beer cans by enabling lighter packaging through enhanced durability and corrosion resistance, aligning with Blue Yonder's sustainability priorities."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Varnish enhances the aesthetic appeal and tactile feel of beer cans, improving consumer perception and brand loyalty, which is a crucial factor in purchasing decisions."
+          },
+          {
+            "dimension": "Properties",
+            "insight": "Varnish provides excellent protection against corrosion and abrasion, extending the shelf life and maintaining the quality of the beer, a critical functional requirement."
           }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Cost",
+            "mitigation": "While varnish can increase upfront costs, the extended shelf life, reduced damage during transport, and increased consumer appeal (leading to higher sales) can offset these initial investments."
+          },
+          {
+            "dimension": "Logistics",
+            "mitigation": "Potential complexities in handling varnish application can be addressed with optimized supply chain processes and quality control measures, while the durability benefits contribute to reduced transportation damages."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Direct costs include material procurement and application processes. Indirectly, varnish can reduce damage during transit, leading to lower waste and potential returns, offsetting some initial expenses.",
+          "logistics": "Careful handling is required during application and storage. The added strength and protection offered by the varnish can result in reduced transit damages and losses during shipping.",
+          "regulatory": "Varnish composition must comply with food contact regulations for both production and disposal. Proper material sourcing and waste management are crucial to adhering to environmental standards.",
+          "consumer": "Consumers generally perceive varnished packaging as higher quality, increasing brand value and potentially influencing purchase decisions positively."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "Varnish is recommended due to its significant sustainability advantages and positive consumer perception, although cost and logistical considerations require careful supply chain management to fully capitalize on these benefits. The protective properties justify the extra cost.",
+          "sustainability_gain_percent": 15,
+          "cost_delta_percent": 8
         }
       }
     }
-  ],
-  "executive_summary": {
-    "material_performance_review": {
-      "calculated_score": 240,
-      "ranking_justification": "This material ranks among the top choices due to its excellent balance of performance across strategically important dimensions. While it may not be the absolute best in every single category, it presents a compelling profile by strongly emphasizing Sustainability, Properties, and Cost, which are highly weighted. Strengths in these areas compensate for relatively weaker performance in other dimensions, resulting in a high overall score and strategic suitability.",
-      "domain_strengths": [
-        {
-          "dimension": "Sustainability",
-          "reason_for_strength": "The material exhibits exceptional environmental performance, likely due to factors like recyclability, use of renewable resources, reduced carbon footprint, or biodegradability. This makes it a leading option for organizations committed to environmental responsibility.",
-          "impact_on_ranking": "Given Sustainability's high weight, this strength significantly boosts the material's overall ranking. Brands are increasingly prioritizing eco-friendly packaging, making this a crucial advantage."
-        },
-        {
-          "dimension": "Properties",
-          "reason_for_strength": "The material possesses robust physical and chemical properties, providing excellent product protection, durability, and shelf life. It may offer superior barrier properties or structural integrity compared to alternatives.",
-          "impact_on_ranking": "The high weighting on Properties ensures that this strength is a major contributor to the material's success. Protecting the product effectively is a fundamental requirement of packaging."
-        },
-        {
-          "dimension": "Cost",
-          "reason_for_strength": "The material offers competitive pricing and favorable cost-effectiveness relative to its performance. This might be due to readily available raw materials, efficient manufacturing processes, or reduced waste generation.",
-          "impact_on_ranking": "Cost-effectiveness is a critical advantage, especially in competitive markets. Its substantial weighting ensures that this strength meaningfully improves the overall score."
-        }
-      ],
-      "compensating_factors": [
-        {
-          "dimension": "Logistics",
-          "weakness_reason": "The material might have some limitations related to transportation, storage, or handling, such as bulkiness, fragility, or specialized storage requirements.",
-          "compensated_by": "Sustainability, Properties, Cost",
-          "justification": "While Logistics is important, the material's strong performance in Sustainability, Properties, and Cost more than offsets these logistical challenges. The benefits of reduced environmental impact, reliable product protection, and cost savings outweigh the logistical drawbacks."
-        },
-        {
-          "dimension": "Consumer Preference",
-          "weakness_reason": "The material might not be the top choice in terms of aesthetics or tactile feel, possibly due to its appearance, texture, or lack of premium appeal.",
-          "compensated_by": "Sustainability, Properties, Cost",
-          "justification": "Although Consumer Preference carries weight, superior environmental credentials, reliable product protection, and cost-effectiveness are likely to influence purchasing decisions more significantly, particularly for certain product categories. Many consumers prioritize sustainability and value over premium aesthetics."
-        }
-      ],
-      "fit_for_use": {
-        "summary": "This material is a strong candidate for packaging due to its environmentally responsible profile, reliable protective properties, and cost-effectiveness. Its balanced performance makes it suitable for a wide range of applications where sustainability and product protection are prioritized.",
-        "suitable_use_cases": [
-          "Food packaging (especially for products targeting environmentally conscious consumers)",
-          "E-commerce packaging (where durability and sustainability are key)",
-          "Industrial packaging (where cost-effectiveness and protection are paramount)",
-          "Consumer goods packaging (where a balance of sustainability and functionality is required)"
-        ]
-      }
-    }
-  }
+  ]
 }
