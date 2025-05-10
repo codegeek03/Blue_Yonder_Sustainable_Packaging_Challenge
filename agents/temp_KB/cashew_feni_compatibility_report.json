@@ -1,47 +1,47 @@
 {
   "criteria": {
     "physical_form": {
-      "explanation": "Liquid",
-      "concerns": "Leakage"
+      "explanation": "liquid",
+      "concerns": "leakage"
     },
     "fragility": {
-      "explanation": "Sturdy",
-      "concerns": "Breakage"
+      "explanation": "durable",
+      "concerns": "breakage"
     },
     "shelf_life": {
-      "explanation": "Long",
-      "concerns": "Spoilage"
+      "explanation": "long",
+      "concerns": "oxidation"
     },
     "chemical_properties": {
-      "explanation": "Alcoholic",
-      "concerns": "Reaction"
+      "explanation": "alcoholic",
+      "concerns": "reactivity"
     },
     "hygiene_sensitivity": {
-      "explanation": "High",
-      "concerns": "Contamination"
+      "explanation": "sterile",
+      "concerns": "contamination"
     },
     "temperature_sensitivity": {
-      "explanation": "Sensitive",
-      "concerns": "Spoilage"
+      "explanation": "moderate",
+      "concerns": "expansion"
     },
     "volatility_or_hazard_risk": {
-      "explanation": "Low",
-      "concerns": "Flammable"
+      "explanation": "flammable",
+      "concerns": "combustion"
     },
     "visibility_and_display": {
-      "explanation": "Important",
-      "concerns": "Labeling"
+      "explanation": "labeling",
+      "concerns": "fading"
     },
     "quantity_and_dosage": {
-      "explanation": "Bulk",
-      "concerns": "Spillage"
+      "explanation": "bulk",
+      "concerns": "spillage"
     },
     "value_and_theft_sensitivity": {
-      "explanation": "High",
-      "concerns": "Theft"
+      "explanation": "moderate",
+      "concerns": "pilferage"
     }
   },
-  "product_name": "Wine",
+  "product_name": "Cashew Feni",
   "analysis_timestamp": "2025-05-08 20:00:32",
   "scores": {
     "physical_form": 80.0,

@@ -58,42 +58,32 @@ class AnalysisState(TypedDict):
     user_login: Annotated[str, "user_login"]
     current_time: Annotated[str, "current_time"]
 
-from agno.knowledge.wikipedia import WikipediaKnowledgeBase
+from agno.tools.tavily import TavilyTools
+
 
 class OrchestrationAgent:
-    """
-    An agent that orchestrates the material analysis process and generates
-    comprehensive reports using Gemini for enhanced analysis.
-    """
-    
     def __init__(self, current_time: str = CURRENT_TIME, current_user: str = CURRENT_USER):
         logger.info("Initializing OrchestrationAgent")
         try:
             self.current_time = current_time
             self.user_login = current_user
-            
-            # Load environment variables
+
             load_dotenv()
-            self.api_key = os.getenv('GOOGLE_API_KEY')
+            self.api_key = os.getenv("GOOGLE_API_KEY")
             if not self.api_key:
                 raise ValueError("GOOGLE_API_KEY environment variable is not set")
 
-            # Create reports directory
             self.reports_dir = "temp_KB/reports"
             os.makedirs(self.reports_dir, exist_ok=True)
 
-            # Initialize Gemini agent
             self.agent = Agent(
-                model=Gemini(
-                    id="gemini-2.0-flash-exp",
-                    api_key=self.api_key
-                ),
+                model=Gemini(id="gemini-2.0-flash-exp", api_key=self.api_key),
+                tools=[TavilyTools()],
                 markdown=True,
+                show_tool_calls=True,
             )
 
-            # Analysis weights
             self.analysis_weights = ANALYSIS_WEIGHTS.copy()
-            
             logger.info("OrchestrationAgent initialized successfully")
 
         except Exception as e:
@@ -107,120 +97,89 @@ class OrchestrationAgent:
         location: str,
         material: Dict[str, Any]
     ) -> Dict[str, Any]:
-        """Generate detailed analysis for a single material."""
         try:
             mat_name = material["material_name"]
 
             prompt = f"""
-You are a senior sustainability consultant for Blue Yonder’s “Data Analytics Driven Framework for Sustainable Packaging Decisions” challenge. You’ve been given:
+You are a senior sustainability consultant advising Blue Yonder’s clients on optimal packaging choices. You’ve been given:
 
-• Product: {product_name}  
-• One of the top-{k} packaging materials from a data-driven ranking: **{mat_name}**  
-• Location: **{location}**  
-• A holistic view of this material’s performance across five dimensions: Properties, Logistics, Cost, Sustainability, Consumer Preference.  
+• Product: {product_name}
+• One of the top-{k} packaging materials from a data-driven ranking: **{mat_name}**
+• Location: **{location}**
+• A holistic view of this material’s performance across five dimensions: Properties, Logistics, Cost, Sustainability, Consumer Preference.
 
-Blue Yonder requires a professional, slide-ready report for each material, covering:
+Your task is to produce a professional, slide-ready JSON report using only the exact schema below (no extra keys or commentary). Be concise, data-driven, and vary all raw values and scores meaningfully for {mat_name} in the context of packaging {product_name} in {location}:
 
-1. **Executive Snapshot**  
-   – A one-sentence verdict on this material’s suitability for packaging **{product_name}** in **{location}**.
-
-2. **Composite Score**  
-   – A single “Sustainability Impact Score” (0–100) computed by taking into account the material {mat_name} packaged at {location}.  
-   – Only the final composite (no raw sub-scores) and think twice before giving the output, judge correctly so that no two material has same score.
-   - Judge based on the following dimensions:
-   Consider these key metrics:
-        1. Carbon Footprint (25%) - CO2 emissions in production and disposal
-        2. Recyclability (25%) - Ease and efficiency of recycling
-        3. Biodegradability (20%) - Natural decomposition capability
-        4. Resource Efficiency (15%) - Natural resource consumption
-        5. Toxicity (15%) - Environmental hazard potential
-        and display them too, but different for all materials
-
-3. **Strengths & Alignment**  
-   – 2–3 key strengths, tied explicitly to Blue Yonder’s priorities (e.g. Sustainability, Consumer Preference).
-
-4. **Trade-off Analysis**  
-   – Any weaker dimensions and how higher-priority strengths compensate.
-
-5. **Supply-Chain Implications**  
-   – Direct/indirect cost impacts (handling, logistics, damage risk), plus the regulatory considerations above, and consumer acceptance.
-
-6. **Strategic Recommendation**  
-   – Data-grounded “Adopt” (true/false) recommendation for packaging **{product_name}** in **{location}**, including:  
-     • Estimated % improvement in overall sustainability footprint  
-     • Estimated % change in cost  
-     • Any regulatory or consumer considerations  
-
- 7.**Regional Regulatory Context** (sourced from Wikipedia): give a brief summary of the most relevant regulations for this {mat_name} in this {location} preferably by wikipedia search.
-
-**Return exactly this JSON** (no extra keys or prose):
-
-```json
 {{
   "material_name": "{mat_name}",
-  "executive_snapshot": "<one-sentence verdict>",
-  "composite_score": <0–100>,
+  "executive_snapshot": "<one-sentence summary of fit for {product_name} in {location}>",
+  "composite_score": {{
+    "metrics": {{
+      "carbon_footprint": {{ "value": "<e.g. 3.7 kg CO₂/kg>", "score": <0–100> }},
+      "recyclability":    {{ "value": "<e.g. 85%>",           "score": <0–100> }},
+      "biodegradability": {{ "value": "<e.g. 12 months>",      "score": <0–100> }},
+      "resource_efficiency": {{ "value": "<e.g. 1.2 MJ/kg>",   "score": <0–100> }},
+      "toxicity":         {{ "value": "<e.g. Low>",            "score": <0–100> }}
+    }},
+    "composite": <0–100>
+  }},
   "strengths": [
     {{
       "dimension": "<name>",
-      "insight": "<why this is a strength & business impact>"
+      "insight": "<why this is strategically valuable for {product_name}>"
     }}
   ],
   "trade_offs": [
     {{
       "dimension": "<weaker area>",
-      "mitigation": "<how higher-priority strengths offset it>"
+      "mitigation": "<how strengths compensate for weaknesses in the context of {product_name}>"
     }}
   ],
   "supply_chain_implications": {{
-    "costs": "<direct/indirect cost narrative>",
-    "logistics": "<handling & transport narrative>",
-    "regulatory": "<how regional regulations affect use>",
-    "consumer": "<consumer acceptance outlook>"
+    "costs": "<narrative on manufacturing and handling costs for {product_name} in {location}>",
+    "logistics": "<narrative on weight, volume, transport efficiency in {location}>",
+    "regulatory": "<narrative referencing relevant {location}-specific regulations for packaging {product_name} with {mat_name}>",
+    "consumer": "<narrative on consumer perceptions of {mat_name} for {product_name}>"
   }},
-  "recommendation": {{
-    "adopt": <true|false>,
-    "justification": "<data-driven rationale>",
-    "sustainability_gain_percent": <estimated %>,
-    "cost_delta_percent": <estimated %>
-  }}
-}}"""
+  "consulting_recommendation": {{
+    "advice": "<actionable next steps for piloting or scaling {mat_name} use for {product_name}>",
+    "sustainability_uplift_percent": <projected % uplift for {product_name} sustainability>,
+    "cost_delta_percent": <projected % cost change for {product_name}>
+  }},
+  "regulatory_context": "<excerpt from the most relevant regulation in {location} for {mat_name}>"
+}}
+"""
 
             response = await self.agent.arun(prompt)
             return self._process_response(response.content)
 
         except Exception as e:
-            logger.error(f"Error analysis failed: {str(e)}", exc_info=True)
-            return {"error": str(e)}
+                logger.error(f"Error generating executive summary: {str(e)}", exc_info=True)
+                return {"error": str(e)}
 
     def _process_response(self, response_text: str) -> Dict[str, Any]:
-        """Process and clean up the response text."""
         try:
             response_text = response_text.strip()
-            if response_text.startswith('```json'):
-                response_text = response_text[7:-3]
-            elif response_text.startswith('```'):
-                response_text = response_text[3:-3]
-            
+            if response_text.startswith("```json"):
+                response_text = response_text[7:-3].strip()
+            elif response_text.startswith("```"):
+                response_text = response_text[3:-3].strip()
             return json.loads(response_text)
-
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse response JSON: {str(e)}")
             raise ValueError(f"Invalid JSON response: {str(e)}")
 
     def _save_report(self, data: Dict[str, Any], report_type: str) -> str:
-        """Save report to file."""
         try:
             timestamp = self.current_time.replace(" ", "_").replace(":", "-")
             filename = f"{report_type}_{timestamp}.json"
             filepath = os.path.join(self.reports_dir, filename)
 
-            with open(filepath, 'w', encoding='utf-8') as f:
+            with open(filepath, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2)
 
             logger.info(f"Saved {report_type} report to: {filepath}")
             return filepath
-
         except Exception as e:
             logger.error(f"Failed to save report: {str(e)}", exc_info=True)
             raise
@@ -751,56 +710,59 @@ def print_results(result: Dict[str, Any], thread_id: str):
             review = entry.get("summary", {})
 
             snapshot = review.get("executive_snapshot", "N/A")
-            score    = review.get("composite_score", "N/A")
-            strengths   = review.get("strengths", [])
-            trade_offs  = review.get("trade_offs", [])
-            sci         = review.get("supply_chain_implications", {})
-            rec         = review.get("recommendation", {})
-            reg_context = review.get("regional_regulatory_context", "No regulatory context available.")
+            comp_obj = review.get("composite_score", {})
+            metrics  = comp_obj.get("metrics", {})
+            composite = comp_obj.get("composite", "N/A")
+
+            strengths    = review.get("strengths", [])
+            trade_offs   = review.get("trade_offs", [])
+            sci          = review.get("supply_chain_implications", {})
+            rec          = review.get("consulting_recommendation", {})
+            reg_context  = review.get("regulatory_context", "No regulatory context available.")
 
             print(f"\n{i}. Material: {name}")
             print("------------------------")
             print(f"Executive Snapshot: {snapshot}")
-            print(f"Sustainibility Score: {score}")
 
-            # Regional Regulatory Context
-            print("\n📝 Regional Regulatory Context:")
-            # Print as a paragraph, wrap lines if needed
+            # Composite Score breakdown
+            print("\n📊 Composite Score:")
+            for dim, data in metrics.items():
+                val = data.get("value", "")
+                score = data.get("score", "")
+                print(f"  • {dim.replace('_', ' ').title()}: {val} ➔ score {score}/100")
+            print(f"  → Weighted Composite: {composite}/100")
+
+            # Regulatory Context
+            print("\n📝 Regulatory Context:")
             for line in reg_context.split("\n"):
                 print(f"  {line}")
 
             if strengths:
-                print("\n✅ Strengths & Alignment:")
+                print("\n✅ Key Strengths:")
                 for j, s in enumerate(strengths, 1):
-                    dim = s.get("dimension", "Unknown")
-                    ins = s.get("insight", "")
-                    print(f"  {j}. {dim}: {ins}")
+                    print(f"  {j}. {s.get('dimension')}: {s.get('insight')}")
 
             if trade_offs:
                 print("\n⚖️ Trade-off Analysis:")
                 for j, t in enumerate(trade_offs, 1):
-                    dim = t.get("dimension", "Unknown")
-                    mit = t.get("mitigation", "")
-                    print(f"  {j}. {dim}: {mit}")
+                    print(f"  {j}. {t.get('dimension')}: {t.get('mitigation')}")
 
             if sci:
                 print("\n📦 Supply-Chain Implications:")
-                print(f"  • Costs     : {sci.get('costs', '')}")
-                print(f"  • Logistics : {sci.get('logistics', '')}")
-                print(f"  • Regulatory: {sci.get('regulatory', '')}")
-                print(f"  • Consumer  : {sci.get('consumer', '')}")
+                print(f"  • Costs     : {sci.get('costs','')}")
+                print(f"  • Logistics : {sci.get('logistics','')}")
+                print(f"  • Regulatory: {sci.get('regulatory','')}")
+                print(f"  • Consumer  : {sci.get('consumer','')}")
 
             if rec:
-                adopt = rec.get("adopt", False)
-                just  = rec.get("justification", "")
-                gain  = rec.get("sustainability_gain_percent", "N/A")
-                delta = rec.get("cost_delta_percent", "N/A")
+                advice = rec.get("advice","")
+                uplift = rec.get("sustainability_uplift_percent","N/A")
+                delta  = rec.get("cost_delta_percent","N/A")
 
-                print("\n📈 Strategic Recommendation:")
-                print(f"  Adopt?            : {'Yes' if adopt else 'No'}")
-                print(f"  Justification     : {just}")
-                print(f"  Sustainability Δ% : {gain}")
-                print(f"  Cost Δ%           : {delta}")
+                print("\n📈 Consulting Recommendation:")
+                print(f"  • Advice                   : {advice}")
+                print(f"  • Sustainability Uplift %  : {uplift}")
+                print(f"  • Cost Delta %            : {delta}")
 
 
 

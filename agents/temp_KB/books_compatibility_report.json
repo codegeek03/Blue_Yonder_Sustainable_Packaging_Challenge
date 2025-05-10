@@ -1,47 +1,47 @@
 {
   "criteria": {
     "physical_form": {
-      "explanation": "Liquid",
-      "concerns": "Leakage"
+      "explanation": "Solid",
+      "concerns": "Crushing"
     },
     "fragility": {
-      "explanation": "Sturdy",
-      "concerns": "Breakage"
+      "explanation": "Moderate",
+      "concerns": "Bending"
     },
     "shelf_life": {
       "explanation": "Long",
-      "concerns": "Spoilage"
+      "concerns": "Humidity"
     },
     "chemical_properties": {
-      "explanation": "Alcoholic",
-      "concerns": "Reaction"
+      "explanation": "Inert",
+      "concerns": "Yellowing"
     },
     "hygiene_sensitivity": {
-      "explanation": "High",
-      "concerns": "Contamination"
+      "explanation": "Low",
+      "concerns": "Dust"
     },
     "temperature_sensitivity": {
-      "explanation": "Sensitive",
-      "concerns": "Spoilage"
+      "explanation": "Stable",
+      "concerns": "Deformation"
     },
     "volatility_or_hazard_risk": {
-      "explanation": "Low",
-      "concerns": "Flammable"
+      "explanation": "None",
+      "concerns": "Fire"
     },
     "visibility_and_display": {
-      "explanation": "Important",
-      "concerns": "Labeling"
+      "explanation": "High",
+      "concerns": "Damage"
     },
     "quantity_and_dosage": {
-      "explanation": "Bulk",
-      "concerns": "Spillage"
+      "explanation": "Fixed",
+      "concerns": "Weight"
     },
     "value_and_theft_sensitivity": {
-      "explanation": "High",
-      "concerns": "Theft"
+      "explanation": "Moderate",
+      "concerns": "Pilferage"
     }
   },
-  "product_name": "Wine",
+  "product_name": "Books",
   "analysis_timestamp": "2025-05-08 20:00:32",
   "scores": {
     "physical_form": 80.0,

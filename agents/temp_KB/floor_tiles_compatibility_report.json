@@ -1,47 +1,47 @@
 {
   "criteria": {
     "physical_form": {
-      "explanation": "Liquid",
-      "concerns": "Leakage"
+      "explanation": "solid",
+      "concerns": "breakage"
     },
     "fragility": {
-      "explanation": "Sturdy",
-      "concerns": "Breakage"
+      "explanation": "high",
+      "concerns": "impact"
     },
     "shelf_life": {
-      "explanation": "Long",
-      "concerns": "Spoilage"
+      "explanation": "long",
+      "concerns": "storage"
     },
     "chemical_properties": {
-      "explanation": "Alcoholic",
-      "concerns": "Reaction"
+      "explanation": "inert",
+      "concerns": "staining"
     },
     "hygiene_sensitivity": {
-      "explanation": "High",
-      "concerns": "Contamination"
+      "explanation": "low",
+      "concerns": "dirt"
     },
     "temperature_sensitivity": {
-      "explanation": "Sensitive",
-      "concerns": "Spoilage"
+      "explanation": "low",
+      "concerns": "cracking"
     },
     "volatility_or_hazard_risk": {
-      "explanation": "Low",
-      "concerns": "Flammable"
+      "explanation": "none",
+      "concerns": "none"
     },
     "visibility_and_display": {
-      "explanation": "Important",
-      "concerns": "Labeling"
+      "explanation": "high",
+      "concerns": "defects"
     },
     "quantity_and_dosage": {
-      "explanation": "Bulk",
-      "concerns": "Spillage"
+      "explanation": "fixed",
+      "concerns": "space"
     },
     "value_and_theft_sensitivity": {
-      "explanation": "High",
-      "concerns": "Theft"
+      "explanation": "medium",
+      "concerns": "damage"
     }
   },
-  "product_name": "Wine",
+  "product_name": "Floor tiles",
   "analysis_timestamp": "2025-05-08 20:00:32",
   "scores": {
     "physical_form": 80.0,
@@ -50,7 +50,7 @@
     "chemical_properties": 80.0,
     "hygiene_sensitivity": 72.0,
     "temperature_sensitivity": 64.0,
-    "volatility_or_hazard_risk": 80.0,
+    "volatility_or_hazard_risk": 100,
     "visibility_and_display": 56.0,
     "quantity_and_dosage": 64.0,
     "value_and_theft_sensitivity": 72.0

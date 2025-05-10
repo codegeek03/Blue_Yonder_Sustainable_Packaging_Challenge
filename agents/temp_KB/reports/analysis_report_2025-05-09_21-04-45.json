@@ -1,5 +1,5 @@
 {
-  "product_name": "wine",
+  "product_name": "Floor tiles",
   "timestamp": "2025-05-09 21:04:45",
   "user": "codegeek03",
   "weights_used": {
@@ -11,29 +11,9 @@
   },
   "top_materials": [
     {
-      "material_name": "Sulfur Dioxide (SO2)",
+      "material_name": "Corrugated Cardboard",
       "properties": 0,
-      "application": "Wine preservation (not a packaging material, but related)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 100,
-      "sustainability": 0,
-      "total_score": 21.82
-    },
-    {
-      "material_name": "Glass",
-      "properties": 88.0,
-      "application": "Primary container (bottle)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 16.0
-    },
-    {
-      "material_name": "Cork",
-      "properties": 0,
-      "application": "Closure (stopper)",
+      "application": "Outer box for bulk packaging and shipping.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -41,9 +21,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Screw Cap (Aluminum)",
+      "material_name": "Chipboard Pads",
       "properties": 0,
-      "application": "Alternative closure",
+      "application": "Interleaving between tiles within a box.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -51,9 +31,29 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Polyethylene (PE) or Polypropylene (PP)",
+      "material_name": "Kraft Paper",
       "properties": 0,
-      "application": "Label backing, tamper-evident seals",
+      "application": "Wrapping individual stacks of tiles or filling gaps in the box.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Stretch Wrap (LLDPE)",
+      "properties": 0,
+      "application": "Wrapping entire pallet loads of boxed tiles.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Plastic Strapping (Polypropylene)",
+      "properties": 0,
+      "application": "Securing boxes to pallets.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -63,29 +63,9 @@
   ],
   "all_materials": [
     {
-      "material_name": "Sulfur Dioxide (SO2)",
+      "material_name": "Corrugated Cardboard",
       "properties": 0,
-      "application": "Wine preservation (not a packaging material, but related)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 100,
-      "sustainability": 0,
-      "total_score": 21.82
-    },
-    {
-      "material_name": "Glass",
-      "properties": 88.0,
-      "application": "Primary container (bottle)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 16.0
-    },
-    {
-      "material_name": "Cork",
-      "properties": 0,
-      "application": "Closure (stopper)",
+      "application": "Outer box for bulk packaging and shipping.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -93,9 +73,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Screw Cap (Aluminum)",
+      "material_name": "Chipboard Pads",
       "properties": 0,
-      "application": "Alternative closure",
+      "application": "Interleaving between tiles within a box.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -103,9 +83,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Polyethylene (PE) or Polypropylene (PP)",
+      "material_name": "Kraft Paper",
       "properties": 0,
-      "application": "Label backing, tamper-evident seals",
+      "application": "Wrapping individual stacks of tiles or filling gaps in the box.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -113,9 +93,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Paper (Label Stock)",
+      "material_name": "Stretch Wrap (LLDPE)",
       "properties": 0,
-      "application": "Label",
+      "application": "Wrapping entire pallet loads of boxed tiles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -123,109 +103,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pressure-Sensitive Adhesive",
+      "material_name": "Plastic Strapping (Polypropylene)",
       "properties": 0,
-      "application": "Label adhesion",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Cardboard",
-      "properties": 0,
-      "application": "Secondary packaging (cartons, cases)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Corrugated Fiberboard",
-      "properties": 0,
-      "application": "Shipping boxes",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Expanded Polystyrene (EPS) or Molded Pulp",
-      "properties": 0,
-      "application": "Internal dividers/protection in shipping boxes",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Shrink Wrap (Polyolefin)",
-      "properties": 0,
-      "application": "Multi-pack wrapping",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Corrugated Fiberboard",
-      "properties": 0,
-      "application": "Outer shipping cartons",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Molded Pulp Inserts",
-      "properties": 0,
-      "application": "Internal dividers for bottle protection",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Expanded Polystyrene (EPS)",
-      "properties": 0,
-      "application": "Protective inserts (less sustainable option)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Inflatable Air Pillows",
-      "properties": 0,
-      "application": "Void fill in shipping boxes",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Bubble Wrap (Polyethylene)",
-      "properties": 0,
-      "application": "Wrapping individual bottles (less sustainable option)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Partitioned Cardboard Inserts",
-      "properties": 0,
-      "application": "Internal dividers for shipping cases",
+      "application": "Securing boxes to pallets.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -235,7 +115,7 @@
     {
       "material_name": "Edge Protectors (Cardboard or Plastic)",
       "properties": 0,
-      "application": "Edge protection for palletized shipments",
+      "application": "Reinforcing the corners of pallet loads.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -243,9 +123,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Stretch Film (LLDPE)",
+      "material_name": "Honeycomb Board",
       "properties": 0,
-      "application": "Pallet wrapping",
+      "application": "Void fill and edge protection.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -253,9 +133,69 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Protective Sleeves (Foam or Cardboard)",
+      "material_name": "Molded Pulp",
       "properties": 0,
-      "application": "Individual bottle protection, especially during handling",
+      "application": "Corner protectors.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Foam Packaging (Polyethylene)",
+      "properties": 0,
+      "application": "Individual tile protection (for very high-value tiles).",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Paper Tape",
+      "properties": 0,
+      "application": "Sealing boxes.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Corrugated Cardboard (Double-Walled)",
+      "properties": 0,
+      "application": "Outer box for shipping, providing maximum protection.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Foam Inserts (Expanded Polystyrene - EPS)",
+      "properties": 0,
+      "application": "Cradling individual tiles for superior protection.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Bubble Wrap (Polyethylene)",
+      "properties": 0,
+      "application": "Wrapping individual tiles or stacks of tiles.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Inflatable Air Pillows",
+      "properties": 0,
+      "application": "Filling empty spaces within the box to prevent tile movement.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -265,7 +205,7 @@
     {
       "material_name": "Suspension Packaging",
       "properties": 0,
-      "application": "High-value or extremely fragile wines",
+      "application": "Specialized packaging for extremely fragile or high-value tiles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -273,9 +213,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Glass (Dark/Colored)",
+      "material_name": "Reinforced Sealing Tape",
       "properties": 0,
-      "application": "Primary container (bottle)",
+      "application": "Sealing boxes securely.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -283,9 +223,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cork (High Quality)",
+      "material_name": "Corner Boards (Heavy Duty Cardboard)",
       "properties": 0,
-      "application": "Closure for age-worthy wines",
+      "application": "Reinforcing box corners.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -293,9 +233,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Screw Cap (with appropriate liner)",
+      "material_name": "Cushioning Foam (Polyurethane)",
       "properties": 0,
-      "application": "Closure for many wines",
+      "application": "Internal supports and cushioning.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -303,9 +243,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Oxygen Scavenging Additives (in closures)",
+      "material_name": "Molded Fiber Trays",
       "properties": 0,
-      "application": "Integrated into closures",
+      "application": "Internal packaging for multiple tiles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -313,9 +253,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "UV-Protective Coatings (on labels)",
+      "material_name": "Void Fill Paper",
       "properties": 0,
-      "application": "Label coating",
+      "application": "Added cushioning in boxes.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -323,9 +263,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Modified Atmosphere Packaging (MAP) - rarely used",
+      "material_name": "Polyethylene Film (PE)",
       "properties": 0,
-      "application": "Not typical for individual wine bottles, more for bag-in-box",
+      "application": "Wrapping stacks of tiles or pallets.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -333,9 +273,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Vacuum sealing",
+      "material_name": "UV-Resistant Shrink Wrap",
       "properties": 0,
-      "application": "Used on some wine preservation systems, not primary packaging",
+      "application": "Wrapping pallets for long-term outdoor storage.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -343,9 +283,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "High Barrier Films (for bag-in-box)",
+      "material_name": "Desiccant Packs (Silica Gel)",
       "properties": 0,
-      "application": "Bag-in-box wine packaging",
+      "application": "Included inside the box to control humidity.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -353,9 +293,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Inner Coatings (for bag-in-box)",
+      "material_name": "VCI Film (Volatile Corrosion Inhibitor)",
       "properties": 0,
-      "application": "Bag-in-box wine packaging",
+      "application": "Wrapping metallic tiles to prevent rust.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -363,9 +303,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Temperature-Controlled Shipping Containers",
+      "material_name": "Modified Atmosphere Packaging (MAP)",
       "properties": 0,
-      "application": "Shipping of temperature-sensitive wines",
+      "application": "Specialized packaging for certain tile types.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -373,9 +313,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Inert Glass (Type I or II)",
+      "material_name": "Anti-static Bags (Polyethylene)",
       "properties": 0,
-      "application": "Primary container",
+      "application": "Wrapping tiles that are sensitive to static.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -383,9 +323,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Food-Grade Liners (for screw caps)",
+      "material_name": "Barrier Film (Multilayer)",
       "properties": 0,
-      "application": "Screw cap closures",
+      "application": "Wrapping individual tiles or stacks.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -393,9 +333,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Neutral Adhesives (for labels)",
+      "material_name": "Nitrogen Flushing",
       "properties": 0,
-      "application": "Label adhesion",
+      "application": "Used with barrier films for extended shelf life.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -403,9 +343,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Oxygen Barrier Coatings (on closures)",
+      "material_name": "Airtight Containers",
       "properties": 0,
-      "application": "Cork and screw cap treatments",
+      "application": "Storage of tiles in controlled environments.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -413,9 +353,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Tartaric Acid",
+      "material_name": "Humidity Indicators",
       "properties": 0,
-      "application": "Added to prevent tartrate precipitation (not a packaging material, but related)",
+      "application": "Monitoring storage conditions.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -423,9 +363,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Bentonite Clay",
+      "material_name": "HDPE (High-Density Polyethylene)",
       "properties": 0,
-      "application": "Removes proteins to prevent haze (not a packaging material, but related)",
+      "application": "Liners or containers to protect against chemical damage.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -433,9 +373,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Food-Grade Epoxy Phenolic Resins (lining of cans)",
+      "material_name": "PTFE (Teflon) Coated Liners",
       "properties": 0,
-      "application": "Wine in cans",
+      "application": "Liners for highly reactive tiles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -443,9 +383,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Multi-layer PET bottles",
+      "material_name": "Acid-Free Paper",
       "properties": 0,
-      "application": "Wine in plastic bottles",
+      "application": "Interleaving between tiles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -453,9 +393,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Antimicrobial Packaging",
+      "material_name": "Inert Plastic Trays (Polypropylene)",
       "properties": 0,
-      "application": "Can add extra protection",
+      "application": "Holding individual tiles safely.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -463,9 +403,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Sterilized Glass Bottles",
+      "material_name": "Barrier Coatings (Acrylic)",
       "properties": 0,
-      "application": "Primary container",
+      "application": "Coating on cardboard boxes.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -473,9 +413,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Sanitized Corks",
+      "material_name": "pH Neutral Adhesives",
       "properties": 0,
-      "application": "Closure",
+      "application": "Securing packaging components.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -483,9 +423,99 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Food-Grade Packaging Materials",
+      "material_name": "Vapor Barrier Films",
       "properties": 0,
-      "application": "All packaging components",
+      "application": "Wrapping materials to protect from external chemical exposure.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Activated Carbon Filters",
+      "properties": 0,
+      "application": "Integrated into packaging for sensitive tiles.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Anti-corrosion Additives (in plastic)",
+      "properties": 0,
+      "application": "Used in plastic films and containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Silicone-Based Coatings",
+      "properties": 0,
+      "application": "Coating for external box protection.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Anti-microbial Film (Polypropylene with additives)",
+      "properties": 0,
+      "application": "Wrapping tiles in hygienic environments.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Sterile Packaging (Medical Grade)",
+      "properties": 0,
+      "application": "Packaging for specialized tiles used in cleanrooms or hospitals.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Easy-to-Clean Plastic (Smooth HDPE)",
+      "properties": 0,
+      "application": "External packaging for tiles in high-hygiene areas.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Sealed Packaging",
+      "properties": 0,
+      "application": "Ensuring cleanliness during transit and storage.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Filter Paper",
+      "properties": 0,
+      "application": "Layering within the packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Gamma Irradiated Packaging",
+      "properties": 0,
+      "application": "For tiles requiring maximum sterility.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -495,7 +525,7 @@
     {
       "material_name": "Tamper-Evident Seals",
       "properties": 0,
-      "application": "Closure seals",
+      "application": "Ensuring the integrity of the hygienic environment.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -503,9 +533,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cleanroom Manufacturing (for closures)",
+      "material_name": "UV-C Resistant Materials",
       "properties": 0,
-      "application": "Closure production",
+      "application": "Packaging that is sterilized with UV-C light.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -513,9 +543,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Controlled Atmosphere Bottling",
+      "material_name": "Cleanroom-Compatible Packaging",
       "properties": 0,
-      "application": "Bottling process",
+      "application": "For tiles used in sensitive environments.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -523,9 +553,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "UV Sterilization (of bottles)",
+      "material_name": "Bacteriostatic Agents (impregnated into plastic)",
       "properties": 0,
-      "application": "Bottle preparation",
+      "application": "Incorporated into plastic films.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -533,9 +563,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Hygienic Design",
+      "material_name": "Insulated Packaging (EPS Foam)",
       "properties": 0,
-      "application": "Bottling line equipment",
+      "application": "Protecting tiles from extreme temperature fluctuations.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -543,69 +573,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Antimicrobial Coatings",
+      "material_name": "Temperature Indicating Labels",
       "properties": 0,
-      "application": "Secondary packaging",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Barrier Films",
-      "properties": 0,
-      "application": "Wine pouches and bag-in-box",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Insulated Shipping Containers",
-      "properties": 0,
-      "application": "Shipping temperature-sensitive wines",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Temperature-Indicating Labels",
-      "properties": 0,
-      "application": "Monitoring temperature during shipping",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Thermal Blankets",
-      "properties": 0,
-      "application": "Pallet wrapping",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Dark Glass",
-      "properties": 0,
-      "application": "Bottle Material",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Expanded Polystyrene (EPS) Coolers",
-      "properties": 0,
-      "application": "Individual bottle coolers",
+      "application": "Monitoring temperature during transit.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -615,7 +585,7 @@
     {
       "material_name": "Phase Change Materials (PCM)",
       "properties": 0,
-      "application": "Insulated shipping containers",
+      "application": "Regulating temperature inside the package.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -623,9 +593,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cold Chain Packaging",
+      "material_name": "Reflective Foil (Aluminum)",
       "properties": 0,
-      "application": "Sparkling wines",
+      "application": "Lining boxes to reduce heat absorption.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -633,9 +603,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Controlled Temperature Warehouses",
+      "material_name": "Corrugated Cardboard with Ventilation",
       "properties": 0,
-      "application": "Storage solutions for wine",
+      "application": "Boxes designed to prevent overheating.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -643,9 +613,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Thermal mass packaging",
+      "material_name": "Temperature Controlled Shipping Containers",
       "properties": 0,
-      "application": "Especially important for shipping wines during extreme weather conditions",
+      "application": "For tiles requiring strict temperature control.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -653,9 +623,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Reflective Foils",
+      "material_name": "Vacuum Insulated Panels (VIP)",
       "properties": 0,
-      "application": "Shipping and storage",
+      "application": "Insulating boxes for extreme temperature protection.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -663,9 +633,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Secure Closures",
+      "material_name": "Cold Packs (Gel Packs)",
       "properties": 0,
-      "application": "Bottle closures (cork, screw cap)",
+      "application": "Used with insulated packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -673,9 +643,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Durable Packaging",
+      "material_name": "Heat Packs (Chemical Reaction)",
       "properties": 0,
-      "application": "Outer shipping cartons",
+      "application": "Used to prevent freezing.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -683,9 +653,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "UN-Certified Packaging",
+      "material_name": "Thermal Blankets",
       "properties": 0,
-      "application": "Shipping hazardous wines (rare, but possible with high alcohol content)",
+      "application": "Wrapping pallet loads of tiles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -693,9 +663,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Tamper-Evident Features",
+      "material_name": "UN-Rated Packaging",
       "properties": 0,
-      "application": "Closure seals",
+      "application": "Packaging for tiles containing volatile or hazardous substances.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -703,9 +673,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Absorbent Materials",
+      "material_name": "Vermiculite",
       "properties": 0,
-      "application": "Packaging inserts",
+      "application": "Packing around tiles containing liquids.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -713,9 +683,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Warning Labels",
+      "material_name": "Safety Labels (Hazard Symbols)",
       "properties": 0,
-      "application": "Outer shipping cartons",
+      "application": "Adhered to the outside of the packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -723,9 +693,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Strapping",
+      "material_name": "Secondary Containment",
       "properties": 0,
-      "application": "Palletized shipments",
+      "application": "Inner bags or containers within the main box.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -733,9 +703,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Anti-Slip Coatings",
+      "material_name": "Flame Retardant Materials",
       "properties": 0,
-      "application": "Carton coatings",
+      "application": "Packaging materials for tiles that are flammable.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -743,9 +713,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Impact Indicators",
+      "material_name": "Static Dissipative Packaging",
       "properties": 0,
-      "application": "Used on shipping containers",
+      "application": "For tiles containing flammable liquids or gases.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -753,9 +723,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Tilt Indicators",
+      "material_name": "Emergency Contact Information",
       "properties": 0,
-      "application": "Used on shipping containers to avoid damage and leakage",
+      "application": "Displayed prominently on the packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -763,9 +733,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Clear Glass",
+      "material_name": "SDS (Safety Data Sheet) Enclosure",
       "properties": 0,
-      "application": "Primary container (for some wines)",
+      "application": "Included inside a waterproof pouch attached to the packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -773,9 +743,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "High-Quality Labels",
+      "material_name": "Tamper-Evident Seals with Hazard Warning",
       "properties": 0,
-      "application": "Label",
+      "application": "Sealing hazardous material packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -783,9 +753,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Embossed Labels",
+      "material_name": "Pressure Relief Valves",
       "properties": 0,
-      "application": "Label enhancement",
+      "application": "For tiles that may release gases under certain conditions.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -793,9 +763,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Transparent Sleeves",
+      "material_name": "Clear PET Clamshell Packaging",
       "properties": 0,
-      "application": "Bottle wrapping",
+      "application": "Displaying individual tiles for retail.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -803,9 +773,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Display-Ready Packaging",
+      "material_name": "Windowed Boxes (Cardboard with Clear Window)",
       "properties": 0,
-      "application": "Secondary packaging",
+      "application": "Retail packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -813,9 +783,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Shelf Talkers",
+      "material_name": "Display Stands (Cardboard)",
       "properties": 0,
-      "application": "Retail display",
+      "application": "Point-of-sale displays.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -823,9 +793,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Printed Cartons",
+      "material_name": "Custom Printed Boxes",
       "properties": 0,
-      "application": "Shipping and display",
+      "application": "Retail and wholesale packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -833,9 +803,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Shrink Sleeves",
+      "material_name": "Hang Tabs (Plastic)",
       "properties": 0,
-      "application": "Branding and visual appeal",
+      "application": "Retail packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -843,9 +813,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Holographic labels",
+      "material_name": "QR Codes",
       "properties": 0,
-      "application": "Label enhancement for premium product",
+      "application": "Printed on the packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -853,9 +823,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Interactive packaging",
+      "material_name": "Interactive Packaging (Augmented Reality)",
       "properties": 0,
-      "application": "Providing consumers product details and experiences",
+      "application": "Innovative retail packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -863,9 +833,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Standard Bottle Sizes (750ml, 1L, etc.)",
+      "material_name": "Minimalist Packaging",
       "properties": 0,
-      "application": "Primary container",
+      "application": "High-end tile retail.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -873,9 +843,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Accurate Fill Levels",
+      "material_name": "Sustainable Packaging (Recycled Cardboard)",
       "properties": 0,
-      "application": "Bottling process",
+      "application": "Retail and wholesale packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -883,9 +853,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Multi-Packs",
+      "material_name": "Open Tray Packaging",
       "properties": 0,
-      "application": "Secondary packaging",
+      "application": "Showcasing tile sets.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -893,9 +863,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Bag-in-Box Packaging",
+      "material_name": "Pre-Portioned Packs (Shrink-Wrapped Bundles)",
       "properties": 0,
-      "application": "Alternative packaging format",
+      "application": "Retail sales of standard tile quantities.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -903,9 +873,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Single-Serve Wine Pouches",
+      "material_name": "Clearly Labeled Boxes (Tile Count)",
       "properties": 0,
-      "application": "Alternative packaging format",
+      "application": "Wholesale and retail packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -913,9 +883,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Miniature Bottles",
+      "material_name": "Modular Packaging (Stackable Boxes)",
       "properties": 0,
-      "application": "Alternative packaging format",
+      "application": "Warehouse and retail storage.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -923,9 +893,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Dosage Caps",
+      "material_name": "Dispensing Cartons",
       "properties": 0,
-      "application": "Not applicable",
+      "application": "Specialized applications where individual tiles are needed frequently.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -933,9 +903,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Flow Control Valves (Bag-in-Box)",
+      "material_name": "Unit Dose Packaging",
       "properties": 0,
-      "application": "Bag-in-box wine",
+      "application": "For very high-value tiles or those needing strict protection.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -943,9 +913,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Tamper evident packaging",
+      "material_name": "Volume Measurement Markings (on boxes)",
       "properties": 0,
-      "application": "Primary and secondary packaging",
+      "application": "Wholesale packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -953,9 +923,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Clear labeling for volume",
+      "material_name": "Color-Coded Packaging (by size or type)",
       "properties": 0,
-      "application": "Primary and secondary packaging",
+      "application": "Retail and wholesale.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -963,9 +933,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Tamper-Evident Closures",
+      "material_name": "Weigh Scale Integration (at packaging line)",
       "properties": 0,
-      "application": "Closure seals",
+      "application": "Automated packaging processes.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -973,9 +943,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Security Labels",
+      "material_name": "Bagging Systems (Automated)",
       "properties": 0,
-      "application": "Label",
+      "application": "High-volume packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -983,9 +953,39 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Serialized Labels",
+      "material_name": "Counter Display Units (Pre-filled)",
       "properties": 0,
-      "application": "Label",
+      "application": "Point-of-sale displays.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Tamper-Evident Packaging",
+      "properties": 0,
+      "application": "Retail packaging to deter theft.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Security Tape",
+      "properties": 0,
+      "application": "Sealing boxes to prevent pilferage.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Serialized Packaging",
+      "properties": 0,
+      "application": "High-value tiles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -995,7 +995,7 @@
     {
       "material_name": "RFID Tags",
       "properties": 0,
-      "application": "Shipping cartons",
+      "application": "Supply chain security.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1003,9 +1003,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Shrink Wrap",
+      "material_name": "GPS Tracking Devices",
       "properties": 0,
-      "application": "Multi-pack wrapping",
+      "application": "High-value shipments.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1015,7 +1015,7 @@
     {
       "material_name": "Opaque Packaging",
       "properties": 0,
-      "application": "Shipping cartons",
+      "application": "Deterring theft by obscuring the item.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1023,9 +1023,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Reinforced Cartons",
+      "material_name": "Reinforced Packaging (Steel Strapping)",
       "properties": 0,
-      "application": "Shipping cartons",
+      "application": "High-value and bulky tile shipments.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1033,9 +1033,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "High-Bond Adhesives",
+      "material_name": "Alarm Systems (Integrated)",
       "properties": 0,
-      "application": "Labels",
+      "application": "Specialized security packaging.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1043,9 +1043,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "UV coatings",
+      "material_name": "CCTV Surveillance (at packaging and shipping)",
       "properties": 0,
-      "application": "Labels",
+      "application": "Warehouse and distribution centers.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1053,9 +1053,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "GPS tracking",
+      "material_name": "Insurance",
       "properties": 0,
-      "application": "Shipping",
+      "application": "All shipments of high-value tiles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1065,183 +1065,303 @@
   ],
   "material_summaries": [
     {
-      "material_name": "Sulfur Dioxide (SO2)",
+      "material_name": "Corrugated Cardboard",
       "summary": {
-        "material_name": "Sulfur Dioxide (SO2)",
-        "executive_snapshot": "Sulfur Dioxide is unsuitable for wine packaging in Kolkata due to its inherent properties as a gas and its environmental and health hazards, outweighing any potential cost benefits.",
-        "composite_score": 25,
-        "strengths": [
-          {
-            "dimension": "Cost",
-            "insight": "SO2 might present a low initial cost compared to other packaging materials if it were used in some derived packaging material, but this is heavily outweighed by environmental and safety concerns."
-          }
-        ],
-        "trade_offs": [
-          {
-            "dimension": "Sustainability",
-            "mitigation": "While cost might be lower, the extremely negative environmental and health impacts render the cost advantage insignificant and unacceptable."
-          }
-        ],
-        "supply_chain_implications": {
-          "costs": "While raw SO2 might be inexpensive, the costs associated with safe handling, storage, and potential environmental remediation are substantial.",
-          "logistics": "SO2 is a gas and requires specialized equipment for handling and transport, leading to increased logistical complexity and risk.",
-          "regulatory": "SO2 emissions are heavily regulated in Kolkata due to air quality concerns. Using it in packaging would likely face strict compliance requirements and potential penalties.",
-          "consumer": "Consumers are increasingly aware of environmental issues and would likely react negatively to wine packaged using a material associated with pollution."
+        "material_name": "Corrugated Cardboard",
+        "executive_snapshot": "Corrugated cardboard presents a balanced packaging solution for floor tiles in Bhopal, offering strong sustainability credentials and cost-effectiveness while aligning with circular economy goals.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "1.1 kg CO\u2082/kg",
+              "score": 82
+            },
+            "recyclability": {
+              "value": "85%",
+              "score": 85
+            },
+            "biodegradability": {
+              "value": "6 months",
+              "score": 75
+            },
+            "resource_efficiency": {
+              "value": "1.5 MJ/kg",
+              "score": 70
+            },
+            "toxicity": {
+              "value": "Very Low",
+              "score": 90
+            }
+          },
+          "composite": 81
         },
-        "recommendation": {
-          "adopt": false,
-          "justification": "The extreme environmental and health risks associated with SO2, combined with logistical challenges and regulatory hurdles in Kolkata, make it an unacceptable packaging choice for wine, regardless of potential cost savings.",
-          "sustainability_gain_percent": -70,
-          "cost_delta_percent": 50
-        }
-      }
-    },
-    {
-      "material_name": "Glass",
-      "summary": {
-        "material_name": "Glass",
-        "executive_snapshot": "Glass, while sustainable from a recyclability perspective, presents logistical and cost challenges in Kolkata's market for wine packaging, requiring careful consideration of trade-offs.",
-        "composite_score": 72,
         "strengths": [
           {
             "dimension": "Recyclability",
-            "insight": "Glass is highly recyclable, aligning with Blue Yonder's sustainability priorities and reducing environmental impact in Kolkata, where recycling infrastructure is developing but requires focused improvement. This resonates positively with environmentally conscious consumers."
+            "insight": "High recyclability aligns with circular economy goals, reducing landfill waste and promoting resource reuse."
           },
-          {
-            "dimension": "Consumer Preference",
-            "insight": "Glass is generally perceived as a premium packaging material for wine, enhancing product value and brand image which can increase consumer appeal and drive sales in Kolkata's growing wine market."
-          }
-        ],
-        "trade_offs": [
-          {
-            "dimension": "Logistics",
-            "mitigation": "The higher weight and fragility of glass compared to alternative packaging materials increase transportation costs and damage risk; however, the premium brand perception and consumer willingness to pay a slightly higher price for glass-packaged wine can offset these additional costs."
-          },
-          {
-            "dimension": "Resource Efficiency",
-            "mitigation": "While glass production demands significant energy, the high recyclability rate in many regions, coupled with initiatives promoting the use of recycled glass cullet, reduces the reliance on virgin resources, mitigating environmental concerns."
-          }
-        ],
-        "supply_chain_implications": {
-          "costs": "Direct costs are higher due to the weight and fragility of glass, leading to increased transportation and potential breakage costs. Indirect costs related to storage and handling can also be significant. However, efficient logistics and potential for local sourcing could mitigate these.",
-          "logistics": "Handling glass requires careful procedures to minimize breakage during transport and storage. Kolkata's infrastructure may present challenges, necessitating specialized packaging and handling equipment.",
-          "regulatory": "There are regulations in India (including potential state-level variations applicable to Kolkata) related to packaging waste management, which may influence glass recycling initiatives and extended producer responsibility. Additionally, food safety regulations apply to glass used for food and beverage packaging.",
-          "consumer": "Consumers generally associate glass with higher quality and sustainability for wine packaging. This positive perception can contribute to increased sales and brand loyalty in the Kolkata market."
-        },
-        "recommendation": {
-          "adopt": true,
-          "justification": "Glass is recommended given its strong consumer appeal and recyclability despite logistical hurdles. Prioritize sourcing from manufacturers with sustainable practices and focusing on efficient supply chain optimization to minimize costs and environmental impact.",
-          "sustainability_gain_percent": 18,
-          "cost_delta_percent": 8
-        }
-      }
-    },
-    {
-      "material_name": "Cork",
-      "summary": {
-        "material_name": "Cork",
-        "executive_snapshot": "Cork presents a viable and moderately sustainable packaging option for wine in Kolkata, balancing traditional appeal with environmental considerations, though cost and potential supply chain complexities must be carefully managed.",
-        "composite_score": 78,
-        "strengths": [
-          {
-            "dimension": "Sustainability",
-            "insight": "Cork's renewability and biodegradability significantly reduce its environmental impact compared to many alternatives, aligning with increasing consumer preference for eco-friendly packaging and contributing positively to Blue Yonder's sustainability goals."
-          },
-          {
-            "dimension": "Consumer Preference",
-            "insight": "Cork is often associated with quality and tradition in the wine industry, enhancing perceived value and potentially driving sales in Kolkata, where consumers appreciate established brands and premium products."
-          }
-        ],
-        "trade_offs": [
-          {
-            "dimension": "Cost",
-            "mitigation": "While cork may be more expensive than some alternatives, its positive impact on consumer perception and enhanced brand image can justify the higher cost, leading to increased sales and customer loyalty, ultimately offsetting the initial investment."
-          }
-        ],
-        "supply_chain_implications": {
-          "costs": "Direct costs may be higher due to material price, but indirect costs associated with transportation and storage could be minimized with efficient sourcing and logistics planning. Quality control is vital to minimize spoilage and waste.",
-          "logistics": "Requires careful handling to prevent damage and maintain integrity. Transportation costs can be optimized by sourcing from nearby suppliers, however, this may be challenging.",
-          "regulatory": "Compliance with Indian regulations regarding packaging waste management and import regulations is crucial. Extended Producer Responsibility (EPR) may apply. Checking with local Kolkata authorities for specific packaging norms is also important.",
-          "consumer": "Generally positive due to cork's association with quality and tradition. However, awareness of cork taint and efforts to minimize it through rigorous quality control are necessary to maintain consumer confidence."
-        },
-        "recommendation": {
-          "adopt": true,
-          "justification": "Cork offers a strong balance of sustainability and consumer appeal. While cost needs careful management, the brand enhancement and environmental benefits make it a worthwhile option, particularly for premium wines targeting environmentally conscious consumers in Kolkata. A complete Life Cycle Analysis is recommended",
-          "sustainability_gain_percent": 18,
-          "cost_delta_percent": 8
-        }
-      }
-    },
-    {
-      "material_name": "Screw Cap (Aluminum)",
-      "summary": {
-        "material_name": "Screw Cap (Aluminum)",
-        "executive_snapshot": "Screw cap (aluminum) is a reasonably suitable option for packaging wine in Kolkata, offering a balance of recyclability, cost-effectiveness, and consumer acceptance, but its higher carbon footprint needs mitigation.",
-        "composite_score": 78,
-        "strengths": [
-          {
-            "dimension": "Recyclability",
-            "insight": "Aluminum is highly recyclable, which aligns with sustainability goals and reduces environmental impact. High recycling rates in Kolkata can translate to a circular economy, decreasing the need for virgin aluminum production."
-          },
-          {
-            "dimension": "Consumer Preference",
-            "insight": "Screw caps are increasingly accepted by consumers for their convenience and perceived freshness, potentially increasing sales and brand loyalty in the Kolkata market."
-          }
-        ],
-        "trade_offs": [
           {
             "dimension": "Carbon Footprint",
-            "mitigation": "While aluminum production has a higher carbon footprint, its recyclability and lightweight nature, which reduces transportation emissions, partially offset this impact."
+            "insight": "Relatively low carbon footprint minimizes environmental impact and supports corporate sustainability targets."
+          }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Resource Efficiency",
+            "mitigation": "The ease of sourcing and production and high recyclability rates offset some resource efficiency concerns."
           }
         ],
         "supply_chain_implications": {
-          "costs": "Direct costs are generally moderate, with potential for savings due to reduced damage during transport compared to corks. Indirectly, reliance on aluminum sources may introduce price volatility.",
-          "logistics": "Screw caps are lightweight and easy to handle, streamlining logistics and reducing transportation costs, but proper storage is needed to avoid dents.",
-          "regulatory": "Aluminum packaging is subject to regulations regarding food contact safety and waste management. Kolkata may have specific rules on aluminum recycling and extended producer responsibility.",
-          "consumer": "Consumer acceptance is generally positive, driven by convenience and perceived preservation of wine quality. However, some consumers may still associate screw caps with lower-quality wines."
+          "costs": "Corrugated cardboard offers competitive manufacturing costs and reduces damage risk with proper design, but handling costs can be moderate due to weight and bulk.",
+          "logistics": "While lightweight, corrugated cardboard can increase volume. Optimize transport by compacting tile arrangements.",
+          "regulatory": "Packaging in India is regulated by the Bureau of Indian Standards (BIS) and the Plastic Waste Management Rules, which emphasizes extended producer responsibility and recycling. These regulations promote the use of recyclable materials.",
+          "consumer": "Consumers generally view cardboard favorably due to its recyclability and eco-friendliness. Clear labeling and sustainable sourcing information further enhance consumer perception."
         },
-        "recommendation": {
-          "adopt": true,
-          "justification": "Screw cap (aluminum) balances sustainability, cost, and consumer preference effectively for wine packaging in Kolkata. While not perfect, its recyclability and growing consumer acceptance make it a viable option.",
-          "sustainability_gain_percent": 15,
+        "consulting_recommendation": {
+          "advice": "Implement corrugated cardboard packaging for floor tiles in Bhopal, emphasizing its recyclability and low carbon footprint in marketing materials. Pilot optimized packaging designs to minimize volume and maximize transport efficiency. Prioritize sourcing from suppliers with sustainable forestry practices.",
+          "sustainability_uplift_percent": 20,
           "cost_delta_percent": -5
-        }
+        },
+        "regulatory_context": "As of my last knowledge update, I am unable to provide a specific regulatory snippet for Corrugated Cardboard in Bhopal. However, the Bureau of Indian Standards (BIS) and the Plastic Waste Management Rules, apply to packaging in India. Please consult with legal counsel specializing in Indian regulations for specific guidance on the laws applicable to Corrugated Cardboard."
       }
     },
     {
-      "material_name": "Polyethylene (PE) or Polypropylene (PP)",
+      "material_name": "Chipboard Pads",
       "summary": {
-        "material_name": "Polyethylene (PE)",
-        "executive_snapshot": "Polyethylene presents a moderately sustainable option for wine packaging in Kolkata, balancing cost-effectiveness with growing environmental concerns that require careful management of its end-of-life impact.",
-        "composite_score": 68,
+        "material_name": "Chipboard Pads",
+        "executive_snapshot": "Chipboard pads offer a cost-effective and moderately sustainable packaging solution for floor tiles in Bhopal, balancing environmental concerns with logistical and economic practicality.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "2.1 kg CO\u2082/kg",
+              "score": 78
+            },
+            "recyclability": {
+              "value": "92%",
+              "score": 92
+            },
+            "biodegradability": {
+              "value": "24 months",
+              "score": 65
+            },
+            "resource_efficiency": {
+              "value": "1.8 MJ/kg",
+              "score": 70
+            },
+            "toxicity": {
+              "value": "Low",
+              "score": 85
+            }
+          },
+          "composite": 80.1
+        },
         "strengths": [
           {
-            "dimension": "Cost",
-            "insight": "PE offers a low-cost packaging solution, which can significantly reduce the overall cost of wine production and distribution, aligning with Blue Yonder\u2019s cost-optimization priorities."
+            "dimension": "Recyclability",
+            "insight": "High recyclability aligns with circular economy goals, reducing landfill waste and promoting resource recovery."
           },
           {
-            "dimension": "Logistics",
-            "insight": "PE's lightweight nature and durability reduce transportation costs and product damage during shipping, contributing to a more efficient and sustainable supply chain."
+            "dimension": "Carbon Footprint",
+            "insight": "A relatively low carbon footprint minimizes the environmental impact associated with floor tile packaging, contributing to a lower overall product lifecycle impact."
           }
         ],
         "trade_offs": [
           {
             "dimension": "Biodegradability",
-            "mitigation": "While PE is not biodegradable, its recyclability and the potential for incorporating recycled PE can significantly mitigate its environmental impact, aligning with increasing consumer preference for sustainable packaging."
+            "mitigation": "While biodegradation is slower, the high recyclability ensures most material is recovered, lessening the reliance on biodegradation for end-of-life management."
           }
         ],
         "supply_chain_implications": {
-          "costs": "PE offers low raw material costs and efficient processing, but costs associated with recycling and waste management can add to the overall expense.",
-          "logistics": "Its light weight reduces transportation costs. Handling is straightforward, leading to minimal supply chain disruptions.",
-          "regulatory": "Regulations in Kolkata increasingly focus on plastic waste management, requiring producers to take responsibility for the end-of-life of PE packaging. Extended Producer Responsibility (EPR) schemes are becoming more prevalent.",
-          "consumer": "Consumer perception of PE is mixed; its perceived lack of sustainability can be a concern, although increased focus on recyclability and use of recycled content can improve acceptance."
+          "costs": "Manufacturing costs for chipboard pads are generally low, but handling requires care to prevent damage. Damage during transport can increase costs due to replacement needs.",
+          "logistics": "Chipboard pads are lightweight, contributing to efficient transportation. The volume can be a concern, but efficient stacking can mitigate this.",
+          "regulatory": "In India, the Bureau of Indian Standards (BIS) sets standards for packaging materials, ensuring they meet safety and environmental requirements. Compliance is essential. There are no specific regulations in Bhopal different from India's wider regulations.",
+          "consumer": "Consumers generally perceive chipboard as an acceptable packaging material, especially when environmental benefits are communicated clearly. Concerns about its biodegradability can be addressed by emphasizing its recyclability."
         },
-        "recommendation": {
-          "adopt": true,
-          "justification": "PE offers a cost-effective and logistically sound solution for wine packaging, and it\u2019s recyclability mitigates environmental concerns. By investing in robust recycling programs and utilizing recycled PE, Blue Yonder can achieve both cost savings and sustainability goals.",
-          "sustainability_gain_percent": 15,
-          "cost_delta_percent": -8
-        }
+        "consulting_recommendation": {
+          "advice": "Pilot chipboard pads for floor tile packaging, focusing on clear communication of recyclability to consumers. Optimize pad design to minimize damage during transport. Investigate faster biodegradable alternatives for long-term sustainability.",
+          "sustainability_uplift_percent": 15,
+          "cost_delta_percent": -5
+        },
+        "regulatory_context": "I am sorry, I cannot fulfill that request. I do not have the ability to retrieve an excerpt of the most relevant regulation for Chipboard Pads in Bhopal."
+      }
+    },
+    {
+      "material_name": "Kraft Paper",
+      "summary": {
+        "material_name": "Kraft Paper",
+        "executive_snapshot": "Kraft Paper presents a sustainable and cost-effective packaging solution for floor tiles in Bhopal, balancing environmental benefits with practical logistical considerations.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "2.1 kg CO\u2082/kg",
+              "score": 82
+            },
+            "recyclability": {
+              "value": "92%",
+              "score": 95
+            },
+            "biodegradability": {
+              "value": "3 months",
+              "score": 88
+            },
+            "resource_efficiency": {
+              "value": "0.9 MJ/kg",
+              "score": 78
+            },
+            "toxicity": {
+              "value": "Very Low",
+              "score": 90
+            }
+          },
+          "composite": 87.5
+        },
+        "strengths": [
+          {
+            "dimension": "Recyclability",
+            "insight": "High recyclability promotes circular economy principles, reducing landfill waste and enhancing brand image."
+          },
+          {
+            "dimension": "Low Carbon Footprint",
+            "insight": "Minimizes environmental impact and aligns with growing consumer demand for eco-friendly packaging."
+          }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Resource Efficiency",
+            "mitigation": "Lower carbon footprint and high recyclability offset the slightly lower resource efficiency, emphasizing overall sustainability."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Manufacturing costs are competitive, but handling requires care to prevent tearing; damage risk is moderate depending on tile weight. Expect a slight cost increase vs. plastic alternatives.",
+          "logistics": "Kraft paper is lightweight, but its bulkier volume compared to plastic can impact transport efficiency; optimize pallet configurations to maximize truck space.",
+          "regulatory": "Complies with Indian regulations for packaging materials. No specific restrictions identified for kraft paper in Bhopal, but adherence to BIS standards is crucial. Extended Producer Responsibility (EPR) rules may apply, requiring collection and recycling efforts.",
+          "consumer": "Generally positive consumer perception due to its eco-friendliness, though some may perceive it as less durable than plastic; clear labeling regarding proper disposal is essential."
+        },
+        "consulting_recommendation": {
+          "advice": "Pilot kraft paper packaging for a specific range of floor tiles, focusing on high-value or eco-conscious customer segments. Invest in protective inner layers to mitigate tearing risk. Track consumer feedback and refine packaging design accordingly.",
+          "sustainability_uplift_percent": 15,
+          "cost_delta_percent": 5
+        },
+        "regulatory_context": "I am sorry, I cannot directly provide regulatory context with the available tools. I can search the web for the most relevant regulation for Kraft Paper in Bhopal, if you'd like."
+      }
+    },
+    {
+      "material_name": "Stretch Wrap (LLDPE)",
+      "summary": {
+        "material_name": "Stretch Wrap (LLDPE)",
+        "executive_snapshot": "Stretch Wrap (LLDPE) offers a cost-effective and logistically efficient solution for packaging floor tiles in Bhopal, though sustainability considerations require careful management.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "2.8 kg CO\u2082/kg",
+              "score": 65
+            },
+            "recyclability": {
+              "value": "25%",
+              "score": 30
+            },
+            "biodegradability": {
+              "value": "N/A",
+              "score": 5
+            },
+            "resource_efficiency": {
+              "value": "1.5 MJ/kg",
+              "score": 75
+            },
+            "toxicity": {
+              "value": "Low",
+              "score": 80
+            }
+          },
+          "composite": 50.25
+        },
+        "strengths": [
+          {
+            "dimension": "Resource Efficiency",
+            "insight": "Lower energy input in manufacturing reduces the environmental impact and potential cost fluctuations."
+          },
+          {
+            "dimension": "Toxicity",
+            "insight": "Low toxicity minimizes health risks for workers and end-consumers, aligning with safety standards."
+          }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Biodegradability",
+            "mitigation": "The high resource efficiency and relatively low toxicity partially offset the lack of biodegradability, provided proper waste management practices are implemented."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Manufacturing costs for Stretch Wrap (LLDPE) are relatively low. Handling costs are also low due to its lightweight nature. However, the risk of damage to the floor tiles during transport can be moderate, potentially increasing costs related to returns and replacements.",
+          "logistics": "Stretch Wrap (LLDPE) is lightweight and has a compact volume, enhancing transport efficiency. However, the need for secondary packaging to protect the tiles during transport can add to the overall volume.",
+          "regulatory": "In India, regulations concerning plastic packaging and waste management are becoming increasingly stringent. Compliance with Extended Producer Responsibility (EPR) rules under the Plastic Waste Management Rules, 2016, is crucial. BIS standards may also apply.",
+          "consumer": "Consumers are increasingly aware of the environmental impact of plastic packaging. While Stretch Wrap (LLDPE) is a familiar and functional material, negative perceptions surrounding plastic waste could lead to objections. Clear communication about recycling initiatives and responsible disposal is essential."
+        },
+        "consulting_recommendation": {
+          "advice": "Explore options for increasing the recyclability of the Stretch Wrap, such as using recycled content or designing for recyclability. Partner with local recycling facilities in Bhopal to ensure proper end-of-life management. A pilot program could assess the feasibility of alternative, more sustainable packaging options. Educate consumers about proper disposal and recycling methods.",
+          "sustainability_uplift_percent": 15,
+          "cost_delta_percent": -5
+        },
+        "regulatory_context": "As of my knowledge cut-off, I am unable to provide a real-time regulatory snippet. However, you can use the web_search_using_tavily tool to search for the most up-to-date regulation concerning 'LLDPE packaging Bhopal' to get the most relevant information. You should look for documents and guidelines published by the Central Pollution Control Board (CPCB) and the Madhya Pradesh Pollution Control Board (MPPCB)."
+      }
+    },
+    {
+      "material_name": "Plastic Strapping (Polypropylene)",
+      "summary": {
+        "material_name": "Plastic Strapping (Polypropylene)",
+        "executive_snapshot": "Plastic strapping offers a cost-effective and logistically sound solution for securing floor tiles in Bhopal, though sustainability considerations require mitigation strategies.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "2.9 kg CO\u2082/kg",
+              "score": 65
+            },
+            "recyclability": {
+              "value": "60%",
+              "score": 60
+            },
+            "biodegradability": {
+              "value": "Not biodegradable",
+              "score": 5
+            },
+            "resource_efficiency": {
+              "value": "1.5 MJ/kg",
+              "score": 75
+            },
+            "toxicity": {
+              "value": "Low",
+              "score": 80
+            }
+          },
+          "composite": 51
+        },
+        "strengths": [
+          {
+            "dimension": "Resource Efficiency",
+            "insight": "Lower energy input in production translates to reduced environmental impact and cost savings, aligning with sustainability goals."
+          },
+          {
+            "dimension": "Toxicity",
+            "insight": "Low toxicity minimizes health and safety concerns during manufacturing, use, and disposal, enhancing consumer appeal."
+          }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Biodegradability",
+            "mitigation": "High resource efficiency and manageable carbon footprint partially offset the lack of biodegradability; exploring recycling programs is crucial."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Manufacturing costs are low, but handling requires care to prevent breakage. Damage risk is moderate and needs to be accounted for in transport insurance.",
+          "logistics": "Lightweight nature reduces transport costs, but the volume-to-weight ratio is relatively high, potentially limiting transport efficiency.",
+          "regulatory": "In India, regulations concerning plastic waste management are relevant (e.g., Plastic Waste Management Rules, 2016, and amendments). BIS standards may apply for packaging materials.",
+          "consumer": "Consumers may perceive plastic strapping negatively due to environmental concerns; clear communication regarding recyclability and sustainable sourcing can mitigate objections."
+        },
+        "consulting_recommendation": {
+          "advice": "Implement a pilot program focusing on closed-loop recycling and explore bio-based polypropylene alternatives. Engage with local authorities and waste management companies to improve recycling infrastructure. Communicate clearly with consumers about the recyclability of the plastic strapping.",
+          "sustainability_uplift_percent": 15,
+          "cost_delta_percent": -5
+        },
+        "regulatory_context": "I am sorry, I cannot directly provide an excerpt from a specific regulation using the tools available. However, I can share that the Plastic Waste Management Rules, 2016, and its subsequent amendments, are the primary regulations governing the use and disposal of plastic in India, and these would be relevant to consider."
       }
     }
   ]

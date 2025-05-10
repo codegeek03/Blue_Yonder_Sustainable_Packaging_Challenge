@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "Lightweight Glass",
-      "environmental_score": 7.8,
-      "key_benefit": "Reduced carbon footprint",
-      "primary_concern": "Energy-intensive production"
-    },
-    {
-      "material_name": "Recycled Glass",
+      "material_name": "Glass Bottles",
       "environmental_score": 7.5,
-      "key_benefit": "Conserves resources",
-      "primary_concern": "Potential contaminants"
-    },
-    {
-      "material_name": "Bag-in-Box",
-      "environmental_score": 7.2,
-      "key_benefit": "Lower transport emissions",
-      "primary_concern": "Plastic waste management"
-    },
-    {
-      "material_name": "Aluminum Cans",
-      "environmental_score": 6.9,
       "key_benefit": "High recyclability",
-      "primary_concern": "Bauxite mining impacts"
+      "primary_concern": "Energy in production"
     },
     {
-      "material_name": "PET Bottles (Recycled)",
-      "environmental_score": 6.5,
-      "key_benefit": "Lower carbon impact than virgin PET",
-      "primary_concern": "Microplastic pollution"
+      "material_name": "Wooden Crates",
+      "environmental_score": 7.0,
+      "key_benefit": "Biodegradable",
+      "primary_concern": "Deforestation risk"
+    },
+    {
+      "material_name": "Cork Stoppers",
+      "environmental_score": 6.8,
+      "key_benefit": "Renewable resource",
+      "primary_concern": "Processing impact"
+    },
+    {
+      "material_name": "Paper Labels",
+      "environmental_score": 6.0,
+      "key_benefit": "Recyclable",
+      "primary_concern": "Deforestation; Bleaching"
+    },
+    {
+      "material_name": "Reusable Steel Drums",
+      "environmental_score": 5.5,
+      "key_benefit": "Long lifespan",
+      "primary_concern": "Heavy manufacturing"
     }
   ],
   "timestamp": "2025-04-19 21:20:12",

@@ -1,20 +1,20 @@
 {
   "top_materials": [
     {
-      "material_name": "Glass",
+      "material_name": "Stainless Steel 304",
       "property_scores": {
         "mechanical_strength": {
-          "value": "40",
+          "value": "520",
           "unit": "MPa",
-          "score": 7
+          "score": 9
         },
         "chemical_resistance": {
-          "value": "1-14",
+          "value": "2-10",
           "unit": "pH range",
-          "score": 10
+          "score": 9
         },
         "thermal_stability": {
-          "value": "150",
+          "value": "870",
           "unit": "\u00b0C",
           "score": 8
         },
@@ -24,146 +24,146 @@
           "score": 10
         },
         "durability": {
-          "value": "100+",
+          "value": "50",
           "unit": "years",
-          "score": 9
+          "score": 10
         }
       },
-      "overall_score": 8.8,
-      "key_strength": "Chemical inertness",
-      "main_limitation": "Brittleness"
+      "overall_score": 9.2,
+      "key_strength": "Excellent corrosion resistance",
+      "main_limitation": "High initial cost"
     },
     {
-      "material_name": "Stainless Steel",
+      "material_name": "Glass (Borosilicate)",
       "property_scores": {
         "mechanical_strength": {
-          "value": "500",
+          "value": "70",
           "unit": "MPa",
-          "score": 9
+          "score": 6
         },
         "chemical_resistance": {
-          "value": "2-12",
+          "value": "1-12",
           "unit": "pH range",
-          "score": 8
+          "score": 10
         },
         "thermal_stability": {
-          "value": "300",
+          "value": "500",
           "unit": "\u00b0C",
-          "score": 9
+          "score": 7
         },
         "barrier_properties": {
-          "value": "0.0001",
+          "value": "0.0005",
           "unit": "g/(m\u00b2\u00b7day)",
           "score": 10
         },
         "durability": {
-          "value": "50+",
+          "value": "100",
           "unit": "years",
           "score": 9
         }
       },
-      "overall_score": 9,
-      "key_strength": "High strength & durability",
-      "main_limitation": "Cost"
+      "overall_score": 8.4,
+      "key_strength": "Superior chemical inertness",
+      "main_limitation": "Fragility, low strength"
     },
     {
-      "material_name": "PET Plastic",
-      "property_scores": {
-        "mechanical_strength": {
-          "value": "70",
-          "unit": "MPa",
-          "score": 6
-        },
-        "chemical_resistance": {
-          "value": "3-10",
-          "unit": "pH range",
-          "score": 6
-        },
-        "thermal_stability": {
-          "value": "70",
-          "unit": "\u00b0C",
-          "score": 5
-        },
-        "barrier_properties": {
-          "value": "1.5",
-          "unit": "g/(m\u00b2\u00b7day)",
-          "score": 7
-        },
-        "durability": {
-          "value": "5",
-          "unit": "years",
-          "score": 6
-        }
-      },
-      "overall_score": 6,
-      "key_strength": "Lightweight & cheap",
-      "main_limitation": "Lower thermal resistance"
-    },
-    {
-      "material_name": "HDPE Plastic",
-      "property_scores": {
-        "mechanical_strength": {
-          "value": "40",
-          "unit": "MPa",
-          "score": 5
-        },
-        "chemical_resistance": {
-          "value": "1-13",
-          "unit": "pH range",
-          "score": 7
-        },
-        "thermal_stability": {
-          "value": "60",
-          "unit": "\u00b0C",
-          "score": 4
-        },
-        "barrier_properties": {
-          "value": "0.9",
-          "unit": "g/(m\u00b2\u00b7day)",
-          "score": 8
-        },
-        "durability": {
-          "value": "10",
-          "unit": "years",
-          "score": 7
-        }
-      },
-      "overall_score": 6.2,
-      "key_strength": "Good chemical resistance",
-      "main_limitation": "Low thermal stability"
-    },
-    {
-      "material_name": "Bag-in-Box",
+      "material_name": "HDPE (High Density PE)",
       "property_scores": {
         "mechanical_strength": {
           "value": "30",
           "unit": "MPa",
-          "score": 4
-        },
-        "chemical_resistance": {
-          "value": "3-9",
-          "unit": "pH range",
           "score": 5
         },
+        "chemical_resistance": {
+          "value": "3-13",
+          "unit": "pH range",
+          "score": 8
+        },
         "thermal_stability": {
-          "value": "50",
+          "value": "120",
           "unit": "\u00b0C",
-          "score": 3
+          "score": 4
+        },
+        "barrier_properties": {
+          "value": "0.7",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 6
+        },
+        "durability": {
+          "value": "15",
+          "unit": "years",
+          "score": 7
+        }
+      },
+      "overall_score": 6,
+      "key_strength": "Cost-effective, lightweight",
+      "main_limitation": "Lower thermal resistance"
+    },
+    {
+      "material_name": "Polypropylene (PP)",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "35",
+          "unit": "MPa",
+          "score": 5
+        },
+        "chemical_resistance": {
+          "value": "2-14",
+          "unit": "pH range",
+          "score": 9
+        },
+        "thermal_stability": {
+          "value": "100",
+          "unit": "\u00b0C",
+          "score": 4
         },
         "barrier_properties": {
           "value": "0.5",
           "unit": "g/(m\u00b2\u00b7day)",
-          "score": 9
+          "score": 7
         },
         "durability": {
-          "value": "2",
+          "value": "10",
           "unit": "years",
-          "score": 3
+          "score": 6
         }
       },
-      "overall_score": 4.8,
-      "key_strength": "Effective Barrier",
-      "main_limitation": "Low durability"
+      "overall_score": 6.2,
+      "key_strength": "Good chemical resistance",
+      "main_limitation": "Low temperature resistance"
+    },
+    {
+      "material_name": "PET (Polyethylene)",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "55",
+          "unit": "MPa",
+          "score": 6
+        },
+        "chemical_resistance": {
+          "value": "4-9",
+          "unit": "pH range",
+          "score": 7
+        },
+        "thermal_stability": {
+          "value": "70",
+          "unit": "\u00b0C",
+          "score": 3
+        },
+        "barrier_properties": {
+          "value": "1.5",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 5
+        },
+        "durability": {
+          "value": "12",
+          "unit": "years",
+          "score": 6
+        }
+      },
+      "overall_score": 5.4,
+      "key_strength": "Recyclable material",
+      "main_limitation": "Poor heat resistance"
     }
   ],
   "timestamp": "2025-04-19 21:27:30",

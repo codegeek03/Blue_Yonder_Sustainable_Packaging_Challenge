@@ -1,47 +1,47 @@
 {
   "criteria": {
     "physical_form": {
-      "explanation": "Liquid",
-      "concerns": "Leakage"
+      "explanation": "Solid",
+      "concerns": "Crushing"
     },
     "fragility": {
       "explanation": "Sturdy",
-      "concerns": "Breakage"
+      "concerns": "Breaking"
     },
     "shelf_life": {
       "explanation": "Long",
-      "concerns": "Spoilage"
+      "concerns": "Degradation"
     },
     "chemical_properties": {
-      "explanation": "Alcoholic",
-      "concerns": "Reaction"
+      "explanation": "Stable",
+      "concerns": "Reactions"
     },
     "hygiene_sensitivity": {
-      "explanation": "High",
+      "explanation": "Low",
       "concerns": "Contamination"
     },
     "temperature_sensitivity": {
-      "explanation": "Sensitive",
-      "concerns": "Spoilage"
+      "explanation": "Stable",
+      "concerns": "Deformation"
     },
     "volatility_or_hazard_risk": {
-      "explanation": "Low",
-      "concerns": "Flammable"
+      "explanation": "None",
+      "concerns": "N/A"
     },
     "visibility_and_display": {
-      "explanation": "Important",
-      "concerns": "Labeling"
+      "explanation": "Good",
+      "concerns": "Scratches"
     },
     "quantity_and_dosage": {
       "explanation": "Bulk",
-      "concerns": "Spillage"
+      "concerns": "Overflow"
     },
     "value_and_theft_sensitivity": {
-      "explanation": "High",
-      "concerns": "Theft"
+      "explanation": "Low",
+      "concerns": "Pilferage"
     }
   },
-  "product_name": "Wine",
+  "product_name": "Unknown",
   "analysis_timestamp": "2025-05-08 20:00:32",
   "scores": {
     "physical_form": 80.0,

@@ -1,69 +1,69 @@
 {
   "top_materials": [
     {
-      "material_name": "Glass Bottles",
-      "cost_score": 8,
-      "base_price": "0.50 USD/kg",
-      "key_costs": {
-        "raw_material": "Silica sand dominant",
-        "processing": "Melting & molding",
-        "tariffs": "Low on imports",
-        "transport": "High volume shipping",
-        "compliance": "Food-grade certification"
-      },
-      "total_estimated_cost": "0.98 USD per unit"
-    },
-    {
-      "material_name": "Cork Stoppers",
-      "cost_score": 7,
-      "base_price": "2.00 USD/kg",
-      "key_costs": {
-        "raw_material": "Cork oak harvesting",
-        "processing": "Shaping & treating",
-        "tariffs": "Vary by region",
-        "transport": "Lightweight, dense",
-        "compliance": "Natural product standards"
-      },
-      "total_estimated_cost": "3.92 USD per unit"
-    },
-    {
-      "material_name": "Stainless Steel Tanks",
-      "cost_score": 6,
-      "base_price": "3.00 USD/kg",
-      "key_costs": {
-        "raw_material": "Iron, chromium, nickel",
-        "processing": "Welding, shaping",
-        "tariffs": "Moderate on imports",
-        "transport": "Bulky, heavy",
-        "compliance": "Food safety regulations"
-      },
-      "total_estimated_cost": "5.88 USD per unit"
-    },
-    {
-      "material_name": "Yeast",
+      "material_name": "Cashew Apples (Local)",
       "cost_score": 9,
-      "base_price": "10.00 USD/kg",
+      "base_price": "0.20 USD/kg",
       "key_costs": {
-        "raw_material": "Culture medium",
-        "processing": "Cultivation, drying",
-        "tariffs": "Minimal tariffs",
-        "transport": "Low volume, light",
-        "compliance": "Strain certification"
+        "raw_material": "Low cost per kg",
+        "processing": "Simple fermentation",
+        "tariffs": "None (Locally Sourced)",
+        "transport": "Short distances",
+        "compliance": "Minimal"
       },
-      "total_estimated_cost": "19.60 USD per unit"
+      "total_estimated_cost": "0.45 USD/unit"
     },
     {
-      "material_name": "Oak Barrels",
-      "cost_score": 5,
+      "material_name": "Cashew Apples (Import)",
+      "cost_score": 6,
+      "base_price": "0.35 USD/kg",
+      "key_costs": {
+        "raw_material": "Higher base price",
+        "processing": "Standard process",
+        "tariffs": "Moderate import duties",
+        "transport": "Longer distances",
+        "compliance": "Required testing"
+      },
+      "total_estimated_cost": "0.79 USD/unit"
+    },
+    {
+      "material_name": "Yeast (Saccharomyces)",
+      "cost_score": 7,
       "base_price": "5.00 USD/kg",
       "key_costs": {
-        "raw_material": "Oak wood supply",
-        "processing": "Cooperage, toasting",
+        "raw_material": "Consistent supply",
+        "processing": "Simple culture prep",
         "tariffs": "Low tariffs",
-        "transport": "Bulky barrels",
-        "compliance": "Wood treatment standards"
+        "transport": "Easy transport",
+        "compliance": "Food grade cert."
       },
-      "total_estimated_cost": "9.80 USD per unit"
+      "total_estimated_cost": "11.25 USD/unit"
+    },
+    {
+      "material_name": "Water (Processing)",
+      "cost_score": 10,
+      "base_price": "0.01 USD/kg",
+      "key_costs": {
+        "raw_material": "Extremely cheap",
+        "processing": "Purification",
+        "tariffs": "N/A",
+        "transport": "Local pipelines",
+        "compliance": "Quality control"
+      },
+      "total_estimated_cost": "0.02 USD/unit"
+    },
+    {
+      "material_name": "Bottles (Glass)",
+      "cost_score": 5,
+      "base_price": "1.50 USD/unit",
+      "key_costs": {
+        "raw_material": "Glass, readily available",
+        "processing": "Manufacturing process",
+        "tariffs": "Low tariffs",
+        "transport": "Bulky, affects cost",
+        "compliance": "Food grade cert."
+      },
+      "total_estimated_cost": "3.38 USD/unit"
     }
   ],
   "timestamp": "2025-04-19 21:22:20",

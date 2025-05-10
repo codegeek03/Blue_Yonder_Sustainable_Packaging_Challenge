@@ -1,0 +1,16 @@
+{
+    "product_name": "Books",
+    "units_per_shipment": 1000,
+    "dimensions": {
+        "length": 100.0,
+        "width": 100.0,
+        "height": 50.0
+    },
+    "packaging_location": "kolkata",
+    "budget_constraint": 2.0,
+    "metadata": {
+        "timestamp": "2025-05-09 21:04:45",
+        "user": "codegeek03",
+        "volume": 500000.0
+    }
+}

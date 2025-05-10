@@ -1,5 +1,5 @@
 {
-  "product_name": "Wine",
+  "product_name": "Cashew Feni",
   "timestamp": "2025-05-09 21:01:46",
   "user": "codegeek03",
   "weights_used": {
@@ -11,39 +11,29 @@
   },
   "top_materials": [
     {
-      "material_name": "Glass",
-      "properties": 88.0,
-      "application": "Primary container (bottle).",
+      "material_name": "Glass (Borosilicate)",
+      "properties": 84.0,
+      "application": "Primary packaging; bottles for containing the Feni",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
       "sustainability": 0,
-      "total_score": 16.0
+      "total_score": 15.27
     },
     {
-      "material_name": "Cardboard",
-      "properties": 0,
-      "application": "Secondary packaging (boxes, cartons).",
+      "material_name": "Polypropylene (PP)",
+      "properties": 62.0,
+      "application": "Caps, closures, and occasionally for bottles (though less common than PET or glass).",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
       "sustainability": 0,
-      "total_score": 0.0
+      "total_score": 11.27
     },
     {
-      "material_name": "Paper",
+      "material_name": "PET (Polyethylene Terephthalate)",
       "properties": 0,
-      "application": "Labels, inserts, gift wrapping.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Aluminum",
-      "properties": 0,
-      "application": "Bottle caps, closures, foil capsules.",
+      "application": "Alternative primary packaging; bottles for containing the Feni, especially for larger sizes or markets where glass is less practical.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -51,9 +41,19 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cork",
+      "material_name": "HDPE (High-Density Polyethylene)",
       "properties": 0,
-      "application": "Bottle stopper.",
+      "application": "Caps and closures for bottles.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "LDPE (Low-Density Polyethylene)",
+      "properties": 0,
+      "application": "Liner for bottle caps to provide a better seal.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -63,79 +63,29 @@
   ],
   "all_materials": [
     {
-      "material_name": "Glass",
-      "properties": 88.0,
-      "application": "Primary container (bottle).",
+      "material_name": "Glass (Borosilicate)",
+      "properties": 84.0,
+      "application": "Primary packaging; bottles for containing the Feni",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
       "sustainability": 0,
-      "total_score": 16.0
-    },
-    {
-      "material_name": "Cardboard",
-      "properties": 0,
-      "application": "Secondary packaging (boxes, cartons).",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Paper",
-      "properties": 0,
-      "application": "Labels, inserts, gift wrapping.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Aluminum",
-      "properties": 0,
-      "application": "Bottle caps, closures, foil capsules.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Cork",
-      "properties": 0,
-      "application": "Bottle stopper.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Plastic (PET)",
-      "properties": 0,
-      "application": "Alternative bottle material, sometimes used for larger volumes or specific markets.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Polyethylene (PE)",
-      "properties": 0,
-      "application": "Shrink wrap, cushioning materials (e.g., bubble wrap).",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
+      "total_score": 15.27
     },
     {
       "material_name": "Polypropylene (PP)",
+      "properties": 62.0,
+      "application": "Caps, closures, and occasionally for bottles (though less common than PET or glass).",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 11.27
+    },
+    {
+      "material_name": "PET (Polyethylene Terephthalate)",
       "properties": 0,
-      "application": "Bottle caps, closures.",
+      "application": "Alternative primary packaging; bottles for containing the Feni, especially for larger sizes or markets where glass is less practical.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -143,9 +93,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Molded Pulp",
+      "material_name": "HDPE (High-Density Polyethylene)",
       "properties": 0,
-      "application": "Internal packaging for bottle protection.",
+      "application": "Caps and closures for bottles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -153,9 +103,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Compostable Polymers (PLA)",
+      "material_name": "LDPE (Low-Density Polyethylene)",
       "properties": 0,
-      "application": "Increasingly used for labels and potentially closures as technology advances.",
+      "application": "Liner for bottle caps to provide a better seal.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -163,9 +113,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Bubble Wrap",
+      "material_name": "Cardboard (Corrugated)",
       "properties": 0,
-      "application": "Protection against impacts during shipping.",
+      "application": "Secondary packaging; shipping boxes to protect bottles during transport.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -173,9 +123,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Foam Inserts (EPS or EPE)",
+      "material_name": "Paperboard",
       "properties": 0,
-      "application": "Protection against impacts and vibration.",
+      "application": "Tertiary packaging; for labels and outer cartons.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -183,449 +133,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Corrugated Cardboard",
+      "material_name": "Aluminum Foil",
       "properties": 0,
-      "application": "Outer boxes for shipping, internal dividers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Inflatable Air Pillows",
-      "properties": 0,
-      "application": "Void fill in shipping boxes.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Molded Pulp",
-      "properties": 0,
-      "application": "Internal bottle supports within boxes.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Paper Padding",
-      "properties": 0,
-      "application": "Void fill, wrapping individual bottles.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Partitioned Cardboard",
-      "properties": 0,
-      "application": "Separating bottles to prevent contact.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Suspension Packaging",
-      "properties": 0,
-      "application": "High-value or extremely fragile wines.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Edge Protectors (Cardboard or Plastic)",
-      "properties": 0,
-      "application": "Protecting palletized shipments.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Shrink Wrap",
-      "properties": 0,
-      "application": "Securing bottles on a pallet.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Glass (Dark)",
-      "properties": 0,
-      "application": "Primary wine bottle, especially for wines sensitive to light oxidation.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Cork (High Quality)",
-      "properties": 0,
-      "application": "Bottle closure for aging wines.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Synthetic Closures (High Quality)",
-      "properties": 0,
-      "application": "Bottle closure, particularly for wines intended for shorter aging periods.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Screw Caps (Aluminum)",
-      "properties": 0,
-      "application": "Bottle closure for wines intended for early consumption.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Laminated Labels",
-      "properties": 0,
-      "application": "Wine bottle labels to maintain appearance over time.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "UV-Protective Coatings (on Labels)",
-      "properties": 0,
-      "application": "Label to protect wine quality.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Vacuum Packaging (Bag-in-Box)",
-      "properties": 0,
-      "application": "Inner bag for bag-in-box wines.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Inert Gas Flushing (Nitrogen or Argon)",
-      "properties": 0,
-      "application": "Part of the bottling process, not a packaging material itself, but related.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Oxygen Scavengers (in Closures)",
-      "properties": 0,
-      "application": "Integrated into some closure types.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "PET with Oxygen Barrier",
-      "properties": 0,
-      "application": "Alternative bottle material.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Inert Glass",
-      "properties": 0,
-      "application": "Primary wine container.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Food-Grade Linings (for closures)",
-      "properties": 0,
-      "application": "Inside screw caps and synthetic closures.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Sulfur Dioxide (SO2)",
-      "properties": 0,
-      "application": "Added to the wine itself, not a packaging material, but relevant to preservation.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Tartaric Acid",
-      "properties": 0,
-      "application": "Added to the wine itself, not a packaging material.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Polyethylene (LDPE/HDPE)",
-      "properties": 0,
-      "application": "Liners in bag-in-box wine containers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Aluminum (Anodized)",
-      "properties": 0,
-      "application": "Screw cap material.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Epoxy Phenolic Linings",
-      "properties": 0,
-      "application": "Lining for certain types of kegs or larger format containers (rare).",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Bentonite Clay",
-      "properties": 0,
-      "application": "Used during wine production to stabilize the wine, indirectly impacting packaging needs.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Activated Carbon",
-      "properties": 0,
-      "application": "Used during wine production to improve quality, influencing long-term stability and packaging requirements.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Silicone (Food Grade)",
-      "properties": 0,
-      "application": "Gaskets and seals in closures.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Sterilized Glass",
-      "properties": 0,
-      "application": "Wine bottles.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Sterilized Closures",
-      "properties": 0,
-      "application": "Corks, screw caps, synthetic stoppers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Food-Grade Sanitizers",
-      "properties": 0,
-      "application": "Cleaning bottles and closures before filling.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Cleanroom Packaging",
-      "properties": 0,
-      "application": "Specialty closures or containers for high-end wines.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Tamper-Evident Seals",
-      "properties": 0,
-      "application": "Capsules or seals around the bottle neck.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Hygienic Filling Equipment",
-      "properties": 0,
-      "application": "Bottle filling lines.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Single-Use Packaging Components",
-      "properties": 0,
-      "application": "Liners for bag-in-box systems.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Air Filtration Systems",
-      "properties": 0,
-      "application": "Bottling facilities.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "UV Sterilization Systems",
-      "properties": 0,
-      "application": "Sterilizing bottles and closures.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Aseptic Packaging",
-      "properties": 0,
-      "application": "Not typically used for wine, but relevant to other beverages.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Insulated Shipping Containers",
-      "properties": 0,
-      "application": "Protecting wine from temperature fluctuations.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Temperature-Controlled Warehousing",
-      "properties": 0,
-      "application": "Maintaining wine quality before distribution.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Thermal Labels",
-      "properties": 0,
-      "application": "Monitoring temperature during shipping.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Glass (Dark Tinted)",
-      "properties": 0,
-      "application": "Wine bottles, especially for wines sensitive to heat.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Polyurethane Foam",
-      "properties": 0,
-      "application": "Insulating wine shipping containers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Reflective Foil",
-      "properties": 0,
-      "application": "Insulating layers in shipping containers.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Phase Change Materials (PCM)",
-      "properties": 0,
-      "application": "Advanced insulation for shipping.",
+      "application": "Seal for bottle caps to ensure freshness and prevent leakage.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -635,7 +145,7 @@
     {
       "material_name": "Expanded Polystyrene (EPS)",
       "properties": 0,
-      "application": "Insulated wine shippers.",
+      "application": "Protective inserts within shipping boxes for added impact resistance.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -643,9 +153,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Gel Packs",
+      "material_name": "Biodegradable Packing Peanuts (Starch-based)",
       "properties": 0,
-      "application": "Used inside insulated wine shippers.",
+      "application": "Alternative to EPS for eco-conscious packaging and void fill.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -653,9 +163,499 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Temperature Monitoring Devices (Data Loggers)",
+      "material_name": "Bubble Wrap (Polyethylene)",
       "properties": 0,
-      "application": "Monitoring temperature control effectiveness.",
+      "application": "Wrapping individual bottles for added protection during shipping.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Foam Inserts (Polyurethane)",
+      "properties": 0,
+      "application": "Specifically designed inserts for shipping boxes to hold bottles securely and prevent movement.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Corrugated Cardboard Dividers",
+      "properties": 0,
+      "application": "Used within shipping boxes to keep bottles from colliding with each other.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Stretch Wrap (LLDPE - Linear Low-Density Polyethylene)",
+      "properties": 0,
+      "application": "Wrapping pallets of packaged Feni for secure transport.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Packing Tape (BOPP - Biaxially Oriented Polypropylene)",
+      "properties": 0,
+      "application": "Sealing cardboard boxes securely.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Edge Protectors (Cardboard or Plastic)",
+      "properties": 0,
+      "application": "Prevents damage to edges during handling and shipping.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Inflatable Air Pillows (Polyethylene)",
+      "properties": 0,
+      "application": "Void fill in shipping boxes, providing customized protection.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Molded Pulp Packaging",
+      "properties": 0,
+      "application": "Protective inserts or clamshell packaging, eco-friendly option.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Suspension Packaging",
+      "properties": 0,
+      "application": "High-value or extremely fragile items to absorb shocks.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Honeycomb Cardboard",
+      "properties": 0,
+      "application": "Protective layers or inserts for added strength and shock absorption.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Dark Amber Glass",
+      "properties": 0,
+      "application": "Primary packaging; extends shelf life by preventing light degradation of the Feni.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "UV-Protective Coating (on PET)",
+      "properties": 0,
+      "application": "Applied to PET bottles to protect the Feni from light degradation.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Vacuum-Sealed Closures",
+      "properties": 0,
+      "application": "Caps and closures that create a vacuum seal to minimize oxidation.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Modified Atmosphere Packaging (MAP)",
+      "properties": 0,
+      "application": "Not directly applicable to bottled spirits but could be used for smaller sample sizes in pouches.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Barrier Films (Multilayer)",
+      "properties": 0,
+      "application": "Liners in caps or as part of laminated packaging to reduce permeation.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Desiccants (Silica Gel)",
+      "properties": 0,
+      "application": "Not typically used in liquid spirits, but relevant for any included dry ingredients or promotional items.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Oxygen Absorbers",
+      "properties": 0,
+      "application": "In caps or closures to ensure minimal oxygen exposure.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Ethylene Vinyl Alcohol (EVOH)",
+      "properties": 0,
+      "application": "Layer in multi-layer packaging for reduced gas permeation.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Metalized Films (PET or PP)",
+      "properties": 0,
+      "application": "Labels and outer packaging to enhance shelf life.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Airtight Caps (with liners)",
+      "properties": 0,
+      "application": "Ensuring the bottle is properly sealed to extend shelf life.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Inert Glass (Type I Borosilicate)",
+      "properties": 0,
+      "application": "Ideal primary packaging to avoid contamination of the Feni.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "PET with Oxygen Scavengers",
+      "properties": 0,
+      "application": "PET bottles incorporating oxygen scavenging additives.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "PTFE (Polytetrafluoroethylene) Liner",
+      "properties": 0,
+      "application": "Lining for bottle caps to ensure no reaction with the Feni.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "HDPE (Food Grade)",
+      "properties": 0,
+      "application": "Caps and closures made from food-grade HDPE.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Stainless Steel",
+      "properties": 0,
+      "application": "Used in dispensing mechanisms or promotional items.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Epoxy Phenolic Lacquer",
+      "properties": 0,
+      "application": "Lining for metal caps to prevent corrosion and interaction with the contents.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Polyethylene (Food Grade)",
+      "properties": 0,
+      "application": "Liners for caps and closures.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Polypropylene (Food Grade)",
+      "properties": 0,
+      "application": "Caps and closures.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Silicone (Food Grade)",
+      "properties": 0,
+      "application": "Seals and gaskets in closures.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Fluoropolymer Coatings",
+      "properties": 0,
+      "application": "Coatings for closures to prevent interaction with the alcohol.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Sterilized Glass Bottles",
+      "properties": 0,
+      "application": "Primary packaging; must be sterile before filling to prevent contamination.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Tamper-Evident Seals (PVC or PET)",
+      "properties": 0,
+      "application": "Ensuring the bottle has not been opened before purchase.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Shrink Wrap (PVC or Polyolefin)",
+      "properties": 0,
+      "application": "Sealing the bottle and cap together for hygiene and tamper evidence.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Cleanroom-Manufactured Closures",
+      "properties": 0,
+      "application": "Ensuring closures are free from pathogens.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Antimicrobial Coatings (on Labels)",
+      "properties": 0,
+      "application": "Reducing the risk of contamination from handling.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Food Grade Sanitizers",
+      "properties": 0,
+      "application": "Used to clean bottles and packaging components before filling.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Gamma Irradiation Sterilization",
+      "properties": 0,
+      "application": "Sterilizing empty bottles and caps.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "UV Sterilization",
+      "properties": 0,
+      "application": "Surface sterilization of packaging materials.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Autoclavable Materials",
+      "properties": 0,
+      "application": "Reusable bottles and components that require frequent sterilization.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Aseptic Packaging",
+      "properties": 0,
+      "application": "Maintaining the sterility of the product throughout the packaging process.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Insulated Shipping Containers",
+      "properties": 0,
+      "application": "Protects Feni from extreme temperature fluctuations during transport.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Temperature Monitoring Labels",
+      "properties": 0,
+      "application": "Alerting handlers to potential temperature damage.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Thermally Stable Glass",
+      "properties": 0,
+      "application": "Ensuring the bottle doesn't crack due to temperature changes.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Expanded Polypropylene (EPP)",
+      "properties": 0,
+      "application": "Protective packaging for temperature-sensitive transport.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Phase Change Materials (PCM)",
+      "properties": 0,
+      "application": "Used in shipping containers for temperature regulation.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Reflective Foil Insulation",
+      "properties": 0,
+      "application": "Used in packaging to minimize heat transfer.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Vacuum Insulation Panels (VIPs)",
+      "properties": 0,
+      "application": "High-performance insulation for temperature-critical shipments.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Gel Packs (Reusable)",
+      "properties": 0,
+      "application": "Temperature control during transit.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Dry Ice",
+      "properties": 0,
+      "application": "Maintaining very low temperatures.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Temperature Controlled Trucks",
+      "properties": 0,
+      "application": "Transporting temperature-sensitive products.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -665,7 +665,7 @@
     {
       "material_name": "UN-Certified Packaging",
       "properties": 0,
-      "application": "Shipping wine by air or other regulated methods.",
+      "application": "Ensuring compliance with shipping regulations for alcohol content.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -673,9 +673,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pressure-Resistant Bottles",
+      "material_name": "Absorbent Material (Vermiculite)",
       "properties": 0,
-      "application": "Sparkling wines.",
+      "application": "Used within packaging to contain any leakage during transport.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -683,9 +683,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Secondary Containment",
+      "material_name": "Tamper-Evident Packaging",
       "properties": 0,
-      "application": "Shipping larger quantities of wine.",
+      "application": "Preventing adulteration or theft.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -693,9 +693,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Absorbent Materials",
+      "material_name": "Warning Labels (Flammable Liquid)",
       "properties": 0,
-      "application": "Inside shipping containers.",
+      "application": "Alerting handlers to the flammability risk.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -703,9 +703,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Warning Labels",
+      "material_name": "Secure Closures (Child-Resistant)",
       "properties": 0,
-      "application": "Outer packaging.",
+      "application": "Preventing accidental ingestion.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -713,9 +713,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Tamper-Evident Seals",
+      "material_name": "Pressure-Relief Caps",
       "properties": 0,
-      "application": "Bottle closures.",
+      "application": "Preventing bursting due to temperature changes.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -723,9 +723,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Sparkling Wine Closures (Wire Cage)",
+      "material_name": "Secondary Containment Vessels",
       "properties": 0,
-      "application": "Sparkling wines.",
+      "application": "Adding an extra layer of protection against spills.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -733,9 +733,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Heavy-Duty Cardboard",
+      "material_name": "Anti-Static Packaging",
       "properties": 0,
-      "application": "Outer cartons for wine bottles.",
+      "application": "Reducing the risk of ignition in a flammable environment.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -743,9 +743,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Internal Dividers",
+      "material_name": "Flame Retardant Materials",
       "properties": 0,
-      "application": "Shipping multiple wine bottles together.",
+      "application": "Using flame-retardant materials in packaging components.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -753,9 +753,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Pallet Strapping",
+      "material_name": "Grounding Straps",
       "properties": 0,
-      "application": "Palletized shipments of wine.",
+      "application": "Grounding pallets and containers during handling.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -763,9 +763,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Clear Glass",
+      "material_name": "Clear Glass Bottles",
       "properties": 0,
-      "application": "Wine bottles, especially for ros\u00e9 and white wines.",
+      "application": "Allows consumers to see the color and clarity of the Feni.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -775,7 +775,7 @@
     {
       "material_name": "Embossed Labels",
       "properties": 0,
-      "application": "Wine bottle labels for premium wines.",
+      "application": "Creating a premium look and feel.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -783,9 +783,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Foil Stamping",
+      "material_name": "High-Resolution Printing (on Labels)",
       "properties": 0,
-      "application": "Wine bottle labels for premium wines.",
+      "application": "Ensuring clear and attractive branding and product information.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -793,9 +793,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Die-Cut Labels",
+      "material_name": "Shrink Sleeves (Full Body)",
       "properties": 0,
-      "application": "Wine bottle labels.",
+      "application": "Providing maximum branding space and visual impact.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -803,9 +803,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Shrink Sleeves",
+      "material_name": "Metallic Inks and Foils (on Labels)",
       "properties": 0,
-      "application": "Wine bottles, particularly for promotional packaging.",
+      "application": "Enhancing visual appeal and perceived value.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -813,169 +813,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Display Boxes",
+      "material_name": "Transparent Labels (No-Label Look)",
       "properties": 0,
-      "application": "Retail displays.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Windowed Cartons",
-      "properties": 0,
-      "application": "Gift packaging.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Custom Bottle Shapes",
-      "properties": 0,
-      "application": "Premium and luxury wines.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "QR Codes (on Labels)",
-      "properties": 0,
-      "application": "Wine bottle labels.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Back Labels (Informative)",
-      "properties": 0,
-      "application": "Wine bottles.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Standard Wine Bottles (750ml)",
-      "properties": 0,
-      "application": "Most wine bottles.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Half Bottles (375ml)",
-      "properties": 0,
-      "application": "Individual servings or smaller households.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Magnum Bottles (1.5L)",
-      "properties": 0,
-      "application": "Special occasions and aging.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Bag-in-Box (Various Sizes)",
-      "properties": 0,
-      "application": "Casual consumption and parties.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Wine Kegs (Various Sizes)",
-      "properties": 0,
-      "application": "Restaurants and bars.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Miniature Bottles (50ml-100ml)",
-      "properties": 0,
-      "application": "Wine samples, airline servings.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Jeroboam (3L)",
-      "properties": 0,
-      "application": "Special events.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Imperial (6L)",
-      "properties": 0,
-      "application": "Special events.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Salmanazar (9L)",
-      "properties": 0,
-      "application": "Special events.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Balthazar (12L)",
-      "properties": 0,
-      "application": "Special events.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Tamper-Evident Seals",
-      "properties": 0,
-      "application": "Bottle closures for security.",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Serialized Labels",
-      "properties": 0,
-      "application": "High-value wines.",
+      "application": "Creating a clean and modern appearance.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -985,7 +825,147 @@
     {
       "material_name": "Holographic Labels",
       "properties": 0,
-      "application": "High-value wines.",
+      "application": "Adding a unique and secure element to the packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Custom Bottle Shapes",
+      "properties": 0,
+      "application": "Differentiating the product on the shelf.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "LED Lighting (Integrated)",
+      "properties": 0,
+      "application": "Used in displays to draw attention.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Interactive Labels (QR Codes)",
+      "properties": 0,
+      "application": "Linking to recipes, stories, and promotional content.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Graduated Bottles",
+      "properties": 0,
+      "application": "Helps consumers pour accurate amounts.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Single-Serve Pouches",
+      "properties": 0,
+      "application": "Convenient for on-the-go consumption or sampling.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Miniature Bottles",
+      "properties": 0,
+      "application": "Allowing consumers to try the product before buying a full-size bottle.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Multi-Packs",
+      "properties": 0,
+      "application": "Encouraging larger purchases.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Dosing Caps",
+      "properties": 0,
+      "application": "Ensuring accurate serving sizes.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Dropper Bottles",
+      "properties": 0,
+      "application": "Suitable for concentrates or small quantities.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Pump Dispensers",
+      "properties": 0,
+      "application": "For larger bottles or bar settings.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Syringe Packaging",
+      "properties": 0,
+      "application": "Ensuring accurate dispensing for strong dosages.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Portion Control Packaging",
+      "properties": 0,
+      "application": "Perfect for sampling or managing intake.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Calibrated Spouts",
+      "properties": 0,
+      "application": "Helps consumers manage alcohol intake accurately.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Security Labels (Void)",
+      "properties": 0,
+      "application": "Deters tampering and provides evidence of theft.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -995,7 +975,7 @@
     {
       "material_name": "RFID Tags",
       "properties": 0,
-      "application": "Inventory management and anti-theft measures.",
+      "application": "Enabling tracking throughout the supply chain.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1003,9 +983,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Security Cases",
+      "material_name": "Serialized Labels",
       "properties": 0,
-      "application": "Retail environments.",
+      "application": "Tracking individual products and preventing counterfeiting.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1013,9 +993,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Security Tape",
+      "material_name": "Tamper-Evident Bands (Heat Shrink)",
       "properties": 0,
-      "application": "Shipping and storage.",
+      "application": "Providing clear evidence of tampering.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1023,9 +1003,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "GPS Tracking Devices",
+      "material_name": "Security Inks (UV or Invisible)",
       "properties": 0,
-      "application": "High-value wine shipments.",
+      "application": "Adding a covert security feature to the label.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1033,9 +1013,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Protective Packaging",
+      "material_name": "Holographic Overlays",
       "properties": 0,
-      "application": "Shipping cartons with dividers and cushioning.",
+      "application": "Protecting against counterfeiting.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1043,9 +1023,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Invisible UV Inks",
+      "material_name": "GPS Tracking Devices (on Pallets)",
       "properties": 0,
-      "application": "Authentication and anti-counterfeiting.",
+      "application": "Tracking shipments and preventing theft during transport.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1053,9 +1033,29 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Blockchain Technology",
+      "material_name": "High-Security Seals (Numbered)",
       "properties": 0,
-      "application": "Authentication and provenance tracking.",
+      "application": "Securing shipping containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Armored Packaging",
+      "properties": 0,
+      "application": "Protecting very high-value products during transport.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Electronic Article Surveillance (EAS)",
+      "properties": 0,
+      "application": "Preventing shoplifting in retail environments.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1065,187 +1065,303 @@
   ],
   "material_summaries": [
     {
-      "material_name": "Glass",
+      "material_name": "Glass (Borosilicate)",
       "summary": {
-        "material_name": "Glass",
-        "executive_snapshot": "Glass is a viable option for packaging wine in Shyambazar, Kolkata, offering strong consumer appeal and recyclability despite its higher weight and potential for breakage.",
-        "composite_score": 78,
+        "material_name": "Glass (Borosilicate)",
+        "executive_snapshot": "Borosilicate glass offers a premium, sustainable packaging solution for Cashew Feni in Goa, balancing environmental benefits with logistical considerations and consumer appeal.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "2.9 kg CO\u2082/kg",
+              "score": 75
+            },
+            "recyclability": {
+              "value": "95%",
+              "score": 92
+            },
+            "biodegradability": {
+              "value": "Non-biodegradable",
+              "score": 5
+            },
+            "resource_efficiency": {
+              "value": "1.5 MJ/kg",
+              "score": 68
+            },
+            "toxicity": {
+              "value": "Very Low",
+              "score": 95
+            }
+          },
+          "composite": 77
+        },
         "strengths": [
           {
             "dimension": "Consumer Preference",
-            "insight": "Glass is often perceived as a premium packaging material for wine, enhancing brand image and consumer appeal, which can drive sales and brand loyalty."
+            "insight": "The premium perception of glass elevates the Cashew Feni brand, potentially increasing sales and customer loyalty in the Goa tourism market."
           },
           {
             "dimension": "Recyclability",
-            "insight": "Glass is highly recyclable in Kolkata, and a well-established recycling infrastructure can minimize environmental impact and support circular economy principles, aligning with Blue Yonder's sustainability priorities."
+            "insight": "High recyclability reduces environmental impact and supports Goa's commitment to waste management, aligning with eco-conscious tourism."
           }
         ],
         "trade_offs": [
           {
             "dimension": "Logistics",
-            "mitigation": "The increased weight of glass, while leading to higher transportation costs, is offset by its perceived value and high recyclability rate, justifying the cost for environmentally conscious consumers."
-          },
-          {
-            "dimension": "Carbon Footprint",
-            "mitigation": "While glass production has a higher carbon footprint compared to some alternatives, the high recycling rate and potential for using recycled glass in production significantly reduces the overall environmental impact."
+            "mitigation": "Optimized bottle design and efficient palletization can minimize transport costs, while the product's high value justifies the added care in handling."
           }
         ],
         "supply_chain_implications": {
-          "costs": "Direct costs include the cost of glass bottles themselves, which tend to be higher than plastic. Indirect costs involve transportation due to the weight and risk of breakage, potentially increasing insurance premiums.",
-          "logistics": "Glass requires careful handling and secure packaging to prevent breakage during transport. This can lead to increased labor costs and specialized transportation equipment.",
-          "regulatory": "There is no specific regulation for glass in Shyambazar, Kolkata but general rules apply, such as waste management and environment laws, while extended producer responsibility (EPR) schemes may come into play for recycling.",
-          "consumer": "Consumers generally perceive glass as a high-quality, sustainable option for wine packaging, which can positively influence purchasing decisions, particularly among environmentally conscious consumers."
+          "costs": "Manufacturing costs are moderate, but specialized handling and potential breakage can increase expenses. Sourcing from local glass manufacturers could mitigate some costs.",
+          "logistics": "Borosilicate glass is heavier than alternatives, increasing transport costs. However, its durability minimizes damage and loss during shipping within Goa.",
+          "regulatory": "Compliance with Goa's waste management regulations is crucial, especially regarding glass recycling programs and extended producer responsibility.",
+          "consumer": "Consumers generally perceive glass as a high-quality, eco-friendly packaging option, enhancing the appeal of Cashew Feni, especially in tourist markets."
         },
-        "recommendation": {
-          "adopt": true,
-          "justification": "Despite the logistical challenges, glass's high recyclability, premium brand image, and consumer acceptance make it a sustainable and commercially viable option for packaging wine in Shyambazar, Kolkata, especially with the growing consumer focus on sustainability.",
-          "sustainability_gain_percent": 15,
+        "consulting_recommendation": {
+          "advice": "Conduct a pilot program with local distilleries to assess the feasibility and cost-effectiveness of borosilicate glass packaging for Cashew Feni. Focus on optimizing bottle design for logistics.",
+          "sustainability_uplift_percent": 15,
           "cost_delta_percent": 8
-        }
+        },
+        "regulatory_context": "The Goa Non-Biodegradable Garbage (Control) Act, 1996, emphasizes waste management and recycling. Glass falls under these regulations, necessitating compliance with collection and recycling guidelines. [This is a placeholder and needs to be updated with specific clauses after a search.]"
       }
     },
     {
-      "material_name": "Cardboard",
+      "material_name": "Polypropylene (PP)",
       "summary": {
-        "material_name": "Cardboard",
-        "executive_snapshot": "Cardboard presents a moderately sustainable packaging solution for wine in Shyambazar, Kolkata, balancing recyclability and cost-effectiveness against potential weaknesses in moisture resistance and premium aesthetics.",
-        "composite_score": 68,
+        "material_name": "Polypropylene (PP)",
+        "executive_snapshot": "Polypropylene offers a balanced profile for Cashew Feni packaging in Goa, with strengths in cost and logistics offsetting sustainability concerns that require mitigation.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "2.1 kg CO\u2082/kg",
+              "score": 75
+            },
+            "recyclability": {
+              "value": "65%",
+              "score": 68
+            },
+            "biodegradability": {
+              "value": "Does not biodegrade",
+              "score": 15
+            },
+            "resource_efficiency": {
+              "value": "0.9 MJ/kg",
+              "score": 82
+            },
+            "toxicity": {
+              "value": "Very Low",
+              "score": 90
+            }
+          },
+          "composite": 66
+        },
         "strengths": [
           {
-            "dimension": "Recyclability",
-            "insight": "Cardboard's high recyclability in Kolkata aligns with sustainability goals, reduces landfill waste, and improves brand image, particularly given the growing environmental awareness among consumers."
+            "dimension": "Cost",
+            "insight": "PP offers significant cost advantages for packaging Cashew Feni, reducing overall production expenses."
           },
           {
-            "dimension": "Cost",
-            "insight": "Cardboard's relatively low cost compared to alternatives makes it an economically attractive option for wine packaging in the price-sensitive Shyambazar market, supporting affordability and wider product reach."
+            "dimension": "Logistics",
+            "insight": "Lightweight nature of PP lowers transportation costs within Goa and beyond."
           }
         ],
         "trade_offs": [
           {
-            "dimension": "Properties (Moisture Resistance)",
-            "mitigation": "While cardboard is susceptible to moisture damage, proper lining and protective coatings can mitigate this risk. The cost-effectiveness and high recyclability outweigh the additional processing expenses."
+            "dimension": "Biodegradability",
+            "mitigation": "Implement a robust recycling program in Goa to offset the lack of biodegradability."
           }
         ],
         "supply_chain_implications": {
-          "costs": "Cardboard's lower material cost reduces initial investment. However, potential damage during transport and the cost of protective treatments should be considered, impacting the total cost. Potential disposal costs might also arise.",
-          "logistics": "Cardboard is lightweight, which can lower transport costs. The need for careful handling to prevent crushing or moisture damage can increase labor costs and logistical complexity.",
-          "regulatory": "While India has regulations promoting waste management and recycling, specific regulations targeting cardboard packaging in Kolkata might be less stringent than for plastics. Producers should still adhere to broader EPR guidelines.",
-          "consumer": "Cardboard is generally well-received by consumers who value sustainability. Clear recycling instructions and eco-friendly branding can further enhance consumer acceptance in Shyambazar."
+          "costs": "Manufacturing costs for PP in Goa are competitive, contributing to overall cost-effectiveness. Handling is straightforward, minimizing labor expenses.",
+          "logistics": "The low weight of PP significantly reduces transportation costs. Its efficient space utilization optimizes warehouse storage in Goa's often-limited facilities.",
+          "regulatory": "PP for food packaging in Goa must comply with regulations set by the Goa State Pollution Control Board and FSSAI standards relevant to plastics, ensuring food safety and environmental protection.",
+          "consumer": "Consumer perception of PP is generally neutral. Highlighting recyclability and safety aspects can improve acceptance for Cashew Feni packaging."
         },
-        "recommendation": {
-          "adopt": true,
-          "justification": "Cardboard's high recyclability, cost-effectiveness, and consumer acceptance make it a viable option. Although some improvements are needed for protection of the package. Given Shyambazar's environmental constraints, cardboard is a valuable option.",
-          "sustainability_gain_percent": 15,
+        "consulting_recommendation": {
+          "advice": "Pilot PP packaging with a focus on consumer education and a comprehensive recycling scheme to enhance its sustainability profile.",
+          "sustainability_uplift_percent": 15,
           "cost_delta_percent": -8
-        }
-      }
-    },
-    {
-      "material_name": "Paper",
-      "summary": {
-        "material_name": "Paper",
-        "executive_snapshot": "Paper presents a moderately suitable packaging option for wine in Shyambazar, Kolkata, balancing sustainability with logistical and consumer considerations, though further investigation into specific paper types is warranted.",
-        "composite_score": 72,
-        "strengths": [
-          {
-            "dimension": "Recyclability",
-            "insight": "Paper is widely recyclable in Kolkata, aligning with Blue Yonder's sustainability priorities and potentially reducing landfill waste."
-          },
-          {
-            "dimension": "Consumer Preference",
-            "insight": "Paper packaging can project an eco-friendly image, resonating with environmentally conscious consumers in Shyambazar and enhancing brand perception."
-          }
-        ],
-        "trade_offs": [
-          {
-            "dimension": "Properties (Durability)",
-            "mitigation": "While paper is less durable than glass, using reinforced paperboard and protective inner layers can mitigate damage risk during transport and storage, maintaining product integrity."
-          }
-        ],
-        "supply_chain_implications": {
-          "costs": "Paper generally offers lower material costs compared to glass, but may incur higher secondary packaging costs to ensure product protection during transit and storage.",
-          "logistics": "Paper is lighter than glass, potentially reducing transportation costs; however, it is more susceptible to damage from moisture and requires careful handling, potentially increasing labor costs.",
-          "regulatory": "Regulations in India, and specifically Kolkata, are increasingly focused on reducing single-use plastics and promoting recyclable materials, which favors paper packaging; however, specific regulations related to food-grade paper and printing inks must be considered.",
-          "consumer": "Consumers in Shyambazar are increasingly aware of environmental issues and may prefer paper packaging due to its perceived eco-friendliness, but may also have concerns about its durability and protection of the wine."
         },
-        "recommendation": {
-          "adopt": true,
-          "justification": "Paper offers a reasonable balance of sustainability and cost, with potential for positive consumer perception. The positive aspects outweigh the challenges associated with durability with appropriate mitigation strategy. Given the recyclability and compostability of paper, it presents a strong eco-friendly alternative to traditional packaging. In addition, paper\u2019s carbon footprint is lower than other packaging materials. However, the selection of high-quality, food-grade paper is imperative to ensure product integrity and consumer safety.",
-          "sustainability_gain_percent": 18,
-          "cost_delta_percent": -5
-        }
+        "regulatory_context": "As per FSSAI guidelines, Polypropylene (PP) used in food packaging must adhere to IS 10910:1984 relating to specifications for polypropylene for its safe use in contact with foodstuffs, pharmaceuticals and drinking water."
       }
     },
     {
-      "material_name": "Aluminum",
+      "material_name": "PET (Polyethylene Terephthalate)",
       "summary": {
-        "material_name": "Aluminum",
-        "executive_snapshot": "Aluminum presents a moderately suitable option for wine packaging in Shyambazar, Kolkata, balancing recyclability and consumer appeal against carbon footprint and potential cost implications.",
-        "composite_score": 68,
-        "strengths": [
-          {
-            "dimension": "Recyclability",
-            "insight": "Aluminum's high recyclability significantly reduces environmental impact and aligns with growing consumer preferences for sustainable packaging in Shyambazar, enhancing brand image and potentially reducing waste management costs."
+        "material_name": "PET (Polyethylene Terephthalate)",
+        "executive_snapshot": "PET offers a lightweight, transparent, and cost-effective packaging solution for Cashew Feni in Goa, but requires careful consideration of its environmental footprint and recyclability within the local context.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "2.9 kg CO\u2082/kg",
+              "score": 72
+            },
+            "recyclability": {
+              "value": "65%",
+              "score": 68
+            },
+            "biodegradability": {
+              "value": "80+ years",
+              "score": 15
+            },
+            "resource_efficiency": {
+              "value": "1.5 MJ/kg",
+              "score": 85
+            },
+            "toxicity": {
+              "value": "Very Low",
+              "score": 90
+            }
           },
-          {
-            "dimension": "Consumer Preference",
-            "insight": "Aluminum offers a premium feel and is generally well-received by consumers, potentially boosting product appeal and market share in the competitive Kolkata wine market."
-          }
-        ],
-        "trade_offs": [
-          {
-            "dimension": "Carbon Footprint",
-            "mitigation": "While aluminum production has a higher carbon footprint, its recyclability and lightweight properties can partially offset this through reduced transportation emissions and closed-loop material use."
-          }
-        ],
-        "supply_chain_implications": {
-          "costs": "Direct costs may be higher than glass due to raw material prices and specialized manufacturing, but indirect savings can arise from reduced breakage during transport and handling. Recycling infrastructure investments will be crucial.",
-          "logistics": "Aluminum's lightweight nature can lower transportation costs, but requires careful handling to prevent dents and damage affecting product presentation.",
-          "regulatory": "India's regulations on packaging waste management emphasize extended producer responsibility (EPR), requiring producers to manage the end-of-life of aluminum packaging. Compliance necessitates robust recycling programs in Kolkata.",
-          "consumer": "Consumer acceptance is generally positive, especially among environmentally conscious consumers. Clear labeling regarding recyclability is vital to encourage proper disposal."
+          "composite": 66
         },
-        "recommendation": {
-          "adopt": false,
-          "justification": "While aluminum boasts recyclability and consumer appeal, its carbon footprint and potential cost increase outweigh the benefits compared to other packaging materials. Implementing a widespread and effective recycling program is critical to minimize its impact on the environment",
-          "sustainability_gain_percent": 15,
-          "cost_delta_percent": 10
-        }
-      }
-    },
-    {
-      "material_name": "Cork",
-      "summary": {
-        "material_name": "Cork",
-        "executive_snapshot": "Cork offers a moderately sustainable packaging solution for wine in Shyambazar, Kolkata, balancing environmental benefits with potential cost and logistical considerations.",
-        "composite_score": 68,
         "strengths": [
-          {
-            "dimension": "Sustainability",
-            "insight": "Cork is a renewable and biodegradable material, aligning with growing consumer demand for eco-friendly packaging and reducing the overall environmental impact of wine production."
-          },
-          {
-            "dimension": "Consumer Preference",
-            "insight": "Cork closures are traditionally associated with higher-quality wines, positively influencing consumer perception and potentially commanding a premium price point in the market."
-          }
-        ],
-        "trade_offs": [
           {
             "dimension": "Cost",
-            "mitigation": "While cork might be more expensive than some alternatives, its sustainability benefits and positive consumer perception can justify the higher cost, particularly for premium wine offerings."
+            "insight": "PET's relatively low cost makes it economically attractive for packaging Cashew Feni, potentially increasing profit margins."
+          },
+          {
+            "dimension": "Logistics",
+            "insight": "The light weight of PET reduces transportation costs and fuel consumption in Goa's distribution network."
+          }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Biodegradability",
+            "mitigation": "Enhanced recycling programs and consumer education in Goa can offset the lack of biodegradability, emphasizing PET's recyclability."
           }
         ],
         "supply_chain_implications": {
-          "costs": "Direct costs may be higher due to raw material sourcing and processing. Indirect costs include potential for lower product damage compared to glass bottles during transport, potentially reducing spoilage.",
-          "logistics": "Cork is relatively lightweight, which helps reduce transportation costs. However, ensuring proper storage conditions (humidity control) during transport is important to prevent degradation.",
-          "regulatory": "West Bengal, where Kolkata is located, enforces national regulations concerning packaging waste management, with an emphasis on biodegradable materials like cork, potentially offering regulatory advantages.",
-          "consumer": "Consumers generally view cork as a premium closure for wine, which can enhance the perceived value and brand image. Awareness campaigns highlighting the sustainability benefits of cork can further increase consumer acceptance."
+          "costs": "Manufacturing costs for PET bottles are moderate in Goa, with potential for further reduction through optimized sourcing and local partnerships. Handling costs are low due to its lightweight nature.",
+          "logistics": "PET's light weight translates to efficient transport, reducing fuel consumption. Its volume can be optimized with compact bottle designs, improving overall logistical efficiency in Goa.",
+          "regulatory": "Goa's regulations on plastic waste management apply to PET. Extended Producer Responsibility (EPR) schemes are relevant, requiring producers to manage the end-of-life of PET packaging.",
+          "consumer": "Consumer perception of PET for alcoholic beverages is generally positive due to its transparency and shatter resistance, but environmental concerns may necessitate clear labeling and promotion of recycling initiatives."
         },
-        "recommendation": {
-          "adopt": true,
-          "justification": "Cork offers a balance of sustainability benefits, positive consumer perception, and relative ease of handling, making it a viable choice for wine packaging in Shyambazar, Kolkata, particularly for wines targeting environmentally conscious consumers.",
-          "sustainability_gain_percent": 15,
+        "consulting_recommendation": {
+          "advice": "Pilot a PET recycling program in partnership with local waste management facilities in Goa to improve PET's sustainability profile. Implement a deposit refund scheme to incentivize consumer recycling.",
+          "sustainability_uplift_percent": 15,
+          "cost_delta_percent": -5
+        },
+        "regulatory_context": "The Goa Non-Biodegradable Garbage (Control) Act, 1996, and subsequent amendments, regulate the management and disposal of non-biodegradable waste, including plastics like PET, emphasizing segregation, collection, and recycling."
+      }
+    },
+    {
+      "material_name": "HDPE (High-Density Polyethylene)",
+      "summary": {
+        "material_name": "HDPE (High-Density Polyethylene)",
+        "executive_snapshot": "HDPE offers a balance of cost-effectiveness, durability, and moderate recyclability, making it a viable option for Cashew Feni packaging in Goa, but biodegradability is a concern.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "2.3 kg CO\u2082/kg",
+              "score": 75
+            },
+            "recyclability": {
+              "value": "65%",
+              "score": 65
+            },
+            "biodegradability": {
+              "value": "50+ years",
+              "score": 20
+            },
+            "resource_efficiency": {
+              "value": "0.9 MJ/kg",
+              "score": 80
+            },
+            "toxicity": {
+              "value": "Low",
+              "score": 90
+            }
+          },
+          "composite": 66
+        },
+        "strengths": [
+          {
+            "dimension": "Cost",
+            "insight": "HDPE provides a cost-effective packaging solution, enabling competitive pricing for Cashew Feni in the Goan market."
+          },
+          {
+            "dimension": "Durability",
+            "insight": "The robust nature of HDPE ensures product integrity during transportation and storage, minimizing spoilage and waste of Cashew Feni."
+          }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Biodegradability",
+            "mitigation": "Increased emphasis on consumer education regarding recycling and potential participation in extended producer responsibility (EPR) schemes can offset biodegradability limitations."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Manufacturing costs for HDPE containers in Goa are moderate, but bulk purchasing can lower expenses. Handling is straightforward due to its light weight.",
+          "logistics": "HDPE's light weight reduces transportation costs, but the volume-to-product ratio might require optimized stacking and storage strategies within Goan warehouses.",
+          "regulatory": "HDPE packaging for Cashew Feni must comply with Goa's waste management regulations, specifically those pertaining to plastics and recycling labeling. Adherence to BIS standards for food-grade plastics is crucial.",
+          "consumer": "Consumers generally perceive HDPE as a safe and reliable packaging material. Clear labeling indicating recyclability can positively influence purchasing decisions in Goa."
+        },
+        "consulting_recommendation": {
+          "advice": "Pilot HDPE packaging with clear recycling instructions and explore partnerships with Goan recycling initiatives. Conduct a consumer survey on packaging preferences to refine the approach.",
+          "sustainability_uplift_percent": 15,
           "cost_delta_percent": 5
-        }
+        },
+        "regulatory_context": "According to the Goa Non-Biodegradable Garbage (Control) Act, 1996, all manufacturers using plastic packaging are responsible for collecting and recycling their waste. Extended Producer Responsibility (EPR) is encouraged."
+      }
+    },
+    {
+      "material_name": "LDPE (Low-Density Polyethylene)",
+      "summary": {
+        "material_name": "LDPE (Low-Density Polyethylene)",
+        "executive_snapshot": "LDPE offers a flexible and cost-effective packaging solution for Cashew Feni in Goa, balancing sustainability with practicality.",
+        "composite_score": {
+          "metrics": {
+            "carbon_footprint": {
+              "value": "2.1 kg CO\u2082/kg",
+              "score": 75
+            },
+            "recyclability": {
+              "value": "25%",
+              "score": 40
+            },
+            "biodegradability": {
+              "value": "50+ years",
+              "score": 15
+            },
+            "resource_efficiency": {
+              "value": "1.5 MJ/kg",
+              "score": 80
+            },
+            "toxicity": {
+              "value": "Low",
+              "score": 85
+            }
+          },
+          "composite": 59
+        },
+        "strengths": [
+          {
+            "dimension": "Cost",
+            "insight": "LDPE's low cost allows for competitive pricing of Cashew Feni, vital in the Goan market."
+          },
+          {
+            "dimension": "Properties",
+            "insight": "Flexibility and moisture resistance of LDPE ensure product integrity, minimizing spoilage of Cashew Feni during transportation."
+          }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Biodegradability",
+            "mitigation": "Offsetting lower biodegradability via recycling programs in Goa, coupled with consumer education on proper disposal."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "LDPE manufacturing in India leads to lower transport costs; handling costs are standard due to its light weight.",
+          "logistics": "Lightweight nature reduces fuel consumption, however, lower density means slightly less efficient transport volume.",
+          "regulatory": "Complies with most Indian regulations for food packaging; extended producer responsibility (EPR) rules relevant for waste management in Goa.",
+          "consumer": "Consumers may have reservations about plastic packaging; clear labeling about recyclability is crucial for positive perception."
+        },
+        "consulting_recommendation": {
+          "advice": "Pilot LDPE use with clear recycling instructions and partner with local waste management for improved collection rates to promote circular economy.",
+          "sustainability_uplift_percent": 15,
+          "cost_delta_percent": -8
+        },
+        "regulatory_context": "The Goa Non-Biodegradable Garbage (Control) Act, 1996, along with subsequent amendments, regulates the management of non-biodegradable waste, including plastics like LDPE, emphasizing segregation, collection, and recycling."
       }
     }
   ]

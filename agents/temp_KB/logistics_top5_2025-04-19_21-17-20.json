@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "Glass Bottles (Standard)",
-      "logistics_score": 7,
-      "primary_advantage": "Good stacking strength",
-      "cost_consideration": "High production cost"
-    },
-    {
-      "material_name": "Cardboard Boxes",
+      "material_name": "Glass Bottles (w/ dividers)",
       "logistics_score": 8,
-      "primary_advantage": "Efficient unit stacking",
-      "cost_consideration": "Low material cost"
+      "primary_advantage": "Good protection",
+      "cost_consideration": "Moderate bottle cost"
     },
     {
-      "material_name": "Plastic Pallets",
-      "logistics_score": 9,
-      "primary_advantage": "Durable, stackable base",
-      "cost_consideration": "Moderate pallet cost"
-    },
-    {
-      "material_name": "Void Fill (Air Pillows)",
-      "logistics_score": 6,
-      "primary_advantage": "Cushions impact damage",
-      "cost_consideration": "Adds to per-unit cost"
-    },
-    {
-      "material_name": "Stretch Wrap",
+      "material_name": "PET Bottles",
       "logistics_score": 7,
-      "primary_advantage": "Secures pallet loads",
-      "cost_consideration": "Minimal material cost"
+      "primary_advantage": "Lightweight & durable",
+      "cost_consideration": "Lower bottle cost"
+    },
+    {
+      "material_name": "HDPE Jerrycans",
+      "logistics_score": 6,
+      "primary_advantage": "Stackable, impact resistant",
+      "cost_consideration": "Higher volume focused"
+    },
+    {
+      "material_name": "Bag-in-Box",
+      "logistics_score": 5,
+      "primary_advantage": "Space efficient storage",
+      "cost_consideration": "Bulk transport focus"
+    },
+    {
+      "material_name": "Tetra Paks",
+      "logistics_score": 4,
+      "primary_advantage": "Compact and light",
+      "cost_consideration": "Material costs higher"
     }
   ],
   "timestamp": "2025-04-19 21:17:20",

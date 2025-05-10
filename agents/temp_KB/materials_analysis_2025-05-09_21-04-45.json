@@ -2,527 +2,527 @@
   "materials": {
     "physical_form": [
       {
-        "material_name": "Glass",
-        "properties": "Inert, transparent, rigid, recyclable",
-        "application": "Primary container (bottle)"
+        "material_name": "Corrugated Cardboard",
+        "properties": "Lightweight, recyclable, provides cushioning and stacking strength.",
+        "application": "Outer box for bulk packaging and shipping."
       },
       {
-        "material_name": "Cork",
-        "properties": "Natural, compressible, impermeable (when properly sealed), sustainable",
-        "application": "Closure (stopper)"
+        "material_name": "Chipboard Pads",
+        "properties": "Stiff, thin, provides separation and prevents scratching.",
+        "application": "Interleaving between tiles within a box."
       },
       {
-        "material_name": "Screw Cap (Aluminum)",
-        "properties": "Recyclable, airtight seal, easy to open",
-        "application": "Alternative closure"
+        "material_name": "Kraft Paper",
+        "properties": "Strong, tear-resistant, acts as a void fill and wrapping material.",
+        "application": "Wrapping individual stacks of tiles or filling gaps in the box."
       },
       {
-        "material_name": "Polyethylene (PE) or Polypropylene (PP)",
-        "properties": "Flexible, moisture-resistant, recyclable (check local regulations)",
-        "application": "Label backing, tamper-evident seals"
+        "material_name": "Stretch Wrap (LLDPE)",
+        "properties": "Elastic, conforms to shape, provides containment and dust protection.",
+        "application": "Wrapping entire pallet loads of boxed tiles."
       },
       {
-        "material_name": "Paper (Label Stock)",
-        "properties": "Printable, various finishes available, recyclable (depending on adhesives and coatings)",
-        "application": "Label"
+        "material_name": "Plastic Strapping (Polypropylene)",
+        "properties": "High tensile strength, secures pallet loads, resists breakage.",
+        "application": "Securing boxes to pallets."
       },
       {
-        "material_name": "Pressure-Sensitive Adhesive",
-        "properties": "Bonds label to bottle, varies in strength and removability",
-        "application": "Label adhesion"
+        "material_name": "Edge Protectors (Cardboard or Plastic)",
+        "properties": "Rigid, protects edges from impact and strapping damage.",
+        "application": "Reinforcing the corners of pallet loads."
       },
       {
-        "material_name": "Cardboard",
-        "properties": "Rigid, recyclable, printable",
-        "application": "Secondary packaging (cartons, cases)"
+        "material_name": "Honeycomb Board",
+        "properties": "Lightweight, high strength-to-weight ratio, cushioning.",
+        "application": "Void fill and edge protection."
       },
       {
-        "material_name": "Corrugated Fiberboard",
-        "properties": "Strong, provides cushioning, recyclable",
-        "application": "Shipping boxes"
+        "material_name": "Molded Pulp",
+        "properties": "Recycled content, form-fitting, protects corners and edges.",
+        "application": "Corner protectors."
       },
       {
-        "material_name": "Expanded Polystyrene (EPS) or Molded Pulp",
-        "properties": "Protective cushioning, EPS is less sustainable, molded pulp is recyclable and biodegradable",
-        "application": "Internal dividers/protection in shipping boxes"
+        "material_name": "Foam Packaging (Polyethylene)",
+        "properties": "Shock absorption, cushioning, lightweight.",
+        "application": "Individual tile protection (for very high-value tiles)."
       },
       {
-        "material_name": "Shrink Wrap (Polyolefin)",
-        "properties": "Provides tamper evidence and unitization, recyclable (check local regulations)",
-        "application": "Multi-pack wrapping"
+        "material_name": "Paper Tape",
+        "properties": "Sealable, recyclable, secure closure.",
+        "application": "Sealing boxes."
       }
     ],
     "fragility": [
       {
-        "material_name": "Corrugated Fiberboard",
-        "properties": "High crush resistance, good cushioning",
-        "application": "Outer shipping cartons"
+        "material_name": "Corrugated Cardboard (Double-Walled)",
+        "properties": "High crush resistance, protects against impacts.",
+        "application": "Outer box for shipping, providing maximum protection."
       },
       {
-        "material_name": "Molded Pulp Inserts",
-        "properties": "Customizable shape, cradles bottles, recyclable",
-        "application": "Internal dividers for bottle protection"
-      },
-      {
-        "material_name": "Expanded Polystyrene (EPS)",
-        "properties": "Excellent shock absorption, lightweight",
-        "application": "Protective inserts (less sustainable option)"
-      },
-      {
-        "material_name": "Inflatable Air Pillows",
-        "properties": "Lightweight, adjustable cushioning",
-        "application": "Void fill in shipping boxes"
+        "material_name": "Foam Inserts (Expanded Polystyrene - EPS)",
+        "properties": "Excellent shock absorption, conforms to tile shape.",
+        "application": "Cradling individual tiles for superior protection."
       },
       {
         "material_name": "Bubble Wrap (Polyethylene)",
-        "properties": "Good cushioning, reusable",
-        "application": "Wrapping individual bottles (less sustainable option)"
+        "properties": "Cushioning, prevents surface scratches, lightweight.",
+        "application": "Wrapping individual tiles or stacks of tiles."
       },
       {
-        "material_name": "Partitioned Cardboard Inserts",
-        "properties": "Creates individual compartments, prevents bottle-to-bottle contact",
-        "application": "Internal dividers for shipping cases"
-      },
-      {
-        "material_name": "Edge Protectors (Cardboard or Plastic)",
-        "properties": "Reinforces edges of cartons, prevents crushing",
-        "application": "Edge protection for palletized shipments"
-      },
-      {
-        "material_name": "Stretch Film (LLDPE)",
-        "properties": "Secures pallet loads, provides stability",
-        "application": "Pallet wrapping"
-      },
-      {
-        "material_name": "Protective Sleeves (Foam or Cardboard)",
-        "properties": "Slips over the bottle for added scratch and impact resistance",
-        "application": "Individual bottle protection, especially during handling"
+        "material_name": "Inflatable Air Pillows",
+        "properties": "Void fill, conforms to space, cushions against impacts.",
+        "application": "Filling empty spaces within the box to prevent tile movement."
       },
       {
         "material_name": "Suspension Packaging",
-        "properties": "Suspends the bottle in the air within the box, preventing direct impact",
-        "application": "High-value or extremely fragile wines"
+        "properties": "Suspends tiles in the center of the box, absorbing shocks.",
+        "application": "Specialized packaging for extremely fragile or high-value tiles."
+      },
+      {
+        "material_name": "Reinforced Sealing Tape",
+        "properties": "High tensile strength, prevents box rupture.",
+        "application": "Sealing boxes securely."
+      },
+      {
+        "material_name": "Corner Boards (Heavy Duty Cardboard)",
+        "properties": "Protects edges and corners from impact and abrasion.",
+        "application": "Reinforcing box corners."
+      },
+      {
+        "material_name": "Cushioning Foam (Polyurethane)",
+        "properties": "Conforms to shape, protects against vibration.",
+        "application": "Internal supports and cushioning."
+      },
+      {
+        "material_name": "Molded Fiber Trays",
+        "properties": "Recycled and recyclable, provides separation and cushioning",
+        "application": "Internal packaging for multiple tiles."
+      },
+      {
+        "material_name": "Void Fill Paper",
+        "properties": "Fills empty spaces, preventing movement and breakage.",
+        "application": "Added cushioning in boxes."
       }
     ],
     "shelf_life": [
       {
-        "material_name": "Glass (Dark/Colored)",
-        "properties": "Inert, protects from UV light, extends shelf life",
-        "application": "Primary container (bottle)"
+        "material_name": "Polyethylene Film (PE)",
+        "properties": "Protects from moisture and dust during storage.",
+        "application": "Wrapping stacks of tiles or pallets."
       },
       {
-        "material_name": "Cork (High Quality)",
-        "properties": "Maintains airtight seal, prevents oxidation, crucial for long-term aging",
-        "application": "Closure for age-worthy wines"
+        "material_name": "UV-Resistant Shrink Wrap",
+        "properties": "Protects from sunlight degradation during outdoor storage.",
+        "application": "Wrapping pallets for long-term outdoor storage."
       },
       {
-        "material_name": "Screw Cap (with appropriate liner)",
-        "properties": "Provides consistent airtight seal, suitable for wines not intended for long aging",
-        "application": "Closure for many wines"
+        "material_name": "Desiccant Packs (Silica Gel)",
+        "properties": "Absorbs moisture, preventing mold and mildew.",
+        "application": "Included inside the box to control humidity."
       },
       {
-        "material_name": "Oxygen Scavenging Additives (in closures)",
-        "properties": "Absorb oxygen from the headspace, further extending shelf life",
-        "application": "Integrated into closures"
+        "material_name": "VCI Film (Volatile Corrosion Inhibitor)",
+        "properties": "Protects metallic tiles from corrosion.",
+        "application": "Wrapping metallic tiles to prevent rust."
       },
       {
-        "material_name": "UV-Protective Coatings (on labels)",
-        "properties": "Reduce UV exposure to wine if the glass is clear",
-        "application": "Label coating"
+        "material_name": "Modified Atmosphere Packaging (MAP)",
+        "properties": "Controls the atmosphere around the tiles to prevent degradation.",
+        "application": "Specialized packaging for certain tile types."
       },
       {
-        "material_name": "Modified Atmosphere Packaging (MAP) - rarely used",
-        "properties": "Reduces oxygen levels in the package",
-        "application": "Not typical for individual wine bottles, more for bag-in-box"
+        "material_name": "Anti-static Bags (Polyethylene)",
+        "properties": "Prevents static electricity build-up that can damage some tiles.",
+        "application": "Wrapping tiles that are sensitive to static."
       },
       {
-        "material_name": "Vacuum sealing",
-        "properties": "Removes air from the bottle before closure",
-        "application": "Used on some wine preservation systems, not primary packaging"
+        "material_name": "Barrier Film (Multilayer)",
+        "properties": "Provides protection against moisture, oxygen, and light.",
+        "application": "Wrapping individual tiles or stacks."
       },
       {
-        "material_name": "High Barrier Films (for bag-in-box)",
-        "properties": "Prevents oxygen permeation, maintains freshness",
-        "application": "Bag-in-box wine packaging"
+        "material_name": "Nitrogen Flushing",
+        "properties": "Replaces oxygen with nitrogen to prevent oxidation.",
+        "application": "Used with barrier films for extended shelf life."
       },
       {
-        "material_name": "Inner Coatings (for bag-in-box)",
-        "properties": "Inert to wine and prevents flavor scalping",
-        "application": "Bag-in-box wine packaging"
+        "material_name": "Airtight Containers",
+        "properties": "Prevents air and moisture ingress.",
+        "application": "Storage of tiles in controlled environments."
       },
       {
-        "material_name": "Temperature-Controlled Shipping Containers",
-        "properties": "Maintains consistent temperature during transport, preventing degradation",
-        "application": "Shipping of temperature-sensitive wines"
+        "material_name": "Humidity Indicators",
+        "properties": "Alerts to excessive moisture exposure.",
+        "application": "Monitoring storage conditions."
       }
     ],
     "chemical_properties": [
       {
-        "material_name": "Inert Glass (Type I or II)",
-        "properties": "Does not react with wine, prevents leaching of chemicals",
-        "application": "Primary container"
+        "material_name": "HDPE (High-Density Polyethylene)",
+        "properties": "Resistant to acids and alkalis, provides a barrier.",
+        "application": "Liners or containers to protect against chemical damage."
       },
       {
-        "material_name": "Food-Grade Liners (for screw caps)",
-        "properties": "Prevents reaction between the wine and the metal cap, prevents flavor alteration",
-        "application": "Screw cap closures"
+        "material_name": "PTFE (Teflon) Coated Liners",
+        "properties": "Chemically inert, prevents reaction with tiles.",
+        "application": "Liners for highly reactive tiles."
       },
       {
-        "material_name": "Neutral Adhesives (for labels)",
-        "properties": "Do not impart odors or flavors to the wine",
-        "application": "Label adhesion"
+        "material_name": "Acid-Free Paper",
+        "properties": "Prevents chemical reactions with sensitive tile surfaces.",
+        "application": "Interleaving between tiles."
       },
       {
-        "material_name": "Oxygen Barrier Coatings (on closures)",
-        "properties": "Reduces oxygen ingress, preventing oxidation",
-        "application": "Cork and screw cap treatments"
+        "material_name": "Inert Plastic Trays (Polypropylene)",
+        "properties": "Does not react with most chemicals, durable.",
+        "application": "Holding individual tiles safely."
       },
       {
-        "material_name": "Sulfur Dioxide (SO2)",
-        "properties": "Antimicrobial and antioxidant properties. Added during bottling",
-        "application": "Wine preservation (not a packaging material, but related)"
+        "material_name": "Barrier Coatings (Acrylic)",
+        "properties": "Provides a protective layer against chemical exposure.",
+        "application": "Coating on cardboard boxes."
       },
       {
-        "material_name": "Tartaric Acid",
-        "properties": "Maintains wine acidity and stability",
-        "application": "Added to prevent tartrate precipitation (not a packaging material, but related)"
+        "material_name": "pH Neutral Adhesives",
+        "properties": "Prevents corrosion or discoloration.",
+        "application": "Securing packaging components."
       },
       {
-        "material_name": "Bentonite Clay",
-        "properties": "Used for wine clarification and stabilization",
-        "application": "Removes proteins to prevent haze (not a packaging material, but related)"
+        "material_name": "Vapor Barrier Films",
+        "properties": "Blocks the transmission of harmful vapors.",
+        "application": "Wrapping materials to protect from external chemical exposure."
       },
       {
-        "material_name": "Food-Grade Epoxy Phenolic Resins (lining of cans)",
-        "properties": "Inert lining protects wine from can",
-        "application": "Wine in cans"
+        "material_name": "Activated Carbon Filters",
+        "properties": "Absorbs odors and chemical contaminants.",
+        "application": "Integrated into packaging for sensitive tiles."
       },
       {
-        "material_name": "Multi-layer PET bottles",
-        "properties": "Oxygen barrier properties similar to glass",
-        "application": "Wine in plastic bottles"
+        "material_name": "Anti-corrosion Additives (in plastic)",
+        "properties": "Prevents corrosion from occurring within the packaging.",
+        "application": "Used in plastic films and containers."
       },
       {
-        "material_name": "Antimicrobial Packaging",
-        "properties": "Inhibits the growth of microbes on the packaging surface",
-        "application": "Can add extra protection"
+        "material_name": "Silicone-Based Coatings",
+        "properties": "Provides water and chemical resistance.",
+        "application": "Coating for external box protection."
       }
     ],
     "hygiene_sensitivity": [
       {
-        "material_name": "Sterilized Glass Bottles",
-        "properties": "Free from microorganisms, prevents contamination",
-        "application": "Primary container"
+        "material_name": "Anti-microbial Film (Polypropylene with additives)",
+        "properties": "Inhibits the growth of bacteria and fungi.",
+        "application": "Wrapping tiles in hygienic environments."
       },
       {
-        "material_name": "Sanitized Corks",
-        "properties": "Treated to reduce microbial load, prevents cork taint",
-        "application": "Closure"
+        "material_name": "Sterile Packaging (Medical Grade)",
+        "properties": "Maintains a sterile environment for tiles.",
+        "application": "Packaging for specialized tiles used in cleanrooms or hospitals."
       },
       {
-        "material_name": "Food-Grade Packaging Materials",
-        "properties": "Manufactured under strict hygiene standards, safe for food contact",
-        "application": "All packaging components"
+        "material_name": "Easy-to-Clean Plastic (Smooth HDPE)",
+        "properties": "Resists dirt and grime buildup, easy to sanitize.",
+        "application": "External packaging for tiles in high-hygiene areas."
+      },
+      {
+        "material_name": "Sealed Packaging",
+        "properties": "Prevents contamination from external sources.",
+        "application": "Ensuring cleanliness during transit and storage."
+      },
+      {
+        "material_name": "Filter Paper",
+        "properties": "Traps airborne particles and contaminants.",
+        "application": "Layering within the packaging."
+      },
+      {
+        "material_name": "Gamma Irradiated Packaging",
+        "properties": "Sterilized through radiation, eliminating all microorganisms.",
+        "application": "For tiles requiring maximum sterility."
       },
       {
         "material_name": "Tamper-Evident Seals",
-        "properties": "Indicate if the bottle has been opened or compromised",
-        "application": "Closure seals"
+        "properties": "Indicates if the packaging has been opened or compromised.",
+        "application": "Ensuring the integrity of the hygienic environment."
       },
       {
-        "material_name": "Cleanroom Manufacturing (for closures)",
-        "properties": "Reduces particulate contamination",
-        "application": "Closure production"
+        "material_name": "UV-C Resistant Materials",
+        "properties": "Can withstand UV-C sterilization processes.",
+        "application": "Packaging that is sterilized with UV-C light."
       },
       {
-        "material_name": "Controlled Atmosphere Bottling",
-        "properties": "Minimizes microbial growth during bottling",
-        "application": "Bottling process"
+        "material_name": "Cleanroom-Compatible Packaging",
+        "properties": "Manufactured and packaged in a cleanroom environment.",
+        "application": "For tiles used in sensitive environments."
       },
       {
-        "material_name": "UV Sterilization (of bottles)",
-        "properties": "Kills microorganisms on the bottle surface",
-        "application": "Bottle preparation"
-      },
-      {
-        "material_name": "Hygienic Design",
-        "properties": "Smooth surfaces and rounded corners reduce bacteria buildup",
-        "application": "Bottling line equipment"
-      },
-      {
-        "material_name": "Antimicrobial Coatings",
-        "properties": "Inhibits growth of mold and bacteria on packaging",
-        "application": "Secondary packaging"
-      },
-      {
-        "material_name": "Barrier Films",
-        "properties": "Prevent ingress of harmful microorganisms and particles",
-        "application": "Wine pouches and bag-in-box"
+        "material_name": "Bacteriostatic Agents (impregnated into plastic)",
+        "properties": "Inhibits bacterial growth on the packaging surface.",
+        "application": "Incorporated into plastic films."
       }
     ],
     "temperature_sensitivity": [
       {
-        "material_name": "Insulated Shipping Containers",
-        "properties": "Maintains consistent temperature during transport",
-        "application": "Shipping temperature-sensitive wines"
+        "material_name": "Insulated Packaging (EPS Foam)",
+        "properties": "Maintains a stable temperature inside the package.",
+        "application": "Protecting tiles from extreme temperature fluctuations."
       },
       {
-        "material_name": "Temperature-Indicating Labels",
-        "properties": "Alert if wine has been exposed to excessive temperatures",
-        "application": "Monitoring temperature during shipping"
-      },
-      {
-        "material_name": "Thermal Blankets",
-        "properties": "Protect palletized shipments from temperature extremes",
-        "application": "Pallet wrapping"
-      },
-      {
-        "material_name": "Dark Glass",
-        "properties": "Reduces heat transfer from sunlight",
-        "application": "Bottle Material"
-      },
-      {
-        "material_name": "Expanded Polystyrene (EPS) Coolers",
-        "properties": "Insulating properties maintain the wine at a desired temperature.",
-        "application": "Individual bottle coolers"
+        "material_name": "Temperature Indicating Labels",
+        "properties": "Changes color to indicate temperature exposure.",
+        "application": "Monitoring temperature during transit."
       },
       {
         "material_name": "Phase Change Materials (PCM)",
-        "properties": "Absorb and release heat to maintain constant temperature",
-        "application": "Insulated shipping containers"
+        "properties": "Absorbs or releases heat to maintain a specific temperature range.",
+        "application": "Regulating temperature inside the package."
       },
       {
-        "material_name": "Cold Chain Packaging",
-        "properties": "Maintains wine at refrigerated temperatures during transport",
-        "application": "Sparkling wines"
+        "material_name": "Reflective Foil (Aluminum)",
+        "properties": "Reflects radiant heat, keeping the contents cooler.",
+        "application": "Lining boxes to reduce heat absorption."
       },
       {
-        "material_name": "Controlled Temperature Warehouses",
-        "properties": "Stores wine at the optimal temperature.",
-        "application": "Storage solutions for wine"
+        "material_name": "Corrugated Cardboard with Ventilation",
+        "properties": "Allows airflow to dissipate heat.",
+        "application": "Boxes designed to prevent overheating."
       },
       {
-        "material_name": "Thermal mass packaging",
-        "properties": "Utilizing materials with high thermal mass (such as gel packs or ice packs) to help maintain a stable temperature",
-        "application": "Especially important for shipping wines during extreme weather conditions"
+        "material_name": "Temperature Controlled Shipping Containers",
+        "properties": "Maintains a precise temperature during shipping.",
+        "application": "For tiles requiring strict temperature control."
       },
       {
-        "material_name": "Reflective Foils",
-        "properties": "Reflect heat, to maintain desired temperatures",
-        "application": "Shipping and storage"
+        "material_name": "Vacuum Insulated Panels (VIP)",
+        "properties": "High insulation value with minimal thickness.",
+        "application": "Insulating boxes for extreme temperature protection."
+      },
+      {
+        "material_name": "Cold Packs (Gel Packs)",
+        "properties": "Maintains a cold temperature inside the package.",
+        "application": "Used with insulated packaging."
+      },
+      {
+        "material_name": "Heat Packs (Chemical Reaction)",
+        "properties": "Generates heat inside the package.",
+        "application": "Used to prevent freezing."
+      },
+      {
+        "material_name": "Thermal Blankets",
+        "properties": "Provides insulation and protection from extreme temperatures.",
+        "application": "Wrapping pallet loads of tiles."
       }
     ],
     "volatility_or_hazard_risk": [
       {
-        "material_name": "Secure Closures",
-        "properties": "Prevent leakage during transport",
-        "application": "Bottle closures (cork, screw cap)"
+        "material_name": "UN-Rated Packaging",
+        "properties": "Certified to meet UN standards for transporting hazardous materials.",
+        "application": "Packaging for tiles containing volatile or hazardous substances."
       },
       {
-        "material_name": "Durable Packaging",
-        "properties": "Withstands handling and prevents breakage",
-        "application": "Outer shipping cartons"
+        "material_name": "Vermiculite",
+        "properties": "Absorbent material for containing spills.",
+        "application": "Packing around tiles containing liquids."
       },
       {
-        "material_name": "UN-Certified Packaging",
-        "properties": "Meets international standards for safe transport of goods",
-        "application": "Shipping hazardous wines (rare, but possible with high alcohol content)"
+        "material_name": "Safety Labels (Hazard Symbols)",
+        "properties": "Clearly identifies the hazards associated with the contents.",
+        "application": "Adhered to the outside of the packaging."
       },
       {
-        "material_name": "Tamper-Evident Features",
-        "properties": "Indicate if the bottle has been compromised, preventing adulteration",
-        "application": "Closure seals"
+        "material_name": "Secondary Containment",
+        "properties": "An additional layer of protection to prevent leaks or spills.",
+        "application": "Inner bags or containers within the main box."
       },
       {
-        "material_name": "Absorbent Materials",
-        "properties": "Soaks up any leakage in case of breakage during shipping",
-        "application": "Packaging inserts"
+        "material_name": "Flame Retardant Materials",
+        "properties": "Reduces the risk of fire.",
+        "application": "Packaging materials for tiles that are flammable."
       },
       {
-        "material_name": "Warning Labels",
-        "properties": "Alert handlers to fragile contents",
-        "application": "Outer shipping cartons"
+        "material_name": "Static Dissipative Packaging",
+        "properties": "Prevents static electricity buildup that could ignite flammable vapors.",
+        "application": "For tiles containing flammable liquids or gases."
       },
       {
-        "material_name": "Pallet Strapping",
-        "properties": "Secures cases to pallets, preventing shifting during transport",
-        "application": "Palletized shipments"
+        "material_name": "Emergency Contact Information",
+        "properties": "Provides information for emergency response.",
+        "application": "Displayed prominently on the packaging."
       },
       {
-        "material_name": "Anti-Slip Coatings",
-        "properties": "Prevents cases from sliding off pallets",
-        "application": "Carton coatings"
+        "material_name": "SDS (Safety Data Sheet) Enclosure",
+        "properties": "Provides detailed information about the hazardous materials.",
+        "application": "Included inside a waterproof pouch attached to the packaging."
       },
       {
-        "material_name": "Impact Indicators",
-        "properties": "Turns red to indicate if a package experienced rough handling",
-        "application": "Used on shipping containers"
+        "material_name": "Tamper-Evident Seals with Hazard Warning",
+        "properties": "Indicates if the packaging has been opened and warns of potential hazards.",
+        "application": "Sealing hazardous material packaging."
       },
       {
-        "material_name": "Tilt Indicators",
-        "properties": "Indicates if the package was tilted or tipped over",
-        "application": "Used on shipping containers to avoid damage and leakage"
+        "material_name": "Pressure Relief Valves",
+        "properties": "Releases excess pressure to prevent explosions.",
+        "application": "For tiles that may release gases under certain conditions."
       }
     ],
     "visibility_and_display": [
       {
-        "material_name": "Clear Glass",
-        "properties": "Allows visual inspection of wine color and clarity",
-        "application": "Primary container (for some wines)"
+        "material_name": "Clear PET Clamshell Packaging",
+        "properties": "Provides 360-degree visibility of the tile.",
+        "application": "Displaying individual tiles for retail."
       },
       {
-        "material_name": "High-Quality Labels",
-        "properties": "Visually appealing, conveys brand information",
-        "application": "Label"
+        "material_name": "Windowed Boxes (Cardboard with Clear Window)",
+        "properties": "Allows partial visibility of the tile while providing protection.",
+        "application": "Retail packaging."
       },
       {
-        "material_name": "Embossed Labels",
-        "properties": "Adds a tactile element and premium look",
-        "application": "Label enhancement"
+        "material_name": "Display Stands (Cardboard)",
+        "properties": "Showcases multiple tiles in an attractive manner.",
+        "application": "Point-of-sale displays."
       },
       {
-        "material_name": "Transparent Sleeves",
-        "properties": "Showcases the bottle and provides tamper evidence",
-        "application": "Bottle wrapping"
+        "material_name": "Custom Printed Boxes",
+        "properties": "Features product information, branding, and images.",
+        "application": "Retail and wholesale packaging."
       },
       {
-        "material_name": "Display-Ready Packaging",
-        "properties": "Designed for easy placement on retail shelves",
-        "application": "Secondary packaging"
+        "material_name": "Hang Tabs (Plastic)",
+        "properties": "Allows tiles to be hung on retail displays.",
+        "application": "Retail packaging."
       },
       {
-        "material_name": "Shelf Talkers",
-        "properties": "Provides information about the wine on the shelf",
-        "application": "Retail display"
+        "material_name": "QR Codes",
+        "properties": "Links to product information and promotions.",
+        "application": "Printed on the packaging."
       },
       {
-        "material_name": "Printed Cartons",
-        "properties": "Showcases brand and wine information",
-        "application": "Shipping and display"
+        "material_name": "Interactive Packaging (Augmented Reality)",
+        "properties": "Enhances the customer experience through digital content.",
+        "application": "Innovative retail packaging."
       },
       {
-        "material_name": "Shrink Sleeves",
-        "properties": "Full body graphics on the bottle",
-        "application": "Branding and visual appeal"
+        "material_name": "Minimalist Packaging",
+        "properties": "Focuses on showcasing the tile with minimal distraction.",
+        "application": "High-end tile retail."
       },
       {
-        "material_name": "Holographic labels",
-        "properties": "Eye-catching with a premium look",
-        "application": "Label enhancement for premium product"
+        "material_name": "Sustainable Packaging (Recycled Cardboard)",
+        "properties": "Appeals to environmentally conscious consumers.",
+        "application": "Retail and wholesale packaging."
       },
       {
-        "material_name": "Interactive packaging",
-        "properties": "QR codes that link to detailed product information or virtual experiences",
-        "application": "Providing consumers product details and experiences"
+        "material_name": "Open Tray Packaging",
+        "properties": "Easy access and clear view of the tiles.",
+        "application": "Showcasing tile sets."
       }
     ],
     "quantity_and_dosage": [
       {
-        "material_name": "Standard Bottle Sizes (750ml, 1L, etc.)",
-        "properties": "Provides consistent serving sizes",
-        "application": "Primary container"
+        "material_name": "Pre-Portioned Packs (Shrink-Wrapped Bundles)",
+        "properties": "Contains a specific number of tiles for easy calculation.",
+        "application": "Retail sales of standard tile quantities."
       },
       {
-        "material_name": "Accurate Fill Levels",
-        "properties": "Ensures consistent volume in each bottle",
-        "application": "Bottling process"
+        "material_name": "Clearly Labeled Boxes (Tile Count)",
+        "properties": "Indicates the exact number of tiles inside.",
+        "application": "Wholesale and retail packaging."
       },
       {
-        "material_name": "Multi-Packs",
-        "properties": "Offers multiple bottles for convenience",
-        "application": "Secondary packaging"
+        "material_name": "Modular Packaging (Stackable Boxes)",
+        "properties": "Allows for easy stacking and storage of multiple boxes.",
+        "application": "Warehouse and retail storage."
       },
       {
-        "material_name": "Bag-in-Box Packaging",
-        "properties": "Provides larger volumes for extended use",
-        "application": "Alternative packaging format"
+        "material_name": "Dispensing Cartons",
+        "properties": "Allows for easy removal of individual tiles.",
+        "application": "Specialized applications where individual tiles are needed frequently."
       },
       {
-        "material_name": "Single-Serve Wine Pouches",
-        "properties": "Convenient for individual consumption",
-        "application": "Alternative packaging format"
+        "material_name": "Unit Dose Packaging",
+        "properties": "Each tile is individually packaged.",
+        "application": "For very high-value tiles or those needing strict protection."
       },
       {
-        "material_name": "Miniature Bottles",
-        "properties": "Sampling and gifting purposes",
-        "application": "Alternative packaging format"
+        "material_name": "Volume Measurement Markings (on boxes)",
+        "properties": "Allows for easy estimation of tile quantity.",
+        "application": "Wholesale packaging."
       },
       {
-        "material_name": "Dosage Caps",
-        "properties": "Measure servings",
-        "application": "Not applicable"
+        "material_name": "Color-Coded Packaging (by size or type)",
+        "properties": "Facilitates easy identification and selection.",
+        "application": "Retail and wholesale."
       },
       {
-        "material_name": "Flow Control Valves (Bag-in-Box)",
-        "properties": "Ensure consistent dispensing",
-        "application": "Bag-in-box wine"
+        "material_name": "Weigh Scale Integration (at packaging line)",
+        "properties": "Ensures accurate tile count based on weight.",
+        "application": "Automated packaging processes."
       },
       {
-        "material_name": "Tamper evident packaging",
-        "properties": "Ensure the product has not been altered.",
-        "application": "Primary and secondary packaging"
+        "material_name": "Bagging Systems (Automated)",
+        "properties": "Quickly and efficiently packages tiles in specific quantities.",
+        "application": "High-volume packaging."
       },
       {
-        "material_name": "Clear labeling for volume",
-        "properties": "Must be clearly visible on packaging",
-        "application": "Primary and secondary packaging"
+        "material_name": "Counter Display Units (Pre-filled)",
+        "properties": "Contains a set number of tiles for convenient retail display.",
+        "application": "Point-of-sale displays."
       }
     ],
     "value_and_theft_sensitivity": [
       {
-        "material_name": "Tamper-Evident Closures",
-        "properties": "Indicate if the bottle has been opened or compromised",
-        "application": "Closure seals"
+        "material_name": "Tamper-Evident Packaging",
+        "properties": "Indicates if the package has been opened or compromised.",
+        "application": "Retail packaging to deter theft."
       },
       {
-        "material_name": "Security Labels",
-        "properties": "Difficult to remove or replicate, preventing counterfeiting",
-        "application": "Label"
+        "material_name": "Security Tape",
+        "properties": "Leaves a visible residue when removed.",
+        "application": "Sealing boxes to prevent pilferage."
       },
       {
-        "material_name": "Serialized Labels",
-        "properties": "Track and trace individual bottles",
-        "application": "Label"
+        "material_name": "Serialized Packaging",
+        "properties": "Each package has a unique identifier for tracking and tracing.",
+        "application": "High-value tiles."
       },
       {
         "material_name": "RFID Tags",
-        "properties": "Enable tracking and inventory management",
-        "application": "Shipping cartons"
+        "properties": "Allows for electronic tracking of packages.",
+        "application": "Supply chain security."
       },
       {
-        "material_name": "Shrink Wrap",
-        "properties": "Secures multi-packs and provides tamper evidence",
-        "application": "Multi-pack wrapping"
+        "material_name": "GPS Tracking Devices",
+        "properties": "Monitors the location of shipments.",
+        "application": "High-value shipments."
       },
       {
         "material_name": "Opaque Packaging",
-        "properties": "Conceals the contents, reducing theft",
-        "application": "Shipping cartons"
+        "properties": "Conceals the contents from view.",
+        "application": "Deterring theft by obscuring the item."
       },
       {
-        "material_name": "Reinforced Cartons",
-        "properties": "Difficult to open without detection",
-        "application": "Shipping cartons"
+        "material_name": "Reinforced Packaging (Steel Strapping)",
+        "properties": "Makes it difficult to open or tamper with the package.",
+        "application": "High-value and bulky tile shipments."
       },
       {
-        "material_name": "High-Bond Adhesives",
-        "properties": "Makes it harder to remove labels",
-        "application": "Labels"
+        "material_name": "Alarm Systems (Integrated)",
+        "properties": "Alerts to unauthorized opening of the package.",
+        "application": "Specialized security packaging."
       },
       {
-        "material_name": "UV coatings",
-        "properties": "Prevent label counterfeiting.",
-        "application": "Labels"
+        "material_name": "CCTV Surveillance (at packaging and shipping)",
+        "properties": "Deters theft and provides evidence in case of loss.",
+        "application": "Warehouse and distribution centers."
       },
       {
-        "material_name": "GPS tracking",
-        "properties": "To track the package location",
-        "application": "Shipping"
+        "material_name": "Insurance",
+        "properties": "Provides financial protection in case of theft or damage.",
+        "application": "All shipments of high-value tiles."
       }
     ]
   },
   "analysis_timestamp": "2025-05-09 21:04:45",
   "user_login": "codegeek03",
-  "product_name": "wine",
+  "product_name": "Floor tiles",
   "status": "completed"
 }
