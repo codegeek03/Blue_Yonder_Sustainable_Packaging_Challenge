@@ -56,85 +56,178 @@ flowchart TD
 
 ## 📋 Table of Contents
 - [Overview](#-overview)
-- [Features](#-features)
-- [Components](#-components)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Output](#-output)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Acknowledgments](#-acknowledgments)
+- [Key Innovations](#-key-innovations)
+- [Architecture & Components](#-architecture--components)
+  - [1. Input Layer](#1-input-layer)
+  - [2. Processing Layer](#2-processing-layer)
+  - [3. Analysis Modules](#3-analysis-modules)
+  - [4. Orchestration Layer](#4-orchestration-layer)
+  - [5. Reporting & Persistence](#5-reporting--persistence)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Output Structure](#output-structure)
+- [Error Handling & Resilience](#error-handling--resilience)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ## 🎯 Overview
+This system is a **LangGraph-driven**, multi-agent orchestration for evaluating and ranking sustainable packaging materials. It integrates Google’s Gemini model for rich text reasoning, executes specialized tool calls, and produces slide-ready JSON reports—automating end-to-end material selection across:
 
-A sophisticated multi-agent system for evaluating and selecting sustainable packaging materials. Built for the Blue Yonder Sustainable Packaging Challenge, this system leverages LangGraph orchestration to analyze materials across multiple dimensions:
+- 🌿 **Environmental Impact**  
+- 💰 **Cost Analysis**  
+- 📦 **Logistics & Supply-Chain**  
+- 👥 **Consumer Behavior**  
+- ⚖️ **Regulatory Compliance**  
 
-- 🌿 **Environmental Impact**: Sustainability metrics and ecological footprint
-- 💰 **Cost Analysis**: Both sourcing and production costs
-- 📦 **Logistics**: Transportation and storage optimization
-- 👥 **Consumer Behavior**: Market acceptance and user preferences
-- ⚖️ **Regulatory Compliance**: Standards and regulations adherence
+## ✨ Key Innovations
+- **LangGraph State Machine**  
+  Orchestrates flow using a directed graph of TypedDict states, transitions, and conditional branching.
+- **Parallel Tool-Calling**  
+  Launches independent analysis agents concurrently (properties, logistics, cost, sustainability, consumer).
+- **Gemini-Backed Prompting**  
+  Uses Google Gemini (v2.0-flash) for deep reasoning, with `show_tool_calls=True` to trace tool invocations and aid debugging.
+- **JSON-First Reporting**  
+  Each material summary is generated as a precise JSON schema—ideal for slides, dashboards, or APIs.
+- **Dynamic Weighting & Scoring**  
+  Configurable weights guide composite score calculation; normalized sub-scores and breakdowns drive explainability.
+- **Regulatory Context Fetch**  
+  Live web-search integration to pull jurisdiction-specific regulation snippets for each material.
+- **Robust Error Handling**  
+  Full error-capture, root-cause analysis via language model, and JSON error-reports for transparent troubleshooting.
+- **Persistent Reporting**  
+  Automatically saves both “analysis” and “error” reports under a timestamped directory.
 
-## ✨ Features
-
-- **Intelligent Analysis**: Multi-dimensional evaluation of packaging materials
-- **Parallel Processing**: Concurrent analysis through multiple specialized agents
-- **LangGraph Integration**: Robust orchestration and state management
-- **Interactive CLI**: User-friendly input interface
-- **Comprehensive Reporting**: Detailed analysis outputs and recommendations
-
-## 🛠️ Components
+## 🛠️ Architecture & Components
 
 ### 1. Input Layer
-- `input.py`: Main entry point for product specifications
-  - Interactive CLI interface
-  - Input validation and normalization
-  - Data preprocessing
+- **`input.py`**  
+  - Asks for product name, location, target specs via CLI  
+  - Validates & normalizes raw inputs  
+  - Emits initial `AnalysisState.input_data`
 
 ### 2. Processing Layer
-- `Product_compatibility.py`: Product-material compatibility analysis
-  - Material-product fit evaluation
-  - Compatibility scoring
-  - Requirement validation
+- **`Product_compatibility.py`**  
+  - Evaluates material–product fit  
+  - Checks basic constraints (e.g., mechanical, thermal compatibility)  
+  - Populates `compatibility_analysis`
+- **`MaterialDB_agent.py`**  
+  - Queries internal/external material catalogs  
+  - Filters by compatibility criteria  
+  - Returns candidate materials list
 
-- `MaterialDB_agent.py`: Material database operations and queries
-  - Material property lookup
-  - Database management
-  - Query optimization
+### 3. Analysis Modules
+Each runs in **parallel** under a LangGraph “run_analyses” fork:
+- **`MaterialPropertiesAgent`**  
+  - Measures strength, barrier properties, thermal tolerance  
+- **`LogisticCompatibilityAgent`**  
+  - Computes weight, bulk, transport losses  
+- **`ProductionCostAgent`**  
+  - Estimates sourcing & manufacturing unit costs  
+- **`EnvironmentalImpactAgent`**  
+  - Calculates carbon footprint, recyclability, biodegradability  
+- **`ConsumerBehaviorAgent`**  
+  - Models market acceptance, packaging appeal  
+- **`RegulationsAgent`**  
+  - Web-searches relevant directives (EU, FDA, BIS) via `show_tool_calls`
+- **`ExplainabilityAgent`**
+  - Generates robust explanations with thinking tools.
 
-### 3. Analysis Layer
-- `Sustainability_Analyst.py`: Environmental impact assessment
-  - Carbon footprint calculation
-  - Recyclability analysis
-  - Environmental compliance checking
-
-- `logistics_Analyst.py`: Transportation and storage optimization
-  - Shipping efficiency analysis
-  - Storage requirements
-  - Cost optimization
-
-- `Consumer_Behaviour_Analyst.py`: Market acceptance analysis
-  - Consumer preference modeling
-  - Market trend analysis
-  - Acceptance prediction
-
-- `Sourcing_Cost_Analyser.py`: Cost-benefit analysis
-  - Material cost evaluation
-  - Supply chain analysis
-  - ROI calculation
+Each module returns a standardized top-materials list with raw scores.
 
 ### 4. Orchestration Layer
-- `Orchestrator.py`: Central coordination and workflow management
-  - LangGraph state management
-  - Parallel processing coordination
-  - Results aggregation
+- **`Orchestrator.py`**  
+  - Gathers all individual scores  
+  - Applies **configurable weights** (default in code)  
+  - Selects top-K materials by composite score  
+  - For each, calls `generate_executive_summary()`:
+    - Crafts a detailed prompt to Gemini  
+    - Embeds original metrics, normalized scores, strategic bullets  
+    - Injects **regulatory snippet** pulled from live search  
+    - Parses the JSON response back into Python
+- **LangGraph Workflow**  
+  - `process_input → analyze_product_compatibility → query_material_database`  
+  - **If materials found** → fork into 5 analysis nodes → join → orchestrate  
+  - **Else/Error** → error handler node
 
- ![image](https://github.com/user-attachments/assets/e3e03557-7836-4a11-8a00-08b1876ba0cc)
+### 5. Reporting & Persistence
+- **Slide-Ready JSON**  
+  - Schema includes:  
+    1. `executive_snapshot`  
+    2. `composite_score` (raw + normalized + weighted)  
+    3. `strengths` & `trade_offs`  
+    4. `supply_chain_implications` & `consulting_recommendation`  
+    5. `regulatory_context` snippet  
+- **File Saving**  
+  - Writes to `temp_KB/reports/analysis_report_<timestamp>.json`  
+  - Error reports likewise saved with clear statuses
 
+---
 
-## 📥 Installation
-
-1. **Clone the Repository**
+## 🛠️ Installation
+1. Clone repo  
+2. `pip install -r requirements.txt`  
+3. Create `.env` with `GOOGLE_API_KEY=…`  
+4. Ensure directories:  
+   ```bash
+   mkdir -p temp_KB/reports logs
+## 🚀 Usage
 ```bash
-git clone https://github.com/codegeek03/Blue_Yonder_Sustainable_Packaging_Challenge.git
-cd Blue_Yonder_Sustainable_Packaging_Challenge
+python main.py
+```
+Follow prompts for product name & location
+
+Watch parallel tool-calls and state transitions in logs
+
+Find JSON report in temp_KB/reports/
+
+## 📊 Output Structure
+```jsonc
+{
+  "product_name": "SuperSnack Bar",
+  "timestamp": "2025-05-09 21:04:45",
+  "top_materials": [
+    {
+      "material_name": "PLA Film",
+      "composite_score": { /* 0–100 */ },
+      "strengths": [ /* … */ ],
+      "trade_offs": [ /* … */ ],
+      "supply_chain_implications": { /* … */ },
+      "consulting_recommendation": { /* … */ },
+      "regulatory_context": "EU Packaging Directive 94/62/EC excerpt…"
+    }
+    // …
+  ],
+  "report_path": "temp_KB/reports/analysis_report_2025-05-09_21-04-45.json"
+}
+```
+## 🛡️ Error Handling & Resilience
+-Any node failure routes to handle_error
+
+-LLM-driven root-cause analysis explains failures
+
+-JSON error report saved alongside standard reports
+
+-Logs include stack traces and tool-call histories
+
+## 🤝 Contributing
+-Fork & branch
+
+-Add tests for new agents or states
+
+-Submit PR with clear changelog
+
+## 📄 License
+-MIT © Blue Yonder Packaging Challenge
+
+## 🙏 Acknowledgments
+-LangGraph team for orchestration framework
+
+Google Cloud for Gemini APIs
+
+All open-source tool developers and community contributors
+ ![image](https://github.com/user-attachments/assets/994df226-6654-48b7-a403-627a7bee6f4d)
+
+
+This expanded README surfaces your system’s novel features—**parallel agent tool-calling**, **LangGraph state orchestration**, **LLM-driven JSON prompting**, and robust **error-handling with explanatory analysis**—all in a slide- and API-friendly format. Let me know if you’d like any section refined!
+
