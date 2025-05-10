@@ -6,6 +6,7 @@
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--05--10-blue)
 
 ## 🏗️ Architecture
+```mermaid
 ---
 config:
   layout: dagre
@@ -50,6 +51,7 @@ flowchart TD
     PCon --> C & D & E & F & R & P
     H --> G
     EX --> G
+```
 
 
 ## 📋 Table of Contents
