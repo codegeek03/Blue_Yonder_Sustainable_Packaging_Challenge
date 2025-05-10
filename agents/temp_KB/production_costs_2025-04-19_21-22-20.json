@@ -1,69 +1,69 @@
 {
   "top_materials": [
     {
-      "material_name": "Calcium Carbonate (Shell)",
+      "material_name": "Calcium Carbonate",
       "cost_score": 9,
       "base_price": "0.15 USD/kg",
       "key_costs": {
-        "raw_material": "Low base price",
-        "processing": "Minimal processing",
-        "tariffs": "Low import duties",
-        "transport": "Cheap transport",
-        "compliance": "Easy compliance"
+        "raw_material": "Low cost limestone",
+        "processing": "Simple crushing process",
+        "tariffs": "Minimal import duties",
+        "transport": "Widely available",
+        "compliance": "Easy certification"
       },
-      "total_estimated_cost": "0.20 USD/unit"
+      "total_estimated_cost": "0.25 USD/kg"
     },
     {
-      "material_name": "Soybean Meal (Feed)",
+      "material_name": "Soybean Meal",
       "cost_score": 8,
       "base_price": "0.40 USD/kg",
       "key_costs": {
-        "raw_material": "Affordable base",
-        "processing": "Simple process",
-        "tariffs": "Moderate tariffs",
-        "transport": "Low cost shipping",
-        "compliance": "Standard compliance"
+        "raw_material": "Relatively low cost",
+        "processing": "Standard extraction",
+        "tariffs": "Moderate in some regions",
+        "transport": "Global trade network",
+        "compliance": "Feed safety standards"
       },
-      "total_estimated_cost": "0.53 USD/unit"
+      "total_estimated_cost": "0.67 USD/kg"
     },
     {
-      "material_name": "Corn (Feed)",
+      "material_name": "Corn Grain",
       "cost_score": 7,
-      "base_price": "0.35 USD/kg",
+      "base_price": "0.30 USD/kg",
       "key_costs": {
-        "raw_material": "Low raw material cost",
-        "processing": "Simple processing",
+        "raw_material": "Cheap grain source",
+        "processing": "Simple milling process",
         "tariffs": "Low import tariffs",
-        "transport": "Cheap transportation",
-        "compliance": "Standard compliance"
+        "transport": "Bulk transport common",
+        "compliance": "Feed grade standards"
       },
-      "total_estimated_cost": "0.46 USD/unit"
+      "total_estimated_cost": "0.50 USD/kg"
     },
     {
-      "material_name": "Vitamin Supplements (Feed)",
+      "material_name": "Vegetable Oil",
       "cost_score": 6,
-      "base_price": "2.50 USD/kg",
+      "base_price": "0.80 USD/kg",
       "key_costs": {
-        "raw_material": "Variable base price",
-        "processing": "Some processing",
-        "tariffs": "Moderate tariffs",
-        "transport": "Standard transport",
-        "compliance": "High compliance"
+        "raw_material": "Variable oil source",
+        "processing": "Refining required",
+        "tariffs": "Some import restrictions",
+        "transport": "Standard liquid transport",
+        "compliance": "Food grade standards"
       },
-      "total_estimated_cost": "3.31 USD/unit"
+      "total_estimated_cost": "1.34 USD/kg"
     },
     {
-      "material_name": "Packaging Materials (Cartons)",
+      "material_name": "Vitamin Premix",
       "cost_score": 5,
-      "base_price": "0.20 USD/kg",
+      "base_price": "5.00 USD/kg",
       "key_costs": {
-        "raw_material": "Paper is cheap",
-        "processing": "Simple printing",
-        "tariffs": "Low import duties",
-        "transport": "Bulk shipping costs",
-        "compliance": "Standard measures"
+        "raw_material": "Vitamins expensive",
+        "processing": "Complex formulation",
+        "tariffs": "Variable import fees",
+        "transport": "Special handling needed",
+        "compliance": "Strict regulation"
       },
-      "total_estimated_cost": "0.26 USD/unit"
+      "total_estimated_cost": "8.35 USD/kg"
     }
   ],
   "timestamp": "2025-04-19 21:22:20",

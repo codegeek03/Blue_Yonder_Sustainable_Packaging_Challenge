@@ -4,31 +4,31 @@
       "material_name": "Molded Pulp",
       "logistics_score": 9,
       "primary_advantage": "Excellent shock absorption",
+      "cost_consideration": "Higher material cost"
+    },
+    {
+      "material_name": "Plastic (PET)",
+      "logistics_score": 8,
+      "primary_advantage": "Durable and stackable",
       "cost_consideration": "Moderate material cost"
     },
     {
-      "material_name": "Plastic Clamshell",
-      "logistics_score": 8,
-      "primary_advantage": "Good stacking strength",
-      "cost_consideration": "Higher material costs"
-    },
-    {
-      "material_name": "Cardboard Tray",
+      "material_name": "Cardboard",
       "logistics_score": 7,
-      "primary_advantage": "Low transport costs",
-      "cost_consideration": "Low material expense"
+      "primary_advantage": "Good stacking strength",
+      "cost_consideration": "Lower material cost"
     },
     {
-      "material_name": "Foam Container",
+      "material_name": "Foam",
       "logistics_score": 6,
-      "primary_advantage": "Decent impact protection",
-      "cost_consideration": "Variable foam costs"
+      "primary_advantage": "Superior cushioning",
+      "cost_consideration": "Moderate cost, volume issues"
     },
     {
       "material_name": "Paper Mache",
       "logistics_score": 5,
-      "primary_advantage": "Sustainable option",
-      "cost_consideration": "Lower material prices"
+      "primary_advantage": "Low material cost",
+      "cost_consideration": "Fragile; high damage risk"
     }
   ],
   "timestamp": "2025-04-19 21:17:20",

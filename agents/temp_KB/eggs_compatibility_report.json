@@ -17,8 +17,8 @@
       "concerns": "odor"
     },
     "hygiene_sensitivity": {
-      "explanation": "high",
-      "concerns": "contamination"
+      "explanation": "clean",
+      "concerns": "bacteria"
     },
     "temperature_sensitivity": {
       "explanation": "sensitive",
@@ -26,7 +26,7 @@
     },
     "volatility_or_hazard_risk": {
       "explanation": "low",
-      "concerns": "salmonella"
+      "concerns": "none"
     },
     "visibility_and_display": {
       "explanation": "visible",
@@ -34,11 +34,11 @@
     },
     "quantity_and_dosage": {
       "explanation": "bulk",
-      "concerns": "handling"
+      "concerns": "breakage"
     },
     "value_and_theft_sensitivity": {
       "explanation": "moderate",
-      "concerns": "pilferage"
+      "concerns": "theft"
     }
   },
   "product_name": "eggs",
@@ -50,7 +50,7 @@
     "chemical_properties": 80.0,
     "hygiene_sensitivity": 72.0,
     "temperature_sensitivity": 64.0,
-    "volatility_or_hazard_risk": 80.0,
+    "volatility_or_hazard_risk": 100,
     "visibility_and_display": 56.0,
     "quantity_and_dosage": 64.0,
     "value_and_theft_sensitivity": 72.0

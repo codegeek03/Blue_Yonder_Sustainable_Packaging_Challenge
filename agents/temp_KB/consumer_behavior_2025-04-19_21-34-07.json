@@ -1,210 +1,209 @@
 {
   "top_materials": [
     {
-      "material_name": "Molded Pulp",
+      "material_name": "Molded Pulp (Recycled)",
       "consumer_metrics": {
         "aesthetic_appeal": {
-          "score": 6,
+          "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Natural look appealing"
+          "key_insight": "Rustic; natural look appeals to some."
         },
         "usability": {
           "score": 8,
           "trend_strength": "strong",
-          "key_insight": "Protective and easy to open"
+          "key_insight": "Provides good egg protection."
         },
         "perceived_value": {
           "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Value aligns with eco-friendly"
+          "key_insight": "Seen as affordable and responsible."
         },
         "eco_consciousness": {
           "score": 9,
           "trend_strength": "strong",
-          "key_insight": "Biodegradable & sustainable"
+          "key_insight": "High recyclability is a plus."
         },
         "brand_alignment": {
-          "score": 7,
+          "score": 8,
           "trend_strength": "moderate",
-          "key_insight": "Fits natural/organic brands"
+          "key_insight": "Fits well with eco-friendly brands."
         }
       },
-      "overall_consumer_score": 7.4,
+      "overall_consumer_score": 7.8,
       "target_demographics": [
-        "Eco-conscious consumers",
-        "Millennials"
+        "Eco-conscious millennials",
+        "Gen Z"
       ],
-      "market_positioning": "Sustainable, mid-range egg packaging"
+      "market_positioning": "Sustainable and affordable option."
     },
     {
       "material_name": "Clear PET Plastic",
       "consumer_metrics": {
         "aesthetic_appeal": {
-          "score": 7,
-          "trend_strength": "weak",
-          "key_insight": "Product visibility is key"
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Eggs are clearly visible."
         },
         "usability": {
           "score": 9,
           "trend_strength": "strong",
-          "key_insight": "Easy to handle and stack"
+          "key_insight": "Easy to open and close."
         },
         "perceived_value": {
-          "score": 8,
+          "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Cleanliness and freshness implied"
+          "key_insight": "Transparency signals freshness."
         },
         "eco_consciousness": {
-          "score": 4,
-          "trend_strength": "weak",
-          "key_insight": "Recyclability is a concern"
-        },
-        "brand_alignment": {
-          "score": 8,
-          "trend_strength": "strong",
-          "key_insight": "Works for mainstream brands"
-        }
-      },
-      "overall_consumer_score": 7.2,
-      "target_demographics": [
-        "Price-sensitive consumers",
-        "Families"
-      ],
-      "market_positioning": "Affordable, widely available egg packaging"
-    },
-    {
-      "material_name": "Foam Polystyrene",
-      "consumer_metrics": {
-        "aesthetic_appeal": {
           "score": 5,
           "trend_strength": "weak",
-          "key_insight": "Basic, minimal aesthetic appeal"
-        },
-        "usability": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Provides good cushioning"
-        },
-        "perceived_value": {
-          "score": 6,
-          "trend_strength": "weak",
-          "key_insight": "Associated with lower cost"
-        },
-        "eco_consciousness": {
-          "score": 2,
-          "trend_strength": "strong",
-          "key_insight": "Poor environmental image"
-        },
-        "brand_alignment": {
-          "score": 6,
-          "trend_strength": "moderate",
-          "key_insight": "Fits value-oriented brands"
-        }
-      },
-      "overall_consumer_score": 5.2,
-      "target_demographics": [
-        "Budget-conscious shoppers"
-      ],
-      "market_positioning": "Economy egg packaging option"
-    },
-    {
-      "material_name": "Cardboard (with window)",
-      "consumer_metrics": {
-        "aesthetic_appeal": {
-          "score": 8,
-          "trend_strength": "moderate",
-          "key_insight": "Classic, clean design appeal"
-        },
-        "usability": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Easy stacking, viewing eggs"
-        },
-        "perceived_value": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Trusted material, good quality"
-        },
-        "eco_consciousness": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Recyclable, sustainable option"
+          "key_insight": "Recyclability varies by region."
         },
         "brand_alignment": {
           "score": 8,
           "trend_strength": "strong",
-          "key_insight": "Supports premium branding"
+          "key_insight": "Works for established brands."
         }
       },
       "overall_consumer_score": 7.4,
       "target_demographics": [
-        "Middle-class families",
-        "Health-conscious"
+        "Convenience seekers",
+        "Families"
       ],
-      "market_positioning": "Reliable, mid-to-high range packaging"
+      "market_positioning": "Offers transparency and convenience."
+    },
+    {
+      "material_name": "Foam (Polystyrene)",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 6,
+          "trend_strength": "weak",
+          "key_insight": "Basic, minimal design appeal."
+        },
+        "usability": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Excellent protection; lightweight."
+        },
+        "perceived_value": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "Low cost; seen as economical."
+        },
+        "eco_consciousness": {
+          "score": 2,
+          "trend_strength": "strong",
+          "key_insight": "Poor recyclability; environmentally bad."
+        },
+        "brand_alignment": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Suitable for budget brands."
+        }
+      },
+      "overall_consumer_score": 6.4,
+      "target_demographics": [
+        "Price-sensitive consumers"
+      ],
+      "market_positioning": "Provides cost-effective protection."
+    },
+    {
+      "material_name": "Cardboard (with Custom Printing)",
+      "consumer_metrics": {
+        "aesthetic_appeal": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Customization is a major plus."
+        },
+        "usability": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Requires careful handling to prevent damage."
+        },
+        "perceived_value": {
+          "score": 8,
+          "trend_strength": "moderate",
+          "key_insight": "High-quality print enhances perception."
+        },
+        "eco_consciousness": {
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Recyclable; good for branding."
+        },
+        "brand_alignment": {
+          "score": 9,
+          "trend_strength": "strong",
+          "key_insight": "Great for premium brands."
+        }
+      },
+      "overall_consumer_score": 8.0,
+      "target_demographics": [
+        "Design-conscious consumers"
+      ],
+      "market_positioning": "Premium packaging with high visual appeal."
     },
     {
       "material_name": "Bagasse (Sugarcane Fiber)",
       "consumer_metrics": {
         "aesthetic_appeal": {
-          "score": 6,
+          "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Rustic, artisanal look"
+          "key_insight": "Natural look; eco-friendly aesthetic."
         },
         "usability": {
           "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Functional but can be fragile"
+          "key_insight": "Similar protection to molded pulp."
         },
         "perceived_value": {
-          "score": 7,
+          "score": 8,
           "trend_strength": "moderate",
-          "key_insight": "Eco-value offsets cost"
+          "key_insight": "Signals sustainability; valued by some."
         },
         "eco_consciousness": {
           "score": 10,
           "trend_strength": "strong",
-          "key_insight": "Highly sustainable material"
+          "key_insight": "Highly sustainable; compostable."
         },
         "brand_alignment": {
           "score": 8,
           "trend_strength": "strong",
-          "key_insight": "Suits eco-conscious brands"
+          "key_insight": "Good for organic egg brands."
         }
       },
-      "overall_consumer_score": 7.6,
+      "overall_consumer_score": 8.0,
       "target_demographics": [
-        "Environmentally aware consumers",
-        "Organic shoppers"
+        "Eco-conscious consumers",
+        "Health-focused"
       ],
-      "market_positioning": "Premium, sustainable egg packaging"
+      "market_positioning": "Highly sustainable and natural packaging."
     }
   ],
   "consumer_trends": [
     {
-      "trend_name": "Increased demand for sustainable packaging",
+      "trend_name": "Sustainable Packaging Demand",
       "impact_level": "high",
-      "relevance": "Consumers actively seek eco-friendly options"
+      "relevance": "Consumers prefer eco-friendly options."
     },
     {
-      "trend_name": "Transparency and product visibility",
+      "trend_name": "Transparency and Traceability",
       "impact_level": "medium",
-      "relevance": "Consumers want to see eggs before purchase"
+      "relevance": "Consumers want to know egg origin."
     },
     {
-      "trend_name": "Minimalist design",
+      "trend_name": "Minimalist Design",
       "impact_level": "medium",
-      "relevance": "Clean, simple packaging preferred"
+      "relevance": "Clean and simple aesthetics gaining popularity."
     },
     {
-      "trend_name": "Local and artisanal products",
+      "trend_name": "Premiumization",
+      "impact_level": "medium",
+      "relevance": "Luxury packaging for higher-end eggs"
+    },
+    {
+      "trend_name": "Reusable Packaging",
       "impact_level": "low",
-      "relevance": "Packaging reflects product origins"
-    },
-    {
-      "trend_name": "Recycled Content Labeling",
-      "impact_level": "high",
-      "relevance": "Clear labelling vital for eco trust."
+      "relevance": "Limited options currently available."
     }
   ],
   "timestamp": "2025-04-19 21:34:07",

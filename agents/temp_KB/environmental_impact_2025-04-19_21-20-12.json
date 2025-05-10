@@ -4,31 +4,31 @@
       "material_name": "Molded Pulp",
       "environmental_score": 8.5,
       "key_benefit": "High biodegradability",
-      "primary_concern": "Deforestation risk"
+      "primary_concern": "Energy intensive production"
     },
     {
       "material_name": "Recycled Cardboard",
       "environmental_score": 7.8,
-      "key_benefit": "Good recyclability",
-      "primary_concern": "Fiber degradation"
+      "key_benefit": "High recyclability",
+      "primary_concern": "Fiber degradation risk"
     },
     {
       "material_name": "Compostable Plastic",
       "environmental_score": 6.9,
-      "key_benefit": "Low resource depletion",
-      "primary_concern": "Limited compost access"
+      "key_benefit": "Lower fossil fuel use",
+      "primary_concern": "Specific conditions for compost"
     },
     {
-      "material_name": "Bamboo",
+      "material_name": "Bagasse",
       "environmental_score": 6.5,
-      "key_benefit": "Rapid renewability",
-      "primary_concern": "Processing impacts"
+      "key_benefit": "Renewable resource",
+      "primary_concern": "Land use for sugarcane"
     },
     {
-      "material_name": "Paper Mache",
-      "environmental_score": 5.8,
-      "key_benefit": "Uses waste paper",
-      "primary_concern": "Low durability"
+      "material_name": "PLA (corn-based)",
+      "environmental_score": 6.0,
+      "key_benefit": "Biodegradable potential",
+      "primary_concern": "Industrial composting needed"
     }
   ],
   "timestamp": "2025-04-19 21:20:12",

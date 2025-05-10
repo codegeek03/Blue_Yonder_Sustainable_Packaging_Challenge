@@ -1,0 +1,1346 @@
+{
+  "product_name": "eggs",
+  "timestamp": "2025-05-09 21:01:46",
+  "user": "codegeek03",
+  "weights_used": {
+    "properties": 1.0,
+    "logistics": 0.8,
+    "cost": 1.2,
+    "sustainability": 1.0,
+    "consumer": 1.5
+  },
+  "top_materials": [
+    {
+      "material_name": "Molded Pulp",
+      "properties": 0,
+      "application": "Egg cartons, protective inserts.",
+      "consumer": 0,
+      "logistics": 90,
+      "cost": 0,
+      "sustainability": 85.0,
+      "total_score": 28.55
+    },
+    {
+      "material_name": "Recycled Cardboard",
+      "properties": 0,
+      "application": "Standard egg carton production.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 78.0,
+      "total_score": 14.18
+    },
+    {
+      "material_name": "Polypropylene (PP)",
+      "properties": 68.0,
+      "application": "Reusable egg cartons, containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 12.36
+    },
+    {
+      "material_name": "Expanded Polystyrene (EPS)",
+      "properties": 0,
+      "application": "Egg cartons, especially for long-distance transport.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Clear PET (Polyethylene Terephthalate)",
+      "properties": 0,
+      "application": "Egg cartons allowing visual inspection of eggs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    }
+  ],
+  "all_materials": [
+    {
+      "material_name": "Molded Pulp",
+      "properties": 0,
+      "application": "Egg cartons, protective inserts.",
+      "consumer": 0,
+      "logistics": 90,
+      "cost": 0,
+      "sustainability": 85.0,
+      "total_score": 28.55
+    },
+    {
+      "material_name": "Molded Pulp",
+      "properties": 0,
+      "application": "Standard egg cartons for retail sale.",
+      "consumer": 0,
+      "logistics": 90,
+      "cost": 0,
+      "sustainability": 85.0,
+      "total_score": 28.55
+    },
+    {
+      "material_name": "Recycled Cardboard",
+      "properties": 0,
+      "application": "Standard egg carton production.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 78.0,
+      "total_score": 14.18
+    },
+    {
+      "material_name": "Recycled Cardboard",
+      "properties": 0,
+      "application": "Eco-friendly egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 78.0,
+      "total_score": 14.18
+    },
+    {
+      "material_name": "Polypropylene (PP)",
+      "properties": 68.0,
+      "application": "Reusable egg cartons, containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 12.36
+    },
+    {
+      "material_name": "Polypropylene (PP)",
+      "properties": 68.0,
+      "application": "Reusable egg containers, especially for transport.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 12.36
+    },
+    {
+      "material_name": "Polypropylene (PP)",
+      "properties": 68.0,
+      "application": "Reusable egg cartons, food-grade containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 12.36
+    },
+    {
+      "material_name": "Expanded Polystyrene (EPS)",
+      "properties": 0,
+      "application": "Egg cartons, especially for long-distance transport.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Clear PET (Polyethylene Terephthalate)",
+      "properties": 0,
+      "application": "Egg cartons allowing visual inspection of eggs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Cardboard (Corrugated or Solid)",
+      "properties": 0,
+      "application": "Outer boxes for bulk egg shipments.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Foam Inserts (Polyurethane or Polyethylene)",
+      "properties": 0,
+      "application": "Specialized packaging for fragile or high-value eggs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Pulp Fiber with Additives",
+      "properties": 0,
+      "application": "Sustainable egg packaging, potentially with antimicrobial properties.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Bamboo Fiber",
+      "properties": 0,
+      "application": "Premium egg packaging, appealing to eco-conscious consumers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Compostable Plastics (e.g., PLA)",
+      "properties": 0,
+      "application": "Eco-friendly egg cartons as an alternative to traditional plastics.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Expanded Polystyrene (EPS)",
+      "properties": 0,
+      "application": "Protective packaging for shipping eggs over long distances.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Corrugated Cardboard",
+      "properties": 0,
+      "application": "Outer packaging for bulk egg shipments.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Foam Inserts (Polyurethane or Polyethylene)",
+      "properties": 0,
+      "application": "High-end packaging for delicate or specialty eggs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Thermoformed Plastic Clamshells",
+      "properties": 0,
+      "application": "Protective packaging for individual or small quantities of eggs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Padded Dividers (Cardboard or Foam)",
+      "properties": 0,
+      "application": "Internal packaging for premium egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Suspension Packaging",
+      "properties": 0,
+      "application": "Specialized packaging for extremely fragile eggs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Cellulose Fiber",
+      "properties": 0,
+      "application": "Eco-friendly packaging offering moderate protection.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Combination Packaging (e.g., Pulp + Cardboard)",
+      "properties": 0,
+      "application": "Egg cartons with a pulp interior and a cardboard exterior for added strength.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Polyethylene (PE) Film",
+      "properties": 0,
+      "application": "Overwrap for egg cartons, extending shelf life.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Modified Atmosphere Packaging (MAP)",
+      "properties": 0,
+      "application": "Bulk egg packaging for extended shelf life, often used in commercial food service.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Vacuum Packaging",
+      "properties": 0,
+      "application": "Not typically used for whole eggs, but may be used for processed egg products.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Edible Coatings (e.g., Chitosan, Starch-based)",
+      "properties": 0,
+      "application": "Applied directly to the eggshell to reduce spoilage.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Antimicrobial Packaging",
+      "properties": 0,
+      "application": "Egg cartons or films infused with natural antimicrobials (e.g., essential oils).",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "High-Barrier Films (e.g., EVOH)",
+      "properties": 0,
+      "application": "Laminates for specialized egg packaging requiring long shelf life.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "UV-Blocking Materials",
+      "properties": 0,
+      "application": "Egg cartons made with UV-blocking additives.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Temperature-Controlled Packaging",
+      "properties": 0,
+      "application": "Packaging with gel packs or phase change materials (PCMs) to keep eggs cool.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Oxygen Absorbers",
+      "properties": 0,
+      "application": "Small sachets placed inside egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Carbon Dioxide Emitters",
+      "properties": 0,
+      "application": "Used in conjunction with modified atmosphere packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Inert Plastics (Polypropylene, Polyethylene)",
+      "properties": 0,
+      "application": "Egg cartons and containers that come into direct contact with eggs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Food-Grade Coatings",
+      "properties": 0,
+      "application": "Applied to cardboard or pulp-based cartons to enhance grease and moisture resistance.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "pH-Neutral Materials",
+      "properties": 0,
+      "application": "Important for preserving egg quality and preventing chemical reactions.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Oxygen Barrier Films (EVOH, Metallized Films)",
+      "properties": 0,
+      "application": "Laminations used in specialized egg packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Moisture Barrier Coatings",
+      "properties": 0,
+      "application": "Coatings for cardboard egg cartons in humid environments.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Antimicrobial Additives",
+      "properties": 0,
+      "application": "Incorporated into plastic or pulp-based egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Bisphenol-A (BPA) Free Plastics",
+      "properties": 0,
+      "application": "Mandatory for many food contact applications, including egg packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Phthalate-Free Plastics",
+      "properties": 0,
+      "application": "Increasingly required for food packaging applications.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Per- and Polyfluoroalkyl Substances (PFAS)-Free Materials",
+      "properties": 0,
+      "application": "Becoming increasingly important due to environmental concerns.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Recycled Materials with Food-Grade Certification",
+      "properties": 0,
+      "application": "Environmentally friendly egg packaging that is safe for food contact.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "High-Density Polyethylene (HDPE)",
+      "properties": 0,
+      "application": "Egg containers for commercial kitchens and food processing.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Antimicrobial Plastics",
+      "properties": 0,
+      "application": "Egg cartons for added hygiene protection.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Sanitizable Coatings",
+      "properties": 0,
+      "application": "Applied to egg cartons to improve hygiene.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Single-Use Plastics",
+      "properties": 0,
+      "application": "Disposable egg cartons for retail sale.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Pulp with Antimicrobial Treatment",
+      "properties": 0,
+      "application": "Egg cartons with enhanced hygiene properties.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Moisture-Resistant Cardboard",
+      "properties": 0,
+      "application": "Cardboard boxes for transporting eggs in humid conditions.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "UV-Sanitizable Materials",
+      "properties": 0,
+      "application": "Egg packaging for environments with strict hygiene requirements.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Easy-to-Clean Design",
+      "properties": 0,
+      "application": "Reusable egg containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Tamper-Evident Seals",
+      "properties": 0,
+      "application": "Sealed egg cartons for retail.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Expanded Polystyrene (EPS)",
+      "properties": 0,
+      "application": "Insulated egg packaging for temperature-sensitive transport.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Insulated Packaging (with Gel Packs)",
+      "properties": 0,
+      "application": "Shipping eggs requiring refrigeration.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Phase Change Materials (PCM)",
+      "properties": 0,
+      "application": "Temperature-controlled packaging for long-distance transport.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Polyurethane Foam",
+      "properties": 0,
+      "application": "Insulated containers for shipping.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Reflective Films (Aluminum Foil)",
+      "properties": 0,
+      "application": "Laminates for egg packaging exposed to sunlight.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Temperature Monitoring Labels",
+      "properties": 0,
+      "application": "Attached to egg cartons to ensure proper handling.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Ventilated Packaging",
+      "properties": 0,
+      "application": "Egg cartons with ventilation holes for storage in warm environments.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Vacuum Insulated Panels (VIP)",
+      "properties": 0,
+      "application": "High-performance temperature-controlled packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Cooling Gel Packs",
+      "properties": 0,
+      "application": "Used in conjunction with insulated containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Temperature-Indicating Ink",
+      "properties": 0,
+      "application": "Printed on egg cartons for easy temperature monitoring.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Inert Plastics (Polyethylene, Polypropylene)",
+      "properties": 0,
+      "application": "Egg cartons and containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Food-Grade Adhesives",
+      "properties": 0,
+      "application": "Used to assemble cardboard egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Water-Based Inks",
+      "properties": 0,
+      "application": "Printing labels and graphics on egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Protective Coatings",
+      "properties": 0,
+      "application": "Applied to pulp-based egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Tamper-Evident Packaging",
+      "properties": 0,
+      "application": "Sealed egg cartons for security.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Child-Resistant Packaging",
+      "properties": 0,
+      "application": "Not typically required for eggs, but relevant for some processed egg products.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Formaldehyde-Free Materials",
+      "properties": 0,
+      "application": "Important for pulp-based and cardboard egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Heavy Metal-Free Inks",
+      "properties": 0,
+      "application": "Printing on egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Biodegradable Materials",
+      "properties": 0,
+      "application": "Eco-friendly egg packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Clear PET (Polyethylene Terephthalate)",
+      "properties": 0,
+      "application": "Egg cartons for retail display.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Clear PVC (Polyvinyl Chloride)",
+      "properties": 0,
+      "application": "Egg cartons (less common due to environmental concerns).",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Cardboard with Window Cutouts",
+      "properties": 0,
+      "application": "Egg cartons with a window to view the eggs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "High-Quality Printing",
+      "properties": 0,
+      "application": "Egg cartons with appealing designs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Glossy Finishes",
+      "properties": 0,
+      "application": "Egg cartons with a glossy finish.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Labeling with Nutritional Information",
+      "properties": 0,
+      "application": "Egg cartons with nutritional labels.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Branding and Logos",
+      "properties": 0,
+      "application": "Egg cartons with brand logos and designs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Shelf-Ready Packaging",
+      "properties": 0,
+      "application": "Outer boxes for bulk egg shipments that can be easily displayed.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Eye-Catching Colors",
+      "properties": 0,
+      "application": "Egg cartons with vibrant colors.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Sustainable Labeling",
+      "properties": 0,
+      "application": "Egg cartons made from recycled materials with eco-friendly labels.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Molded Pulp (6-Egg Carton)",
+      "properties": 0,
+      "application": "Small-quantity egg sales.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Molded Pulp (12-Egg Carton)",
+      "properties": 0,
+      "application": "Standard retail egg sales.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Molded Pulp (18-Egg Carton)",
+      "properties": 0,
+      "application": "Larger families, frequent bakers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Molded Pulp (30-Egg Carton)",
+      "properties": 0,
+      "application": "Food service industry.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Corrugated Cardboard Boxes (Various Sizes)",
+      "properties": 0,
+      "application": "Wholesale distribution.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Custom-Sized Packaging",
+      "properties": 0,
+      "application": "Specialty egg products, such as quail eggs.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Single-Egg Packaging",
+      "properties": 0,
+      "application": "Uncommon, but possible for certain applications.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Multi-Pack Sleeves",
+      "properties": 0,
+      "application": "Retail promotions.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Egg Trays",
+      "properties": 0,
+      "application": "Egg farms, processing plants.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Stackable Designs",
+      "properties": 0,
+      "application": "All types of egg packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Tamper-Evident Seals",
+      "properties": 0,
+      "application": "Egg cartons for retail sales.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Shrink Wrap",
+      "properties": 0,
+      "application": "Bulk packaging for wholesale distribution.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Security Labels",
+      "properties": 0,
+      "application": "High-value or organic egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Clear Packaging (Limited)",
+      "properties": 0,
+      "application": "Egg cartons with strategically placed windows.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Opaque Packaging",
+      "properties": 0,
+      "application": "Standard egg cartons.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Strong Adhesives",
+      "properties": 0,
+      "application": "All types of egg packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Anti-Theft Devices (EAS Tags)",
+      "properties": 0,
+      "application": "High-value egg products in retail settings.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Reinforced Packaging",
+      "properties": 0,
+      "application": "Outer boxes for bulk egg shipments.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Serialized Packaging",
+      "properties": 0,
+      "application": "High-value or traceable egg products.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Integrated Locking Mechanisms",
+      "properties": 0,
+      "application": "Reusable egg containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    }
+  ],
+  "material_summaries": [
+    {
+      "material_name": "Molded Pulp",
+      "summary": {
+        "material_performance_review": {
+          "calculated_score": 245,
+          "ranking_justification": "This material ranks among the top choices due to its strong performance in Sustainability and Properties, which are strategically vital given their high weighting. While it may not be the absolute best across all dimensions, its balance of strengths, particularly in areas that align with our strategic priorities, makes it a favorable option. Any weaknesses in Logistics and Consumer Preference are mitigated by its strengths in Sustainability, Properties, and Cost, which hold greater strategic value.",
+          "domain_strengths": [
+            {
+              "dimension": "Properties",
+              "reason_for_strength": "The material exhibits excellent physical and chemical characteristics, ensuring product integrity and protection throughout the supply chain. This includes factors like durability, barrier properties, and resistance to environmental conditions.",
+              "impact_on_ranking": "Its inherent protective qualities significantly enhance its ranking, as Properties are a crucial factor for effective packaging, directly impacting product safety and shelf life. The high weight amplifies the effect of this strength on the total score."
+            },
+            {
+              "dimension": "Sustainability",
+              "reason_for_strength": "This material demonstrates a strong commitment to environmental responsibility, featuring attributes such as recyclability, renewable sourcing, reduced carbon footprint, or biodegradability. It aligns with growing consumer and regulatory demands for eco-friendly packaging solutions.",
+              "impact_on_ranking": "Sustainability is weighted very heavily in the scoring due to its strategic importance, and this material's strong sustainability profile significantly boosts its overall ranking and supports our sustainability goals."
+            },
+            {
+              "dimension": "Cost",
+              "reason_for_strength": "The material provides a cost-effective packaging solution relative to its performance and the alternatives available. It balances functionality with affordability, optimizing value for money.",
+              "impact_on_ranking": "Cost-effectiveness contributes to the material's favorable position, especially considering the significant weight of this dimension. It ensures the packaging solution remains economically viable without compromising essential qualities."
+            }
+          ],
+          "compensating_factors": [
+            {
+              "dimension": "Logistics",
+              "weakness_reason": "The material might present some challenges in handling, storage, or transportation, possibly due to its shape, density, or fragility. This could lead to increased shipping costs or potential damage during transit.",
+              "compensated_by": "Properties, Sustainability, Cost",
+              "justification": "While Logistics may be a relative weakness, the material's strong showing in Sustainability and Properties, combined with reasonable Cost, more than compensates for these drawbacks. The core functions of protecting the product, aligning with sustainability goals, and staying within budget take precedence."
+            },
+            {
+              "dimension": "Consumer Preference",
+              "weakness_reason": "The material's aesthetic appeal or tactile experience may not be as strong as other alternatives. It might not be the most visually appealing or luxurious option for certain consumer segments.",
+              "compensated_by": "Sustainability, Properties, Cost",
+              "justification": "While Consumer Preference is important, the robust Sustainability profile, protective Properties, and cost-effectiveness of this material outweigh any potential shortcomings in consumer appeal. Consumers are increasingly prioritizing sustainability, and robust packaging is essential to their satisfaction."
+            }
+          ],
+          "fit_for_use": {
+            "summary": "This material is a strong candidate for packaging due to its robust performance in key areas such as product protection, environmental responsibility, and cost-effectiveness. It strikes a desirable balance between functional requirements, sustainability objectives, and economic feasibility, making it a strategically sound choice for various packaging applications.",
+            "suitable_use_cases": [
+              "Food packaging",
+              "E-commerce packaging",
+              "Industrial goods packaging",
+              "Consumer goods packaging",
+              "Protective packaging"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "material_name": "Recycled Cardboard",
+      "summary": {
+        "material_performance_review": {
+          "calculated_score": 230,
+          "ranking_justification": "This material ranks among the top choices due to its strong performance in Sustainability and Properties, which are strategically important dimensions. While it may have some shortcomings in Logistics or Consumer Preference, its overall profile provides a well-balanced solution that aligns with both environmental responsibility and functional requirements. The high weighting of Sustainability ensures that even moderate performance in other areas doesn't significantly detract from its overall appeal, as the market increasingly values eco-friendly options.",
+          "domain_strengths": [
+            {
+              "dimension": "Sustainability",
+              "reason_for_strength": "This material demonstrates a superior environmental footprint compared to alternatives. This could involve factors like high recyclability, use of renewable resources, reduced carbon emissions during production, or biodegradability, making it a more responsible choice for environmentally conscious companies.",
+              "impact_on_ranking": "Due to the high weighting of Sustainability (9), this strength significantly boosts the overall score and positions the material favorably compared to those with lower environmental performance. It directly addresses growing consumer and regulatory demands for greener packaging solutions."
+            },
+            {
+              "dimension": "Properties",
+              "reason_for_strength": "The material offers excellent protective capabilities, preserving product integrity throughout the supply chain. This may include high tensile strength, barrier properties against moisture and oxygen, or resistance to temperature variations, which are crucial for maintaining product quality.",
+              "impact_on_ranking": "The significant weighting of Properties (6) ensures that the material's protective capabilities contribute substantially to its overall ranking. It underscores its effectiveness in fulfilling the primary function of packaging: safeguarding the product."
+            }
+          ],
+          "compensating_factors": [
+            {
+              "dimension": "Logistics",
+              "weakness_reason": "The material may present logistical challenges, such as higher weight, larger volume, or difficulties in stacking or handling, potentially increasing transportation costs and storage space requirements.",
+              "compensated_by": "Sustainability, Properties",
+              "justification": "The strong sustainability profile and reliable protective properties can justify potentially higher logistical costs, particularly in markets where environmental regulations are stringent and product damage is unacceptable. Consumers and businesses are often willing to absorb slightly higher logistical costs for a more eco-friendly and reliable packaging option."
+            },
+            {
+              "dimension": "Consumer Preference",
+              "weakness_reason": "The material might not be as visually appealing or tactilely pleasing as other options. It could lack the premium feel that some consumers associate with higher-quality products or may not be easily adaptable to eye-catching designs.",
+              "compensated_by": "Sustainability, Cost",
+              "justification": "A strong sustainability narrative, combined with potentially lower costs (if applicable), can offset lower consumer preference scores. Consumers are increasingly willing to compromise on aesthetics if the packaging is environmentally responsible and the product offers good value. Clear communication about the material's sustainable attributes can enhance its perceived value."
+            }
+          ],
+          "fit_for_use": {
+            "summary": "This material is a strong candidate for packaging due to its excellent sustainability profile and reliable properties, making it a suitable choice for companies seeking environmentally responsible packaging solutions without compromising product protection. Its balanced performance across key dimensions makes it a strategically sound option for a range of applications.",
+            "suitable_use_cases": [
+              "Food packaging where product protection and shelf life are critical, and sustainability is a priority",
+              "E-commerce packaging for environmentally conscious brands",
+              "Industrial packaging for goods requiring robust protection during transportation",
+              "Cosmetics and personal care packaging emphasizing natural or eco-friendly ingredients"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "material_name": "Polypropylene (PP)",
+      "summary": {
+        "material_performance_review": {
+          "calculated_score": 230,
+          "ranking_justification": "This material ranks highly due to its exceptional sustainability profile, a crucial factor given its high weighting. While likely not the outright best in every category, its blend of strong performance in properties, cost, and consumer preference, coupled with decent logistics, creates a well-rounded profile. The strong emphasis on sustainability significantly boosts its overall score, making it a preferred choice when environmentally conscious packaging is a priority. The reasonable cost profile also ensures that sustainability is not achieved at an unreasonable premium, which is essential for widespread adoption.",
+          "domain_strengths": [
+            {
+              "dimension": "Sustainability",
+              "reason_for_strength": "The material demonstrates excellent environmental characteristics, likely including recyclability, biodegradability, use of renewable resources, and a reduced carbon footprint compared to alternatives.",
+              "impact_on_ranking": "Given sustainability's highest weighting (9), excelling in this area provides a substantial boost to the total score. This aligns with growing consumer demand and regulatory pressure for eco-friendly packaging."
+            },
+            {
+              "dimension": "Properties",
+              "reason_for_strength": "The material offers the necessary protective qualities for the intended product, ensuring product integrity throughout the supply chain. This includes factors like barrier properties, strength, and resistance to environmental conditions.",
+              "impact_on_ranking": "With a weight of 6, strong properties ensure the basic functional requirements of packaging are met, contributing significantly to the material's viability."
+            },
+            {
+              "dimension": "Cost",
+              "reason_for_strength": "The material offers a cost-effective solution compared to alternatives, balancing performance with affordability. This ensures that packaging costs do not significantly impact the overall product pricing.",
+              "impact_on_ranking": "A reasonable cost profile, weighted at 6, helps to prevent the material from being excluded due to economic constraints. Combined with sustainability, this provides a strong value proposition."
+            }
+          ],
+          "compensating_factors": [
+            {
+              "dimension": "Logistics",
+              "weakness_reason": "The material may present some logistical challenges, potentially related to storage, transportation, or handling. This might involve lower space efficiency or specific transportation requirements.",
+              "compensated_by": "Sustainability, Properties, Cost",
+              "justification": "While logistical efficiency is important (weight of 5), the strength of the material's sustainability profile (weight of 9) along with its good properties and acceptable cost profile outweighs any logistical drawbacks. These strengths, especially the emphasis on sustainability, make the material a worthwhile choice despite moderate logistical challenges."
+            }
+          ],
+          "fit_for_use": {
+            "summary": "This material presents a compelling option for packaging due to its strong sustainability profile, adequate properties, and reasonable cost. It is strategically suited for applications where environmental impact is a primary concern and where a balance between cost and performance is essential.",
+            "suitable_use_cases": [
+              "Food packaging (dry goods, produce)",
+              "E-commerce packaging",
+              "Consumer goods packaging",
+              "Cosmetics packaging",
+              "Pharmaceutical packaging"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "material_name": "Expanded Polystyrene (EPS)",
+      "summary": {
+        "material_performance_review": {
+          "calculated_score": 235,
+          "ranking_justification": "This material achieves a top ranking due to its strong performance in Sustainability and Properties, which are two of the most strategically important dimensions. A balanced performance across Logistics, Cost, and Consumer Preference ensures that it doesn't underperform in any critical area, solidifying its position as a leading candidate. This balance, combined with excellence in key areas, results in a high overall score.",
+          "domain_strengths": [
+            {
+              "dimension": "Properties",
+              "reason_for_strength": "The material exhibits robust performance characteristics suitable for protecting the packaged goods, including strength, barrier properties, and resistance to environmental factors. This ensures product integrity throughout the supply chain and during consumer use.",
+              "impact_on_ranking": "With a weight of 6, the material's excellent protective capabilities significantly boosted its overall score. Properties are critical for ensuring product safety and minimizing damage, making this a crucial strength."
+            },
+            {
+              "dimension": "Sustainability",
+              "reason_for_strength": "The material demonstrates a reduced environmental footprint, achieved through responsible sourcing, recyclability, compostability, or reduced energy consumption during production. This aligns with growing consumer and regulatory demands for eco-friendly packaging.",
+              "impact_on_ranking": "As the highest-weighted dimension (9), strong sustainability performance provides a substantial competitive advantage. It addresses critical environmental concerns and enhances the company's corporate social responsibility profile, leading to a significant increase in the overall score."
+            }
+          ],
+          "compensating_factors": [
+            {
+              "dimension": "Logistics",
+              "weakness_reason": "The material might present minor challenges in terms of storage, transportation, or handling efficiency compared to alternatives. This could be due to its shape, weight, or susceptibility to damage during transit.",
+              "compensated_by": "Sustainability, Properties",
+              "justification": "While logistics might be slightly less optimal, the material's superior sustainability and protective properties outweigh these concerns. The high weight assigned to sustainability and the importance of properties in maintaining product quality justify accepting slightly less efficient logistics."
+            },
+            {
+              "dimension": "Consumer Preference",
+              "weakness_reason": "While generally positive, consumer preference might not be the material's strongest suit compared to other alternatives, potentially due to aesthetic factors, perceived quality, or familiarity with existing packaging solutions.",
+              "compensated_by": "Properties, Sustainability, Cost",
+              "justification": "Any potential shortfall in consumer preference is mitigated by the material's strong protective properties ensuring product integrity, its sustainability credentials aligning with eco-conscious consumers, and its cost-effectiveness potentially leading to better value for the consumer. This combination addresses key consumer needs beyond purely aesthetic considerations."
+            }
+          ],
+          "fit_for_use": {
+            "summary": "This material is a strong candidate for packaging due to its excellent balance of sustainability, cost, and protective properties. It presents a compelling alternative for businesses prioritizing environmental responsibility without compromising product integrity or affordability.",
+            "suitable_use_cases": [
+              "Food packaging requiring barrier properties and extended shelf life",
+              "E-commerce packaging where product protection during transit is paramount",
+              "Consumer goods packaging where sustainability claims resonate with consumers",
+              "Industrial packaging where durability and recyclability are essential"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "material_name": "Clear PET (Polyethylene Terephthalate)",
+      "summary": {
+        "material_performance_review": {
+          "calculated_score": 240,
+          "ranking_justification": "This material ranks among the top choices due to its exceptional sustainability performance and strong showing in properties and cost, which are critical for strategic packaging decisions. While logistics and consumer preference may not be its strongest areas, its dominance in sustainability and solid performance in properties and cost outweigh these weaknesses, leading to a high overall score.",
+          "domain_strengths": [
+            {
+              "dimension": "Sustainability",
+              "reason_for_strength": "The material demonstrates outstanding environmental credentials, encompassing recyclability, reduced carbon footprint, and responsible sourcing. Its eco-friendly profile minimizes environmental impact throughout its lifecycle.",
+              "impact_on_ranking": "Given the substantial weight assigned to Sustainability (9), this strength significantly boosts the material's overall score, solidifying its position as a top contender. This is crucial as it aligns with increasing consumer and regulatory focus on environmentally responsible packaging."
+            },
+            {
+              "dimension": "Properties",
+              "reason_for_strength": "The material exhibits robust physical and chemical characteristics, providing adequate protection for the packaged goods. This includes barrier properties, strength, and durability, ensuring product integrity throughout the supply chain.",
+              "impact_on_ranking": "With a weight of 6, the material's strong performance in Properties contributes substantially to its high ranking. Reliable protection minimizes product damage and waste, a key consideration in packaging selection."
+            },
+            {
+              "dimension": "Cost",
+              "reason_for_strength": "The material offers a competitive cost structure, providing economic viability without sacrificing key performance attributes. This includes considerations for raw material costs, processing efficiency, and waste reduction.",
+              "impact_on_ranking": "Cost, with a weight of 6, plays a significant role. The cost-effectiveness of this material ensures it's a practical choice for various packaging applications, making it a strong contender overall."
+            }
+          ],
+          "compensating_factors": [
+            {
+              "dimension": "Logistics",
+              "weakness_reason": "The material might present some challenges in transportation or storage due to its dimensions or fragility. This may lead to higher transportation costs or increased risk of damage during handling.",
+              "compensated_by": "Sustainability, Properties, Cost",
+              "justification": "While logistical considerations are important, the material's exceptional performance in Sustainability, combined with its solid Properties and Cost profile, more than compensates for these logistical challenges. The environmental benefits and overall cost-effectiveness outweigh the minor logistical drawbacks."
+            },
+            {
+              "dimension": "Consumer Preference",
+              "weakness_reason": "Consumer perception of this material might be neutral or slightly negative compared to other options. This could be due to aesthetic factors, perceived lack of premium quality, or limited brand recognition.",
+              "compensated_by": "Sustainability, Properties, Cost",
+              "justification": "Consumer preference, while valuable, is secondary to environmental impact and functional performance in many strategic packaging decisions. The material's compelling Sustainability profile, along with reliable Properties and attractive Cost, can be effectively communicated to consumers, mitigating any potential negative perceptions. Consumers are increasingly prioritizing eco-friendly options, making sustainability a key driver."
+            }
+          ],
+          "fit_for_use": {
+            "summary": "This material is a strong candidate for packaging due to its outstanding sustainability profile, robust properties, and cost-effectiveness. Its strengths align with the most strategically important criteria, making it a suitable choice for businesses prioritizing environmental responsibility and functional performance.",
+            "suitable_use_cases": [
+              "Eco-friendly food packaging",
+              "Sustainable e-commerce packaging",
+              "Protective packaging for electronics",
+              "Cost-effective industrial packaging",
+              "Environmentally conscious consumer goods packaging"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "executive_summary": {
+    "material_performance_review": {
+      "calculated_score": 240,
+      "ranking_justification": "This material ranks among the top choices due to its excellent balance of performance across strategically important dimensions. While it may not be the absolute best in every single category, it presents a compelling profile by strongly emphasizing Sustainability, Properties, and Cost, which are highly weighted. Strengths in these areas compensate for relatively weaker performance in other dimensions, resulting in a high overall score and strategic suitability.",
+      "domain_strengths": [
+        {
+          "dimension": "Sustainability",
+          "reason_for_strength": "The material exhibits exceptional environmental performance, likely due to factors like recyclability, use of renewable resources, reduced carbon footprint, or biodegradability. This makes it a leading option for organizations committed to environmental responsibility.",
+          "impact_on_ranking": "Given Sustainability's high weight, this strength significantly boosts the material's overall ranking. Brands are increasingly prioritizing eco-friendly packaging, making this a crucial advantage."
+        },
+        {
+          "dimension": "Properties",
+          "reason_for_strength": "The material possesses robust physical and chemical properties, providing excellent product protection, durability, and shelf life. It may offer superior barrier properties or structural integrity compared to alternatives.",
+          "impact_on_ranking": "The high weighting on Properties ensures that this strength is a major contributor to the material's success. Protecting the product effectively is a fundamental requirement of packaging."
+        },
+        {
+          "dimension": "Cost",
+          "reason_for_strength": "The material offers competitive pricing and favorable cost-effectiveness relative to its performance. This might be due to readily available raw materials, efficient manufacturing processes, or reduced waste generation.",
+          "impact_on_ranking": "Cost-effectiveness is a critical advantage, especially in competitive markets. Its substantial weighting ensures that this strength meaningfully improves the overall score."
+        }
+      ],
+      "compensating_factors": [
+        {
+          "dimension": "Logistics",
+          "weakness_reason": "The material might have some limitations related to transportation, storage, or handling, such as bulkiness, fragility, or specialized storage requirements.",
+          "compensated_by": "Sustainability, Properties, Cost",
+          "justification": "While Logistics is important, the material's strong performance in Sustainability, Properties, and Cost more than offsets these logistical challenges. The benefits of reduced environmental impact, reliable product protection, and cost savings outweigh the logistical drawbacks."
+        },
+        {
+          "dimension": "Consumer Preference",
+          "weakness_reason": "The material might not be the top choice in terms of aesthetics or tactile feel, possibly due to its appearance, texture, or lack of premium appeal.",
+          "compensated_by": "Sustainability, Properties, Cost",
+          "justification": "Although Consumer Preference carries weight, superior environmental credentials, reliable product protection, and cost-effectiveness are likely to influence purchasing decisions more significantly, particularly for certain product categories. Many consumers prioritize sustainability and value over premium aesthetics."
+        }
+      ],
+      "fit_for_use": {
+        "summary": "This material is a strong candidate for packaging due to its environmentally responsible profile, reliable protective properties, and cost-effectiveness. Its balanced performance makes it suitable for a wide range of applications where sustainability and product protection are prioritized.",
+        "suitable_use_cases": [
+          "Food packaging (especially for products targeting environmentally conscious consumers)",
+          "E-commerce packaging (where durability and sustainability are key)",
+          "Industrial packaging (where cost-effectiveness and protection are paramount)",
+          "Consumer goods packaging (where a balance of sustainability and functionality is required)"
+        ]
+      }
+    }
+  }
+}

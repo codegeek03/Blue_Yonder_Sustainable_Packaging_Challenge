@@ -2,47 +2,47 @@
   "criteria": {
     "physical_form": {
       "explanation": "Solid",
-      "concerns": "Dents"
+      "concerns": "Denting"
     },
     "fragility": {
-      "explanation": "Sturdy",
-      "concerns": "Rust"
+      "explanation": "Durable",
+      "concerns": "Damage"
     },
     "shelf_life": {
-      "explanation": "Long",
-      "concerns": "Oxidation"
+      "explanation": "Stable",
+      "concerns": "Rusting"
     },
     "chemical_properties": {
-      "explanation": "Stable",
-      "concerns": "Acidity"
+      "explanation": "Inert",
+      "concerns": "Corrosion"
     },
     "hygiene_sensitivity": {
       "explanation": "Clean",
-      "concerns": "Germs"
+      "concerns": "Residue"
     },
     "temperature_sensitivity": {
-      "explanation": "Stable",
-      "concerns": "Freezing"
+      "explanation": "Moderate",
+      "concerns": "Expansion"
     },
     "volatility_or_hazard_risk": {
-      "explanation": "Safe",
-      "concerns": "Pressure"
+      "explanation": "None",
+      "concerns": "Leakage"
     },
     "visibility_and_display": {
-      "explanation": "Clear",
-      "concerns": "Fading"
+      "explanation": "Visible",
+      "concerns": "Aesthetics"
     },
     "quantity_and_dosage": {
-      "explanation": "Bulk",
-      "concerns": "Stacking"
+      "explanation": "Measured",
+      "concerns": "Shortage"
     },
     "value_and_theft_sensitivity": {
-      "explanation": "Secure",
+      "explanation": "Moderate",
       "concerns": "Pilferage"
     }
   },
-  "product_name": "Beer Cans",
-  "analysis_timestamp": "2024-10-27 15:30:00",
+  "product_name": "Beer cans",
+  "analysis_timestamp": "2024-11-05 18:28:12",
   "scores": {
     "physical_form": 80.0,
     "fragility": 72.0,

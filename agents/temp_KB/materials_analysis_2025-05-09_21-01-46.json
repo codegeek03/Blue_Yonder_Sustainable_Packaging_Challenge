@@ -1,0 +1,528 @@
+{
+  "materials": {
+    "physical_form": [
+      {
+        "material_name": "Molded Pulp",
+        "properties": "Lightweight, cushioning, biodegradable, made from recycled paper.",
+        "application": "Egg cartons, protective inserts."
+      },
+      {
+        "material_name": "Expanded Polystyrene (EPS)",
+        "properties": "Excellent cushioning, lightweight, good insulation, but not biodegradable.",
+        "application": "Egg cartons, especially for long-distance transport."
+      },
+      {
+        "material_name": "Polypropylene (PP)",
+        "properties": "Durable, reusable, recyclable, can be molded into various shapes, moisture resistant.",
+        "application": "Reusable egg cartons, containers."
+      },
+      {
+        "material_name": "Clear PET (Polyethylene Terephthalate)",
+        "properties": "Transparent, recyclable, provides visibility, impact resistant.",
+        "application": "Egg cartons allowing visual inspection of eggs."
+      },
+      {
+        "material_name": "Cardboard (Corrugated or Solid)",
+        "properties": "Sturdy, stackable, recyclable, printable, provides good protection.",
+        "application": "Outer boxes for bulk egg shipments."
+      },
+      {
+        "material_name": "Foam Inserts (Polyurethane or Polyethylene)",
+        "properties": "Provides superior cushioning and shock absorption, protects individual eggs.",
+        "application": "Specialized packaging for fragile or high-value eggs."
+      },
+      {
+        "material_name": "Pulp Fiber with Additives",
+        "properties": "Biodegradable, compostable, can be molded; additives enhance strength and water resistance.",
+        "application": "Sustainable egg packaging, potentially with antimicrobial properties."
+      },
+      {
+        "material_name": "Bamboo Fiber",
+        "properties": "Renewable, biodegradable, strong, lightweight, aesthetically pleasing.",
+        "application": "Premium egg packaging, appealing to eco-conscious consumers."
+      },
+      {
+        "material_name": "Compostable Plastics (e.g., PLA)",
+        "properties": "Biodegradable under industrial composting conditions, can be molded.",
+        "application": "Eco-friendly egg cartons as an alternative to traditional plastics."
+      },
+      {
+        "material_name": "Recycled Cardboard",
+        "properties": "Eco-friendly, cost-effective, can be molded and printed.",
+        "application": "Standard egg carton production."
+      }
+    ],
+    "fragility": [
+      {
+        "material_name": "Molded Pulp",
+        "properties": "Provides cushioning but can be crushed under heavy loads; good for moderate protection.",
+        "application": "Standard egg cartons for retail sale."
+      },
+      {
+        "material_name": "Expanded Polystyrene (EPS)",
+        "properties": "Excellent shock absorption, protects eggs from impact damage during transit.",
+        "application": "Protective packaging for shipping eggs over long distances."
+      },
+      {
+        "material_name": "Polypropylene (PP)",
+        "properties": "Durable and impact resistant, protects against crushing; suitable for reusable containers.",
+        "application": "Reusable egg containers, especially for transport."
+      },
+      {
+        "material_name": "Corrugated Cardboard",
+        "properties": "Provides structural support and cushioning; protects eggs during stacking and handling.",
+        "application": "Outer packaging for bulk egg shipments."
+      },
+      {
+        "material_name": "Foam Inserts (Polyurethane or Polyethylene)",
+        "properties": "Offers superior cushioning and isolation from vibration; minimizes egg breakage.",
+        "application": "High-end packaging for delicate or specialty eggs."
+      },
+      {
+        "material_name": "Thermoformed Plastic Clamshells",
+        "properties": "Provides rigid protection and prevents eggs from shifting during transport.",
+        "application": "Protective packaging for individual or small quantities of eggs."
+      },
+      {
+        "material_name": "Padded Dividers (Cardboard or Foam)",
+        "properties": "Separates individual eggs within a carton to prevent cracking.",
+        "application": "Internal packaging for premium egg cartons."
+      },
+      {
+        "material_name": "Suspension Packaging",
+        "properties": "Suspends eggs within a void to isolate them from shocks and vibrations.",
+        "application": "Specialized packaging for extremely fragile eggs."
+      },
+      {
+        "material_name": "Cellulose Fiber",
+        "properties": "Offers some cushioning and is biodegradable, but less impact resistant than EPS.",
+        "application": "Eco-friendly packaging offering moderate protection."
+      },
+      {
+        "material_name": "Combination Packaging (e.g., Pulp + Cardboard)",
+        "properties": "Combines different materials to optimize protection and sustainability.",
+        "application": "Egg cartons with a pulp interior and a cardboard exterior for added strength."
+      }
+    ],
+    "shelf_life": [
+      {
+        "material_name": "Polyethylene (PE) Film",
+        "properties": "Creates a barrier against moisture and air, slowing down spoilage. May contain antimicrobial additives.",
+        "application": "Overwrap for egg cartons, extending shelf life."
+      },
+      {
+        "material_name": "Modified Atmosphere Packaging (MAP)",
+        "properties": "Controls the gas composition inside the package to reduce microbial growth and oxidation.",
+        "application": "Bulk egg packaging for extended shelf life, often used in commercial food service."
+      },
+      {
+        "material_name": "Vacuum Packaging",
+        "properties": "Removes air to inhibit microbial growth and oxidation.",
+        "application": "Not typically used for whole eggs, but may be used for processed egg products."
+      },
+      {
+        "material_name": "Edible Coatings (e.g., Chitosan, Starch-based)",
+        "properties": "Provides a barrier against moisture loss and microbial contamination, extending shelf life.",
+        "application": "Applied directly to the eggshell to reduce spoilage."
+      },
+      {
+        "material_name": "Antimicrobial Packaging",
+        "properties": "Contains antimicrobial agents that inhibit the growth of bacteria and fungi.",
+        "application": "Egg cartons or films infused with natural antimicrobials (e.g., essential oils)."
+      },
+      {
+        "material_name": "High-Barrier Films (e.g., EVOH)",
+        "properties": "Provides an excellent barrier against oxygen and moisture, preventing spoilage.",
+        "application": "Laminates for specialized egg packaging requiring long shelf life."
+      },
+      {
+        "material_name": "UV-Blocking Materials",
+        "properties": "Protects eggs from light-induced degradation, preserving freshness and quality.",
+        "application": "Egg cartons made with UV-blocking additives."
+      },
+      {
+        "material_name": "Temperature-Controlled Packaging",
+        "properties": "Insulated containers that maintain a consistent temperature during transport and storage.",
+        "application": "Packaging with gel packs or phase change materials (PCMs) to keep eggs cool."
+      },
+      {
+        "material_name": "Oxygen Absorbers",
+        "properties": "Removes residual oxygen from the packaging to extend shelf life.",
+        "application": "Small sachets placed inside egg cartons."
+      },
+      {
+        "material_name": "Carbon Dioxide Emitters",
+        "properties": "Releases CO2 to inhibit microbial growth in the packaging environment.",
+        "application": "Used in conjunction with modified atmosphere packaging."
+      }
+    ],
+    "chemical_properties": [
+      {
+        "material_name": "Inert Plastics (Polypropylene, Polyethylene)",
+        "properties": "Non-reactive with egg contents, prevents contamination and maintains flavor.",
+        "application": "Egg cartons and containers that come into direct contact with eggs."
+      },
+      {
+        "material_name": "Food-Grade Coatings",
+        "properties": "Barrier coatings that prevent chemical migration from packaging materials into the eggs.",
+        "application": "Applied to cardboard or pulp-based cartons to enhance grease and moisture resistance."
+      },
+      {
+        "material_name": "pH-Neutral Materials",
+        "properties": "Packaging materials that do not alter the pH of the eggs or their surrounding environment.",
+        "application": "Important for preserving egg quality and preventing chemical reactions."
+      },
+      {
+        "material_name": "Oxygen Barrier Films (EVOH, Metallized Films)",
+        "properties": "Prevents oxidation of egg contents, preserving freshness and flavor.",
+        "application": "Laminations used in specialized egg packaging."
+      },
+      {
+        "material_name": "Moisture Barrier Coatings",
+        "properties": "Prevents moisture absorption by packaging materials, maintaining structural integrity and preventing mold growth.",
+        "application": "Coatings for cardboard egg cartons in humid environments."
+      },
+      {
+        "material_name": "Antimicrobial Additives",
+        "properties": "Inhibits microbial growth on the packaging surface, reducing the risk of contamination.",
+        "application": "Incorporated into plastic or pulp-based egg cartons."
+      },
+      {
+        "material_name": "Bisphenol-A (BPA) Free Plastics",
+        "properties": "Ensures that the packaging material does not leach BPA, a potentially harmful chemical.",
+        "application": "Mandatory for many food contact applications, including egg packaging."
+      },
+      {
+        "material_name": "Phthalate-Free Plastics",
+        "properties": "Prevents the leaching of phthalates, plasticizers with potential health concerns.",
+        "application": "Increasingly required for food packaging applications."
+      },
+      {
+        "material_name": "Per- and Polyfluoroalkyl Substances (PFAS)-Free Materials",
+        "properties": "Ensures that the packaging does not contain PFAS, which are persistent environmental contaminants.",
+        "application": "Becoming increasingly important due to environmental concerns."
+      },
+      {
+        "material_name": "Recycled Materials with Food-Grade Certification",
+        "properties": "Recycled cardboard or plastic that has been processed to meet food safety standards.",
+        "application": "Environmentally friendly egg packaging that is safe for food contact."
+      }
+    ],
+    "hygiene_sensitivity": [
+      {
+        "material_name": "Polypropylene (PP)",
+        "properties": "Easy to clean and sanitize, resistant to bacterial growth, non-absorbent.",
+        "application": "Reusable egg cartons, food-grade containers."
+      },
+      {
+        "material_name": "High-Density Polyethylene (HDPE)",
+        "properties": "Resistant to moisture and bacterial penetration, easy to sanitize.",
+        "application": "Egg containers for commercial kitchens and food processing."
+      },
+      {
+        "material_name": "Antimicrobial Plastics",
+        "properties": "Incorporates antimicrobial agents to inhibit bacterial growth on the surface.",
+        "application": "Egg cartons for added hygiene protection."
+      },
+      {
+        "material_name": "Sanitizable Coatings",
+        "properties": "Surface coatings that can be easily cleaned and disinfected.",
+        "application": "Applied to egg cartons to improve hygiene."
+      },
+      {
+        "material_name": "Single-Use Plastics",
+        "properties": "Designed for one-time use to minimize the risk of contamination.",
+        "application": "Disposable egg cartons for retail sale."
+      },
+      {
+        "material_name": "Pulp with Antimicrobial Treatment",
+        "properties": "Pulp fiber treated with antimicrobial agents to reduce bacterial load.",
+        "application": "Egg cartons with enhanced hygiene properties."
+      },
+      {
+        "material_name": "Moisture-Resistant Cardboard",
+        "properties": "Treated to prevent moisture absorption, which can promote bacterial growth.",
+        "application": "Cardboard boxes for transporting eggs in humid conditions."
+      },
+      {
+        "material_name": "UV-Sanitizable Materials",
+        "properties": "Materials that can be effectively sanitized with UV light.",
+        "application": "Egg packaging for environments with strict hygiene requirements."
+      },
+      {
+        "material_name": "Easy-to-Clean Design",
+        "properties": "Packaging designed with smooth surfaces and minimal crevices to facilitate cleaning.",
+        "application": "Reusable egg containers."
+      },
+      {
+        "material_name": "Tamper-Evident Seals",
+        "properties": "Provides assurance that the packaging has not been opened or contaminated.",
+        "application": "Sealed egg cartons for retail."
+      }
+    ],
+    "temperature_sensitivity": [
+      {
+        "material_name": "Expanded Polystyrene (EPS)",
+        "properties": "Excellent thermal insulation properties, helps maintain consistent temperature.",
+        "application": "Insulated egg packaging for temperature-sensitive transport."
+      },
+      {
+        "material_name": "Insulated Packaging (with Gel Packs)",
+        "properties": "Maintains low temperatures for extended periods.",
+        "application": "Shipping eggs requiring refrigeration."
+      },
+      {
+        "material_name": "Phase Change Materials (PCM)",
+        "properties": "Absorbs or releases heat to maintain a stable temperature.",
+        "application": "Temperature-controlled packaging for long-distance transport."
+      },
+      {
+        "material_name": "Polyurethane Foam",
+        "properties": "Good insulation properties, protects eggs from temperature fluctuations.",
+        "application": "Insulated containers for shipping."
+      },
+      {
+        "material_name": "Reflective Films (Aluminum Foil)",
+        "properties": "Reflects radiant heat, helping to keep eggs cool.",
+        "application": "Laminates for egg packaging exposed to sunlight."
+      },
+      {
+        "material_name": "Temperature Monitoring Labels",
+        "properties": "Indicates if the eggs have been exposed to unacceptable temperatures.",
+        "application": "Attached to egg cartons to ensure proper handling."
+      },
+      {
+        "material_name": "Ventilated Packaging",
+        "properties": "Allows air circulation to prevent overheating.",
+        "application": "Egg cartons with ventilation holes for storage in warm environments."
+      },
+      {
+        "material_name": "Vacuum Insulated Panels (VIP)",
+        "properties": "Provides superior thermal insulation in a thin profile.",
+        "application": "High-performance temperature-controlled packaging."
+      },
+      {
+        "material_name": "Cooling Gel Packs",
+        "properties": "Maintains low temperatures inside packaging.",
+        "application": "Used in conjunction with insulated containers."
+      },
+      {
+        "material_name": "Temperature-Indicating Ink",
+        "properties": "Changes color to indicate temperature exposure.",
+        "application": "Printed on egg cartons for easy temperature monitoring."
+      }
+    ],
+    "volatility_or_hazard_risk": [
+      {
+        "material_name": "Inert Plastics (Polyethylene, Polypropylene)",
+        "properties": "Non-reactive, does not release harmful substances under normal conditions.",
+        "application": "Egg cartons and containers."
+      },
+      {
+        "material_name": "Food-Grade Adhesives",
+        "properties": "Non-toxic, does not contaminate eggs or release volatile compounds.",
+        "application": "Used to assemble cardboard egg cartons."
+      },
+      {
+        "material_name": "Water-Based Inks",
+        "properties": "Low VOC (Volatile Organic Compounds), reduces air pollution and health risks.",
+        "application": "Printing labels and graphics on egg cartons."
+      },
+      {
+        "material_name": "Recycled Cardboard",
+        "properties": "Must be tested to ensure it does not contain harmful contaminants.",
+        "application": "Eco-friendly egg cartons."
+      },
+      {
+        "material_name": "Protective Coatings",
+        "properties": "Prevents the release of fibers or particles from the packaging material.",
+        "application": "Applied to pulp-based egg cartons."
+      },
+      {
+        "material_name": "Tamper-Evident Packaging",
+        "properties": "Indicates if the packaging has been opened or compromised.",
+        "application": "Sealed egg cartons for security."
+      },
+      {
+        "material_name": "Child-Resistant Packaging",
+        "properties": "Prevents accidental ingestion of small parts or components.",
+        "application": "Not typically required for eggs, but relevant for some processed egg products."
+      },
+      {
+        "material_name": "Formaldehyde-Free Materials",
+        "properties": "Ensures the packaging does not release formaldehyde, a known carcinogen.",
+        "application": "Important for pulp-based and cardboard egg cartons."
+      },
+      {
+        "material_name": "Heavy Metal-Free Inks",
+        "properties": "Prevents the release of heavy metals into the environment or food chain.",
+        "application": "Printing on egg cartons."
+      },
+      {
+        "material_name": "Biodegradable Materials",
+        "properties": "Reduces environmental impact by breaking down naturally.",
+        "application": "Eco-friendly egg packaging."
+      }
+    ],
+    "visibility_and_display": [
+      {
+        "material_name": "Clear PET (Polyethylene Terephthalate)",
+        "properties": "Transparent, allows consumers to visually inspect eggs without opening the carton.",
+        "application": "Egg cartons for retail display."
+      },
+      {
+        "material_name": "Clear PVC (Polyvinyl Chloride)",
+        "properties": "Highly transparent, provides excellent visibility, but less environmentally friendly.",
+        "application": "Egg cartons (less common due to environmental concerns)."
+      },
+      {
+        "material_name": "Cardboard with Window Cutouts",
+        "properties": "Provides partial visibility while maintaining the benefits of cardboard packaging.",
+        "application": "Egg cartons with a window to view the eggs."
+      },
+      {
+        "material_name": "High-Quality Printing",
+        "properties": "Attractive graphics and clear labeling to enhance product appeal.",
+        "application": "Egg cartons with appealing designs."
+      },
+      {
+        "material_name": "Glossy Finishes",
+        "properties": "Enhances the visual appeal of the packaging.",
+        "application": "Egg cartons with a glossy finish."
+      },
+      {
+        "material_name": "Labeling with Nutritional Information",
+        "properties": "Provides consumers with important information about the eggs.",
+        "application": "Egg cartons with nutritional labels."
+      },
+      {
+        "material_name": "Branding and Logos",
+        "properties": "Reinforces brand recognition and builds customer loyalty.",
+        "application": "Egg cartons with brand logos and designs."
+      },
+      {
+        "material_name": "Shelf-Ready Packaging",
+        "properties": "Designed for easy placement on store shelves.",
+        "application": "Outer boxes for bulk egg shipments that can be easily displayed."
+      },
+      {
+        "material_name": "Eye-Catching Colors",
+        "properties": "Attracts consumer attention on store shelves.",
+        "application": "Egg cartons with vibrant colors."
+      },
+      {
+        "material_name": "Sustainable Labeling",
+        "properties": "Communicates the environmental benefits of the packaging.",
+        "application": "Egg cartons made from recycled materials with eco-friendly labels."
+      }
+    ],
+    "quantity_and_dosage": [
+      {
+        "material_name": "Molded Pulp (6-Egg Carton)",
+        "properties": "Standard size, provides adequate protection for six eggs.",
+        "application": "Small-quantity egg sales."
+      },
+      {
+        "material_name": "Molded Pulp (12-Egg Carton)",
+        "properties": "Most common size, suitable for household consumption.",
+        "application": "Standard retail egg sales."
+      },
+      {
+        "material_name": "Molded Pulp (18-Egg Carton)",
+        "properties": "Larger size, convenient for frequent egg users.",
+        "application": "Larger families, frequent bakers."
+      },
+      {
+        "material_name": "Molded Pulp (30-Egg Carton)",
+        "properties": "Bulk packaging for commercial kitchens and restaurants.",
+        "application": "Food service industry."
+      },
+      {
+        "material_name": "Corrugated Cardboard Boxes (Various Sizes)",
+        "properties": "Outer packaging for transporting multiple egg cartons.",
+        "application": "Wholesale distribution."
+      },
+      {
+        "material_name": "Custom-Sized Packaging",
+        "properties": "Designed to fit specific quantities of eggs for niche markets.",
+        "application": "Specialty egg products, such as quail eggs."
+      },
+      {
+        "material_name": "Single-Egg Packaging",
+        "properties": "Individual packaging for single eggs.",
+        "application": "Uncommon, but possible for certain applications."
+      },
+      {
+        "material_name": "Multi-Pack Sleeves",
+        "properties": "Bundles multiple egg cartons together for promotional sales.",
+        "application": "Retail promotions."
+      },
+      {
+        "material_name": "Egg Trays",
+        "properties": "Used for storing and transporting large quantities of eggs in bulk.",
+        "application": "Egg farms, processing plants."
+      },
+      {
+        "material_name": "Stackable Designs",
+        "properties": "Allows for efficient storage and transportation of egg cartons.",
+        "application": "All types of egg packaging."
+      }
+    ],
+    "value_and_theft_sensitivity": [
+      {
+        "material_name": "Tamper-Evident Seals",
+        "properties": "Indicates if the packaging has been opened or compromised, deterring theft.",
+        "application": "Egg cartons for retail sales."
+      },
+      {
+        "material_name": "Shrink Wrap",
+        "properties": "Secures the egg carton and prevents easy opening.",
+        "application": "Bulk packaging for wholesale distribution."
+      },
+      {
+        "material_name": "Security Labels",
+        "properties": "Difficult to remove or replicate, providing added security.",
+        "application": "High-value or organic egg cartons."
+      },
+      {
+        "material_name": "Clear Packaging (Limited)",
+        "properties": "Allows for visual inspection, but excessive visibility can increase theft risk.",
+        "application": "Egg cartons with strategically placed windows."
+      },
+      {
+        "material_name": "Opaque Packaging",
+        "properties": "Conceals the contents, reducing the temptation for theft.",
+        "application": "Standard egg cartons."
+      },
+      {
+        "material_name": "Strong Adhesives",
+        "properties": "Secures the carton and makes it difficult to open without causing damage.",
+        "application": "All types of egg packaging."
+      },
+      {
+        "material_name": "Anti-Theft Devices (EAS Tags)",
+        "properties": "Electronic article surveillance tags that trigger alarms if stolen.",
+        "application": "High-value egg products in retail settings."
+      },
+      {
+        "material_name": "Reinforced Packaging",
+        "properties": "Provides added protection against damage and tampering.",
+        "application": "Outer boxes for bulk egg shipments."
+      },
+      {
+        "material_name": "Serialized Packaging",
+        "properties": "Each carton has a unique serial number for tracking and tracing.",
+        "application": "High-value or traceable egg products."
+      },
+      {
+        "material_name": "Integrated Locking Mechanisms",
+        "properties": "Secure closures that prevent unauthorized access.",
+        "application": "Reusable egg containers."
+      }
+    ]
+  },
+  "analysis_timestamp": "2025-05-09 21:01:46",
+  "user_login": "codegeek03",
+  "product_name": "eggs",
+  "status": "completed"
+}
