@@ -16,7 +16,7 @@ flowchart TD
   %% Input Sources
   subgraph Inputs["📥 Inputs"]
     Z["🧠 Input Agent"]
-    WikiSearch["🔍Tavily Search"]
+    WikiSearch["🔍Tavily Search Tool"]
   end
 
   %% Analyst Group
@@ -36,6 +36,11 @@ flowchart TD
     G["🧩 Orchestrator"]
   end
 
+  %% Explainability & Reasoning
+  subgraph Explainability["🧠 Explainability Agent"]
+    EX["💡 Reasoning & Insights"]
+  end
+
   %% Output Results
   subgraph Outputs["📤 Outputs"]
     H["🏆 Top K Materials"]
@@ -43,7 +48,6 @@ flowchart TD
       Scores["📊 Scores"]
       Tradeoffs["⚖️ Tradeoffs"]
       RegNotes["📘 Regulations Summary"]
-      EX["🧠 Explainability"]
     end
     ResultsDB["🗂️ Results Database"]
   end
@@ -59,9 +63,17 @@ flowchart TD
   F --> G
   P --> G
   R --> G
-  G --> H & ResultsDB & EX
-  H --> G
-  H --> Scores & Tradeoffs & RegNotes & EX
+
+  %% Orchestration to outputs and explainability
+  G --> H
+  G --> ResultsDB
+  G --> EX
+
+  %% Details flow
+  H --> Scores & Tradeoffs & RegNotes
+
+  %% Explainability feedback loop
+  EX --> G
 
 ```
 
