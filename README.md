@@ -113,8 +113,10 @@ This system is a **LangGraph-driven**, multi-agent orchestration for evaluating 
 ## ✨ Key Innovations
 - **LangGraph State Machine**  
   Orchestrates flow using a directed graph of TypedDict states, transitions, and conditional branching.
-- **Parallel Tool-Calling**  
+- **Parallel Agent-Calling**  
   Launches independent analysis agents concurrently (properties, logistics, cost, sustainability, consumer).
+- **Parallel Tool-Calling**  
+  Uses Tavily,DuckDuckGo and Newspaper4k tools for enhanced research.
 - **Gemini-Backed Prompting**  
   Uses Google Gemini (v2.0-flash) for deep reasoning, with `show_tool_calls=True` to trace tool invocations and aid debugging.
 - **JSON-First Reporting**  
