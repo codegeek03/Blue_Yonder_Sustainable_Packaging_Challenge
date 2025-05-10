@@ -185,14 +185,14 @@ Your task is to produce a professional, slide-ready JSON report using only the e
             raise
 
 # Import all your agents
-from detail_input import ProductInput
-from Product_Analyst import ProductCompatibilityAgent
-from MaterialDB_agent import PackagingMaterialsAgent
-from Material_Analyst import MaterialPropertiesAgent
-from Logistics_Analyst import LogisticCompatibilityAgent
-from Sourcing_Cost_Analyser import ProductionCostAgent
-from Sustainability_Analyst import EnvironmentalImpactAgent
-from Consumer_Behaviour_Analyst import ConsumerBehaviorAgent
+from agents.detail_input import ProductInput
+from agents.Product_Analyst import ProductCompatibilityAgent
+from agents.MaterialDB_agent import PackagingMaterialsAgent
+from agents.Material_Analyst import MaterialPropertiesAgent
+from agents.Logistics_Analyst import LogisticCompatibilityAgent
+from agents.Sourcing_Cost_Analyser import ProductionCostAgent
+from agents.Sustainability_Analyst import EnvironmentalImpactAgent
+from agents.Consumer_Behaviour_Analyst import ConsumerBehaviorAgent
 
 # Node definitions
 async def process_input(state: AnalysisState) -> Dict:
