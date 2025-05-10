@@ -129,7 +129,8 @@ A sophisticated multi-agent system for evaluating and selecting sustainable pack
   - Parallel processing coordination
   - Results aggregation
 
- ![image](https://github.com/user-attachments/assets/e3e03557-7836-4a11-8a00-08b1876ba0cc)
+ ![image](https://github.com/user-attachments/assets/994df226-6654-48b7-a403-627a7bee6f4d)
+
 
 
 ## 📥 Installation
