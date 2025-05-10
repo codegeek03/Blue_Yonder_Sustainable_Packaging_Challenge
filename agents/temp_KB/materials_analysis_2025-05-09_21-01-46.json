@@ -3,521 +3,521 @@
     "physical_form": [
       {
         "material_name": "Glass",
-        "properties": "Inert, transparent, rigid, recyclable",
-        "application": "Traditional wine bottles"
-      },
-      {
-        "material_name": "PET (Polyethylene Terephthalate)",
-        "properties": "Lightweight, shatter-resistant, recyclable",
-        "application": "Alternative wine bottles"
-      },
-      {
-        "material_name": "Aluminum",
-        "properties": "Lightweight, recyclable, airtight",
-        "application": "Wine cans"
-      },
-      {
-        "material_name": "Bag-in-Box (BIB) - Multi-layer film",
-        "properties": "Flexible, airtight, puncture-resistant",
-        "application": "Inner bag for boxed wine"
+        "properties": "Inert, impermeable, transparent (optional), recyclable.",
+        "application": "Primary container (bottle)."
       },
       {
         "material_name": "Cardboard",
-        "properties": "Rigid, printable, recyclable",
-        "application": "Outer box for BIB wine"
+        "properties": "Rigid, lightweight, printable, recyclable.",
+        "application": "Secondary packaging (boxes, cartons)."
       },
       {
-        "material_name": "Cork (natural)",
-        "properties": "Natural, compressible, airtight, sustainable",
-        "application": "Traditional bottle closure"
+        "material_name": "Paper",
+        "properties": "Printable, recyclable, biodegradable.",
+        "application": "Labels, inserts, gift wrapping."
       },
       {
-        "material_name": "Synthetic Cork",
-        "properties": "Consistent, airtight, cost-effective",
-        "application": "Alternative bottle closure"
+        "material_name": "Aluminum",
+        "properties": "Malleable, corrosion-resistant, recyclable.",
+        "application": "Bottle caps, closures, foil capsules."
       },
       {
-        "material_name": "Screw Cap (Aluminum)",
-        "properties": "Airtight, easy to open, recyclable",
-        "application": "Alternative bottle closure"
+        "material_name": "Cork",
+        "properties": "Elastic, impermeable (when properly treated), renewable.",
+        "application": "Bottle stopper."
       },
       {
-        "material_name": "Polymeric label",
-        "properties": "Water-resistant, durable, printable",
-        "application": "Bottle labels"
+        "material_name": "Plastic (PET)",
+        "properties": "Lightweight, strong, recyclable.",
+        "application": "Alternative bottle material, sometimes used for larger volumes or specific markets."
       },
       {
-        "material_name": "Paper label",
-        "properties": "Printable, recyclable",
-        "application": "Bottle labels"
+        "material_name": "Polyethylene (PE)",
+        "properties": "Flexible, water-resistant, low cost.",
+        "application": "Shrink wrap, cushioning materials (e.g., bubble wrap)."
+      },
+      {
+        "material_name": "Polypropylene (PP)",
+        "properties": "Rigid, chemical resistant, recyclable.",
+        "application": "Bottle caps, closures."
+      },
+      {
+        "material_name": "Molded Pulp",
+        "properties": "Recycled paper fibers, cushioning, biodegradable.",
+        "application": "Internal packaging for bottle protection."
+      },
+      {
+        "material_name": "Compostable Polymers (PLA)",
+        "properties": "Biodegradable, derived from renewable resources.",
+        "application": "Increasingly used for labels and potentially closures as technology advances."
       }
     ],
     "fragility": [
       {
-        "material_name": "Glass",
-        "properties": "Brittle, prone to shattering upon impact",
-        "application": "Wine bottles (requires protective packaging)"
+        "material_name": "Bubble Wrap",
+        "properties": "Cushioning, air-filled pockets, lightweight.",
+        "application": "Protection against impacts during shipping."
       },
       {
-        "material_name": "PET (Polyethylene Terephthalate)",
-        "properties": "Shatter-resistant, more durable than glass",
-        "application": "Wine bottles (more suitable for shipping)"
+        "material_name": "Foam Inserts (EPS or EPE)",
+        "properties": "Shock absorption, rigid or semi-rigid, custom molded.",
+        "application": "Protection against impacts and vibration."
       },
       {
         "material_name": "Corrugated Cardboard",
-        "properties": "Provides cushioning and impact resistance",
-        "application": "Shipping boxes for wine bottles"
+        "properties": "Multiple layers for strength, cushioning.",
+        "application": "Outer boxes for shipping, internal dividers."
+      },
+      {
+        "material_name": "Inflatable Air Pillows",
+        "properties": "Lightweight, adjustable cushioning.",
+        "application": "Void fill in shipping boxes."
       },
       {
         "material_name": "Molded Pulp",
-        "properties": "Cushions and protects bottles during transit, recyclable",
-        "application": "Internal packaging for wine bottles"
+        "properties": "Custom-shaped, cushioning from recycled fibers.",
+        "application": "Internal bottle supports within boxes."
       },
       {
-        "material_name": "Expanded Polystyrene (EPS)",
-        "properties": "Excellent cushioning, lightweight, insulative",
-        "application": "Protective packaging (less environmentally friendly)"
+        "material_name": "Paper Padding",
+        "properties": "Crumpled or layered paper for cushioning.",
+        "application": "Void fill, wrapping individual bottles."
       },
       {
-        "material_name": "Bubble Wrap (Polyethylene)",
-        "properties": "Provides cushioning and shock absorption",
-        "application": "Protective wrapping for bottles"
-      },
-      {
-        "material_name": "Inflatable Air Pillows (Polyethylene)",
-        "properties": "Lightweight cushioning, adjustable protection",
-        "application": "Void fill in shipping boxes"
-      },
-      {
-        "material_name": "Foam Inserts (Polyurethane)",
-        "properties": "Customizable cushioning, good shock absorption",
-        "application": "Protective inserts for fragile bottles"
-      },
-      {
-        "material_name": "Partition Inserts (Cardboard)",
-        "properties": "Separate bottles, prevent contact during transit",
-        "application": "Dividers within shipping boxes"
+        "material_name": "Partitioned Cardboard",
+        "properties": "Internal dividers within a cardboard box.",
+        "application": "Separating bottles to prevent contact."
       },
       {
         "material_name": "Suspension Packaging",
-        "properties": "Suspends the bottle within the box, isolating it from impacts",
-        "application": "High-value or very fragile wines"
+        "properties": "Suspends the product within the box, isolating it from impacts.",
+        "application": "High-value or extremely fragile wines."
+      },
+      {
+        "material_name": "Edge Protectors (Cardboard or Plastic)",
+        "properties": "Reinforce the edges of boxes to prevent crushing.",
+        "application": "Protecting palletized shipments."
+      },
+      {
+        "material_name": "Shrink Wrap",
+        "properties": "Holds items together, provides some compression resistance.",
+        "application": "Securing bottles on a pallet."
       }
     ],
     "shelf_life": [
       {
-        "material_name": "Glass (Dark or Colored)",
-        "properties": "Inert, protects wine from UV light degradation",
-        "application": "Wine bottles (preserves wine quality)"
+        "material_name": "Glass (Dark)",
+        "properties": "Impermeable, protects against UV light, inert.",
+        "application": "Primary wine bottle, especially for wines sensitive to light oxidation."
       },
       {
-        "material_name": "Cork (Natural)",
-        "properties": "Allows micro-oxygenation, influences aging process",
-        "application": "Wine bottle closure (for wines intended to age)"
+        "material_name": "Cork (High Quality)",
+        "properties": "Properly sized and treated to maintain a tight seal, preventing oxidation.",
+        "application": "Bottle closure for aging wines."
       },
       {
-        "material_name": "Screw Cap (Aluminum)",
-        "properties": "Provides a complete oxygen barrier, preserves freshness",
-        "application": "Wine bottle closure (for wines not intended to age)"
+        "material_name": "Synthetic Closures (High Quality)",
+        "properties": "Consistent seal, prevents cork taint, various oxygen permeability levels.",
+        "application": "Bottle closure, particularly for wines intended for shorter aging periods."
       },
       {
-        "material_name": "PET with UV Inhibitors",
-        "properties": "Protects wine from UV degradation, extends shelf life",
-        "application": "Wine bottles"
+        "material_name": "Screw Caps (Aluminum)",
+        "properties": "Air-tight seal, prevents oxidation, consistent performance.",
+        "application": "Bottle closure for wines intended for early consumption."
       },
       {
-        "material_name": "Laminated Films (BIB)",
-        "properties": "Barrier to oxygen and light, prevents oxidation",
-        "application": "Bag-in-box wine packaging"
+        "material_name": "Laminated Labels",
+        "properties": "Water-resistant, durable, prevents fading.",
+        "application": "Wine bottle labels to maintain appearance over time."
       },
       {
-        "material_name": "Antioxidant Coatings (Inner Bag)",
-        "properties": "Further reduces oxygen permeation",
-        "application": "Bag-in-box wine packaging"
+        "material_name": "UV-Protective Coatings (on Labels)",
+        "properties": "Shields the wine from harmful UV radiation.",
+        "application": "Label to protect wine quality."
       },
       {
-        "material_name": "Nitrogen Flushing",
-        "properties": "Reduces oxygen in headspace before sealing",
-        "application": "Bottling process, extends shelf life"
+        "material_name": "Vacuum Packaging (Bag-in-Box)",
+        "properties": "Removes air to prevent oxidation after opening.",
+        "application": "Inner bag for bag-in-box wines."
       },
       {
-        "material_name": "Sulfur Dioxide (SO2)",
-        "properties": "Preservative added to wine to prevent oxidation and microbial spoilage",
-        "application": "Wine itself (not packaging, but crucial for shelf life)"
+        "material_name": "Inert Gas Flushing (Nitrogen or Argon)",
+        "properties": "Reduces oxygen levels during bottling.",
+        "application": "Part of the bottling process, not a packaging material itself, but related."
       },
       {
-        "material_name": "Modified Atmosphere Packaging (MAP)",
-        "properties": "Controls the atmosphere inside the packaging to slow down degradation.",
-        "application": "Can be used for high-end boxed wines"
+        "material_name": "Oxygen Scavengers (in Closures)",
+        "properties": "Absorb oxygen within the bottle headspace.",
+        "application": "Integrated into some closure types."
       },
       {
-        "material_name": "UV Blocking Additives (Labels)",
-        "properties": "Protect the wine from light exposure through the glass bottle.",
-        "application": "Wine bottle labels, particularly for clear glass bottles"
+        "material_name": "PET with Oxygen Barrier",
+        "properties": "PET plastic with a layer that reduces oxygen permeability.",
+        "application": "Alternative bottle material."
       }
     ],
     "chemical_properties": [
       {
-        "material_name": "Inert Glass (Borosilicate)",
-        "properties": "Chemically unreactive, does not leach into wine",
-        "application": "Wine bottles"
+        "material_name": "Inert Glass",
+        "properties": "Non-reactive, doesn't leach chemicals into the wine.",
+        "application": "Primary wine container."
       },
       {
-        "material_name": "PET (Food Grade)",
-        "properties": "Approved for food contact, minimal leaching",
-        "application": "Wine bottles"
+        "material_name": "Food-Grade Linings (for closures)",
+        "properties": "Prevents interaction between the wine and closure material.",
+        "application": "Inside screw caps and synthetic closures."
       },
       {
-        "material_name": "HDPE (High-Density Polyethylene)",
-        "properties": "Chemically resistant, suitable for wine storage",
-        "application": "Wine storage containers (bulk)"
+        "material_name": "Sulfur Dioxide (SO2)",
+        "properties": "Antimicrobial and antioxidant, prevents spoilage.",
+        "application": "Added to the wine itself, not a packaging material, but relevant to preservation."
       },
       {
-        "material_name": "Aluminum (with food-grade liner)",
-        "properties": "Protects wine from contact with bare aluminum",
-        "application": "Wine cans"
+        "material_name": "Tartaric Acid",
+        "properties": "Acidifies the wine, enhancing flavor and stability.",
+        "application": "Added to the wine itself, not a packaging material."
       },
       {
-        "material_name": "Laminated films (BIB)",
-        "properties": "Inert layers prevent interaction with wine",
-        "application": "Bag-in-box packaging"
+        "material_name": "Polyethylene (LDPE/HDPE)",
+        "properties": "Low reactivity, used for liners and protective films.",
+        "application": "Liners in bag-in-box wine containers."
       },
       {
-        "material_name": "Stainless Steel (304 or 316)",
-        "properties": "Inert, corrosion-resistant",
-        "application": "Wine storage tanks"
+        "material_name": "Aluminum (Anodized)",
+        "properties": "Corrosion-resistant, inert surface.",
+        "application": "Screw cap material."
       },
       {
-        "material_name": "Epoxy Resin (Food Grade)",
-        "properties": "Lining for storage tanks, prevents corrosion",
-        "application": "Wine storage tanks"
+        "material_name": "Epoxy Phenolic Linings",
+        "properties": "Chemically resistant coating inside metal containers.",
+        "application": "Lining for certain types of kegs or larger format containers (rare)."
       },
       {
-        "material_name": "PTFE (Teflon)",
-        "properties": "Chemically inert, used in seals and gaskets",
-        "application": "Wine processing equipment"
+        "material_name": "Bentonite Clay",
+        "properties": "Clarifying agent that removes unstable proteins.",
+        "application": "Used during wine production to stabilize the wine, indirectly impacting packaging needs."
+      },
+      {
+        "material_name": "Activated Carbon",
+        "properties": "Removes unwanted colors and odors.",
+        "application": "Used during wine production to improve quality, influencing long-term stability and packaging requirements."
       },
       {
         "material_name": "Silicone (Food Grade)",
-        "properties": "Inert, flexible, used for seals and hoses",
-        "application": "Wine processing equipment"
-      },
-      {
-        "material_name": "Tartrate Stabilizers (Potassium Bitartrate)",
-        "properties": "Added to wine to prevent tartrate crystal formation in the bottle",
-        "application": "Wine itself (not packaging, but affects chemical stability)"
+        "properties": "Inert, flexible, used as a sealant in closures.",
+        "application": "Gaskets and seals in closures."
       }
     ],
     "hygiene_sensitivity": [
       {
-        "material_name": "Glass",
-        "properties": "Easy to clean and sterilize, non-porous",
-        "application": "Wine bottles"
+        "material_name": "Sterilized Glass",
+        "properties": "Free from microorganisms, prevents contamination.",
+        "application": "Wine bottles."
       },
       {
-        "material_name": "Stainless Steel",
-        "properties": "Easy to clean and sanitize, corrosion-resistant",
-        "application": "Wine processing equipment, storage tanks"
+        "material_name": "Sterilized Closures",
+        "properties": "Free from microorganisms.",
+        "application": "Corks, screw caps, synthetic stoppers."
       },
       {
-        "material_name": "PET (Food Grade)",
-        "properties": "Must be properly cleaned and sanitized before filling",
-        "application": "Wine bottles"
+        "material_name": "Food-Grade Sanitizers",
+        "properties": "Used to clean and sanitize packaging equipment and materials.",
+        "application": "Cleaning bottles and closures before filling."
       },
       {
-        "material_name": "Laminated Films (BIB)",
-        "properties": "Sealed system, reduces risk of contamination",
-        "application": "Bag-in-box wine"
+        "material_name": "Cleanroom Packaging",
+        "properties": "Packaging produced in a controlled environment to minimize contamination.",
+        "application": "Specialty closures or containers for high-end wines."
       },
       {
-        "material_name": "Synthetic Cork",
-        "properties": "Less prone to microbial contamination (e.g., TCA) compared to natural cork",
-        "application": "Wine bottle closure"
+        "material_name": "Tamper-Evident Seals",
+        "properties": "Indicates if the packaging has been opened or compromised.",
+        "application": "Capsules or seals around the bottle neck."
       },
       {
-        "material_name": "Screw Cap",
-        "properties": "Provides a tight seal, prevents contamination",
-        "application": "Wine bottle closure"
+        "material_name": "Hygienic Filling Equipment",
+        "properties": "Designed for easy cleaning and sterilization to prevent contamination during filling.",
+        "application": "Bottle filling lines."
       },
       {
-        "material_name": "Sanitizing Agents (e.g., Peracetic Acid)",
-        "properties": "Used to sterilize bottles and equipment",
-        "application": "Wine production"
+        "material_name": "Single-Use Packaging Components",
+        "properties": "Used once and discarded to prevent cross-contamination.",
+        "application": "Liners for bag-in-box systems."
       },
       {
-        "material_name": "Filtration Membranes",
-        "properties": "Remove microorganisms from wine before bottling",
-        "application": "Wine production"
+        "material_name": "Air Filtration Systems",
+        "properties": "Remove airborne particles and microorganisms from the packaging environment.",
+        "application": "Bottling facilities."
       },
       {
-        "material_name": "Clean Room Environment",
-        "properties": "Reduces airborne contaminants during bottling",
-        "application": "Bottling process"
+        "material_name": "UV Sterilization Systems",
+        "properties": "Use ultraviolet light to kill microorganisms on packaging surfaces.",
+        "application": "Sterilizing bottles and closures."
       },
       {
         "material_name": "Aseptic Packaging",
-        "properties": "Sterilization of both the product and the package separately, followed by combination under sterile conditions",
-        "application": "Specialized wines requiring high levels of hygiene"
+        "properties": "Sterilized product and packaging are combined in a sterile environment.",
+        "application": "Not typically used for wine, but relevant to other beverages."
       }
     ],
     "temperature_sensitivity": [
       {
-        "material_name": "Glass",
-        "properties": "Can withstand moderate temperature changes, but avoid extreme temperature shocks.",
-        "application": "Wine bottles"
+        "material_name": "Insulated Shipping Containers",
+        "properties": "Maintains consistent temperature during transport.",
+        "application": "Protecting wine from temperature fluctuations."
       },
       {
-        "material_name": "PET",
-        "properties": "Can deform or degrade at high temperatures.",
-        "application": "Wine bottles (avoid direct sunlight and high storage temperatures)"
+        "material_name": "Temperature-Controlled Warehousing",
+        "properties": "Storage at optimal temperatures.",
+        "application": "Maintaining wine quality before distribution."
       },
       {
-        "material_name": "Cork",
-        "properties": "Can expand or contract with temperature changes, affecting the seal.",
-        "application": "Wine bottle closure (store at consistent temperatures)"
+        "material_name": "Thermal Labels",
+        "properties": "Indicate if the wine has been exposed to excessive temperatures.",
+        "application": "Monitoring temperature during shipping."
       },
       {
-        "material_name": "Aluminum",
-        "properties": "Good conductor of heat, wine can heat up quickly if exposed to high temperatures.",
-        "application": "Wine cans"
+        "material_name": "Glass (Dark Tinted)",
+        "properties": "Reduces heat absorption from sunlight.",
+        "application": "Wine bottles, especially for wines sensitive to heat."
       },
       {
-        "material_name": "Insulated Packaging (EPS, Foam)",
-        "properties": "Protects wine from temperature fluctuations during shipping",
-        "application": "Shipping wine in hot or cold climates"
+        "material_name": "Polyurethane Foam",
+        "properties": "Insulating properties, protects against temperature changes.",
+        "application": "Insulating wine shipping containers."
       },
       {
-        "material_name": "Temperature Controlled Shipping Containers",
-        "properties": "Maintains a consistent temperature during transport",
-        "application": "Shipping high-value wines"
+        "material_name": "Reflective Foil",
+        "properties": "Reflects heat away from the wine.",
+        "application": "Insulating layers in shipping containers."
       },
       {
-        "material_name": "Thermochromic Labels",
-        "properties": "Change color to indicate if wine has been exposed to excessive temperatures",
-        "application": "Monitoring temperature during shipping"
+        "material_name": "Phase Change Materials (PCM)",
+        "properties": "Absorb or release heat during phase transitions, maintaining a stable temperature.",
+        "application": "Advanced insulation for shipping."
       },
       {
-        "material_name": "Cellars (Underground)",
-        "properties": "Provides constant, cool temperatures",
-        "application": "Wine storage"
+        "material_name": "Expanded Polystyrene (EPS)",
+        "properties": "Insulating foam commonly used for shipping temperature sensitive goods.",
+        "application": "Insulated wine shippers."
       },
       {
-        "material_name": "Refrigerated Storage",
-        "properties": "Keeps wine at optimal serving temperature",
-        "application": "Retail and consumer storage"
+        "material_name": "Gel Packs",
+        "properties": "Help maintain low temperatures during shipping.",
+        "application": "Used inside insulated wine shippers."
       },
       {
-        "material_name": "Glycol Jacketed Tanks",
-        "properties": "Used in winemaking to precisely control fermentation and storage temperatures.",
-        "application": "Wine production"
+        "material_name": "Temperature Monitoring Devices (Data Loggers)",
+        "properties": "Record temperature fluctuations during shipping for analysis.",
+        "application": "Monitoring temperature control effectiveness."
       }
     ],
     "volatility_or_hazard_risk": [
       {
-        "material_name": "Glass (under pressure)",
-        "properties": "Risk of explosion if wine undergoes secondary fermentation in the bottle",
-        "application": "Sparkling wine bottles (requires thicker glass)"
+        "material_name": "UN-Certified Packaging",
+        "properties": "Tested and certified to withstand specific hazards.",
+        "application": "Shipping wine by air or other regulated methods."
       },
       {
-        "material_name": "Sulfites (in wine)",
-        "properties": "Can cause allergic reactions in some individuals",
-        "application": "Wine (labeling requirement)"
+        "material_name": "Pressure-Resistant Bottles",
+        "properties": "Designed to withstand internal pressure.",
+        "application": "Sparkling wines."
       },
       {
-        "material_name": "Alcohol (flammable)",
-        "properties": "Flammable liquid, requires precautions during storage and transport",
-        "application": "Wine"
+        "material_name": "Secondary Containment",
+        "properties": "Provides a backup containment system in case of leakage.",
+        "application": "Shipping larger quantities of wine."
       },
       {
-        "material_name": "Cardboard (flammable)",
-        "properties": "Shipping cartons need to be kept away from open flames",
-        "application": "Outer packaging"
+        "material_name": "Absorbent Materials",
+        "properties": "Soaks up any leaks or spills.",
+        "application": "Inside shipping containers."
       },
       {
-        "material_name": "Compressed Gases (during bottling)",
-        "properties": "Nitrogen or carbon dioxide used during bottling can be hazardous if mishandled",
-        "application": "Wine Production"
+        "material_name": "Warning Labels",
+        "properties": "Indicates the presence of alcohol and any other relevant hazards.",
+        "application": "Outer packaging."
       },
       {
-        "material_name": "Cleaning Chemicals",
-        "properties": "Caustic substances require careful handling during bottling line cleaning.",
-        "application": "Wine Production"
+        "material_name": "Tamper-Evident Seals",
+        "properties": "Indicates if the bottle has been opened, which could signify tampering or contamination.",
+        "application": "Bottle closures."
       },
       {
-        "material_name": "Dry Ice (for shipping)",
-        "properties": "Sublimates to CO2 and can cause asphyxiation in enclosed spaces",
-        "application": "Temperature Controlled Shipping"
+        "material_name": "Sparkling Wine Closures (Wire Cage)",
+        "properties": "Securely holds the cork in place to prevent it from popping out due to pressure.",
+        "application": "Sparkling wines."
       },
       {
-        "material_name": "Safety Data Sheets (SDS)",
-        "properties": "Provides information on the hazards of materials used in winemaking and packaging.",
-        "application": "Wine Production and Packaging Facilities"
+        "material_name": "Heavy-Duty Cardboard",
+        "properties": "Durable cardboard construction to withstand rough handling during shipping.",
+        "application": "Outer cartons for wine bottles."
       },
       {
-        "material_name": "Emergency Spill Kits",
-        "properties": "Contain materials to clean up spills of wine, chemicals, or other hazardous materials.",
-        "application": "Wine Production and Packaging Facilities"
+        "material_name": "Internal Dividers",
+        "properties": "Separates bottles within a box to prevent breakage.",
+        "application": "Shipping multiple wine bottles together."
       },
       {
-        "material_name": "Regulatory Compliance",
-        "properties": "Adherence to all transportation and storage regulations for alcoholic beverages is mandatory.",
-        "application": "All areas of Wine Production and Distribution"
+        "material_name": "Pallet Strapping",
+        "properties": "Secures cases of wine to a pallet to prevent shifting during transit.",
+        "application": "Palletized shipments of wine."
       }
     ],
     "visibility_and_display": [
       {
         "material_name": "Clear Glass",
-        "properties": "Allows visual inspection of wine color and clarity",
-        "application": "Wine bottles"
+        "properties": "Allows the wine color to be seen.",
+        "application": "Wine bottles, especially for ros\u00e9 and white wines."
       },
       {
-        "material_name": "Colored Glass (Green, Amber)",
-        "properties": "Reduces UV light exposure, may obscure wine's color",
-        "application": "Wine bottles (for wines sensitive to light)"
-      },
-      {
-        "material_name": "Transparent Labels",
-        "properties": "Allows partial view of wine through the label",
-        "application": "Wine bottle labels"
-      },
-      {
-        "material_name": "High-Quality Printing",
-        "properties": "Sharp, clear graphics and text on labels",
-        "application": "Wine bottle labels"
-      },
-      {
-        "material_name": "Embossing/Debossing",
-        "properties": "Adds tactile and visual interest to labels",
-        "application": "Wine bottle labels"
+        "material_name": "Embossed Labels",
+        "properties": "Adds a tactile and visual element to the label.",
+        "application": "Wine bottle labels for premium wines."
       },
       {
         "material_name": "Foil Stamping",
-        "properties": "Adds a metallic sheen to labels, enhancing visual appeal",
-        "application": "Wine bottle labels"
+        "properties": "Adds a metallic sheen to the label.",
+        "application": "Wine bottle labels for premium wines."
       },
       {
-        "material_name": "Shelf Talkers",
-        "properties": "Point-of-sale displays that provide information about the wine",
-        "application": "Retail environments"
+        "material_name": "Die-Cut Labels",
+        "properties": "Custom shapes enhance the visual appeal.",
+        "application": "Wine bottle labels."
       },
       {
-        "material_name": "Display Cases (Refrigerated)",
-        "properties": "Showcase wine at optimal serving temperature",
-        "application": "Retail environments"
+        "material_name": "Shrink Sleeves",
+        "properties": "Full-body graphics for maximum visual impact.",
+        "application": "Wine bottles, particularly for promotional packaging."
       },
       {
-        "material_name": "Wine Racks",
-        "properties": "Organize and display wine bottles attractively",
-        "application": "Retail and consumer environments"
+        "material_name": "Display Boxes",
+        "properties": "Designed to showcase wine bottles at retail.",
+        "application": "Retail displays."
       },
       {
-        "material_name": "Augmented Reality (AR) Labels",
-        "properties": "Interactive labels that provide additional information via smartphone",
-        "application": "Modern Marketing Strategy"
+        "material_name": "Windowed Cartons",
+        "properties": "Allows customers to see the wine bottle inside.",
+        "application": "Gift packaging."
+      },
+      {
+        "material_name": "Custom Bottle Shapes",
+        "properties": "Unique bottle designs to stand out on the shelf.",
+        "application": "Premium and luxury wines."
+      },
+      {
+        "material_name": "QR Codes (on Labels)",
+        "properties": "Connect customers to online content.",
+        "application": "Wine bottle labels."
+      },
+      {
+        "material_name": "Back Labels (Informative)",
+        "properties": "Provides information about the wine, winery, and region.",
+        "application": "Wine bottles."
       }
     ],
     "quantity_and_dosage": [
       {
-        "material_name": "Glass Bottles (Standard Sizes)",
-        "properties": "750ml is the most common size, others include 375ml, 1.5L",
-        "application": "Wine bottles"
+        "material_name": "Standard Wine Bottles (750ml)",
+        "properties": "Common size for individual consumption.",
+        "application": "Most wine bottles."
       },
       {
-        "material_name": "Bag-in-Box Sizes",
-        "properties": "Common sizes include 3L and 5L",
-        "application": "Boxed wine"
+        "material_name": "Half Bottles (375ml)",
+        "properties": "Smaller size for single servings or sampling.",
+        "application": "Individual servings or smaller households."
       },
       {
-        "material_name": "Aluminum Cans",
-        "properties": "Typical sizes include 250ml and 375ml",
-        "application": "Wine cans"
+        "material_name": "Magnum Bottles (1.5L)",
+        "properties": "Larger format for aging and special occasions.",
+        "application": "Special occasions and aging."
       },
       {
-        "material_name": "Measuring Cups/Syringes",
-        "properties": "Used for precise additions of additives during winemaking",
-        "application": "Wine Production"
+        "material_name": "Bag-in-Box (Various Sizes)",
+        "properties": "Larger volumes for extended use.",
+        "application": "Casual consumption and parties."
       },
       {
-        "material_name": "Automated Filling Machines",
-        "properties": "Ensures consistent fill levels in bottles",
-        "application": "Bottling process"
+        "material_name": "Wine Kegs (Various Sizes)",
+        "properties": "For on-tap service in restaurants and bars.",
+        "application": "Restaurants and bars."
       },
       {
-        "material_name": "Dosage Pumps",
-        "properties": "Precisely meter out additives like sulfites",
-        "application": "Wine Production"
+        "material_name": "Miniature Bottles (50ml-100ml)",
+        "properties": "Single-serving samples.",
+        "application": "Wine samples, airline servings."
       },
       {
-        "material_name": "Level Sensors",
-        "properties": "Monitor wine levels in tanks and bottles",
-        "application": "Wine Production"
+        "material_name": "Jeroboam (3L)",
+        "properties": "Large format bottles for aging or special events.",
+        "application": "Special events."
       },
       {
-        "material_name": "Calibration Standards",
-        "properties": "Used to ensure accuracy of measuring equipment",
-        "application": "Wine Production"
+        "material_name": "Imperial (6L)",
+        "properties": "Large format bottles for aging or special events.",
+        "application": "Special events."
       },
       {
-        "material_name": "Unit Dose Packaging",
-        "properties": "Individual servings of wine in small containers.",
-        "application": "Travel or sampling"
+        "material_name": "Salmanazar (9L)",
+        "properties": "Very large format bottles for aging or special events.",
+        "application": "Special events."
       },
       {
-        "material_name": "Smart Packaging",
-        "properties": "Displays the remaining volume or number of servings",
-        "application": "Innovative Marketing"
+        "material_name": "Balthazar (12L)",
+        "properties": "Very large format bottles for aging or special events.",
+        "application": "Special events."
       }
     ],
     "value_and_theft_sensitivity": [
       {
         "material_name": "Tamper-Evident Seals",
-        "properties": "Shrink sleeves, security labels, or specialized closures",
-        "application": "Wine bottles (preventing counterfeiting or tampering)"
+        "properties": "Indicates if the bottle has been opened or tampered with.",
+        "application": "Bottle closures for security."
       },
       {
-        "material_name": "Unique Bottle Designs",
-        "properties": "Difficult to replicate, enhances brand recognition",
-        "application": "High-value wines"
+        "material_name": "Serialized Labels",
+        "properties": "Unique codes for tracking and authentication.",
+        "application": "High-value wines."
       },
       {
         "material_name": "Holographic Labels",
-        "properties": "Difficult to counterfeit, adds security",
-        "application": "Wine bottle labels"
+        "properties": "Difficult to counterfeit, adds visual security.",
+        "application": "High-value wines."
       },
       {
         "material_name": "RFID Tags",
-        "properties": "Track and trace bottles, prevent theft",
-        "application": "High-value wines, inventory management"
+        "properties": "Track and trace bottles throughout the supply chain.",
+        "application": "Inventory management and anti-theft measures."
       },
       {
-        "material_name": "Security Cases/Boxes",
-        "properties": "Protective packaging for high-value wines",
-        "application": "Shipping and storage"
+        "material_name": "Security Cases",
+        "properties": "Lockable cases for displaying high-value wines.",
+        "application": "Retail environments."
       },
       {
-        "material_name": "Inventory Tracking Systems",
-        "properties": "Monitor wine stock, detect theft",
-        "application": "Retail environments, warehouses"
+        "material_name": "Security Tape",
+        "properties": "Tamper-evident tape for sealing cartons.",
+        "application": "Shipping and storage."
       },
       {
-        "material_name": "Security Cameras",
-        "properties": "Deter theft, provide evidence",
-        "application": "Retail environments, warehouses"
+        "material_name": "GPS Tracking Devices",
+        "properties": "Monitor the location of shipments.",
+        "application": "High-value wine shipments."
       },
       {
-        "material_name": "Alarm Systems",
-        "properties": "Alert authorities to potential theft",
-        "application": "Retail environments, warehouses"
+        "material_name": "Protective Packaging",
+        "properties": "Minimize breakage, which can deter theft.",
+        "application": "Shipping cartons with dividers and cushioning."
       },
       {
-        "material_name": "Insurance",
-        "properties": "Covers losses due to theft or damage",
-        "application": "Wine businesses"
+        "material_name": "Invisible UV Inks",
+        "properties": "Can be added to labels and are only visible under UV light.",
+        "application": "Authentication and anti-counterfeiting."
       },
       {
         "material_name": "Blockchain Technology",
-        "properties": "Track the provenance and authenticity of wine bottles throughout the supply chain.",
-        "application": "High-end Collectibles"
+        "properties": "Provides a secure and transparent record of the wine's journey from vineyard to consumer.",
+        "application": "Authentication and provenance tracking."
       }
     ]
   },

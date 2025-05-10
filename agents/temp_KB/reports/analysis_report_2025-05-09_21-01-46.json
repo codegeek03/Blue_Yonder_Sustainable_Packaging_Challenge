@@ -11,151 +11,19 @@
   },
   "top_materials": [
     {
-      "material_name": "Stainless Steel",
-      "properties": 94.0,
-      "application": "Wine processing equipment, storage tanks",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 17.09
-    },
-    {
       "material_name": "Glass",
-      "properties": 86.0,
-      "application": "Traditional wine bottles",
+      "properties": 88.0,
+      "application": "Primary container (bottle).",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
       "sustainability": 0,
-      "total_score": 15.64
-    },
-    {
-      "material_name": "Aluminum Cans",
-      "properties": 0,
-      "application": "Wine cans",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 72.0,
-      "total_score": 13.09
-    },
-    {
-      "material_name": "PET (Polyethylene Terephthalate)",
-      "properties": 0,
-      "application": "Alternative wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Aluminum",
-      "properties": 0,
-      "application": "Wine cans",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    }
-  ],
-  "all_materials": [
-    {
-      "material_name": "Stainless Steel",
-      "properties": 94.0,
-      "application": "Wine processing equipment, storage tanks",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 17.09
-    },
-    {
-      "material_name": "Glass",
-      "properties": 86.0,
-      "application": "Traditional wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 15.64
-    },
-    {
-      "material_name": "Glass",
-      "properties": 86.0,
-      "application": "Wine bottles (requires protective packaging)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 15.64
-    },
-    {
-      "material_name": "Glass",
-      "properties": 86.0,
-      "application": "Wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 15.64
-    },
-    {
-      "material_name": "Glass",
-      "properties": 86.0,
-      "application": "Wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 15.64
-    },
-    {
-      "material_name": "Aluminum Cans",
-      "properties": 0,
-      "application": "Wine cans",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 72.0,
-      "total_score": 13.09
-    },
-    {
-      "material_name": "PET (Polyethylene Terephthalate)",
-      "properties": 0,
-      "application": "Alternative wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Aluminum",
-      "properties": 0,
-      "application": "Wine cans",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Bag-in-Box (BIB) - Multi-layer film",
-      "properties": 0,
-      "application": "Inner bag for boxed wine",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
+      "total_score": 16.0
     },
     {
       "material_name": "Cardboard",
       "properties": 0,
-      "application": "Outer box for BIB wine",
+      "application": "Secondary packaging (boxes, cartons).",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -163,9 +31,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cork (natural)",
+      "material_name": "Paper",
       "properties": 0,
-      "application": "Traditional bottle closure",
+      "application": "Labels, inserts, gift wrapping.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -173,419 +41,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Synthetic Cork",
+      "material_name": "Aluminum",
       "properties": 0,
-      "application": "Alternative bottle closure",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Screw Cap (Aluminum)",
-      "properties": 0,
-      "application": "Alternative bottle closure",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Polymeric label",
-      "properties": 0,
-      "application": "Bottle labels",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Paper label",
-      "properties": 0,
-      "application": "Bottle labels",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "PET (Polyethylene Terephthalate)",
-      "properties": 0,
-      "application": "Wine bottles (more suitable for shipping)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Corrugated Cardboard",
-      "properties": 0,
-      "application": "Shipping boxes for wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Molded Pulp",
-      "properties": 0,
-      "application": "Internal packaging for wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Expanded Polystyrene (EPS)",
-      "properties": 0,
-      "application": "Protective packaging (less environmentally friendly)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Bubble Wrap (Polyethylene)",
-      "properties": 0,
-      "application": "Protective wrapping for bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Inflatable Air Pillows (Polyethylene)",
-      "properties": 0,
-      "application": "Void fill in shipping boxes",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Foam Inserts (Polyurethane)",
-      "properties": 0,
-      "application": "Protective inserts for fragile bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Partition Inserts (Cardboard)",
-      "properties": 0,
-      "application": "Dividers within shipping boxes",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Suspension Packaging",
-      "properties": 0,
-      "application": "High-value or very fragile wines",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Glass (Dark or Colored)",
-      "properties": 0,
-      "application": "Wine bottles (preserves wine quality)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Cork (Natural)",
-      "properties": 0,
-      "application": "Wine bottle closure (for wines intended to age)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Screw Cap (Aluminum)",
-      "properties": 0,
-      "application": "Wine bottle closure (for wines not intended to age)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "PET with UV Inhibitors",
-      "properties": 0,
-      "application": "Wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Laminated Films (BIB)",
-      "properties": 0,
-      "application": "Bag-in-box wine packaging",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Antioxidant Coatings (Inner Bag)",
-      "properties": 0,
-      "application": "Bag-in-box wine packaging",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Nitrogen Flushing",
-      "properties": 0,
-      "application": "Bottling process, extends shelf life",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Sulfur Dioxide (SO2)",
-      "properties": 0,
-      "application": "Wine itself (not packaging, but crucial for shelf life)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Modified Atmosphere Packaging (MAP)",
-      "properties": 0,
-      "application": "Can be used for high-end boxed wines",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "UV Blocking Additives (Labels)",
-      "properties": 0,
-      "application": "Wine bottle labels, particularly for clear glass bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Inert Glass (Borosilicate)",
-      "properties": 0,
-      "application": "Wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "PET (Food Grade)",
-      "properties": 0,
-      "application": "Wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "HDPE (High-Density Polyethylene)",
-      "properties": 0,
-      "application": "Wine storage containers (bulk)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Aluminum (with food-grade liner)",
-      "properties": 0,
-      "application": "Wine cans",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Laminated films (BIB)",
-      "properties": 0,
-      "application": "Bag-in-box packaging",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Stainless Steel (304 or 316)",
-      "properties": 0,
-      "application": "Wine storage tanks",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Epoxy Resin (Food Grade)",
-      "properties": 0,
-      "application": "Wine storage tanks",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "PTFE (Teflon)",
-      "properties": 0,
-      "application": "Wine processing equipment",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Silicone (Food Grade)",
-      "properties": 0,
-      "application": "Wine processing equipment",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Tartrate Stabilizers (Potassium Bitartrate)",
-      "properties": 0,
-      "application": "Wine itself (not packaging, but affects chemical stability)",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "PET (Food Grade)",
-      "properties": 0,
-      "application": "Wine bottles",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Laminated Films (BIB)",
-      "properties": 0,
-      "application": "Bag-in-box wine",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Synthetic Cork",
-      "properties": 0,
-      "application": "Wine bottle closure",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Screw Cap",
-      "properties": 0,
-      "application": "Wine bottle closure",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Sanitizing Agents (e.g., Peracetic Acid)",
-      "properties": 0,
-      "application": "Wine production",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Filtration Membranes",
-      "properties": 0,
-      "application": "Wine production",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Clean Room Environment",
-      "properties": 0,
-      "application": "Bottling process",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "Aseptic Packaging",
-      "properties": 0,
-      "application": "Specialized wines requiring high levels of hygiene",
-      "consumer": 0,
-      "logistics": 0,
-      "cost": 0,
-      "sustainability": 0,
-      "total_score": 0.0
-    },
-    {
-      "material_name": "PET",
-      "properties": 0,
-      "application": "Wine bottles (avoid direct sunlight and high storage temperatures)",
+      "application": "Bottle caps, closures, foil capsules.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -595,7 +53,39 @@
     {
       "material_name": "Cork",
       "properties": 0,
-      "application": "Wine bottle closure (store at consistent temperatures)",
+      "application": "Bottle stopper.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    }
+  ],
+  "all_materials": [
+    {
+      "material_name": "Glass",
+      "properties": 88.0,
+      "application": "Primary container (bottle).",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 16.0
+    },
+    {
+      "material_name": "Cardboard",
+      "properties": 0,
+      "application": "Secondary packaging (boxes, cartons).",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Paper",
+      "properties": 0,
+      "application": "Labels, inserts, gift wrapping.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -605,7 +95,7 @@
     {
       "material_name": "Aluminum",
       "properties": 0,
-      "application": "Wine cans",
+      "application": "Bottle caps, closures, foil capsules.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -613,9 +103,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Insulated Packaging (EPS, Foam)",
+      "material_name": "Cork",
       "properties": 0,
-      "application": "Shipping wine in hot or cold climates",
+      "application": "Bottle stopper.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -623,9 +113,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Temperature Controlled Shipping Containers",
+      "material_name": "Plastic (PET)",
       "properties": 0,
-      "application": "Shipping high-value wines",
+      "application": "Alternative bottle material, sometimes used for larger volumes or specific markets.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -633,9 +123,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Thermochromic Labels",
+      "material_name": "Polyethylene (PE)",
       "properties": 0,
-      "application": "Monitoring temperature during shipping",
+      "application": "Shrink wrap, cushioning materials (e.g., bubble wrap).",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -643,9 +133,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cellars (Underground)",
+      "material_name": "Polypropylene (PP)",
       "properties": 0,
-      "application": "Wine storage",
+      "application": "Bottle caps, closures.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -653,9 +143,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Refrigerated Storage",
+      "material_name": "Molded Pulp",
       "properties": 0,
-      "application": "Retail and consumer storage",
+      "application": "Internal packaging for bottle protection.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -663,9 +153,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Glycol Jacketed Tanks",
+      "material_name": "Compostable Polymers (PLA)",
       "properties": 0,
-      "application": "Wine production",
+      "application": "Increasingly used for labels and potentially closures as technology advances.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -673,9 +163,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Glass (under pressure)",
+      "material_name": "Bubble Wrap",
       "properties": 0,
-      "application": "Sparkling wine bottles (requires thicker glass)",
+      "application": "Protection against impacts during shipping.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -683,9 +173,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Sulfites (in wine)",
+      "material_name": "Foam Inserts (EPS or EPE)",
       "properties": 0,
-      "application": "Wine (labeling requirement)",
+      "application": "Protection against impacts and vibration.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -693,9 +183,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Alcohol (flammable)",
+      "material_name": "Corrugated Cardboard",
       "properties": 0,
-      "application": "Wine",
+      "application": "Outer boxes for shipping, internal dividers.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -703,9 +193,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cardboard (flammable)",
+      "material_name": "Inflatable Air Pillows",
       "properties": 0,
-      "application": "Outer packaging",
+      "application": "Void fill in shipping boxes.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -713,9 +203,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Compressed Gases (during bottling)",
+      "material_name": "Molded Pulp",
       "properties": 0,
-      "application": "Wine Production",
+      "application": "Internal bottle supports within boxes.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -723,9 +213,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Cleaning Chemicals",
+      "material_name": "Paper Padding",
       "properties": 0,
-      "application": "Wine Production",
+      "application": "Void fill, wrapping individual bottles.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -733,9 +223,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Dry Ice (for shipping)",
+      "material_name": "Partitioned Cardboard",
       "properties": 0,
-      "application": "Temperature Controlled Shipping",
+      "application": "Separating bottles to prevent contact.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -743,9 +233,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Safety Data Sheets (SDS)",
+      "material_name": "Suspension Packaging",
       "properties": 0,
-      "application": "Wine Production and Packaging Facilities",
+      "application": "High-value or extremely fragile wines.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -753,9 +243,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Emergency Spill Kits",
+      "material_name": "Edge Protectors (Cardboard or Plastic)",
       "properties": 0,
-      "application": "Wine Production and Packaging Facilities",
+      "application": "Protecting palletized shipments.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -763,9 +253,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Regulatory Compliance",
+      "material_name": "Shrink Wrap",
       "properties": 0,
-      "application": "All areas of Wine Production and Distribution",
+      "application": "Securing bottles on a pallet.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -773,9 +263,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Clear Glass",
+      "material_name": "Glass (Dark)",
       "properties": 0,
-      "application": "Wine bottles",
+      "application": "Primary wine bottle, especially for wines sensitive to light oxidation.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -783,9 +273,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Colored Glass (Green, Amber)",
+      "material_name": "Cork (High Quality)",
       "properties": 0,
-      "application": "Wine bottles (for wines sensitive to light)",
+      "application": "Bottle closure for aging wines.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -793,9 +283,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Transparent Labels",
+      "material_name": "Synthetic Closures (High Quality)",
       "properties": 0,
-      "application": "Wine bottle labels",
+      "application": "Bottle closure, particularly for wines intended for shorter aging periods.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -803,9 +293,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "High-Quality Printing",
+      "material_name": "Screw Caps (Aluminum)",
       "properties": 0,
-      "application": "Wine bottle labels",
+      "application": "Bottle closure for wines intended for early consumption.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -813,9 +303,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Embossing/Debossing",
+      "material_name": "Laminated Labels",
       "properties": 0,
-      "application": "Wine bottle labels",
+      "application": "Wine bottle labels to maintain appearance over time.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -823,9 +313,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Foil Stamping",
+      "material_name": "UV-Protective Coatings (on Labels)",
       "properties": 0,
-      "application": "Wine bottle labels",
+      "application": "Label to protect wine quality.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -833,9 +323,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Shelf Talkers",
+      "material_name": "Vacuum Packaging (Bag-in-Box)",
       "properties": 0,
-      "application": "Retail environments",
+      "application": "Inner bag for bag-in-box wines.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -843,9 +333,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Display Cases (Refrigerated)",
+      "material_name": "Inert Gas Flushing (Nitrogen or Argon)",
       "properties": 0,
-      "application": "Retail environments",
+      "application": "Part of the bottling process, not a packaging material itself, but related.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -853,9 +343,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Wine Racks",
+      "material_name": "Oxygen Scavengers (in Closures)",
       "properties": 0,
-      "application": "Retail and consumer environments",
+      "application": "Integrated into some closure types.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -863,9 +353,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Augmented Reality (AR) Labels",
+      "material_name": "PET with Oxygen Barrier",
       "properties": 0,
-      "application": "Modern Marketing Strategy",
+      "application": "Alternative bottle material.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -873,9 +363,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Glass Bottles (Standard Sizes)",
+      "material_name": "Inert Glass",
       "properties": 0,
-      "application": "Wine bottles",
+      "application": "Primary wine container.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -883,9 +373,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Bag-in-Box Sizes",
+      "material_name": "Food-Grade Linings (for closures)",
       "properties": 0,
-      "application": "Boxed wine",
+      "application": "Inside screw caps and synthetic closures.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -893,9 +383,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Measuring Cups/Syringes",
+      "material_name": "Sulfur Dioxide (SO2)",
       "properties": 0,
-      "application": "Wine Production",
+      "application": "Added to the wine itself, not a packaging material, but relevant to preservation.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -903,9 +393,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Automated Filling Machines",
+      "material_name": "Tartaric Acid",
       "properties": 0,
-      "application": "Bottling process",
+      "application": "Added to the wine itself, not a packaging material.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -913,9 +403,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Dosage Pumps",
+      "material_name": "Polyethylene (LDPE/HDPE)",
       "properties": 0,
-      "application": "Wine Production",
+      "application": "Liners in bag-in-box wine containers.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -923,9 +413,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Level Sensors",
+      "material_name": "Aluminum (Anodized)",
       "properties": 0,
-      "application": "Wine Production",
+      "application": "Screw cap material.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -933,9 +423,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Calibration Standards",
+      "material_name": "Epoxy Phenolic Linings",
       "properties": 0,
-      "application": "Wine Production",
+      "application": "Lining for certain types of kegs or larger format containers (rare).",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -943,9 +433,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Unit Dose Packaging",
+      "material_name": "Bentonite Clay",
       "properties": 0,
-      "application": "Travel or sampling",
+      "application": "Used during wine production to stabilize the wine, indirectly impacting packaging needs.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -953,9 +443,59 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Smart Packaging",
+      "material_name": "Activated Carbon",
       "properties": 0,
-      "application": "Innovative Marketing",
+      "application": "Used during wine production to improve quality, influencing long-term stability and packaging requirements.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Silicone (Food Grade)",
+      "properties": 0,
+      "application": "Gaskets and seals in closures.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Sterilized Glass",
+      "properties": 0,
+      "application": "Wine bottles.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Sterilized Closures",
+      "properties": 0,
+      "application": "Corks, screw caps, synthetic stoppers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Food-Grade Sanitizers",
+      "properties": 0,
+      "application": "Cleaning bottles and closures before filling.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Cleanroom Packaging",
+      "properties": 0,
+      "application": "Specialty closures or containers for high-end wines.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -965,7 +505,7 @@
     {
       "material_name": "Tamper-Evident Seals",
       "properties": 0,
-      "application": "Wine bottles (preventing counterfeiting or tampering)",
+      "application": "Capsules or seals around the bottle neck.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -973,9 +513,469 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Unique Bottle Designs",
+      "material_name": "Hygienic Filling Equipment",
       "properties": 0,
-      "application": "High-value wines",
+      "application": "Bottle filling lines.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Single-Use Packaging Components",
+      "properties": 0,
+      "application": "Liners for bag-in-box systems.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Air Filtration Systems",
+      "properties": 0,
+      "application": "Bottling facilities.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "UV Sterilization Systems",
+      "properties": 0,
+      "application": "Sterilizing bottles and closures.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Aseptic Packaging",
+      "properties": 0,
+      "application": "Not typically used for wine, but relevant to other beverages.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Insulated Shipping Containers",
+      "properties": 0,
+      "application": "Protecting wine from temperature fluctuations.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Temperature-Controlled Warehousing",
+      "properties": 0,
+      "application": "Maintaining wine quality before distribution.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Thermal Labels",
+      "properties": 0,
+      "application": "Monitoring temperature during shipping.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Glass (Dark Tinted)",
+      "properties": 0,
+      "application": "Wine bottles, especially for wines sensitive to heat.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Polyurethane Foam",
+      "properties": 0,
+      "application": "Insulating wine shipping containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Reflective Foil",
+      "properties": 0,
+      "application": "Insulating layers in shipping containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Phase Change Materials (PCM)",
+      "properties": 0,
+      "application": "Advanced insulation for shipping.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Expanded Polystyrene (EPS)",
+      "properties": 0,
+      "application": "Insulated wine shippers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Gel Packs",
+      "properties": 0,
+      "application": "Used inside insulated wine shippers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Temperature Monitoring Devices (Data Loggers)",
+      "properties": 0,
+      "application": "Monitoring temperature control effectiveness.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "UN-Certified Packaging",
+      "properties": 0,
+      "application": "Shipping wine by air or other regulated methods.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Pressure-Resistant Bottles",
+      "properties": 0,
+      "application": "Sparkling wines.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Secondary Containment",
+      "properties": 0,
+      "application": "Shipping larger quantities of wine.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Absorbent Materials",
+      "properties": 0,
+      "application": "Inside shipping containers.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Warning Labels",
+      "properties": 0,
+      "application": "Outer packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Tamper-Evident Seals",
+      "properties": 0,
+      "application": "Bottle closures.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Sparkling Wine Closures (Wire Cage)",
+      "properties": 0,
+      "application": "Sparkling wines.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Heavy-Duty Cardboard",
+      "properties": 0,
+      "application": "Outer cartons for wine bottles.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Internal Dividers",
+      "properties": 0,
+      "application": "Shipping multiple wine bottles together.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Pallet Strapping",
+      "properties": 0,
+      "application": "Palletized shipments of wine.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Clear Glass",
+      "properties": 0,
+      "application": "Wine bottles, especially for ros\u00e9 and white wines.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Embossed Labels",
+      "properties": 0,
+      "application": "Wine bottle labels for premium wines.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Foil Stamping",
+      "properties": 0,
+      "application": "Wine bottle labels for premium wines.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Die-Cut Labels",
+      "properties": 0,
+      "application": "Wine bottle labels.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Shrink Sleeves",
+      "properties": 0,
+      "application": "Wine bottles, particularly for promotional packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Display Boxes",
+      "properties": 0,
+      "application": "Retail displays.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Windowed Cartons",
+      "properties": 0,
+      "application": "Gift packaging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Custom Bottle Shapes",
+      "properties": 0,
+      "application": "Premium and luxury wines.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "QR Codes (on Labels)",
+      "properties": 0,
+      "application": "Wine bottle labels.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Back Labels (Informative)",
+      "properties": 0,
+      "application": "Wine bottles.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Standard Wine Bottles (750ml)",
+      "properties": 0,
+      "application": "Most wine bottles.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Half Bottles (375ml)",
+      "properties": 0,
+      "application": "Individual servings or smaller households.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Magnum Bottles (1.5L)",
+      "properties": 0,
+      "application": "Special occasions and aging.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Bag-in-Box (Various Sizes)",
+      "properties": 0,
+      "application": "Casual consumption and parties.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Wine Kegs (Various Sizes)",
+      "properties": 0,
+      "application": "Restaurants and bars.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Miniature Bottles (50ml-100ml)",
+      "properties": 0,
+      "application": "Wine samples, airline servings.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Jeroboam (3L)",
+      "properties": 0,
+      "application": "Special events.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Imperial (6L)",
+      "properties": 0,
+      "application": "Special events.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Salmanazar (9L)",
+      "properties": 0,
+      "application": "Special events.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Balthazar (12L)",
+      "properties": 0,
+      "application": "Special events.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Tamper-Evident Seals",
+      "properties": 0,
+      "application": "Bottle closures for security.",
+      "consumer": 0,
+      "logistics": 0,
+      "cost": 0,
+      "sustainability": 0,
+      "total_score": 0.0
+    },
+    {
+      "material_name": "Serialized Labels",
+      "properties": 0,
+      "application": "High-value wines.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -985,7 +985,7 @@
     {
       "material_name": "Holographic Labels",
       "properties": 0,
-      "application": "Wine bottle labels",
+      "application": "High-value wines.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -995,7 +995,7 @@
     {
       "material_name": "RFID Tags",
       "properties": 0,
-      "application": "High-value wines, inventory management",
+      "application": "Inventory management and anti-theft measures.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1003,9 +1003,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Security Cases/Boxes",
+      "material_name": "Security Cases",
       "properties": 0,
-      "application": "Shipping and storage",
+      "application": "Retail environments.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1013,9 +1013,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Inventory Tracking Systems",
+      "material_name": "Security Tape",
       "properties": 0,
-      "application": "Retail environments, warehouses",
+      "application": "Shipping and storage.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1023,9 +1023,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Security Cameras",
+      "material_name": "GPS Tracking Devices",
       "properties": 0,
-      "application": "Retail environments, warehouses",
+      "application": "High-value wine shipments.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1033,9 +1033,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Alarm Systems",
+      "material_name": "Protective Packaging",
       "properties": 0,
-      "application": "Retail environments, warehouses",
+      "application": "Shipping cartons with dividers and cushioning.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1043,9 +1043,9 @@
       "total_score": 0.0
     },
     {
-      "material_name": "Insurance",
+      "material_name": "Invisible UV Inks",
       "properties": 0,
-      "application": "Wine businesses",
+      "application": "Authentication and anti-counterfeiting.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1055,7 +1055,7 @@
     {
       "material_name": "Blockchain Technology",
       "properties": 0,
-      "application": "High-end Collectibles",
+      "application": "Authentication and provenance tracking.",
       "consumer": 0,
       "logistics": 0,
       "cost": 0,
@@ -1065,86 +1065,114 @@
   ],
   "material_summaries": [
     {
-      "material_name": "Stainless Steel",
+      "material_name": "Glass",
       "summary": {
-        "material_name": "Stainless Steel",
-        "executive_snapshot": "Stainless steel presents a reasonably sustainable but potentially expensive option for wine packaging in Shyambazar, Kolkata, primarily due to its recyclability and durability.",
+        "material_name": "Glass",
+        "executive_snapshot": "Glass is a viable option for packaging wine in Shyambazar, Kolkata, offering strong consumer appeal and recyclability despite its higher weight and potential for breakage.",
         "composite_score": 78,
         "strengths": [
           {
-            "dimension": "Recyclability",
-            "insight": "Stainless steel is highly recyclable with a well-established recycling infrastructure, which significantly reduces its environmental impact and aligns with Blue Yonder's sustainability priorities, ensuring minimal waste and resource depletion."
+            "dimension": "Consumer Preference",
+            "insight": "Glass is often perceived as a premium packaging material for wine, enhancing brand image and consumer appeal, which can drive sales and brand loyalty."
           },
           {
-            "dimension": "Durability & Reusability",
-            "insight": "Stainless steel's robustness minimizes damage during transportation and allows for potential reuse, increasing its lifecycle value and enhancing consumer appeal for eco-conscious buyers, directly impacting Blue Yonder's sustainability and consumer preference objectives."
+            "dimension": "Recyclability",
+            "insight": "Glass is highly recyclable in Kolkata, and a well-established recycling infrastructure can minimize environmental impact and support circular economy principles, aligning with Blue Yonder's sustainability priorities."
           }
         ],
         "trade_offs": [
           {
-            "dimension": "Cost",
-            "mitigation": "The higher upfront cost can be offset by stainless steel's durability, reusability, and reduced damage during transport, potentially leading to long-term cost savings and improved sustainability credentials, which resonate more strongly with Blue Yonder's strategic priorities."
+            "dimension": "Logistics",
+            "mitigation": "The increased weight of glass, while leading to higher transportation costs, is offset by its perceived value and high recyclability rate, justifying the cost for environmentally conscious consumers."
+          },
+          {
+            "dimension": "Carbon Footprint",
+            "mitigation": "While glass production has a higher carbon footprint compared to some alternatives, the high recycling rate and potential for using recycled glass in production significantly reduces the overall environmental impact."
           }
         ],
         "supply_chain_implications": {
-          "costs": "Higher initial material costs but potentially lower long-term costs due to reduced damage and potential for reuse programs.",
-          "logistics": "Stainless steel containers can be heavier than glass or plastic, which may increase transportation costs, but their durability reduces the risk of damage during transit.",
-          "regulatory": "Compliance with Kolkata's waste management regulations, particularly regarding metal recycling, is crucial. Extended Producer Responsibility (EPR) schemes may apply. Stainless steel, being recyclable, can benefit from policies promoting recycling.",
-          "consumer": "Consumer acceptance is generally positive due to stainless steel's perceived quality and sustainability benefits, though some consumers might be put off by the higher price point."
+          "costs": "Direct costs include the cost of glass bottles themselves, which tend to be higher than plastic. Indirect costs involve transportation due to the weight and risk of breakage, potentially increasing insurance premiums.",
+          "logistics": "Glass requires careful handling and secure packaging to prevent breakage during transport. This can lead to increased labor costs and specialized transportation equipment.",
+          "regulatory": "There is no specific regulation for glass in Shyambazar, Kolkata but general rules apply, such as waste management and environment laws, while extended producer responsibility (EPR) schemes may come into play for recycling.",
+          "consumer": "Consumers generally perceive glass as a high-quality, sustainable option for wine packaging, which can positively influence purchasing decisions, particularly among environmentally conscious consumers."
         },
         "recommendation": {
           "adopt": true,
-          "justification": "While stainless steel incurs higher initial costs, its superior recyclability, reusability, and reduced damage during transport provide a compelling sustainability proposition, aligning with growing consumer demand for eco-friendly packaging in Shyambazar, Kolkata. These factors are expected to benefit the carbon footprint metrics.",
-          "sustainability_gain_percent": 20,
-          "cost_delta_percent": 15
+          "justification": "Despite the logistical challenges, glass's high recyclability, premium brand image, and consumer acceptance make it a sustainable and commercially viable option for packaging wine in Shyambazar, Kolkata, especially with the growing consumer focus on sustainability.",
+          "sustainability_gain_percent": 15,
+          "cost_delta_percent": 8
         }
       }
     },
     {
-      "material_name": "Glass",
+      "material_name": "Cardboard",
       "summary": {
-        "error": "Invalid JSON response: Expecting ',' delimiter: line 33 column 3 (char 2369)"
-      }
-    },
-    {
-      "material_name": "Aluminum Cans",
-      "summary": {
-        "error": "<Response [503 Service Unavailable]>"
-      }
-    },
-    {
-      "material_name": "PET (Polyethylene Terephthalate)",
-      "summary": {
-        "material_name": "PET (Polyethylene Terephthalate)",
-        "executive_snapshot": "PET offers a moderately sustainable and cost-effective option for wine packaging in Shyambazar, Kolkata, but its non-biodegradability presents a notable environmental challenge.",
+        "material_name": "Cardboard",
+        "executive_snapshot": "Cardboard presents a moderately sustainable packaging solution for wine in Shyambazar, Kolkata, balancing recyclability and cost-effectiveness against potential weaknesses in moisture resistance and premium aesthetics.",
         "composite_score": 68,
         "strengths": [
           {
-            "dimension": "Cost",
-            "insight": "PET's relatively low production cost compared to glass or aluminum leads to potential savings, increasing affordability for the Shyambazar consumer market."
+            "dimension": "Recyclability",
+            "insight": "Cardboard's high recyclability in Kolkata aligns with sustainability goals, reduces landfill waste, and improves brand image, particularly given the growing environmental awareness among consumers."
           },
           {
-            "dimension": "Logistics",
-            "insight": "PET's lightweight nature significantly reduces transportation costs and fuel consumption, aligning with Blue Yonder's sustainability priorities by lowering the carbon footprint of distribution."
+            "dimension": "Cost",
+            "insight": "Cardboard's relatively low cost compared to alternatives makes it an economically attractive option for wine packaging in the price-sensitive Shyambazar market, supporting affordability and wider product reach."
           }
         ],
         "trade_offs": [
           {
-            "dimension": "Biodegradability",
-            "mitigation": "While PET is not biodegradable, its high recyclability rate and potential for use in a closed-loop system partially mitigate this issue, particularly if robust local recycling infrastructure is implemented."
+            "dimension": "Properties (Moisture Resistance)",
+            "mitigation": "While cardboard is susceptible to moisture damage, proper lining and protective coatings can mitigate this risk. The cost-effectiveness and high recyclability outweigh the additional processing expenses."
           }
         ],
         "supply_chain_implications": {
-          "costs": "Direct costs are lower due to the material's affordability. Indirect costs may arise from the need for improved recycling infrastructure to manage end-of-life PET waste.",
-          "logistics": "PET bottles are lightweight and less prone to breakage than glass, reducing transport costs and damage-related losses. The shape and stackability can optimize truck space.",
-          "regulatory": "Regulations in India, particularly those related to plastic waste management, will influence PET's usability and require compliance. Extended Producer Responsibility (EPR) schemes may impose responsibilities on producers for collection and recycling. As of current, specific regulations for PET in Kolkata and Shyambazar could not be verfied; however, the general plastic rules apply.",
-          "consumer": "Consumer acceptance is generally positive due to familiarity and perceived convenience, but growing awareness of plastic pollution may require emphasizing the recyclability and recycled content of the PET bottles."
+          "costs": "Cardboard's lower material cost reduces initial investment. However, potential damage during transport and the cost of protective treatments should be considered, impacting the total cost. Potential disposal costs might also arise.",
+          "logistics": "Cardboard is lightweight, which can lower transport costs. The need for careful handling to prevent crushing or moisture damage can increase labor costs and logistical complexity.",
+          "regulatory": "While India has regulations promoting waste management and recycling, specific regulations targeting cardboard packaging in Kolkata might be less stringent than for plastics. Producers should still adhere to broader EPR guidelines.",
+          "consumer": "Cardboard is generally well-received by consumers who value sustainability. Clear recycling instructions and eco-friendly branding can further enhance consumer acceptance in Shyambazar."
         },
         "recommendation": {
           "adopt": true,
-          "justification": "PET offers a balance of cost-effectiveness, logistical advantages, and moderate sustainability through recyclability, making it a viable option for wine packaging in Shyambazar, provided recycling infrastructure is strengthened and consumer education promotes responsible disposal.",
+          "justification": "Cardboard's high recyclability, cost-effectiveness, and consumer acceptance make it a viable option. Although some improvements are needed for protection of the package. Given Shyambazar's environmental constraints, cardboard is a valuable option.",
           "sustainability_gain_percent": 15,
-          "cost_delta_percent": -10
+          "cost_delta_percent": -8
+        }
+      }
+    },
+    {
+      "material_name": "Paper",
+      "summary": {
+        "material_name": "Paper",
+        "executive_snapshot": "Paper presents a moderately suitable packaging option for wine in Shyambazar, Kolkata, balancing sustainability with logistical and consumer considerations, though further investigation into specific paper types is warranted.",
+        "composite_score": 72,
+        "strengths": [
+          {
+            "dimension": "Recyclability",
+            "insight": "Paper is widely recyclable in Kolkata, aligning with Blue Yonder's sustainability priorities and potentially reducing landfill waste."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Paper packaging can project an eco-friendly image, resonating with environmentally conscious consumers in Shyambazar and enhancing brand perception."
+          }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Properties (Durability)",
+            "mitigation": "While paper is less durable than glass, using reinforced paperboard and protective inner layers can mitigate damage risk during transport and storage, maintaining product integrity."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Paper generally offers lower material costs compared to glass, but may incur higher secondary packaging costs to ensure product protection during transit and storage.",
+          "logistics": "Paper is lighter than glass, potentially reducing transportation costs; however, it is more susceptible to damage from moisture and requires careful handling, potentially increasing labor costs.",
+          "regulatory": "Regulations in India, and specifically Kolkata, are increasingly focused on reducing single-use plastics and promoting recyclable materials, which favors paper packaging; however, specific regulations related to food-grade paper and printing inks must be considered.",
+          "consumer": "Consumers in Shyambazar are increasingly aware of environmental issues and may prefer paper packaging due to its perceived eco-friendliness, but may also have concerns about its durability and protection of the wine."
+        },
+        "recommendation": {
+          "adopt": true,
+          "justification": "Paper offers a reasonable balance of sustainability and cost, with potential for positive consumer perception. The positive aspects outweigh the challenges associated with durability with appropriate mitigation strategy. Given the recyclability and compostability of paper, it presents a strong eco-friendly alternative to traditional packaging. In addition, paper\u2019s carbon footprint is lower than other packaging materials. However, the selection of high-quality, food-grade paper is imperative to ensure product integrity and consumer safety.",
+          "sustainability_gain_percent": 18,
+          "cost_delta_percent": -5
         }
       }
     },
@@ -1152,35 +1180,71 @@
       "material_name": "Aluminum",
       "summary": {
         "material_name": "Aluminum",
-        "executive_snapshot": "Aluminum presents a moderately viable option for wine packaging in Shyambazar, Kolkata, balancing recyclability with cost and potential consumer perceptions.",
+        "executive_snapshot": "Aluminum presents a moderately suitable option for wine packaging in Shyambazar, Kolkata, balancing recyclability and consumer appeal against carbon footprint and potential cost implications.",
         "composite_score": 68,
         "strengths": [
           {
             "dimension": "Recyclability",
-            "insight": "Aluminum boasts high recyclability rates, aligning with sustainability goals and potentially reducing environmental impact in Shyambazar, Kolkata, contributing to a circular economy."
+            "insight": "Aluminum's high recyclability significantly reduces environmental impact and aligns with growing consumer preferences for sustainable packaging in Shyambazar, enhancing brand image and potentially reducing waste management costs."
           },
           {
             "dimension": "Consumer Preference",
-            "insight": "Aluminum packaging can be perceived as modern and premium by consumers, potentially enhancing brand image and appeal in the Kolkata market, especially amongst younger demographics."
+            "insight": "Aluminum offers a premium feel and is generally well-received by consumers, potentially boosting product appeal and market share in the competitive Kolkata wine market."
           }
         ],
         "trade_offs": [
           {
-            "dimension": "Resource Efficiency",
-            "mitigation": "While resource extraction for primary aluminum is energy-intensive, the high recyclability rate significantly reduces the need for virgin material over time, offsetting the initial environmental impact."
+            "dimension": "Carbon Footprint",
+            "mitigation": "While aluminum production has a higher carbon footprint, its recyclability and lightweight properties can partially offset this through reduced transportation emissions and closed-loop material use."
           }
         ],
         "supply_chain_implications": {
-          "costs": "Aluminum packaging may involve higher upfront material costs compared to glass, but potential savings can be realized through reduced transportation weight and lower damage rates during shipping; recycling credits can also offset costs.",
-          "logistics": "Aluminum's lighter weight can translate into lower transportation costs, although specialized handling equipment may be required; the durability of aluminum reduces the risk of breakage compared to glass, minimizing losses.",
-          "regulatory": "Regulations in India regarding packaging waste management, including Extended Producer Responsibility (EPR) schemes, might influence the adoption of aluminum; adherence to Bureau of Indian Standards (BIS) for food-grade packaging is crucial. No regulation specifics for Shyambazar, Kolkata was found.",
-          "consumer": "Consumer acceptance hinges on perceptions of quality and environmental responsibility; clear labeling regarding recyclability and sustainability benefits is essential to positively influence consumer choices in Kolkata."
+          "costs": "Direct costs may be higher than glass due to raw material prices and specialized manufacturing, but indirect savings can arise from reduced breakage during transport and handling. Recycling infrastructure investments will be crucial.",
+          "logistics": "Aluminum's lightweight nature can lower transportation costs, but requires careful handling to prevent dents and damage affecting product presentation.",
+          "regulatory": "India's regulations on packaging waste management emphasize extended producer responsibility (EPR), requiring producers to manage the end-of-life of aluminum packaging. Compliance necessitates robust recycling programs in Kolkata.",
+          "consumer": "Consumer acceptance is generally positive, especially among environmentally conscious consumers. Clear labeling regarding recyclability is vital to encourage proper disposal."
+        },
+        "recommendation": {
+          "adopt": false,
+          "justification": "While aluminum boasts recyclability and consumer appeal, its carbon footprint and potential cost increase outweigh the benefits compared to other packaging materials. Implementing a widespread and effective recycling program is critical to minimize its impact on the environment",
+          "sustainability_gain_percent": 15,
+          "cost_delta_percent": 10
+        }
+      }
+    },
+    {
+      "material_name": "Cork",
+      "summary": {
+        "material_name": "Cork",
+        "executive_snapshot": "Cork offers a moderately sustainable packaging solution for wine in Shyambazar, Kolkata, balancing environmental benefits with potential cost and logistical considerations.",
+        "composite_score": 68,
+        "strengths": [
+          {
+            "dimension": "Sustainability",
+            "insight": "Cork is a renewable and biodegradable material, aligning with growing consumer demand for eco-friendly packaging and reducing the overall environmental impact of wine production."
+          },
+          {
+            "dimension": "Consumer Preference",
+            "insight": "Cork closures are traditionally associated with higher-quality wines, positively influencing consumer perception and potentially commanding a premium price point in the market."
+          }
+        ],
+        "trade_offs": [
+          {
+            "dimension": "Cost",
+            "mitigation": "While cork might be more expensive than some alternatives, its sustainability benefits and positive consumer perception can justify the higher cost, particularly for premium wine offerings."
+          }
+        ],
+        "supply_chain_implications": {
+          "costs": "Direct costs may be higher due to raw material sourcing and processing. Indirect costs include potential for lower product damage compared to glass bottles during transport, potentially reducing spoilage.",
+          "logistics": "Cork is relatively lightweight, which helps reduce transportation costs. However, ensuring proper storage conditions (humidity control) during transport is important to prevent degradation.",
+          "regulatory": "West Bengal, where Kolkata is located, enforces national regulations concerning packaging waste management, with an emphasis on biodegradable materials like cork, potentially offering regulatory advantages.",
+          "consumer": "Consumers generally view cork as a premium closure for wine, which can enhance the perceived value and brand image. Awareness campaigns highlighting the sustainability benefits of cork can further increase consumer acceptance."
         },
         "recommendation": {
           "adopt": true,
-          "justification": "Despite resource extraction concerns, aluminum's high recyclability, lighter weight for transport, and potential for positive consumer perception make it a viable alternative to traditional glass bottles, especially when complemented by strong recycling infrastructure and consumer education initiatives.",
+          "justification": "Cork offers a balance of sustainability benefits, positive consumer perception, and relative ease of handling, making it a viable choice for wine packaging in Shyambazar, Kolkata, particularly for wines targeting environmentally conscious consumers.",
           "sustainability_gain_percent": 15,
-          "cost_delta_percent": 8
+          "cost_delta_percent": 5
         }
       }
     }

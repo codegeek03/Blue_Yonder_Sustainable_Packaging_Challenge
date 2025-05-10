@@ -1,69 +1,69 @@
 {
   "top_materials": [
     {
-      "material_name": "Grapes (Generic Red)",
+      "material_name": "Glass Bottles",
       "cost_score": 8,
-      "base_price": "1.50 USD/kg",
+      "base_price": "0.50 USD/kg",
       "key_costs": {
-        "raw_material": "Low base grape price",
-        "processing": "Crushing/fermentation",
-        "tariffs": "Low domestic tariffs",
-        "transport": "Local vineyard transport",
-        "compliance": "Standard wine regulations"
+        "raw_material": "Silica sand dominant",
+        "processing": "Melting & molding",
+        "tariffs": "Low on imports",
+        "transport": "High volume shipping",
+        "compliance": "Food-grade certification"
       },
-      "total_estimated_cost": "2.54 USD per unit"
+      "total_estimated_cost": "0.98 USD per unit"
     },
     {
-      "material_name": "Grapes (Generic White)",
+      "material_name": "Cork Stoppers",
       "cost_score": 7,
-      "base_price": "1.60 USD/kg",
+      "base_price": "2.00 USD/kg",
       "key_costs": {
-        "raw_material": "Slightly higher base",
-        "processing": "Crushing/fermentation",
-        "tariffs": "Low domestic tariffs",
-        "transport": "Local vineyard transport",
-        "compliance": "Standard regulations"
+        "raw_material": "Cork oak harvesting",
+        "processing": "Shaping & treating",
+        "tariffs": "Vary by region",
+        "transport": "Lightweight, dense",
+        "compliance": "Natural product standards"
       },
-      "total_estimated_cost": "2.70 USD per unit"
+      "total_estimated_cost": "3.92 USD per unit"
     },
     {
-      "material_name": "French Oak Staves",
+      "material_name": "Stainless Steel Tanks",
       "cost_score": 6,
-      "base_price": "8.00 USD/kg",
+      "base_price": "3.00 USD/kg",
       "key_costs": {
-        "raw_material": "Oak wood cost",
-        "processing": "Shaping/toasting",
-        "tariffs": "Moderate import tariffs",
-        "transport": "Overseas shipping",
-        "compliance": "Wood certification"
+        "raw_material": "Iron, chromium, nickel",
+        "processing": "Welding, shaping",
+        "tariffs": "Moderate on imports",
+        "transport": "Bulky, heavy",
+        "compliance": "Food safety regulations"
       },
-      "total_estimated_cost": "13.53 USD per unit"
+      "total_estimated_cost": "5.88 USD per unit"
     },
     {
-      "material_name": "American Oak Chips",
+      "material_name": "Yeast",
+      "cost_score": 9,
+      "base_price": "10.00 USD/kg",
+      "key_costs": {
+        "raw_material": "Culture medium",
+        "processing": "Cultivation, drying",
+        "tariffs": "Minimal tariffs",
+        "transport": "Low volume, light",
+        "compliance": "Strain certification"
+      },
+      "total_estimated_cost": "19.60 USD per unit"
+    },
+    {
+      "material_name": "Oak Barrels",
       "cost_score": 5,
-      "base_price": "3.50 USD/kg",
+      "base_price": "5.00 USD/kg",
       "key_costs": {
-        "raw_material": "Lower oak base",
-        "processing": "Toasting/sizing",
-        "tariffs": "Low domestic tariffs",
-        "transport": "Regional transport",
-        "compliance": "Minimal certification"
-      },
-      "total_estimated_cost": "5.92 USD per unit"
-    },
-    {
-      "material_name": "Glass Bottles (Standard)",
-      "cost_score": 4,
-      "base_price": "0.75 USD/kg",
-      "key_costs": {
-        "raw_material": "Sand & additives",
-        "processing": "Glass blowing",
+        "raw_material": "Oak wood supply",
+        "processing": "Cooperage, toasting",
         "tariffs": "Low tariffs",
-        "transport": "Factory transport",
-        "compliance": "Safety standards"
+        "transport": "Bulky barrels",
+        "compliance": "Wood treatment standards"
       },
-      "total_estimated_cost": "1.27 USD per unit"
+      "total_estimated_cost": "9.80 USD per unit"
     }
   ],
   "timestamp": "2025-04-19 21:22:20",

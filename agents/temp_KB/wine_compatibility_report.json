@@ -5,8 +5,8 @@
       "concerns": "leakage"
     },
     "fragility": {
-      "explanation": "fragile",
-      "concerns": "breakage"
+      "explanation": "breakable",
+      "concerns": "shattering"
     },
     "shelf_life": {
       "explanation": "long",
@@ -34,7 +34,7 @@
     },
     "quantity_and_dosage": {
       "explanation": "bulk",
-      "concerns": "overflow"
+      "concerns": "breakage"
     },
     "value_and_theft_sensitivity": {
       "explanation": "high",

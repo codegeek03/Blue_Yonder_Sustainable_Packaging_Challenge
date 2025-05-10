@@ -4,17 +4,17 @@
       "material_name": "Glass",
       "property_scores": {
         "mechanical_strength": {
-          "value": "30-70",
+          "value": "40",
           "unit": "MPa",
           "score": 7
         },
         "chemical_resistance": {
-          "value": "1-13",
+          "value": "1-14",
           "unit": "pH range",
-          "score": 9
+          "score": 10
         },
         "thermal_stability": {
-          "value": "-40-230",
+          "value": "150",
           "unit": "\u00b0C",
           "score": 8
         },
@@ -24,20 +24,20 @@
           "score": 10
         },
         "durability": {
-          "value": "50+",
+          "value": "100+",
           "unit": "years",
           "score": 9
         }
       },
-      "overall_score": 8.6,
+      "overall_score": 8.8,
       "key_strength": "Chemical inertness",
-      "main_limitation": "Fragility"
+      "main_limitation": "Brittleness"
     },
     {
       "material_name": "Stainless Steel",
       "property_scores": {
         "mechanical_strength": {
-          "value": "500-700",
+          "value": "500",
           "unit": "MPa",
           "score": 9
         },
@@ -47,75 +47,42 @@
           "score": 8
         },
         "thermal_stability": {
-          "value": "-200-800",
+          "value": "300",
           "unit": "\u00b0C",
-          "score": 10
+          "score": 9
         },
         "barrier_properties": {
-          "value": "0.0005",
+          "value": "0.0001",
           "unit": "g/(m\u00b2\u00b7day)",
           "score": 10
         },
         "durability": {
-          "value": "100+",
+          "value": "50+",
           "unit": "years",
-          "score": 10
+          "score": 9
         }
       },
-      "overall_score": 9.4,
+      "overall_score": 9,
       "key_strength": "High strength & durability",
       "main_limitation": "Cost"
-    },
-    {
-      "material_name": "Oak Wood",
-      "property_scores": {
-        "mechanical_strength": {
-          "value": "50-100",
-          "unit": "MPa",
-          "score": 6
-        },
-        "chemical_resistance": {
-          "value": "3-7",
-          "unit": "pH range",
-          "score": 6
-        },
-        "thermal_stability": {
-          "value": "-20-60",
-          "unit": "\u00b0C",
-          "score": 5
-        },
-        "barrier_properties": {
-          "value": "10",
-          "unit": "g/(m\u00b2\u00b7day)",
-          "score": 5
-        },
-        "durability": {
-          "value": "50-100",
-          "unit": "years",
-          "score": 8
-        }
-      },
-      "overall_score": 6,
-      "key_strength": "Traditional aging",
-      "main_limitation": "Permeability"
     },
     {
       "material_name": "PET Plastic",
       "property_scores": {
         "mechanical_strength": {
-          "value": "55-75",
+          "value": "70",
           "unit": "MPa",
-          "score": 7
+          "score": 6
         },
         "chemical_resistance": {
           "value": "3-10",
           "unit": "pH range",
-          "score": 7
+          "score": 6
         },
         "thermal_stability": {
-          "value": "-20-70",
+          "value": "70",
           "unit": "\u00b0C",
-          "score": 6
+          "score": 5
         },
         "barrier_properties": {
           "value": "1.5",
@@ -123,47 +90,80 @@
           "score": 7
         },
         "durability": {
-          "value": "1-5",
+          "value": "5",
           "unit": "years",
-          "score": 4
+          "score": 6
         }
       },
-      "overall_score": 6.2,
-      "key_strength": "Lightweight & cost",
-      "main_limitation": "Short Durability"
+      "overall_score": 6,
+      "key_strength": "Lightweight & cheap",
+      "main_limitation": "Lower thermal resistance"
     },
     {
       "material_name": "HDPE Plastic",
       "property_scores": {
         "mechanical_strength": {
-          "value": "22-35",
+          "value": "40",
           "unit": "MPa",
           "score": 5
         },
         "chemical_resistance": {
-          "value": "1-14",
+          "value": "1-13",
           "unit": "pH range",
-          "score": 10
+          "score": 7
         },
         "thermal_stability": {
-          "value": "-50-60",
+          "value": "60",
           "unit": "\u00b0C",
-          "score": 5
+          "score": 4
         },
         "barrier_properties": {
-          "value": "0.8",
+          "value": "0.9",
           "unit": "g/(m\u00b2\u00b7day)",
           "score": 8
         },
         "durability": {
-          "value": "5-10",
+          "value": "10",
           "unit": "years",
-          "score": 6
+          "score": 7
         }
       },
-      "overall_score": 6.8,
-      "key_strength": "Chemical resistance",
-      "main_limitation": "Low Strength"
+      "overall_score": 6.2,
+      "key_strength": "Good chemical resistance",
+      "main_limitation": "Low thermal stability"
+    },
+    {
+      "material_name": "Bag-in-Box",
+      "property_scores": {
+        "mechanical_strength": {
+          "value": "30",
+          "unit": "MPa",
+          "score": 4
+        },
+        "chemical_resistance": {
+          "value": "3-9",
+          "unit": "pH range",
+          "score": 5
+        },
+        "thermal_stability": {
+          "value": "50",
+          "unit": "\u00b0C",
+          "score": 3
+        },
+        "barrier_properties": {
+          "value": "0.5",
+          "unit": "g/(m\u00b2\u00b7day)",
+          "score": 9
+        },
+        "durability": {
+          "value": "2",
+          "unit": "years",
+          "score": 3
+        }
+      },
+      "overall_score": 4.8,
+      "key_strength": "Effective Barrier",
+      "main_limitation": "Low durability"
     }
   ],
   "timestamp": "2025-04-19 21:27:30",

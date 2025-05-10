@@ -4,31 +4,31 @@
       "material_name": "Lightweight Glass",
       "environmental_score": 7.8,
       "key_benefit": "Reduced carbon footprint",
-      "primary_concern": "Recycling infrastructure"
+      "primary_concern": "Energy-intensive production"
+    },
+    {
+      "material_name": "Recycled Glass",
+      "environmental_score": 7.5,
+      "key_benefit": "Conserves resources",
+      "primary_concern": "Potential contaminants"
     },
     {
       "material_name": "Bag-in-Box",
-      "environmental_score": 7.5,
-      "key_benefit": "Low carbon footprint",
-      "primary_concern": "Recycling complexities"
+      "environmental_score": 7.2,
+      "key_benefit": "Lower transport emissions",
+      "primary_concern": "Plastic waste management"
     },
     {
       "material_name": "Aluminum Cans",
-      "environmental_score": 7.2,
-      "key_benefit": "High recyclability rate",
-      "primary_concern": "Resource intensive mining"
+      "environmental_score": 6.9,
+      "key_benefit": "High recyclability",
+      "primary_concern": "Bauxite mining impacts"
     },
     {
       "material_name": "PET Bottles (Recycled)",
-      "environmental_score": 6.8,
-      "key_benefit": "Uses recycled content",
-      "primary_concern": "Microplastic pollution"
-    },
-    {
-      "material_name": "Sustainable Cork",
       "environmental_score": 6.5,
-      "key_benefit": "Biodegradable and renewable",
-      "primary_concern": "Forest management practices"
+      "key_benefit": "Lower carbon impact than virgin PET",
+      "primary_concern": "Microplastic pollution"
     }
   ],
   "timestamp": "2025-04-19 21:20:12",

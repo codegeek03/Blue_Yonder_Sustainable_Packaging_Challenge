@@ -5,37 +5,36 @@
       "consumer_metrics": {
         "aesthetic_appeal": {
           "score": 9,
-          "trend_strength": "moderate",
-          "key_insight": "Timeless, evokes quality."
+          "trend_strength": "strong",
+          "key_insight": "Classic and elegant appeal."
         },
         "usability": {
           "score": 7,
-          "trend_strength": "weak",
-          "key_insight": "Heavy, can be fragile."
+          "trend_strength": "moderate",
+          "key_insight": "Standard, known handling."
         },
         "perceived_value": {
           "score": 8,
-          "trend_strength": "moderate",
-          "key_insight": "Associated with premium wines."
+          "trend_strength": "strong",
+          "key_insight": "Implies quality and tradition."
         },
         "eco_consciousness": {
           "score": 6,
           "trend_strength": "moderate",
-          "key_insight": "Recyclable but energy intensive."
+          "key_insight": "Recyclable, but heavy."
         },
         "brand_alignment": {
           "score": 9,
           "trend_strength": "strong",
-          "key_insight": "Consistent with heritage brands."
+          "key_insight": "Suits established brands."
         }
       },
       "overall_consumer_score": 7.8,
       "target_demographics": [
-        "Boomers",
-        "Gen X",
-        "Millennials"
+        "Affluent Consumers",
+        "Traditionalists"
       ],
-      "market_positioning": "Classic and reliable for established brands."
+      "market_positioning": "Premium, classic wines."
     },
     {
       "material_name": "Lightweight Glass Bottles",
@@ -43,73 +42,71 @@
         "aesthetic_appeal": {
           "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Similar look to traditional glass."
+          "key_insight": "Similar to standard glass."
         },
         "usability": {
-          "score": 8,
+          "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Easier to handle and transport."
+          "key_insight": "Easy to pour and store."
         },
         "perceived_value": {
           "score": 7,
-          "trend_strength": "weak",
-          "key_insight": "May be perceived as less premium."
+          "trend_strength": "moderate",
+          "key_insight": "Good value for everyday wines."
         },
         "eco_consciousness": {
           "score": 8,
           "trend_strength": "strong",
-          "key_insight": "Lower carbon footprint, recyclable."
+          "key_insight": "Lower carbon footprint."
         },
         "brand_alignment": {
           "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Suitable for value-driven brands."
+          "key_insight": "Aligns with sustainability."
         }
       },
-      "overall_consumer_score": 7.4,
+      "overall_consumer_score": 7.2,
       "target_demographics": [
-        "Millennials",
-        "Gen Z",
-        "Eco-conscious Consumers"
+        "Environmentally Conscious",
+        "Budget-Minded"
       ],
-      "market_positioning": "Environmentally friendly and affordable option."
+      "market_positioning": "Eco-friendly, value-driven wines."
     },
     {
-      "material_name": "Aluminum Cans",
+      "material_name": "Canned Wine",
       "consumer_metrics": {
         "aesthetic_appeal": {
           "score": 6,
           "trend_strength": "moderate",
-          "key_insight": "Modern, customizable designs."
+          "key_insight": "Modern, portable format."
         },
         "usability": {
           "score": 9,
           "trend_strength": "strong",
-          "key_insight": "Easy to open, portable, single serve."
+          "key_insight": "Convenient and easy to use."
         },
         "perceived_value": {
-          "score": 6,
-          "trend_strength": "weak",
-          "key_insight": "Seen as less sophisticated."
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Good for single servings."
         },
         "eco_consciousness": {
-          "score": 9,
-          "trend_strength": "strong",
-          "key_insight": "Highly recyclable, lightweight."
+          "score": 7,
+          "trend_strength": "moderate",
+          "key_insight": "Highly recyclable material."
         },
         "brand_alignment": {
           "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Fits with innovative, younger brands."
+          "key_insight": "Suits casual brands."
         }
       },
-      "overall_consumer_score": 7.4,
+      "overall_consumer_score": 7.2,
       "target_demographics": [
-        "Gen Z",
         "Millennials",
         "Outdoor Enthusiasts"
       ],
-      "market_positioning": "Convenient and sustainable for casual consumption."
+      "market_positioning": "Convenient, on-the-go wines."
     },
     {
       "material_name": "Bag-in-Box (BIB)",
@@ -117,7 +114,7 @@
         "aesthetic_appeal": {
           "score": 5,
           "trend_strength": "weak",
-          "key_insight": "Box aesthetic limits appeal."
+          "key_insight": "Practical, not visually appealing."
         },
         "usability": {
           "score": 8,
@@ -125,90 +122,90 @@
           "key_insight": "Easy dispensing, longer shelf life."
         },
         "perceived_value": {
-          "score": 7,
-          "trend_strength": "moderate",
-          "key_insight": "Good value for volume."
+          "score": 8,
+          "trend_strength": "strong",
+          "key_insight": "Cost-effective for large volumes."
         },
         "eco_consciousness": {
           "score": 7,
           "trend_strength": "moderate",
-          "key_insight": "Lower carbon footprint, less waste."
+          "key_insight": "Reduced packaging waste."
         },
         "brand_alignment": {
           "score": 6,
-          "trend_strength": "weak",
-          "key_insight": "Suited for value or everyday wine."
+          "trend_strength": "moderate",
+          "key_insight": "Fits value-oriented brands."
         }
       },
-      "overall_consumer_score": 6.6,
+      "overall_consumer_score": 6.8,
       "target_demographics": [
         "Families",
-        "Budget-conscious Consumers"
+        "Party Hosts"
       ],
-      "market_positioning": "Affordable and practical for larger gatherings."
+      "market_positioning": "Value-driven, large-format wines."
     },
     {
       "material_name": "PET Bottles",
       "consumer_metrics": {
         "aesthetic_appeal": {
-          "score": 4,
-          "trend_strength": "weak",
-          "key_insight": "Plastic appearance is unappealing."
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Lightweight and shatterproof."
         },
         "usability": {
           "score": 8,
           "trend_strength": "strong",
-          "key_insight": "Lightweight, shatterproof."
+          "key_insight": "Easy to handle and transport."
         },
         "perceived_value": {
-          "score": 5,
-          "trend_strength": "weak",
-          "key_insight": "Perceived as cheap."
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Seen as lower quality."
         },
         "eco_consciousness": {
           "score": 5,
-          "trend_strength": "moderate",
-          "key_insight": "Recyclable, but often not recycled."
+          "trend_strength": "weak",
+          "key_insight": "Recyclable, but less preferred."
         },
         "brand_alignment": {
-          "score": 5,
-          "trend_strength": "weak",
-          "key_insight": "Used for entry-level wines."
+          "score": 6,
+          "trend_strength": "moderate",
+          "key_insight": "Good for affordable wines."
         }
       },
-      "overall_consumer_score": 5.4,
+      "overall_consumer_score": 6.2,
       "target_demographics": [
-        "Budget-conscious Consumers",
-        "Event organizers"
+        "Budget-Conscious",
+        "Event Planners"
       ],
-      "market_positioning": "Low-cost and convenient, but lacks premium appeal."
+      "market_positioning": "Affordable, practical wines."
     }
   ],
   "consumer_trends": [
     {
       "trend_name": "Sustainability Focus",
       "impact_level": "high",
-      "relevance": "Consumers increasingly demand eco-friendly packaging."
+      "relevance": "Growing demand for eco-friendly packaging."
     },
     {
-      "trend_name": "Convenience and Portability",
+      "trend_name": "Convenience Packaging",
       "impact_level": "medium",
-      "relevance": "Single-serve and easy-to-carry options are gaining popularity."
+      "relevance": "Preference for easy-to-use formats."
     },
     {
       "trend_name": "Premiumization",
       "impact_level": "medium",
-      "relevance": "Upscale packaging enhances perceived wine quality."
+      "relevance": "Desire for upscale presentation."
     },
     {
-      "trend_name": "Minimalist Design",
-      "impact_level": "low",
-      "relevance": "Clean and simple aesthetics are preferred."
+      "trend_name": "Direct-to-consumer",
+      "impact_level": "medium",
+      "relevance": "Changing the packaging requirements"
     },
     {
-      "trend_name": "Transparency & Traceability",
+      "trend_name": "Smaller format",
       "impact_level": "low",
-      "relevance": "Consumers want to know packaging origin."
+      "relevance": "Rise of single serve wines."
     }
   ],
   "timestamp": "2025-04-19 21:34:07",

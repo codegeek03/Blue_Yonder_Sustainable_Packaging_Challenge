@@ -1,34 +1,34 @@
 {
   "top_materials": [
     {
-      "material_name": "Glass Bottles",
+      "material_name": "Glass Bottles (Standard)",
       "logistics_score": 7,
-      "primary_advantage": "Traditional, good stacking",
-      "cost_consideration": "High breakage costs"
+      "primary_advantage": "Good stacking strength",
+      "cost_consideration": "High production cost"
     },
     {
-      "material_name": "Bag-in-Box (BIB)",
-      "logistics_score": 9,
-      "primary_advantage": "Efficient stacking",
-      "cost_consideration": "Lower material cost"
-    },
-    {
-      "material_name": "Plastic Bottles (PET)",
+      "material_name": "Cardboard Boxes",
       "logistics_score": 8,
-      "primary_advantage": "Lightweight, durable",
-      "cost_consideration": "Moderate material cost"
+      "primary_advantage": "Efficient unit stacking",
+      "cost_consideration": "Low material cost"
     },
     {
-      "material_name": "Cans (Aluminum)",
+      "material_name": "Plastic Pallets",
       "logistics_score": 9,
-      "primary_advantage": "Highly durable, stackable",
-      "cost_consideration": "Competitive pricing"
+      "primary_advantage": "Durable, stackable base",
+      "cost_consideration": "Moderate pallet cost"
     },
     {
-      "material_name": "Flexitanks",
+      "material_name": "Void Fill (Air Pillows)",
       "logistics_score": 6,
-      "primary_advantage": "Bulk transport efficiency",
-      "cost_consideration": "High initial setup"
+      "primary_advantage": "Cushions impact damage",
+      "cost_consideration": "Adds to per-unit cost"
+    },
+    {
+      "material_name": "Stretch Wrap",
+      "logistics_score": 7,
+      "primary_advantage": "Secures pallet loads",
+      "cost_consideration": "Minimal material cost"
     }
   ],
   "timestamp": "2025-04-19 21:17:20",

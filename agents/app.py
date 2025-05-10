@@ -271,11 +271,9 @@ def create_gauge_chart(score):
     # Combine the background and foreground charts
     return background + gauge
 
-# Example usage
-score = 0.75  # Score between 0 and 1
-gauge_chart = create_gauge_chart(score)
-gauge_chart.show()
 
+import pandas as pd
+import altair as alt
 
 def create_radar_chart(strengths, trade_offs):
     """Create a radar chart from strengths and trade-offs."""
@@ -297,7 +295,8 @@ def create_radar_chart(strengths, trade_offs):
         weakness_values[dim] = 40  # Default lower score for weaknesses
     
     # For dimensions that have both strength and weakness, average them
-    dimensions = list(dimensions)
+    dimensions = list(dimensions)  # Convert to list to preserve the order
+    
     if not dimensions:
         return None
         
@@ -308,7 +307,7 @@ def create_radar_chart(strengths, trade_offs):
         if dim in strength_values:
             score += strength_values[dim]
             if dim in weakness_values:
-                score = (score + weakness_values[dim]) / 2
+                score = (score + weakness_values[dim]) / 2  # Average for both
         elif dim in weakness_values:
             score = weakness_values[dim]
         
@@ -320,24 +319,24 @@ def create_radar_chart(strengths, trade_offs):
     # Convert to DataFrame
     df = pd.DataFrame(radar_data)
     
-    # Create radar chart
-    theta = alt.Theta(field='Dimension', type='nominal')
-    color = alt.Color(field='Dimension', type='nominal', legend=None)
+    # Normalize the scores (to 0-100 range for radar chart)
+    max_score = df['Score'].max()
+    min_score = df['Score'].min()
+    df['Normalized Score'] = 100 * (df['Score'] - min_score) / (max_score - min_score)
     
-    radar = alt.Chart(df).transform_calculate(
-        x='cos(datum.index * 2 * PI / datum.count) * datum.Score',
-        y='sin(datum.index * 2 * PI / datum.count) * datum.Score'
-    ).mark_line(point=True).encode(
-        x=alt.X('x:Q', scale=alt.Scale(domain=[-100, 100]), axis=None),
-        y=alt.Y('y:Q', scale=alt.Scale(domain=[-100, 100]), axis=None),
-        order='index',
-        color=color
+    # Create the radar chart using Altair
+    radar_chart = alt.Chart(df).mark_line().encode(
+        theta=alt.Theta(field='Dimension', type='nominal'),
+        radius=alt.Radius(field='Normalized Score', type='quantitative'),
+        color='Dimension:N'
     ).properties(
-        width=300,
-        height=300
+        title="Radar Chart: Strengths vs Trade-offs"
     )
     
-    return radar
+    return radar_chart
+    
+import pandas as pd
+import altair as alt
 
 def create_comparison_chart(materials):
     """Create a comparison bar chart for all materials."""
@@ -353,11 +352,11 @@ def create_comparison_chart(materials):
         if isinstance(score, str):
             try:
                 score_value = float(score.replace('%', ''))
-            except:
-                score_value = 0
+            except ValueError:
+                score_value = 0  # Assign 0 if the score cannot be converted
         else:
-            score_value = score
-            
+            score_value = score if isinstance(score, (int, float)) else 0
+        
         data.append({
             "Material": name,
             "Score": score_value
@@ -366,8 +365,10 @@ def create_comparison_chart(materials):
     if not data:
         return None
         
+    # Create DataFrame
     df = pd.DataFrame(data)
     
+    # Generate the bar chart with Altair
     chart = alt.Chart(df).mark_bar().encode(
         x=alt.X('Score:Q', title='Sustainability Score'),
         y=alt.Y('Material:N', title=None, sort='-x'),
@@ -376,10 +377,11 @@ def create_comparison_chart(materials):
     ).properties(
         title='Material Comparison',
         width=600,
-        height=len(data) * 40
+        height=min(len(data) * 40, 500)  # Cap height to 500px for a better experience with large datasets
     )
     
     return chart
+
 
 async def main():
     # Header with animation
