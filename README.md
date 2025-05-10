@@ -17,6 +17,8 @@ flowchart TD
   subgraph Inputs["📥 Inputs"]
     Z["🧠 Input Agent"]
     WikiSearch["🔍Tavily Search Tool"]
+    DuckDuckGo["DuckDuckGoTools()"]
+    Newspaper4kTools["Newspaper4kTools()"]
   end
 
   %% Analyst Group
@@ -63,11 +65,15 @@ flowchart TD
   F --> G
   P --> G
   R --> G
+  WikiSearch --> G
+  DuckDuckGo --> G
+  Newspaper4kTools --> G
 
   %% Orchestration to outputs and explainability
   G --> H
   G --> ResultsDB
   G --> EX
+  
 
   %% Details flow
   H --> Scores & Tradeoffs & RegNotes
