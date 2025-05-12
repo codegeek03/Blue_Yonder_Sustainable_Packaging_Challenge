@@ -19,7 +19,7 @@
   - [3. Analysis Modules](#3-analysis-modules)
   - [4. Orchestration Layer](#4-orchestration-layer)
   - [5. Reporting & Persistence](#5-reporting--persistence)
-- [Installation](#installation)
+- [Installation](#🛠Installation)
 - [Usage](#usage)
 - [Output Structure](#output-structure)
 - [Error Handling & Resilience](#error-handling--resilience)
