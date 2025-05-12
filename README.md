@@ -12,52 +12,48 @@ config:
   layout: dagre
 ---
 flowchart TD
-
   %% Input Sources
   subgraph Inputs["📥 Inputs"]
-    Z["🧠 Input Agent"]
-    WikiSearch["🔍Tavily Search Tool"]
-    DuckDuckGo["DuckDuckGoTools()"]
-    Newspaper4kTools["Newspaper4kTools()"]
+    Z["🧠 Input Agent\n🌐 External Web Search Context"]
+    WikiSearch["🔍Tavily Search Tool\n🌐 Context Grounding"]
+    DuckDuckGo["DuckDuckGoTools()\n🌐 Live Data"]
+    Newspaper4kTools["Newspaper4kTools()\n🌐 Additional Context"]
+    SocialMedia["📱 Social Media Search\n💡 Consumer Behavior Insights"]
   end
-
   %% Analyst Group
-  subgraph Analyst_Group["🧑‍🔬 Analyst Modules"]
-    C(["🌱 Sustainability"])
-    D(["💰 Sourcing Cost"])
-    E(["🚚 Logistics"])
-    F(["🛍️ Consumer Behavior"])
-    R(["⚖️ Regulations"])
-    P(["🏭 Production Cost"])
+  subgraph Analyst_Modules["🧑‍🔬 Analyst Modules"]
+    C(["🌱 Sustainability\n🌐 Contextual Analysis"])
+    D(["💰 Sourcing Cost\n🧮 Calculator Tool"])
+    E(["🚚 Logistics\n🌐 Live Data Sources"])
+    F(["🛍️ Consumer Behavior\n📱 Social Media Insights"])
+    R(["⚖️ Regulations\n🌐 Web Search Grounding"])
+    P(["🏭 Production Cost\n🧮 Efficient Calculation"])
   end
-
   %% Processing Units
   subgraph Processors["⚙️ Processors"]
-    A["🧪 Product Compatibility"]
-    B["📚 MaterialDB"]
-    G["🧩 Orchestrator"]
+    A["🧪 Product Compatibility\n🌐 Contextual Grounding"]
+    B["📚 MaterialDB\n🧠 AGNo Knowledge Tool"]
+    G["🧩 Orchestrator\n🌐 Integrated Context"]
   end
-
   %% Explainability & Reasoning
   subgraph Explainability["🧠 Explainability Agent"]
-    EX["💡 Reasoning & Insights"]
+    EX["💡 Reasoning & Insights\n🌐 Live Data Grounding"]
   end
-
   %% Output Results
   subgraph Outputs["📤 Outputs"]
     H["🏆 Top K Materials"]
     subgraph Details["📄 Details"]
-      Scores["📊 Scores"]
-      Tradeoffs["⚖️ Tradeoffs"]
-      RegNotes["📘 Regulations Summary"]
+      Scores["📊 Scores\n🧮 Calculated Metrics"]
+      Tradeoffs["⚖️ Tradeoffs\n🔍 Comparative Analysis"]
+      RegNotes["📘 Regulations Summary\n🌐 Contextual Insights"]
     end
     ResultsDB["🗂️ Results Database"]
   end
-
   %% Data Flow
   Z --> A
   A --> B
   WikiSearch --> R
+  SocialMedia --> F
   B -- Analyze --> C & D & E & F & R & P
   C --> G
   D --> G
@@ -68,16 +64,14 @@ flowchart TD
   WikiSearch --> G
   DuckDuckGo --> G
   Newspaper4kTools --> G
-
+  SocialMedia --> G
   %% Orchestration to outputs and explainability
   G --> H
   G --> ResultsDB
   G --> EX
   
-
   %% Details flow
   H --> Scores & Tradeoffs & RegNotes
-
   %% Explainability feedback loop
   EX --> G
 
