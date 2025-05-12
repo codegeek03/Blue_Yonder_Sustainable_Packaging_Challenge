@@ -5,15 +5,16 @@ import json
 import os
 from typing import Dict, Any, List
 from datetime import datetime
+from agno.tools.tavily import TavilyTools
+from agno.tools.calculator import CalculatorTools
+from agno.tools.newspaper4k import Newspaper4kTools
+from agno.tools.duckduckgo import DuckDuckGoTools
 
 class LogisticCompatibilityAgent:
     def __init__(self, model_id: str = "gemini-2.0-flash-exp", enable_markdown: bool = True):
         load_dotenv()
 
-        api_key = os.getenv('GOOGLE_API_KEY')
-        if not api_key:
-            raise ValueError("GOOGLE_API_KEY environment variable is not set")
-
+        self.api_key = os.getenv("GOOGLE_API_KEY")
         self.reports_dir = "temp_KB"
         os.makedirs(self.reports_dir, exist_ok=True)
 
@@ -21,24 +22,48 @@ class LogisticCompatibilityAgent:
         self.current_time = "2025-04-19 21:17:20"
 
         self.agent = Agent(
-            model=Gemini(
-                id=model_id,
-                api_key=api_key
-            ),
-            markdown=enable_markdown,
-        )
+    model=Gemini(
+        id="gemini-2.0-flash-exp",
+        search=True,  
+        grounding=False  # Disable grounding to allow tools and reasoning to work
+    ),
+    tools=[
+        TavilyTools(
+            search_depth='advanced',
+            max_tokens=6000,
+            include_answer=True
+        ),
+        DuckDuckGoTools(),
+        Newspaper4kTools()
+    ],
+    description="You are an expert research analyst with exceptional analytical and investigative abilities.",
+    instructions=[
+        "Always begin by thoroughly searching for the most relevant and up-to-date information",
+        "Cross-reference information between Tavily and DuckDuckGo searches for accuracy",
+        "Provide well-structured, comprehensive responses with clear sections",
+        "Include specific facts and details to support your answers",
+        "When appropriate, organize information using bullet points or numbered lists",
+        "If information seems outdated or unclear, explicitly mention this",
+        "Focus on delivering accurate, concise, and actionable insights"
+    ],
+    reasoning=True,  # Enable reasoning 
+    markdown=True,
+    show_tool_calls=True
+)
 
-    async def analyze_top_logistics_materials(self, materials_data: Dict[str, Any]) -> Dict[str, Any]:
+    async def analyze_top_logistics_materials(self, materials_data: Dict[str, Any],input_data: Dict[str, Any]) -> Dict[str, Any]:
         """
         Simplified analysis focusing only on top 5 materials for logistics.
         """
         prompt = f"""
-For the product '{materials_data["product_name"]}', identify the top 5 most logistically viable materials.
+For the product '{materials_data["product_name"]}', identify the top 5 most logistically viable materials at '{input_data['packaging_location']}'
+for '{input_data['units_per_shipment']}' units for shipment.
 Consider only:
 1. Transportation durability (shock resistance, handling stress)
 2. Storage efficiency (stacking, warehouse conditions)
 3. Cost effectiveness (transport and storage costs)
 
+***NOTE: ONLY INCLUDE MATERIALS ORIGINALLY USED FOR PACKAGING PURPOSES; EXCLUDE ACCESSORIES SUCH AS LABELS, PRESERVATIVES, OR PRODUCT ADDITIVES. and DONT HALLUCINATE***
 Return a simple JSON with exactly this structure:
 {{
   "top_materials": [

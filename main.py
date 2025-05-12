@@ -15,17 +15,21 @@ from langgraph.prebuilt import ToolNode
 from agno.agent import Agent
 from agno.models.google import Gemini
 
+# Import all your agents
+from agents.detail_input import ProductInput
+from agents.Product_Analyst import ProductCompatibilityAgent
+from agents.MaterialDB_agent import PackagingMaterialsAgent
+from agents.Material_Analyst import MaterialPropertiesAgent
+from agents.Logistics_Analyst import LogisticCompatibilityAgent
+from agents.Sourcing_Cost_Analyser import ProductionCostAgent
+from agents.Sustainability_Analyst import EnvironmentalImpactAgent
+from agents.Consumer_Behaviour_Analyst import ConsumerBehaviorAgent
+from agents.Orchestrator import OrchestrationAgent
+
+
 # Constants
 CURRENT_USER = "codegeek03"
 CURRENT_TIME = "2025-05-09 21:01:46"  # Updated with provided time
-
-ANALYSIS_WEIGHTS = {
-    "properties": 1.0,
-    "logistics": 0.8,
-    "cost": 1.2,
-    "sustainability": 1.0,
-    "consumer": 1.5
-}
 
 # Set up logging
 logging.basicConfig(
@@ -33,6 +37,9 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+import operator
+from typing import Annotated
 
 # State definition
 class AnalysisState(TypedDict):
@@ -54,172 +61,11 @@ class AnalysisState(TypedDict):
     sustainability_status: Annotated[str, "sustainability_status"]
     consumer_status: Annotated[str, "consumer_status"]
     orchestration_status: Annotated[str, "orchestration_status"]
-    error: Annotated[Optional[str], "error"]
+    error: Annotated[str, operator.add] # This is correctly set to append mode
     user_login: Annotated[str, "user_login"]
     current_time: Annotated[str, "current_time"]
+    
 
-from agno.tools.tavily import TavilyTools
-from agno.tools.calculator import CalculatorTools
-from agno.tools.newspaper4k import Newspaper4kTools
-from agno.tools.duckduckgo import DuckDuckGoTools
-
-class OrchestrationAgent:
-    def __init__(self, current_time: str = CURRENT_TIME, current_user: str = CURRENT_USER):
-        logger.info("Initializing OrchestrationAgent")
-        try:
-            self.current_time = current_time
-            self.user_login = current_user
-
-            load_dotenv()
-            self.api_key = os.getenv("GOOGLE_API_KEY")
-            if not self.api_key:
-                raise ValueError("GOOGLE_API_KEY environment variable is not set")
-
-            self.reports_dir = "temp_KB/reports"
-            os.makedirs(self.reports_dir, exist_ok=True)
-
-
-
-            self.agent = Agent(
-    model=Gemini(
-        id="gemini-2.0-flash-exp",
-        search=True,  
-        grounding=False  # Disable grounding to allow tools and reasoning to work
-    ),
-    tools=[
-        TavilyTools(
-            search_depth='advanced',
-            max_tokens=6000,
-            include_answer=True
-        ),
-        DuckDuckGoTools(),
-        Newspaper4kTools()
-    ],
-    description="You are an expert research analyst with exceptional analytical and investigative abilities.",
-    instructions=[
-        "Always begin by thoroughly searching for the most relevant and up-to-date information",
-        "Cross-reference information between Tavily and DuckDuckGo searches for accuracy",
-        "Provide well-structured, comprehensive responses with clear sections",
-        "Include specific facts and details to support your answers",
-        "When appropriate, organize information using bullet points or numbered lists",
-        "If information seems outdated or unclear, explicitly mention this",
-        "Focus on delivering accurate, concise, and actionable insights"
-    ],
-    reasoning=True,  # Enable reasoning 
-    markdown=True,
-    show_tool_calls=True
-)
-            self.analysis_weights = ANALYSIS_WEIGHTS.copy()
-            logger.info("OrchestrationAgent initialized successfully")
-
-        except Exception as e:
-            logger.error(f"Failed to initialize OrchestrationAgent: {str(e)}", exc_info=True)
-            raise
-
-    async def generate_executive_summary(
-        self,
-        product_name: str,
-        k: int,
-        location: str,
-        material: Dict[str, Any]
-    ) -> Dict[str, Any]:
-        try:
-            mat_name = material["material_name"]
-
-            prompt = f"""
-You are a senior sustainability consultant advising Blue Yonder’s clients on optimal packaging choices. You’ve been given:
-
-• Product: {product_name}
-• One of the top-{k} packaging materials from a data-driven ranking: **{mat_name}**
-• Location: **{location}**
-• A holistic view of this material’s performance across five dimensions: Properties, Logistics, Cost, Sustainability, Consumer Preference.
-
-Your task is to produce a professional, slide-ready JSON report using only the exact schema below (no extra keys or commentary). Be concise, data-driven, and vary all raw values and scores meaningfully for {mat_name} in the context of packaging {product_name} in {location}:
-
-{{
-  "material_name": "{mat_name}",
-  "executive_snapshot": "<one-sentence summary of fit for {product_name} in {location} and provide a wikipedia link to the {mat_name} for extende read>",
-  "composite_score": {{
-    "metrics": {{
-      "carbon_footprint": {{ "value": "<e.g. 3.7 kg CO₂/kg>", "score": <0–100> }},
-      "recyclability":    {{ "value": "<e.g. 85%>",           "score": <0–100> }},
-      "biodegradability": {{ "value": "<e.g. 12 months>",      "score": <0–100> }},
-      "resource_efficiency": {{ "value": "<e.g. 1.2 MJ/kg>",   "score": <0–100> }},
-      "toxicity":         {{ "value": "<e.g. Low>",            "score": <0–100> }}
-    }},
-    "composite": <0–100>
-  }},
-  "strengths": [
-    {{
-      "dimension": "<name>",
-      "insight": "<why this is strategically valuable for {product_name}>"
-    }}
-  ],
-  "trade_offs": [
-    {{
-      "dimension": "<weaker area>",
-      "mitigation": "<how strengths compensate for weaknesses in the context of {product_name}>"
-    }}
-  ],
-  "supply_chain_implications": {{
-    "costs": "<narrative on manufacturing and handling costs for {product_name} in {location}>",
-    "logistics": "<narrative on weight, volume, transport efficiency in {location}>",
-    "regulatory": "<narrative referencing relevant {location}-specific regulations for packaging {product_name} with {mat_name}>",
-    "consumer": "<narrative on consumer perceptions of {mat_name} for {product_name}>"
-  }},
-  "consulting_recommendation": {{
-    "advice": "<actionable next steps for piloting or scaling {mat_name} use for {product_name}>",
-    "sustainability_uplift_percent": <projected % uplift for {product_name} sustainability>,
-    "cost_delta_percent": <projected % cost change for {product_name}>
-  }},
-  "regulatory_context": "<Legal excerpt from the most relevant regulation in {location} for {mat_name} and provide relevant links from the web-search>"
-}}
-
-DON'T HallUCINATE."""
-
-            response = await self.agent.arun(prompt)
-            return self._process_response(response.content)
-
-        except Exception as e:
-                logger.error(f"Error generating executive summary: {str(e)}", exc_info=True)
-                return {"error": str(e)}
-
-    def _process_response(self, response_text: str) -> Dict[str, Any]:
-        try:
-            response_text = response_text.strip()
-            if response_text.startswith("```json"):
-                response_text = response_text[7:-3].strip()
-            elif response_text.startswith("```"):
-                response_text = response_text[3:-3].strip()
-            return json.loads(response_text)
-        except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse response JSON: {str(e)}")
-            raise ValueError(f"Invalid JSON response: {str(e)}")
-
-    def _save_report(self, data: Dict[str, Any], report_type: str) -> str:
-        try:
-            timestamp = self.current_time.replace(" ", "_").replace(":", "-")
-            filename = f"{report_type}_{timestamp}.json"
-            filepath = os.path.join(self.reports_dir, filename)
-
-            with open(filepath, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=2)
-
-            logger.info(f"Saved {report_type} report to: {filepath}")
-            return filepath
-        except Exception as e:
-            logger.error(f"Failed to save report: {str(e)}", exc_info=True)
-            raise
-
-# Import all your agents
-from agents.detail_input import ProductInput
-from agents.Product_Analyst import ProductCompatibilityAgent
-from agents.MaterialDB_agent import PackagingMaterialsAgent
-from agents.Material_Analyst import MaterialPropertiesAgent
-from agents.Logistics_Analyst import LogisticCompatibilityAgent
-from agents.Sourcing_Cost_Analyser import ProductionCostAgent
-from agents.Sustainability_Analyst import EnvironmentalImpactAgent
-from agents.Consumer_Behaviour_Analyst import ConsumerBehaviorAgent
 
 # Node definitions
 async def process_input(state: AnalysisState) -> Dict:
@@ -270,7 +116,7 @@ async def query_material_database(state: AnalysisState) -> Dict:
     try:
         if state.get("error"): return {}
         agent = PackagingMaterialsAgent(CURRENT_USER, CURRENT_TIME)
-        result = await agent.find_materials_by_criteria(state["compatibility_analysis"])
+        result = await agent.find_materials_by_criteria(state["compatibility_analysis"],state["input_data"])
         if not result.get("materials"):
             raise ValueError("No compatible materials found")
         return {
@@ -308,7 +154,7 @@ async def analyze_logistics(state: AnalysisState) -> Dict:
     if state.get("error"): return {}
     try:
         agent = LogisticCompatibilityAgent()
-        result = await agent.analyze_top_logistics_materials(state["material_database"])
+        result = await agent.analyze_top_logistics_materials(state["material_database"],state["input_data"])
         return {
             "logistics_analysis": result,
             "logistics_status": "completed"
@@ -326,7 +172,7 @@ async def analyze_costs(state: AnalysisState) -> Dict:
     if state.get("error"): return {}
     try:
         agent = ProductionCostAgent()
-        result = await agent.analyze_production_costs(state["material_database"])
+        result = await agent.analyze_production_costs(state["material_database"],state["input_data"])
         return {
             "cost_analysis": result,
             "costs_status": "completed"
@@ -465,7 +311,15 @@ async def orchestrate_results(state: AnalysisState) -> Dict:
     try:
         orchestrator = OrchestrationAgent(CURRENT_TIME, CURRENT_USER)
 
-        # Process materials
+        ANALYSIS_WEIGHTS = {
+    "properties": state["input_data"].get("properties_weight", 0.1),
+    "logistics": state["input_data"].get("logistics_weight", 0.1),  
+    "cost": state["input_data"].get("cost_weight", 0.1),
+    "sustainability": state["input_data"].get("sustainability_weight", 0.4),
+    "consumer": state["input_data"].get("consumer_weight", 0.2)
+}
+
+  
         materials = state["material_database"].get("materials", {})
         all_materials = []
         for crit_list in materials.values():
@@ -523,7 +377,7 @@ async def orchestrate_results(state: AnalysisState) -> Dict:
         seen = set()
         top_materials = []
         for m in scored_materials:
-            if m["material_name"] not in seen:
+            if m["material_name"] not in seen :
                 top_materials.append(m)
                 seen.add(m["material_name"])
             if len(top_materials) == 5:
@@ -783,13 +637,13 @@ def print_results(result: Dict[str, Any], thread_id: str):
 
             if rec:
                 advice = rec.get("advice","")
-                uplift = rec.get("sustainability_uplift_percent","N/A")
-                delta  = rec.get("cost_delta_percent","N/A")
+                #uplift = rec.get("sustainability_uplift_percent","N/A")
+                #delta  = rec.get("cost_delta_percent","N/A")
 
                 print("\n📈 Consulting Recommendation:")
-                print(f"  • Advice                   : {advice}")
-                print(f"  • Sustainability Uplift %  : {uplift}")
-                print(f"  • Cost Delta %            : {delta}")
+                #print(f"  • Advice                   : {advice}")
+                #print(f"  • Sustainability Uplift %  : {uplift}")
+                #print(f"  • Cost Delta %            : {delta}")
 
 
 

@@ -6,6 +6,11 @@ from datetime import datetime
 from agno.agent import Agent
 from agno.models.google import Gemini
 from dotenv import load_dotenv
+import asyncio
+from agno.tools.tavily import TavilyTools
+from agno.tools.calculator import CalculatorTools
+from agno.tools.newspaper4k import Newspaper4kTools
+from agno.tools.duckduckgo import DuckDuckGoTools
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, 
@@ -46,12 +51,34 @@ class ProductCompatibilityAgent:
 
             # Initialize the agent with the Gemini model
             self.agent = Agent(
-                model=Gemini(
-                    id=model_id,
-                    api_key=self.api_key
-                ),
-                markdown=enable_markdown,
-            )
+    model=Gemini(
+        id="gemini-2.0-flash-exp",
+        search=True,  
+        grounding=False  # Disable grounding to allow tools and reasoning to work
+    ),
+    tools=[
+        TavilyTools(
+            search_depth='advanced',
+            max_tokens=6000,
+            include_answer=True
+        ),
+        DuckDuckGoTools(),
+        Newspaper4kTools()
+    ],
+    description="You are an expert research analyst with exceptional analytical and investigative abilities.",
+    instructions=[
+        "Always begin by thoroughly searching for the most relevant and up-to-date information",
+        "Cross-reference information between Tavily and DuckDuckGo searches for accuracy",
+        "Provide well-structured, comprehensive responses with clear sections",
+        "Include specific facts and details to support your answers",
+        "When appropriate, organize information using bullet points or numbered lists",
+        "If information seems outdated or unclear, explicitly mention this",
+        "Focus on delivering accurate, concise, and actionable insights"
+    ],
+    reasoning=True,  # Enable reasoning 
+    markdown=True,
+    show_tool_calls=True
+)
 
             logger.info("ProductCompatibilityAgent initialized successfully")
 
@@ -132,6 +159,9 @@ class ProductCompatibilityAgent:
             # Add metadata
             analysis.update({
                 'product_name': product_name,
+                'packaging_location': product_inputs.get('packaging_location', 'Unknown'),
+                'budget_constraint': product_inputs.get('budget_constraint', 0),
+                'units_per_shipment': product_inputs.get('units_per_shipment', 0),
                 'analysis_timestamp': self.current_timestamp,
                 'user_login': self.user_login,
                 'status': 'completed',
@@ -181,6 +211,9 @@ Provide a strict JSON response with one-word descriptions:
     }},
     "product_name": "{product_name}",
     "analysis_timestamp": "{self.current_timestamp}"
+    "packaging_location": "{product_inputs.get('packaging_location')}",
+    "units_per_shipment": {product_inputs.get('units_per_shipment')},
+    "budget_constraint": {product_inputs.get('budget_constraint')}
 }}
 """
 

@@ -7,6 +7,9 @@ import pandas as pd
 import altair as alt
 from streamlit_lottie import st_lottie
 import main as orchestrator
+import pandas as pd
+import matplotlib.pyplot as plt
+
 
 # Page configuration
 st.set_page_config(
@@ -238,6 +241,18 @@ st.markdown("""
         background-color: white !important;
         border-bottom: 4px solid #2563eb !important;
     }
+    
+    .stSlider > div[data-baseweb="slider"] {
+        margin-bottom: 25px;
+    }
+    .stTabs [data-testid="stMarkdownContainer"] {
+        font-weight: 600;
+    }
+    .metric-container {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -392,6 +407,311 @@ def create_sustainability_comparison_table(materials):
     
     return pd.DataFrame(table_data)
 
+def get_composite(material):
+    comp_dict = material.get('summary', {}).get('composite_score', {})
+    if isinstance(comp_dict, dict):
+        return comp_dict.get('composite', 0)
+    return comp_dict or 0
+
+
+def get_metric_score(material, metric_key):
+    return material.get('summary', {})\
+        .get('composite_score', {})\
+        .get('metrics', {})\
+        .get(metric_key, {})\
+        .get('score', 0)
+
+# Chart functions with safe fetching
+
+def plot_composite_scores(materials):
+    names = [m.get('material_name', 'Unknown') for m in materials]
+    scores = [get_composite(m) for m in materials]
+    fig, ax = plt.subplots()
+    ax.bar(names, scores)
+    ax.set_xlabel('Material')
+    ax.set_ylabel('Composite Score')
+    ax.set_title('Composite Sustainability Scores')
+    plt.xticks(rotation=45, ha='right')
+    return fig
+
+
+def plot_metric_comparison(materials, metric_key):
+    names = [m.get('material_name', 'Unknown') for m in materials]
+    scores = [get_metric_score(m, metric_key) for m in materials]
+    fig, ax = plt.subplots()
+    ax.bar(names, scores)
+    ax.set_xlabel('Material')
+    ax.set_ylabel(f'{metric_key.replace("_", " ").title()} Score')
+    ax.set_title(f'{metric_key.replace("_", " ").title()} Comparison')
+    plt.xticks(rotation=45, ha='right')
+    return fig
+
+
+def plot_grouped_metrics(materials):
+    # Get metric keys from first valid material
+    first_metrics = materials[0].get('summary', {}).get('composite_score', {}).get('metrics', {})
+    metric_keys = list(first_metrics.keys())
+    names = [m.get('material_name', 'Unknown') for m in materials]
+    num_materials = len(materials)
+    indices = np.arange(len(metric_keys))
+    width = 0.8 / max(num_materials, 1)
+    fig, ax = plt.subplots()
+    for i, mat in enumerate(materials):
+        scores = [get_metric_score(mat, k) for k in metric_keys]
+        ax.bar(indices + i * width, scores, width=width, label=mat.get('material_name', 'Unknown'))
+    ax.set_xlabel('Metric')
+    ax.set_ylabel('Score')
+    ax.set_title('Grouped Metric Comparison')
+    ax.set_xticks(indices + width * (num_materials-1) / 2)
+    ax.set_xticklabels([k.replace('_', ' ').title() for k in metric_keys], rotation=45, ha='right')
+    ax.legend()
+    return fig
+
+def normalize_score(score: float) -> float:
+    """Normalize score to 0-1 range."""
+    # Assuming scores are on a 0-100 scale
+    return min(max(score / 100, 0), 1)
+
+
+from typing import List, Dict, Any, Optional, Union
+def normalize_score(score: float) -> float:
+    """Normalize score to 0-1 range."""
+    # Assuming scores are on a 0-100 scale
+    return min(max(score / 100, 0), 1)
+
+def create_radar_charts(materials: List[Dict], charts_per_row: int = 3) -> alt.Chart:
+    """Create multiple radar charts side by side.
+    
+    Args:
+        materials: List of material dictionaries containing metrics
+        charts_per_row: Number of charts to display in a single row
+        
+    Returns:
+        An Altair chart with multiple radar charts arranged horizontally
+    """
+    all_charts = []
+    
+    for material in materials:
+        chart = create_single_radar_chart(material)
+        if chart:
+            all_charts.append(chart)
+    
+    if not all_charts:
+        return None
+    
+    # Arrange charts in rows
+    rows = []
+    for i in range(0, len(all_charts), charts_per_row):
+        row_charts = all_charts[i:i+charts_per_row]
+        rows.append(alt.hconcat(*row_charts))
+    
+    # Combine rows vertically
+    final_chart = alt.vconcat(*rows)
+    
+    return final_chart
+
+def create_single_radar_chart(material: Dict) -> Optional[alt.Chart]:
+    """Create a radar chart for visualizing multiple metrics of a material."""
+    metrics = material.get('summary', {}).get('composite_score', {}).get('metrics', {})
+    material_name = material.get('material_name', 'Unknown Material')
+
+    if not metrics:
+        return None
+
+    # Extract metric names and scores
+    labels = []
+    scores = []
+    
+    for key, data in metrics.items():
+        # Format key for display
+        label = key.replace('_', ' ').title()
+        labels.append(label)
+        scores.append(data.get('score', 0))
+
+    # Handle case with fewer than 3 metrics
+    if len(labels) < 3:
+        return None
+
+    # Calculate angles for radar points
+    angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
+    
+    # Prepare data: calculate points on radar for each metric
+    radar_data = []
+    for i, (label, score, angle) in enumerate(zip(labels, scores, angles)):
+        # Convert score to 0-1 range and scale to fit radar
+        norm_score = normalize_score(score)
+        # Convert to cartesian coordinates
+        x = norm_score * np.cos(angle)
+        y = norm_score * np.sin(angle)
+        radar_data.append({
+            'Metric': label,
+            'Score': score,
+            'x': x,
+            'y': y,
+            'angle': angle,
+            'order': i
+        })
+    
+    # Create web/grid lines at different radii
+    grid_data = []
+    grid_labels = ['25%', '50%', '75%', '100%']
+    for radius_pct in [0.25, 0.5, 0.75, 1.0]:
+        for angle in np.linspace(0, 2*np.pi, 60, endpoint=False):
+            x = radius_pct * np.cos(angle)
+            y = radius_pct * np.sin(angle)
+            grid_data.append({
+                'radius': radius_pct,
+                'radius_label': f"{int(radius_pct*100)}%",
+                'angle': angle,
+                'x': x,
+                'y': y
+            })
+    
+    # Axis lines data
+    axes_data = []
+    for i, angle in enumerate(angles):
+        axes_data.append({
+            'x1': 0,
+            'y1': 0,
+            'x2': np.cos(angle),
+            'y2': np.sin(angle),
+            'angle': angle,
+            'label': labels[i % len(labels)],
+            'order': i
+        })
+    
+    # Create radar polygon data with an additional point to close the polygon
+    polygon_data = []
+    for i, (score, angle) in enumerate(zip(scores, angles)):
+        norm_score = normalize_score(score)
+        polygon_data.append({
+            'x': norm_score * np.cos(angle),
+            'y': norm_score * np.sin(angle),
+            'order': i
+        })
+    
+    # Add the first point again to close the polygon if there are points
+    if polygon_data:
+        first_point = polygon_data[0].copy()
+        first_point['order'] = len(polygon_data)
+        polygon_data.append(first_point)
+    
+    # Convert to DataFrames
+    radar_df = pd.DataFrame(radar_data)
+    grid_df = pd.DataFrame(grid_data)
+    axes_df = pd.DataFrame(axes_data)
+    polygon_df = pd.DataFrame(polygon_data)
+    
+    # Base chart - ensure perfect circular shape by setting equal domains and using square aspect ratio
+    chart_size = 250  # Fixed size for both width and height to ensure circular shape
+    
+    base = alt.Chart().encode(
+        x=alt.X('x:Q', scale=alt.Scale(domain=[-1.1, 1.1]), axis=None),
+        y=alt.Y('y:Q', scale=alt.Scale(domain=[-1.1, 1.1]), axis=None)
+    ).properties(
+        width=chart_size,
+        height=chart_size
+    )
+    
+    # Create circular grid
+    grids = alt.Chart(grid_df).mark_line(
+        color='lightgray', 
+        strokeDash=[2, 2],
+        strokeWidth=0.5
+    ).encode(
+        x='x:Q',
+        y='y:Q',
+        detail='radius:N'
+    )
+    
+    # Grid labels (showing percentages)
+    grid_labels_chart = alt.Chart(pd.DataFrame({
+        'x': [0, 0, 0, 0],
+        'y': [0.25, 0.5, 0.75, 1.0],
+        'label': ['25%', '50%', '75%', '100%']
+    })).mark_text(
+        align='left',
+        baseline='middle',
+        dx=5,
+        fontSize=10,
+        color='gray'
+    ).encode(
+        x='x:Q',
+        y='y:Q',
+        text='label:N'
+    )
+    
+    # Create axes/spokes
+    axes = alt.Chart(axes_df).mark_line(
+        color='gray',
+        strokeWidth=0.5
+    ).encode(
+        x='x1:Q',
+        y='y1:Q',
+        x2='x2:Q',
+        y2='y2:Q'
+    )
+    
+    # Create axis labels - pre-calculate positions instead of using lambdas
+    # Add label position columns to the dataframe
+    axes_df['label_dx'] = 15 * np.cos(axes_df['angle'])
+    axes_df['label_dy'] = 15 * np.sin(axes_df['angle'])
+    
+    axis_labels = alt.Chart(axes_df).mark_text(
+        align='center',
+        baseline='middle',
+        fontSize=11,
+        fontWeight='bold'
+    ).encode(
+        x='x2:Q',
+        y='y2:Q',
+        text='label:N',
+        color=alt.value('#333'),
+        dx='label_dx:Q',
+        dy='label_dy:Q'
+    )
+    
+    # Create radar polygon
+    polygon = alt.Chart(polygon_df).mark_area(
+        color='steelblue',
+        opacity=0.4,
+        line=True,
+        strokeWidth=2
+    ).encode(
+        x='x:Q',
+        y='y:Q',
+        order='order:O'  # Ensure points connect in order
+    )
+    
+    # Create points with tooltips
+    points = alt.Chart(radar_df).mark_circle(
+        color='steelblue',
+        opacity=1,
+        size=80
+    ).encode(
+        x='x:Q',
+        y='y:Q',
+        tooltip=['Metric:N', alt.Tooltip('Score:Q', format='.1f')]
+    )
+    
+    # Combine everything
+    radar_chart = (base + grids + grid_labels_chart + axes + axis_labels + polygon + points).properties(
+        title=alt.TitleParams(
+            text=material_name,
+            fontSize=14,
+            fontWeight='bold',
+            subtitle='Sustainability Metrics'
+        )
+    )
+    
+    # Ensure the chart has a proper aspect ratio for circular display
+    final_chart = radar_chart.configure_view(
+        strokeWidth=0
+    )
+    
+    return final_chart
+
+
 async def main():
     # Header with animation
     st.markdown('<h1 class="main-title">📦 Packaging Material Analysis</h1>', unsafe_allow_html=True)
@@ -408,21 +728,19 @@ async def main():
     st.markdown('<h3 class="form-header">🔍 Enter Product Details</h3>', unsafe_allow_html=True)
     
     with st.form("product_details"):
-        tab1, tab2 = st.tabs(["📋 Basic Details", "📐 Dimensions & Budget"])
-        
+        tab1, tab2, tab3 = st.tabs(["📋 Basic Details", "📐 Dimensions & Budget", "⚖️ Analysis Weights"])
+
         with tab1:
             product_name = st.text_input("Product Name", placeholder="e.g., Eggs")
             packaging_location = st.text_input("Packaging Location", placeholder="e.g., Kolkata")
             units = st.number_input("Units per Shipment", min_value=1, value=100)
-            
-            # Additional guidance
             st.info("📝 Enter accurate location details for region-specific packaging recommendations.")
-            
+
         with tab2:
             budget_col, _ = st.columns([1, 1])
             with budget_col:
                 budget = st.number_input("Budget per Unit (USD)", min_value=0.0, value=10.0, format="%.2f")
-            
+
             st.markdown("##### Product Dimensions")
             col1, col2, col3 = st.columns(3)
             with col1:
@@ -431,36 +749,62 @@ async def main():
                 width = st.number_input("Width (cm)", min_value=0.1, value=4.0)
             with col3:
                 height = st.number_input("Height (cm)", min_value=0.1, value=5.0)
-                
-            # Show volume calculation in real-time
+
             volume = length * width * height
-            st.metric("Calculated Volume", f"{volume:.2f} cm³")
+            st.markdown(f"""<div class="metric-container">
+                <b>Calculated Volume:</b> {volume:.2f} cm³
+            </div>""", unsafe_allow_html=True)
+
+        with tab3:
+            st.markdown("#### Assign Analysis Weights (must total 1.0)")
+            weight_keys = ["properties", "logistics", "cost", "sustainability", "consumer"]
+            default_weights = {
+                "properties": 0.1,
+                "logistics": 0.1,
+                "cost": 0.1,
+                "sustainability": 0.4,
+                "consumer": 0.2
+            }
+            analysis_weights = {}
+            total_weight = 0.0
+
+            for key in weight_keys:
+                value = st.slider(f"{key.capitalize()} Weight", 0.0, 1.0, default_weights[key], 0.01)
+                analysis_weights[key] = round(value, 2)
+                total_weight += value
+
+            st.markdown(f"**Total Weight: {total_weight:.2f}**")
 
         submitted = st.form_submit_button("🔍 Analyze Materials")
 
-    if submitted:
-        # Prepare input data
-        input_data = {
-            "product_name": product_name,
-            "units_per_shipment": units,
-            "dimensions": {"length": length, "width": width, "height": height},
-            "packaging_location": packaging_location,
-            "budget_constraint": budget,
-            "metadata": {
-                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                "user": "codegeek03",
-                "volume": length * width * height
-            }
-        }
+        if submitted:
+                input_data = {
+                    "product_name": product_name,
+                    "units_per_shipment": units,
+                    "dimensions": {"length": length, "width": width, "height": height},
+                    "packaging_location": packaging_location,
+                    "budget_constraint": budget,
+                    "analysis_weights": analysis_weights,
+                    "metadata": {
+                        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                        "user": "codegeek03",
+                        "volume": volume
+                    }
+                }
 
-        # Initialize analysis
-        now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
-        thread_id = f"{orchestrator.CURRENT_USER}-{int(datetime.now(timezone.utc).timestamp())}"
-        initial_state = {
-            "input_data": input_data,
-            "user_login": orchestrator.CURRENT_USER,
-            "current_time": now,
-        }
+        try:
+            now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+            thread_id = f"{orchestrator.CURRENT_USER}-{int(datetime.now(timezone.utc).timestamp())}"
+
+            initial_state = {
+                "input_data": input_data,
+                "user_login": input_data["metadata"]["user"],
+                "current_time": now,
+            }
+        
+        except Exception as e:
+            st.error(f"Input Data First: {e}")
+            return
 
         # Show enhanced progress
         progress_container = st.container()
@@ -524,8 +868,16 @@ async def main():
                     st_lottie(lottie_success, height=150, key="success_animation")
             
             # Dashboard layout
-            st.markdown("## 📊 Material Analysis Results")
+            st.markdown("## 📊 Material Sustainability Analysis Results")
+            # Streamlit App Layout
+            st.title('Sustainability Comparison Dashboard')
+            materials = result.get("final_results", {}).get("material_summaries", [])
             
+            #st.markdown('### 📊 Material-wise Radar Charts')
+            
+            #st.altair_chart(create_radar_charts(materials), use_container_width=False)
+            
+                
             material_summaries = result.get("final_results", {}).get("material_summaries", [])
             
             if material_summaries:
@@ -567,47 +919,7 @@ async def main():
                     else:
                         best_score = comp_score
                     
-                    # Cost effective option - adjusted for new structure
-                    def get_cost_delta(material):
-                        rec = material.get("summary", {}).get("consulting_recommendation", {})
-                        if not rec:
-                            rec = material.get("summary", {}).get("recommendation", {})
-                        delta = rec.get("cost_delta_percent", 0)
-                        if delta == "N/A":
-                            return 0
-                        try:
-                            return float(str(delta).replace('%', '') or 0)
-                        except:
-                            return 0
                     
-                    cost_effective = min(material_summaries, key=get_cost_delta)
-                    cost_name = cost_effective.get("material_name", "Unknown")
-                    
-                    rec = cost_effective.get("summary", {}).get("consulting_recommendation", {})
-                    if not rec:
-                        rec = cost_effective.get("summary", {}).get("recommendation", {})
-                    cost_delta = rec.get("cost_delta_percent", "N/A")
-                    
-                    # Most sustainable gain - adjusted for new structure
-                    def get_sustainability_gain(material):
-                        rec = material.get("summary", {}).get("consulting_recommendation", {})
-                        if not rec:
-                            rec = material.get("summary", {}).get("recommendation", {})
-                        gain = rec.get("sustainability_uplift_percent", rec.get("sustainability_gain_percent", 0))
-                        if gain == "N/A":
-                            return 0
-                        try:
-                            return float(str(gain).replace('%', '') or 0)
-                        except:
-                            return 0
-                    
-                    sustainable = max(material_summaries, key=get_sustainability_gain)
-                    sustainable_name = sustainable.get("material_name", "Unknown")
-                    
-                    rec = sustainable.get("summary", {}).get("consulting_recommendation", {})
-                    if not rec:
-                        rec = sustainable.get("summary", {}).get("recommendation", {})
-                    sustainable_gain = rec.get("sustainability_uplift_percent", rec.get("sustainability_gain_percent", "N/A"))
                     
                     with metric_cols[0]:
                         st.markdown('<div class="metric-card">', unsafe_allow_html=True)
@@ -616,19 +928,7 @@ async def main():
                         st.markdown(f'<div>Score: {best_score}</div>', unsafe_allow_html=True)
                         st.markdown('</div>', unsafe_allow_html=True)
                         
-                    with metric_cols[1]:
-                        st.markdown('<div class="metric-card">', unsafe_allow_html=True)
-                        st.markdown('<div class="metric-label">Most Cost-Effective</div>', unsafe_allow_html=True)
-                        st.markdown(f'<div class="metric-value">{cost_name}</div>', unsafe_allow_html=True)
-                        st.markdown(f'<div>Cost Δ: {cost_delta}</div>', unsafe_allow_html=True)
-                        st.markdown('</div>', unsafe_allow_html=True)
-                        
-                    with metric_cols[2]:
-                        st.markdown('<div class="metric-card">', unsafe_allow_html=True)
-                        st.markdown('<div class="metric-label">Highest Sustainability Gain</div>', unsafe_allow_html=True)
-                        st.markdown(f'<div class="metric-value">{sustainable_name}</div>', unsafe_allow_html=True)
-                        st.markdown(f'<div>Gain: {sustainable_gain}</div>', unsafe_allow_html=True)
-                        st.markdown('</div>', unsafe_allow_html=True)
+                    
                 
                 # Display detailed material analysis
                 for i, entry in enumerate(material_summaries[:5], 1):
@@ -665,14 +965,6 @@ async def main():
                         just = rec.get("advice", "")
                     else:
                         just = rec.get("justification", "")
-                    
-                    # Handle uplift/gain terminology changes
-                    if "sustainability_uplift_percent" in rec:
-                        gain = rec.get("sustainability_uplift_percent", "N/A")
-                    else:
-                        gain = rec.get("sustainability_gain_percent", "N/A")
-                    
-                    delta = rec.get("cost_delta_percent", "N/A")
                     
                     # Score color
                     score_color = get_score_color(score)
@@ -783,44 +1075,12 @@ async def main():
                             """, unsafe_allow_html=True)
 
                     with tabs[3]:  # Recommendation tab
-                        # Calculate colors based on gain and delta
-                        try:
-                            gain_val = float(str(gain).replace('%', '')) if gain not in (None, "N/A") else 0
-                        except:
-                            gain_val = 0
-                        uplift_color = "#15803d" if gain_val > 0 else "#dc2626"
-
-                        try:
-                            delta_val = float(str(delta).replace('%', '')) if delta not in (None, "N/A") else 0
-                        except:
-                            delta_val = 0
-                        cost_color = "#dc2626" if delta_val > 0 else "#15803d"
 
                         st.markdown('<div class="detail-section use-case-item">', unsafe_allow_html=True)
                         st.markdown('<div class="section-title">🎯 Strategic Recommendation</div>', unsafe_allow_html=True)
                         st.markdown(f"{just}", unsafe_allow_html=True)
                         st.markdown('</div>', unsafe_allow_html=True)
 
-                        # Uplift and cost delta
-                        rec_cols = st.columns([1,1])
-                        with rec_cols[0]:
-                            st.markdown(f"""
-                            <div class="detail-section">
-                                <div class="section-title">♻️ Sustainability Impact</div>
-                                <p style="font-size:1.5rem; font-weight:bold; color:{uplift_color};">
-                                    {'+' if gain_val > 0 else ''}{gain}%
-                                </p>
-                            </div>
-                            """, unsafe_allow_html=True)
-                        with rec_cols[1]:
-                            st.markdown(f"""
-                            <div class="detail-section">
-                                <div class="section-title">💵 Cost Impact</div>
-                                <p style="font-size:1.5rem; font-weight:bold; color:{cost_color};">
-                                    {'+' if delta_val > 0 else ''}{delta}%
-                                </p>
-                            </div>
-                            """, unsafe_allow_html=True)
 
     # Footer and session info
     st.markdown("""

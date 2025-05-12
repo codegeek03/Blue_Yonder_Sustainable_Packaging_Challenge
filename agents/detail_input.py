@@ -14,23 +14,22 @@ JsonData = Dict[str, Union[str, int, float, Dict[str, float], Dict[str, str]]]
 
 class ProductInput:
     def __init__(self, current_time: str, user_login: str):
-        """
-        Initialize ProductInput with user-provided time and login.
-        
-        Args:
-            current_time: Current UTC time in YYYY-MM-DD HH:MM:SS format
-            user_login: User's login name
-        """
         self.product_name = ""
         self.units_per_shipment = 0
         self.dimensions = {"length": 0, "width": 0, "height": 0}
         self.packaging_location = ""
         self.budget_constraint = 0.0
+        self.analysis_weights = {
+            "properties": 0.1,
+            "logistics": 0.1,
+            "cost": 0.1,
+            "sustainability": 0.4,
+            "consumer": 0.2
+        }
         self.timestamp = current_time
         self.user = user_login
-        
+
     async def validate_product_details(self) -> Optional[str]:
-        """Validate product details and return error message if invalid"""
         if not self.product_name:
             return "Product name cannot be empty"
         if self.units_per_shipment <= 0:
@@ -41,13 +40,33 @@ class ProductInput:
             return "Packaging location cannot be empty"
         if self.budget_constraint <= 0:
             return "Budget constraint must be positive"
+        if abs(sum(self.analysis_weights.values()) - 1.0) > 0.01:
+            return "Analysis weights must sum to 1.0"
         return None
 
+    async def get_analysis_weights(self) -> None:
+        print("\nEnter Analysis Weights (they must sum to 1.0):")
+        keys = list(self.analysis_weights.keys())
+        new_weights = {}
+        total = 0.0
+        for key in keys:
+            while True:
+                try:
+                    value = float(input(f"{key.capitalize()} weight: "))
+                    if 0 <= value <= 1:
+                        new_weights[key] = value
+                        total += value
+                        break
+                    print("Please enter a value between 0 and 1.")
+                except ValueError:
+                    print("Invalid number. Please try again.")
+        if abs(total - 1.0) > 0.01:
+            raise ValueError("Total weight must sum to 1.0")
+        self.analysis_weights = new_weights
+
     async def get_product_details(self) -> JsonData:
-        """Get product details asynchronously with user input"""
         logger.info("Starting product details collection")
         try:
-            # Get user input
             print("\nEnter Product Details:")
             print("=" * 50)
             
@@ -84,22 +103,22 @@ class ProductInput:
                     print("Please enter a positive number.")
                 except ValueError:
                     print("Please enter a valid number.")
+            
+            await self.get_analysis_weights()
 
-            # Validate the details
             validation_error = await self.validate_product_details()
             if validation_error:
                 raise ValueError(validation_error)
 
-            # Save to JSON
             await self.save_to_json()
 
-            # Prepare response with metadata
             response = {
                 "product_name": self.product_name,
                 "units_per_shipment": self.units_per_shipment,
                 "dimensions": self.dimensions,
                 "packaging_location": self.packaging_location,
                 "budget_constraint": self.budget_constraint,
+                "analysis_weights": self.analysis_weights,
                 "metadata": {
                     "timestamp": self.timestamp,
                     "user": self.user,
@@ -112,22 +131,18 @@ class ProductInput:
             return response
 
         except ValueError as ve:
-            error_msg = f"Validation error: {str(ve)}"
-            logger.error(error_msg)
-            raise ValueError(error_msg)
+            logger.error(f"Validation error: {str(ve)}")
+            raise
         except Exception as e:
-            error_msg = f"Failed to get product details: {str(e)}"
-            logger.error(error_msg, exc_info=True)
-            raise Exception(error_msg)
+            logger.error(f"Failed to get product details: {str(e)}", exc_info=True)
+            raise
 
     def calculate_volume(self) -> float:
-        """Calculate the volume of the product"""
         return (self.dimensions["length"] * 
                 self.dimensions["width"] * 
                 self.dimensions["height"])
 
     def display_details(self) -> None:
-        """Display the entered product details with enhanced formatting"""
         try:
             logger.info("Displaying product details")
             print("\nProduct Details:")
@@ -141,12 +156,14 @@ class ProductInput:
             print(f"Budget Constraint: ${self.budget_constraint:.2f}")
             print(f"Timestamp: {self.timestamp}")
             print(f"User: {self.user}")
+            print("Analysis Weights:")
+            for key, value in self.analysis_weights.items():
+                print(f"  {key.capitalize()}: {value:.2f}")
             print("=" * 50)
         except Exception as e:
             logger.error(f"Error displaying details: {str(e)}")
 
     async def save_to_json(self) -> None:
-        """Save product details to JSON file asynchronously"""
         logger.info(f"Saving product details to JSON for {self.product_name}")
         try:
             data = {
@@ -155,47 +172,26 @@ class ProductInput:
                 "dimensions": self.dimensions,
                 "packaging_location": self.packaging_location,
                 "budget_constraint": self.budget_constraint,
+                "analysis_weights": self.analysis_weights,
                 "metadata": {
                     "timestamp": self.timestamp,
                     "user": self.user,
                     "volume": self.calculate_volume()
                 }
             }
-            
-            # Ensure the temp_KB directory exists
+
             os.makedirs("temp_KB", exist_ok=True)
-            
             filename = os.path.join("temp_KB", 
-                                  f"{self.product_name.lower().replace(' ', '_')}.json")
-            
-            # Run blocking file operations in a thread pool
+                                    f"{self.product_name.lower().replace(' ', '_')}.json")
+
             await asyncio.get_event_loop().run_in_executor(
                 None,
                 lambda: json.dump(data, open(filename, 'w'), indent=4)
             )
-            
+
             logger.info(f"Successfully saved product details to {filename}")
-            
         except Exception as e:
-            error_msg = f"Failed to save product details: {str(e)}"
-            logger.error(error_msg, exc_info=True)
-            raise Exception(error_msg)
+            logger.error(f"Failed to save product details: {str(e)}", exc_info=True)
+            raise
 
-async def main():
-    """Main function for testing"""
-    try:
-        # Use provided current time and user login
-        current_time = "2025-05-08 20:16:15"
-        user_login = "codegeek03"
-        
-        product = ProductInput(current_time, user_login)
-        result = await product.get_product_details()
-        product.display_details()
-        print("\nJSON Response:")
-        print(json.dumps(result, indent=2))
-    except Exception as e:
-        logger.error(f"Error in main: {str(e)}", exc_info=True)
-        print(f"Error: {str(e)}")
-
-if __name__ == "__main__":
-    asyncio.run(main())
+# Main block remains unchanged

@@ -5,6 +5,10 @@ import json
 import os
 from typing import Dict, Any
 from datetime import datetime
+from agno.tools.tavily import TavilyTools
+from agno.tools.calculator import CalculatorTools
+from agno.tools.newspaper4k import Newspaper4kTools
+from agno.tools.duckduckgo import DuckDuckGoTools
 
 class MaterialPropertiesAgent:
     def __init__(self, model_id: str = "gemini-2.0-flash-exp", enable_markdown: bool = True):
@@ -21,9 +25,34 @@ class MaterialPropertiesAgent:
         self.current_time = "2025-04-19 21:27:30"
 
         self.agent = Agent(
-            model=Gemini(id=model_id, api_key=api_key),
-            markdown=enable_markdown
-        )
+    model=Gemini(
+        id="gemini-2.0-flash-exp",
+        search=True,  
+        grounding=False  # Disable grounding to allow tools and reasoning to work
+    ),
+    tools=[
+        TavilyTools(
+            search_depth='advanced',
+            max_tokens=6000,
+            include_answer=True
+        ),
+        DuckDuckGoTools(),
+        Newspaper4kTools()
+    ],
+    description="You are an expert research analyst with exceptional analytical and investigative abilities.",
+    instructions=[
+        "Always begin by thoroughly searching for the most relevant and up-to-date information",
+        "Cross-reference information between Tavily and DuckDuckGo searches for accuracy",
+        "Provide well-structured, comprehensive responses with clear sections",
+        "Include specific facts and details to support your answers",
+        "When appropriate, organize information using bullet points or numbered lists",
+        "If information seems outdated or unclear, explicitly mention this",
+        "Focus on delivering accurate, concise, and actionable insights"
+    ],
+    reasoning=True,  # Enable reasoning 
+    markdown=True,
+    show_tool_calls=True
+)
 
         # Define key properties and their weights
         self.material_properties = {
@@ -66,7 +95,7 @@ class MaterialPropertiesAgent:
         prompt = f"""
 Analyze the key properties of materials for {materials_data['product_name']}.
 Focus on these properties:
-
+***NOTE: ONLY INCLUDE MATERIALS ORIGINALLY USED FOR PACKAGING PURPOSES; EXCLUDE ACCESSORIES SUCH AS LABELS, PRESERVATIVES, OR PRODUCT ADDITIVES. and DONT HALLUCINATE***
 1. Mechanical Strength (20%) - Tensile strength and structural integrity
 2. Chemical Resistance (20%) - Resistance to various chemical environments
 3. Thermal Stability (20%) - Performance across temperature range

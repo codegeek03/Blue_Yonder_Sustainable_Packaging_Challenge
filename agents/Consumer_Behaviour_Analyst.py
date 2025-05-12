@@ -5,6 +5,12 @@ import json
 import os
 from typing import Dict, Any
 from datetime import datetime
+from agno.tools.tavily import TavilyTools
+from agno.tools.calculator import CalculatorTools
+from agno.tools.newspaper4k import Newspaper4kTools
+from agno.tools.duckduckgo import DuckDuckGoTools
+from agno.tools.googlesearch import GoogleSearchTools
+
 
 class ConsumerBehaviorAgent:
     def __init__(self, model_id: str = "gemini-2.0-flash-exp", enable_markdown: bool = True):
@@ -21,9 +27,32 @@ class ConsumerBehaviorAgent:
         self.current_time = "2025-04-19 21:34:07"
 
         self.agent = Agent(
-            model=Gemini(id=model_id, api_key=api_key),
-            markdown=enable_markdown
+    model=Gemini(
+        id="gemini-2.0-flash-exp",
+        search=False,  
+        grounding=False  # Disable grounding to allow tools and reasoning to work
+    ),
+    tools=[
+        TavilyTools(
+            search_depth='advanced',
+            max_tokens=6000,
+            include_answer=True
         )
+    ],
+    description="You are an expert research analyst with exceptional analytical and investigative abilities.",
+    instructions=[
+        "Always begin by thoroughly searching for the most relevant and up-to-date information",
+        "Cross-reference information between Tavily and DuckDuckGo searches for accuracy",
+        "Provide well-structured, comprehensive responses with clear sections",
+        "Include specific facts and details to support your answers",
+        "When appropriate, organize information using bullet points or numbered lists",
+        "If information seems outdated or unclear, explicitly mention this",
+        "Focus on delivering accurate, concise, and actionable insights"
+    ],
+    reasoning=True,  # Enable reasoning 
+    markdown=True,
+    show_tool_calls=True
+)
 
         # Define consumer behavior metrics and their weights
         self.behavior_metrics = {
@@ -49,8 +78,10 @@ class ConsumerBehaviorAgent:
         Analyzes consumer behavior and preferences for packaging materials.
         """
         prompt = f"""
-Analyze consumer behavior patterns for packaging materials in {materials_data['product_name']}.
+Analyze consumer behavior patterns for packaging materials in {materials_data['product_name']} from various sites and social media comments.
 Focus on these aspects:
+
+***NOTE: ONLY INCLUDE MATERIALS ORIGINALLY USED FOR PACKAGING PURPOSES; EXCLUDE ACCESSORIES SUCH AS LABELS, PRESERVATIVES, OR PRODUCT ADDITIVES. and DONT HALLUCINATE***
 
 1. Aesthetic Appeal (20%) - Visual attractiveness and design potential
 2. Usability (20%) - Consumer handling and practical usage
