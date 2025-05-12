@@ -28,7 +28,7 @@
 - [Acknowledgments](#acknowledgments)
 
 ## 🎯 Overview
-This system is a **LangGraph-driven**, multi-agent orchestration for evaluating and ranking sustainable packaging materials. It integrates Google’s Gemini model for rich text reasoning, executes specialized tool calls, and produces slide-ready JSON reports—automating end-to-end material selection across:
+This system is a **LangGraph-driven**, multi-agent orchestration for evaluating and ranking sustainable packaging materials. It integrates Google’s Gemini model for rich text reasoning, executes specialized tool calls, and produces slide-ready JSON reports with the help of **Agno** —automating end-to-end material selection across:
 
 - 🌿 **Environmental Impact**  
 - 💰 **Cost Analysis**  
@@ -36,7 +36,9 @@ This system is a **LangGraph-driven**, multi-agent orchestration for evaluating 
 - 👥 **Consumer Behavior**  
 - ⚖️ **Regulatory Compliance**  
 
-## ✨ Key Innovations
+## ✨ Key Features
+-**Innovative Self Context**
+  Uses **Context feature of Agno** to promote shared knowledge even if the execution is parallel.
 - **LangGraph State Machine**  
   Orchestrates flow using a directed graph of TypedDict states, transitions, and conditional branching.
 - **Parallel Agent-Calling**  
