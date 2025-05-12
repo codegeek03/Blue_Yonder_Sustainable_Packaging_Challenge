@@ -37,8 +37,9 @@ This system is a **LangGraph-driven**, multi-agent orchestration for evaluating 
 - ⚖️ **Regulatory Compliance**  
 
 ## ✨ Key Features
--**Innovative Self Context**
-  Uses **Context feature of Agno** to promote shared knowledge even if the execution is parallel.
+
+### **Innovative Self Context** : Uses **Context feature of Agno** to promote shared knowledge even if the execution is parallel.
+
 - **LangGraph State Machine**  
   Orchestrates flow using a directed graph of TypedDict states, transitions, and conditional branching.
 - **Parallel Agent-Calling**  
