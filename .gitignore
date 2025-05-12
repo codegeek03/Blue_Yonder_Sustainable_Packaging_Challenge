@@ -1,6 +1,7 @@
 .env
 temp_KB
 venv
+tmp\
 __pycache__/
 *.pyc
 *.pyo
