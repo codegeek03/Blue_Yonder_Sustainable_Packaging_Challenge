@@ -6,76 +6,8 @@
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--05--10-blue)
 
 ## 🏗️ Architecture
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TD
-  %% Input Sources
-  subgraph Inputs["📥 Inputs"]
-    Z["🧠 Input Agent\n🌐 External Web Search Context"]
-    WikiSearch["🔍Tavily Search Tool\n🌐 Context Grounding"]
-    DuckDuckGo["DuckDuckGoTools()\n🌐 Live Data"]
-    Newspaper4kTools["Newspaper4kTools()\n🌐 Additional Context"]
-    SocialMedia["📱 Social Media Search\n💡 Consumer Behavior Insights"]
-  end
-  %% Analyst Group
-  subgraph Analyst_Modules["🧑‍🔬 Analyst Modules"]
-    C(["🌱 Sustainability\n🌐 Contextual Analysis"])
-    D(["💰 Sourcing Cost\n🧮 Calculator Tool"])
-    E(["🚚 Logistics\n🌐 Live Data Sources"])
-    F(["🛍️ Consumer Behavior\n📱 Social Media Insights"])
-    R(["⚖️ Regulations\n🌐 Web Search Grounding"])
-    P(["🏭 Production Cost\n🧮 Efficient Calculation"])
-  end
-  %% Processing Units
-  subgraph Processors["⚙️ Processors"]
-    A["🧪 Product Compatibility\n🌐 Contextual Grounding"]
-    B["📚 MaterialDB\n🧠 AGNo Knowledge Tool"]
-    G["🧩 Orchestrator\n🌐 Integrated Context"]
-  end
-  %% Explainability & Reasoning
-  subgraph Explainability["🧠 Explainability Agent"]
-    EX["💡 Reasoning & Insights\n🌐 Live Data Grounding"]
-  end
-  %% Output Results
-  subgraph Outputs["📤 Outputs"]
-    H["🏆 Top K Materials"]
-    subgraph Details["📄 Details"]
-      Scores["📊 Scores\n🧮 Calculated Metrics"]
-      Tradeoffs["⚖️ Tradeoffs\n🔍 Comparative Analysis"]
-      RegNotes["📘 Regulations Summary\n🌐 Contextual Insights"]
-    end
-    ResultsDB["🗂️ Results Database"]
-  end
-  %% Data Flow
-  Z --> A
-  A --> B
-  WikiSearch --> R
-  SocialMedia --> F
-  B -- Analyze --> C & D & E & F & R & P
-  C --> G
-  D --> G
-  E --> G
-  F --> G
-  P --> G
-  R --> G
-  WikiSearch --> G
-  DuckDuckGo --> G
-  Newspaper4kTools --> G
-  SocialMedia --> G
-  %% Orchestration to outputs and explainability
-  G --> H
-  G --> ResultsDB
-  G --> EX
-  
-  %% Details flow
-  H --> Scores & Tradeoffs & RegNotes
-  %% Explainability feedback loop
-  EX --> G
+![image](https://github.com/user-attachments/assets/e5d5960b-30c4-4dc4-9489-784d6ab64887)
 
-```
 
 
 ## 📋 Table of Contents
@@ -253,8 +185,6 @@ Google Cloud for Gemini APIs
 
 All open-source tool developers and community contributors
 
-## Algorithmic Flowchart
- ![image](https://github.com/user-attachments/assets/994df226-6654-48b7-a403-627a7bee6f4d)
 
 
 This expanded README surfaces your system’s novel features—**parallel agent tool-calling**, **LangGraph state orchestration**, **LLM-driven JSON prompting**, and robust **error-handling with explanatory analysis**—all in a slide- and API-friendly format. Let me know if you’d like any section refined!
