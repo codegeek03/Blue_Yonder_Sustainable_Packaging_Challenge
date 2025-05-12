@@ -26,6 +26,17 @@ from agno.embedder.google import GeminiEmbedder
 CURRENT_USER = "codegeek03"
 CURRENT_TIME = "2025-05-09 21:01:46"  # Updated with provided time
 
+urls = [
+    "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en",
+    "https://www.fda.gov/food/food-ingredients-packaging",
+    "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/containers-and-packaging-product-specific",
+    "https://extension.uga.edu/publications/detail.html?number=C992&title=understanding-laboratory-wastewater-tests-i-organics-bod-cod-toc-og",
+    "https://businessanalytiq.com/procurementanalytics/index/ldpe-price-index/",
+    "https://www.mckinsey.com/industries/packaging-and-paper/our-insights/sustainability-in-packaging-us-survey-insights",
+]
+
+from agents.context import get_content_json, fetch_url_content
+
 
 # Set up logging
 logging.basicConfig(
@@ -55,7 +66,7 @@ knowledge_tools = KnowledgeTools(
 )
 
 class OrchestrationAgent:
-    def __init__(self, current_time: str = CURRENT_TIME, current_user: str = CURRENT_USER):
+    def __init__(self, current_time: str = CURRENT_TIME, current_user: str = CURRENT_USER,prop_context: Dict[str, Any] = None):
         logger.info("Initializing OrchestrationAgent")
         try:
             self.current_time = current_time
@@ -75,18 +86,31 @@ class OrchestrationAgent:
     model=Gemini(
         id="gemini-2.0-flash-exp",
         search=True,  
-        grounding=False  # Disable grounding to allow tools and reasoning to work
+        grounding=True,
+        temperature=0.7
     ),
-    tools=[knowledge_tools],
+    context={"Research_context": get_content_json(urls), "properties": prop_context},
     description="You are an expert research analyst with exceptional analytical and investigative abilities.",
     instructions=[
         "Always begin by thoroughly searching for the most relevant and up-to-date information",
         "Provide well-structured, comprehensive responses with clear sections",
         "Include specific facts and details to support your answers no hallucination and no irrelevant hypothetical assumptions",
+        "Abide by the context in {Research_context} for reference"
+        "THINK TWICE EVERY FACT WITH RESPECT TO THE {product_name} and {properties}, for example, moisture is a big issue for packaging, so it is important to consider the moisture content of the material and its effect on the product.",
+
     ],
     reasoning=True,  # Enable reasoning 
     markdown=True,
-    show_tool_calls=True
+    show_tool_calls=True, # Adjusted temperature for more deterministic responses  # Increased token limit for more detailed responses
+    )
+            logger.info("Agent initialized successfully")
+
+            self.calculator = CalculatorTools()
+            self.newspaper = Newspaper4kTools()
+            self.duckduckgo = DuckDuckGoTools()
+            self.googlesearch = GoogleSearchTools()
+            self.pubmed = PubmedTools()
+            logger.info("All tools initialized successfully"
 )
             logger.info("OrchestrationAgent initialized successfully")
 
@@ -103,11 +127,12 @@ class OrchestrationAgent:
     ) -> Dict[str, Any]:
         try:
             mat_name = material["material_name"]
-
             prompt = f"""
 *You are a senior sustainability consultant advising Blue Yonder’s clients on optimal packaging choices. Use ONLY real, verifiable data from authoritative sources—no hallucinations or made-up figures.  
 *For each metric below, your “value” must be the exact number or range you find online.
-*If values are missing for any material search for any comparable material and use that instead.  
+*If values are missing for any material search for any comparable material and use that instead. 
+THINK TWICE EVERY FACT WITH RESPECT TO THE {product_name} and its properties as in given instruction, for example, moisture is a big issue for packaging, so it is important to consider the moisture content of the material and its effect on the product
+
 
 • Product: {product_name}  
 • Material: **{mat_name}**  

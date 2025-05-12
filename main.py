@@ -25,7 +25,7 @@ from agents.Sourcing_Cost_Analyser import ProductionCostAgent
 from agents.Sustainability_Analyst import EnvironmentalImpactAgent
 from agents.Consumer_Behaviour_Analyst import ConsumerBehaviorAgent
 from agents.Orchestrator import OrchestrationAgent
-
+from agents.context import get_content_json, fetch_url_content
 
 # Constants
 CURRENT_USER = "codegeek03"
@@ -309,7 +309,7 @@ async def orchestrate_results(state: AnalysisState) -> Dict:
     """Orchestrate the analysis results and generate final report."""
     logger.info("Starting results orchestration")
     try:
-        orchestrator = OrchestrationAgent(CURRENT_TIME, CURRENT_USER)
+        orchestrator = OrchestrationAgent(CURRENT_TIME, CURRENT_USER, prop_context=state["properties_analysis"])
 
         ANALYSIS_WEIGHTS = {
     "properties": state["input_data"].get("properties_weight", 0.1),
