@@ -6,7 +6,7 @@
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--05--10-blue)
 
 ## 🏗️ Architecture
-![image](https://github.com/user-attachments/assets/e5d5960b-30c4-4dc4-9489-784d6ab64887)
+![image](https://github.com/user-attachments/assets/e3eacbb0-0097-41dd-845e-2afc000fa422)
 
 
 
