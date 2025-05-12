@@ -38,7 +38,7 @@ This system is a **LangGraph-driven**, multi-agent orchestration for evaluating 
 
 ## ✨ Key Features
 
-### **Innovative Self Context** : Uses **Context feature of Agno** to promote shared knowledge even if the execution is parallel.
+#### **Innovative Self Context** : Agno’s built-in Context store to declaratively share and merge structured agent state across parallel executions—allowing fine-grained, selective knowledge sharing—instead of multithreading’s manual, lock-based sharing of raw memory.
 
 - **LangGraph State Machine**  
   Orchestrates flow using a directed graph of TypedDict states, transitions, and conditional branching.
