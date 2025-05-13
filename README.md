@@ -52,7 +52,7 @@ flowchart TD
     DuckDuckGo -- Market Pulse Data --> G
     Newspaper4k -- Trend Signals --> G
     SocialMedia -- Sentiment Vectors --> F
-    Z -- Product DNA --> A
+    Z -- Core User Input --> A
     A -- Material Compatibility Matrix --> B
     B == Material Properties ==> C & D & E & F & R & P
     C -- Sustainability Index --> G
