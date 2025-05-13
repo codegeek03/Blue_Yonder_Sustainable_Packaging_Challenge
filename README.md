@@ -6,8 +6,77 @@
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--05--10-blue)
 
 ## 🏗️ Architecture
-![image](https://github.com/user-attachments/assets/e3eacbb0-0097-41dd-845e-2afc000fa422)
-
+```mermaid
+---
+config:
+  layout: dagre
+  look: neo
+  theme: redux
+---
+flowchart TD
+ subgraph Inputs["⚡ DATA NEXUS"]
+        Z{{"Input Agent"}}
+        WikiSearch{{"Tavily Search"}}
+        DuckDuckGo{{"DuckDuckGo"}}
+        Newspaper4k{{"Newspaper4k"}}
+        SocialMedia{{"Social Media"}}
+  end
+ subgraph Analyst_Group["🔬 ANALYSIS MATRIX"]
+        C[/"Sustainability Assessment"/]
+        D[/"Sourcing Cost Analysis"/]
+        E[/"Logistics Evaluation"/]
+        F[/"Consumer Behavior Insights"/]
+        R[/"Regulatory Compliance"/]
+        P[/"Production Cost Modeling"/]
+  end
+ subgraph Processors["⚙️ CORE ENGINES"]
+        A[("Product Compatibility")]
+        B[("Materials Database")]
+        G[("Orchestration Layer")]
+  end
+ subgraph Explainability["🧠 NEURAL SYNTHESIS"]
+        EX(["Reasoning & Insights Generator"])
+  end
+ subgraph Details["📊 ANALYTICS DASHBOARD"]
+        Scores>"Performance Metrics"]
+        Tradeoffs>"Comparative Analysis"]
+        RegNotes>"Regulatory Intelligence"]
+  end
+ subgraph Outputs["🚀 SOLUTION MATRIX"]
+        H>"Top K Materials"]
+        Details
+        ResultsDB[("Knowledge Vault")]
+  end
+    Z -- User Intent Vector --> WikiSearch & DuckDuckGo & Newspaper4k & SocialMedia
+    WikiSearch -- Regulatory Corpus --> R
+    DuckDuckGo -- Market Pulse Data --> G
+    Newspaper4k -- Trend Signals --> G
+    SocialMedia -- Sentiment Vectors --> F
+    Z -- Product DNA --> A
+    A -- Material Compatibility Matrix --> B
+    B == Material Properties ==> C & D & E & F & R & P
+    C -- Sustainability Index --> G
+    D -- Cost Vectors --> G
+    E -- Logistics Metrics --> G
+    F -- Market Acceptance Probability --> G
+    P -- Production Feasibility Score --> G
+    R -- Compliance Risk Profile --> G
+    C --> SharedKB[("Shared Knowledge Base")]
+    D --> SharedKB
+    E --> SharedKB
+    F --> SharedKB
+    R --> SharedKB
+    P --> SharedKB
+    A --> SharedKB
+    SharedKB --> G & EX
+    G == Optimized Material Ranking ==> H
+    G -- Historical Pattern Storage --> ResultsDB
+    G <-. Contextual Framework .-> EX
+    H -- Performance Vectors --> Scores
+    H -- "Trade-off Matrix" --> Tradeoffs
+    H -- Regulatory Landscape --> RegNotes
+    EX -. Neural Feedback Loop .-> G
+```
 
 
 ## 📋 Table of Contents
