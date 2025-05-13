@@ -16,6 +16,7 @@ config:
 flowchart TD
  subgraph Inputs["⚡ DATA NEXUS"]
         Z{{"Input Agent"}}
+        Web{{"World Wide Web"}}
         WikiSearch{{"Tavily Search"}}
         DuckDuckGo{{"DuckDuckGo"}}
         Newspaper4k{{"Newspaper4k"}}
@@ -47,10 +48,10 @@ flowchart TD
         Details
         ResultsDB[("Knowledge Vault")]
   end
-    Z -- User Intent Vector --> WikiSearch & DuckDuckGo & Newspaper4k & SocialMedia
+    Web -- User Intent Vector --> WikiSearch & DuckDuckGo & Newspaper4k & SocialMedia
     WikiSearch -- Regulatory Corpus --> R
     DuckDuckGo -- Market Pulse Data --> G
-    Newspaper4k -- Trend Signals --> G
+    Newspaper4k -- Trend Signals --> G & E & F & D
     SocialMedia -- Sentiment Vectors --> F
     Z -- Core User Input --> A
     A -- Material Compatibility Matrix --> B
