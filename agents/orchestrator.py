@@ -27,7 +27,6 @@ CURRENT_USER = "codegeek03"
 CURRENT_TIME = "2025-05-09 21:01:46"  # Updated with provided time
 
 urls = [
-    "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en",
     "https://www.fda.gov/food/food-ingredients-packaging",
     "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/containers-and-packaging-product-specific",
     "https://extension.uga.edu/publications/detail.html?number=C992&title=understanding-laboratory-wastewater-tests-i-organics-bod-cod-toc-og",
@@ -84,25 +83,28 @@ class OrchestrationAgent:
 
             self.agent = Agent(
     model=Gemini(
-        id="gemini-2.0-flash-exp",
-        search=True,  
+        id="gemini-2.0-flash",  # Use the standard model instead of experimental
+        search=True,
         grounding=True,
-        temperature=0.7
+        temperature=0.4  # Lower temperature for more focused responses
     ),
-    context={"Research_context": get_content_json(urls), "properties": prop_context},
+    context={
+        "Research_context": get_content_json(urls), 
+        "properties": prop_context
+    },
     description="You are an expert research analyst with exceptional analytical and investigative abilities.",
     instructions=[
         "Always begin by thoroughly searching for the most relevant and up-to-date information",
-        "Provide well-structured, comprehensive responses with clear sections",
+        "Provide well-structured, detailed responses with clear sections",
         "Include specific facts and details to support your answers no hallucination and no irrelevant hypothetical assumptions",
-        "Abide by the context in {Research_context} for reference"
-        "THINK TWICE EVERY FACT WITH RESPECT TO THE {product_name} and {properties}, for example, moisture is a big issue for packaging, so it is important to consider the moisture content of the material and its effect on the product.",
-
+        "Abide by the context in {Research_context} for reference",
+        "THINK TWICE EVERY FACT WITH RESPECT TO THE {product_name} and {properties}",
+        "RELEVANCY IS KEY TO YOUR SUCCESS"
     ],
-    reasoning=True,  # Enable reasoning 
+    reasoning=True,
     markdown=True,
-    show_tool_calls=True, # Adjusted temperature for more deterministic responses  # Increased token limit for more detailed responses
-    )
+    show_tool_calls=True # Add explicit token limit
+)
             logger.info("Agent initialized successfully")
 
             self.calculator = CalculatorTools()
@@ -143,9 +145,9 @@ Perform a holistic performance analysis across five dimensions: Properties, Logi
 *** METRIC CALCULATIONS (use programmatic logic):  
 1. **Carbon footprint**: Find the published CO₂ emissions in kg CO₂/kg material. Map the lowest-known footprint to 100 and highest to 0 on a 0–100 scale.  
 2. **Recyclability**: Locate the official recyclability percentage; use that percent as the score.  
-3. **Biodegradability**: Find the documented biodegradation time (e.g. “12 months” or “200 years”). Linearly interpolate: ≤5 days→100, ≥200 years→0.  
+3. **Biodegradability**: Find the documented biodegradation time (e.g. “12 months” or “200 years”). Linearly interpolate: ≤5 days→100, ≥500 years→0.  
 4. **Resource efficiency**: Lookup the energy requirement in MJ/kg. Invert and rescale linearly: lowest energy use→100, highest→0.  
-5. **Toxicity**: Use measured BOD or COD mg/L. Map lowest BOD/COD→100,highest→0.  
+5. **Toxicity**: Use measured BOD or COD mg/L. Map lowest BOD/COD→100,highest→0 and interpolate using cubic spline.  
 
 Compute a composite (equal 20% weights) unless product- or location-specific weights are provided.
 
@@ -195,13 +197,13 @@ Don't embed any URLs in the JSON output they should be openable.
     }}
   ],
   "supply_chain_implications": {{
-    "costs": "<narrative with real market‐price citations for {mat_name} in {location}>",
+    "costs": "<narrative with real market‐price citations for {mat_name} in {location} and check if it can be locally sourced>",
     "logistics": "<narrative with transport & labor cost citations in {location} for packaging with {mat_name}>",
     "regulatory": "<cite exact {location}-specific packaging regs URLs and brief summary>",
     "consumer": "<narrative of social/media perceptions regarding {mat_name} — cite URLs>"
   }},
   "consulting_recommendation": {{
-    "advice": "< detailed explanation of actionable next steps and possible results + relevant article URLs>"
+    "advice": "< consulting **BUSINESS INSIGHT** narrative of using {mat_name} and how to get sustainability with consumer satisfaction + relevant article URLs>"
   }},
   "regulatory_context": "<direct quote from the most relevant {location} regulation + source URL>"
 }}

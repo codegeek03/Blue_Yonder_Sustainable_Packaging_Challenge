@@ -83,3 +83,187 @@ if __name__ == "__main__":
     ]
     data = get_content_json(urls, output_file="packaging_resources.json")
     print(json.dumps(data, indent=2, ensure_ascii=False))
+
+def get_waste_materials():
+    return {
+        
+  "states": [
+    {
+      "name": "Uttar Pradesh",
+      "raw_waste_materials": [
+        {
+          "material": "Bagasse (sugarcane residue)",
+          "source": "Sugar mills",
+          "potential_packaging_type": "Pulp and paper food-grade packaging, compostable tableware"
+        },
+        {
+          "material": "Paddy straw",
+          "source": "Rice farming",
+          "potential_packaging_type": "Bio-based packaging paper, bioplastic (PLA) granules"
+        }
+      ]
+    },
+    {
+      "name": "Maharashtra",
+      "raw_waste_materials": [
+        {
+          "material": "Sugarcane bagasse",
+          "source": "Sugarcane industry",
+          "potential_packaging_type": "Compostable tableware, molded fiber packaging"
+        },
+        {
+          "material": "Paddy straw",
+          "source": "Rice farming",
+          "potential_packaging_type": "Bio-based packaging paper"
+        }
+      ]
+    },
+    {
+      "name": "Madhya Pradesh",
+      "raw_waste_materials": [
+        {
+          "material": "Wheat straw",
+          "source": "Wheat farming",
+          "potential_packaging_type": "Biodegradable packaging films, molded products"
+        }
+      ]
+    },
+    {
+      "name": "Punjab",
+      "raw_waste_materials": [
+        {
+          "material": "Paddy straw",
+          "source": "Rice farming",
+          "potential_packaging_type": "Bio-based packaging paper, bioplastics"
+        }
+      ]
+    },
+    {
+      "name": "Karnataka",
+      "raw_waste_materials": [
+        {
+          "material": "Banana stems",
+          "source": "Banana plantations",
+          "potential_packaging_type": "Fiber-based biodegradable packaging"
+        },
+        {
+          "material": "Sugarcane bagasse",
+          "source": "Sugar industry",
+          "potential_packaging_type": "Molded fiber packaging"
+        }
+      ]
+    },
+    {
+      "name": "Rajasthan",
+      "raw_waste_materials": [
+        {
+          "material": "Mustard stalks",
+          "source": "Mustard farming",
+          "potential_packaging_type": "Biodegradable molded packaging"
+        }
+      ]
+    },
+    {
+      "name": "Haryana",
+      "raw_waste_materials": [
+        {
+          "material": "Paddy straw",
+          "source": "Rice farming",
+          "potential_packaging_type": "Bio-based packaging paper"
+        }
+      ]
+    },
+    {
+      "name": "West Bengal",
+      "raw_waste_materials": [
+        {
+          "material": "Rice husk",
+          "source": "Rice mills",
+          "potential_packaging_type": "Biodegradable packaging films"
+        }
+      ]
+    },
+    {
+      "name": "Tamil Nadu",
+      "raw_waste_materials": [
+        {
+          "material": "Coir (coconut husk fiber)",
+          "source": "Coconut processing",
+          "potential_packaging_type": "Biodegradable containers, trays"
+        },
+        {
+          "material": "Banana stems",
+          "source": "Banana plantations",
+          "potential_packaging_type": "Fiber-based films and wraps"
+        }
+      ]
+    },
+    {
+      "name": "Bihar",
+      "raw_waste_materials": [
+        {
+          "material": "Maize stalks",
+          "source": "Maize farming",
+          "potential_packaging_type": "Biodegradable molded packaging"
+        }
+      ]
+    },
+    {
+      "name": "Gujarat",
+      "raw_waste_materials": [
+        {
+          "material": "Cotton stalks",
+          "source": "Cotton farming",
+          "potential_packaging_type": "Fiber-based packaging"
+        }
+      ]
+    },
+    {
+      "name": "Odisha",
+      "raw_waste_materials": [
+        {
+          "material": "Rice straw",
+          "source": "Paddy fields",
+          "potential_packaging_type": "Bio-based packaging paper, bioplastic (PLA) granules"
+        }
+      ]
+    },
+    {
+      "name": "Chhattisgarh",
+      "raw_waste_materials": [
+        {
+          "material": "Rice straw",
+          "source": "Paddy fields",
+          "potential_packaging_type": "Biodegradable packaging material"
+        }
+      ]
+    },
+    {
+      "name": "Assam",
+      "raw_waste_materials": [
+        {
+          "material": "Tea waste",
+          "source": "Tea processing",
+          "potential_packaging_type": "Biodegradable packaging"
+        }
+      ]
+    },
+    {
+      "name": "Kerala",
+      "raw_waste_materials": [
+        {
+          "material": "Coir (coconut husk fiber)",
+          "source": "Coconut processing industry",
+          "potential_packaging_type": "Biopolymer trays, containers, films"
+        },
+        {
+          "material": "Banana stem and peel fiber",
+          "source": "Banana cultivation and processing",
+          "potential_packaging_type": "Fiber-based films, trays, and wraps"
+        }
+      ]
+    }
+  ]
+        
+
+    }

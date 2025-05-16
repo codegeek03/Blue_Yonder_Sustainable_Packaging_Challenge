@@ -36,6 +36,7 @@ from bs4 import BeautifulSoup
 
 urls = [
     # Existing sources
+    "https://www.ceew.in/sites/default/files/bio-based-packaging-material-manufacturing.pdf"
     "https://www.researchgate.net/publication/322808541_Sustainable_Packaging",
     "https://sustainablepackaging.org/wp-content/uploads/2019/06/Definition-of-Sustainable-Packaging.pdf",
     "https://s3.amazonaws.com/gb.assets/SPC+DG_1-8-07_FINAL.pdf",
@@ -46,31 +47,7 @@ urls = [
     "https://search.library.wisc.edu/catalog/9914150907202121",
     "https://www.repository.cam.ac.uk/items/7abbf7a8-c0d0-4169-8f03-c42b29a1ff95",
     "https://www.nal.usda.gov/research-tools/food-safety-research-projects/sustainable-and-active-packaging-food-product-safety",
-    "https://www.packworld.com/sustainable-packaging/article/13346852/detailrich-sustainable-packaging-product-database-is-an-industry-first",
-    "https://guacamoleairplane.com/supplier-guide",
-    "https://domo.design/sustainable-packaging-resource-directory/",
-    "https://www.walmartsustainabilityhub.com/waste/sustainable-packaging/resources",
-    "https://www.billerud.com/sustainability/reporting-and-data/packaging-sustainability-tool",
-    "https://www.sciencedirect.com/science/article/pii/S0959652624035820",
-    "https://www.sciencedirect.com/science/article/pii/S2405844024001531",
-    "https://www.sciencedirect.com/science/article/pii/S275380952400098X",
-    "https://www.sciencedirect.com/science/article/abs/pii/S014181302402350X",
-
-    # Additional authoritative resources
-    "https://foodpackagingforum.org/resources",
-    "https://www.researchgate.net/publication/47355743_Sustainable_food_packaging",
-    "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2018.00121/full",
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10788806/",
-    "https://www.mdpi.com/2304-8158/13/11/1744",
-    "https://researchonline.ljmu.ac.uk/id/eprint/25448/",
-    "https://www.sciencedirect.com/science/article/pii/S2772502223000938",
-    "https://blog.openfoodfacts.org/en/news/data-on-over-10000-packagings-to-explore",
-    "https://www.sciencedirect.com/journal/future-foods/special-issue/10BKF9ZG01B",
-    "https://hse.aws.openrepository.com/handle/10147/636294",
-    "https://www.heraldopenaccess.us/openaccess/active-polymeric-packaging-innovation-in-food-with-potential-use-of-sustainable-raw-material",
-    "https://arxiv.org/abs/2501.14764",
-    "https://arxiv.org/abs/2311.16932"
-]
+    "https://www.packworld.com/sustainable-packaging/article/13346852/detailrich-sustainable-packaging-product-database-is-an-industry-first"]
 
 
 def fetch_url_content(url: str, timeout: float = 10.0) -> Dict:
@@ -173,6 +150,8 @@ knowledge_tools = KnowledgeTools(
 
 logger = logging.getLogger(__name__)
 
+from agents.context import get_waste_materials
+
 class PackagingMaterialsAgent:
     def __init__(
         self,
@@ -198,15 +177,16 @@ class PackagingMaterialsAgent:
         grounding=False,
         temperature=0.6 # Disable grounding to allow tools and reasoning to work
     ),
-    context={"database_context": get_content_json(urls)},
+    context={"database_context": get_content_json(urls), "potential_packaging_materials":get_waste_materials()},
     tools=[
         knowledge_tools
     ],
     description="You are an expert research analyst with exceptional analytical and investigative abilities.",
     instructions=[
         "ONLY include materials originally intended for packaging — DO NOT include accessories (e.g., labels, preservatives, adhesives, seals, inks).",
-        "Materials must be scientifically accurate, currently in commercial use, and relevant to the specific product."
+        "Materials must be scientifically accurate, and relevant to the specific product."
         "Use {database_context} to find the most relevant and up-to-date information.",
+        "Strictly use {potential_packaging_materials} to find locally sourcable raw materials.",
     ],
     reasoning=True,  # Enable reasoning 
     markdown=True,
@@ -244,7 +224,7 @@ class PackagingMaterialsAgent:
                             "material_name": "string",
                             "properties": "string"
                         }
-                    ] * 10
+                    ] * 20
                     for key in criteria
                 },
                 "analysis_timestamp": self.current_time,
@@ -263,7 +243,8 @@ class PackagingMaterialsAgent:
     f"- Only include materials originally intended for sustainable packaging of {product_name}.\n"
     f"- Do NOT include accessories (labels, adhesives, inks, etc.).\n"
     f"- Avoid redundant entries (e.g., treat polypropylene and PP film as the same material).\n"
-    f"- Materials must be scientifically accurate and currently in commercial use.\n\n"
+    f"- Materials must be scientifically accurate and currently in commercial use and can be agriculture waste close to {packaging_location}.\n\n"
+    f"add some locally sourcable raw materials at {packaging_location} that has potential of packaging material.\n"
     f"REPLY WITH VALID JSON ONLY — NO COMMENTS OR TEXT OUTSIDE THE JSON.\n\n"
 )
 

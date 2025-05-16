@@ -8,7 +8,7 @@ __pycache__/
 *.pyd
 *.db
 *.sqlite
-*.log
+*.lo
 *.csv
 *.tsv
 *.json
@@ -20,3 +20,8 @@ __pycache__/
 *.h5
 *.hdf5
 *.onnx
+logs/
+*.log
+Experiments/
+*.zip
+
