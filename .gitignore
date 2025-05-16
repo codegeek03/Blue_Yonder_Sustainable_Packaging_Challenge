@@ -2,6 +2,7 @@
 temp_KB
 venv
 tmp\
+.lance
 __pycache__/
 *.pyc
 *.pyo
