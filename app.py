@@ -882,7 +882,7 @@ async def main():
             
             if material_summaries:
                 # Add the new sustainability comparison table
-                st.markdown("### 📋 Sustainability Metrics Comparison")
+                st.markdown("### 📋 Sustainability Metrics Comparative Analysis")
                 comparison_table = create_sustainability_comparison_table(material_summaries)
                 if comparison_table is not None:
                     st.dataframe(comparison_table, use_container_width=True, hide_index=True)
